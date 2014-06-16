@@ -1,0 +1,125 @@
+%!TEX root = ./thesis.tex
+
+%% LyX 2.1.0 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[10pt,a4paper,oneside,english]{book}
+\usepackage{mathpazo}
+\usepackage{helvet}
+\usepackage{courier}
+\renewcommand{\familydefault}{\rmdefault}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\pagestyle{headings}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage[english]{babel}
+\usepackage{verbatim}
+\usepackage{prettyref}
+\usepackage{refstyle}
+\usepackage{float}
+\usepackage{rotfloat}
+\usepackage{textcomp}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{nomencl}
+% the following is useful when we have the old nomencl.sty package
+\providecommand{\printnomenclature}{\printglossary}
+\providecommand{\makenomenclature}{\makeglossary}
+\makenomenclature
+\doublespacing
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 1},backref=section,colorlinks=false]
+ {hyperref}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+
+\AtBeginDocument{\providecommand\partref[1]{\ref{part:#1}}}
+\pdfpageheight\paperheight
+\pdfpagewidth\paperwidth
+
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}[chapter]
+\providecommand{\algorithmname}{Algorithm}
+\floatname{algorithm}{\protect\algorithmname}
+\RS@ifundefined{subref}
+  {\def\RSsubtxt{section~}\newref{sub}{name = \RSsubtxt}}
+  {}
+\RS@ifundefined{thmref}
+  {\def\RSthmtxt{theorem~}\newref{thm}{name = \RSthmtxt}}
+  {}
+\RS@ifundefined{lemref}
+  {\def\RSlemtxt{lemma~}\newref{lem}{name = \RSlemtxt}}
+  {}
+
+
+\@ifundefined{date}{}{\date{}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage[toc,page]{appendix}
+\usepackage{listings}%for inserting source code
+\usepackage{microtype}% makes pdf look better
+\usepackage{sectsty}% Changing section headinds
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{color}
+\usepackage{anyfontsize}
+\definecolor{chaptergrey}{rgb}{0.8,0.8,0.8}
+\definecolor{dark}{rgb}{0.2,0.2,0.2}
+\usepackage[helvetica,nogrey]{quotchap}
+\linespread{1.05}        % Palatino needs more leading
+%\usepackage[euler-digits]{eulervm}
+%\renewcommand{\rmdefault}{pplx}
+
+\usepackage{titlesec}
+\titleformat{\chapter}[block]
+  {\Huge\sffamily\huge\bfseries\color{chaptergrey}}
+  {\sffamily\fontsize{40}{190}\selectfont Chapter \thechapter}{0pt}{\\\color{dark}}
+
+\titleformat{\part}[block]
+  {\Huge\sffamily\huge\bfseries\color{chaptergrey}}
+  {\sffamily\fontsize{100}{0}\selectfont Part \thepart}{0pt}{\\\centering\color{dark}}
+
+\lstset{ %
+basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+numbers=left,                   % where to put the line-numbers
+numberstyle=\footnotesize,      % the size of the fonts that are used for the line-numbers
+numbersep=5pt,                  % how far the line-numbers are from the code
+backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+showspaces=false,               % show spaces adding particular underscores
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=single,                   % adds a frame around the code
+tabsize=2,                      % sets default tabsize to 2 spaces
+captionpos=b,                   % sets the caption-position to bottom
+breaklines=true,                % sets automatic line breaking
+breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+%title=\lstname,                % show the filename of files included with \lstinputlisting;
+                                % also try caption instead of title
+escapeinside={\%*}{*)},         % if you want to add a comment within your code
+morekeywords={*,...}            % if you want to add more keywords to the set
+}
+
+% Fuzz
+\hfuzz 2pt % Don't bother to report over-full boxes if over-edge is < 2pt
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=blue
+}
+
+\makeatother
+
+\usepackage{listings}
+\addto\captionsbritish{\renewcommand{\algorithmname}{Algorithm}}
+\addto\captionsbritish{\renewcommand{\lstlistingname}{Listing}}
+\renewcommand{\lstlistingname}{Listing}
+

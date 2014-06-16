@@ -1,0 +1,67 @@
+%\documentclass[10pt,a4paper,oneside,british]{book}
+\input{configuration}
+
+\begin{document}
+
+\input{frontmatter}
+\rmfamily
+\tableofcontents{}
+\listoffigures
+\listoftables
+\printnomenclature{}
+\onehalfspacing
+
+\chapter*{Abstract}
+%\phantomsection\addcontentsline{toc}{chapter}{Abstract}
+\input{content/abstract}
+
+\chapter*{Acknowledgement}
+%\phantomsection\addcontentsline{toc}{chapter}{Acknowledgement}
+\input{content/acknowledgement}
+
+
+%% Part 1 - Introduction
+\part{Introduction}
+    \chapter{Liquids at Scale}
+        \input{content/introduction/01-LiquidsAtScale/chapter}
+    \chapter{Interfacial Double Layers}
+        \input{content/introduction/02-TheDoubleLayer/chapter}
+
+
+%% Part 2 - Double layers on insulators
+\part{\label{part:doubleLayersOnInsulators}Double Layers On Insulators}
+    \chapter{Harvesting Energy}
+        \input{content/pt1/01-PowerHarvesting/chapter}
+    \chapter{Wireless Water Metering}
+        \input{content/pt1/02-WirelessWaterMeter/chapter}
+    \chapter{Energy Requirements}
+        \section{Microcontroller}
+            \input{content/pt1/02-Microcontrollers/chapter}
+        \section{Data Transmission}
+            \input{content/pt1/03-DataTransmission/chapter}
+    \chapter{Harvester Design}
+        \input{content/pt1/04-HarvesterDesign/chapter}
+
+%% Part 3 - Double layers on conductors
+\part{\label{part:doubleLayersOnConductors}Double layers on conductors}
+    \chapter{Electrically Modelling an Interface}
+        \input{content/pt2/01-ElectricalModelling/chapter}
+    \chapter{Determining Interface Parameters}
+        \input{content/pt2/02-InterfaceParameters/chapter}
+
+%% Part 4 - Appendices
+\part{Appendices}
+    \appendix
+    \chapter{Alternative Energy Harvester}
+        \input{content/appendices/chargedWaterDrops/appendix}
+    \chapter{Microprocessor Power Measurements}
+        \input{content/appendices/microprocessorPowerMeasurements/appendix}
+    \chapter{Streaming Cell Mesaurements}
+        \input{content/appendices/streamingCellMeasurements/appendix}
+
+
+\bibliographystyle{plain}
+\phantomsection\addcontentsline{toc}{chapter}{\bibname}
+\bibliography{bibliography}
+
+\end{document}

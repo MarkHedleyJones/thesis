@@ -1,0 +1,787 @@
+Input File::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::0::0::Input File
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::23::0::Undefined control sequence. |\chapter {Charged water drops}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::23::0::Missing \begin{document}. |\chapter{C harged water drops} 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::23::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 23--24
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::25::0::Missing \begin{document}. |I n 1867 William Thomson (Lord Kelvin) described an apparatus that 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::27::0::Undefined control sequence. |...Drawing_KelvinWaterDripper_OriginalDevice} ) | <write> ...ipper_OriginalDevice' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::27::0::Reference `Figure_Drawing_KelvinWaterDripper_OriginalDevice' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::28::0::Undefined control sequence. |\cite{Thomson1867} . | <write> ...: Citation `\@citeb ' on page \thepage  \space undefined\on@line .
+Citation LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::28::0::Citation `Thomson1867' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::29::0::Environment figure undefined. |\begin{figure} [H] 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::31::0::Undefined control sequence. |\includegraphics [width=0.5\textwidth]{Chapters/03-PowerHarvesting/Figur...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::31::0::Missing number, treated as zero. |\includegraphics[width=0.5\textwidth] {Chapters/03-PowerHarvesting/Figur...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::31::0::Illegal unit of measure (pt inserted). |\includegraphics[width=0.5\textwidth] {Chapters/03-PowerHarvesting/Figur...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::31::0::Missing $ inserted.
+LaTeX Font Info::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::31::0::   External font `cmex10' loaded for size <7>.
+LaTeX Font Info::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::31::0::   External font `cmex10' loaded for size <5>.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::31::0::Extra }, or forgotten $. |...Drawing_KelvinWaterDripper_OriginalDevice} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::32::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::25::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 25--32
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::25::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 25--32
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::25::0::Overfull \hbox (5.43053pt too wide) in paragraph at lines 25--32
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::25::0::Overfull \hbox (203.29514pt too wide) in paragraph at lines 25--32
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::32::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::34::0::\caption outside float. |\protect\caption {Drawing of Lord Kelvin's electrostatic generator.} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::34::0::Missing \begin{document}. |\protect\caption{D rawing of Lord Kelvin's electrostatic generator.} 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::34::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 34--35
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::39::0::\begin{document} ended by \end{figure}. |\end{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::40::0::Missing \begin{document}. | T his apparatus works by inducing charge onto drops of water before 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::40::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 40--44
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::46::0::Undefined control sequence. |\section {How charge is generated}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::46::0::Missing \begin{document}. |\section{H ow charge is generated} 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::46::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 46--47
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::48::0::Environment figure undefined. |\begin{figure} [H] 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::48::0::Missing \begin{document}. |\begin{figure}[ H] 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::50::0::Undefined control sequence. |\includegraphics [height=0.25\textheight]{Chapters/03-PowerHarvesting/Fi...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::50::0::Missing number, treated as zero. |\includegraphics[height=0.25\textheight] {Chapters/03-PowerHarvesting/Fi...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::50::0::Illegal unit of measure (pt inserted). |\includegraphics[height=0.25\textheight] {Chapters/03-PowerHarvesting/Fi...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::50::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::50::0::Extra }, or forgotten $. |...wing_KelvinWaterDripper_ChargingMechanism} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::51::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::48::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 48--51
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::48::0::Overfull \hbox (230.3776pt too wide) in paragraph at lines 48--51
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::51::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::53::0::\caption outside float. |\protect\caption {Drawing of the charging mechanism for Lord Kelvin's el... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::53::0::Missing \begin{document}. |\protect\caption{D rawing of the charging mechanism for Lord Kelvin's el... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::56::0::\begin{document} ended by \end{figure}. |\end{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::57::0::Undefined control sequence. |...wing_KelvinWaterDripper_ChargingMechanism}  | <write> ...er_ChargingMechanism' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::57::0::Reference `Figure_Drawing_KelvinWaterDripper_ChargingMechanism' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::53::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 53--63
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::53::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 53--63
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::64::0::Missing \begin{document}. |A simplified diagram of the apparatus is shown in Figure \ref{Fig_Diagr... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::64::0::Undefined control sequence. |...igure \ref{Fig_Diagram_KelvinWaterDripper}  | <write> ...m_KelvinWaterDripper' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::64::0::Reference `Fig_Diagram_KelvinWaterDripper' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::66::0::Environment figure undefined. |\begin{figure} [H] 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::68::0::Undefined control sequence. |\includegraphics {Chapters/03-PowerHarvesting/DripperOut}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::64::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 64--69
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::64::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 64--69
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::71::0::\caption outside float. |\protect\caption {Simplified diagram of Lord Kelvin's water dropper conf... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::71::0::Missing \begin{document}. |\protect\caption{S implified diagram of Lord Kelvin's water dropper conf... 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::71::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 71--72
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::75::0::\begin{document} ended by \end{figure}. |\end{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::78::0::Missing \begin{document}. |T he diagram illustrates the charge of each element by its colour. 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::84::0::Undefined control sequence. |...wing_KelvinWaterDripper_ChargingMechanism} ), | <write> ...er_ChargingMechanism' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::84::0::Reference `Figure_Drawing_KelvinWaterDripper_ChargingMechanism' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::78::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 78--93
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::78::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 78--93
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::95::0::Undefined control sequence. |\section {Replicating the experiment\label{sub:Replicating-the-experiment}}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::95::0::Missing \begin{document}. |\section{R eplicating the experiment\label{sub:Replicating-the-experiment}} 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::95::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 95--96
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::97::0::Missing \begin{document}. |T he first step toward assessing the electrostatic generators ability 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::97::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 97--101
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::103::0::Undefined control sequence. |\section {Optimising output}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::103::0::Missing \begin{document}. |\section{O ptimising output} 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::103::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 103--104
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::105::0::Missing \begin{document}. |O nce the experiment had been replicated, questions arose regarding 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::105::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 105--107
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::109::0::Undefined control sequence. |\subsection {Drop volume and frequency}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::109::0::Missing \begin{document}. |\subsection{D rop volume and frequency} 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::109::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 109--110
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::111::0::Missing \begin{document}. |T he first optimisation question in its most practical form was ``is 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::117::0::Undefined control sequence. |\ref{sub:Replicating-the-experiment} ) in an attempt to isolate the | <write> ...ating-the-experiment' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::117::0::Reference `sub:Replicating-the-experiment' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::111::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 111--119
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::111::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 111--119
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::121::0::Undefined control sequence. |\subsubsection {Experimental setup}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::121::0::Missing \begin{document}. |\subsubsection{E xperimental setup} 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::121::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 121--122
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::123::0::Environment figure undefined. |\begin{figure} [H] 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::123::0::Missing \begin{document}. |\begin{figure}[ H] 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::125::0::Undefined control sequence. |\includegraphics [scale=0.15]{Chapters/03-PowerHarvesting/Photo_dripper...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::125::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::125::0::Extra }, or forgotten $. |.../Photo_dripperExperiment_Setup_draft.JPG} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::126::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::123::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 123--126
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::123::0::Overfull \hbox (161.145pt too wide) in paragraph at lines 123--126
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::126::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::128::0::\caption outside float. |\centering{}\protect\caption {\label{Photo_dripperExperiment_Setup}Phot... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::128::0::Missing \begin{document}. |...on{\label{Photo_dripperExperiment_Setup}P hoto of experimental setup 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::130::0::\begin{document} ended by \end{figure}. |\end{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::133::0::Missing \begin{document}. |A photo of the measurement setup can be seen in Figure \ref{Photo_drip... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::133::0::Undefined control sequence. |...igure \ref{Photo_dripperExperiment_Setup} . | <write> ...pperExperiment_Setup' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::133::0::Reference `Photo_dripperExperiment_Setup' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::135::0::Undefined control sequence. |...edDrips_Figure_Drawing_ExperimentalSetup} . As can be seen | <write> ...ng_ExperimentalSetup' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::135::0::Reference `ChargedDrips_Figure_Drawing_ExperimentalSetup' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::139::0::Undefined control sequence. |...re \ref{Photo_dripperExperiment_Inductor} . | <write> ...rExperiment_Inductor' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::139::0::Reference `Photo_dripperExperiment_Inductor' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::142::0::Undefined control sequence. |...\ref{Photo_dripperExperiment_SyringePump} ). | <write> ...periment_SyringePump' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::142::0::Reference `Photo_dripperExperiment_SyringePump' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::133::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 133--143
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::133::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 133--143
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::133::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 133--143
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::133::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 133--143
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::133::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 133--143
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::144::0::Environment figure undefined. |\begin{figure} [h] 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::144::0::Missing \begin{document}. |\begin{figure}[ h] 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::146::0::Undefined control sequence. |\includegraphics [scale=0.9]{Chapters/03-PowerHarvesting/ChargedDrips_F...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::146::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::146::0::Extra }, or forgotten $. |...edDrips_Figure_Drawing_ExperimentalSetup} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::147::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::144::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 144--147
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::144::0::Overfull \hbox (157.0069pt too wide) in paragraph at lines 144--147
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::147::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::149::0::\caption outside float. |\protect\caption {\label{ChargedDrips_Figure_Drawing_ExperimentalSetup}... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::149::0::Missing \begin{document}. |...dDrips_Figure_Drawing_ExperimentalSetup}D iagram of experimental 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::151::0::\begin{document} ended by \end{figure}. |\end{figure}  
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::149::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 149--152
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::154::0::Missing \begin{document}. |T he volume of each drip is calculate by dividing the flow rate by 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::154::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 154--159
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::160::0::Missing \begin{document}. |B ecause the current being measured was so small (in the nano-amp range), 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::160::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 160--166
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::160::0::Overfull \hbox (18.01389pt too wide) in paragraph at lines 160--166
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::167::0::Missing \begin{document}. |\begin{equation}  
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::167::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 167--167
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::169::0::Overfull \hbox (34.23947pt too wide) detected at line 169
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::169::0::Overfull \hbox (18.01389pt too wide) in paragraph at lines 169--173
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::174::0::Missing \begin{document}. |\begin{equation}  
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::174::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 174--174
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::176::0::Overfull \hbox (57.62209pt too wide) detected at line 176
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::181::0::Environment figure undefined. |\begin{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::183::0::Undefined control sequence. |\includegraphics [scale=0.15]{Chapters/03-PowerHarvesting/Photo_dripper...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::183::0::Missing \begin{document}. |\includegraphics[ scale=0.15]{Chapters/03-PowerHarvesting/Photo_dripper... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::183::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::183::0::Extra }, or forgotten $. |...oto_dripperExperiment_Inductor_draft.JPG} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::184::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::183::0::Overfull \hbox (175.14621pt too wide) in paragraph at lines 183--184
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::184::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::187::0::\caption outside float. |\protect\caption {Photo of the dropper and high voltage inductor.} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::187::0::Missing \begin{document}. |\protect\caption{P hoto of the dropper and high voltage inductor.} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::192::0::\begin{document} ended by \end{figure}. |\end{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::195::0::Environment figure undefined. |\begin{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::197::0::Undefined control sequence. |\includegraphics [scale=0.15]{Chapters/03-PowerHarvesting/Photo_dripper...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::197::0::Missing \begin{document}. |\includegraphics[ scale=0.15]{Chapters/03-PowerHarvesting/Photo_dripper... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::197::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::197::0::Extra }, or forgotten $. |..._dripperExperiment_SyringePump_draft.JPG} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::198::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::197::0::Overfull \hbox (198.74997pt too wide) in paragraph at lines 197--198
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::198::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::201::0::\caption outside float. |\protect\caption {\label{Photo_dripperExperiment_SyringePump}Syringe pu... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::201::0::Missing \begin{document}. |...bel{Photo_dripperExperiment_SyringePump}S yringe pump used to produce 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::206::0::\begin{document} ended by \end{figure}. |\end{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::210::0::Undefined control sequence. |\subsubsection {Results}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::210::0::Missing \begin{document}. |\subsubsection{R esults} 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::210::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 210--211
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::212::0::Environment figure undefined. |\begin{figure} [H] 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::212::0::Missing \begin{document}. |\begin{figure}[ H] 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::214::0::Undefined control sequence. |\includegraphics {Graphs/dripper_chargeVsVolume}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::214::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::214::0::Extra }, or forgotten $. |...degraphics{Graphs/dripper_chargeVsVolume} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::215::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::212::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 212--215
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::212::0::Overfull \hbox (77.68271pt too wide) in paragraph at lines 212--215
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::215::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::217::0::\caption outside float. |\protect\caption {\label{Graph_dripperExperiment_chargeVsVolume}Charge ... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::217::0::Missing \begin{document}. |...{Graph_dripperExperiment_chargeVsVolume}C harge on drip versus 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::219::0::\begin{document} ended by \end{figure}. |\end{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::220::0::Undefined control sequence. |...f{Graph_dripperExperiment_chargeVsVolume} shows the effect | <write> ...iment_chargeVsVolume' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::220::0::Reference `Graph_dripperExperiment_chargeVsVolume' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::228::0::Undefined control sequence. |...re_Graph_dripper_chargePerVolumeVsVolume} , it is | <write> ...rgePerVolumeVsVolume' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::228::0::Reference `Figure_Graph_dripper_chargePerVolumeVsVolume' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::217::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 217--231
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::217::0::Overfull \hbox (13.5764pt too wide) in paragraph at lines 217--231
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::217::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 217--231
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::217::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 217--231
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::232::0::Environment figure undefined. |\begin{figure} [h] 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::232::0::Missing \begin{document}. |\begin{figure}[ h] 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::234::0::Undefined control sequence. |\includegraphics {Graphs/dripper_chargePerVolumeVsVolume}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::234::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::234::0::Extra }, or forgotten $. |...s{Graphs/dripper_chargePerVolumeVsVolume} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::235::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::232::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 232--235
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::232::0::Overfull \hbox (130.18172pt too wide) in paragraph at lines 232--235
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::235::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::237::0::\caption outside float. |\protect\caption {\label{Figure_Graph_dripper_chargePerVolumeVsVolume}C... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::237::0::Missing \begin{document}. |...e_Graph_dripper_chargePerVolumeVsVolume}C harge per volume 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::237::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 237--239
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::237::0::Overfull \hbox (13.5764pt too wide) in paragraph at lines 237--239
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::241::0::\begin{document} ended by \end{figure}. |\end{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::244::0::Missing \begin{document}. |F igure \ref{Figure_Graph_dripper_chargeVsVoltage} shows the results 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::244::0::Undefined control sequence. |...ref{Figure_Graph_dripper_chargeVsVoltage} shows the results | <write> ...pper_chargeVsVoltage' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::244::0::Reference `Figure_Graph_dripper_chargeVsVoltage' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::244::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 244--249
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::244::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 244--249
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::250::0::Environment figure undefined. |\begin{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::252::0::Undefined control sequence. |\includegraphics {Graphs/dripper_chargeVsVoltage}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::252::0::Missing \begin{document}. |\includegraphics{G raphs/dripper_chargeVsVoltage} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::252::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::252::0::Extra }, or forgotten $. |...egraphics{Graphs/dripper_chargeVsVoltage} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::253::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::252::0::Overfull \hbox (77.20346pt too wide) in paragraph at lines 252--253
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::253::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::255::0::\caption outside float. |\protect\caption {\label{Figure_Graph_dripper_chargeVsVoltage}Charge on... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::255::0::Missing \begin{document}. |...el{Figure_Graph_dripper_chargeVsVoltage}C harge on drip versus 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::257::0::\begin{document} ended by \end{figure}. |\end{figure}  
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::255::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 255--258
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::260::0::Missing \begin{document}. |F igure \ref{Figure_Graph_dripper_currentVsFlow} shows the effect 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::260::0::Undefined control sequence. |... \ref{Figure_Graph_dripper_currentVsFlow} shows the effect | <write> ...ripper_currentVsFlow' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::260::0::Reference `Figure_Graph_dripper_currentVsFlow' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::260::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 260--263
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::260::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 260--263
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::264::0::Environment figure undefined. |\begin{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::266::0::Undefined control sequence. |\includegraphics {Graphs/dripper_currentVsFlow}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::266::0::Missing \begin{document}. |\includegraphics{G raphs/dripper_currentVsFlow} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::266::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::266::0::Extra }, or forgotten $. |...udegraphics{Graphs/dripper_currentVsFlow} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::267::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::266::0::Overfull \hbox (69.66536pt too wide) in paragraph at lines 266--267
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::267::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::269::0::\caption outside float. |\protect\caption {\label{Figure_Graph_dripper_currentVsFlow}Current ver... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::269::0::Missing \begin{document}. |...abel{Figure_Graph_dripper_currentVsFlow}C urrent versus flow rate 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::271::0::\begin{document} ended by \end{figure}. |\end{figure}  
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::269::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 269--272
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::269::0::Overfull \hbox (13.5764pt too wide) in paragraph at lines 269--272
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::269::0::Overfull \hbox (12.83105pt too wide) in paragraph at lines 269--272
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::275::0::Undefined control sequence. |\subsubsection {Conclusion \& discussion}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::275::0::Missing \begin{document}. |\subsubsection{C onclusion \& discussion} 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::275::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 275--276
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::277::0::Missing \begin{document}. |I ncreasing the output of the initial apparatus is possible by doing 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::277::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 277--279
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::289::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 289--299
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::301::0::Undefined control sequence. |\subsection {Scale}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::301::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 301--302
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::303::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 303--307
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::319::0::Undefined control sequence. |\subsubsection {Investigation:}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::319::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 319--320
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::321::0::Environment figure undefined. |\begin{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::323::0::Undefined control sequence. |\includegraphics {Chapters/03-PowerHarvesting/ChargedDrips_Figure_Diagr...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::323::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::323::0::Extra }, or forgotten $. |...sting/ChargedDrips_Figure_Diagram_Forces} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::324::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::323::0::Overfull \hbox (100.31627pt too wide) in paragraph at lines 323--324
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::324::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::326::0::\caption outside float. |\protect\caption {\label{Figure_Diagram_ChargedDrips_Figure_Diagram_For... 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::326::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 326--328
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::330::0::\begin{document} ended by \end{figure}. |\end{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::333::0::Undefined control sequence. |...agram_ChargedDrips_Figure_Diagram_Forces} shows | <write> ...igure_Diagram_Forces' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::333::0::Reference `Figure_Diagram_ChargedDrips_Figure_Diagram_Forces' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::333::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 333--337
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::333::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 333--337
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::338::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 338--338
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::340::0::Overfull \hbox (53.1992pt too wide) detected at line 340
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::343::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 343--343
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::345::0::Overfull \hbox (41.8954pt too wide) detected at line 345
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::348::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 348--351
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::348::0::Overfull \hbox (8.78014pt too wide) in paragraph at lines 348--351
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::348::0::Overfull \hbox (5.12846pt too wide) in paragraph at lines 348--351
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::348::0::Overfull \hbox (4.8229pt too wide) in paragraph at lines 348--351
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::348::0::Overfull \hbox (7.95831pt too wide) in paragraph at lines 348--351
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::353::0::Undefined control sequence. |\section {Design of a harvester}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::353::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 353--354
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::356::0::Undefined control sequence. |\chapter {Streaming potential cell}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::356::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 356--357
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::361::0::Undefined control sequence. |...92,Daiguji2004,VanderHeyden2006,Mala1997} . | <write> ...: Citation `\@citeb ' on page \thepage  \space undefined\on@line .
+Citation LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::361::0::Citation `Gu2000' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::361::0::Undefined control sequence. |...92,Daiguji2004,VanderHeyden2006,Mala1997} . | <write> ...: Citation `\@citeb ' on page \thepage  \space undefined\on@line .
+Citation LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::361::0::Citation `Scales1992' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::361::0::Undefined control sequence. |...92,Daiguji2004,VanderHeyden2006,Mala1997} . | <write> ...: Citation `\@citeb ' on page \thepage  \space undefined\on@line .
+Citation LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::361::0::Citation `Daiguji2004' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::361::0::Undefined control sequence. |...92,Daiguji2004,VanderHeyden2006,Mala1997} . | <write> ...: Citation `\@citeb ' on page \thepage  \space undefined\on@line .
+Citation LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::361::0::Citation `VanderHeyden2006' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::361::0::Undefined control sequence. |...92,Daiguji2004,VanderHeyden2006,Mala1997} . | <write> ...: Citation `\@citeb ' on page \thepage  \space undefined\on@line .
+Citation LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::361::0::Citation `Mala1997' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::358::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 358--366
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::358::0::Overfull \hbox (5.43053pt too wide) in paragraph at lines 358--366
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::358::0::Overfull \hbox (5.43053pt too wide) in paragraph at lines 358--366
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::358::0::Overfull \hbox (5.43053pt too wide) in paragraph at lines 358--366
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::358::0::Overfull \hbox (5.43053pt too wide) in paragraph at lines 358--366
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::358::0::Overfull \hbox (5.43053pt too wide) in paragraph at lines 358--366
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::368::0::Undefined control sequence. |\section {Background information}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::368::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 368--369
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::377::0::Undefined control sequence. |..._Diagram_ZetaPotential_and_SlippingPlane} . | <write> ...al_and_SlippingPlane' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::377::0::Reference `Figure_Diagram_ZetaPotential_and_SlippingPlane' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::370::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 370--378
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::370::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 370--378
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::391::0::Undefined control sequence. |... the suspension solutions'' \cite{Gu2000} . | <write> ...: Citation `\@citeb ' on page \thepage  \space undefined\on@line .
+Citation LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::391::0::Citation `Gu2000' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::379::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 379--392
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::379::0::Overfull \hbox (5.11285pt too wide) in paragraph at lines 379--392
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::379::0::Overfull \hbox (5.43053pt too wide) in paragraph at lines 379--392
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::393::0::Environment figure undefined. |\begin{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::395::0::Undefined control sequence. |\includegraphics [scale=0.12]{Chapters/03-PowerHarvesting/Diagram_of_ze...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::395::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::395::0::Extra }, or forgotten $. |..._potential_and_slipping_plane_thesisEdit} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::396::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::395::0::Overfull \hbox (188.51947pt too wide) in paragraph at lines 395--396
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::396::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::398::0::\caption outside float. |\centering{}\protect\caption {\label{Figure_Diagram_ZetaPotential_and_S... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::402::0::\begin{document} ended by \end{figure}. |\end{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::407::0::Undefined control sequence. |...e_Diagram_ZetaPotential_and_in_a_channel} . | <write> ...ial_and_in_a_channel' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::407::0::Reference `Figure_Diagram_ZetaPotential_and_in_a_channel' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::405::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 405--414
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::405::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 405--414
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::415::0::Environment figure undefined. |\begin{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::416::0::Undefined control sequence. |\centering{}\includegraphics [scale=0.12]{Chapters/03-PowerHarvesting/D...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::416::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::416::0::Double subscript. |...arvesting/Diagram_of_zeta_potential_in_a_ channel_thesisEdit}\protec...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::416::0::Extra }, or forgotten $. |...f_zeta_potential_in_a_channel_thesisEdit} \protect\caption{\label{Fi...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::416::0::\caption outside float. |..._in_a_channel_thesisEdit}\protect\caption {\label{Figure_Diagram_Zet... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::419::0::\begin{document} ended by \end{figure}. |\end{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::419::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::419::0::Missing } inserted. |\end{figure} 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::416::0::Overfull \hbox (754.19972pt too wide) in paragraph at lines 416--420
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::423::0::Undefined control sequence. |\section {Replicating an experiment}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::423::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 423--424
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::426::0::Undefined control sequence. |...000,Mala1997,Scales1992,VanderHeyden2006} of which | <write> ...: Citation `\@citeb ' on page \thepage  \space undefined\on@line .
+Citation LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::426::0::Citation `Gu2000' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::426::0::Undefined control sequence. |...000,Mala1997,Scales1992,VanderHeyden2006} of which | <write> ...: Citation `\@citeb ' on page \thepage  \space undefined\on@line .
+Citation LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::426::0::Citation `Mala1997' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::426::0::Undefined control sequence. |...000,Mala1997,Scales1992,VanderHeyden2006} of which | <write> ...: Citation `\@citeb ' on page \thepage  \space undefined\on@line .
+Citation LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::426::0::Citation `Scales1992' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::426::0::Undefined control sequence. |...000,Mala1997,Scales1992,VanderHeyden2006} of which | <write> ...: Citation `\@citeb ' on page \thepage  \space undefined\on@line .
+Citation LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::426::0::Citation `VanderHeyden2006' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::427::0::Undefined control sequence. |...y Yongan Gu and Dongqing Li \cite{Gu2000} to | <write> ...: Citation `\@citeb ' on page \thepage  \space undefined\on@line .
+Citation LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::427::0::Citation `Gu2000' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::433::0::Undefined control sequence. |...e \ref{Table_StreamingCell_MaterialsUsed} . | <write> ...ngCell_MaterialsUsed' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::433::0::Reference `Table_StreamingCell_MaterialsUsed' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::425::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 425--434
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::425::0::Overfull \hbox (5.43053pt too wide) in paragraph at lines 425--434
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::425::0::Overfull \hbox (5.43053pt too wide) in paragraph at lines 425--434
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::425::0::Overfull \hbox (5.43053pt too wide) in paragraph at lines 425--434
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::425::0::Overfull \hbox (5.43053pt too wide) in paragraph at lines 425--434
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::425::0::Overfull \hbox (5.43053pt too wide) in paragraph at lines 425--434
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::425::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 425--434
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::436::0::Undefined control sequence. |\subsection {\label{sub:Experimental-Procedure}Experimental Procedure}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::436::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 436--437
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::439::0::Undefined control sequence. |\subsubsection {Construction}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::439::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 439--440
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::441::0::Environment figure undefined. |\begin{figure} [p] 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::443::0::Undefined control sequence. |\includegraphics [width=0.5\textwidth]{Chapters/03-PowerHarvesting/Phot...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::443::0::Missing number, treated as zero. |\includegraphics[width=0.5\textwidth] {Chapters/03-PowerHarvesting/Phot...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::443::0::Illegal unit of measure (pt inserted). |\includegraphics[width=0.5\textwidth] {Chapters/03-PowerHarvesting/Phot...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::443::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::443::0::Extra }, or forgotten $. |...to_streamingPotential_Assembly_Step1.JPG} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::444::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::441::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 441--444
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::441::0::Overfull \hbox (178.9733pt too wide) in paragraph at lines 441--444
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::444::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::446::0::\caption outside float. |\centering{}\protect\caption {\label{Photo_streamingPotential_Assembly_... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::448::0::\begin{document} ended by \end{figure}. |\end{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::449::0::Environment figure undefined. |\begin{figure} [p] 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::451::0::Undefined control sequence. |\includegraphics [width=0.5\textwidth]{Chapters/03-PowerHarvesting/Phot...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::451::0::Missing number, treated as zero. |\includegraphics[width=0.5\textwidth] {Chapters/03-PowerHarvesting/Phot...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::451::0::Illegal unit of measure (pt inserted). |\includegraphics[width=0.5\textwidth] {Chapters/03-PowerHarvesting/Phot...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::451::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::451::0::Extra }, or forgotten $. |...to_streamingPotential_Assembly_Step2.JPG} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::452::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::446::0::Overfull \hbox (178.9733pt too wide) in paragraph at lines 446--452
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::452::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::454::0::\caption outside float. |\centering{}\protect\caption {\label{Photo_streamingPotential_Assembly_... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::456::0::\begin{document} ended by \end{figure}. |\end{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::457::0::Environment figure undefined. |\begin{figure} [p] 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::459::0::Undefined control sequence. |\includegraphics [width=0.5\textwidth]{Chapters/03-PowerHarvesting/Phot...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::459::0::Missing number, treated as zero. |\includegraphics[width=0.5\textwidth] {Chapters/03-PowerHarvesting/Phot...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::459::0::Illegal unit of measure (pt inserted). |\includegraphics[width=0.5\textwidth] {Chapters/03-PowerHarvesting/Phot...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::459::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::459::0::Extra }, or forgotten $. |...to_streamingPotential_Assembly_Step3.JPG} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::460::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::454::0::Overfull \hbox (178.9733pt too wide) in paragraph at lines 454--460
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::460::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::462::0::\caption outside float. |\centering{}\protect\caption {\label{Photo_streamingPotential_Assembly_... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::464::0::\begin{document} ended by \end{figure}. |\end{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::465::0::Environment figure undefined. |\begin{figure}  
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::462::0::Overfull \hbox (30.76843pt too wide) in paragraph at lines 462--477
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::478::0::\caption outside float. |\protect\caption {\label{Table_StreamingCell_MaterialsUsed}Table of mat... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::480::0::\begin{document} ended by \end{figure}. |\end{figure}  
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::478::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 478--481
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::485::0::Undefined control sequence. |...{Photo_streamingPotential_Assembly_Step1} . | <write> ...ntial_Assembly_Step1' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::485::0::Reference `Photo_streamingPotential_Assembly_Step1' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::490::0::Undefined control sequence. |...{Photo_streamingPotential_Assembly_Step2} . Each | <write> ...ntial_Assembly_Step2' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::490::0::Reference `Photo_streamingPotential_Assembly_Step2' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::495::0::Undefined control sequence. |...{Photo_streamingPotential_Assembly_Step3} . | <write> ...ntial_Assembly_Step3' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::495::0::Reference `Photo_streamingPotential_Assembly_Step3' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::483::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 483--496
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::483::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 483--496
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::483::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 483--496
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::483::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 483--496
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::498::0::Undefined control sequence. |\subsubsection {Measurement}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::498::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 498--499
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::500::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 500--512
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::500::0::Overfull \hbox (16.1215pt too wide) in paragraph at lines 500--512
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::514::0::Undefined control sequence. |\subsection {Results}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::514::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 514--515
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::518::0::Undefined control sequence. |...ef{sec:Appendix-Streaming-Potential-Cell} . | <write> ...aming-Potential-Cell' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::518::0::Reference `sec:Appendix-Streaming-Potential-Cell' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::520::0::Undefined control sequence. |...reamingCell_voltVsPress_52um_convienient} , | <write> ...ess_52um_convienient' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::520::0::Reference `fig:streamingCell_voltVsPress_52um_convienient' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::516::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 516--522
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::516::0::Overfull \hbox (14.80562pt too wide) in paragraph at lines 516--522
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::516::0::Overfull \hbox (14.80562pt too wide) in paragraph at lines 516--522
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::516::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 516--522
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::516::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 516--522
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::516::0::Overfull \hbox (14.80562pt too wide) in paragraph at lines 516--522
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::523::0::Environment figure undefined. |\begin{figure} [H] 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::524::0::Undefined control sequence. |\centering{}\includegraphics {Graphs/StreamingPotential/streamingCell_v...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::524::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::524::0::Extra }, or forgotten $. |...ntial/streamingCell_voltVsPress_52um_out} \protect\caption{\label{fi...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::524::0::\caption outside float. |...ell_voltVsPress_52um_out}\protect\caption {\label{fig:streamingCell_... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::525::0::Missing } inserted. |... voltage output versus pressure for a 52$ \,\mu m$ glass micro-chann...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::525::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::526::0::\begin{document} ended by \end{figure}. |\end{figure}  
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::523::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 523--527
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::523::0::Overfull \hbox (352.6821pt too wide) in paragraph at lines 523--527
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::529::0::Undefined control sequence. |...ear that there is a definite \nobreakdash -
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::530::0::Undefined control sequence. |linear \nobreakdash - relationship between the amount of pressure
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::531::0::Undefined control sequence. |...g:streamingCell_scatter_voltGradVsHeight}  | <write> ...ter_voltGradVsHeight' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::531::0::Reference `fig:streamingCell_scatter_voltGradVsHeight' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::529::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 529--539
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::529::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 529--539
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::529::0::Overfull \hbox (14.80562pt too wide) in paragraph at lines 529--539
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::529::0::Overfull \hbox (14.80562pt too wide) in paragraph at lines 529--539
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::540::0::Environment figure undefined. |\begin{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::542::0::Undefined control sequence. |\includegraphics {Graphs/StreamingPotential/streamingCell_slopeVsChanne...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::542::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::542::0::Extra }, or forgotten $. |...ntial/streamingCell_slopeVsChannelHeight} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::543::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::542::0::Overfull \hbox (105.21172pt too wide) in paragraph at lines 542--543
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::543::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::545::0::\caption outside float. |\protect\caption {\label{fig:streamingCell_scatter_voltGradVsHeight}Sca... 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::545::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 545--548
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::550::0::\begin{document} ended by \end{figure}. |\end{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::554::0::Undefined control sequence. |\subsection {Conclusion}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::554::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 554--555
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::556::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 556--564
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::556::0::Overfull \hbox (14.80562pt too wide) in paragraph at lines 556--564
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::566::0::Undefined control sequence. |\section {Governing model}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::566::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 566--567
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::569::0::Undefined control sequence. |\subsection {Charge separation analysis}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::569::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 569--570
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::571::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 571--577
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::578::0::Undefined control sequence. |Quoting Tandon et al. in \cite{Tandon2008} : Many microfluidic substrates | <write> ...: Citation `\@citeb ' on page \thepage  \space undefined\on@line .
+Citation LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::578::0::Citation `Tandon2008' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::578::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 578--582
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::578::0::Overfull \hbox (5.43053pt too wide) in paragraph at lines 578--582
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::583::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 583--583
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::584::0::Undefined control sequence. |SiOH\overset {^{K_{a}}}{\mathbf{\rightleftharpoons}}SiO^{-}+H^{+}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::585::0::Overfull \hbox (97.12631pt too wide) detected at line 585
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::588::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 588--594
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::597::0::Undefined control sequence. |...wall of the channel'' \cite{Mansouri2005} . | <write> ...: Citation `\@citeb ' on page \thepage  \space undefined\on@line .
+Citation LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::597::0::Citation `Mansouri2005' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::600::0::Undefined control sequence. |...ds on the zeta potential''\cite{Park2009}  | <write> ...: Citation `\@citeb ' on page \thepage  \space undefined\on@line .
+Citation LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::600::0::Citation `Park2009' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::595::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 595--601
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::595::0::Overfull \hbox (5.43053pt too wide) in paragraph at lines 595--601
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::595::0::Overfull \hbox (5.43053pt too wide) in paragraph at lines 595--601
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::603::0::Undefined control sequence. |\subsection {\label{sub:StreamingCell-Mathematics}Mathematics}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::603::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 603--604
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::608::0::Undefined control sequence. |is defined in \cite{Olthuis2005} to be: | <write> ...: Citation `\@citeb ' on page \thepage  \space undefined\on@line .
+Citation LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::608::0::Citation `Olthuis2005' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::605::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 605--609
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::605::0::Overfull \hbox (5.43053pt too wide) in paragraph at lines 605--609
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::610::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 610--610
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::612::0::Overfull \hbox (76.09837pt too wide) detected at line 612
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::614::0::Environment description undefined. |\begin{description}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::615::0::Lonely \item--perhaps a missing list environment. |\item [{$\varepsilon_{0}$}] is the permittivity of free space 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::616::0::Lonely \item--perhaps a missing list environment. |\item [{$\varepsilon_{r}$}] is the relative permittivity of the liquid 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::617::0::Lonely \item--perhaps a missing list environment. |\item [{$\eta$}] is the viscosity of the liquid 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::618::0::Lonely \item--perhaps a missing list environment. |\item [{$l$}] is the length of the channel 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::619::0::Lonely \item--perhaps a missing list environment. |\item [{$\Delta P$}] is the pressure difference across the channel 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::620::0::Lonely \item--perhaps a missing list environment. |\item [{$\zeta$}] is the zeta-potential of the of the glass-liquid int... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::621::0::Lonely \item--perhaps a missing list environment. |\item [{$A$}] is the cross-sectional area of the channel, or combined 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::623::0::\begin{document} ended by \end{description}. |\end{description}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::627::0::Undefined control sequence. |...ef{eq:StreamingCell_StreamingCurrentFunc}  | <write> ...StreamingCurrentFunc' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::627::0::Reference `eq:StreamingCell_StreamingCurrentFunc' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::621::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 621--629
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::629::0::Overfull \hbox (112.55392pt too wide) in alignment at lines 629--635
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::638::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 638--643
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::638::0::Overfull \hbox (12.77464pt too wide) in paragraph at lines 638--643
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::638::0::Overfull \hbox (12.3658pt too wide) in paragraph at lines 638--643
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::638::0::Overfull \hbox (8.67017pt too wide) in paragraph at lines 638--643
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::638::0::Overfull \hbox (12.77464pt too wide) in paragraph at lines 638--643
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::638::0::Overfull \hbox (12.77464pt too wide) in paragraph at lines 638--643
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::644::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 644--646
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::644::0::Overfull \hbox (8.46959pt too wide) in paragraph at lines 644--646
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::647::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 647--648
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::649::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 649--649
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::651::0::Overfull \hbox (28.96931pt too wide) detected at line 651
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::654::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 654--657
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::654::0::Overfull \hbox (6.0729pt too wide) in paragraph at lines 654--657
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::654::0::Overfull \hbox (7.50002pt too wide) in paragraph at lines 654--657
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::654::0::Overfull \hbox (3.18057pt too wide) in paragraph at lines 654--657
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::658::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 658--658
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::660::0::Overfull \hbox (38.64291pt too wide) detected at line 660
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::663::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 663--665
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::666::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 666--666
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Overfull \hbox (47.88338pt too wide) detected at line 668
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::The font size command \normalsize is not defined: |\end{equation}  | there is probably something wrong with the class file. 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...terDripper_OriginalDevice}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...Dripper_ChargingMechanism}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...iagram_KelvinWaterDripper}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...eplicating-the-experiment}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...o_dripperExperiment_Setup}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...Drawing_ExperimentalSetup}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...ripperExperiment_Inductor}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...perExperiment_SyringePump}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...Experiment_chargeVsVolume}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...r_chargePerVolumeVsVolume}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...h_dripper_chargeVsVoltage}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...aph_dripper_currentVsFlow}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...ips_Figure_Diagram_Forces}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...tential_and_SlippingPlane}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...otential_and_in_a_channel}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...ub:Experimental-Procedure}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...gPotential_Assembly_Step1}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...gPotential_Assembly_Step2}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...gPotential_Assembly_Step3}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...reamingCell_MaterialsUsed}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...tVsPress_52um_convienient}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ..._scatter_voltGradVsHeight}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...StreamingCell-Mathematics}{{}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...ell_StreamingCurrentFunc}{{6}{\thepage  }}
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::668::0::Undefined control sequence. |\end{equation}  | <write> ...nt_HydrostaticResistance}{{7}{\thepage  }}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::671::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 671--673
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::671::0::Overfull \hbox (6.0729pt too wide) in paragraph at lines 671--673
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::671::0::Overfull \hbox (10.10765pt too wide) in paragraph at lines 671--673
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::674::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 674--676
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::674::0::Overfull \hbox (8.67017pt too wide) in paragraph at lines 674--676
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::674::0::Overfull \hbox (8.46959pt too wide) in paragraph at lines 674--676
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::678::0::Undefined control sequence. |\subsection {\label{sub:Electrical-model}Electrical model}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::678::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 678--679
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::680::0::Undefined control sequence. |...g:StreamingCell_Schematic-representation} depicts schematically | <write> ...matic-representation' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::680::0::Reference `fig:StreamingCell_Schematic-representation' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::682::0::Undefined control sequence. |...sed upon that found in \cite{Olthuis2005} by Olthuis | <write> ...: Citation `\@citeb ' on page \thepage  \space undefined\on@line .
+Citation LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::682::0::Citation `Olthuis2005' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::687::0::Undefined control sequence. |...ef{sec:Appendix-Streaming-Potential-Cell} , | <write> ...aming-Potential-Cell' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::687::0::Reference `sec:Appendix-Streaming-Potential-Cell' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::680::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 680--690
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::680::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 680--690
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::680::0::Overfull \hbox (5.43053pt too wide) in paragraph at lines 680--690
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::680::0::Overfull \hbox (16.1424pt too wide) in paragraph at lines 680--690
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::680::0::Overfull \hbox (5.11285pt too wide) in paragraph at lines 680--690
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::680::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 680--690
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::680::0::Overfull \hbox (10.10765pt too wide) in paragraph at lines 680--690
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::680::0::Overfull \hbox (16.1424pt too wide) in paragraph at lines 680--690
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::680::0::Overfull \hbox (10.10765pt too wide) in paragraph at lines 680--690
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::680::0::Overfull \hbox (8.67017pt too wide) in paragraph at lines 680--690
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::691::0::Environment figure undefined. |\begin{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::693::0::Undefined control sequence. |\includegraphics [scale=0.55]{Chapters/03-PowerHarvesting/StreamingCell...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::693::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::693::0::Extra }, or forgotten $. |...g/StreamingCell_EquivalentCircuit_output} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::694::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::693::0::Overfull \hbox (110.04561pt too wide) in paragraph at lines 693--694
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::694::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::696::0::\caption outside float. |\protect\caption {\label{fig:StreamingCell_Schematic-representation}Sch... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::698::0::\begin{document} ended by \end{figure}. |\end{figure}  
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::696::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 696--699
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::702::0::Undefined control sequence. |\subsection {Output analysis}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::702::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 702--703
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::704::0::Undefined control sequence. |...l described in \ref{sub:Electrical-model} shows | <write> ...sub:Electrical-model' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::704::0::Reference `sub:Electrical-model' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::706::0::Undefined control sequence. |... from \ref{sub:StreamingCell-Mathematics}  | <write> ...mingCell-Mathematics' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::706::0::Reference `sub:StreamingCell-Mathematics' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::704::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 704--709
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::704::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 704--709
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::704::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 704--709
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::710::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 710--710
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::710::0::Overfull \hbox (149.35007pt too wide) in alignment at lines 710--717
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::721::0::Undefined control sequence. |\subsubsection {Finding an optimum value for $R_{out}$}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::721::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 721--722
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::721::0::Overfull \hbox (19.78902pt too wide) in paragraph at lines 721--722
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::725::0::Undefined control sequence. |... Equation \ref{eq:DeterminingOutputPower} . | <write> ...terminingOutputPower' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::725::0::Reference `eq:DeterminingOutputPower' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::723::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 723--729
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::723::0::Overfull \hbox (23.72469pt too wide) in paragraph at lines 723--729
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::723::0::Overfull \hbox (19.78902pt too wide) in paragraph at lines 723--729
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::723::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 723--729
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::723::0::Overfull \hbox (19.78902pt too wide) in paragraph at lines 723--729
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::730::0::Undefined control sequence. |... Equation \ref{eq:DeterminingOutputPower} and treat the | <write> ...terminingOutputPower' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::730::0::Reference `eq:DeterminingOutputPower' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::730::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 730--734
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::730::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 730--734
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::730::0::Overfull \hbox (8.67017pt too wide) in paragraph at lines 730--734
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::730::0::Overfull \hbox (19.78902pt too wide) in paragraph at lines 730--734
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::735::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 735--735
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::735::0::Overfull \hbox (231.74063pt too wide) in alignment at lines 735--743
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::748::0::Undefined control sequence. |...per Figure \ref{fig:Plot-of-PowerThereom} . | <write> ...Plot-of-PowerThereom' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::748::0::Reference `fig:Plot-of-PowerThereom' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::746::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 746--757
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::746::0::Overfull \hbox (19.78902pt too wide) in paragraph at lines 746--757
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::746::0::Overfull \hbox (19.78902pt too wide) in paragraph at lines 746--757
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::746::0::Overfull \hbox (20.59967pt too wide) in paragraph at lines 746--757
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::746::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 746--757
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::746::0::Overfull \hbox (19.78902pt too wide) in paragraph at lines 746--757
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::746::0::Overfull \hbox (20.59967pt too wide) in paragraph at lines 746--757
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::758::0::Environment figure undefined. |\begin{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::760::0::Undefined control sequence. |\includegraphics {/home/mark/Dropbox/University/PhD/Thesis/Graphs/power...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::763::0::\caption outside float. |\protect\caption {\label{fig:Plot-of-PowerThereom}Plot of Equation \ref... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::763::0::Undefined control sequence. |... Equation \ref{eq:DeterminingOutputPower}  | <write> ...terminingOutputPower' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::763::0::Reference `eq:DeterminingOutputPower' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::765::0::\begin{document} ended by \end{figure}. |\end{figure}  
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::763::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 763--766
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::763::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 763--766
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::763::0::Overfull \hbox (19.22568pt too wide) in paragraph at lines 763--766
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::763::0::Overfull \hbox (12.50003pt too wide) in paragraph at lines 763--766
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::763::0::Overfull \hbox (31.15518pt too wide) in paragraph at lines 763--766
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::763::0::Overfull \hbox (12.22224pt too wide) in paragraph at lines 763--766
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::768::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 768--771
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::768::0::Overfull \hbox (8.67017pt too wide) in paragraph at lines 768--771
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::768::0::Overfull \hbox (19.78902pt too wide) in paragraph at lines 768--771
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::768::0::Overfull \hbox (20.59967pt too wide) in paragraph at lines 768--771
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::768::0::Overfull \hbox (7.67015pt too wide) in paragraph at lines 768--771
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::768::0::Overfull \hbox (30.34453pt too wide) in paragraph at lines 768--771
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::768::0::Overfull \hbox (31.15518pt too wide) in paragraph at lines 768--771
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::768::0::Overfull \hbox (7.67015pt too wide) in paragraph at lines 768--771
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::772::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 772--772
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::772::0::Overfull \hbox (153.62244pt too wide) in alignment at lines 772--776
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::782::0::Undefined control sequence. |\ref{eq:streamingCell_maxPower} and \ref{eq:StreamingCurrent_Hydrostat... | <write> ...reamingCell_maxPower' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::782::0::Reference `eq:streamingCell_maxPower' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::782::0::Undefined control sequence. |...q:StreamingCurrent_HydrostaticResistance}  | <write> ...ydrostaticResistance' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::782::0::Reference `eq:StreamingCurrent_HydrostaticResistance' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::779::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 779--784
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::779::0::Overfull \hbox (18.36455pt too wide) in paragraph at lines 779--784
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::779::0::Overfull \hbox (17.33682pt too wide) in paragraph at lines 779--784
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::779::0::Overfull \hbox (20.59967pt too wide) in paragraph at lines 779--784
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::779::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 779--784
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::779::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 779--784
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::785::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 785--785
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::785::0::Overfull \hbox (111.76886pt too wide) in alignment at lines 785--789
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::792::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 792--795
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::792::0::Overfull \hbox (15.21869pt too wide) in paragraph at lines 792--795
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::792::0::Overfull \hbox (19.90736pt too wide) in paragraph at lines 792--795
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::792::0::Overfull \hbox (18.22566pt too wide) in paragraph at lines 792--795
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::792::0::Overfull \hbox (31.15518pt too wide) in paragraph at lines 792--795
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::792::0::Overfull \hbox (19.78902pt too wide) in paragraph at lines 792--795
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::792::0::Overfull \hbox (7.67015pt too wide) in paragraph at lines 792--795
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::792::0::Overfull \hbox (12.77464pt too wide) in paragraph at lines 792--795
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::796::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 796--796
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::796::0::Overfull \hbox (117.74414pt too wide) in alignment at lines 796--804
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::808::0::Undefined control sequence. |\subsubsection {Optimisation of $R_{h}$ and $\Delta P$}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::808::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 808--809
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::808::0::Overfull \hbox (12.77464pt too wide) in paragraph at lines 808--809
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::808::0::Overfull \hbox (16.1424pt too wide) in paragraph at lines 808--809
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::812::0::Undefined control sequence. |...q:StreamingCurrent_HydrostaticResistance} indicates | <write> ...ydrostaticResistance' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::812::0::Reference `eq:StreamingCurrent_HydrostaticResistance' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::810::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 810--816
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::810::0::Overfull \hbox (8.67017pt too wide) in paragraph at lines 810--816
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::810::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 810--816
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::810::0::Overfull \hbox (12.77464pt too wide) in paragraph at lines 810--816
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::810::0::Overfull \hbox (4.83508pt too wide) in paragraph at lines 810--816
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::810::0::Overfull \hbox (16.1424pt too wide) in paragraph at lines 810--816
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::818::0::Undefined control sequence. |...re \ref{fig:Schematic-model-of-harvester} . | <write> ...c-model-of-harvester' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::818::0::Reference `fig:Schematic-model-of-harvester' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::817::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 817--824
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::817::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 817--824
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::817::0::Overfull \hbox (30.54341pt too wide) in paragraph at lines 817--824
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::817::0::Overfull \hbox (12.77464pt too wide) in paragraph at lines 817--824
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::817::0::Overfull \hbox (43.87805pt too wide) in paragraph at lines 817--824
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::817::0::Overfull \hbox (16.1424pt too wide) in paragraph at lines 817--824
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::817::0::Overfull \hbox (23.33015pt too wide) in paragraph at lines 817--824
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::817::0::Overfull \hbox (8.41391pt too wide) in paragraph at lines 817--824
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::825::0::Environment figure undefined. |\begin{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::827::0::Undefined control sequence. |\includegraphics [scale=0.55]{Chapters/03-PowerHarvesting/Harvester_equ...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::827::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::827::0::Extra }, or forgotten $. |...sting/Harvester_equivalentCircuit_output} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::828::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::827::0::Overfull \hbox (107.58415pt too wide) in paragraph at lines 827--828
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::828::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::830::0::\caption outside float. |\protect\caption {\label{fig:Schematic-model-of-harvester}Schematic mod... 
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::830::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 830--832
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::834::0::\begin{document} ended by \end{figure}. |\end{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::837::0::Environment figure undefined. |\begin{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::839::0::Undefined control sequence. |\includegraphics {/home/mark/Dropbox/University/PhD/Thesis/Graphs/power...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::839::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::839::0::Extra }, or forgotten $. |...erThereom/streamingCell_consumerModel_dP} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::840::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::839::0::Overfull \hbox (84.51689pt too wide) in paragraph at lines 839--840
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::840::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::842::0::\caption outside float. |\protect\caption {\label{fig:Effect-of-varying-Rh-onP}Effect of varying... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::843::0::Undefined control sequence. |...re \ref{fig:Schematic-model-of-harvester} .} | <write> ...c-model-of-harvester' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::843::0::Reference `fig:Schematic-model-of-harvester' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::842::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 842--844
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::842::0::Overfull \hbox (12.77464pt too wide) in paragraph at lines 842--844
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::842::0::Overfull \hbox (16.1424pt too wide) in paragraph at lines 842--844
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::842::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 842--844
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::846::0::\begin{document} ended by \end{figure}. |\end{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::849::0::Environment figure undefined. |\begin{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::851::0::Undefined control sequence. |\includegraphics {/home/mark/Dropbox/University/PhD/Thesis/Graphs/power...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::851::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::851::0::Extra }, or forgotten $. |...Thereom/streamingCell_consumerModel_flow} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::852::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::851::0::Overfull \hbox (92.68512pt too wide) in paragraph at lines 851--852
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::852::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::854::0::\caption outside float. |\protect\caption {\label{fig:Effect-of-varying-Rh-onFlow}Effect of vary... 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::855::0::Undefined control sequence. |...re \ref{fig:Schematic-model-of-harvester} .} | <write> ...c-model-of-harvester' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::855::0::Reference `fig:Schematic-model-of-harvester' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::856::0::\begin{document} ended by \end{figure}. |\end{figure}  
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::854::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 854--857
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::854::0::Overfull \hbox (12.77464pt too wide) in paragraph at lines 854--857
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::854::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 854--857
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::859::0::Environment figure undefined. |\begin{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::861::0::Undefined control sequence. |\includegraphics {/home/mark/Dropbox/University/PhD/Thesis/Graphs/power...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::861::0::Missing $ inserted.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::861::0::Extra }, or forgotten $. |...hereom/streamingCell_consumerModel_total} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::862::0::Missing $ inserted.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::861::0::Overfull \hbox (92.49063pt too wide) in paragraph at lines 861--862
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::862::0::Missing } inserted. |\par\end{centering} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::864::0::\caption outside float. |\protect\caption {\label{fig:Effect-of-varying-Rh-onIs}Effect of varyin... 
+Package Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::865::0::You haven't loaded the language english yet I'll proceed, but expect unexpected results. Reported. (babel package)
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::865::0::Undefined control sequence. |\foreignlanguage{english}{$P_{max}$} for the harvester/consumer model | \bbl@switch ...bel@beginsave }\languageshorthands  {none}\ifcase \bbl@select@...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::865::0::Undefined control sequence. |\foreignlanguage{english}{$P_{max}$} for the harvester/consumer model | \bbl@switch ...fterextras}{}\ifcase \bbl@hymapopt  \or \def \BabelLower ##1##...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::865::0::Missing number, treated as zero. |\foreignlanguage{english}{$P_{max}$} for the harvester/consumer model
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::865::0::Undefined control sequence. |\foreignlanguage{english}{$P_{max}$} for the harvester/consumer model | \bbl@switch ...l@patterns {#1}\babel@savevariable  \lefthyphenmin \babel@save...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::865::0::Undefined control sequence. |\foreignlanguage{english}{$P_{max}$} for the harvester/consumer model | \bbl@switch ...\lefthyphenmin \babel@savevariable  \righthyphenmin \expandaft...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::866::0::Undefined control sequence. |...re \ref{fig:Schematic-model-of-harvester} .} | <write> ...c-model-of-harvester' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::866::0::Reference `fig:Schematic-model-of-harvester' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::867::0::\begin{document} ended by \end{figure}. |\end{figure}  
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::868::0::Undefined control sequence. |Figures \ref{fig:Effect-of-varying-Rh-onP} , \ref{fig:Effect-of-varying... | <write> ...ct-of-varying-Rh-onP' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::868::0::Reference `fig:Effect-of-varying-Rh-onP' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::868::0::Undefined control sequence. |...P}, \ref{fig:Effect-of-varying-Rh-onFlow}  | <write> ...of-varying-Rh-onFlow' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::868::0::Reference `fig:Effect-of-varying-Rh-onFlow' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::869::0::Undefined control sequence. |and \ref{fig:Effect-of-varying-Rh-onIs} show how varying $R_{h}$ | <write> ...t-of-varying-Rh-onIs' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::869::0::Reference `fig:Effect-of-varying-Rh-onIs' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::871::0::Undefined control sequence. |...Figure \ref{fig:Effect-of-varying-Rh-onP}  | <write> ...ct-of-varying-Rh-onP' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::871::0::Reference `fig:Effect-of-varying-Rh-onP' on page  undefined.
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::875::0::Undefined control sequence. |...q:StreamingCurrent_HydrostaticResistance} ). | <write> ...ydrostaticResistance' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::875::0::Reference `eq:StreamingCurrent_HydrostaticResistance' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::864::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 864--876
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::864::0::Overfull \hbox (12.77464pt too wide) in paragraph at lines 864--876
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::864::0::Overfull \hbox (22.88863pt too wide) in paragraph at lines 864--876
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::864::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 864--876
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::864::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 864--876
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::864::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 864--876
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::864::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 864--876
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::864::0::Overfull \hbox (12.77464pt too wide) in paragraph at lines 864--876
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::864::0::Overfull \hbox (16.1424pt too wide) in paragraph at lines 864--876
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::864::0::Overfull \hbox (15.13718pt too wide) in paragraph at lines 864--876
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::864::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 864--876
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::864::0::Overfull \hbox (12.77464pt too wide) in paragraph at lines 864--876
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::864::0::Overfull \hbox (16.1424pt too wide) in paragraph at lines 864--876
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::864::0::Overfull \hbox (8.67017pt too wide) in paragraph at lines 864--876
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::864::0::Overfull \hbox (16.1424pt too wide) in paragraph at lines 864--876
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::864::0::Overfull \hbox (12.77464pt too wide) in paragraph at lines 864--876
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::864::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 864--876
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::877::0::Undefined control sequence. |Figure \ref{fig:Effect-of-varying-Rh-onFlow} shows how the value | <write> ...of-varying-Rh-onFlow' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::877::0::Reference `fig:Effect-of-varying-Rh-onFlow' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::877::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 877--882
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::877::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 877--882
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::877::0::Overfull \hbox (12.77464pt too wide) in paragraph at lines 877--882
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::883::0::Undefined control sequence. |...igure \ref{fig:Effect-of-varying-Rh-onIs} shows the effect | <write> ...t-of-varying-Rh-onIs' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::883::0::Reference `fig:Effect-of-varying-Rh-onIs' on page  undefined.
+Package Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::884::0::You haven't loaded the language english yet I'll proceed, but expect unexpected results. Reported. (babel package)
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::884::0::Undefined control sequence. |...s on \foreignlanguage{english}{$P_{max}$}  | \bbl@switch ...bel@beginsave }\languageshorthands  {none}\ifcase \bbl@select@...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::884::0::Undefined control sequence. |...s on \foreignlanguage{english}{$P_{max}$}  | \bbl@switch ...fterextras}{}\ifcase \bbl@hymapopt  \or \def \BabelLower ##1##...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::884::0::Missing number, treated as zero. |...s on \foreignlanguage{english}{$P_{max}$} 
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::884::0::Undefined control sequence. |...s on \foreignlanguage{english}{$P_{max}$}  | \bbl@switch ...l@patterns {#1}\babel@savevariable  \lefthyphenmin \babel@save...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::884::0::Undefined control sequence. |...s on \foreignlanguage{english}{$P_{max}$}  | \bbl@switch ...\lefthyphenmin \babel@savevariable  \righthyphenmin \expandaft...
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::886::0::Undefined control sequence. |... Equation \ref{eq:DeterminingOutputPower} , | <write> ...terminingOutputPower' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::886::0::Reference `eq:DeterminingOutputPower' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::883::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 883--891
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::883::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 883--891
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::883::0::Overfull \hbox (12.77464pt too wide) in paragraph at lines 883--891
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::883::0::Overfull \hbox (22.88863pt too wide) in paragraph at lines 883--891
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::883::0::Overfull \hbox (33.44414pt too wide) in paragraph at lines 883--891
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::883::0::Overfull \hbox (28.40146pt too wide) in paragraph at lines 883--891
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::883::0::Overfull \hbox (15.66837pt too wide) in paragraph at lines 883--891
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::883::0::Overfull \hbox (5.00002pt too wide) in paragraph at lines 883--891
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::883::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 883--891
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::893::0::Undefined control sequence. |\subsubsection {Optimisation of the Zeta potential}
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::893::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 893--894
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::895::0::Undefined control sequence. |...ef{eq:StreamingCell_StreamingCurrentFunc} , | <write> ...StreamingCurrentFunc' on page \thepage  \space undefined\on@line .
+Reference LaTeX Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::895::0::Reference `eq:StreamingCell_StreamingCurrentFunc' on page  undefined.
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::895::0::Overfull \hbox (20.0pt too wide) in paragraph at lines 895--903
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::895::0::Overfull \hbox (10.86105pt too wide) in paragraph at lines 895--903
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::895::0::Overfull \hbox (9.09143pt too wide) in paragraph at lines 895--903
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::895::0::Overfull \hbox (5.11285pt too wide) in paragraph at lines 895--903
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::895::0::Overfull \hbox (9.09143pt too wide) in paragraph at lines 895--903
+hbox Warning::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::895::0::Overfull \hbox (5.11285pt too wide) in paragraph at lines 895--903
+LaTeX Error::.../content/pt1/03-PowerHarvesting/chapter.tex::0::0::Emergency stop. (job aborted, no legal \end found)
+LaTeX Error::/home/mark/repos/PhD-Thesis-V2/content/pt1/03-PowerHarvesting/chapter.tex::0::0:: ==> Fatal error occurred, no output PDF file produced! 

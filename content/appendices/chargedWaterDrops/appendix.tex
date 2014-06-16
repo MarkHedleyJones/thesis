@@ -1,0 +1,327 @@
+
+In 1867 William Thomson (Lord Kelvin) described an apparatus that
+could generate electrostatic charge using drops of water (some of
+which are shown in Figure \ref{Figure_Drawing_KelvinWaterDripper_OriginalDevice})
+\cite{Thomson1867}.
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.5\textwidth]{content/pt1/01-PowerHarvesting/Figure_Drawing_KelvinWaterDripper_OriginalDevice}
+\par\end{centering}
+
+\protect\caption{Drawing of Lord Kelvin's electrostatic generator.}
+
+
+\label{Figure_Drawing_KelvinWaterDripper_OriginalDevice}
+
+\end{figure}
+ This apparatus works by inducing charge onto drops of water before
+they detached from the source of the drips. It is this apparatus that
+forms the basis for the investigation of the of charged drops of water
+to generate useful amount of power.
+
+
+\section{How charge is generated}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[height=0.25\textheight]{content/pt1/01-PowerHarvesting/Figure_Drawing_KelvinWaterDripper_ChargingMechanism}
+\par\end{centering}
+
+\protect\caption{Drawing of the charging mechanism for Lord Kelvin's electrostatic
+generator.}
+\label{Figure_Drawing_KelvinWaterDripper_ChargingMechanism}
+\end{figure}
+Figure \ref{Figure_Drawing_KelvinWaterDripper_ChargingMechanism}
+shows one of the charge generating mechanisms of Lord Kelvin's electrostatic
+generator. This mechanism is comprised of three main components, a
+jet of water that breaks to form droplets of water, an inductor surrounding
+the point at which the stream of water breaks and a receiver where
+the charged water droplets are condensed.
+
+A simplified diagram of the apparatus is shown in Figure \ref{Fig_Diagram_KelvinWaterDripper}
+and will be used to explain the concept further.
+\begin{figure}[H]
+\begin{centering}
+\includegraphics{content/pt1/01-PowerHarvesting/DripperOut}
+\par\end{centering}
+
+\protect\caption{Simplified diagram of Lord Kelvin's water dropper configuration.}
+
+
+\label{Fig_Diagram_KelvinWaterDripper}
+\end{figure}
+
+
+The diagram illustrates the charge of each element by its colour.
+Equal and opposite amounts of electrical charge are accumulated in
+each of the containers at the bottom. These containers are insulated
+from one another but are connected to the rings (near the droppers)
+of the opposite side. The rings are responsible for inducing excess
+charge on the drops (equivalent to the cylinder shaped inductor depicted
+in Figure \ref{Figure_Drawing_KelvinWaterDripper_ChargingMechanism}),
+which becomes trapped on the drop once it detaches from the dropper.
+Once detached, the drops are pulled by gravity into the containers
+below. Because the container below is charged with like charges there
+is a repulsive force between the falling drop and the container. It
+is this force acting over the distance through which the drop falls
+that is responsible for doing work (forcing the drop onto a body that
+has the same net polarity of as the drop) and thus increasing the
+voltage of the container/ring.
+
+
+\section{Replicating the experiment\label{sub:Replicating-the-experiment}}
+
+The first step toward assessing the electrostatic generators ability
+to generate energy for the water meter was to replicate the experiment.
+This work was done by a Summer Research Scholarship student Jonathon
+McMullen.
+
+
+\section{Optimising output}
+
+Once the experiment had been replicated, questions arose regarding
+how to best optimise the design.
+
+
+\subsection{Drop volume and frequency}
+
+The first optimisation question in its most practical form was ``is
+it better to have lots of small drops or less larger drops?''. To
+answer this question a more simplified experiment was performed with
+the help of another summer research student, Wayne Crump. The purpose
+of this experiment was to remove as many variables from the electrostatic
+generator experiment performed by Jonathan McMullen (see subsection
+\ref{sub:Replicating-the-experiment}) in an attempt to isolate the
+effect of varying drop size, induction voltage and flow rate, independently.
+
+
+\subsubsection{Experimental setup}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.15]{content/pt1/01-PowerHarvesting/Photo_dripperExperiment_Setup_draft.JPG}
+\par\end{centering}
+
+\centering{}\protect\caption{\label{Photo_dripperExperiment_Setup}Photo of experimental setup
+for charge on drip measurements.}
+\end{figure}
+
+
+A photo of the measurement setup can be seen in Figure \ref{Photo_dripperExperiment_Setup}.
+For clarity, a diagram of the experimental setup is shown in Figure
+\ref{ChargedDrips_Figure_Drawing_ExperimentalSetup}. As can be seen
+in this diagram, drips are formed from the end of a syringe needle,
+pass through the induction ring and land on a piece of tin foil before
+running off into a catchment container. A closeup of the needle and
+inductor is shown in Figure \ref{Photo_dripperExperiment_Inductor}.
+The frequency of drips is determined acoustically by the use of the
+microphone and the flow of water is set by the syringe pump (as shown
+in Figure \ref{Photo_dripperExperiment_SyringePump}).
+
+\begin{figure}[h]
+\begin{centering}
+\includegraphics[scale=0.9]{content/pt1/01-PowerHarvesting/ChargedDrips_Figure_Drawing_ExperimentalSetup}
+\par\end{centering}
+
+\protect\caption{\label{ChargedDrips_Figure_Drawing_ExperimentalSetup}Diagram of experimental
+setup for charge on drip experiments.}
+\end{figure}
+
+
+The volume of each drip is calculate by dividing the flow rate by
+the drip frequency. The charge on each drop of water was determined
+by dividing the average current by the drip frequency. The size of
+drips was determined largely by the size of needle used but was also
+affected by the magnitude of the induction voltage placed on the ring.
+
+Because the current being measured was so small (in the nano-amp range),
+direct measurement with a multimeter was not possible. Instead the
+multimeter (a Fluke series 115 handheld multimeter) was set to measure
+voltage in the mV range. In this setting the multimeter has an internal
+resistance of 10$\thinspace M\Omega$ (as measured with another multimeter)
+over which the voltage was being measured. Ohms law states:
+
+\begin{equation}
+V=IR
+\end{equation}
+Where V is voltage, I is current and R is resistance. Rearranging
+this equation and substituting in our resistance of 10$\thinspace M\Omega$
+we get
+
+\begin{equation}
+I=\frac{V}{10\times10^{6}}
+\end{equation}
+Where V is the output of the multimeter and I is the current through
+the multimeter, through which we assume all charge collected on the
+tin foil will flow.
+
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.15]{content/pt1/01-PowerHarvesting/Photo_dripperExperiment_Inductor_draft.JPG}
+\par\end{centering}
+
+\begin{raggedright}
+\protect\caption{Photo of the dropper and high voltage inductor.}
+
+\par\end{raggedright}
+
+\raggedright{}\label{Photo_dripperExperiment_Inductor}
+\end{figure}
+
+
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.15]{content/pt1/01-PowerHarvesting/Photo_dripperExperiment_SyringePump_draft.JPG}
+\par\end{centering}
+
+\begin{centering}
+\protect\caption{\label{Photo_dripperExperiment_SyringePump}Syringe pump used to produce
+drops and control flow rate.}
+
+\par\end{centering}
+
+\end{figure}
+
+
+
+\subsubsection{Results}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics{Graphs/dripper_chargeVsVolume}
+\par\end{centering}
+
+\protect\caption{\label{Graph_dripperExperiment_chargeVsVolume}Charge on drip versus
+drip volume for a fixed induction voltage of 2.5$\: kV$.}
+\end{figure}
+Figure \ref{Graph_dripperExperiment_chargeVsVolume} shows the effect
+that changing the volume of each drop has on the amount of charge
+bound to that drop. The shape of this curve is similar to what one
+gets when plotting the surface area of a sphere against the volume
+of a sphere. This was expected to be the case since excess charge
+will position itself evenly over the surface of the drop and hence
+be proportional to its surface area. If the same data is plotted in
+terms of charge per volume versus volume of a drip, as is shown in
+Figure \ref{Figure_Graph_dripper_chargePerVolumeVsVolume}, it is
+evident that smaller drop sizes equate to a higher charge per volume
+of water ratio.
+
+\begin{figure}[h]
+\begin{centering}
+\includegraphics{Graphs/dripper_chargePerVolumeVsVolume}
+\par\end{centering}
+
+\protect\caption{\label{Figure_Graph_dripper_chargePerVolumeVsVolume}Charge per volume
+versus drop volume for a fixed induction voltage of 2.5$\: kV$.}
+
+
+\end{figure}
+
+
+Figure \ref{Figure_Graph_dripper_chargeVsVoltage} shows the results
+of changing the induction voltage on the average charge carried per
+drop. These results indicate that the charge induced on a drop is
+proportional to the induction voltage. Variation in the measurement
+data was due to differences in room temperature.
+
+\begin{figure}
+\begin{centering}
+\includegraphics{Graphs/dripper_chargeVsVoltage}
+\par\end{centering}
+
+\protect\caption{\label{Figure_Graph_dripper_chargeVsVoltage}Charge on drip versus
+ring induction voltage for a fixed drip volume.}
+\end{figure}
+
+
+Figure \ref{Figure_Graph_dripper_currentVsFlow} shows the effect
+of increasing the flow on the output current of the measurement setup,
+which is relatively linear.
+
+\begin{figure}
+\begin{centering}
+\includegraphics{Graphs/dripper_currentVsFlow}
+\par\end{centering}
+
+\protect\caption{\label{Figure_Graph_dripper_currentVsFlow}Current versus flow rate
+for an induction voltage of 3.8$\: kV$ and drop volume of 3.1$\:\mu L$.}
+\end{figure}
+
+
+
+\subsubsection{Conclusion \& discussion}
+
+Increasing the output of the initial apparatus is possible by doing
+any of the following things:
+\begin{itemize}
+\item Favour smaller drops at higher frequencies.
+\item Increase the total flow of water through the apparatus.
+\item Increase the induction voltage.
+\end{itemize}
+Increasing the total flow through the apparatus is difficult to achieve
+as this soon has adverse effects on the formation of drops. This usually
+leads to the formation of a stream of water from the needle, reducing
+the output as the drips aren't forming within the inductor.
+
+Favouring small drops or increasing the induction voltage both increase
+the charge to mass ratio of individual drops. As this ratio increases
+the movement of the drops becomes increasingly dominated by electrostatic
+forces between the container and the drop. As this ratio increases
+so to does the tendency for drops to diverge from the path dictated
+by gravity. Eventually there comes a point where the drops no-longer
+fall and instead create a stream that loops to the nearest point on
+the induction ring. For this reason it is important that drop sizes
+are kept consistent as to maintain a stable charge to mass ratio to
+which the design can be optimised for.
+
+
+\subsection{Scale}
+
+Due to the size of the apparatus the fields generated had to be relatively
+large, requiring equally large voltages before useful amounts of power
+is generated. There are two problems with generating power at such
+large voltages:
+\begin{enumerate}
+\item Large voltage differences try very hard to neutralise each other.
+This means that the geometry and materials used may need to be modified
+in order to reduce charge migrating over insulating barriers.
+\item Stepping these voltages down to a useful level is challenging and
+would be very inefficient. Electronic components and configurations
+that would usually be used to change voltage levels no longer work.
+\end{enumerate}
+Scaling down the design would allow the device to generate its maximum
+practical output at voltages that are easier to deal with.
+
+
+\subsubsection{Investigation:}
+
+\begin{figure}
+\begin{centering}
+\includegraphics{content/pt1/01-PowerHarvesting/ChargedDrips_Figure_Diagram_Forces}
+\par\end{centering}
+
+\protect\caption{\label{Figure_Diagram_ChargedDrips_Figure_Diagram_Forces}Diagram
+of the electrostatic force and gravity acting on a drop of water.}
+
+
+\end{figure}
+
+
+Figure \ref{Figure_Diagram_ChargedDrips_Figure_Diagram_Forces} shows
+a simplified diagram of the two dominant forces acting upon a charged
+drop as it falls towards a like charged plate from a grounded plane.
+These two forces are given by the following equations:
+
+\begin{equation}
+F_{down}=mg
+\end{equation}
+
+
+\begin{equation}
+F_{up}=qE
+\end{equation}
+
+
+Where $m$ is the mass of the drop, $g$ is the acceleration due to
+gravity, $q$ is the charge on the drop and $E$ is the electric field
+strength.

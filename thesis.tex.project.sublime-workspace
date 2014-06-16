@@ -1,0 +1,673 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"targ",
+				"target_enemy"
+			],
+			[
+				"ta",
+				"taken_moves"
+			],
+			[
+				"tar",
+				"target_enemy"
+			],
+			[
+				"min",
+				"mindist"
+			],
+			[
+				"adj",
+				"adjacent_enemy2"
+			],
+			[
+				"clos",
+				"closest_enemy"
+			],
+			[
+				"pop",
+				"pop_norm"
+			],
+			[
+				"rat",
+				"rating_norm"
+			],
+			[
+				"re",
+				"reviews"
+			],
+			[
+				"di",
+				"distance"
+			],
+			[
+				"fr",
+				"factors"
+			],
+			[
+				"dis",
+				"discount"
+			],
+			[
+				"new",
+				"newDate"
+			],
+			[
+				"sea",
+				"seatInConflict"
+			],
+			[
+				"out",
+				"outputFile"
+			],
+			[
+				"Pdf",
+				"PdfFileReader"
+			],
+			[
+				"atten",
+				"attendanceGrades"
+			],
+			[
+				"seat",
+				"seatsConflict"
+			],
+			[
+				"stu",
+				"student"
+			],
+			[
+				"time",
+				"timetableData"
+			],
+			[
+				"bdr",
+				"bdr_r5"
+			],
+			[
+				"que",
+				"questionId_max"
+			],
+			[
+				"qu",
+				"questionId"
+			],
+			[
+				"question",
+				"questionId"
+			],
+			[
+				"page",
+				"pagesize"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"link",
+				"linkList"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"div",
+				"div_close"
+			],
+			[
+				"vid",
+				"videoScript"
+			],
+			[
+				"vi",
+				"videoScript"
+			],
+			[
+				"sele",
+				"selectedId"
+			],
+			[
+				"col",
+				"colwidths"
+			],
+			[
+				"end",
+				"end_tag"
+			],
+			[
+				"feed",
+				"feedback"
+			],
+			[
+				"feedb",
+				"feedbacks"
+			],
+			[
+				"OR",
+				"ORDER"
+			],
+			[
+				"sect",
+				"sectionId"
+			],
+			[
+				"int",
+				"intval"
+			],
+			[
+				"email",
+				"emailAddress"
+			],
+			[
+				"mysqli_re",
+				"mysqli_real_escape_string"
+			],
+			[
+				"bui",
+				"http_build_cookie"
+			],
+			[
+				"mysqli",
+				"mysqli_escape_string"
+			],
+			[
+				"adminit",
+				"Administrator"
+			],
+			[
+				"revo",
+				"revokee"
+			],
+			[
+				"admini",
+				"administrators"
+			],
+			[
+				"na",
+				"name_last"
+			],
+			[
+				"create",
+				"createObject"
+			],
+			[
+				"objec",
+				"objectTemplate"
+			],
+			[
+				"is_lo",
+				"is_loggedIn"
+			],
+			[
+				"table",
+				"table_headings"
+			],
+			[
+				"head",
+				"headings"
+			],
+			[
+				"_",
+				"_GET"
+			],
+			[
+				"ob_",
+				"ob_flush"
+			],
+			[
+				"sort",
+				"sortmode"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"curr",
+				"current_section"
+			],
+			[
+				"student",
+				"student_id"
+			],
+			[
+				"Studen",
+				"StudentID"
+			],
+			[
+				"databa",
+				"databaseAssistant"
+			],
+			[
+				"errot",
+				"error_toString"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"ser",
+				"server_extension_loaded"
+			],
+			[
+				"error",
+				"errorText"
+			],
+			[
+				"crea",
+				"create_errorBlock"
+			],
+			[
+				"object",
+				"objectFactory"
+			],
+			[
+				"login",
+				"loginGateway_google"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"date_def",
+				"date_default_timezone_set"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 120.0,
+		"selected_items":
+		[
+			[
+				"git pull",
+				"Git: Pull"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"git",
+				"Git: Blame"
+			],
+			[
+				"blame",
+				"BlameHighlighter: Highlight the code that you have edited"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 633.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			" import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/mark/repos/robotgame/test.py",
+		"/home/mark/repos/robotgame/simplebot.py",
+		"/home/mark/repos/robotgame/gypsy.py",
+		"/run/media/mark/data/Dropbox/diningOut.py",
+		"/run/media/mark/data/Dropbox/University/PhD/Thesis/content/pt1/01-PowerHarvesting/chapter.tex",
+		"/run/media/mark/data/Dropbox/University/PhD/Thesis/content/pt1/02-Microcontrollers/chapter.tex",
+		"/run/media/mark/data/Dropbox/University/PhD/Thesis/content/pt1/02-WirelessWaterMeter/chapter.tex",
+		"/home/mark/repos/PhD-Thesis-V2/thesis.tex",
+		"/run/media/mark/data/Dropbox/University/PhD/Thesis/thesis.tex",
+		"/home/mark/repos/PhD-Thesis-V2/content/pt1/01-PowerHarvesting/chapter.tex",
+		"/home/mark/repos/PhD-Thesis-V2/content/pt1/02-Microcontrollers/chapter.tex",
+		"/home/mark/repos/PhD-Thesis-V2/configuration.tex",
+		"/home/mark/repos/PhD-Thesis-V2/frontmatter.tex",
+		"/home/mark/repos/PhD-Thesis-V2/content/pt1/04-HarvesterDesign/chapter.tex",
+		"/home/mark/repos/PhD-Thesis-V2/content/appendices/microprocessorPowerMeasurements/appendix.tex",
+		"/home/mark/repos/PhD-Thesis-V2/content/appendices/chargedWaterDrops/appendix.tex",
+		"/home/mark/repos/PhD-Thesis-V2/content/pt2/01-ElectricalModelling/chapter.tex",
+		"/home/mark/repos/PhD-Thesis-V2/content/pt2/02-InterfaceParameters/chapter.tex",
+		"/home/mark/repos/PhD-Thesis-V2/content/introduction/02-TheDoubleLayer/chapter.tex",
+		"/home/mark/repos/PhD-Thesis-V2/content/introduction/01-LiquidsAtScale/chapter.tex",
+		"/home/mark/repos/PhD-Thesis-V2/content/appendices/01-MicroprocessorPowerMeasurements/MCUMeasurements.tex",
+		"/home/mark/repos/PhD-Thesis-V2/content/pt1/03-DataTransmission/chapter.tex",
+		"/home/mark/repos/PhD-Thesis-V2/content/appendices/01-MicroprocessorPowerMeasurements/Measurements.tex",
+		"/home/mark/repos/PhD-Thesis/content/introduction/introduction.tex",
+		"/home/mark/repos/dmenu-extended/setup.py",
+		"/home/mark/repos/dmenu-extended/dmenu_extended.py",
+		"/home/mark/repos/PhD-Thesis/thesis.sublime-project",
+		"/home/mark/repos/PhD-Thesis/thesis.tex",
+		"/home/mark/repos/PhD-Thesis/configuration.tex",
+		"/home/mark/Dropbox/University/PhD/Workbench/ElectrodeModel/Kyle/dft.py",
+		"/home/mark/repos/PhD-Thesis/.gitignore",
+		"/home/mark/.config/sublime-text-3/Packages/LaTeXSQ/support/Default (Linux).sublime-keymap",
+		"/home/mark/repos/enelTutes/public_html/tutorials/index.php",
+		"/home/mark/repos/enelTutes/public_html/practise/index.php",
+		"/home/mark/repos/enelTutes/public_html/admin/course/index.php",
+		"/home/mark/repos/enelTutes/public_html/admin/errors/index.php",
+		"/home/mark/repos/enelTutes/lib/functions.php",
+		"/home/mark/repos/enelTutes/lib/class_DatabaseAssistant.php",
+		"/home/mark/repos/enelTutes/lib/class_ObjectFactory.php",
+		"/home/mark/repos/enelTutes/public_html/login/login.php",
+		"/home/mark/repos/enelTutes/lib/class_Views.php",
+		"/home/mark/repos/enelTutes/public_html/admin/index.php",
+		"/home/mark/repos/enelTutes/public_html/static/style.css",
+		"/home/mark/repos/enelTutes/lib/class_Page.php",
+		"/home/mark/Dropbox/University/ENEL111-tutorials-2014/process.py",
+		"/home/mark/Dropbox/University/ENEL111-tutorials-2014_test/labData-20140311-1645.csv",
+		"/home/mark/Dropbox/University/ENEL111-tutorials-2014_test/labData-20140311-1645.",
+		"/home/mark/Dropbox/University/ENEL111-tutorials-2014_test/labData-20140311-1645.ods",
+		"/home/mark/Downloads/ENEL111-tutorials-2014/Friday.tex",
+		"/home/mark/repos/enelTutes/lib/PHP-HTMLifier/lib_html.php",
+		"/home/mark/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/mark/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/mark/repos/enelTutes/lib/class_Error.php",
+		"/home/mark/repos/enelTutes/lib/class_Resource.php",
+		"/home/mark/repos/enelTutes/public_html/review/index.php",
+		"/home/mark/repos/enelTutes/public_html/profile/index.php",
+		"/home/mark/repos/enelTutes/public_html/messages/index.php",
+		"/home/mark/repos/enelTutes/public_html/login/index.php",
+		"/home/mark/repos/enelTutes/public_html/feedback/index.php",
+		"/home/mark/repos/enelTutes/public_html/admin/users/index.php",
+		"/home/mark/repos/enelTutes/public_html/admin/students/index.php",
+		"/home/mark/repos/enelTutes/public_html/admin/resources/index.php",
+		"/home/mark/repos/enelTutes/public_html/index.php",
+		"/home/mark/repos/enelTutes/public_html/admin/linker/index.php",
+		"/home/mark/repos/enelTutes/public_html/admin/feedback/index.php",
+		"/home/mark/repos/enelTutes/public_html/admin/data/index.php",
+		"/home/mark/repos/enelTutes/public_html/admin/course/unlock/index.php",
+		"/home/mark/repos/enelTutes/public_html/admin/administrators/index.php",
+		"/mnt/testServer/lib/functions.php",
+		"/home/mark/repos/enelTutes/lib/class_DataBaseHandler.php",
+		"/home/mark/repos/enelTutes/lib/class_User.php",
+		"/home/mark/repos/enelTutes/lib/class_Question.php",
+		"/var/www/enelTutes/sql_backup/2013-11-12-database_data-userTablePopulated.sql",
+		"/home/mark/.config/sublime-text-3/Packages/LiveReload/LiveReload.sublime-settings",
+		"/var/www/enelTutes/lib/class_ObjectFactory.php",
+		"/var/www/enelTutes/public_html/profile/index.php",
+		"/var/www/enelTutes/lib/functions.php",
+		"/var/www/enelTutes/public_html/login_orig/login.php",
+		"/var/www/enelTutes/lib/class_DataBaseHandler.php",
+		"/home/mark/.config/sublime-text-3/Packages/User/LiveReload.sublime-settings",
+		"/var/www/enelTutes/lib/class_Action.php",
+		"/var/www/enelTutes/lib/class_DatabaseAssistant.php",
+		"/home/mark/.config/sublime-text-3/Packages/Phpcs/phpcs.sublime-settings",
+		"/home/mark/.config/sublime-text-3/Packages/PHP Companion/PHP Companion.sublime-settings",
+		"/var/www/enelTutes/public_html/login/bootstrap.php",
+		"/var/www/enelTutes/public_html/login/login.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 92.0,
+		"where_history":
+		[
+			"",
+			"->flag_changed()",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\\)\\,\\(",
+			")\\,(",
+			"),(",
+			"\\.([A-z]*) ",
+			"\\.([A-z]*)\\s",
+			".distance.max",
+			".distance.min",
+			"date",
+			"section{",
+			"palatin",
+			"content/appendices/01-MicroprocessorPowerMeasurements/",
+			"Appendices/Power_Consumption/Graphs/",
+			"content/appendices/01-MicroprocessorPowerMeasuremets/",
+			"Appendices/Power_Consumption/",
+			"Chapters/03-PowerHarvesting/",
+			"$admin",
+			"display_noStudentsPage",
+			"new BasePage",
+			"new Page",
+			"Add a new question",
+			"$ct",
+			"RESOURCE_TYPES",
+			"$GLOBALS['RESOURCE_TYPES']",
+			"youtube",
+			"boolval",
+			"l tr ",
+			"left",
+			"delete(",
+			"delete()",
+			"delete",
+			"var_ex",
+			"var_dump",
+			"'loaded'",
+			"loaded",
+			"assembleFrom",
+			"getObject",
+			"user_fromEmail",
+			"id_deleted",
+			"quickQuery(",
+			"quickFetch(",
+			"quickQuery(",
+			"quickFetch(",
+			"quickFetch",
+			"$objectType",
+			"right",
+			"users_getAll",
+			"resources_question_getAll",
+			"get_Question_Resources",
+			"resources_getAll",
+			"sections_getAll",
+			"question_client_lastPractise",
+			"flag_user",
+			"check_user_flagged",
+			"get_totalQuestionsAnswered",
+			"get_marksForSection",
+			"get_sequentialMarksForSection",
+			"clean",
+			"flush",
+			"header_urls",
+			"->changed()",
+			"?message=",
+			"get_identifier",
+			"is_identifiable",
+			"action_clientQuestion_given",
+			"flag_changed()",
+			"->changed()",
+			"changed()",
+			"exists()",
+			"table()",
+			"get_ResourceLinks",
+			"get_AllResources",
+			"get_SectionResources",
+			"get_Questionslist_inSection",
+			"get_SectionResources_QuestionSpecific",
+			"get_ResourceLinks",
+			"get_Questionslist_inSection",
+			"get_SectionResources_QuestionSpecific",
+			"if ($result->num_rows == 0) return False;"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"),\\n(",
+			"['\\1'] ",
+			"['\\1']",
+			"['distance']['max']",
+			"['distance']['min']",
+			"subsection{",
+			"content/appendices/microprocessorPowerMeasurements/",
+			"content/appendices/01-MicroprocessorPowerMeasurements/Graphs/",
+			"content/appendices/01-MicroprocessorPowerMeasurements/",
+			"content/appendices/01-MicroprocessorPowerMeasuremets/",
+			"content/pt1/01-PowerHarvesting/",
+			"$error",
+			"$out",
+			"c tr ",
+			"center",
+			"fetchRows(",
+			"$className",
+			"left",
+			"resources_question_getAll",
+			"table_headings",
+			"?msg=",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "thesis.tex.project.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 327.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
