@@ -87,7 +87,7 @@ Vdd  & Tiny13V  & Tiny25V  & 12F675  & 16F1827  & M9S08QG8\tabularnewline
 \end{table}
 \begin{figure}
 \begin{centering}
-\includegraphics{content/appendices/microprocessorPowerMeasurements/Graphs/Graph_All_Sleeping_Power}
+\includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_All_Sleeping_Power}
 \par\end{centering}
 
 \protect\caption{\label{fig:All_SleepPower}Power usage of each microprocessor while
@@ -175,7 +175,7 @@ Vdd  & 9.6 MHz  & 4.8 MHz  & 1.2 MHz  & 600 kHz  & 128 kHz  & 16 kHz\tabularnewl
 \end{sidewaystable}
 \begin{figure}
 \begin{centering}
-\includegraphics{content/appendices/microprocessorPowerMeasurements/Graphs/Graph_ATtiny13V_Clock_Current}
+\includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Current}
 \par\end{centering}
 
 \protect\caption{
@@ -187,7 +187,7 @@ while clocking
 \end{figure}
 \begin{figure}
 \begin{centering}
-\includegraphics{content/appendices/microprocessorPowerMeasurements/Graphs/Graph_ATtiny13V_Clock_Power}
+\includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Power}
 \par\end{centering}
 
 \protect\caption{
@@ -197,7 +197,7 @@ while clocking
 \end{figure}
 \begin{figure}
 \begin{centering}
-\includegraphics{content/appendices/microprocessorPowerMeasurements/Graphs/Graph_ATtiny13V_Clock_JPI}
+\includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_JPI}
 \par\end{centering}
 
 \protect\caption{
@@ -280,7 +280,7 @@ Vdd  & 16 MHz  & 8 MHz  & 6.4 MHz  & 2 MHz  & 1 MHz  & 800 kHz  & 128 kHz  & 16 
 \end{sidewaystable}
 \begin{figure}
 \begin{centering}
-\includegraphics{content/appendices/microprocessorPowerMeasurements/Graphs/Graph_ATtiny13V_Clock_Current}
+\includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Current}
 \par\end{centering}
 
 \protect\caption{\label{fig:ATtiny25VClkCurrent}Current consumption of the Atmel ATtiny25V
@@ -290,7 +290,7 @@ while clocking}
 \end{figure}
 \begin{figure}
 \begin{centering}
-\includegraphics{content/appendices/microprocessorPowerMeasurements/Graphs/Graph_ATtiny25V_Clock_Power}
+\includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny25V_Clock_Power}
 \par\end{centering}
 
 \protect\caption{
@@ -302,7 +302,7 @@ while clocking
 \end{figure}
 \begin{figure}
 \begin{centering}
-\includegraphics{content/appendices/microprocessorPowerMeasurements/Graphs/Graph_ATtiny25V_Clock_JPI}
+\includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny25V_Clock_JPI}
 \par\end{centering}
 
 \protect\caption{
@@ -383,7 +383,7 @@ Vdd  & 32 MHz  & 16 MHz  & 8 MHz  & 4 MHz  & 2 MHz  & 1 MHz  & 500 kHz  & 31 kHz
 \end{sidewaystable}
 \begin{figure}
 \begin{centering}
-\includegraphics{content/appendices/microprocessorPowerMeasurements/Graphs/Graph_PIC16F1827_Clock_Current}
+\includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_Current}
 \par\end{centering}
 
 \protect\caption{\label{fig:16F1827ClkCurrent}Current consumption of the Microchip
@@ -393,7 +393,7 @@ PIC16F1827 while clocking}
 \end{figure}
 \begin{figure}
 \begin{centering}
-\includegraphics{content/appendices/microprocessorPowerMeasurements/Graphs/Graph_PIC16F1827_Clock_Power}
+\includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_Power}
 \par\end{centering}
 
 \protect\caption{
@@ -405,7 +405,7 @@ while clocking
 \end{figure}
 \begin{figure}
 \begin{centering}
-\includegraphics{content/appendices/microprocessorPowerMeasurements/Graphs/Graph_PIC16F1827_Clock_JPI}
+\includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_JPI}
 \par\end{centering}
 
 \protect\caption{
@@ -435,12 +435,12 @@ Programming fuses were all disabled (Watchdog, brown-out detect, clock
 divider) and clock selection was set to `Int. RC Osc 128kHz; Start-up
 time; 14 CK + 0ms'
 
-\lstinputlisting[caption={ATtiny25V Sleep Proceedure},label={code:ATtiny25VSleepCode}]{content/appendices/microprocessorPowerMeasurements/Microcontrollers/ATtiny13V/Sleep.c}
+\lstinputlisting[caption={ATtiny25V Sleep Proceedure},label={code:ATtiny25VSleepCode}]{content/appendices/microprocessorPowerMeasurements/code/ATtiny13V_sleep.c}
 
 
 \subsubsection{Clocking}
 
-\lstinputlisting[caption={ATtiny25V Clocking Proceedure},label={code:ATtiny25VClockingCode}]{content/appendices/microprocessorPowerMeasurements/Microcontrollers/ATtiny13V/Clocking_old/Clocking.c}
+\lstinputlisting[caption={ATtiny25V Clocking Proceedure},label={code:ATtiny25VClockingCode}]{content/appendices/microprocessorPowerMeasurements/code/ATtiny13V_clocking.c}
 
 
 \subsection{Microchip 12F675}
@@ -474,14 +474,14 @@ The assembler version gave a lower sleep current than the C version,
 probably not as a result of the compiler but as due to a more thorough
 initialisation routine.
 
-\lstinputlisting[caption={16F1827 Sleep Proceedure - HI-TECH C version},label={code:PIC16F1827SleepCodeC}]{content/appendices/microprocessorPowerMeasurements/Microcontrollers/PIC16F1827/sleep.c}
+\lstinputlisting[caption={16F1827 Sleep Proceedure - HI-TECH C version},label={code:PIC16F1827SleepCodeC}]{content/appendices/microprocessorPowerMeasurements/code/PIC16F1827_sleep.c}
 
-\lstinputlisting[caption={16F1827 Sleep Proceedure - MPASM assembler version},label={code:PIC16F1827SleepCodeASM}]{content/appendices/microprocessorPowerMeasurements/Microcontrollers/PIC16F1827/sleep.asm}
+\lstinputlisting[caption={16F1827 Sleep Proceedure - MPASM assembler version},label={code:PIC16F1827SleepCodeASM}]{content/appendices/microprocessorPowerMeasurements/code/PIC16F1827_sleep.asm}
 
 
 \subsubsection{Clocking}
 
-\lstinputlisting[caption={PIC16F1827 Clocking Proceedure},label={code:PIC16F1827ClockingCode}]{content/appendices/microprocessorPowerMeasurements/Microcontrollers/PIC16F1827/Clocking/MPLAB/main.c}
+\lstinputlisting[caption={PIC16F1827 Clocking Proceedure},label={code:PIC16F1827ClockingCode}]{content/appendices/microprocessorPowerMeasurements/code/PIC16F1827_clocking.c}
 
 
 \subsection{Freescale M9S08QG8}
@@ -492,4 +492,4 @@ and downloaded using a supplied USB demo board (DEMO9S08QG8E).
 
 \subsubsection{Sleep}
 
-\lstinputlisting[caption={M9S08QG8 Clocking Proceedure},label={code:M9S08QG8ClockingCode}]{content/appendices/microprocessorPowerMeasurements/Microcontrollers/MC9S08QG8/sleep.c}
+\lstinputlisting[caption={M9S08QG8 Sleep Proceedure},label={code:M9S08QG8ClockingCode}]{content/appendices/microprocessorPowerMeasurements/code/MC9S08QG8_sleep.c}

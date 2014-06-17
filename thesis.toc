@@ -1,0 +1,102 @@
+\select@language {english}
+\contentsline {part}{I\hspace {1em}Introduction}{10}{part.1}
+\contentsline {chapter}{\numberline {1}Liquids at Scale}{12}{chapter.1}
+\contentsline {section}{\numberline {1.1}Liquids at scale}{12}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}The Promise of Molecular simulation}{13}{subsection.1.1.1}
+\contentsline {chapter}{\numberline {2}Interfacial Double Layers}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}Physical Description}{15}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Illustrated formation of a double layer}{15}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Criteria for formation}{17}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Electrical Behaviour}{17}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Capacitive Action}{17}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Methods of Modelling}{17}{subsection.2.2.2}
+\contentsline {part}{II\hspace {1em}Double Layers On Insulators}{20}{part.2}
+\contentsline {chapter}{\numberline {3}Harvesting Energy}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}The streaming potential cell}{21}{section.3.1}
+\contentsline {section}{\numberline {3.2}Replicating an experiment}{23}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Experimental Procedure}{23}{subsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Construction}{23}{subsubsection.3.2.1.1}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Measurement}{23}{subsubsection.3.2.1.2}
+\contentsline {subsection}{\numberline {3.2.2}Results}{25}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Conclusion}{25}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Governing model}{26}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Charge separation analysis}{26}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Mathematics}{27}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Electrical model}{28}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Output analysis}{29}{subsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.4.1}Finding an optimum value for $R_{out}$}{29}{subsubsection.3.3.4.1}
+\contentsline {subsubsection}{\numberline {3.3.4.2}Optimisation of $R_{h}$ and $\Delta P$}{32}{subsubsection.3.3.4.2}
+\contentsline {subsubsection}{\numberline {3.3.4.3}Optimisation of the Zeta potential}{35}{subsubsection.3.3.4.3}
+\contentsline {chapter}{\numberline {4}Wireless Water Metering}{36}{chapter.4}
+\contentsline {chapter}{\numberline {5}Energy Requirements}{37}{chapter.5}
+\contentsline {section}{\numberline {5.1}Microcontroller}{37}{section.5.1}
+\contentsline {section}{\numberline {5.2}Selection}{37}{section.5.2}
+\contentsline {section}{\numberline {5.3}Power consumption}{38}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Test conditions}{38}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Sleeping}{38}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Processing}{40}{subsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.3.1}Behind the scenes }{40}{subsubsection.5.3.3.1}
+\contentsline {subsubsection}{\numberline {5.3.3.2}Power consumed while processing}{42}{subsubsection.5.3.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3.3}Joules of energy consumed per instruction cycle}{46}{subsubsection.5.3.3.3}
+\contentsline {subsubsection}{\numberline {5.3.3.4}Performance benchmark}{46}{subsubsection.5.3.3.4}
+\contentsline {subsection}{\numberline {5.3.4}Non-volatile memory}{48}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.5}Analog-to-digital conversions.}{49}{subsection.5.3.5}
+\contentsline {section}{\numberline {5.4}Data Transmission}{50}{section.5.4}
+\contentsline {section}{\numberline {5.5}Power Consumption}{50}{section.5.5}
+\contentsline {chapter}{\numberline {6}Harvester Design}{52}{chapter.6}
+\contentsline {section}{\numberline {6.1}The first prototype}{52}{section.6.1}
+\contentsline {part}{III\hspace {1em}Double layers on conductors}{53}{part.3}
+\contentsline {chapter}{\numberline {7}Electrically Modelling an Interface}{54}{chapter.7}
+\contentsline {section}{\numberline {7.1}Jonathan Scott's SPICE Model}{54}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Resistor Ladder}{54}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}CPE}{54}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Diodes}{54}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Memristor}{54}{subsection.7.1.4}
+\contentsline {chapter}{\numberline {8}Determining Interface Parameters}{55}{chapter.8}
+\contentsline {section}{\numberline {8.1}Scaling of parameters with salinity}{55}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Small-signal scaling}{55}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}CPE scaling}{55}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Diode scaling}{55}{subsection.8.1.3}
+\contentsline {subsection}{\numberline {8.1.4}Discussion}{55}{subsection.8.1.4}
+\contentsline {section}{\numberline {8.2}Biological parameter measurements}{55}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}CPE in-vivo}{55}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}CPE butchered sheep}{55}{subsection.8.2.2}
+\contentsline {subsection}{\numberline {8.2.3}Discussion}{55}{subsection.8.2.3}
+\contentsline {section}{\numberline {8.3}Faradaic Currents}{55}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}DC Measuement}{55}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Discussion}{55}{subsection.8.3.2}
+\contentsline {section}{\numberline {8.4}TO REHOME - RECYCLE THIS}{55}{section.8.4}
+\contentsline {part}{IV\hspace {1em}Appendices}{57}{part.4}
+\contentsline {chapter}{\numberline {A}Alternative Energy Harvester}{58}{appendix.A}
+\contentsline {section}{\numberline {A.1}How charge is generated}{59}{section.A.1}
+\contentsline {section}{\numberline {A.2}Replicating the experiment}{60}{section.A.2}
+\contentsline {section}{\numberline {A.3}Optimising output}{61}{section.A.3}
+\contentsline {subsection}{\numberline {A.3.1}Drop volume and frequency}{61}{subsection.A.3.1}
+\contentsline {subsubsection}{\numberline {A.3.1.1}Experimental setup}{62}{subsubsection.A.3.1.1}
+\contentsline {subsubsection}{\numberline {A.3.1.2}Results}{65}{subsubsection.A.3.1.2}
+\contentsline {subsubsection}{\numberline {A.3.1.3}Conclusion \& discussion}{65}{subsubsection.A.3.1.3}
+\contentsline {subsection}{\numberline {A.3.2}Scale}{66}{subsection.A.3.2}
+\contentsline {subsubsection}{\numberline {A.3.2.1}Investigation:}{68}{subsubsection.A.3.2.1}
+\contentsline {chapter}{\numberline {B}Microprocessor Power Measurements}{70}{appendix.B}
+\contentsline {section}{\numberline {B.1}Measurement scripts}{70}{section.B.1}
+\contentsline {subsection}{\numberline {B.1.1}E5270 Scripts}{70}{subsection.B.1.1}
+\contentsline {section}{\numberline {B.2}Measurement data}{70}{section.B.2}
+\contentsline {subsection}{\numberline {B.2.1}Chips sleeping}{70}{subsection.B.2.1}
+\contentsline {subsection}{\numberline {B.2.2}Clocking}{72}{subsection.B.2.2}
+\contentsline {subsubsection}{\numberline {B.2.2.1}ATtiny13V}{72}{subsubsection.B.2.2.1}
+\contentsline {subsubsection}{\numberline {B.2.2.2}ATtiny25V}{72}{subsubsection.B.2.2.2}
+\contentsline {subsubsection}{\numberline {B.2.2.3}Microchip PIC16F1827}{72}{subsubsection.B.2.2.3}
+\contentsline {section}{\numberline {B.3}Microprocessor Test Code}{72}{section.B.3}
+\contentsline {subsection}{\numberline {B.3.1}ATMEL ATtiny13V and ATtiny25}{72}{subsection.B.3.1}
+\contentsline {subsubsection}{\numberline {B.3.1.1}Sleep}{72}{subsubsection.B.3.1.1}
+\contentsline {subsubsection}{\numberline {B.3.1.2}Clocking}{84}{subsubsection.B.3.1.2}
+\contentsline {subsection}{\numberline {B.3.2}Microchip 12F675}{84}{subsection.B.3.2}
+\contentsline {subsubsection}{\numberline {B.3.2.1}Sleep}{84}{subsubsection.B.3.2.1}
+\contentsline {subsection}{\numberline {B.3.3}Microchip 16F1827}{84}{subsection.B.3.3}
+\contentsline {subsubsection}{\numberline {B.3.3.1}Sleep}{85}{subsubsection.B.3.3.1}
+\contentsline {subsubsection}{\numberline {B.3.3.2}Clocking}{87}{subsubsection.B.3.3.2}
+\contentsline {subsection}{\numberline {B.3.4}Freescale M9S08QG8}{88}{subsection.B.3.4}
+\contentsline {subsubsection}{\numberline {B.3.4.1}Sleep}{88}{subsubsection.B.3.4.1}
+\contentsline {chapter}{\numberline {C}Streaming Cell Mesaurements}{90}{appendix.C}
+\contentsline {section}{\numberline {C.1}Streaming Potential Cell Measurements}{90}{section.C.1}
+\contentsline {chapter}{Bibliography}{90}{section*.6}

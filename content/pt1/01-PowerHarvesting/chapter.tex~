@@ -218,7 +218,7 @@ the cavity, thereby slightly altering each cavity's dimensions.
 
 \begin{figure}
 \begin{centering}
-\includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_slopeVsChannelHeight}
+\includegraphics{Graphs/StreamingPotential/streamingCell_slopeVsChannelHeight}
 \par\end{centering}
 
 \protect\caption{\label{fig:streamingCell_scatter_voltGradVsHeight}Scatter plot of

@@ -157,7 +157,7 @@ tin foil will flow.
 
 \begin{figure}
 \begin{centering}
-\includegraphics[scale=0.15]{content/appendices/chargedWaterDrops/graphics/Photo_dripperExperiment_Inductor_draft.JPG}
+\includegraphics[scale=0.15]{content/pt1/01-PowerHarvesting/Photo_dripperExperiment_Inductor_draft.JPG}
 \par\end{centering}
 
 \begin{raggedright}
@@ -171,7 +171,7 @@ tin foil will flow.
 
 \begin{figure}
 \begin{centering}
-\includegraphics[scale=0.15]{content/appendices/chargedWaterDrops/graphics/Photo_dripperExperiment_SyringePump_draft.JPG}
+\includegraphics[scale=0.15]{content/pt1/01-PowerHarvesting/Photo_dripperExperiment_SyringePump_draft.JPG}
 \par\end{centering}
 
 \begin{centering}
@@ -188,7 +188,7 @@ drops and control flow rate.}
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics{content/appendices/chargedWaterDrops/graphics/dripper_chargeVsVolume}
+\includegraphics{Graphs/dripper_chargeVsVolume}
 \par\end{centering}
 
 \protect\caption{\label{Graph_dripperExperiment_chargeVsVolume}Charge on drip versus
@@ -208,7 +208,7 @@ of water ratio.
 
 \begin{figure}[h]
 \begin{centering}
-\includegraphics{content/appendices/chargedWaterDrops/graphics/dripper_chargePerVolumeVsVolume}
+\includegraphics{Graphs/dripper_chargePerVolumeVsVolume}
 \par\end{centering}
 
 \protect\caption{\label{Figure_Graph_dripper_chargePerVolumeVsVolume}Charge per volume
@@ -226,7 +226,7 @@ data was due to differences in room temperature.
 
 \begin{figure}
 \begin{centering}
-\includegraphics{content/appendices/chargedWaterDrops/graphics/dripper_chargeVsVoltage}
+\includegraphics{Graphs/dripper_chargeVsVoltage}
 \par\end{centering}
 
 \protect\caption{\label{Figure_Graph_dripper_chargeVsVoltage}Charge on drip versus
@@ -240,7 +240,7 @@ which is relatively linear.
 
 \begin{figure}
 \begin{centering}
-\includegraphics{content/appendices/chargedWaterDrops/graphics/dripper_currentVsFlow}
+\includegraphics{Graphs/dripper_currentVsFlow}
 \par\end{centering}
 
 \protect\caption{\label{Figure_Graph_dripper_currentVsFlow}Current versus flow rate
@@ -297,7 +297,7 @@ practical output at voltages that are easier to deal with.
 
 \begin{figure}
 \begin{centering}
-\includegraphics{content/appendices/chargedWaterDrops/graphics/ChargedDrips_Figure_Diagram_Forces}
+\includegraphics{content/pt1/01-PowerHarvesting/ChargedDrips_Figure_Diagram_Forces}
 \par\end{centering}
 
 \protect\caption{\label{Figure_Diagram_ChargedDrips_Figure_Diagram_Forces}Diagram

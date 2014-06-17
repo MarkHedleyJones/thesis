@@ -1,6 +1,6 @@
-" ATP project vim script: Wed Jun 11, 2014 at 03:22 PM +1200.
+" ATP project vim script: Tue Jun 17, 2014 at 05:58 PM +1200.
 
-let b:atp_MainFile = 'introduction.tex'
+let b:atp_MainFile = 'title.tex'
 let g:atp_mapNn = 0
 let b:atp_autex = 1
 let b:atp_TexCompiler = 'pdflatex'
@@ -8,9 +8,9 @@ let b:atp_TexOptions = '-synctex=1'
 let b:atp_TexFlavor = 'tex'
 let b:atp_auruns = '1'
 let b:atp_ReloadOnError = '1'
-let b:atp_OutDir = '/home/mark/repos/PhD-Thesis-V2/content/introduction'
+let b:atp_OutDir = '/home/mark/repos/Thesis'
 let b:atp_OpenViewer = '1'
-let b:atp_XpdfServer = 'introduction'
+let b:atp_XpdfServer = 'title'
 let b:atp_Viewer = 'okular'
 let b:TreeOfFiles = {}
 let b:ListOfFiles = []

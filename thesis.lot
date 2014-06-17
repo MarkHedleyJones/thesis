@@ -1,0 +1,21 @@
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Feature comparison of selected MCUs.}}{39}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Instruction set size for each tested MCU.}}{41}{table.5.2}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {B.1}{\ignorespaces Raw sleep measurements (Vdd 1.8V -- 5.5V)}}{71}{table.B.1}
+\contentsline {table}{\numberline {B.2}{\ignorespaces Atmel ATtiny13V clocking current (Vdd 1.8V -- 3.6V).}}{73}{table.B.2}
+\contentsline {table}{\numberline {B.3}{\ignorespaces Atmel ATtiny13V clocking current (Vdd 3.7V -- 5.5V).}}{74}{table.B.3}
+\contentsline {table}{\numberline {B.4}{\ignorespaces Atmel ATtiny25V clocking current (Vdd 3.7V -- 5.5V)}}{77}{table.B.4}
+\contentsline {table}{\numberline {B.5}{\ignorespaces Atmel ATtiny25V clocking current (VDD 3.7V -- 5.5V)}}{78}{table.B.5}
+\contentsline {table}{\numberline {B.6}{\ignorespaces Microchip PIC16F1827 clocking current (Vdd 0V -- 3.6V)}}{80}{table.B.6}
+\contentsline {table}{\numberline {B.7}{\ignorespaces Microchip PIC16F1827 clocking current (Vdd 3.7V -- 5.5V)}}{81}{table.B.7}
+\addvspace {10\p@ }

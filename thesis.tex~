@@ -18,15 +18,15 @@
 \chapter*{Acknowledgement}
 %\phantomsection\addcontentsline{toc}{chapter}{Acknowledgement}
 \input{content/acknowledgement}
-ienrstiesrnitsnr
+
 
 %% Part 1 - Introduction
 \part{Introduction}
-babies are sick
     \chapter{Liquids at Scale}
         \input{content/introduction/01-LiquidsAtScale/chapter}
     \chapter{Interfacial Double Layers}
         \input{content/introduction/02-TheDoubleLayer/chapter}
+
 
 %% Part 2 - Double layers on insulators
 \part{\label{part:doubleLayersOnInsulators}Double Layers On Insulators}
@@ -65,4 +65,3 @@ babies are sick
 \bibliography{bibliography}
 
 \end{document}
-

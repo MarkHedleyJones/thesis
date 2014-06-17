@@ -1,0 +1,1430 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.6.17)  17 JUN 2014 17:59
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**/home/mark/repos/Thesis/thesis.tex
+(/home/mark/repos/Thesis/thesis.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+(./configuration.tex (/usr/share/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/share/texmf-dist/tex/latex/psnfss/mathpazo.sty
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
+) (/usr/share/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+ (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)) (/usr/share/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+ (/usr/share/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+)) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+ (/usr/share/texmf-dist/tex/latex/base/latin9.def
+File: latin9.def 2008/03/30 v1.1d Input encoding file
+)) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/12/03 3.9h The Babel package
+ (/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+ (/usr/share/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/12/03 3.9h Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)) (/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks17
+\verbatim@line=\toks18
+\verbatim@in@stream=\read1
+) (/usr/share/texmf-dist/tex/latex/prettyref/prettyref.sty
+Package: prettyref 1998/07/09 v3.0
+) (/usr/share/texmf-dist/tex/latex/refstyle/refstyle.sty
+Package: refstyle 2010/11/02 v0.5 Reference formatting (DNJ Els)
+Package refstyle Info: Config file refstyle.cfg used on input line 322.
+ (/usr/share/texmf-dist/tex/latex/refstyle/refstyle.cfg
+File: refstyle.cfg 2010/11/02 0.5 Configuration file for refstyle (DNJ Els)
+Package refstyle Info: New reference template \newref{part} on input line 468.
+Package refstyle Info: \partkey created on input line 468.
+Package refstyle Info: \partlabel created on input line 468.
+Package refstyle Info: \partref created on input line 468.
+Package refstyle Info: \Partref created on input line 468.
+Package refstyle Info: \partrangeref created on input line 468.
+Package refstyle Info: \Partrangeref created on input line 468.
+Package refstyle Info: \partpageref created on input line 468.
+Package refstyle Info: New reference template \newref{chap} on input line 501.
+Package refstyle Info: \chapkey created on input line 501.
+Package refstyle Info: \chaplabel created on input line 501.
+Package refstyle Info: \chapref created on input line 501.
+Package refstyle Info: \Chapref created on input line 501.
+Package refstyle Info: \chaprangeref created on input line 501.
+Package refstyle Info: \Chaprangeref created on input line 501.
+Package refstyle Info: \chappageref created on input line 501.
+Package refstyle Info: New reference template \newref{sec} on input line 511.
+Package refstyle Info: \seckey created on input line 511.
+Package refstyle Info: \seclabel created on input line 511.
+Package refstyle Info: \secref created on input line 511.
+Package refstyle Info: \Secref created on input line 511.
+Package refstyle Info: \secrangeref created on input line 511.
+Package refstyle Info: \Secrangeref created on input line 511.
+Package refstyle Info: \secpageref created on input line 511.
+Package refstyle Info: New reference template \newref{eq} on input line 526.
+Package refstyle Info: \eqkey created on input line 526.
+Package refstyle Info: \eqlabel created on input line 526.
+Package refstyle Info: \eqref created on input line 526.
+Package refstyle Info: \Eqref created on input line 526.
+Package refstyle Info: \eqrangeref created on input line 526.
+Package refstyle Info: \Eqrangeref created on input line 526.
+Package refstyle Info: \eqpageref created on input line 526.
+Package refstyle Info: New reference template \newref{fig} on input line 544.
+Package refstyle Info: \figkey created on input line 544.
+Package refstyle Info: \figlabel created on input line 544.
+Package refstyle Info: \figref created on input line 544.
+Package refstyle Info: \Figref created on input line 544.
+Package refstyle Info: \figrangeref created on input line 544.
+Package refstyle Info: \Figrangeref created on input line 544.
+Package refstyle Info: \figpageref created on input line 544.
+Package refstyle Info: New reference template \newref{tab} on input line 553.
+Package refstyle Info: \tabkey created on input line 553.
+Package refstyle Info: \tablabel created on input line 553.
+Package refstyle Info: \tabref created on input line 553.
+Package refstyle Info: \Tabref created on input line 553.
+Package refstyle Info: \tabrangeref created on input line 553.
+Package refstyle Info: \Tabrangeref created on input line 553.
+Package refstyle Info: \tabpageref created on input line 553.
+Package refstyle Info: New reference template \newref{fn} on input line 568.
+Package refstyle Info: \fnkey created on input line 568.
+Package refstyle Info: \fnlabel created on input line 568.
+Package refstyle Info: \fnref created on input line 568.
+Package refstyle Info: \Fnref created on input line 568.
+Package refstyle Info: \fnrangeref created on input line 568.
+Package refstyle Info: \Fnrangeref created on input line 568.
+Package refstyle Info: \fnpageref created on input line 568.
+)) (/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count89
+\float@exts=\toks19
+\float@box=\box26
+\@float@everytoks=\toks20
+\@floatcapt=\box27
+) (/usr/share/texmf-dist/tex/latex/rotfloat/rotfloat.sty
+Package: rotfloat 2004/01/04 v1.2 Combining float+rotating package (AS)
+ (/usr/share/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+ (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+) (/usr/share/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+ (/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+ (/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+) (/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count90
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+) (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count91
+\rotFPtop=\skip43
+\rotFPbot=\skip44
+\rot@float@box=\box28
+\rot@mess@toks=\toks21
+)
+Package rotfloat Info: float package v1.3 detected on input line 74.
+) (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+ (/usr/share/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+) (/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+ (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks22
+\ex@=\dimen106
+)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen107
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip11
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks23
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks24
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks25
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+) (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (/usr/share/texmf-dist/tex/latex/nomencl/nomencl.sty
+Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
+\nomlabelwidth=\dimen115
+\nom@tempdim=\dimen116
+\nomitemsep=\skip48
+)
+\@nomenclaturefile=\write3
+\openout3 = `thesis.nlo'.
+
+
+Writing nomenclature file thesis.nlo
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+ (/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+ (/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+) (/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+) (/usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+) (/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen117
+\Hy@linkcounter=\count104
+\Hy@pagecounter=\count105
+ (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count106
+ (/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4319.
+ (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `pdfusetitle' set `true' on input line 4319.
+Package hyperref Info: Option `bookmarks' set `true' on input line 4319.
+Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 4319.
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 4319.
+Package hyperref Info: Option `breaklinks' set `false' on input line 4319.
+Package hyperref Info: Option `colorlinks' set `false' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing ON on input line 4461.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+ (/usr/share/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2012/07/25 v1.38 Bibliographical back referencing
+ (/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+))
+\c@Hy@tempcnt=\count107
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen118
+\Fld@menulength=\count108
+\Field@Width=\dimen119
+\Fld@charsize=\dimen120
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing ON on input line 6308.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count109
+\c@Item=\count110
+\c@Hfootnote=\count111
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count112
+\c@bookmark@seq@number=\count113
+\Hy@SectionHShift=\skip49
+)
+\@float@every@algorithm=\toks27
+\c@algorithm=\count114
+Package refstyle Info: New reference template \newref{sub} on input line 54.
+Package refstyle Info: \subkey created on input line 54.
+Package refstyle Info: \sublabel created on input line 54.
+Package refstyle Info: \subref created on input line 54.
+Package refstyle Info: \Subref created on input line 54.
+Package refstyle Info: \subrangeref created on input line 54.
+Package refstyle Info: \Subrangeref created on input line 54.
+Package refstyle Info: \subpageref created on input line 54.
+Package refstyle Info: New reference template \newref{thm} on input line 57.
+Package refstyle Info: \thmkey created on input line 57.
+Package refstyle Info: \thmlabel created on input line 57.
+Package refstyle Info: \thmref created on input line 57.
+Package refstyle Info: \Thmref created on input line 57.
+Package refstyle Info: \thmrangeref created on input line 57.
+Package refstyle Info: \Thmrangeref created on input line 57.
+Package refstyle Info: \thmpageref created on input line 57.
+Package refstyle Info: New reference template \newref{lem} on input line 60.
+Package refstyle Info: \lemkey created on input line 60.
+Package refstyle Info: \lemlabel created on input line 60.
+Package refstyle Info: \lemref created on input line 60.
+Package refstyle Info: \Lemref created on input line 60.
+Package refstyle Info: \lemrangeref created on input line 60.
+Package refstyle Info: \Lemrangeref created on input line 60.
+Package refstyle Info: \lempageref created on input line 60.
+ (/usr/share/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count115
+\c@@ppsavesec=\count116
+\c@@ppsaveapp=\count117
+) (/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count118
+\lst@gtempboxa=\box31
+\lst@token=\toks28
+\lst@length=\count119
+\lst@currlwidth=\dimen121
+\lst@column=\count120
+\lst@pos=\count121
+\lst@lostspace=\dimen122
+\lst@width=\dimen123
+\lst@newlines=\count122
+\lst@lineno=\count123
+\lst@maxwidth=\dimen124
+ (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+\c@lstnumber=\count124
+\lst@skipnumbers=\count125
+\lst@framebox=\box32
+) (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2013/08/26 1.5b listings configuration
+))
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
+ (/usr/share/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
+\MT@toks=\toks29
+\MT@count=\count126
+LaTeX Info: Redefining \textls on input line 766.
+\MT@outer@kern=\dimen125
+LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
+\MT@listname@count=\count127
+ (/usr/share/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
+\MT@outer@space=\skip50
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (/usr/share/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
+)) (/usr/share/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
+) (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen126
+\lightrulewidth=\dimen127
+\cmidrulewidth=\dimen128
+\belowrulesep=\dimen129
+\belowbottomsep=\dimen130
+\aboverulesep=\dimen131
+\abovetopsep=\dimen132
+\cmidrulesep=\dimen133
+\cmidrulekern=\dimen134
+\defaultaddspace=\dimen135
+\@cmidla=\count128
+\@cmidlb=\count129
+\@aboverulesep=\dimen136
+\@belowrulesep=\dimen137
+\@thisruleclass=\count130
+\@lastruleclass=\count131
+\@thisrulewidth=\dimen138
+) (/usr/share/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip51
+\LTright=\skip52
+\LTpre=\skip53
+\LTpost=\skip54
+\LTchunksize=\count132
+\LTcapwidth=\dimen139
+\LT@head=\box33
+\LT@firsthead=\box34
+\LT@foot=\box35
+\LT@lastfoot=\box36
+\LT@cols=\count133
+\LT@rows=\count134
+\c@LT@tables=\count135
+\c@LT@chunks=\count136
+\LT@p@ftn=\toks30
+) (/usr/share/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+ (/usr/share/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+) (/usr/share/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty
+Package: anyfontsize 2007/11/22 anyfontsize.sty by pts
+) (/usr/share/texmf-dist/tex/latex/quotchap/quotchap.sty
+Package: quotchap 2012/10/20 v1.1 Decorative Chapter Headings with Quotes
+\@quotebox=\box37
+) (/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box38
+\beforetitleunit=\skip55
+\aftertitleunit=\skip56
+\ttl@plus=\dimen140
+\ttl@minus=\dimen141
+\ttl@toksa=\toks31
+\titlewidth=\dimen142
+\titlewidthlast=\dimen143
+\titlewidthfirst=\dimen144
+) (/usr/share/texmf-dist/tex/latex/titlesec/block.tss
+File: block.tss 2011/12/15
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 117.
+) (/home/mark/repos/Thesis/.tmp/2EFsY7/thesis.aux)
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 4.
+ (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 4.
+ (/usr/share/texmf-dist/tex/latex/psnfss/t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+) (/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count137
+\scratchdimen=\dimen145
+\scratchbox=\box39
+\nofMPsegments=\count138
+\nofMParguments=\count139
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count140
+\MPscratchDim=\dimen146
+\MPnumerator=\count141
+\makeMPintoPDFobject=\count142
+\everyMPtoPDFconversion=\toks33
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+ (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+ (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\AtBeginShipoutBox=\box40
+Package hyperref Info: Link coloring ON on input line 4.
+ (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+ (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count143
+)
+LaTeX Info: Redefining \ref on input line 4.
+LaTeX Info: Redefining \pageref on input line 4.
+LaTeX Info: Redefining \nameref on input line 4.
+ (/home/mark/repos/Thesis/.tmp/2EFsY7/thesis.out) (/home/mark/repos/Thesis/.tmp/2EFsY7/thesis.out)
+\@outlinefile=\write4
+\openout4 = `thesis.out'.
+
+\c@lstlisting=\count144
+LaTeX Info: Redefining \microtypecontext on input line 4.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+ (/usr/share/texmf-dist/tex/latex/microtype/mt-ppl.cfg
+File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
+) (./frontmatter.tex
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 35.
+ <Waik-Print-PMS-V.pdf, id=410, 119.44624pt x 155.58125pt>
+File: Waik-Print-PMS-V.pdf Graphic file (type pdf)
+ <use Waik-Print-PMS-V.pdf>
+Package pdftex.def Info: Waik-Print-PMS-V.pdf used on input line 44.
+(pdftex.def)             Requested size: 119.44594pt x 155.58086pt.
+ [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Waik-Print-PMS-V.pdf>])
+LaTeX Font Info:    Try loading font information for T1+phv on input line 8.
+ (/usr/share/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `phv' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 8.
+ (/home/mark/repos/Thesis/.tmp/2EFsY7/thesis.toc
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 4.
+ (/usr/share/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 4.
+ (/usr/share/texmf-dist/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 4.
+ (/usr/share/texmf-dist/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 4.
+ (/usr/share/texmf-dist/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 4.
+ (/usr/share/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `zplm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 4.
+ (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 4.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 4.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 4.
+ (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 4.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 4.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.30 ...{4}Wireless Water Metering}{36}{chapter.4}
+                                                   [1
+
+] [2])
+\tf@toc=\write5
+\openout5 = `thesis.toc'.
+
+ [3] (/home/mark/repos/Thesis/.tmp/2EFsY7/thesis.lof [4
+
+] [5])
+\tf@lof=\write6
+\openout6 = `thesis.lof'.
+
+ [6] (/home/mark/repos/Thesis/.tmp/2EFsY7/thesis.lot)
+\tf@lot=\write7
+\openout7 = `thesis.lot'.
+
+
+No file thesis.nls.
+[7
+
+] (./content/abstract.tex) [8
+
+] (./content/acknowledgement.tex) [9
+
+]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <100> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 24.
+ [10
+
+] [11]
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <40> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 26.
+(./content/introduction/01-LiquidsAtScale/chapter.tex
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 5.
+ <content/introduction/graphics/polarWater.pdf, id=758, 84.50117pt x 64.56038pt>
+File: content/introduction/graphics/polarWater.pdf Graphic file (type pdf)
+ <use content/introduction/graphics/polarWater.pdf>
+Package pdftex.def Info: content/introduction/graphics/polarWater.pdf used on input line 12.
+(pdftex.def)             Requested size: 84.50096pt x 64.56021pt.
+ [12
+
+ <./content/introduction/graphics/polarWater.pdf>] [13]) [14]
+Chapter 2.
+(./content/introduction/02-TheDoubleLayer/chapter.tex <content/introduction/graphics/doubleLayer_labelled.pdf, id=775, 346.29375pt x 316.18124pt>
+File: content/introduction/graphics/doubleLayer_labelled.pdf Graphic file (type pdf)
+ <use content/introduction/graphics/doubleLayer_labelled.pdf>
+Package pdftex.def Info: content/introduction/graphics/doubleLayer_labelled.pdf used on input line 4.
+(pdftex.def)             Requested size: 346.2929pt x 316.18047pt.
+
+Overfull \hbox (1.2929pt too wide) in paragraph at lines 4--5
+ [] 
+ []
+
+[15
+
+] [16 <./content/introduction/graphics/doubleLayer_labelled.pdf>] <content/introduction/graphics/doubleLayer_t0.pdf, id=2521, 346.29375pt x 200.75pt>
+File: content/introduction/graphics/doubleLayer_t0.pdf Graphic file (type pdf)
+ <use content/introduction/graphics/doubleLayer_t0.pdf>
+Package pdftex.def Info: content/introduction/graphics/doubleLayer_t0.pdf used on input line 26.
+(pdftex.def)             Requested size: 346.2929pt x 200.7495pt.
+ <content/introduction/graphics/doubleLayer_t1.pdf, id=2522, 346.29375pt x 200.75pt>
+File: content/introduction/graphics/doubleLayer_t1.pdf Graphic file (type pdf)
+ <use content/introduction/graphics/doubleLayer_t1.pdf>
+Package pdftex.def Info: content/introduction/graphics/doubleLayer_t1.pdf used on input line 27.
+(pdftex.def)             Requested size: 346.2929pt x 200.7495pt.
+ <content/introduction/graphics/doubleLayer_t2.pdf, id=2523, 346.29375pt x 200.75pt>
+File: content/introduction/graphics/doubleLayer_t2.pdf Graphic file (type pdf)
+ <use content/introduction/graphics/doubleLayer_t2.pdf>
+Package pdftex.def Info: content/introduction/graphics/doubleLayer_t2.pdf used on input line 28.
+(pdftex.def)             Requested size: 346.2929pt x 200.7495pt.
+
+Overfull \hbox (1.2929pt too wide) in paragraph at lines 26--29
+ [] 
+ []
+
+
+Overfull \hbox (1.2929pt too wide) in paragraph at lines 26--29
+ [] 
+ []
+
+
+Overfull \hbox (1.2929pt too wide) in paragraph at lines 26--29
+ [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 42.06844pt on input line 32.
+
+<content/introduction/graphics/doubleLayer_t3.pdf, id=2524, 346.29375pt x 200.75pt>
+File: content/introduction/graphics/doubleLayer_t3.pdf Graphic file (type pdf)
+ <use content/introduction/graphics/doubleLayer_t3.pdf>
+Package pdftex.def Info: content/introduction/graphics/doubleLayer_t3.pdf used on input line 36.
+(pdftex.def)             Requested size: 346.2929pt x 200.7495pt.
+ <content/introduction/graphics/doubleLayer_t4.pdf, id=2525, 346.29375pt x 200.75pt>
+File: content/introduction/graphics/doubleLayer_t4.pdf Graphic file (type pdf)
+ <use content/introduction/graphics/doubleLayer_t4.pdf>
+Package pdftex.def Info: content/introduction/graphics/doubleLayer_t4.pdf used on input line 37.
+(pdftex.def)             Requested size: 346.2929pt x 200.7495pt.
+ <content/introduction/graphics/doubleLayer_t6.pdf, id=2526, 346.29375pt x 200.75pt>
+File: content/introduction/graphics/doubleLayer_t6.pdf Graphic file (type pdf)
+ <use content/introduction/graphics/doubleLayer_t6.pdf>
+Package pdftex.def Info: content/introduction/graphics/doubleLayer_t6.pdf used on input line 39.
+(pdftex.def)             Requested size: 346.2929pt x 200.7495pt.
+
+Overfull \hbox (1.2929pt too wide) in paragraph at lines 36--40
+ [] 
+ []
+
+
+Overfull \hbox (1.2929pt too wide) in paragraph at lines 36--40
+ [] 
+ []
+
+
+Overfull \hbox (1.2929pt too wide) in paragraph at lines 36--40
+ [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 42.06844pt on input line 43.
+
+) [17] [18 <./content/introduction/graphics/doubleLayer_t0.pdf> <./content/introduction/graphics/doubleLayer_t1.pdf
+
+pdfTeX warning: pdflatex (file ./content/introduction/graphics/doubleLayer_t1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./content/introduction/graphics/doubleLayer_t2.pdf
+
+pdfTeX warning: pdflatex (file ./content/introduction/graphics/doubleLayer_t2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [19 <./content/introduction/graphics/doubleLayer_t3.pdf> <./content/introduction/graphics/doubleLayer_t4.pdf
+
+pdfTeX warning: pdflatex (file ./content/introduction/graphics/doubleLayer_t4.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./content/introduction/graphics/doubleLayer_t6.pdf
+
+pdfTeX warning: pdflatex (file ./content/introduction/graphics/doubleLayer_t6.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [20
+
+]
+Chapter 3.
+(./content/pt1/01-PowerHarvesting/chapter.tex <content/pt1/01-PowerHarvesting/graphics/doubleLayerOnWall.pdf, id=7989, 346.29375pt x 120.45pt>
+File: content/pt1/01-PowerHarvesting/graphics/doubleLayerOnWall.pdf Graphic file (type pdf)
+ <use content/pt1/01-PowerHarvesting/graphics/doubleLayerOnWall.pdf>
+Package pdftex.def Info: content/pt1/01-PowerHarvesting/graphics/doubleLayerOnWall.pdf used on input line 28.
+(pdftex.def)             Requested size: 346.2929pt x 120.44969pt.
+
+Overfull \hbox (1.2929pt too wide) in paragraph at lines 28--29
+ [][] 
+ []
+
+
+LaTeX Warning: Citation `Gu2000' on page 21 undefined on input line 36.
+
+
+LaTeX Warning: Citation `Scales1992' on page 21 undefined on input line 36.
+
+
+LaTeX Warning: Citation `Daiguji2004' on page 21 undefined on input line 36.
+
+
+LaTeX Warning: Citation `VanderHeyden2006' on page 21 undefined on input line 36.
+
+
+LaTeX Warning: Citation `Mala1997' on page 21 undefined on input line 36.
+
+[21
+
+ <./content/pt1/01-PowerHarvesting/graphics/doubleLayerOnWall.pdf>] <content/pt1/01-PowerHarvesting/graphics/streamingCellPrinciple.pdf, id=9097, 346.29375pt x 176.66pt>
+File: content/pt1/01-PowerHarvesting/graphics/streamingCellPrinciple.pdf Graphic file (type pdf)
+ <use content/pt1/01-PowerHarvesting/graphics/streamingCellPrinciple.pdf>
+Package pdftex.def Info: content/pt1/01-PowerHarvesting/graphics/streamingCellPrinciple.pdf used on input line 54.
+(pdftex.def)             Requested size: 346.2929pt x 176.65956pt.
+
+Overfull \hbox (1.2929pt too wide) in paragraph at lines 54--55
+ [][] 
+ []
+
+
+LaTeX Warning: Citation `Gu2000' on page 22 undefined on input line 69.
+
+
+LaTeX Warning: Reference `Figure_Diagram_ZetaPotential_and_in_a_channel' on page 22 undefined on input line 85.
+
+
+LaTeX Warning: Citation `Gu2000' on page 22 undefined on input line 104.
+
+
+LaTeX Warning: Citation `Mala1997' on page 22 undefined on input line 104.
+
+
+LaTeX Warning: Citation `Scales1992' on page 22 undefined on input line 104.
+
+
+LaTeX Warning: Citation `VanderHeyden2006' on page 22 undefined on input line 104.
+
+
+LaTeX Warning: Citation `Gu2000' on page 22 undefined on input line 105.
+
+[22 <./content/pt1/01-PowerHarvesting/graphics/streamingCellPrinciple.pdf>] <content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step1.JPG, id=11345, 2686.035pt x 2015.53pt>
+File: content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step1.JPG Graphic file (type jpg)
+ <use content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step1.JPG>
+Package pdftex.def Info: content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step1.JPG used on input line 121.
+(pdftex.def)             Requested size: 172.5pt x 129.41481pt.
+ <content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step2.JPG, id=11346, 2673.99pt x 2005.4925pt>
+File: content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step2.JPG Graphic file (type jpg)
+ <use content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step2.JPG>
+Package pdftex.def Info: content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step2.JPG used on input line 129.
+(pdftex.def)             Requested size: 172.5pt x 129.35175pt.
+ <content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step3.JPG, id=11347, 2192.19pt x 1644.1425pt>
+File: content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step3.JPG Graphic file (type jpg)
+ <use content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step3.JPG>
+Package pdftex.def Info: content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step3.JPG used on input line 137.
+(pdftex.def)             Requested size: 172.5pt x 129.35147pt.
+
+Overfull \hbox (21.43356pt too wide) in paragraph at lines 144--155
+[][] 
+ []
+
+[23] [24 <./content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step1.JPG> <./content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step2.JPG> <./content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step3.JPG>] <content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_52um_out.pdf, id=11362, 345.0pt x 221.31876pt>
+File: content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_52um_out.pdf Graphic file (type pdf)
+ <use content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_52um_out.pdf>
+Package pdftex.def Info: content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_52um_out.pdf used on input line 203.
+(pdftex.def)             Requested size: 344.99916pt x 221.31819pt.
+ <content/pt1/01-PowerHarvesting/graphics/streamingCell_slopeVsChannelHeight.pdf, id=11364, 345.0pt x 221.31876pt>
+File: content/pt1/01-PowerHarvesting/graphics/streamingCell_slopeVsChannelHeight.pdf Graphic file (type pdf)
+ <use content/pt1/01-PowerHarvesting/graphics/streamingCell_slopeVsChannelHeight.pdf>
+Package pdftex.def Info: content/pt1/01-PowerHarvesting/graphics/streamingCell_slopeVsChannelHeight.pdf used on input line 221.
+(pdftex.def)             Requested size: 344.99916pt x 221.31819pt.
+ [25 <./content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_52um_out.pdf>]
+
+LaTeX Warning: Citation `Tandon2008' on page 26 undefined on input line 257.
+
+[26 <./content/pt1/01-PowerHarvesting/graphics/streamingCell_slopeVsChannelHeight.pdf>]
+
+LaTeX Warning: Citation `Mansouri2005' on page 27 undefined on input line 276.
+
+
+LaTeX Warning: Citation `Park2009' on page 27 undefined on input line 279.
+
+
+LaTeX Warning: Citation `Olthuis2005' on page 27 undefined on input line 287.
+
+[27]
+
+LaTeX Warning: Citation `Olthuis2005' on page 28 undefined on input line 361.
+
+[28] <content/pt1/01-PowerHarvesting/graphics/StreamingCell_EquivalentCircuit_output.pdf, id=11405, 775.89874pt x 162.6075pt>
+File: content/pt1/01-PowerHarvesting/graphics/StreamingCell_EquivalentCircuit_output.pdf Graphic file (type pdf)
+ <use content/pt1/01-PowerHarvesting/graphics/StreamingCell_EquivalentCircuit_output.pdf>
+Package pdftex.def Info: content/pt1/01-PowerHarvesting/graphics/StreamingCell_EquivalentCircuit_output.pdf used on input line 372.
+(pdftex.def)             Requested size: 426.74562pt x 89.43439pt.
+
+Overfull \hbox (81.74562pt too wide) in paragraph at lines 372--373
+ [][] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 400.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 400.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 400.
+
+[29 <./content/pt1/01-PowerHarvesting/graphics/StreamingCell_EquivalentCircuit_output.pdf>] </home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/maximumPowerThereom.pdf, id=11418, 345.0pt x 212.9907pt>
+File: /home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/maximumPowerThereom.pdf Graphic file (type pdf)
+ <use /home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/maximumPowerThereom.pdf>
+Package pdftex.def Info: /home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/maximumPowerThereom.pdf used on input line 439.
+(pdftex.def)             Requested size: 344.99916pt x 212.99017pt.
+ [30] [31 </home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/maximumPowerThereom.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 487.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 487.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 487.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 487.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Delta' on input line 487.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 487.
+
+<content/pt1/01-PowerHarvesting/graphics/Harvester_equivalentCircuit_output.pdf, id=11450, 364.36125pt x 278.03876pt>
+File: content/pt1/01-PowerHarvesting/graphics/Harvester_equivalentCircuit_output.pdf Graphic file (type pdf)
+ <use content/pt1/01-PowerHarvesting/graphics/Harvester_equivalentCircuit_output.pdf>
+Package pdftex.def Info: content/pt1/01-PowerHarvesting/graphics/Harvester_equivalentCircuit_output.pdf used on input line 506.
+(pdftex.def)             Requested size: 200.39929pt x 152.92178pt.
+ </home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/streamingCell_consumerModel_dP.pdf, id=11451, 345.0pt x 212.9907pt>
+File: /home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/streamingCell_consumerModel_dP.pdf Graphic file (type pdf)
+ <use /home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/streamingCell_consumerModel_dP.pdf>
+Package pdftex.def Info: /home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/streamingCell_consumerModel_dP.pdf used on input line 518.
+(pdftex.def)             Requested size: 344.99916pt x 212.99017pt.
+ </home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/streamingCell_consumerModel_flow.pdf, id=11454, 345.0pt x 212.9907pt>
+File: /home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/streamingCell_consumerModel_flow.pdf Graphic file (type pdf)
+ <use /home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/streamingCell_consumerModel_flow.pdf>
+Package pdftex.def Info: /home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/streamingCell_consumerModel_flow.pdf used on input line 530.
+(pdftex.def)             Requested size: 344.99916pt x 212.99017pt.
+ </home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/streamingCell_consumerModel_total.pdf, id=11457, 345.0pt x 212.9907pt>
+File: /home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/streamingCell_consumerModel_total.pdf Graphic file (type pdf)
+ <use /home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/streamingCell_consumerModel_total.pdf>
+Package pdftex.def Info: /home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/streamingCell_consumerModel_total.pdf used on input line 540.
+(pdftex.def)             Requested size: 344.99916pt x 212.99017pt.
+ [32] [33 <./content/pt1/01-PowerHarvesting/graphics/Harvester_equivalentCircuit_output.pdf> </home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/streamingCell_consumerModel_dP.pdf
+
+pdfTeX warning: pdflatex (file /home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/streamingCell_consumerModel_dP.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [34 </home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/streamingCell_consumerModel_flow.pdf> </home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/streamingCell_consumerModel_total.pdf
+
+pdfTeX warning: pdflatex (file /home/mark/Dropbox/University/PhD/Thesis/Graphs/powerThereom/streamingCell_consumerModel_total.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]) [35]
+Chapter 4.
+(./content/pt1/02-WirelessWaterMeter/chapter.tex) [36
+
+]
+Chapter 5.
+(./content/pt1/02-Microcontrollers/chapter.tex
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 24.
+ (/usr/share/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+) [37
+
+] <content/pt1/02-Microcontrollers/graphics/Graph_All_Sleeping_Current.pdf, id=11534, 344.28625pt x 212.795pt>
+File: content/pt1/02-Microcontrollers/graphics/Graph_All_Sleeping_Current.pdf Graphic file (type pdf)
+ <use content/pt1/02-Microcontrollers/graphics/Graph_All_Sleeping_Current.pdf>
+Package pdftex.def Info: content/pt1/02-Microcontrollers/graphics/Graph_All_Sleeping_Current.pdf used on input line 98.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+
+
+LaTeX Warning: Citation `PIC16F1827' on page 38 undefined on input line 118.
+
+
+LaTeX Warning: Citation `MC9S08QG8' on page 38 undefined on input line 120.
+
+
+LaTeX Warning: Citation `AtmelATtiny13' on page 38 undefined on input line 121.
+
+
+LaTeX Warning: Citation `AtmelATtiny25' on page 38 undefined on input line 122.
+
+
+LaTeX Warning: Citation `PIC12F675' on page 38 undefined on input line 127.
+
+[38] [39]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 187.
+ [40 <./content/pt1/02-Microcontrollers/graphics/Graph_All_Sleeping_Current.pdf>]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 203.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 203.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 203.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 203.
+ [41]
+
+LaTeX Warning: Citation `ComputerArch' on page 42 undefined on input line 256.
+
+<content/pt1/02-Microcontrollers/graphics/Graph_PIC16F1827_Clock_Power.pdf, id=11594, 344.28625pt x 212.795pt>
+File: content/pt1/02-Microcontrollers/graphics/Graph_PIC16F1827_Clock_Power.pdf Graphic file (type pdf)
+ <use content/pt1/02-Microcontrollers/graphics/Graph_PIC16F1827_Clock_Power.pdf>
+Package pdftex.def Info: content/pt1/02-Microcontrollers/graphics/Graph_PIC16F1827_Clock_Power.pdf used on input line 274.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+ <content/pt1/02-Microcontrollers/graphics/Graph_PIC16F688_Clock_Power.pdf, id=11595, 344.28625pt x 212.795pt>
+File: content/pt1/02-Microcontrollers/graphics/Graph_PIC16F688_Clock_Power.pdf Graphic file (type pdf)
+ <use content/pt1/02-Microcontrollers/graphics/Graph_PIC16F688_Clock_Power.pdf>
+Package pdftex.def Info: content/pt1/02-Microcontrollers/graphics/Graph_PIC16F688_Clock_Power.pdf used on input line 282.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+ <content/pt1/02-Microcontrollers/graphics/Graph_PIC12F675_Clock_Power.pdf, id=11596, 344.28625pt x 212.795pt>
+File: content/pt1/02-Microcontrollers/graphics/Graph_PIC12F675_Clock_Power.pdf Graphic file (type pdf)
+ <use content/pt1/02-Microcontrollers/graphics/Graph_PIC12F675_Clock_Power.pdf>
+Package pdftex.def Info: content/pt1/02-Microcontrollers/graphics/Graph_PIC12F675_Clock_Power.pdf used on input line 290.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+ <content/pt1/02-Microcontrollers/graphics/Graph_ATtiny25V_Clock_Power.pdf, id=11597, 344.28625pt x 212.795pt>
+File: content/pt1/02-Microcontrollers/graphics/Graph_ATtiny25V_Clock_Power.pdf Graphic file (type pdf)
+ <use content/pt1/02-Microcontrollers/graphics/Graph_ATtiny25V_Clock_Power.pdf>
+Package pdftex.def Info: content/pt1/02-Microcontrollers/graphics/Graph_ATtiny25V_Clock_Power.pdf used on input line 298.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+ <content/pt1/02-Microcontrollers/graphics/Graph_ATtiny13V_Clock_Power.pdf, id=11598, 344.28625pt x 212.795pt>
+File: content/pt1/02-Microcontrollers/graphics/Graph_ATtiny13V_Clock_Power.pdf Graphic file (type pdf)
+ <use content/pt1/02-Microcontrollers/graphics/Graph_ATtiny13V_Clock_Power.pdf>
+Package pdftex.def Info: content/pt1/02-Microcontrollers/graphics/Graph_ATtiny13V_Clock_Power.pdf used on input line 306.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+ <content/pt1/02-Microcontrollers/graphics/Graph_MC9S08QG8_Clock_Power.pdf, id=11599, 344.28625pt x 212.795pt>
+File: content/pt1/02-Microcontrollers/graphics/Graph_MC9S08QG8_Clock_Power.pdf Graphic file (type pdf)
+ <use content/pt1/02-Microcontrollers/graphics/Graph_MC9S08QG8_Clock_Power.pdf>
+Package pdftex.def Info: content/pt1/02-Microcontrollers/graphics/Graph_MC9S08QG8_Clock_Power.pdf used on input line 314.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+ [42] [43 <./content/pt1/02-Microcontrollers/graphics/Graph_PIC16F1827_Clock_Power.pdf> <./content/pt1/02-Microcontrollers/graphics/Graph_PIC16F688_Clock_Power.pdf>] [44 <./content/pt1/02-Microcontrollers/graphics/Graph_PIC12F675_Clock_Power.pdf> <./content/pt1/02-Microcontrollers/graphics/Graph_ATtiny25V_Clock_Power.pdf>] [45 <./content/pt1/02-Microcontrollers/graphics/Graph_ATtiny13V_Clock_Power.pdf> <./content/pt1/02-Microcontrollers/graphics/Graph_MC9S08QG8_Clock_Power.pdf>] <content/pt1/02-Microcontrollers/graphics/Graph_All_Clock_JPI.pdf, id=11710, 344.28625pt x 212.795pt>
+File: content/pt1/02-Microcontrollers/graphics/Graph_All_Clock_JPI.pdf Graphic file (type pdf)
+ <use content/pt1/02-Microcontrollers/graphics/Graph_All_Clock_JPI.pdf>
+Package pdftex.def Info: content/pt1/02-Microcontrollers/graphics/Graph_All_Clock_JPI.pdf used on input line 370.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+ <content/pt1/02-Microcontrollers/graphics/Graph_ATtiny13V_Clock_JPI.pdf, id=11711, 344.28625pt x 212.795pt>
+File: content/pt1/02-Microcontrollers/graphics/Graph_ATtiny13V_Clock_JPI.pdf Graphic file (type pdf)
+ <use content/pt1/02-Microcontrollers/graphics/Graph_ATtiny13V_Clock_JPI.pdf>
+Package pdftex.def Info: content/pt1/02-Microcontrollers/graphics/Graph_ATtiny13V_Clock_JPI.pdf used on input line 378.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+
+
+LaTeX Warning: Citation `LinearFeedbackRegister' on page 46 undefined on input line 405.
+
+[46] [47 <./content/pt1/02-Microcontrollers/graphics/Graph_All_Clock_JPI.pdf> <./content/pt1/02-Microcontrollers/graphics/Graph_ATtiny13V_Clock_JPI.pdf>] <content/pt1/02-Microcontrollers/graphics/Graph_All_Clock_Benchmark.pdf, id=11753, 344.28625pt x 191.71625pt>
+File: content/pt1/02-Microcontrollers/graphics/Graph_All_Clock_Benchmark.pdf Graphic file (type pdf)
+ <use content/pt1/02-Microcontrollers/graphics/Graph_All_Clock_Benchmark.pdf>
+Package pdftex.def Info: content/pt1/02-Microcontrollers/graphics/Graph_All_Clock_Benchmark.pdf used on input line 448.
+(pdftex.def)             Requested size: 344.2854pt x 191.71577pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--451
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--451
+
+ []
+
+[48] <content/pt1/02-Microcontrollers/graphics/Graph_All_EEPROM_JPO.pdf, id=11768, 344.28625pt x 212.795pt>
+File: content/pt1/02-Microcontrollers/graphics/Graph_All_EEPROM_JPO.pdf Graphic file (type pdf)
+ <use content/pt1/02-Microcontrollers/graphics/Graph_All_EEPROM_JPO.pdf>
+Package pdftex.def Info: content/pt1/02-Microcontrollers/graphics/Graph_All_EEPROM_JPO.pdf used on input line 491.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+ [49 <./content/pt1/02-Microcontrollers/graphics/Graph_All_Clock_Benchmark.pdf>] <content/pt1/02-Microcontrollers/graphics/Graph_ALL_ADC_JPM.pdf, id=11781, 344.28625pt x 212.795pt>
+File: content/pt1/02-Microcontrollers/graphics/Graph_ALL_ADC_JPM.pdf Graphic file (type pdf)
+ <use content/pt1/02-Microcontrollers/graphics/Graph_ALL_ADC_JPM.pdf>
+Package pdftex.def Info: content/pt1/02-Microcontrollers/graphics/Graph_ALL_ADC_JPM.pdf used on input line 512.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+) (./content/pt1/03-DataTransmission/chapter.tex) [50 <./content/pt1/02-Microcontrollers/graphics/Graph_All_EEPROM_JPO.pdf>] [51 <./content/pt1/02-Microcontrollers/graphics/Graph_ALL_ADC_JPM.pdf>]
+Chapter 6.
+(./content/pt1/04-HarvesterDesign/chapter.tex
+
+LaTeX Warning: Reference `part:Power-Harvesting' on page 52 undefined on input line 3.
+
+
+LaTeX Warning: Reference `part:Power-consumption' on page 52 undefined on input line 15.
+
+) [52
+
+] [53
+
+]
+Chapter 7.
+(./content/pt2/01-ElectricalModelling/chapter.tex) [54
+
+]
+Chapter 8.
+(./content/pt2/02-InterfaceParameters/chapter.tex [55
+
+]
+Overfull \hbox (4.64348pt too wide) in paragraph at lines 29--43
+[][] 
+ []
+
+) [56] [57
+
+]
+Appendix A.
+(./content/appendices/chargedWaterDrops/appendix.tex
+
+LaTeX Warning: Citation `Thomson1867' on page 58 undefined on input line 5.
+
+<content/appendices/chargedWaterDrops/graphics/Figure_Drawing_KelvinWaterDripper_OriginalDevice.pdf, id=11845, 288.17497pt x 316.58963pt>
+File: content/appendices/chargedWaterDrops/graphics/Figure_Drawing_KelvinWaterDripper_OriginalDevice.pdf Graphic file (type pdf)
+ <use content/appendices/chargedWaterDrops/graphics/Figure_Drawing_KelvinWaterDripper_OriginalDevice.pdf>
+Package pdftex.def Info: content/appendices/chargedWaterDrops/graphics/Figure_Drawing_KelvinWaterDripper_OriginalDevice.pdf used on input line 8.
+(pdftex.def)             Requested size: 172.5pt x 189.50598pt.
+ <content/appendices/chargedWaterDrops/graphics/Figure_Drawing_KelvinWaterDripper_ChargingMechanism.pdf, id=11846, 218.36897pt x 309.959pt>
+File: content/appendices/chargedWaterDrops/graphics/Figure_Drawing_KelvinWaterDripper_ChargingMechanism.pdf Graphic file (type pdf)
+ <use content/appendices/chargedWaterDrops/graphics/Figure_Drawing_KelvinWaterDripper_ChargingMechanism.pdf>
+Package pdftex.def Info: content/appendices/chargedWaterDrops/graphics/Figure_Drawing_KelvinWaterDripper_ChargingMechanism.pdf used on input line 27.
+(pdftex.def)             Requested size: 105.3257pt x 149.5pt.
+ [58
+
+ <./content/appendices/chargedWaterDrops/graphics/Figure_Drawing_KelvinWaterDripper_OriginalDevice.pdf>] <content/appendices/chargedWaterDrops/graphics/DripperOut.pdf, id=11855, 182.34813pt x 224.63701pt>
+File: content/appendices/chargedWaterDrops/graphics/DripperOut.pdf Graphic file (type pdf)
+ <use content/appendices/chargedWaterDrops/graphics/DripperOut.pdf>
+Package pdftex.def Info: content/appendices/chargedWaterDrops/graphics/DripperOut.pdf used on input line 45.
+(pdftex.def)             Requested size: 182.34767pt x 224.63644pt.
+ [59 <./content/appendices/chargedWaterDrops/graphics/Figure_Drawing_KelvinWaterDripper_ChargingMechanism.pdf>] [60 <./content/appendices/chargedWaterDrops/graphics/DripperOut.pdf>] <content/appendices/chargedWaterDrops/graphics/Photo_dripperExperiment_Setup_draft.JPG, id=11882, 1686.3pt x 2248.4pt>
+File: content/appendices/chargedWaterDrops/graphics/Photo_dripperExperiment_Setup_draft.JPG Graphic file (type jpg)
+ <use content/appendices/chargedWaterDrops/graphics/Photo_dripperExperiment_Setup_draft.JPG>
+Package pdftex.def Info: content/appendices/chargedWaterDrops/graphics/Photo_dripperExperiment_Setup_draft.JPG used on input line 102.
+(pdftex.def)             Requested size: 252.93408pt x 337.24545pt.
+ [61] <content/appendices/chargedWaterDrops/graphics/ChargedDrips_Figure_Drawing_ExperimentalSetup.pdf, id=11892, 302.23878pt x 330.72665pt>
+File: content/appendices/chargedWaterDrops/graphics/ChargedDrips_Figure_Drawing_ExperimentalSetup.pdf Graphic file (type pdf)
+ <use content/appendices/chargedWaterDrops/graphics/ChargedDrips_Figure_Drawing_ExperimentalSetup.pdf>
+Package pdftex.def Info: content/appendices/chargedWaterDrops/graphics/ChargedDrips_Figure_Drawing_ExperimentalSetup.pdf used on input line 123.
+(pdftex.def)             Requested size: 272.01237pt x 297.65121pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[62 <./content/appendices/chargedWaterDrops/graphics/Photo_dripperExperiment_Setup_draft.JPG>] <content/appendices/chargedWaterDrops/graphics/Photo_dripperExperiment_Inductor_draft.JPG, id=11897, 2248.4pt x 1686.3pt>
+File: content/appendices/chargedWaterDrops/graphics/Photo_dripperExperiment_Inductor_draft.JPG Graphic file (type jpg)
+ <use content/appendices/chargedWaterDrops/graphics/Photo_dripperExperiment_Inductor_draft.JPG>
+Package pdftex.def Info: content/appendices/chargedWaterDrops/graphics/Photo_dripperExperiment_Inductor_draft.JPG used on input line 160.
+(pdftex.def)             Requested size: 337.24545pt x 252.93408pt.
+ <content/appendices/chargedWaterDrops/graphics/Photo_dripperExperiment_SyringePump_draft.JPG, id=11898, 2248.4pt x 1686.3pt>
+File: content/appendices/chargedWaterDrops/graphics/Photo_dripperExperiment_SyringePump_draft.JPG Graphic file (type jpg)
+ <use content/appendices/chargedWaterDrops/graphics/Photo_dripperExperiment_SyringePump_draft.JPG>
+Package pdftex.def Info: content/appendices/chargedWaterDrops/graphics/Photo_dripperExperiment_SyringePump_draft.JPG used on input line 174.
+(pdftex.def)             Requested size: 337.24545pt x 252.93408pt.
+ <content/appendices/chargedWaterDrops/graphics/dripper_chargeVsVolume.pdf, id=11899, 344.28625pt x 212.795pt>
+File: content/appendices/chargedWaterDrops/graphics/dripper_chargeVsVolume.pdf Graphic file (type pdf)
+ <use content/appendices/chargedWaterDrops/graphics/dripper_chargeVsVolume.pdf>
+Package pdftex.def Info: content/appendices/chargedWaterDrops/graphics/dripper_chargeVsVolume.pdf used on input line 191.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+ [63 <./content/appendices/chargedWaterDrops/graphics/ChargedDrips_Figure_Drawing_ExperimentalSetup.pdf>] [64 <./content/appendices/chargedWaterDrops/graphics/Photo_dripperExperiment_Inductor_draft.JPG> <./content/appendices/chargedWaterDrops/graphics/Photo_dripperExperiment_SyringePump_draft.JPG>] <content/appendices/chargedWaterDrops/graphics/dripper_chargePerVolumeVsVolume.pdf, id=11928, 344.28625pt x 212.795pt>
+File: content/appendices/chargedWaterDrops/graphics/dripper_chargePerVolumeVsVolume.pdf Graphic file (type pdf)
+ <use content/appendices/chargedWaterDrops/graphics/dripper_chargePerVolumeVsVolume.pdf>
+Package pdftex.def Info: content/appendices/chargedWaterDrops/graphics/dripper_chargePerVolumeVsVolume.pdf used on input line 211.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<content/appendices/chargedWaterDrops/graphics/dripper_chargeVsVoltage.pdf, id=11930, 344.28625pt x 212.795pt>
+File: content/appendices/chargedWaterDrops/graphics/dripper_chargeVsVoltage.pdf Graphic file (type pdf)
+ <use content/appendices/chargedWaterDrops/graphics/dripper_chargeVsVoltage.pdf>
+Package pdftex.def Info: content/appendices/chargedWaterDrops/graphics/dripper_chargeVsVoltage.pdf used on input line 229.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+ <content/appendices/chargedWaterDrops/graphics/dripper_currentVsFlow.pdf, id=11932, 344.28625pt x 212.795pt>
+File: content/appendices/chargedWaterDrops/graphics/dripper_currentVsFlow.pdf Graphic file (type pdf)
+ <use content/appendices/chargedWaterDrops/graphics/dripper_currentVsFlow.pdf>
+Package pdftex.def Info: content/appendices/chargedWaterDrops/graphics/dripper_currentVsFlow.pdf used on input line 243.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+ [65 <./content/appendices/chargedWaterDrops/graphics/dripper_chargeVsVolume.pdf>] [66 <./content/appendices/chargedWaterDrops/graphics/dripper_chargePerVolumeVsVolume.pdf>] [67 <./content/appendices/chargedWaterDrops/graphics/dripper_chargeVsVoltage.pdf> <./content/appendices/chargedWaterDrops/graphics/dripper_currentVsFlow.pdf>] <content/appendices/chargedWaterDrops/graphics/ChargedDrips_Figure_Diagram_Forces.pdf, id=11987, 192.65169pt x 252.56859pt>
+File: content/appendices/chargedWaterDrops/graphics/ChargedDrips_Figure_Diagram_Forces.pdf Graphic file (type pdf)
+ <use content/appendices/chargedWaterDrops/graphics/ChargedDrips_Figure_Diagram_Forces.pdf>
+Package pdftex.def Info: content/appendices/chargedWaterDrops/graphics/ChargedDrips_Figure_Diagram_Forces.pdf used on input line 300.
+(pdftex.def)             Requested size: 192.65121pt x 252.56796pt.
+) [68 <./content/appendices/chargedWaterDrops/graphics/ChargedDrips_Figure_Diagram_Forces.pdf>] [69]
+Appendix B.
+
+Overfull \hbox (24.874pt too wide) in paragraph at lines 57--57
+[]\T1/phv/b/n/20.74 Microprocessor Power Mea-sure-ments| 
+ []
+
+(./content/appendices/microprocessorPowerMeasurements/appendix.tex
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 12.
+ (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `pcr' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+No file content/appendices/microprocessorPowerMeasurements/Microcontrollers/measDev.py.
+<content/appendices/microprocessorPowerMeasurements/graphics/Graph_All_Sleeping_Power.pdf, id=12012, 344.28625pt x 212.795pt>
+File: content/appendices/microprocessorPowerMeasurements/graphics/Graph_All_Sleeping_Power.pdf Graphic file (type pdf)
+ <use content/appendices/microprocessorPowerMeasurements/graphics/Graph_All_Sleeping_Power.pdf>
+Package pdftex.def Info: content/appendices/microprocessorPowerMeasurements/graphics/Graph_All_Sleeping_Power.pdf used on input line 90.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+ [70
+
+] [71] <content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Current.pdf, id=12024, 344.28625pt x 212.795pt>
+File: content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Current.pdf Graphic file (type pdf)
+ <use content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Current.pdf>
+Package pdftex.def Info: content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Current.pdf used on input line 178.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+ <content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Power.pdf, id=12025, 344.28625pt x 212.795pt>
+File: content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Power.pdf Graphic file (type pdf)
+ <use content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Power.pdf>
+Package pdftex.def Info: content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Power.pdf used on input line 190.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+ <content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_JPI.pdf, id=12026, 344.28625pt x 212.795pt>
+File: content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_JPI.pdf Graphic file (type pdf)
+ <use content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_JPI.pdf>
+Package pdftex.def Info: content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_JPI.pdf used on input line 200.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+File: content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Current.pdf Graphic file (type pdf)
+ <use content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Current.pdf>
+Package pdftex.def Info: content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Current.pdf used on input line 283.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+ <content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny25V_Clock_Power.pdf, id=12027, 344.28625pt x 212.795pt>
+File: content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny25V_Clock_Power.pdf Graphic file (type pdf)
+ <use content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny25V_Clock_Power.pdf>
+Package pdftex.def Info: content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny25V_Clock_Power.pdf used on input line 293.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+ <content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny25V_Clock_JPI.pdf, id=12028, 344.28625pt x 212.795pt>
+File: content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny25V_Clock_JPI.pdf Graphic file (type pdf)
+ <use content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny25V_Clock_JPI.pdf>
+Package pdftex.def Info: content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny25V_Clock_JPI.pdf used on input line 305.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+ <content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_Current.pdf, id=12029, 344.28625pt x 212.795pt>
+File: content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_Current.pdf Graphic file (type pdf)
+ <use content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_Current.pdf>
+Package pdftex.def Info: content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_Current.pdf used on input line 386.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+ <content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_Power.pdf, id=12030, 344.28625pt x 212.795pt>
+File: content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_Power.pdf Graphic file (type pdf)
+ <use content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_Power.pdf>
+Package pdftex.def Info: content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_Power.pdf used on input line 396.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+
+<content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_JPI.pdf, id=12031, 344.28625pt x 212.795pt>
+File: content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_JPI.pdf Graphic file (type pdf)
+ <use content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_JPI.pdf>
+Package pdftex.def Info: content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_JPI.pdf used on input line 408.
+(pdftex.def)             Requested size: 344.2854pt x 212.79446pt.
+
+Overfull \hbox (17.16368pt too wide) in paragraph at lines 426--430
+\T1/ppl/m/n/10 (-20) (AVR-GCC com-piler for win-dows avail-able from [][]$\T1/pcr/m/n/10 http : / / winavr . sourceforge .
+ []
+
+[72 <./content/appendices/microprocessorPowerMeasurements/graphics/Graph_All_Sleeping_Power.pdf>] [73] [74] [75 <./content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Current.pdf> <./content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Power.pdf>] [76 <./content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_JPI.pdf>] [77] [78] [79 <./content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny25V_Clock_Power.pdf> <./content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny25V_Clock_JPI.pdf>] [80] [81] [82 <./content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_Current.pdf> <./content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_Power.pdf>]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 438.
+ (./content/appendices/microprocessorPowerMeasurements/code/ATtiny13V_sleep.c [83 <./content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_JPI.pdf>]) (./content/appendices/microprocessorPowerMeasurements/code/ATtiny13V_clocking.c) [84] (./content/appendices/microprocessorPowerMeasurements/code/PIC16F1827_sleep.c) (./content/appendices/microprocessorPowerMeasurements/code/PIC16F1827_sleep.asm [85] [86]) (./content/appendices/microprocessorPowerMeasurements/code/PIC16F1827_clocking.c [87]) (./content/appendices/microprocessorPowerMeasurements/code/MC9S08QG8_sleep.c [88])) [89]
+Appendix C.
+(./content/appendices/streamingCellMeasurements/appendix.tex <content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_26um_out.pdf, id=12487, 345.0pt x 221.31876pt>
+File: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_26um_out.pdf Graphic file (type pdf)
+ <use content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_26um_out.pdf>
+Package pdftex.def Info: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_26um_out.pdf used on input line 12.
+(pdftex.def)             Requested size: 344.99916pt x 221.31819pt.
+ <content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_52um_out.pdf, id=12488, 345.0pt x 221.31876pt>
+File: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_52um_out.pdf Graphic file (type pdf)
+ <use content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_52um_out.pdf>
+Package pdftex.def Info: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_52um_out.pdf used on input line 22.
+(pdftex.def)             Requested size: 344.99916pt x 221.31819pt.
+ <content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_56um_out.pdf, id=12489, 345.0pt x 221.31876pt>
+File: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_56um_out.pdf Graphic file (type pdf)
+ <use content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_56um_out.pdf>
+Package pdftex.def Info: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_56um_out.pdf used on input line 30.
+(pdftex.def)             Requested size: 344.99916pt x 221.31819pt.
+ <content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_71um_out.pdf, id=12490, 345.0pt x 221.31876pt>
+File: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_71um_out.pdf Graphic file (type pdf)
+ <use content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_71um_out.pdf>
+Package pdftex.def Info: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_71um_out.pdf used on input line 38.
+(pdftex.def)             Requested size: 344.99916pt x 221.31819pt.
+ <content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_75um_out.pdf, id=12491, 345.0pt x 221.31876pt>
+File: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_75um_out.pdf Graphic file (type pdf)
+ <use content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_75um_out.pdf>
+Package pdftex.def Info: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_75um_out.pdf used on input line 46.
+(pdftex.def)             Requested size: 344.99916pt x 221.31819pt.
+ <content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_106um_out.pdf, id=12492, 345.0pt x 221.31876pt>
+File: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_106um_out.pdf Graphic file (type pdf)
+ <use content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_106um_out.pdf>
+Package pdftex.def Info: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_106um_out.pdf used on input line 54.
+(pdftex.def)             Requested size: 344.99916pt x 221.31819pt.
+ <content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_125um_out.pdf, id=12493, 345.0pt x 221.31876pt>
+File: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_125um_out.pdf Graphic file (type pdf)
+ <use content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_125um_out.pdf>
+Package pdftex.def Info: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_125um_out.pdf used on input line 62.
+(pdftex.def)             Requested size: 344.99916pt x 221.31819pt.
+ <content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_161um_out.pdf, id=12494, 345.0pt x 221.31876pt>
+File: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_161um_out.pdf Graphic file (type pdf)
+ <use content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_161um_out.pdf>
+Package pdftex.def Info: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_161um_out.pdf used on input line 70.
+(pdftex.def)             Requested size: 344.99916pt x 221.31819pt.
+
+<content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_178um_out.pdf, id=12495, 345.0pt x 221.31876pt>
+File: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_178um_out.pdf Graphic file (type pdf)
+ <use content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_178um_out.pdf>
+Package pdftex.def Info: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_178um_out.pdf used on input line 78.
+(pdftex.def)             Requested size: 344.99916pt x 221.31819pt.
+ <content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_245um_out.pdf, id=12496, 345.0pt x 221.31876pt>
+File: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_245um_out.pdf Graphic file (type pdf)
+ <use content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_245um_out.pdf>
+Package pdftex.def Info: content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_245um_out.pdf used on input line 86.
+(pdftex.def)             Requested size: 344.99916pt x 221.31819pt.
+)
+No file thesis.bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
+[90
+
+] [91 <./content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_26um_out.pdf> <./content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_52um_out.pdf>] [92 <./content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_56um_out.pdf> <./content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_71um_out.pdf>] [93 <./content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_75um_out.pdf> <./content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_106um_out.pdf>] [94 <./content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_125um_out.pdf> <./content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_161um_out.pdf>] [95 <./content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_178um_out.pdf> <./content/appendices/streamingCellMeasurements/graphics/streamingCell_voltVsPress_245um_out.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
+ (/home/mark/repos/Thesis/.tmp/2EFsY7/thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 97F87E54CAB12CC6FF647E5602E7F9C0;15881.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
+ ) 
+Here is how much of TeX's memory you used:
+ 16909 strings out of 493308
+ 260108 string characters out of 6143616
+ 438495 words of memory out of 5000000
+ 19215 multiletter control sequences out of 15000+600000
+ 65651 words of font info for 225 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 43i,11n,40p,1135b,1872s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on /home/mark/repos/Thesis/.tmp/2EFsY7/thesis.pdf (96 pages, 3900623 bytes).
+PDF statistics:
+ 12729 PDF objects out of 12825 (max. 8388607)
+ 10977 compressed objects within 110 object streams
+ 565 named destinations out of 1000 (max. 500000)
+ 39022 words of extra memory for PDF output out of 42996 (max. 10000000)
+
