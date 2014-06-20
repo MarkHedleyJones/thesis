@@ -1,5 +1,6 @@
-%\documentclass[10pt,a4paper,oneside,british]{book}
 \input{configuration}
+
+%% For wordcount run $texcount thesis.tex -inc -total
 
 \begin{document}
 
@@ -9,7 +10,7 @@
 \listoffigures
 \listoftables
 \printnomenclature{}
-\onehalfspacing
+\doublespacing
 
 \chapter*{Abstract}
 \phantomsection\addcontentsline{toc}{chapter}{Abstract}
@@ -18,26 +19,48 @@
 \chapter*{Acknowledgement}
 \phantomsection\addcontentsline{toc}{chapter}{Acknowledgement}
 \input{content/acknowledgement}
-
+\the\textwidth
 %% Part 1 - Introduction
-\part{Introduction}
-    \chapter{Liquids at Scale}
+\chapter{Introduction}
+    \section*{Liquids at Scale}
         \input{content/introduction/01-LiquidsAtScale/chapter}
-    \chapter{Interfacial Double Layers}
+    \section*{Interfacial Double Layers}
         \input{content/introduction/02-TheDoubleLayer/chapter}
 
-%% Part 2 - Double layers on insulators
-\part{\label{part:doubleLayersOnInsulators}Double Layers On Insulators}
+        \part{Double Layers On Insulators}
+        \label{part:doubleLayersOnInsulators}
+        
+        Part \ref{part:doubleLayersOnInsulators} deals with double layers formed on electrical insulators.
+        Two examples of where this happens are the walls of plastic or glass containers.
+        
+        A practical application of double layers on insulators is to the field of energy harvesting.
+        It was discussed in the introduction that double layers naturally form at liquid-solid interfaces.
+        It was said that the double layer itself is a collection of charged ions.
+        Can we collect this charge and convert it into electrical energy?
+
+        In this part I explain how to harvest energy from water and glass without moving parts.
+        I look at a smart application of a water such a harvester, create a power budget, and discuss the design of a practical harvester.
+        
     \chapter{Harvesting Energy}
+
+        This chapter demonstrates an energy harvesting device capable of harvesting energy from flowing water with no moving parts.
+        A `smart' use for such a harvester is discussed in chapter \ref{chap:wirelessWaterMetering}.
+        I find the minimum power a harvester would need to harvest in order to be useful in chapter \ref{chap:energyRequirements}.
+        And finally, in chapter \ref{chap:harvesterDesign}, I discuss the design of a harvester and comment on its feasibility.
+    \label{chap:harvestingEnergy}
         \input{content/pt1/01-PowerHarvesting/chapter}
+
     \chapter{Wireless Water Metering}
+    \label{chap:wirelessWaterMetering}
         \input{content/pt1/02-WirelessWaterMeter/chapter}
     \chapter{Energy Requirements}
+    \label{chap:energyRequirements}
         \section{Microcontroller}
             \input{content/pt1/02-Microcontrollers/chapter}
         \section{Data Transmission}
             \input{content/pt1/03-DataTransmission/chapter}
     \chapter{Harvester Design}
+    \label{chap:harvesterDesign}
         \input{content/pt1/04-HarvesterDesign/chapter}
 
 %% Part 3 - Double layers on conductors

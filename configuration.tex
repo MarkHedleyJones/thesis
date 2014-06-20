@@ -1,8 +1,5 @@
 %!TEX root = ./thesis.tex
-
-%% LyX 2.1.0 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass[10pt,a4paper,oneside,english]{book}
+\documentclass[11pt,a4paper,oneside,english]{book}
 \usepackage{mathpazo}
 \usepackage{helvet}
 \usepackage{courier}
@@ -20,6 +17,7 @@
 \usepackage{rotfloat}
 \usepackage{textcomp}
 \usepackage{url}
+\usepackage[font=small,labelfont=bf]{caption}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
@@ -85,6 +83,9 @@
 \titleformat{\part}[block]
   {\Huge\sffamily\huge\bfseries\color{chaptergrey}}
   {\sffamily\fontsize{100}{0}\selectfont Part \thepart}{0pt}{\\\centering\color{dark}}
+
+
+\titleclass{\part}{top}
 
 \lstset{ %
 basicstyle=\footnotesize,       % the size of the fonts that are used for the code
