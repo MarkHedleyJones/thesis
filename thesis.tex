@@ -20,6 +20,7 @@
 \phantomsection\addcontentsline{toc}{chapter}{Acknowledgement}
 \input{content/acknowledgement}
 \the\textwidth
+
 %% Part 1 - Introduction
 \chapter{Introduction}
     \section*{Liquids at Scale}
@@ -40,28 +41,38 @@
 
         In this part I explain how to harvest energy from water and glass without moving parts.
         I look at a smart application of a water such a harvester, create a power budget, and discuss the design of a practical harvester.
-        
-    \chapter{Harvesting Energy}
 
-        This chapter demonstrates an energy harvesting device capable of harvesting energy from flowing water with no moving parts.
-        A `smart' use for such a harvester is discussed in chapter \ref{chap:wirelessWaterMetering}.
-        I find the minimum power a harvester would need to harvest in order to be useful in chapter \ref{chap:energyRequirements}.
-        And finally, in chapter \ref{chap:harvesterDesign}, I discuss the design of a harvester and comment on its feasibility.
+
+\chapter{Harvesting Energy}
     \label{chap:harvestingEnergy}
-        \input{content/pt1/01-PowerHarvesting/chapter}
 
-    \chapter{Wireless Water Metering}
+    This chapter demonstrates an energy harvesting device capable of harvesting energy from flowing water with no moving parts.
+    A `smart' use for such a harvester is discussed in chapter \ref{chap:wirelessWaterMetering}.
+    I find the minimum power a harvester would need to harvest in order to be useful in chapter \ref{chap:energyRequirements}.
+    And finally, in chapter \ref{chap:harvesterDesign}, I discuss the design of a harvester and comment on its feasibility.
+
+    \input{content/pt1/01-PowerHarvesting/chapter}
+
+\chapter{Wireless Water Metering}
     \label{chap:wirelessWaterMetering}
-        \input{content/pt1/02-WirelessWaterMeter/chapter}
-    \chapter{Energy Requirements}
+
+    In chapter \ref{chap:harvestingEnergy}, a method of harvesting power from water flow was put forward.
+    Due to the fact that that method had no moving parts it is pre
+
+    \input{content/pt1/02-WirelessWaterMeter/chapter}
+
+\chapter{Energy Requirements}
     \label{chap:energyRequirements}
-        \section{Microcontroller}
-            \input{content/pt1/02-Microcontrollers/chapter}
-        \section{Data Transmission}
-            \input{content/pt1/03-DataTransmission/chapter}
-    \chapter{Harvester Design}
+    
+    \section{Microcontroller}
+        \input{content/pt1/02-Microcontrollers/chapter}
+    
+    \section{Data Transmission}
+        \input{content/pt1/03-DataTransmission/chapter}
+
+\chapter{Harvester Design}
     \label{chap:harvesterDesign}
-        \input{content/pt1/04-HarvesterDesign/chapter}
+    \input{content/pt1/04-HarvesterDesign/chapter}
 
 %% Part 3 - Double layers on conductors
 \part{\label{part:doubleLayersOnConductors}Double layers on conductors}
