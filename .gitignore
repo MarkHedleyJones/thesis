@@ -5,8 +5,13 @@
 *.log
 *.lot
 *.out
-*.pdf
+thesis.pdf
 *.synctex.gz
 *.toc
 *.swp
+*.bbl
+*.blg
+*.brf
+*.fdb_latexmk
+*.nlo
 
