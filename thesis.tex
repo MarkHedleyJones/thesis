@@ -13,20 +13,42 @@
 \doublespacing
 
 \chapter*{Abstract}
+This thesis presents research into applications of interfacial double layers to electronic systems.
+This research has two parts; layers on insulating surfaces and layers on conductors.
+
+A double layer on an insulating surface offers the ability to convert energy between electric and fluid states.
+Using this, I build streaming cell energy harvesters and determine their output characteristics.
+I comment on the suitability of streaming cell technology as a means of powering smart water meters.
+
+A double layer on a conductor causes interesting, but often unwanted, electrical behaviour in medical electrodes.
+I use a newly developed model that captures this behaviour to characterise various fluids.
+I characterise several fluids using this method.
+I directly compare a standard solution of saline to the spinal fluid of a living animal.
+Such a comparison is novel and important to medical implant designers.
+I develop a way to create a fluid solution that better mimics the electrical properties of a given fluid.
+
 \phantomsection\addcontentsline{toc}{chapter}{Abstract}
-\input{content/abstract}
 
 \chapter*{Acknowledgement}
 \phantomsection\addcontentsline{toc}{chapter}{Acknowledgement}
-\input{content/acknowledgement}
-\the\textwidth
+Thanks go to Jonathan Scott (chief supervisor), Steve Newcombe (Waikato University's award winning glass blower) and Peter Single (senior engineer at Saluda Medical) for their time and resources.
+Thank you to everyone who contributes to any of the following open source projects, from which I have benefitted enourmously,
+\begin{itemize}
+\item The Linux kernel
+\item GNU software
+\item The Gnome desktop environment
+\item Inkscape
+\item Gimp
+\item Arch Linux
+\item Tex and its derivative \LaTeX
+\item Python
+\item ngSpice
+\end{itemize}
 
 %% Part 1 - Introduction
+
 \chapter{Introduction}
-    \section*{Liquids at Scale}
-        \input{content/introduction/01-LiquidsAtScale/chapter}
-    \section*{Interfacial Double Layers}
-        \input{content/introduction/02-TheDoubleLayer/chapter}
+    \input{content/introduction/introduction.tex}
 
 \part{Double Layers On Insulators}
 
@@ -93,6 +115,9 @@
         \input{content/appendices/microprocessorPowerMeasurements/appendix}
     \chapter{Streaming Cell Mesaurements}
         \input{content/appendices/streamingCellMeasurements/appendix}
+
+\chapter*{Notes}
+The text width of this thesis is \the\textwidth.
 
 
 \bibliographystyle{plain}

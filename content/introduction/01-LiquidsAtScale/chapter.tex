@@ -1,11 +1,16 @@
-%!TEX root = ../../thesis.tex
+%!TEX root = ../../../thesis.tex
 
-Liquids are made of atoms and molecules. Visualising liquids this way makes understanding a liquid system easier. This thesis is concerned with the behaviour of liquid at the atomic scale.
+This thesis is concerned with the behaviour of liquid at the atomic scale.
 
 \section{Liquids at scale}
-At the macro scale, the behaviour of liquid is simple and calculable. Modern computers can simulate the movement of liquids using the Navier-Stokes equations with accuracy and speed. This does not hold true when modelling fluid at the scale of individual atoms and molecules, where the behaviour is determined purely by electrical interactions. These interactions are chaotic and therefore simulation of any reasonable sized volume demands prohibitive computing resources.
+At the macro scale, the behaviour of liquid is simple and calculable.
+Modern computers can simulate the movement of liquids using the Navier-Stokes equations with accuracy and speed.
+This does not hold true when modelling fluid at the scale of individual atoms and molecules, where the behaviour is determined purely by electrical interactions.
+These interactions are chaotic and therefore simulation of any reasonable sized volume demands prohibitive computing resources.
 
-Water is a liquid comprised of the molecule $H_{2}O$. This molecule is polar, meaning one side has a net positive charge and the other is net negatively charged. This simple fact is responsible for very complex behaviour when dealing with a liquid body of reasonable size.
+Water is a liquid comprised of the molecule $H_{2}O$.
+This molecule is polar, meaning one side has a net positive charge and the other has a net negative charge.
+This simple fact is responsible for very complex behaviour when dealing with a liquid body of any reasonable size.
 
 \begin{figure}
     \begin{center}
@@ -15,7 +20,13 @@ Water is a liquid comprised of the molecule $H_{2}O$. This molecule is polar, me
     \label{fig:waterMolecule}
 \end{figure}
 
-This thesis, in essence, investigates interactions that take place at the boundary between a liquid and a solid. These interactions take place primarily on the liquid side of the boundary within a volume termed the double layer. The electric field of the solid's interior would be affected by the accumulation of charge at its surface, but this should not affect the analysis of the exterior layer. It is important to note that a solid in the context of this thesis is not simply the walls of a container, but may also refer to solid particles, even molecules, within a liquid. This is the case for emulsified substances such as paints where the formed double layer determines the stability of the emulsion.
+The unifying theme of this thesis is the interactions that take place at the boundary between liquids and solids.
+Interactions of interest occur on the liquid side of the boundary.
+Of particular interest what happens directly at the boundary, within a layer titled the double layer.
+
+The electric field of the solid's interior would be affected by the accumulation of charge at its surface, but this should not affect the analysis of the exterior layer.
+It is important to note that a solid in the context of this thesis is not simply the walls of a container, but may also refer to solid particles, even molecules, within a liquid.
+This is the case for emulsified substances such as paints where the formed double layer determines the stability of the emulsion.
 
 This thesis focusses on two applications of interfacial double layers with respect to electrical engineering. Firstly, it looks at a method of harvesting power from water by way of a mechanism that has no moving parts; and secondly, it models the electrical impedance that is seen by a medical implant when placed inside a biological system. The second application is where the majority of the research effort can be found.
 
