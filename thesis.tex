@@ -3,16 +3,17 @@
 %% For wordcount run $texcount thesis.tex -inc -total
 
 \begin{document}
+\pagenumbering{roman}
 
 \input{frontmatter}
 \rmfamily
-\tableofcontents{}
-\listoffigures
-\listoftables
-\printnomenclature{}
-\doublespacing
 
-\chapter*{Abstract}
+\chapter*{ABSTRACT}
+{\color{red}
+TODO: REWRITE ABSTRACT
+SELL THE READER ON THE UNIFICATION OF THE TWO PARTS TO THE THESIS
+Summarise the research undertaken in order to provide an overview of the project and its scholarly significance. gives a brief account of the thesis or dissertation, including a statement of the problem, procedure and methods, results, and conclusions.
+}
 This thesis presents research into applications of interfacial double layers to electronic systems.
 This research has two parts; layers on insulating surfaces and layers on conductors.
 
@@ -29,7 +30,7 @@ I develop a way to create a fluid solution that better mimics the electrical pro
 
 \phantomsection\addcontentsline{toc}{chapter}{Abstract}
 
-\chapter*{Acknowledgement}
+\chapter*{ACKNOWLEDGEMENT}
 \phantomsection\addcontentsline{toc}{chapter}{Acknowledgement}
 Thanks go to Jonathan Scott (chief supervisor), Steve Newcombe (Waikato University's award winning glass blower) and Peter Single (senior engineer at Saluda Medical) for their time and resources.
 Thank you to everyone who contributes to any of the following open source projects, from which I have benefitted enourmously,
@@ -45,12 +46,23 @@ Thank you to everyone who contributes to any of the following open source projec
 \item ngSpice
 \end{itemize}
 
+\renewcommand{\listfigurename}{LIST OF FIGURES}
+\renewcommand{\listtablename}{LIST OF TABLES}
+\renewcommand{\contentsname}{TABLE OF CONTENTS}
+
+\tableofcontents{}
+\listoffigures
+\listoftables
+\doublespacing
+
+
 %% Part 1 - Introduction
 
 \chapter{Introduction}
+\pagenumbering{arabic}
     \input{content/introduction/introduction.tex}
 
-\part{Double Layers On Insulators}
+\part{Double Layers on Insulators}
 
     \label{part:doubleLayersOnInsulators}
         
@@ -65,7 +77,13 @@ Thank you to everyone who contributes to any of the following open source projec
     In this part I explain how to harvest energy from water and glass without moving parts.
     I look at a smart application of a water such a harvester, create a power budget, and discuss the design of a practical harvester.
 
-    \chapter{Harvesting Energy}
+    \chapter{Introduction}
+        \label(chap:harvesterIntroduction)
+        \section{Background}
+        \section{Literature Review}
+        \input{content/pt1/introduction}
+
+    \chapter{Streaming Cell Harvester}
         \label{chap:harvestingEnergy}
 
         This chapter demonstrates an energy harvesting device capable of harvesting energy from flowing water with no moving parts.
@@ -100,7 +118,8 @@ Thank you to everyone who contributes to any of the following open source projec
         \input{content/pt1/04-HarvesterDesign/chapter}
 
 %% Part 3 - Double layers on conductors
-\part{\label{part:doubleLayersOnConductors}Double layers on conductors}
+\part{\label{part:doubleLayersOnConductors}Double Layers on Conductors}
+    \chapter{Background}
     \chapter{Electrically Modelling an Interface}
         \input{content/pt2/01-ElectricalModelling/chapter}
     \chapter{Determining Interface Parameters}
