@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="13.971504"
+   height="22.768"
+   id="svg6332"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="logo_harvesting_lrg_borderless.svg">
+  <defs
+     id="defs6334" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.919596"
+     inkscape:cx="-7.0393174"
+     inkscape:cy="34.710984"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="1374"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata6337">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-31.135877,-1029.7784)">
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g4770"
+       id="use4793-7-0-9"
+       transform="translate(-408.19841,660.29136)"
+       width="744.09448"
+       height="1052.3622" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#use4793-7-0-9"
+       id="use4795-7-6-2"
+       transform="translate(-5.6190491,-9.7460918e-7)"
+       width="744.09448"
+       height="1052.3622" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g4770"
+       id="use4803-7-9-2"
+       transform="translate(-402.57933,660.29137)"
+       width="744.09448"
+       height="1052.3622" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       d="m 39.036197,1029.7784 5.682012,0.04 -6.693876,10.1965 7.083048,0 -12.570468,12.5315 4.981488,-8.99 -6.382524,0 z"
+       id="path3960-8"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
