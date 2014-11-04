@@ -8,6 +8,7 @@
 \input{frontmatter}
 \rmfamily
 
+
 \chapter*{Abstract}
   Double layers pop-up where liquids meet solids or other dissimilar liquids.
   Their presence is unnoticed at the macroscopic level as they are too small to feel or see.
@@ -31,24 +32,25 @@
   \end{center}
   \vspace{0.5cm}
 
-  Firstly, we look to leverage double layer behaviour to harvest energy.
-  We will look at the practicality of using energy harvesting cells that utilise double layers as a means of converting fluid energy into electrical energy.
+  Firstly, we try to leverage double layer behaviour to harvest energy.
+  We look at the practicality of using energy harvesting cells that utilise double layers as a means of converting fluid energy into electrical energy.
   The primary application of such a harvester would be to power electronic water meters.
   Domestic water meters are typically installed where electrical connection is not feasible; harvesting energy here makes electronic metering practical.
-  Part \ref{part:doubleLayersOnInsulators} reveals why such a harvester cannot yet be used to harvest the quantity of energy required.
+  I show why such a harvester cannot yet be used to harvest the quantity of energy required in Part~\ref{part:doubleLayersOnInsulators}.
 
-  Secondly, we will look at how the double layer contributes to the electrical impedance of submerged electrodes.
+  In Part~\ref{part:doubleLayersOnConductors}, we look at how the double layer contributes to the electrical impedance of submerged electrodes.
   This work is especially important to designers of medical implants where such electrodes are used in-vivo.
-  Typically they use solutions of saline to replicate the impedance of a human spinal cavity.
-  The work in this part will quantify the response of medical electrodes submerged in a range of saline solutions.
-  I prove that saline is not a good representation of a spinal canal by measuring and comparing the response inside a living animal!
-  Finally, I show you how to make a solution that better matches a specific situation.
+  Typically they use solutions of saline to replicate the impedance of a living person.
+  For example, diluted solutions of saline are used to mimic the human spinal cavity.
+  I quantify the response of medical electrodes submerged in a range of saline solutions.
+  I show you that saline is not a good representation of a spinal canal by measuring and comparing the response inside a living animal!
+  Finally, I present recipes for solutions that better biological tissue.
 
 \phantomsection\addcontentsline{toc}{chapter}{Abstract}
 
 \chapter*{Acknowledgement}
 \phantomsection\addcontentsline{toc}{chapter}{Acknowledgement}
-Thanks to Jonathan Scott (my chief supervisor), Steve Newcombe (Waikato University's award winning glass blower) and Peter Single (senior engineer at Saluda Medical) for their time and resources. Thanks also go to the University of Waikato for a funding the first three years of this work with a Waikato Doctoral Scholarship.
+Thanks to Jonathan Scott (my chief supervisor), Steve Newcombe (Waikato University's award winning glass blower) and Peter Single (the senior electrical engineer at Saluda Medical) for their time, resources and patience. Thanks also go to the University of Waikato for a funding the first three years of this work with a Waikato Doctoral Scholarship. Without this funding I could not have undertaken this research.
 Secondly, thank you to everyone who has contributed to the following open source projects, from which I have benefited greatly,
 \begin{itemize}
 \item The Linux kernel
@@ -74,72 +76,31 @@ Secondly, thank you to everyone who has contributed to the following open source
   \pagenumbering{arabic}
   \input{content/introduction/introduction.tex}
 
-\part{Double Layers on Insulators}
+\part{Double Layers for Energy Harvesting}
   \label{part:doubleLayersOnInsulators}
-      
-  Part \ref{part:doubleLayersOnInsulators} deals with double layers formed on electrical insulators.
-  Two examples of where this happens are the walls of plastic or glass containers.
-  
-  A practical application of double layers on insulators is to the field of energy harvesting.
-  It was discussed in the introduction that double layers naturally form at liquid-solid interfaces.
-  It was said that the double layer itself is a collection of charged ions.
-  Can we collect this charge and convert it into electrical energy?
+  \input{content/pt1/main.tex}
 
-  In this part I explain how to harvest energy from water and glass without moving parts.
-  I look at a smart application of a water such a harvester, create a power budget, and discuss the design of a practical harvester.
-
-  \chapter{Introduction}
-    \label(chap:harvesterIntroduction)
-    \section{Background}
-    \section{Literature Review}
-    \input{content/pt1/introduction}
-
-  \chapter{Streaming Cell Harvester}
-    \label{chap:harvestingEnergy}
-
-    This chapter demonstrates an energy harvesting device capable of harvesting energy from flowing water with no moving parts.
-    A `smart' use for such a harvester is discussed in chapter \ref{chap:wirelessWaterMetering}.
-    I find the minimum power a harvester needs to harvest in order to be useful in chapter \ref{chap:energyRequirements}.
-    And finally, in chapter \ref{chap:harvesterDesign}, I discuss the design of a harvester and comment on its feasibility.
-
-    \input{content/pt1/01-PowerHarvesting/chapter}
-
-  \chapter{Wireless Water Metering}
-    \label{chap:wirelessWaterMetering}
-
-    A method of power harvesting was put forward in chapter \ref{chap:harvestingEnergy} that used water flow as a source of energy.
-    We expect the lack moving parts in that design will reduce or eliminate maintenance costs.
-    Such a low maintenance harvester is ideal for water utility companies to measure and record water usage.
-    This chapter discusses how such a water meter might be implemented.
-    The content in this chapter is used as the basis for investigating the energy requirements of such a harvester.
-
-    \input{content/pt1/02-WirelessWaterMeter/chapter}
-
-  \chapter{Energy Requirements}
-    \label{chap:energyRequirements}
-    
-    \section{Microcontroller}
-        \input{content/pt1/02-Microcontrollers/chapter}
-    
-    \section{Data Transmission}
-        \input{content/pt1/03-DataTransmission/chapter}
-
-  \chapter{Harvester Design}
-    \label{chap:harvesterDesign}
-    \input{content/pt1/04-HarvesterDesign/chapter}
 
 %% Part 3 - Double layers on conductors
-\part{\label{part:doubleLayersOnConductors}Double Layers on Conductors}
-  \chapter{Background}
-  \chapter{Electrically Modelling an Interface}
-    \input{content/pt2/01-ElectricalModelling/chapter}
-  \chapter{Determining Interface Parameters}
-    \input{content/pt2/02-InterfaceParameters/chapter}
+\part{Modelling Interfacial Impedance}
+  \label{part:doubleLayersOnConductors}
+  \chapter{Introduction}
+    \section{Background}
+    \section{Literature Review}
+
+  \chapter{An Interfacial Model In The Electrical Domain}
+    \input{content/pt2/modelling.tex}
+
+  \chapter{Extraction of Interface Model Parameters}
+    \input{content/pt2/interfaceParameters.tex}
+
+  \chapter{Recipes For Fluid Mimicry}
+    \input{content/pt2/recipes.tex}
 
 %% Part 4 - Appendices
 \part{Appendices}
   \appendix
-  \chapter{Alternative Energy Harvester}
+  \chapter{Charged Droplet Energy Harvester}
     \input{content/appendices/chargedWaterDrops/appendix}
   \chapter{Microprocessor Power Measurements}
     \input{content/appendices/microprocessorPowerMeasurements/appendix}

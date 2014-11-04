@@ -19,7 +19,7 @@ are essential for smart water metering, analog-to-digital conversion
 and non-volatile writes to memory.
 
 
-\section{Selection}
+\subsection{Selection of appropriate controllers}
 
 The following microprocessors have been chosen as they represent a
 well spaced selection from the three mainstream MCU manufacturers.
@@ -68,18 +68,18 @@ bytes each).
 
 
 
-\section{Power consumption}
+% \section{Power consumption}
 
-Each of the MCUs were programmed to carry out various tasks which
-were performed over their specified range of operating voltages and
-operating frequencies. While the chips where carrying out these tasks
-their power consumption was measured by an Agilent E5270B Precision
-Mainframe via a PC and a Tektronix MSO 4054 Oscilloscope for timing
-purposes. Details on how each of the tests where carried out, as well
-as raw data, can be found in appendix %\ref{Appendix:Measurements} .
+% Each of the MCUs were programmed to carry out various tasks which
+% were performed over their specified range of operating voltages and
+% operating frequencies. While the chips where carrying out these tasks
+% their power consumption was measured by an Agilent E5270B Precision
+% Mainframe via a PC and a Tektronix MSO 4054 Oscilloscope for timing
+% purposes. Details on how each of the tests where carried out, as well
+% as raw data, can be found in appendix %\ref{Appendix:Measurements} .
 
 
-\subsection{Test conditions}
+\subsection{Power consumption benchmarks}
 
 Where possible the chips were configured to have each of their pins
 set to outputs, held high, whilst being tied to Vdd via 10k$\Omega$
@@ -146,7 +146,7 @@ all produce the same result. This section will focus on the the energy
 consumed while processing data and executing code.
 
 
-\subsubsection{Behind the scenes \label{sub:Behind-the-scenes}}
+\subsubsection*{Behind the scenes \label{sub:Behind-the-scenes}}
 
 \begin{table}
 \begin{centering}
@@ -270,7 +270,7 @@ frequency of an MCU isn't necessarily the frequency at which it performs
 operations, although sometimes it is.
 
 
-\subsubsection{Power consumed while processing}
+\subsubsection*{Power consumed while processing}
 
 \begin{figure}
 \begin{centering}
@@ -343,7 +343,7 @@ consumed approximately the same amount of power as the Microchip MCUs
 operating at 1MIPS.
 
 
-\subsubsection{Joules of energy consumed per instruction cycle\label{sub:Joules-of-energy}}
+\subsubsection*{Joules of energy consumed per instruction cycle\label{sub:Joules-of-energy}}
 
 A convenient, and more insightful way to interpret the previous processing
 power consumption graphs is to calculate the energy spent per instruction
@@ -387,7 +387,7 @@ consumption of the ATtiny13V}
 
 
 
-\subsubsection{Performance benchmark}
+\subsubsection*{Performance benchmark}
 
 In section \ref{sub:Joules-of-energy} I presented a graph showing
 the amount of energy consumed per instruction cycle for each MCU under

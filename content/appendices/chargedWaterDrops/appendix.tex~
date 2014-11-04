@@ -95,7 +95,7 @@ generator experiment performed by Jonathan McMullen (see subsection
 effect of varying drop size, induction voltage and flow rate, independently.
 
 
-\subsubsection{Experimental setup}
+\subsubsection*{Experimental setup}
 
 \begin{figure}[H]
 \begin{centering}
@@ -184,7 +184,7 @@ drops and control flow rate.}
 
 
 
-\subsubsection{Results}
+\subsubsection*{Results}
 
 \begin{figure}[H]
 \begin{centering}
@@ -249,7 +249,7 @@ for an induction voltage of 3.8$\: kV$ and drop volume of 3.1$\:\mu L$.}
 
 
 
-\subsubsection{Conclusion \& discussion}
+\subsubsection*{Conclusion \& discussion}
 
 Increasing the output of the initial apparatus is possible by doing
 any of the following things:
@@ -293,7 +293,7 @@ Scaling down the design would allow the device to generate its maximum
 practical output at voltages that are easier to deal with.
 
 
-\subsubsection{Investigation:}
+\subsubsection*{Investigation:}
 
 \begin{figure}
 \begin{centering}

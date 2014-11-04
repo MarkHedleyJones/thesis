@@ -1,37 +1,50 @@
 %!TEX root = ../../thesis.tex
 
 \section{Background}
+  Measuring and modelling the electrical properties of double layers draws on concepts from both elecronics and chemistry.
+  This chapter is intended to give those readers unfamiliar with chemistry some essential background on the subject.
+  We start with some general background on liquids and move toward definining what the double layer is.
 
-  \subsection{Behaviour of Liquid}
-    This thesis is concerned with the behaviour of liquid at the atomic scale.
-    At the macro scale, the behaviour of liquid is simple and calculable.
+  \subsection{Behaviour of liquid}
+    Double layers are nothing more than an organised state of liquid.
+    But before we discuss double layers it will be of benefit to put liquids themselves in perspective.
+    After all, this thesis revolves around understanding its behaviour.
+
+    Liquid behaviour is simple and calculable at the macroscopic scale.
     Modern computers can simulate the movement of liquids using the Navier-Stokes equations with accuracy and speed.
-    This does not hold true when modelling fluid at the scale of individual atoms and molecules, where the behaviour is determined purely by electrical interactions.
-    These interactions are chaotic and therefore simulation of any reasonable sized volume demands prohibitive computing resources.
-
-    Water is a liquid comprised of the molecule $H_{2}O$.
-    This molecule is polar, meaning one side has a net positive charge and the other has a net negative charge.
-    This simple fact is responsible for very complex behaviour when dealing with a liquid body of any reasonable size.
+    This does not hold true when modelling fluid at the microscopic scale.
+    Individual atoms and molecules interact with great complexity.
+    Interactions are chaotic and simulation of any reasonable sized volume demands massive computing resources.
 
     \begin{figure}
         \begin{center}
             \includegraphics{content/introduction/graphics/polarWater}
         \end{center}
-        \caption{A single polar water molecule}
+        \caption{Molecular diagram of a single water molecule}
         \label{fig:waterMolecule}
     \end{figure}
 
-    The unifying theme of this thesis is the interactions that take place at the boundary between liquids and solids.
-    Interactions of interest occur on the liquid side of the boundary.
-    Of particular interest what happens directly at the boundary, within a layer titled the double layer.
+    Water is a liquid comprised of the molecule $H_{2}O$.
+    A molecular diagram of water is shown in figure~\ref{fig:waterMolecule}.
+    This molecule is polar, meaning one side has a net positive charge and the other has a net negative charge.
+    This imbalance is responsible for very complex behaviour when dealing with a liquid body of any reasonable size.
+    Water molecules can rotate and migrate so as to neutralise an electrical field.
+    This means that a body of water, or any polar liquid, behaves as an extremely lossy transmission medium.
 
+    We are concerned in particular with interactions occurring at the boundary between solids and liquids.
+    This boundary is referred to as the interface.
+    Interactions of interest here occur on the liquid side of the interface; in a very thin layer.
+    This layer is known as an interfacial double layer.
+
+    {\color{blue} Edited to here}
+    
     The electric field of the solid's interior would be affected by the accumulation of charge at its surface, but this should not affect the analysis of the exterior layer.
     It is important to note that a solid in the context of this thesis is not simply the walls of a container, but may also refer to solid particles, even molecules, within a liquid.
     This is the case for emulsified substances such as paints where the formed double layer determines the stability of the emulsion.
 
     This thesis focusses on two applications of interfacial double layers with respect to electrical engineering. Firstly, it looks at a method of harvesting power from water by way of a mechanism that has no moving parts; and secondly, it models the electrical impedance that is seen by a medical implant when placed inside a biological system. The second application is where the majority of the research effort can be found.
 
-    \subsection{Molecular Simulation}
+  \subsection{Molecular simulation}
     Physical simulations involving the properties of materials and interactions with radio-waves are a common tool for any RF engineer. There are many areas in science and engineering that benefit from powerful computer simulation. Many modern-day computer games simulate the position and velocity of thousands of objects, such as bullets and buildings breaking apart, in near real-time.
 
     These kinds of simulations generally involve calculating the state of a system of objects at a specific time, then adjusting the all of the parameters based the physics of that system at a specific time, and repeating this process for as long as the simulation need continue.
@@ -42,7 +55,7 @@
 
     The molar mass of water is defined as $18.0528\thinspace g/Mol$, which represents the amount of water in moles per gram. One gram of water is defined as one millilitre so we can say that for every millilitre of water we have we have an eighteenth of a mole of water. Avagadro's constant, the number of constituent particles per mole of a given substance, is $6.0221\thinspace \times 10^{23}$. Therefore we have one eighteenth of Avagadro's constant in water molecules, which is about $3.3333\times 10^{22}$ molecules. That is 33 333 333 333 333 333 333 333 molecules! The behaviour of double layers in the applications of this research require a far greater volume than $1\thinspace ml$ to be useful, putting molecular simulation out of the picture for the applications discussed in this thesis for the foreseeable future.
 
-  \subsection{Interfacial Double Layer}
+  \subsection{Interfacial double layer}
 
     \begin{figure}
       \begin{center}

@@ -1,0 +1,52 @@
+%!TEX root = ../../thesis.tex
+
+Part \ref{part:doubleLayersOnInsulators} deals with double layers formed on electrical insulators.
+Two examples of where this happens are the walls of plastic or glass containers.
+
+A practical application of double layers on insulators is to the field of energy harvesting.
+It was discussed in the introduction that double layers naturally form at liquid-solid interfaces.
+It was said that the double layer itself is a collection of charged ions.
+Can we collect this charge and convert it into electrical energy?
+
+In this part I explain how to harvest energy from water and glass without moving parts.
+I look at a smart application of a water such a harvester, create a power budget, and discuss the design of a practical harvester.
+
+\chapter{Introduction}
+  \label{chap:harvesterIntroduction}
+  \section{Background}
+  \section{Literature Review}
+
+\chapter{The Streaming Cell Energy Harvester}
+  \label{chap:harvestingEnergy}
+
+  This chapter demonstrates an energy harvesting device capable of harvesting energy from flowing water with no moving parts.
+  A `smart' use for such a harvester is discussed in chapter \ref{chap:wirelessWaterMetering}.
+  I find the minimum power a harvester needs to harvest in order to be useful in chapter \ref{chap:energyRequirements}.
+  And finally, in chapter \ref{chap:harvesterDesign}, I discuss the design of a harvester and comment on its feasibility.
+
+  \input{content/pt1/01-PowerHarvesting/chapter}
+
+\chapter{Applicability to Water Metering}
+  \label{chap:wirelessWaterMetering}
+  \section{Current Trends in Water Metering}
+  \section{Appropriatenes of Streaming Cell Harvesters}
+
+  A method of power harvesting was put forward in chapter \ref{chap:harvestingEnergy} that used water flow as a source of energy.
+  We expect the lack moving parts in that design will reduce or eliminate maintenance costs.
+  Such a low maintenance harvester is ideal for water utility companies to measure and record water usage.
+  This chapter discusses how such a water meter might be implemented.
+  The content in this chapter is used as the basis for investigating the energy requirements of such a harvester.
+  \input{content/pt1/02-WirelessWaterMeter/chapter}
+
+\chapter{Energy Requirements}
+  \label{chap:energyRequirements}
+  
+  \section{Microcontrollers}
+      \input{content/pt1/02-Microcontrollers/chapter}
+  
+  \section{Data Transmission}
+      \input{content/pt1/03-DataTransmission/chapter}
+
+\chapter{Discussion}
+
+\chapter{Conclusion}
