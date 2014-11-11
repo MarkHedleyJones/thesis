@@ -77,31 +77,64 @@
     In the previous section we discussed where and why double layers form, but we haven't yet addressed what they are.
     We now look into double layers themselves and define some of their properties.
 
+    In the proceeding section, the terms co-ion and counter-ion refer to ions of like and opposite polarity to some reference charge respectively.
+    For example, a negative surface would attract counter-ions, which would be positive ions.
+    It would repel co-ions, which are negative ions.
+    The relation is shown as figure \ref{fig:counterAndCoIons}.
+
+    \begin{figure}
+      \begin{center}
+        \includegraphics{content/introduction/graphics/counterAndCoIons}
+      \end{center}
+      \caption{Counter-ions are oppositely charged, co-ions have like charge.}
+      \label{fig:counterAndCoIons}
+    \end{figure}
+
   \subsubsection*{Models of the interfacial double layer}
+
     \begin{figure}
       \begin{center}
         \includegraphics{content/introduction/graphics/doubleLayerModels}
       \end{center}
-      \caption{Three models of double layer anatomy}
+      \caption{Three models of the double layer's structure.}
       \label{fig:doubleLayerModels}
     \end{figure}
   
-    There are three models for the interfacial double layer.
-    The general schematic behind each model is shown in figure~\ref{fig:doubleLayerModels}.
-    Note that the solid need not be negatively charged.
-    Each model is a progression of the previous model beginning with the Helmholtz model~\cite{Horch2004}.
+    Three models of the interfacial double layer have been proposed over time.
+    Each represents an extension or modification of the previous beginning with the Helmholtz Model~\cite{Horch2004}.
 
-    The first was proposed by Helmholtz in 1879 as a simple parallel plate capacitor model~\cite{Geddes1997}.
-    This is represented by two layers of charge, one inside the solid and one in the liquid.
-    Referring to figure~\ref{fig:doubleLayerModels}, this equates to a layer of electrons at solid surface matched by an immobile layer of positive ions at the liquid surface.
-    Past the layer of bound surface ions there is no affect from the solids surface charge.
+    Helmholtz proposed his parallel place capacitor based model in 1879~\cite{Geddes1997}.
+    His double layer is consists of two layers of surface charge, one inside the solid and one in the liquid.
+    The counter-ions sit in a \emph{compact layer}, meaning that they are bound to the surface and immobile.
+    Figure \ref{fig:doubleLayerModels} represents this as a row of tightly packed positive ions along the solid surface.
+    Past the layer of bound surface ions there is no affect from the solid's charged surface.
+    This model failed to account for observed variations in capacitance with applied voltage and varied electrolytic concentration.~\cite{Bard1980}.
 
-    The second model
+    Later, Goüy and Chapman independantly proposed that charge in the liquid phase may be held in a \emph{diffuse layer}.
+    This meant that ions in the layer were not fixed and that the density of charge in the layer could vary.
+    This is represented in figure~\ref{fig:doubleLayerModels} by the lack of ions bound to the surface and the gradual decline in counter-ion concentration with distance from the surface.
+
+    This second model, referred to as the Goüy-Chapmam Model, accounts for the variation in capacitance by distributing charge in the liquid as a gradient from the solid's surface.
+    Now, the layer can change its concentration profile in response to applied electrostatic potential and ionic concentration.
+    In the case of a higher electrostatic potential, layer is pulled closer to the surface, becoming shallower.
+    In the case of a higher electrolytic concentration, the layer is more concentrated with a higher charge density, again becoming shallower.
+
+    The Goüy-Chapmam Model solves the issue of variable capacitance, but it tends to fall over at high ionic concentrations.
+    This is in part because it fails to account for the physical size of the ions in the electrolyte, instead modelling them as point charges~\cite{Bard1980}.
+    In their model, ions can get infinitely close to the surface regardless of their size.
+
+    In 1924, Otto Stern published his modified version of the Goüy-Chapmam model~\cite{Stern1924}.
+    This model extends the Goüy-Chapmam model by setting the minimum distance an ion can get to the solid surface.
+    This is done by taking the geometric mean of the ionic radii and setting this as the closest approach.
+    This effectively reintroduces the compact layer as seen in Helmholtz's model but allows for a concentration gradient exterior to this layer.
+    The model resembles the Helmholtz model at high ionic concentration but accounts for the spread at lower concentrations.
+    This is the most commonly used model for interfacial double layers.
 
 
 
-    
 
+
+  
   \subsubsection*{Anatomy of an interfacial double layer}
 
     \begin{figure}

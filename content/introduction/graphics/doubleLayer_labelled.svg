@@ -14,7 +14,7 @@
    height="393.75"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="doubleLayer_labelled.svg">
   <defs
      id="defs4">
@@ -5216,15 +5216,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="204.99035"
-     inkscape:cy="216.06751"
+     inkscape:zoom="2"
+     inkscape:cx="166.76624"
+     inkscape:cy="148.57022"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="2490"
      inkscape:window-height="1354"
-     inkscape:window-x="1310"
+     inkscape:window-x="68"
      inkscape:window-y="46"
      inkscape:window-maximized="0"
      units="pt" />
@@ -5236,7 +5236,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -6716,7 +6716,7 @@
     </g>
     <g
        id="g11882"
-       transform="matrix(-0.07993621,0.04435774,-0.04435774,-0.07993621,73.81997,934.33667)">
+       transform="matrix(-0.07993621,0.04435774,-0.04435774,-0.07993621,1.5699693,897.33667)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11890);fill-opacity:1;stroke:#0e5c7e;stroke-width:7.69027853;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -8484,7 +8484,7 @@
     </g>
     <g
        id="g11782-9-5-1-1-5-2"
-       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,193.35869,836.95952)">
+       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,189.73477,837.40146)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11790-9-8-5-9-84-94);fill-opacity:1;stroke:#7e0e0e;stroke-width:7.42909908;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -8764,7 +8764,7 @@
     </g>
     <g
        id="g11782-9-5-1-1-5-66"
-       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,26.108695,835.45952)">
+       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,24.608695,850.45952)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11790-9-8-5-9-84-077);fill-opacity:1;stroke:#7e0e0e;stroke-width:7.42909908;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -9044,7 +9044,7 @@
     </g>
     <g
        id="g11782-9-5-18-22"
-       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,213.1087,828.45951)">
+       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,209.39639,826.86852)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11790-9-8-4-7);fill-opacity:1;stroke:#7e0e0e;stroke-width:7.42909908;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -9144,7 +9144,7 @@
     </g>
     <g
        id="g11782-9-5-18-27"
-       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,188.8587,825.45951)">
+       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,177.81016,829.43699)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11790-9-8-4-71);fill-opacity:1;stroke:#7e0e0e;stroke-width:7.42909908;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -9204,7 +9204,7 @@
     </g>
     <g
        id="g11782-9-5-18-66"
-       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,175.95646,1078.3892)">
+       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,154.70646,1075.1392)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11790-9-8-4-1);fill-opacity:1;stroke:#7e0e0e;stroke-width:7.42909908;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -9284,7 +9284,7 @@
     </g>
     <g
        id="g11782-9-5-18-87"
-       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,133.53005,819.23455)">
+       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,108.42776,813.5777)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11790-9-8-4-69);fill-opacity:1;stroke:#7e0e0e;stroke-width:7.42909908;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -9304,7 +9304,7 @@
     </g>
     <g
        id="g11782-9-5-18-44"
-       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,120.09502,1061.7722)">
+       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,110.34502,1065.0222)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11790-9-8-4-54);fill-opacity:1;stroke:#7e0e0e;stroke-width:7.42909908;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -9324,7 +9324,7 @@
     </g>
     <g
        id="g11782-9-5-18-33"
-       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,255.30496,776.40954)">
+       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,278.28593,779.23797)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11790-9-8-4-62);fill-opacity:1;stroke:#7e0e0e;stroke-width:7.42909908;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -9384,7 +9384,7 @@
     </g>
     <g
        id="g11782-9-5-18-342"
-       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,206.7156,1084.046)">
+       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,184.38717,1094.6802)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11790-9-8-4-34);fill-opacity:1;stroke:#7e0e0e;stroke-width:7.42909908;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -9444,7 +9444,7 @@
     </g>
     <g
        id="g11782-9-5-18-442"
-       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,171.36027,804.03175)">
+       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,160.40012,806.6834)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11790-9-8-4-19);fill-opacity:1;stroke:#7e0e0e;stroke-width:7.42909908;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -9464,7 +9464,7 @@
     </g>
     <g
        id="g11782-9-5-18-06"
-       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,88.628771,783.52566)">
+       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,49.628771,1072.5257)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11790-9-8-4-08);fill-opacity:1;stroke:#7e0e0e;stroke-width:7.42909908;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -9484,7 +9484,7 @@
     </g>
     <g
        id="g11782-9-5-18-54"
-       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,227.2217,763.83758)">
+       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,369.70372,788.23276)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11790-9-8-4-060);fill-opacity:1;stroke:#7e0e0e;stroke-width:7.42909908;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -9504,7 +9504,7 @@
     </g>
     <g
        id="g11782-9-5-18-96"
-       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,209.54403,1142.3824)">
+       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,16.503876,1037.3771)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11790-9-8-4-40);fill-opacity:1;stroke:#7e0e0e;stroke-width:7.42909908;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -9524,7 +9524,7 @@
     </g>
     <g
        id="g11782-9-5-18-544"
-       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,88.82547,1123.0448)">
+       transform="matrix(0.08698561,0.02812311,-0.02812311,0.08698561,325.8445,844.10546)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11790-9-8-4-45);fill-opacity:1;stroke:#7e0e0e;stroke-width:7.42909908;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -9562,18 +9562,6 @@
            d="m -282.83125,-457.71742 0,15.088 c -3e-5,1.96267 -0.27603,3.34267 -0.828,4.14 -0.98136,1.288 -2.2387,1.932 -3.772,1.932 -1.77869,0 -3.09736,-0.736 -3.956,-2.208 -0.42936,-0.79733 -0.64402,-2.08533 -0.644,-3.864 l 0,-15.088 -13.064,0 c -2.02401,2e-5 -3.40401,-0.27598 -4.14,-0.828 -1.288,-0.98131 -1.932,-2.23864 -1.932,-3.772 0,-1.77864 0.736,-3.0973 2.208,-3.956 0.61333,-0.4293 1.90133,-0.64397 3.864,-0.644 l 13.064,0 0,-15.088 c -2e-5,-2.08529 0.30664,-3.46528 0.92,-4.14 0.85864,-1.28795 2.08531,-1.93195 3.68,-1.932 1.77864,5e-5 3.0973,0.73605 3.956,2.208 0.4293,0.61338 0.64397,1.90138 0.644,3.864 l 0,15.088 12.972,0 c 2.02395,3e-5 3.43462,0.27603 4.232,0.828 1.28795,0.98136 1.93195,2.23869 1.932,3.772 -5e-5,1.77869 -0.73605,3.09736 -2.208,3.956 -0.67472,0.42935 -1.99338,0.64402 -3.956,0.644 l -12.972,0" />
       </g>
     </g>
-    <text
-       xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
-       x="387.17346"
-       y="696.45526"
-       id="text3069-2-6"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         x="387.17346"
-         y="696.45526"
-         id="tspan5148-1"
-         style="font-size:12px;text-align:end;text-anchor:end">DIFFUSE LAYER</tspan></text>
     <g
        id="g11882-50"
        transform="matrix(-0.07993621,0.04435774,-0.04435774,-0.07993621,162.5953,952.77098)">
@@ -9596,7 +9584,7 @@
     </g>
     <g
        id="g11882-2"
-       transform="matrix(-0.07993621,0.04435774,-0.04435774,-0.07993621,65.095301,977.27098)">
+       transform="matrix(-0.07993621,0.04435774,-0.04435774,-0.07993621,49.094408,933.2857)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11890-0);fill-opacity:1;stroke:#0e5c7e;stroke-width:7.69027853;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -9616,7 +9604,7 @@
     </g>
     <g
        id="g11882-9"
-       transform="matrix(-0.07993621,0.04435774,-0.04435774,-0.07993621,-8.9046994,626.77098)">
+       transform="matrix(-0.07993621,0.04435774,-0.04435774,-0.07993621,242.30672,646.47809)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11890-61);fill-opacity:1;stroke:#0e5c7e;stroke-width:7.69027853;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -9636,7 +9624,7 @@
     </g>
     <g
        id="g11882-0"
-       transform="matrix(-0.07993621,0.04435774,-0.04435774,-0.07993621,108.5953,610.77098)">
+       transform="matrix(-0.07993621,0.04435774,-0.04435774,-0.07993621,135.81891,625.66528)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11890-5);fill-opacity:1;stroke:#0e5c7e;stroke-width:7.69027853;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -9676,7 +9664,7 @@
     </g>
     <g
        id="g11882-3"
-       transform="matrix(-0.07993621,0.04435774,-0.04435774,-0.07993621,298.5953,982.27098)">
+       transform="matrix(-0.07993621,0.04435774,-0.04435774,-0.07993621,247.68361,920.04558)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#radialGradient11890-4);fill-opacity:1;stroke:#0e5c7e;stroke-width:7.69027853;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -9696,13 +9684,13 @@
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
-       d="m 292.0351,692.73424 -56.45916,30.44957"
+       d="m 230.26576,1019.1584 16.35686,-43.22986"
        id="path11906"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
-       d="M 95.261664,963.10444 171.78498,934.24587"
+       d="m 190.2535,683.9582 18.79792,68.02763"
        id="path11906-5"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -9720,68 +9708,89 @@
          id="flowPara4937">Medium electric field strength.Ions/molecules are looselypacked in a shell surrounding the stern layerand are mobile.</flowPara><flowPara
          id="flowPara4939" /><flowPara
          id="flowPara4941" /><flowPara
-         id="flowPara4943" /></flowRoot>    <flowRoot
-       xml:space="preserve"
-       id="flowRoot4985"
-       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:justify;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
-       transform="translate(-225.25,726.6122)"><flowRegion
-         id="flowRegion4987"><rect
-           id="rect4989"
-           width="131.75"
-           height="110.25"
-           x="520"
-           y="-26.75"
-           style="font-size:8px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:justify;text-anchor:start;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium" /></flowRegion><flowPara
-         id="flowPara4991">Medium electric field strength. Ions/molecules are loosely packed in a shell surrounding the stern layer and are mobile.</flowPara></flowRoot>    <text
-       xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
-       x="337.95322"
-       y="991.6366"
-       id="text3069-2-6-8"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
+         id="flowPara4943" /></flowRoot>    <g
+       id="g4892">
+      <text
+         sodipodi:linespacing="125%"
+         id="text3069-2-6"
+         y="1016.4414"
+         x="225.5719"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
+         xml:space="preserve"><tspan
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
+           id="tspan5148-1"
+           y="1016.4414"
+           x="225.5719"
+           sodipodi:role="line">GOÜY-CHAPMAN / DIFFUSE LAYER</tspan></text>
+      <flowRoot
+         transform="translate(-505.88585,1045.5637)"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:justify;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
+         id="flowRoot4985"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4987"><rect
+             style="font-size:8px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:justify;text-anchor:start;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
+             y="-26.75"
+             x="520"
+             height="33.528912"
+             width="215.1886"
+             id="rect4989" /></flowRegion><flowPara
+           id="flowPara4874">Medium electric field strength. Ions/molecules are loosely packed in a shell surrounding the stern layer and are mobile.</flowPara></flowRoot>    </g>
+    <g
+       id="g4884"
+       transform="translate(30.759145,21.983541)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text3069-2-6-8"
+         y="992.54987"
          x="337.95322"
-         y="991.6366"
-         id="tspan5148-1-5"
-         style="font-size:12px;text-align:end;text-anchor:end">EXTERIOR</tspan></text>
-    <flowRoot
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
+         xml:space="preserve"><tspan
+           style="font-size:12px;text-align:end;text-anchor:end;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
+           id="tspan5148-1-5"
+           y="992.54987"
+           x="337.95322"
+           sodipodi:role="line">EXTERIOR</tspan></text>
+      <flowRoot
+         transform="translate(-240.88265,1021.6722)"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:justify;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
+         id="flowRoot4985-3"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4987-6"><rect
+             style="font-size:8px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:justify;text-anchor:start;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
+             y="-26.75"
+             x="520"
+             height="54.678932"
+             width="117.33402"
+             id="rect4989-5" /></flowRegion><flowPara
+           id="flowPara5028">Electric field from solid shielded by the the formed double layer.</flowPara></flowRoot>    </g>
+    <text
        xml:space="preserve"
-       id="flowRoot4985-3"
-       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:justify;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
-       transform="translate(-240.88265,1021.6722)"><flowRegion
-         id="flowRegion4987-6"><rect
-           id="rect4989-5"
-           width="143.85052"
-           height="56.446701"
-           x="520"
-           y="-26.75"
-           style="font-size:8px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:justify;text-anchor:start;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium" /></flowRegion><flowPara
-         id="flowPara5028">Low electric field strength. Electric field from solid is shielded by the charged ions in the formed double layer.</flowPara></flowRoot>    <text
-       xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
-       x="90.7724"
-       y="968.22925"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
+       x="8.4020004"
+       y="676.59705"
        id="text3069-2-6-8-2"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         x="90.7724"
-         y="968.22925"
-         id="tspan5148-1-5-4"
-         style="font-size:12px;text-align:end;text-anchor:end">STERN LAYER</tspan></text>
+         x="8.4020004"
+         y="676.59705"
+         style="font-size:12px;text-align:start;text-anchor:start;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
+         id="tspan4870">STERN / HELMHOLTZ / COMPACT LAYER</tspan><tspan
+         sodipodi:role="line"
+         x="8.4020004"
+         y="691.59705"
+         style="font-size:12px;text-align:start;text-anchor:start;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
+         id="tspan4858" /></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot4985-3-5"
-       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:justify;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
-       transform="translate(-511.398,999.67904)"><flowRegion
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:justify;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
+       transform="translate(-511.398,706.90739)"><flowRegion
          id="flowRegion4987-6-1"><rect
            id="rect4989-5-0"
-           width="121.8505"
-           height="104.9467"
+           width="178.41905"
+           height="23.275867"
            x="520"
            y="-26.75"
-           style="font-size:8px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:justify;text-anchor:start;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium" /></flowRegion><flowPara
-         id="flowPara5028-7">High electric field strength.</flowPara><flowPara
-         id="flowPara5067">Ions and molecules are tightly</flowPara><flowPara
-         id="flowPara5069">packed at the surface and are</flowPara><flowPara
-         id="flowPara5071">immobile</flowPara></flowRoot>  </g>
+           style="font-size:8px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:justify;text-anchor:start;font-family:Palladio URW;-inkscape-font-specification:Palladio URW" /></flowRegion><flowPara
+         id="flowPara5071">High electric field strength. Ions and molecules are tightly packed at the surface and are immobile</flowPara></flowRoot>  </g>
 </svg>
