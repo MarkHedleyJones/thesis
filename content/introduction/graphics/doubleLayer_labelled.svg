@@ -5217,17 +5217,19 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2"
-     inkscape:cx="166.76624"
-     inkscape:cy="148.57022"
+     inkscape:cx="167.87063"
+     inkscape:cy="189.9844"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="2490"
-     inkscape:window-height="1354"
-     inkscape:window-x="68"
-     inkscape:window-y="46"
+     inkscape:window-width="1278"
+     inkscape:window-height="1373"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="0"
-     units="pt" />
+     units="pt"
+     showguides="true"
+     inkscape:guide-bbox="true" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -5327,15 +5329,26 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palladio URW;-inkscape-font-specification:Palladio URW Medium"
        x="215.71696"
-       y="852.0202"
+       y="842.5202"
        id="text3069-2-2"
        sodipodi:linespacing="125%"><tspan
-         id="tspan12053"
          sodipodi:role="line"
          x="215.71696"
-         y="852.0202">Negatively charged</tspan></text>
+         y="842.5202"
+         id="tspan4947"
+         style="font-weight:500;fill:#000000;-inkscape-font-specification:Palladio URW Medium">Negatively</tspan><tspan
+         sodipodi:role="line"
+         x="217.21696"
+         y="857.5202"
+         style="font-weight:500;fill:#000000;-inkscape-font-specification:Palladio URW Medium"
+         id="tspan4951">charged </tspan><tspan
+         sodipodi:role="line"
+         x="215.71696"
+         y="872.5202"
+         style="font-weight:500;fill:#000000;-inkscape-font-specification:Palladio URW Medium"
+         id="tspan4953">solid</tspan></text>
     <g
        id="g10348"
        transform="matrix(0.86424117,0.50307773,-0.50307773,0.86424117,455.5291,121.98421)">
@@ -9709,33 +9722,6 @@
          id="flowPara4939" /><flowPara
          id="flowPara4941" /><flowPara
          id="flowPara4943" /></flowRoot>    <g
-       id="g4892">
-      <text
-         sodipodi:linespacing="125%"
-         id="text3069-2-6"
-         y="1016.4414"
-         x="225.5719"
-         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
-         xml:space="preserve"><tspan
-           style="font-size:12px;text-align:end;text-anchor:end;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
-           id="tspan5148-1"
-           y="1016.4414"
-           x="225.5719"
-           sodipodi:role="line">GOÜY-CHAPMAN / DIFFUSE LAYER</tspan></text>
-      <flowRoot
-         transform="translate(-505.88585,1045.5637)"
-         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:justify;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
-         id="flowRoot4985"
-         xml:space="preserve"><flowRegion
-           id="flowRegion4987"><rect
-             style="font-size:8px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:justify;text-anchor:start;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
-             y="-26.75"
-             x="520"
-             height="33.528912"
-             width="215.1886"
-             id="rect4989" /></flowRegion><flowPara
-           id="flowPara4874">Medium electric field strength. Ions/molecules are loosely packed in a shell surrounding the stern layer and are mobile.</flowPara></flowRoot>    </g>
-    <g
        id="g4884"
        transform="translate(30.759145,21.983541)">
       <text
@@ -9765,32 +9751,60 @@
            id="flowPara5028">Electric field from solid shielded by the the formed double layer.</flowPara></flowRoot>    </g>
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
-       x="8.4020004"
-       y="676.59705"
-       id="text3069-2-6-8-2"
-       sodipodi:linespacing="125%"><tspan
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palladio URW;-inkscape-font-specification:Palladio URW Medium"
+       x="6.5138121"
+       y="688.36218"
+       id="text4852"><tspan
          sodipodi:role="line"
-         x="8.4020004"
-         y="676.59705"
-         style="font-size:12px;text-align:start;text-anchor:start;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
-         id="tspan4870">STERN / HELMHOLTZ / COMPACT LAYER</tspan><tspan
+         x="6.5138121"
+         y="688.36218"
+         id="tspan4861">High electric field strength.  Counter-ions form a dense</tspan><tspan
          sodipodi:role="line"
-         x="8.4020004"
-         y="691.59705"
-         style="font-size:12px;text-align:start;text-anchor:start;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
-         id="tspan4858" /></text>
-    <flowRoot
+         x="6.5138121"
+         y="700.86218"
+         id="tspan4865">and immobile layer at the interface.</tspan></text>
+    <text
        xml:space="preserve"
-       id="flowRoot4985-3-5"
-       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:justify;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palladio URW;-inkscape-font-specification:Palladio URW"
-       transform="translate(-511.398,706.90739)"><flowRegion
-         id="flowRegion4987-6-1"><rect
-           id="rect4989-5-0"
-           width="178.41905"
-           height="23.275867"
-           x="520"
-           y="-26.75"
-           style="font-size:8px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:justify;text-anchor:start;font-family:Palladio URW;-inkscape-font-specification:Palladio URW" /></flowRegion><flowPara
-         id="flowPara5071">High electric field strength. Ions and molecules are tightly packed at the surface and are immobile</flowPara></flowRoot>  </g>
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palladio URW;-inkscape-font-specification:Palladio URW Medium"
+       x="14.11875"
+       y="1028.3372"
+       id="text4852-0"><tspan
+         sodipodi:role="line"
+         x="14.11875"
+         y="1028.3372"
+         id="tspan4865-5">Decaying electric field strength. Counter-ions are</tspan><tspan
+         sodipodi:role="line"
+         x="14.11875"
+         y="1040.8372"
+         id="tspan4893">drawn to the surface, but remain mobile.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palladio URW;-inkscape-font-specification:Palladio URW Bold"
+       x="5.5"
+       y="676.86218"
+       id="text4901"><tspan
+         sodipodi:role="line"
+         id="tspan4903"
+         x="5.5"
+         y="676.86218">STERN / HELMHOLTZ/ COMPACT LAYER</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palladio URW;-inkscape-font-specification:Palladio URW Bold"
+       x="16.109219"
+       y="1016.0802"
+       id="text4901-4"><tspan
+         sodipodi:role="line"
+         id="tspan4903-6"
+         x="16.109219"
+         y="1016.0802">GOÜY-CHAPMAN / DIFFUSE LAYER</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palladio URW;-inkscape-font-specification:Palladio URW Medium"
+       x="190.56528"
+       y="245.61113"
+       id="text4955"
+       transform="translate(0,658.6122)"><tspan
+         sodipodi:role="line"
+         id="tspan4957"></tspan></text>
+  </g>
 </svg>
