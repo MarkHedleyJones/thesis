@@ -147,61 +147,12 @@
     Ions here are still drawn to the solid, but not so strongly as to be immobile.
     The electric potential in this layer decays from that within the compact layer to the potential in the bulk of the solution.
 
-    These two layers are divided by the shear plane.
-    This is the distance from the surface at which the layer can move laterally.
-    The shear plane is an important parameter with linear geometries, such as the inside of a pipe, as it represents the point the fluid can move.    
+    These layers are divided by the shear plane.
+    The shear plane represents nearest distance from the surface at which the layer can move laterally.
+    This is an important parameter with linear geometries, such as the inside of a pipe, as it represents the true no-slip boundary.
 
     The thickness of a typical double layer is between \SI{1}-\SI{100}{\nano\meter}~\cite{Jiang2010}, as defined by it's Debye length.
     As mentioned in the previous section, this varies based on the ionic concentration of the solution and the potential at the solid surface.
-
-  \subsubsection*{Formation}
-    {\color{blue}
-    In order for a double layer to form, the liquid phase must contain ions, charged molecules, or polar molecules.
-    This means there are likely to be non-participating elements within the fluid, that is, elements not affected by the charge {Todo: check affected and effected} of surrounding elements.
-    The reverse case is also true {Todo: is this correct?, I just made it up} where an electrolyte solution comes in contact with a electrically neutral and stable solid.
-	Although this case is not as obvious as one may think.
-	For example, placing pure water in a glass flask, it may be assumed, would not cause the formation of a double layer.
-	Glassware in used throughout chemistry laboratories as it reacts with very little and pure water with no salt ions should be fairly stable.
-	This is not the case however as glass in contact with water undergoes a process of deprotonation at the boundary.
-	This deprotonation is where $H^{+}$ ions are torn from the surface of the glass and enter the liquid phase.
-	As this happens, the surface of the glass is left negatively charged.
-	Subsequently, a double layer is formed from polar water molecules and hydrated protons.
-    }
-
-
-
-    Figures \ref{fig:doubleLayer_set1} and \ref{fig:doubleLayer_set2} illustrate the formation of such a layer around a charged object that, for the sake of illustration, instantaneously appears in a settled electrolyte solution.
-	In these figures, the spacing of depicted fluid elements do not represent the density of a liquid system and the smooth surface of the charged object in no way resembles the surface of a solid at the scale of individual atoms.
-
-    The first set of images, figure \ref{fig:doubleLayer_set1}, depict charged elements in the fluid responding to the presence of the solid by aligning themselves with the induced field and migrating toward or away from the object.
-	The second set of images, figure \ref{fig:doubleLayer_set2}, shows continued migration of charged particles and the formation of the Stern layer at the solid-liquid interface.
-	Members of this layer are bound so strongly to the object that they are effectively immobile, i.e., they are adsorbed to the solid object.
-	A substantial proportion of the initial electrical field from the solid is shielded by the Stern layer.
-
-    Outside the Stern layer, as the field strength continues to diminish with increasing radial distance, ions and molecules are attracted with decreasing strength.
-	This reduction in attraction forms a layer that is thicker than the stern layer and mobile; the ions are free to move locally within this secondary layer.
-	This secondary layer is called the diffuse layer and it is convenient to visualise it as a fluffy cloud of charged particles attracted to, but not trapped upon, the thin Stern layer immediately adjacent to the surface.
-
-    \begin{figure}
-      \begin{center}
-        \includegraphics{content/introduction/graphics/doubleLayer_t0.pdf}
-        \includegraphics{content/introduction/graphics/doubleLayer_t1.pdf}
-        \includegraphics{content/introduction/graphics/doubleLayer_t2.pdf}
-      \end{center}
-      \caption{Creation of a double layer (time 0-2)}
-      \label{fig:doubleLayer_set1}
-    \end{figure}
-
-    \begin{figure}
-      \begin{center}
-        \includegraphics{content/introduction/graphics/doubleLayer_t3.pdf}
-        \includegraphics{content/introduction/graphics/doubleLayer_t4.pdf}
-        %\includegraphics{content/introduction/graphics/doubleLayer_t5.pdf}
-        \includegraphics{content/introduction/graphics/doubleLayer_t6.pdf}
-      \end{center}
-      \caption{Creation of a double layer (time 3-6)}
-      \label{fig:doubleLayer_set2}
-    \end{figure}
 
 
   \subsection{Liquid simulation}
@@ -213,82 +164,90 @@
     These tools allow engineers to push boundaries of aircraft and boat design.
     This does not hold true when modelling fluid at the microscopic scale.
 
-    Computer simulations usually involve calculating the state of a system of objects at specific time intervals.
-    The process is repeated at each time step until the simulation time frame has been completed.
+    Computer simulations are based upon calculating the state of a system of objects at specific time intervals.
+    At each time interval, the variables of each object in the system is updated and the cycle repeats.
+    This repeats for every time-step until the simulation time-frame has run its course.
     These simulations are not run in real-time.
-    In some cases they may take hours or days to complete a simulation spanning fractions of a second.
+    They often take hours or days to complete results spanning fractions of a second.
 
     Finite-difference time-domain simulation is a common technique for calculating electrical fields and resulting currents and voltages in the field of electrical engineering.
     Such simulations can involve hundreds of thousands, \emph{sometimes millions}, of objects.
     These objects are elements of a 3D mesh created to represent the geometry of the system.
-    In such a simulation, each mesh element at every time step needs its various parameters (e.g. temperature, electromagnetic fields, electrical current and voltage) to be calculated based on the parameters of neighbouring objects in the mesh.
     Because of the dependence on neighbouring parameter values, each time-step may take many passes over each element in a system to calculate the final state before moving on.
     This type of simulation is common whenever the effects of radio waves need to be simulated.
 
-    It seems natural to assume that molecular simulation of an interface would prove helpful.
-    Doing so would allow simulation of the interactions taking place at the solid-fluid interface.
-    Firstly, running molecular simulations requires knowing what species are present in the liquid and their relative abundances.
-    This will not always be the case, especially in the human body or in tap water.
-    Secondly, simulation of a body of liquid having a sensible volume is impractical.
+    Designing and conditioning computer simulations at a molecular scale are challenging.
+    Simulating the interface is possible, but is very involved and constitutes a field of its own.
+    The work of~\cite{Nagy1992} and \cite{Bazant2011} has shed new light on some of the underlying mechanics of double layers.
+    Matters are complicated by the fact that the exact mechanics of the double layer are still not fully understood~\cite{Kornyshev2007}.
 
-    {\color{blue} Edited to here
-
-    Say people don't know exactly whats happening at the double layer.
-    Read some papers about molecular simulation
-    }
-
-    The molar mass of water is \SI{18.0528}{\gram\per\mole}, which represents the amount of water in moles per gram.
-    One gram of water is defined as one millilitre so we can say that for every millilitre of water we have we have an eighteenth of a mole of water.
+    Simulation of a body of liquid having a sensible macroscopic volume is impractical.
+    The molar mass of water is \SI{18.0528}{\gram\per\mole}.
+    One gram of water is defined as one millilitre, so we can say that for every millilitre of water we have we have an eighteenth of a mole of water.
     Avagadro's constant, the number of constituent particles per mole of a given substance, is $6.0221\thinspace \times 10^{23}$.
     Therefore we have one eighteenth of Avagadro's constant in water molecules, which is about $3.3333\times 10^{22}$ molecules.
-    That is 33 333 333 333 333 333 333 333 molecules!
-    Relevant simulations are likely to require volumes greater than \SI{1}{\milli\litre} to be useful.
+    That is 33 333 333 333 333 333 333 333 molecules per millilitre!
 
-    Molecular simulation has not been employed in this work.
-    There may be ways of simplifying necessary simulations in order to grain results from reduced systems.
-    Molecular simulation is a very interesting
+    Molecular simulation has not been employed here.
+    Useful results are likely to be obtained from volumes less than \SI{1}{\milli\litre}, but the time and resources to successfully run and validate such simulations are high.
+    Molecular simulation is shaping the mathematical and physical models of the interfacial double layer itself~\cite{Kornyshev2007}.
 
-
-  \subsubsection*{Electrical Behaviour}
 
 \section{Motivation}
-  This thesis begins with the question: is it possible to harvest enough electrical energy from flowing water, without moving parts, to power a smart meter?
-  The logic being that a harvester without moving parts would last longer than its mechanical equivalents.
-  I started by investigating an assortment of possible mechanisms (discussed in detail in Chapter
+  My doctorate began with the question: is it possible to harvest energy from water without moving parts?
+  The purpose for such a harvester would be able to power electronic water meters.
+  Doing this without the moving parts of more traditional mechanisms, such as turbines, should increase the harvesters life expectancy and be generally more robust.
 
-  I started by investigating
+  This work started by looking at three possible harvesting mechanisms;
   \begin{itemize}
     \item piezoelectric vibrators,
     \item electrostatic generators, and
     \item streaming potential cells
   \end{itemize}
-  as potential harvesting mechanisims.
 
-  The piezoelectric vibrator was the equivalent of a water whistle with a vibrational energy harvester attached.
-  The electrostatic generator was a version of Lord Kelvin's Electrostatic Generator with a harvesting application.
-  The streaming potential cell was a mystery.
+  The piezoelectric vibrator was the equivalent of a water whistle with a vibrational energy harvester attached; the electrostatic generator was a version of Lord Kelvin's Electrostatic Generator with a harvesting application; and the streaming potential cell was a mystery.
 
   We knew geologists used streaming potentials to measure underground water flow.
-  All we knew about the mechanism was that forcing water through something generated a voltage somehow.
+  All we knew about the mechanism was that forcing water through something somehow generated a voltage.
   It was learning about that mechanism and answering the following questions that started me on what became this thesis.
   \begin{enumerate}
     \item Where does the streaming voltage come from?
     \item What role does the geometry of the device play?
     \item Could you change the materials to get more voltage?
   \end{enumerate}
-  I eventually concluded that streaming cell harvesters were not practical for our application.
+  After experimentation and energy budgeting, I eventually concluded that streaming cell harvesters would not be a practical solution.
   By this time I had a working knowledge of interfacial double layers and their properties.
 
-  My supervisor, Jonathan Scott, was on a sabbatical at Saluda Medical working with implant electrodes.
-  There he developed an electrical model of the impedance presented by electrodes immersed in a solution of saline.
-  This model would predict the electrical impedance seen between two electrodes when implanted in the spine of a human.
+  During my doctoral studies my supervisor, Jonathan Scott, took a sabbatical at Saluda Medical in Sydney.
+  At the time, Saluda were in the middle of developing a medical implant for spinal stimulation.
+  While there, he developed an electrical model of the impedance presented by electrodes immersed in a solution of saline.
+  This model would predict the electrical impedance seen between two electrodes when implanted in the spinal cavity.
   Most of the behaviour the model reproduced was a result of interfacial double layers.
 
-  Saluda wanted to know how good a substitute saline was for spinal fluid with regards to electrical impedance.
-  There was no way to know and no way to compare solutions, except for using the new model.
-  I took the model and started the next stage of my research; characterising fluids based on the impedance they present to electrodes.
-  I was able to leverage my understanding of interfacial double layers and apply it to medical engineering.
+  Saluda used a dilute solution of phosphate buffered saline to mimic a human spinal cavity; into which the electrode would be implanted.
+  It wasn't known how good this approximation was, but it was the best bench-top solution they had.
+  The alternative was embedding the electrodes in live animals and measuring the response, which is also what they did.
+  Doing this was costly and it still wasn't known how this differed from the bench-top solution of saline.
+
+  Jonathan's model characterised the interface in the electrical domain.
+  This meant that it could be embedded into the same simulation software that the electronic engineers used to simulate the implant device (SPICE).
+
+  This model was the starting point for the second phase of my research; characterising the interface for various solutions.
+  I was able to leverage my understanding of interfacial double layers to understand how the model worked, and use it correctly.
 
 \section{Publications}
 
+  \begin{itemize}
+    \item Jones, M.H. \& Scott, J. (2014). \emph{Scaling of Electrode-Electrolyte Interface Model Parameters In Phosphate Buffered Saline.} Published in IEEE Transactions on Biomedical Circuits and Systems, Issue 99.
+    \item Jones, M.H. \& Scott, J. (2014). \emph{Feasibility of Harvesting Power To Run A Domestic Water Meter Using Streaming Cell Technology.} In proceedings of the 21st Electronics New Zealand Conference, ENZCON 2014, Waikato University, Hamilton, New Zealand.
+    \item Jones, M.H. & Scott, J.B. (2011). \emph{The energy efficiency of 8-bit low-power microcontrollers.} In Proceedings of the 18th Electronics New Zealand Conference, ENZCON 2011, Massey University, Palmerston North, 21-22 November 2011, pp. 87-90.
+  \end{itemize}
+
 \section{Thesis Outline}
+  
+  The remainder of this thesis is broken into two parts.
+  Part~\ref{part:doubleLayersOnInsulators} is concerned with the idea of using double layers to harvest energy.
+  This relates to the streaming cell energy harvester.
+  Part~\ref{part:doubleLayersOnConductors} involves the electrode-electrolyte interface model put forward by Jonathan Scott to investigate the behaviour of double layers on electrodes.
+
+  Put simply, part~\ref{part:doubleLayersOnInsulators} deals with double layers on insulating surfaces, and part~\ref{part:doubleLayersOnConductors} deals with double layers on conductive surfaces.
