@@ -1,19 +1,22 @@
 %!TEX root = ../../thesis.tex
+I begin by offering some background information on double layers and liquids, which will be useful throughout this thesis.
+Following this I discuss my motivation for carrying out my research and list publications arising from this work.
+Finally, I outline the structure of the remainder of this thesis.
 
 \section{Background}
-  Modelling and measuring electrical aspects of double layers draws on both electronic and chemical concepts.
-  This section is intended to give those unfamiliar with concepts from chemistry, or double layers, the required background.
+  Modelling and measuring the electrical aspects of interfacial double layers draws on both electronic and chemical concepts.
+  This section gives those unfamiliar with concepts from chemistry, or double layers, the required background.
   We start with some general background on liquids and move toward defining the double layer itself.
 
   \subsection{Liquid}
     A double layer is an organised layer of liquid.
-    We begin by putting liquid itself into perspective.
-    For now, we restrict our thinking of liquid to the microscopic scale.
+    Its formation is the response of the liquid phase catering to the presence of charge.
+    We will begin by putting the properties of liquid into perspective.
 
     At the macroscopic scale, individual atoms and molecules liquids interact with massive complexity.
     As we will soon see, the density of atoms and molecules in a liquid at the microscopic scales is enormous.
     Interactions are chaotic and dictated by three dimensional fields in constant flux.
-    Water is the most abundant liquid on the planet, making up between 55\% and 65\% of a person's body mass.
+    Water is the most abundant liquid on the planet and makes up between 55\% and 65\% of a person's body mass.
 
     \begin{figure}
         \begin{center}
@@ -26,8 +29,8 @@
     Water is a liquid comprised of the molecule $H_{2}O$.
     A molecular diagram of water is shown in figure~\ref{fig:waterMolecule}.
     This molecule is polar, meaning one side has a net positive charge and the other has a net negative charge.
-    This imbalance is responsible for very complex behaviour when dealing with a liquid body of any reasonable size.
-    Water molecules can rotate and migrate so as to neutralise an electrical field.
+    This charge imbalance is responsible for very complex behaviour in the presence of charge.
+    Water molecules will rotate and so as to neutralise any electrical fields.
     This means that a body of water, or any polar liquid, behaves as an extremely lossy transmission medium.
     In short, a body of water will do its best to counteract any electrical gradient it experiences.
 
@@ -46,20 +49,20 @@
     When there is a difference in charge between the solid surface and the liquid bulk, a double layer forms.
 
     The basic principle behind double layer formation is summarised in the following statements.
-    Charge interacts with charge, whether as repulsion or attraction.
-    The charge difference directly at the interface will be the largest, therefore any interactions will be strongest here.
+    Charges interact with each other, whether by repulsion or attraction.
     The charged elements in a solid are fixed in place, but in a liquid they are free to move.
     Because of this restriction, interactions must take place within the liquid phase.
+    The charge difference directly at the interface between a liquid and a charged solid will be the largest.
+    Therefore, any interactions will be most pronounced at the surface.
 
-    The term `solid' does not refer only to the walls of the container holding the liquid.
-    It can also describe particles within the liquid itself.
-    For example, milk for the most part is an emulsion of butterfat and water.
-    This means that molecules of butterfat are dispersed throughout the milk.
-    In this scenario the butterfat molecules can be considered as solids.
-    A representation of a butterfat molecule is shown in figure~\ref{fig:butterfat}.
-    Butterfat molecules stays dispersed because they are encapsulated by double layers.
-    Each butterfat molecule is electrically shielded from others around it by the double layer surrounding it.
-    Without the layer the butterfat molecules will coagulate and the milk will turn lumpy.
+    Solids need not be the walls of a container, but may also be particulates suspended in solution.
+    When a particulate is suspended throughout a solution it is referred to as an emulsion.
+    Milk is an emulsion of butterfat in water.
+    Figure~\ref{fig:butterfat} shows the structure of a butterfat molecule.
+    The stability of an emulsion, such as milk, depends on the strength of the double layers that encapsulate each particle.
+    These double layers shield the molecules or particles from one another electrically.
+    By shielding them from each other, they are unable to collect and bond together.
+    This shielding prevents milk from coagulating and turning to lumps.
 
     \begin{figure}
         \begin{center}
@@ -77,10 +80,11 @@
     In the previous section we discussed where and why double layers form, but we haven't yet addressed what they are.
     We now look into double layers themselves and define some of their properties.
 
-    In the proceeding section, the terms co-ion and counter-ion refer to ions of like and opposite polarity to some reference charge respectively.
-    For example, a negative surface would attract counter-ions, which would be positive ions.
-    It would repel co-ions, which are negative ions.
-    The relation is shown as figure \ref{fig:counterAndCoIons}.
+    In the proceeding section, the terms co-ion and counter-ion refer, respectively, to ions of like and opposite polarity with reference to some reference charge.
+    These terms are convenient to use as they remove the need to identify specific polarities in discussion.
+    For example, a surface will always attract counter-ions and repel co-ions no matter what their specific polarities.
+    If the surface were positive in polarity then the counter-ions would be negatively charged or vice versa.
+    This relation between `co' and `counter' ions is shown in figure \ref{fig:counterAndCoIons}.
 
     \begin{figure}
       \begin{center}
@@ -92,6 +96,9 @@
 
   \subsubsection*{Models of the interfacial double layer}
 
+    Three models of the interfacial double layer have been proposed over time.
+    Each represents an extension or modification of the previous beginning with the Helmholtz Model~\cite{Horch2004}.
+
     \begin{figure}
       \begin{center}
         \includegraphics{content/introduction/graphics/doubleLayerModels}
@@ -100,28 +107,26 @@
       \label{fig:doubleLayerModels}
     \end{figure}
 
-    Three models of the interfacial double layer have been proposed over time.
-    Each represents an extension or modification of the previous beginning with the Helmholtz Model~\cite{Horch2004}.
-
     Helmholtz proposed his parallel place capacitor based model in 1879~\cite{Geddes1997}.
-    His double layer is consists of two layers of surface charge, one inside the solid and one in the liquid.
+    His model consists of two layers of surface charge, one inside the solid and one in the liquid.
     The counter-ions sit in a \emph{compact layer}, meaning that they are bound to the surface and immobile.
     Figure \ref{fig:doubleLayerModels} represents this as a row of tightly packed positive ions along the solid surface.
     Past the layer of bound surface ions there is no affect from the solid's charged surface.
-    This model failed to account for observed variations in capacitance with applied voltage and varied electrolytic concentration.~\cite{Bard1980}.
+    This model failed to account for observed variations in capacitance with applied voltage and varied electrolytic concentration~\cite{Bard1980}.
 
-    Later, Goüy and Chapman independantly proposed that charge in the liquid phase may be held in a \emph{diffuse layer}.
+    Later, Goüy and Chapman independantly proposed that charge in the liquid phase may instead be held in a \emph{diffuse layer}.
     This meant that ions in the layer were not fixed and that the density of charge in the layer could vary.
     This is represented in figure~\ref{fig:doubleLayerModels} by the lack of ions bound to the surface and the gradual decline in counter-ion concentration with distance from the surface.
 
-    This second model, referred to as the Goüy-Chapmam Model, accounts for the variation in capacitance by distributing charge in the liquid as a gradient from the solid's surface.
-    Now, the layer can change its concentration profile in response to applied electrostatic potential and ionic concentration.
+    This second model, referred to as the Goüy-Chapmam Model, accounts for the observed variation in capacitance by distributing charge in the liquid as a gradient from the solid's surface.
+    The layer is free to change its concentration profile in response to applied electrostatic potential and ionic concentration.
     In the case of a higher electrostatic potential, layer is pulled closer to the surface, becoming shallower.
     In the case of a higher electrolytic concentration, the layer is more concentrated with a higher charge density, again becoming shallower.
 
     The Goüy-Chapmam Model solves the issue of variable capacitance, but it tends to fall over at high ionic concentrations.
-    This is in part because it fails to account for the physical size of the ions in the electrolyte, instead modelling them as point charges~\cite{Bard1980}.
+    This is in part because it fails to account for the physical size of the ions in the electrolyte and instead models them as point charges~\cite{Bard1980}.
     In their model, ions can get infinitely close to the surface regardless of their size.
+    This becomes a problem at high ionic concentration where the surface becomes crowded.
 
     In 1924, Otto Stern published his modified version of the Goüy-Chapmam model~\cite{Stern1924}.
     This model extends the Goüy-Chapmam model by setting the minimum distance an ion can get to the solid surface.
@@ -179,7 +184,7 @@
     Designing and conditioning computer simulations at a molecular scale are challenging.
     Simulating the interface is possible, but is very involved and constitutes a field of its own.
     The work of~\cite{Nagy1992} and \cite{Bazant2011} has shed new light on some of the underlying mechanics of double layers.
-    Matters are complicated by the fact that the exact mechanics of the double layer are still not fully understood~\cite{Kornyshev2007}.
+    Matters are complicated by the fact that some aspects of the double layer are still not fully understood~\cite{Kornyshev2007}.
 
     Simulation of a body of liquid having a sensible macroscopic volume is impractical.
     The molar mass of water is \SI{18.0528}{\gram\per\mole}.
@@ -190,15 +195,15 @@
 
     Molecular simulation has not been employed here.
     Useful results are likely to be obtained from volumes less than \SI{1}{\milli\litre}, but the time and resources to successfully run and validate such simulations are high.
-    Molecular simulation is shaping the mathematical and physical models of the interfacial double layer itself~\cite{Kornyshev2007}.
+    Such simulations are shaping the underlying models of the interfacial double layer~\cite{Kornyshev2007}.
 
 
 \section{Motivation}
-  My doctorate began with the question: is it possible to harvest energy from water without moving parts?
-  The purpose for such a harvester would be able to power electronic water meters.
+  My doctorate began with the question ``is it possible to harvest energy from water without moving parts?''
+  Our purpose for such a harvester would be gather energy to power electronic water meters.
   Doing this without the moving parts of more traditional mechanisms, such as turbines, should increase the harvesters life expectancy and be generally more robust.
 
-  This work started by looking at three possible harvesting mechanisms;
+  My work started by looking at three possible harvesting mechanisms;
   \begin{itemize}
     \item piezoelectric vibrators,
     \item electrostatic generators, and
@@ -208,7 +213,7 @@
   The piezoelectric vibrator was the equivalent of a water whistle with a vibrational energy harvester attached; the electrostatic generator was a version of Lord Kelvin's Electrostatic Generator with a harvesting application; and the streaming potential cell was a mystery.
 
   We knew geologists used streaming potentials to measure underground water flow.
-  All we knew about the mechanism was that forcing water through something somehow generated a voltage.
+  The only thing we knew about the mechanism was that forcing water through something somehow generated a voltage.
   It was learning about that mechanism and answering the following questions that started me on what became this thesis.
   \begin{enumerate}
     \item Where does the streaming voltage come from?
@@ -219,7 +224,7 @@
   By this time I had a working knowledge of interfacial double layers and their properties.
 
   During my doctoral studies my supervisor, Jonathan Scott, took a sabbatical at Saluda Medical in Sydney.
-  At the time, Saluda were in the middle of developing a medical implant for spinal stimulation.
+  Saluda were in the middle of developing a medical implant for spinal stimulation at the time.
   While there, he developed an electrical model of the impedance presented by electrodes immersed in a solution of saline.
   This model would predict the electrical impedance seen between two electrodes when implanted in the spinal cavity.
   Most of the behaviour the model reproduced was a result of interfacial double layers.
@@ -227,7 +232,7 @@
   Saluda used a dilute solution of phosphate buffered saline to mimic a human spinal cavity; into which the electrode would be implanted.
   It wasn't known how good this approximation was, but it was the best bench-top solution they had.
   The alternative was embedding the electrodes in live animals and measuring the response, which is also what they did.
-  Doing this was costly and it still wasn't known how this differed from the bench-top solution of saline.
+  Live animal experiments were costly and it still wasn't known how this differed from the bench-top solution of saline.
 
   Jonathan's model characterised the interface in the electrical domain.
   This meant that it could be embedded into the same simulation software that the electronic engineers used to simulate the implant device (SPICE).
@@ -239,8 +244,8 @@
 
   \begin{itemize}
     \item Jones, M.H. \& Scott, J. (2014). \emph{Scaling of Electrode-Electrolyte Interface Model Parameters In Phosphate Buffered Saline.} Published in IEEE Transactions on Biomedical Circuits and Systems, Issue 99.
-    \item Jones, M.H. \& Scott, J. (2014). \emph{Feasibility of Harvesting Power To Run A Domestic Water Meter Using Streaming Cell Technology.} In proceedings of the 21st Electronics New Zealand Conference, ENZCON 2014, Waikato University, Hamilton, New Zealand.
-    \item Jones, M.H. & Scott, J.B. (2011). \emph{The energy efficiency of 8-bit low-power microcontrollers.} In Proceedings of the 18th Electronics New Zealand Conference, ENZCON 2011, Massey University, Palmerston North, 21-22 November 2011, pp. 87-90.
+    \item Jones, M.H. \& Scott, J. (2014). \emph{Feasibility of Harvesting Power to Run a Domestic Water Meter Using Streaming Cell Technology.} In proceedings of the 21st Electronics New Zealand Conference, ENZCON 2014, Waikato University, Hamilton, New Zealand.
+    \item Jones, M.H. \& Scott, J.B. (2011). \emph{The energy efficiency of 8-bit low-power microcontrollers.} In Proceedings of the 18th Electronics New Zealand Conference, ENZCON 2011, Massey University, Palmerston North, 21-22 November 2011, pp. 87-90.
   \end{itemize}
 
 \section{Thesis Outline}
