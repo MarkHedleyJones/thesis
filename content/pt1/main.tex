@@ -1,38 +1,184 @@
 %!TEX root = ../../thesis.tex
 
-Here I investigate the use of double layers for harvesting energy.
-This relates to layers that have formed on insulating surfaces, such as glass.
+Soon we will see how double layers can be used to perform electrical work.
+Doing so relies specifically on the formation of double layers on insulating surfaces like glass.
+Part \ref{part:doubleLayersOnInsulators} studies interfacial double layers on insulators.
 
 It was discussed in the introduction that double layers naturally form at liquid-solid interfaces.
 It was said that the double layer itself is a collection of charged ions.
-Can we collect this charge and convert it into electrical energy?
+Can we collect this charge and use it to generate electrical power?
 Doing so would provide a method of energy harvesting without moving parts.
 I look at a smart application of a water such a harvester, create a power budget, and discuss the design of a practical harvester.
 
 \chapter{Introduction}
   \label{chap:harvesterIntroduction}
-  Like chapter \ref{chap:introduction_main}, this chapter gives the reader some background on double layers.
-  It builds upon the previous discussion of double layers and is steered toward energy harvesting.
+  This introductory chapter provides background reading specific to energy harvesting.
+  It builds upon the preceding introductory material of double layers and is steered toward energy conversion.
   Here we are concerned with double layer formation on solid boundaries that are non-conducting, such as glass.
   We will discuss how this can be used to convert fluid-mechanical power into electrical power.
+  At this point it is assumed the reader knows what a double layer is and how they are formed.
 
   \section{Background}
-    It was mentioned earlier that double layers form between charged solids and liquids.
-    For this part (energy harvesting) we will examine double layers formed at the edge of a wall.
-    This is in contrast to the double layers that formed around particulates in solution.
+
+    Charge separation is not enough to generate electrical power.
+    Electrical power can not be taken directly from a double layer because:
+    \begin{itemize}
+        \item The counter-ions of a double layer are electrostatically bound to the interface.
+            Removing these ions from the interface requires work.
+        \item The double layer blocks the electric field from the interface.
+            Charge migration stops once the layer has created an equal and opposite field at the interface.
+    \end{itemize}
 
     \begin{figure}
         \centering
         \includegraphics{content/pt1/01-PowerHarvesting/graphics/doubleLayerOnWall}
-        \caption{\label{fig:doubleLayerOnWall}Formation of a double layer on a wall}
+        \caption{\label{fig:doubleLayerOnWall}A double layer formed on a wall}
     \end{figure}
 
-    Figure~\ref{fig:doubleLayerOnWall} depicts a double layer that has formed along a charged wall.
+    Figure~\ref{fig:doubleLayerOnWall} depicts a double layer formed at a charged wall.
     It has the same structure as the layers examined around a particle, with the exception that it is flat.
 
-    From the main introduction we know that the thickness of a double layer is dependant on the surface charge density of the solid and the ionic concentration in the fluid.
-    Therefore, various liquids in contact with different solids will form layers of differing sizes.
-    The double layer thickness is described by the Debye length.
+    We know the double layer envelopes solids with a layer of oppositely charged ions.
+    We also know that the thickness of the double layer is dependant on both the surface charge density of the wall and the ionic concentration in the solution.
+
+    % \begin{figure}
+    %   \centering
+    %     \includegraphics{content/pt1/01-PowerHarvesting/graphics/ionsInABox.pdf}
+    %     \caption{\label{fig:ionsInABox}Charge distribution in a charged cavity versus a non-charged cavity}
+    % \end{figure}
+
+    % Now imagine a very small cavity filled with an electrolyte.
+    % A simplified representation of such a cavity is shown in figure \ref{fig:ionsInABox}.
+    % If the walls of the cavity hold no surface charge then the ions distribute evenly throughout the volume.
+    % That is to say, the ions in the liquid are not electrically influenced by the walls.
+    % With the application of surface charge - the counter-ions migrate to the walls.
+    % As the density of counter-ions has increased at the interface, a void of cations remains within the cavity.
+    % The charge has been separated.
+
+    \begin{figure}
+        \centering
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/doubleLayerOnWalls}
+        \caption{\label{fig:doubleLayerBetweenWalls}Formation of a double layer between two  walls}
+    \end{figure}
+
+    Now lets imagine bringing another wall in toward the first (as shown in figure~\ref{fig:doubleLayerBetweenWalls}).
+    By controlling the thickness of the double layer and the distance between the walls, it is possible to overlap the double layers.
+    Bringing these walls together acts to repel any co-ions from between the walls.
+    Removing the co-ions increases the counter-ion concentration with the body of liquit between the walls
+
+    Double layers are usually very thin, in the order of nanometers, so overlapping them requires very small geometries.
+    Geometries formed for this purpose are very narrow channels, whose walls contain trapped charge.
+
+
+    \begin{figure}
+        \centering
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell}
+        \caption{\label{fig:streamingCellChannel} Simplified diagram of a streaming cell channel between two reservoirs}
+    \end{figure}
+
+
+
+    % A streaming potential is simply a very thin cavity separating two volumes.
+    % The walls of the cavity are separated by a distance in the order of a couple of double layers.
+    % These dimensions are such that double layers within the cavity overlap.
+    % By overlapping double layers, the volume of liquid within the cavity is primarily comprised of double layer counter-ions.
+
+    % The streaming potential cell is a device that uses water flow to separate charge.
+    % It is particularly promising as a harvester due to its lack of moving parts.
+    % This chapter starts by explaining how a streaming cell makes use of the interfacial double layer to separate charge.
+    % Then I construct a crude cell and measure its performance.
+    % This is followed by a mathematical investigation of the streaming cell.
+
+    % For the sake of brevity, the term `cell' in this chapter shall refer to a streaming potential cell.
+    % And the term `interface' refers to the interface, or boundary, between solid and liquid matter.
+    % Unless otherwise stated, it should be assumed that I am describing the liquid side of the interface.
+    % The solid body typically plays no role, apart from the surface charge it holds.
+
+    % \begin{figure}
+    %     \centering
+    %     \includegraphics{content/pt1/01-PowerHarvesting/graphics/doubleLayerOnWall}
+    %     \caption{\label{fig:doubleLayerOnWall}Formation of a double layer on a wall}
+    % \end{figure}
+
+    % Figure \ref{fig:doubleLayerOnWall} shows the formation of a double layer at the interface of a charged wall.
+    % A higher density of positively charged ions, or cations, sit close to the interface.
+    % The density of these cations reduces as the distance to the interface increases.
+    % Also, the density of negatively charged ions, or anions, increases with the distance from the interface.
+
+
+    To cause continuous charge separation, the cell is placed across a pressure gradient.
+    This pressure gradient causes the counter-ions within the cavity to be pumped through the cell.
+    As counter-ions are moved through the cavity, more counter-ions move to the replenish the layer at the opening.
+    The counter-ions accumulate at the exit side of the cell.
+    This scenario is illustrated in figure \ref{fig:streamingCellPrinciple}.
+
+    Streaming potential cells are not new.
+    They find use in collodial science as a means of measuring the zeta potential of a double layer \cite{Gu2000,Scales1992,Daiguji2004,VanderHeyden2006,Mala1997}.
+    At the beginning of this work it was believed that harvesting power from streaming cells had not been done before.
+
+
+
+
+    a cavity forcing water through narrow cavities. This phenomenon is understood
+    and is used in colloidal science to determine what's called the zeta potential
+    of an interface \cite{Gu2000,Scales1992,Daiguji2004,VanderHeyden2006,Mala1997}.
+    Although this phenomenon isn't new, using it to generate useful amounts of
+    electrical energy is. This chapter will investigate the application of
+    streaming potentials to energy harvesting for the purposes of running a smart
+    water meter.
+
+    % At the boundary between a liquid and a solid, be it a molecule or the wall of
+    % a container, there is a possibility for an electrical potential. This
+    % electrical potential exists at the interface between the liquid and the solid
+    % and is the underlying mechanism by which the streaming potential cell
+    % operates. To understand how this electrical potential is able to separate
+    % charge as it does in a streaming potential cell we will first observe what
+    % happens when a solid suspended in liquid, as is shown in Figure
+    % \ref{Figure_Diagram_ZetaPotential_and_SlippingPlane}.
+
+
+    \begin{figure} \centering
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCellPrinciple}
+        \caption{\label{fig:streamingCellPrinciple}The general principle of
+            operation of the streaming potential cell} \end{figure} In this
+    diagram, a the negatively charged solid is surrounded by layers of positively
+    charged ions that are electrostaticly attracted to the surface of the solid.
+    Near the surface of the solid, tightly bound, positively charged ions are
+    packed together and are largely immobile.  These ions reside in what is called
+    the Stern Layer. After this layer is a shell of less densely packed and
+    somewhat mobile ions that are still bound to the solid. At the edge of this
+    shell is what is called the slipping plane, which is the point at which ions
+    are no-longer bound to the solid. The electrical potential at this slipping
+    plane is termed the $\zeta$ potential (zeta potential). ``This zeta potential
+    is directly related to the interaction between the solid particles themselves
+    when they are suspended in a liquid and thus determines the stability of the
+    suspension solutions'' \cite{Gu2000}.
+
+    % \begin{figure} \begin{centering}
+    % \includegraphics[scale=0.12]{content/pt1/01-PowerHarvesting/Diagram_of_zeta_potential_and_slipping_plane_thesisEdit}
+    % \par\end{centering}
+
+    % \centering{}\protect\caption{\label{Figure_Diagram_ZetaPotential_and_SlippingPlane}Diagram
+    % showing the ionic concentration and potential difference as a function of
+    % distance from the charged surface of a particle suspended in a dispersion
+    % medium.} \end{figure}
+
+
+    Now lets look at the case where the geometry is such that the surface charge
+    resides on the walls of a channel through which the liquid can flow, as is
+    shown in Figure \ref{Figure_Diagram_ZetaPotential_and_in_a_channel}.  By
+    setting the width of the channel such that the double layer formed on each of
+    the sides partially overlap, the channel will be predominantly occupied by ions
+    of the opposite polarity to that of the surface charge at the solid to liquid
+    interface. This configuration has the effect of promoting the transport of
+    those ions across the channel with the application of a pressure differential
+    across the channels length.
+
+    %\begin{figure}
+    %\centering{}\includegraphics[scale=0.12]{content/pt1/01-PowerHarvesting/Diagram_of_zeta_potential_in_a_channel_thesisEdit}\protect\caption{\label{Figure_Diagram_ZetaPotential_and_in_a_channel}Diagram
+    %showing the ionic concentration and potential difference as a function of
+    %distance from the charged surfaces of a micro-channel.} \end{figure}
+
 
 
 
