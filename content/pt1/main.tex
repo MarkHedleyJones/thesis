@@ -18,28 +18,64 @@ I look at a smart application of a water such a harvester, create a power budget
   We will discuss how this can be used to convert fluid-mechanical power into electrical power.
   At this point it is assumed the reader knows what a double layer is and how they are formed.
 
-  \section{Background}
+  \section{Streaming Cell Principle}
 
-    Charge separation is not enough to generate electrical power.
-    Electrical power can not be taken directly from a double layer because:
+    % \begin{figure}
+    %     \centering
+    %     \includegraphics{content/pt1/01-PowerHarvesting/graphics/doubleLayerOnWall}
+    %     \caption{\label{fig:doubleLayerOnWall}A double layer formed on a wall}
+    % \end{figure}
+    \begin{figure}
+        \centering
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/intro_walls}
+        \caption{\label{fig:doubleLayerBetweenWalls}Formation of a double layer between two  walls}
+    \end{figure}
+
+    Lets begin by looking at double layers that have formed along the walls of a container.
+    Such a situation is presented in \ref{fig:doubleLayerBetweenWalls}, where the walls are negatively charged and the counter-ions are positive.
+    The counter-ions line the interior walls of the container.
+    The charge density at the walls is higher than in the bulk of the solution, owing to charge separation within the liquid.
+    However, charge separation is not enough to generate electrical power.
+
+    Electrical power can not be drawn directly from the charged layer because:
     \begin{itemize}
-        \item The counter-ions of a double layer are electrostatically bound to the interface.
+        \item The counter-ions are electrostatically bound to the interface.
             Removing these ions from the interface requires work.
-        \item The double layer blocks the electric field from the interface.
-            Charge migration stops once the layer has created an equal and opposite field at the interface.
+        \item Charge migration, from the fluid bulk into the layer, stops once the layer has neutralised the surface charge at the interface.
     \end{itemize}
+    But, the layer can be used as a means of converting fluid energy into electrical energy.
+    The means to do this lies in the use of suitable channels that separate two bodies of liquid.
+    Such a channel is presented in figure \ref{fig:doubleLayerInChannel_noPressure}.
 
     \begin{figure}
         \centering
-        \includegraphics{content/pt1/01-PowerHarvesting/graphics/doubleLayerOnWall}
-        \caption{\label{fig:doubleLayerOnWall}A double layer formed on a wall}
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/intro_cell_settled}
+        \caption{\label{fig:doubleLayerInChannel_noPressure}Double layer formation within a cell geometry}
     \end{figure}
 
-    Figure~\ref{fig:doubleLayerOnWall} depicts a double layer formed at a charged wall.
-    It has the same structure as the layers examined around a particle, with the exception that it is flat.
+    Under static conditions the channels usefulness is not totally apparent.
+    The two bodies separated by the channel are still similar in composition to the body presented in the previous figure.
+    Importantly, the channel that lies between the two bodies contains a very high concentration of counter-ions.
+    This is due to the channels height being in the order of the thickness of the double layer.
 
-    We know the double layer envelopes solids with a layer of oppositely charged ions.
-    We also know that the thickness of the double layer is dependant on both the surface charge density of the wall and the ionic concentration in the solution.
+    % As two double layers are bought together co-ions within the fluid are repelled from the space between them.
+    % There comes a point where the double layers being to overlap.
+    % At this point 
+    % The channel is now almost exclusively occupied by counter-ions, and the channel will oppose the entry of co-ions.
+    % What has been created is a channel that will favour the transport of counter-ions over co-ions.
+
+    \begin{figure}
+        \centering
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/intro_cell_pressure}
+        \caption{\label{fig:doubleLayerInChannel_pressure}Double layer formation in a cell geometry with the application of pressure}
+    \end{figure}
+
+    With the application of hydrostatic pressure across the channel, the contents of the channel moves toward the body with the lower pressure.
+    More counter-ions move from the high pressure body into the channel to replenish the double layer.
+    The pressure applied is now pumping charge between the bodies.
+
+
+
 
     % \begin{figure}
     %   \centering
@@ -55,11 +91,7 @@ I look at a smart application of a water such a harvester, create a power budget
     % As the density of counter-ions has increased at the interface, a void of cations remains within the cavity.
     % The charge has been separated.
 
-    \begin{figure}
-        \centering
-        \includegraphics{content/pt1/01-PowerHarvesting/graphics/doubleLayerOnWalls}
-        \caption{\label{fig:doubleLayerBetweenWalls}Formation of a double layer between two  walls}
-    \end{figure}
+
 
     Now lets imagine bringing another wall in toward the first (as shown in figure~\ref{fig:doubleLayerBetweenWalls}).
     By controlling the thickness of the double layer and the distance between the walls, it is possible to overlap the double layers.
@@ -69,12 +101,10 @@ I look at a smart application of a water such a harvester, create a power budget
     Double layers are usually very thin, in the order of nanometers, so overlapping them requires very small geometries.
     Geometries formed for this purpose are very narrow channels, whose walls contain trapped charge.
 
+    
 
-    \begin{figure}
-        \centering
-        \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell}
-        \caption{\label{fig:streamingCellChannel} Simplified diagram of a streaming cell channel between two reservoirs}
-    \end{figure}
+
+    
 
 
 
