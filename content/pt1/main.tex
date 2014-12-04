@@ -1,146 +1,82 @@
 %!TEX root = ../../thesis.tex
 
-Soon we will see how double layers can be used to perform electrical work.
-Doing so relies specifically on the formation of double layers on insulating surfaces like glass.
-Part \ref{part:doubleLayersOnInsulators} studies interfacial double layers on insulators.
+Part~\ref{part:doubleLayersOnInsulators} studies interfacial double layers on insulators.
+Here we will see how double layers can be used to perform electrical work.
+This relies specifically on the formation of double layers on insulating surfaces like glass.
 
 It was discussed in the introduction that double layers naturally form at liquid-solid interfaces.
 It was said that the double layer itself is a collection of charged ions.
 Can we collect this charge and use it to generate electrical power?
 Doing so would provide a method of energy harvesting without moving parts.
-I look at a smart application of a water such a harvester, create a power budget, and discuss the design of a practical harvester.
+During Part~\ref{part:doubleLayersOnInsulators}, I build such a harvester and look at applying it to smart water metering.
+With reference to that application I create a power budget and discuss the practicalities.
 
 \chapter{Introduction}
   \label{chap:harvesterIntroduction}
   This introductory chapter provides background reading specific to energy harvesting.
   It builds upon the preceding introductory material of double layers and is steered toward energy conversion.
-  Here we are concerned with double layer formation on solid boundaries that are non-conducting, such as glass.
-  We will discuss how this can be used to convert fluid-mechanical power into electrical power.
-  At this point it is assumed the reader knows what a double layer is and how they are formed.
+  We will discuss how double layers can be used to convert fluid-mechanical power into electrical power.
+  At this point it is assumed the reader knows what a double layer is and how one is formed.
 
-  \section{Streaming Cell Principle}
-
-    % \begin{figure}
-    %     \centering
-    %     \includegraphics{content/pt1/01-PowerHarvesting/graphics/doubleLayerOnWall}
-    %     \caption{\label{fig:doubleLayerOnWall}A double layer formed on a wall}
-    % \end{figure}
+  \section{Streaming Cells}
     \begin{figure}
         \centering
-        \includegraphics{content/pt1/01-PowerHarvesting/graphics/intro_walls}
-        \caption{\label{fig:doubleLayerBetweenWalls}Formation of a double layer between two  walls}
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/intro_2_wall}
+        \caption{\label{fig:doubleLayerBetweenWalls}Formation of a double layer along a solid wall}
     \end{figure}
 
-    Lets begin by looking at double layers that have formed along the walls of a container.
-    Such a situation is presented in \ref{fig:doubleLayerBetweenWalls}, where the walls are negatively charged and the counter-ions are positive.
-    The counter-ions line the interior walls of the container.
-    The charge density at the walls is higher than in the bulk of the solution, owing to charge separation within the liquid.
-    However, charge separation is not enough to generate electrical power.
+    We begin by looking at double layers formed along the walls of a container.
+    Such a situation is presented in \ref{fig:doubleLayerBetweenWalls}, where the walls are negatively charged and hence the counter-ions are positive.
+    Counter-ions that have been separated from the bulk of the liquid line the exterior of the wall.
+    However, charge separation alone is not enough to generate electrical power.
 
-    Electrical power can not be drawn directly from the charged layer because:
-    \begin{itemize}
-        \item The counter-ions are electrostatically bound to the interface.
-            Removing these ions from the interface requires work.
-        \item Charge migration, from the fluid bulk into the layer, stops once the layer has neutralised the surface charge at the interface.
-    \end{itemize}
-    But, the layer can be used as a means of converting fluid energy into electrical energy.
-    The means to do this lies in the use of suitable channels that separate two bodies of liquid.
-    Such a channel is presented in figure \ref{fig:doubleLayerInChannel_noPressure}.
+    As energy cannot simply be created or destroyed, it must be converted between forms.
+    The counter-ions are electrostatically bound to the interface - removing them requires work.
+    Although the counter-ion density has been increased at the boundary, the charge is not free.
+    Also, the migration of charge to the walls ceases once the surface potential has been neutralised; so it is not a continuous process.
 
     \begin{figure}
         \centering
-        \includegraphics{content/pt1/01-PowerHarvesting/graphics/intro_cell_settled}
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/intro_2_channel}
         \caption{\label{fig:doubleLayerInChannel_noPressure}Double layer formation within a cell geometry}
     \end{figure}
 
-    Under static conditions the channels usefulness is not totally apparent.
-    The two bodies separated by the channel are still similar in composition to the body presented in the previous figure.
-    Importantly, the channel that lies between the two bodies contains a very high concentration of counter-ions.
-    This is due to the channels height being in the order of the thickness of the double layer.
+    Generating electrical power will require taking mechanical energy from the fluid.
+    It will manifest itself as a drop in pressure across a harvester as liquid is forced through.
+    This is very similar to the voltage drop observed across a resistor as it passes current.
 
-    % As two double layers are bought together co-ions within the fluid are repelled from the space between them.
-    % There comes a point where the double layers being to overlap.
-    % At this point 
-    % The channel is now almost exclusively occupied by counter-ions, and the channel will oppose the entry of co-ions.
-    % What has been created is a channel that will favour the transport of counter-ions over co-ions.
+    Developing an electrical potential in a liquid requires upsetting the ionic balance.
+    This means separating and isolate negative and positive ions from each other.
+    The collection of free (unbound) counter-ions can be achieved by pumping and collecting those ions from within the double layer.
 
-    \begin{figure}
-        \centering
-        \includegraphics{content/pt1/01-PowerHarvesting/graphics/intro_cell_pressure}
-        \caption{\label{fig:doubleLayerInChannel_pressure}Double layer formation in a cell geometry with the application of pressure}
-    \end{figure}
+    Figure~\ref{fig:doubleLayerInChannel_noPressure} shows another charged wall, but with the addition of a small channel.
+    This channel connects two bodies of liquid that have been separated by the wall.
+    Notice that the channel contains no co-ions, it is exclusively occupied by counter-ions.
+    In reality there may be some co-ions; the proportion of which is controlled by the width of the channel.
 
-    With the application of hydrostatic pressure across the channel, the contents of the channel moves toward the body with the lower pressure.
-    More counter-ions move from the high pressure body into the channel to replenish the double layer.
-    The pressure applied is now pumping charge between the bodies.
+    Ideally, the width of the channel will be in the order of the double layer thickness.
+    The situation depicted in figure~\ref{fig:doubleLayerInChannel_noPressure} is small enough that the double layers will overlap.
+    By overlapping the double layers, or bringing their boundaries together, co-ions will be repelled from between the walls.
+    This provides the most concentrated counter-ion density within the channel.
 
-
-
-
-    % \begin{figure}
-    %   \centering
-    %     \includegraphics{content/pt1/01-PowerHarvesting/graphics/ionsInABox.pdf}
-    %     \caption{\label{fig:ionsInABox}Charge distribution in a charged cavity versus a non-charged cavity}
-    % \end{figure}
-
-    % Now imagine a very small cavity filled with an electrolyte.
-    % A simplified representation of such a cavity is shown in figure \ref{fig:ionsInABox}.
-    % If the walls of the cavity hold no surface charge then the ions distribute evenly throughout the volume.
-    % That is to say, the ions in the liquid are not electrically influenced by the walls.
-    % With the application of surface charge - the counter-ions migrate to the walls.
-    % As the density of counter-ions has increased at the interface, a void of cations remains within the cavity.
-    % The charge has been separated.
-
-
-
-    Now lets imagine bringing another wall in toward the first (as shown in figure~\ref{fig:doubleLayerBetweenWalls}).
-    By controlling the thickness of the double layer and the distance between the walls, it is possible to overlap the double layers.
-    Bringing these walls together acts to repel any co-ions from between the walls.
-    Removing the co-ions increases the counter-ion concentration with the body of liquit between the walls
-
-    Double layers are usually very thin, in the order of nanometers, so overlapping them requires very small geometries.
-    Geometries formed for this purpose are very narrow channels, whose walls contain trapped charge.
-
+    The channel and the two bodies have now formed a harvester.
+    By applying a pressure differential across the channel, counter-ion rich is transported across the wall.
+    As the ions exit the channel on the low-pressure side, new counter-ions move to replenish the double layer on the high-pressure side.
+    Once charge has crossed the channel it is difficult for it to return as the constant flow of liquid opposes charge migration back through the wall.
     
+    The channel is able to continuiously pump ions across a wall.
+    Once started, the electrical potential between the two bodies will increase.
+    Not only is the channel increasing the concentration of free counter ions on the low-pressure side, but it also concentrates co-ions on the high-pressure side.
+    In the case of glass as the channel/wall material, this means the low-pressure side will have a higher potential than that of the high-pressure side.
+    This is also the situation illustrated in the proceeding graphics.
 
+    The mechanism described here is the streaming potential cell.
+    It is a device at the centre of research in both membrane and interface science.
+    The concept behind the device is relatively straight-forward, but the physical reality is more complicated.
+    The diagrams presented are vastly oversimplified, having perfectly flat walls, single atom ions carrying a single charge, and omitting polar molecules or contaminants.
+    The current literature will be reviewed in the next section relating to these cells.
 
-    
-
-
-
-    % A streaming potential is simply a very thin cavity separating two volumes.
-    % The walls of the cavity are separated by a distance in the order of a couple of double layers.
-    % These dimensions are such that double layers within the cavity overlap.
-    % By overlapping double layers, the volume of liquid within the cavity is primarily comprised of double layer counter-ions.
-
-    % The streaming potential cell is a device that uses water flow to separate charge.
-    % It is particularly promising as a harvester due to its lack of moving parts.
-    % This chapter starts by explaining how a streaming cell makes use of the interfacial double layer to separate charge.
-    % Then I construct a crude cell and measure its performance.
-    % This is followed by a mathematical investigation of the streaming cell.
-
-    % For the sake of brevity, the term `cell' in this chapter shall refer to a streaming potential cell.
-    % And the term `interface' refers to the interface, or boundary, between solid and liquid matter.
-    % Unless otherwise stated, it should be assumed that I am describing the liquid side of the interface.
-    % The solid body typically plays no role, apart from the surface charge it holds.
-
-    % \begin{figure}
-    %     \centering
-    %     \includegraphics{content/pt1/01-PowerHarvesting/graphics/doubleLayerOnWall}
-    %     \caption{\label{fig:doubleLayerOnWall}Formation of a double layer on a wall}
-    % \end{figure}
-
-    % Figure \ref{fig:doubleLayerOnWall} shows the formation of a double layer at the interface of a charged wall.
-    % A higher density of positively charged ions, or cations, sit close to the interface.
-    % The density of these cations reduces as the distance to the interface increases.
-    % Also, the density of negatively charged ions, or anions, increases with the distance from the interface.
-
-
-    To cause continuous charge separation, the cell is placed across a pressure gradient.
-    This pressure gradient causes the counter-ions within the cavity to be pumped through the cell.
-    As counter-ions are moved through the cavity, more counter-ions move to the replenish the layer at the opening.
-    The counter-ions accumulate at the exit side of the cell.
-    This scenario is illustrated in figure \ref{fig:streamingCellPrinciple}.
+  \section{Literature Review}
 
     Streaming potential cells are not new.
     They find use in collodial science as a means of measuring the zeta potential of a double layer \cite{Gu2000,Scales1992,Daiguji2004,VanderHeyden2006,Mala1997}.
@@ -208,14 +144,6 @@ I look at a smart application of a water such a harvester, create a power budget
     %\centering{}\includegraphics[scale=0.12]{content/pt1/01-PowerHarvesting/Diagram_of_zeta_potential_in_a_channel_thesisEdit}\protect\caption{\label{Figure_Diagram_ZetaPotential_and_in_a_channel}Diagram
     %showing the ionic concentration and potential difference as a function of
     %distance from the charged surfaces of a micro-channel.} \end{figure}
-
-
-
-
-
-
-
-  \section{Literature Review}
 
 \chapter{The Streaming Cell Energy Harvester}
   \label{chap:harvestingEnergy}
