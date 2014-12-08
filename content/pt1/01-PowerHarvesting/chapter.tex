@@ -22,13 +22,13 @@ Certain areas have been modified to accommodate the available resources.
     \begin{figure}
       \centering
       \includegraphics[width=0.5\textwidth]{content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step2.JPG}
-      \caption{\label{Photo_streamingPotential_Assembly_Step2}Photo showing plastic shims sandwiched between two slide halves}
+      \caption{\label{fig:Photo_streamingPotential_Assembly_Step2}Photo showing plastic shims sandwiched between two slide halves}
     \end{figure}
 
     \begin{figure}
       \centering
       \includegraphics[width=0.5\textwidth]{content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step3.JPG}
-      \caption{\label{Photo_streamingPotential_Assembly_Step3}Photo showing final assembly}
+      \caption{\label{fig:Photo_streamingPotential_Assembly_Step3}Photo showing final assembly}
     \end{figure}
 
     \begin{table}
@@ -44,20 +44,20 @@ Certain areas have been modified to accommodate the available resources.
     The first step was to section standard microscope slides into halves.
     This gave us glass panels of approximately \SI{26}{\milli\meter} by \SI{38}{\milli\meter} by \SI{1}{\milli\meter}.
     Next, a single panel is epoxied to an acrylic base plate.
-    A glass panel epoxied to a base plate is shown in Figure~\ref{Photo_streamingPotential_Assembly_Step1}.
+    A glass panel epoxied to a base plate is shown in Figure~\ref{fig:Photo_streamingPotential_Assembly_Step1}.
 
     Once set, the plastic shims are cut to the required size, covered with a very thin layer of epoxy, and placed along the edges of the slide.
-    The shims line the sides of the glass panel such that they leave a \SI{1}{\centi\meter} gap through the center.
+    The shims line the sides of the glass panel such that they leave a \SI{1}{\centi\meter} gap through the centre.
     A second glass slide is then placed on top of the shims and epoxy resin is used to seal the sides.
     Pressure was applied to the stack while the epoxy set to ensure the epoxy distributed correctly and keep the height narrow.
-    A photo of the shims glued between the two slide halves is shown in Figure~\ref{Photo_streamingPotential_Assembly_Step2}.
+    A photo of the shims glued between the two slide halves is shown in Figure~\ref{fig:Photo_streamingPotential_Assembly_Step2}.
 
     Once set, the channel was then photographed under microscope to determine the true internal height of the channel.
     Each of the four corner heights were measured to ensure that the channel remained rectangular once set.
-    Finally, acrylic couplers where mounted over each end, again by the use of epoxy.
+    Finally, acrylic reservoirs where mounted over each end of the channel with epoxy.
 
-    These couplers allowed the water to be forced through the channel while providing mounting for the voltage sensing wires.
-    The final assembly is shown in Figure \ref{Photo_streamingPotential_Assembly_Step3}.
+    These reservoirs facilitate the connection of fluid tubes and voltage probes to each end of the channel.
+    The final assembly is shown in Figure \ref{fig:Photo_streamingPotential_Assembly_Step3}.
     A full list of materials used to construct the channels is presented as Table~\ref{Table_StreamingCell_MaterialsUsed}.
 
     A total of 10 channels were made and tested using this method.
@@ -70,8 +70,12 @@ Certain areas have been modified to accommodate the available resources.
     The device uses force and sense lines to ensure the voltage/current being set is accurately controlled at the desired point within the test device.
     Additionally, it uses tri-axial cables to minimise any interference from outside sources.
 
+    The device was controlled using Python scripts utilising the open source Python-vxi11 library~\cite{Python-ivi2014}.
+    This allows sweeping the amount of current drawn from the harvester while recording the corresponding voltage drop.
+    Doing this essentially gives us the ability to vary the load resistance across the harvester so we can find the point of maximum power transfer.
 
-
+    %%%%% EDITED FINISHED
+    
     Each assembly was connected between the tap and drain of a lab basin.  To
     facilitate measurement of the pressure gradient across the channel, a pressure
     transducer was placed across the input and output ports of the channel
