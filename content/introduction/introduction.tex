@@ -1,11 +1,11 @@
 %!TEX root = ../../thesis.tex
-I begin by offering some background information on double layers and liquids, which will be useful throughout this thesis.
+We begin with background information on double layers and liquids, which will be useful throughout this thesis.
 Following this I discuss my motivation for carrying out my research and list publications arising from this work.
 Finally, I outline the structure of the remainder of this thesis.
 
 \section{Background}
   Modelling and measuring the electrical aspects of interfacial double layers draws on both electronic and chemical concepts.
-  This section gives those unfamiliar with concepts from chemistry, or double layers, the required background.
+  This section gives those unfamiliar with concepts from chemistry, or just double layers, the required background.
   We start with some general background on liquids and move toward defining the double layer itself.
 
   \subsection{Liquid}
@@ -14,9 +14,8 @@ Finally, I outline the structure of the remainder of this thesis.
     We will begin by putting the properties of liquid into perspective.
 
     At the macroscopic scale, individual atoms and molecules liquids interact with massive complexity.
-    As we will soon see, the density of atoms and molecules in a liquid at the microscopic scales is enormous.
+    As we will soon see, the density of atoms and molecules in a liquid at the microscopic scale is enormous.
     Interactions are chaotic and dictated by three dimensional fields in constant flux.
-    Water is the most abundant liquid on the planet and makes up between 55\% and 65\% of a person's body mass.
 
     \begin{figure}
         \begin{center}
@@ -26,11 +25,12 @@ Finally, I outline the structure of the remainder of this thesis.
         \label{fig:waterMolecule}
     \end{figure}
 
-    Water is a liquid comprised of the molecule $H_{2}O$.
-    A molecular diagram of water is shown in figure~\ref{fig:waterMolecule}.
+    Water is the most abundant liquid on the planet and makes up between 55\% and 65\% of a person's body mass.
+    It is a liquid comprised of the molecule $H_{2}O$, shown in the molecular diagram (figure~\ref{fig:waterMolecule}).
     This molecule is polar, meaning one side has a net positive charge and the other has a net negative charge.
-    This charge imbalance is responsible for very complex behaviour in the presence of charge.
-    Water molecules will rotate and so as to neutralise any electrical fields.
+    This charge imbalance is responsible for very complex behaviour.
+
+    In the presence of charge, water molecules will rotate and so as to neutralise any electrical fields.
     This means that a body of water, or any polar liquid, behaves as an extremely lossy transmission medium.
     In short, a body of water will do its best to counteract any electrical gradient it experiences.
 
@@ -48,7 +48,7 @@ Finally, I outline the structure of the remainder of this thesis.
     The interactions relevant to this thesis occur in a very thin layer on the liquid side of the interface.
     When there is a difference in charge between the solid surface and the liquid bulk, a double layer forms.
 
-    The basic principle behind double layer formation is summarised in the following statements.
+    The basic principle behind double layer formation is briefly summarised by the following statements.
     Charges interact with each other, whether by repulsion or attraction.
     The charged elements in a solid are fixed in place, but in a liquid they are free to move.
     Because of this restriction, interactions must take place within the liquid phase.
@@ -61,7 +61,7 @@ Finally, I outline the structure of the remainder of this thesis.
     Figure~\ref{fig:butterfat} shows the structure of a butterfat molecule.
     The stability of an emulsion, such as milk, depends on the strength of the double layers that encapsulate each particle.
     These double layers shield the molecules or particles from one another electrically.
-    By shielding them from each other, they are unable to collect and bond together.
+    By shielding them from each other they are unable to collect and bond together.
     This shielding prevents milk from coagulating and turning to lumps.
 
     \begin{figure}
@@ -96,31 +96,39 @@ Finally, I outline the structure of the remainder of this thesis.
 
   \subsubsection*{Models of the interfacial double layer}
 
+    \begin{figure}
+      \begin{center}
+        \includegraphics{content/introduction/graphics/model_helmholtz}
+      \end{center}
+      \caption{Structure of the Helmholtz layer.}
+      \label{fig:doubleLayerModel_helmholtz}
+    \end{figure}
+
     Three models of the interfacial double layer have been proposed over time.
     Each represents an extension or modification of the previous beginning with the Helmholtz Model~\cite{Horch2004}.
 
-    \begin{figure}
-      \begin{center}
-        \includegraphics{content/introduction/graphics/doubleLayerModels}
-      \end{center}
-      \caption{Three models of the double layer's structure.}
-      \label{fig:doubleLayerModels}
-    \end{figure}
-
     Helmholtz proposed his parallel place capacitor based model in 1879~\cite{Geddes1997}.
     His model consists of two layers of surface charge, one inside the solid and one in the liquid.
-    The counter-ions sit in a \emph{compact layer}, meaning that they are bound to the surface and immobile.
-    Figure \ref{fig:doubleLayerModels} represents this as a row of tightly packed positive ions along the solid surface.
+    The counter-ions sit in a \emph{compact layer}, meaning that they are bound to the surface and immobile.~\cite{Salieb-Beugelaar2009}
+    Figure \ref{fig:doubleLayerModel_helmholtz} represents this as a row of tightly packed positive ions along the solid surface.
     Past the layer of bound surface ions there is no affect from the solid's charged surface.
-    This model failed to account for observed variations in capacitance with applied voltage and varied electrolytic concentration~\cite{Bard1980}.
+    This model failed to account for observed variations in capacitance with applied voltage and varied electrolyte concentration~\cite{Bard1980}.
 
-    Later, Goüy and Chapman independantly proposed that charge in the liquid phase may instead be held in a \emph{diffuse layer}.
+    \begin{figure}
+      \begin{center}
+        \includegraphics{content/introduction/graphics/model_guoyChapman}
+      \end{center}
+      \caption{Structure of the Goüy-Chapman layer.}
+      \label{fig:doubleLayerModel_gouyChapman}
+    \end{figure}
+
+    Later, Goüy and Chapman independently proposed that charge in the liquid phase may instead be held in a \emph{diffuse layer}.
     This meant that ions in the layer were not fixed and that the density of charge in the layer could vary.
-    This is represented in figure~\ref{fig:doubleLayerModels} by the lack of ions bound to the surface and the gradual decline in counter-ion concentration with distance from the surface.
+    This is represented in figure~\ref{fig:doubleLayerModel_gouyChapman} by the lack of ions bound to the surface and the gradual decline in counter-ion concentration with distance from the surface.
 
     This second model, referred to as the Goüy-Chapmam Model, accounts for the observed variation in capacitance by distributing charge in the liquid as a gradient from the solid's surface.
     The layer is free to change its concentration profile in response to applied electrostatic potential and ionic concentration.
-    In the case of a higher electrostatic potential, layer is pulled closer to the surface, becoming shallower.
+    In the case of a higher electrostatic potential, the layer is pulled closer to the surface, becoming shallower.
     In the case of a higher electrolytic concentration, the layer is more concentrated with a higher charge density, again becoming shallower.
 
     The Goüy-Chapmam Model solves the issue of variable capacitance, but it tends to fall over at high ionic concentrations.
@@ -128,8 +136,16 @@ Finally, I outline the structure of the remainder of this thesis.
     In their model, ions can get infinitely close to the surface regardless of their size.
     This becomes a problem at high ionic concentration where the surface becomes crowded.
 
+    \begin{figure}
+      \begin{center}
+        \includegraphics{content/introduction/graphics/model_stern}
+      \end{center}
+      \caption{Structure of the Goüy-Chapman-Stern layer.}
+      \label{fig:doubleLayerModel_stern}
+    \end{figure}
+
     In 1924, Otto Stern published his modified version of the Goüy-Chapmam model~\cite{Stern1924}.
-    This model extends the Goüy-Chapmam model by setting the minimum distance an ion can get to the solid surface.
+    This model, illustrated in figure~\ref{fig:doubleLayerModel_stern} extends the Goüy-Chapmam model by setting the minimum distance an ion can get to the solid surface.
     This effectively reintroduces the compact layer as seen in Helmholtz's model but allows for a concentration gradient exterior to this layer.
     It resembles the Helmholtz model at high ionic concentration but accounts for spread in the layer dimensions at lower concentrations.
     The Stern, sometimes referred to as the Goüy-Chapmam-Stern, model is a well accepted double layer model~\cite{Olthuis2005}.
@@ -156,7 +172,7 @@ Finally, I outline the structure of the remainder of this thesis.
     The shear plane represents nearest distance from the surface at which the layer can move laterally.
     This is an important parameter with linear geometries, such as the inside of a pipe, as it represents the true no-slip boundary.
 
-    The thickness of a typical double layer is between \SI{1}-\SI{100}{\nano\meter}~\cite{Jiang2010}, as defined by it's Debye length.
+    The thickness of a typical double layer is between \SI{1}-\SI{100}{\nano\meter}~\cite{Jiang2010}, as defined by it's Debye length~\cite{Israelachvili2011}.
     As mentioned in the previous section, this varies based on the ionic concentration of the solution and the potential at the solid surface.
 
 
@@ -167,7 +183,7 @@ Finally, I outline the structure of the remainder of this thesis.
     Modern computers can simulate the movement of liquids using the Navier-Stokes equations with accuracy and speed.
     Engineers simulate the flow of liquids, or any Newtonian fluid, routinely using computer design tools.
     These tools allow engineers to push boundaries of aircraft and boat design.
-    This does not hold true when modelling fluid at the microscopic scale.
+    This does not hold true when modelling fluid at the microscopic scale due to the required scale.
 
     Computer simulations are based upon calculating the state of a system of objects at specific time intervals.
     At each time interval, the variables of each object in the system is updated and the cycle repeats.
@@ -217,7 +233,7 @@ Finally, I outline the structure of the remainder of this thesis.
   It was learning about that mechanism and answering the following questions that started me on what became this thesis.
   \begin{enumerate}
     \item Where does the streaming voltage come from?
-    \item What role does the geometry of the device play?
+    \item What role does the geometry of a streaming device play?
     \item Could you change the materials to get more voltage?
   \end{enumerate}
   After experimentation and energy budgeting, I eventually concluded that streaming cell harvesters would not be a practical solution.
@@ -251,10 +267,10 @@ Finally, I outline the structure of the remainder of this thesis.
 \section{Thesis Outline}
   
   The remainder of this thesis is broken into two parts.
-  Part~\ref{part:doubleLayersOnInsulators} is concerned with the idea of using double layers to harvest energy.
+  Part~\ref{part:doubleLayersOnInsulators} is concerned with the concept of using double layers to harvest energy.
   This relates to the streaming cell energy harvester.
   Part~\ref{part:doubleLayersOnConductors} involves the electrode-electrolyte interface model put forward by Jonathan Scott to investigate the behaviour of double layers on electrodes.
 
-  Put simply, part~\ref{part:doubleLayersOnInsulators} deals with double layers on insulating surfaces, and part~\ref{part:doubleLayersOnConductors} deals with double layers on conductive surfaces.
+  Put simply, Part~\ref{part:doubleLayersOnInsulators} deals with double layers on insulating surfaces, and Part~\ref{part:doubleLayersOnConductors} deals with double layers on conductive surfaces.
 
   

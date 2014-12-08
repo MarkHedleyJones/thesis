@@ -78,80 +78,45 @@ With reference to that application I create a power budget and discuss the pract
 
   \section{Literature Review}
 
-    Streaming potential cells are not new.
+    Streaming potential cells are not a new idea.
     They find use in collodial science as a means of measuring the zeta potential of a double layer \cite{Gu2000,Scales1992,Daiguji2004,VanderHeyden2006,Mala1997}.
-    At the beginning of this work it was believed that harvesting power from streaming cells had not been done before.
+    And they have been heavily investigated as a means of generating electrical energy from fluid pressure~\cite{Chang2009,Daiguji2006,Daiguji2004b,Davidson2008a,Davidson2008,CherngHon2012,Jiao2014,Lu2006,Olthuis2005,Osterle1964,Pennathur2007,Ren2008a,VanderHeyden2006,Heyden2007,Xie2008,Yang2003}.
 
+    Channels can be created individually using a range of fabrication methods, such as chemical etching or using narrowly separated parallel plates.
+    They can also be formed en-mass by using porous materials such as glass or ceramics, where the pores themselves act as channels.
 
+    Glass has the attractive property that it obtains a negative surface charge when in contact with water.
+    This surface charge is caused by the deprotonation of surface silanol groups in glass (SiOH~$\leftrightarrows$~SiO$^{-}+$~H$^{+}$).~\cite{Kirby2004a}
+    By immersing a glass channel in an electrolyte solution, double layers of counter-ions (positive ions in this case) occupy the interior walls of the channel.
 
+    Theoretical predictions of the efficiency of standard micro/nano-fluidic channels are 2\% for pure water and 7\% for sodium chloride.~\cite{VanderHeyden2006}
+    Experimental results show conversion efficiencies in the range of:
+    \begin{itemize}
+        \item 0.01\% by forcing water through porous glass with pore sizes from 10\thinspace--\SI{16}{\micro\metre}.~\cite{Yang2003}
+        \item 0.8\% by forcing pure water through a ceramic rod populated with \SI{6}{\micro\metre} pores.~\cite{Yang2004}
+        \item 3\% by forcing a sodium chloride solution through a \SI{75}{\nano\metre} by \SI{50}{\micro\metre} silica channel.~\cite{Heyden2007}
+        \item 0.77\% by forcing a sodium chloride solution through a \SI{200}{\nano\metre} pore in an alumina membrane.~\cite{Lu2006}
+        \item 5\% by forcing a sodium chloride solution through a \SI{0.5}{\nano\metre} cylindrical pore in polyethylene terephalate foil.~\cite{Xie2008}
+    \end{itemize}
 
-    a cavity forcing water through narrow cavities. This phenomenon is understood
-    and is used in colloidal science to determine what's called the zeta potential
-    of an interface \cite{Gu2000,Scales1992,Daiguji2004,VanderHeyden2006,Mala1997}.
-    Although this phenomenon isn't new, using it to generate useful amounts of
-    electrical energy is. This chapter will investigate the application of
-    streaming potentials to energy harvesting for the purposes of running a smart
-    water meter.
+    These results indicate that small channels using solutions containing salt are more efficient.
+    According to \cite{Daiguji2004b}, the efficiency is maximised when the channel height twice that of the Debye length.
+    Additionally, ~\cite{VanderHeyden2006} states that the maximum efficiency is found when the salt concentration is low.
 
-    % At the boundary between a liquid and a solid, be it a molecule or the wall of
-    % a container, there is a possibility for an electrical potential. This
-    % electrical potential exists at the interface between the liquid and the solid
-    % and is the underlying mechanism by which the streaming potential cell
-    % operates. To understand how this electrical potential is able to separate
-    % charge as it does in a streaming potential cell we will first observe what
-    % happens when a solid suspended in liquid, as is shown in Figure
-    % \ref{Figure_Diagram_ZetaPotential_and_SlippingPlane}.
-
-
-    \begin{figure} \centering
-        \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCellPrinciple}
-        \caption{\label{fig:streamingCellPrinciple}The general principle of
-            operation of the streaming potential cell} \end{figure} In this
-    diagram, a the negatively charged solid is surrounded by layers of positively
-    charged ions that are electrostaticly attracted to the surface of the solid.
-    Near the surface of the solid, tightly bound, positively charged ions are
-    packed together and are largely immobile.  These ions reside in what is called
-    the Stern Layer. After this layer is a shell of less densely packed and
-    somewhat mobile ions that are still bound to the solid. At the edge of this
-    shell is what is called the slipping plane, which is the point at which ions
-    are no-longer bound to the solid. The electrical potential at this slipping
-    plane is termed the $\zeta$ potential (zeta potential). ``This zeta potential
-    is directly related to the interaction between the solid particles themselves
-    when they are suspended in a liquid and thus determines the stability of the
-    suspension solutions'' \cite{Gu2000}.
-
-    % \begin{figure} \begin{centering}
-    % \includegraphics[scale=0.12]{content/pt1/01-PowerHarvesting/Diagram_of_zeta_potential_and_slipping_plane_thesisEdit}
-    % \par\end{centering}
-
-    % \centering{}\protect\caption{\label{Figure_Diagram_ZetaPotential_and_SlippingPlane}Diagram
-    % showing the ionic concentration and potential difference as a function of
-    % distance from the charged surface of a particle suspended in a dispersion
-    % medium.} \end{figure}
-
-
-    Now lets look at the case where the geometry is such that the surface charge
-    resides on the walls of a channel through which the liquid can flow, as is
-    shown in Figure \ref{Figure_Diagram_ZetaPotential_and_in_a_channel}.  By
-    setting the width of the channel such that the double layer formed on each of
-    the sides partially overlap, the channel will be predominantly occupied by ions
-    of the opposite polarity to that of the surface charge at the solid to liquid
-    interface. This configuration has the effect of promoting the transport of
-    those ions across the channel with the application of a pressure differential
-    across the channels length.
-
-    %\begin{figure}
-    %\centering{}\includegraphics[scale=0.12]{content/pt1/01-PowerHarvesting/Diagram_of_zeta_potential_in_a_channel_thesisEdit}\protect\caption{\label{Figure_Diagram_ZetaPotential_and_in_a_channel}Diagram
-    %showing the ionic concentration and potential difference as a function of
-    %distance from the charged surfaces of a micro-channel.} \end{figure}
+    It is clear from the literature that there is significant progress to be made with respect to increasing the conversion efficiency of streaming cells.
+    Techniques to induce hydrodynamic slip at the fluid-solid interface are predicted to increase this efficiency to 30-40\%.~\cite{Davidson2008a, Ren2008a}
+    Experimental results utilising slip enhanced channels have not yet been reported in the literature.
+    This type of enhancement would overcome the `no-slip boundary condition' at the solid-liquid interface.
+    Slip would mean that ions in the compact layer, where ionic concentration is highest, could also be moved through the channel.
+    Surface enhanced channels have not been investigated due to cost and manufacturing difficulty.
 
 \chapter{The Streaming Cell Energy Harvester}
   \label{chap:harvestingEnergy}
 
   This chapter demonstrates an energy harvesting device capable of harvesting energy from flowing water with no moving parts.
-  A `smart' use for such a harvester is discussed in chapter \ref{chap:wirelessWaterMetering}.
+  A `smart' use for such a harvester is discussed in Chapter~\ref{chap:wirelessWaterMetering}.
   I find the minimum power a harvester needs to harvest in order to be useful in chapter \ref{chap:energyRequirements}.
-  And finally, in chapter \ref{chap:harvesterDesign}, I discuss the design of a harvester and comment on its feasibility.
+  And finally, in chapter \ref{chap:part_1_discussion}, I discuss the design of a harvester and comment on its feasibility.
 
   \input{content/pt1/01-PowerHarvesting/chapter}
 
@@ -177,5 +142,7 @@ With reference to that application I create a power budget and discuss the pract
       \input{content/pt1/03-DataTransmission/chapter}
 
 \chapter{Discussion}
+\label{chap:part_1_discussion}
 
 \chapter{Conclusion}
+\label{chap:part_1_conclusion}

@@ -1,208 +1,88 @@
 %!TEX root = ../../../thesis.tex
 
-% \section{The Streaming Potential Cell}
-% \label{sect:streamingPotentialCell}
-
-% The streaming potential cell is a device that uses water flow to separate charge.
-% It is particularly promising as a harvester due to its lack of moving parts.
-% This chapter starts by explaining how a streaming cell makes use of the interfacial double layer to separate charge.
-% Then I construct a crude cell and measure its performance.
-% This is followed by a mathematical investigation of the streaming cell.
-
-% For the sake of brevity, the term `cell' in this chapter shall refer to a streaming potential cell.
-% And the term `interface' refers to the interface, or boundary, between solid and liquid matter.
-% Unless otherwise stated, it should be assumed that I am describing the liquid side of the interface.
-% The solid body typically plays no role, apart from the surface charge it holds.
-
-% \begin{figure}
-%     \centering
-%     \includegraphics{content/pt1/01-PowerHarvesting/graphics/doubleLayerOnWall}
-%     \caption{\label{fig:doubleLayerOnWall}Formation of a double layer on a wall}
-% \end{figure}
-
-% Figure \ref{fig:doubleLayerOnWall} shows the formation of a double layer at the interface of a charged wall.
-% A higher density of positively charged ions, or cations, sit close to the interface.
-% The density of these cations reduces as the distance to the interface increases.
-% Also, the density of negatively charged ions, or anions, increases with the distance from the interface.
-
-% Now imagine a very small cavity filled with an electrolyte.
-% A simplified representation of such a cavity is shown in figure \ref{fig:ionsInABox}.
-% If the walls of the cavity hold no surface charge then the ions distribute evenly throughout the volume.
-% That is to say, the ions in the liquid are not electrically influenced by the walls.
-% With the application of surface charge - the counter-ions migrate to the walls.
-% As the density of counter-ions has increased at the interface, a void of cations remains within the cavity.
-% The charge has been separated.
-
-% \begin{figure}
-%     \centering
-%     \includegraphics{content/pt1/01-PowerHarvesting/graphics/ionsInABox.pdf}
-%     \caption{\label{fig:ionsInABox}Charge distribution in a charged cavity versus a non-charged cavity}
-% \end{figure}
-
-% Charge separation is not enough to develop electrical power.
-% Electrical power can not be taken directly from a double layer because:
-% \begin{itemize}
-%     \item The counter-ions of a double layer are electrostatically bound to the interface.
-%         Removing these ions from the interface requires work.
-%     \item The double layer blocks the electric field from the interface.
-%         Charge migration stops once the layer has created an equal and opposite field at the interface.
-% \end{itemize}
-
-% A streaming potential is simply a very thin cavity separating two volumes.
-% The walls of the cavity are separated by a distance in the order of a couple of double layers.
-% These dimensions are such that double layers within the cavity overlap.
-% By overlapping double layers, the volume of liquid within the cavity is primarily comprised of double layer counter-ions.
-
-% To cause continuious charge separation, the cell is placed across a pressure gradient.
-% This pressure gradient causes the counter-ions within the cavity to be pumped through the cell.
-% As counter-ions are moved through the cavity, more counter-ions move to the replenish the layer at the opening.
-% The counter-ions accumulate at the exit side of the cell.
-% This scenario is illustrated in figure \ref{fig:streamingCellPrinciple}.
-
-% Streaming potential cells are not new.
-% They find use in collodial science as a means of measuring the zeta potential of a double layer \cite{Gu2000,Scales1992,Daiguji2004,VanderHeyden2006,Mala1997}.
-% At the beginning of this work it was believed that harvesting power from streaming cells had not been done before.
-
-
-
-
-% a cavity forcing water through narrow cavities. This phenomenon is understood
-% and is used in colloidal science to determine what's called the zeta potential
-% of an interface \cite{Gu2000,Scales1992,Daiguji2004,VanderHeyden2006,Mala1997}.
-% Although this phenomenon isn't new, using it to generate useful amounts of
-% electrical energy is. This chapter will investigate the application of
-% streaming potentials to energy harvesting for the purposes of running a smart
-% water meter.
-
-% % At the boundary between a liquid and a solid, be it a molecule or the wall of
-% % a container, there is a possibility for an electrical potential. This
-% % electrical potential exists at the interface between the liquid and the solid
-% % and is the underlying mechanism by which the streaming potential cell
-% % operates. To understand how this electrical potential is able to separate
-% % charge as it does in a streaming potential cell we will first observe what
-% % happens when a solid suspended in liquid, as is shown in Figure
-% % \ref{Figure_Diagram_ZetaPotential_and_SlippingPlane}.
-
-
-% \begin{figure} \centering
-%     \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCellPrinciple}
-%     \caption{\label{fig:streamingCellPrinciple}The general principle of
-%         operation of the streaming potential cell} \end{figure} In this
-% diagram, a the negatively charged solid is surrounded by layers of positively
-% charged ions that are electrostaticly attracted to the surface of the solid.
-% Near the surface of the solid, tightly bound, positively charged ions are
-% packed together and are largely immobile.  These ions reside in what is called
-% the Stern Layer. After this layer is a shell of less densely packed and
-% somewhat mobile ions that are still bound to the solid. At the edge of this
-% shell is what is called the slipping plane, which is the point at which ions
-% are no-longer bound to the solid. The electrical potential at this slipping
-% plane is termed the $\zeta$ potential (zeta potential). ``This zeta potential
-% is directly related to the interaction between the solid particles themselves
-% when they are suspended in a liquid and thus determines the stability of the
-% suspension solutions'' \cite{Gu2000}.
-
-% % \begin{figure} \begin{centering}
-% % \includegraphics[scale=0.12]{content/pt1/01-PowerHarvesting/Diagram_of_zeta_potential_and_slipping_plane_thesisEdit}
-% % \par\end{centering}
-
-% % \centering{}\protect\caption{\label{Figure_Diagram_ZetaPotential_and_SlippingPlane}Diagram
-% % showing the ionic concentration and potential difference as a function of
-% % distance from the charged surface of a particle suspended in a dispersion
-% % medium.} \end{figure}
-
-
-% Now lets look at the case where the geometry is such that the surface charge
-% resides on the walls of a channel through which the liquid can flow, as is
-% shown in Figure \ref{Figure_Diagram_ZetaPotential_and_in_a_channel}.  By
-% setting the width of the channel such that the double layer formed on each of
-% the sides partially overlap, the channel will be predominantly occupied by ions
-% of the opposite polarity to that of the surface charge at the solid to liquid
-% interface. This configuration has the effect of promoting the transport of
-% those ions across the channel with the application of a pressure differential
-% across the channels length.
-
-% %\begin{figure}
-% %\centering{}\includegraphics[scale=0.12]{content/pt1/01-PowerHarvesting/Diagram_of_zeta_potential_in_a_channel_thesisEdit}\protect\caption{\label{Figure_Diagram_ZetaPotential_and_in_a_channel}Diagram
-% %showing the ionic concentration and potential difference as a function of
-% %distance from the charged surfaces of a micro-channel.} \end{figure}
-
-
-
 \section{Replicating an Experiment}
 
-There are many papers describing experiments with streaming potential cells
-\cite{Gu2000,Mala1997,Scales1992,VanderHeyden2006} of which we have chosen one
-by Yongan Gu and Dongqing Li \cite{Gu2000} to attempt to replicate. This paper
-was chosen for its detailed description of the experimental procedure used,
-including the brands and model numbers of the equipment used. Our experimental
-procedure is based upon this paper however we have modified certain areas of
-the experiment to accommodate for the resources available to us. For a list of
-the materials used to construct the channels, see Table
-\ref{Table_StreamingCell_MaterialsUsed}.
+There are many papers describing energy conversion experiments using streaming potential cells \cite{Gu2000,Mala1997,Scales1992,VanderHeyden2006}.
+I chose Yongan Gu and Dongqing Li's paper~\cite{Gu2000} as the basis for my experimentation with streaming cell results.
+This paper was chosen for its simple cell design and detailed description of the experimental procedure used.
+Certain areas have been modified to accommodate the available resources.
 
 
 \subsection{\label{sub:Experimental-Procedure}Experimental procedure}
 
 
-\subsubsection*{Construction}
+  \subsubsection*{Construction}
 
-\begin{figure}[p] \begin{centering}
-        \includegraphics[width=0.5\textwidth]{content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step1.JPG}
-        \par\end{centering}
+    \begin{figure}
+      \centering
+      \includegraphics[width=0.5\textwidth]{content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step1.JPG}
+      \caption{\label{fig:Photo_streamingPotential_Assembly_Step1}Photo showing half of a glass slide glued to acrylic base plate}
+    \end{figure}
 
-\centering{}\protect\caption{\label{Photo_streamingPotential_Assembly_Step1}Photo
-    showing half of a glass slide glued to acrylic base plate} \end{figure}
-\begin{figure}[p] \begin{centering}
-        \includegraphics[width=0.5\textwidth]{content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step2.JPG}
-        \par\end{centering}
+    \begin{figure}
+      \centering
+      \includegraphics[width=0.5\textwidth]{content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step2.JPG}
+      \caption{\label{Photo_streamingPotential_Assembly_Step2}Photo showing plastic shims sandwiched between two slide halves}
+    \end{figure}
 
-\centering{}\protect\caption{\label{Photo_streamingPotential_Assembly_Step2}Photo
-    showing shims sandwiched between two slide halves} \end{figure}
-\begin{figure}[p] \begin{centering}
-        \includegraphics[width=0.5\textwidth]{content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step3.JPG}
-        \par\end{centering}
+    \begin{figure}
+      \centering
+      \includegraphics[width=0.5\textwidth]{content/pt1/01-PowerHarvesting/graphics/Photo_streamingPotential_Assembly_Step3.JPG}
+      \caption{\label{Photo_streamingPotential_Assembly_Step3}Photo showing final assembly}
+    \end{figure}
 
-\centering{}\protect\caption{\label{Photo_streamingPotential_Assembly_Step3}Photo
-    showing final assembly} \end{figure} \begin{figure}
-\begin{tabular}{|c|c|c|} \hline Microscope slides & Sail Brand & JIA 7101WT -
-    26 x 76mm\tabularnewline \hline Shims & Garlock & Colorplast - 50$\,\mu$m,
-    80$\,\mu$m, 120$\,\mu$m and 250$\,\mu$m\tabularnewline \hline Epoxy &
-    Selleys & Araldite - Ultra Clear Resin\tabularnewline \hline Pressure
-    Sensor & Honeywell & 24PC15SMT - 0 -- $\pm$15 PSI\tabularnewline \hline
-\end{tabular}
+    \begin{table}
+      \begin{tabular}{|c|c|c|} \hline Microscope slides & Sail Brand & JIA 7101WT -
+          26 x 76mm\tabularnewline \hline Shims & Garlock & Colorplast - 50$\,\mu$m,
+          80$\,\mu$m, 120$\,\mu$m and 250$\,\mu$m\tabularnewline \hline Epoxy &
+          Selleys & Araldite - Ultra Clear Resin\tabularnewline \hline Pressure
+          Sensor & Honeywell & 24PC15SMT - 0 -- $\pm$15 PSI\tabularnewline \hline
+      \end{tabular}
+      \caption{\label{Table_StreamingCell_MaterialsUsed}Table of materials used to construct the streaming potential cells}
+    \end{table}
 
-\protect\caption{\label{Table_StreamingCell_MaterialsUsed}Table of materials
-    used to construct the streaming potential cells} \end{figure}
+    The first step was to section standard microscope slides into halves.
+    This gave us glass panels of approximately \SI{26}{\milli\meter} by \SI{38}{\milli\meter} by \SI{1}{\milli\meter}.
+    Next, a single panel is epoxied to an acrylic base plate.
+    A glass panel epoxied to a base plate is shown in Figure~\ref{Photo_streamingPotential_Assembly_Step1}.
+
+    Once set, the plastic shims are cut to the required size, covered with a very thin layer of epoxy, and placed along the edges of the slide.
+    The shims line the sides of the glass panel such that they leave a \SI{1}{\centi\meter} gap through the center.
+    A second glass slide is then placed on top of the shims and epoxy resin is used to seal the sides.
+    Pressure was applied to the stack while the epoxy set to ensure the epoxy distributed correctly and keep the height narrow.
+    A photo of the shims glued between the two slide halves is shown in Figure~\ref{Photo_streamingPotential_Assembly_Step2}.
+
+    Once set, the channel was then photographed under microscope to determine the true internal height of the channel.
+    Each of the four corner heights were measured to ensure that the channel remained rectangular once set.
+    Finally, acrylic couplers where mounted over each end, again by the use of epoxy.
+
+    These couplers allowed the water to be forced through the channel while providing mounting for the voltage sensing wires.
+    The final assembly is shown in Figure \ref{Photo_streamingPotential_Assembly_Step3}.
+    A full list of materials used to construct the channels is presented as Table~\ref{Table_StreamingCell_MaterialsUsed}.
+
+    A total of 10 channels were made and tested using this method.
+
+  \subsubsection*{Measurement}
+
+    Measurement of the harvesters output power was conducted using precision source measurement units (SMU).
+    The Agilent E5270B is a mainframe system that holds banks of SMUs with connections to a GPIB computer interface.
+    The Department of Engineering's E5270 contains three SMUs, each having the ability to measure currents as low as one femto-ampere.
+    The device uses force and sense lines to ensure the voltage/current being set is accurately controlled at the desired point within the test device.
+    Additionally, it uses tri-axial cables to minimise any interference from outside sources.
 
 
-First, glass microscope slides where cut in half to give panels of glass that
-where approximately 26 x 38mm. Once such glass panel can be seen in Figure
-\ref{Photo_streamingPotential_Assembly_Step1}.  Next, two pieces of shim
-material where placed on either side of the glass panel with a small amount of
-epoxy, on top of which another glass panel was placed. Pressure was applied to
-the panels pressing them together while the epoxy set to create the channel
-that can be seen in Figure \ref{Photo_streamingPotential_Assembly_Step2}. Each
-channel was photographed under microscope once set to determine the height of
-the channel created. Finally, acrylic couplers where mounted over each end,
-again by the use of epoxy. These couplers allowed the water to be forced
-through the channel while providing mounting for the voltage sensing wires. The
-final assembly is shown in Figure
-\ref{Photo_streamingPotential_Assembly_Step3}.
 
-
-\subsubsection*{Measurement}
-
-Each assembly was connected between the tap and drain of a lab basin.  To
-facilitate measurement of the pressure gradient across the channel, a pressure
-transducer was placed across the input and output ports of the channel
-assembly. Single core copper wire was used to measure voltage gradients across
-the channel. These wires where epoxied into the couplers to reduce leaks. To
-conduct the measurements an Agilent E5270B Precision Measurement Mainframe was
-used, which has an input impedance of 10${\displaystyle \, T\Omega}$. The high
-input impedance of this machine ensures that the measurements are not disturbed
-by current leaking through the measurement device. The E5270 was responsible
-for measuring the output of the pressure transducer and the voltage across the
-channel.
+    Each assembly was connected between the tap and drain of a lab basin.  To
+    facilitate measurement of the pressure gradient across the channel, a pressure
+    transducer was placed across the input and output ports of the channel
+    assembly. Single core copper wire was used to measure voltage gradients across
+    the channel. These wires where epoxied into the couplers to reduce leaks. To
+    conduct the measurements an Agilent E5270B Precision Measurement Mainframe was
+    used, which has an input impedance of 10${\displaystyle \, T\Omega}$. The high
+    input impedance of this machine ensures that the measurements are not disturbed
+    by current leaking through the measurement device. The E5270 was responsible
+    for measuring the output of the pressure transducer and the voltage across the
+    channel.
 
 
 \subsection{Results}
