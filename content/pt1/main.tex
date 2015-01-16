@@ -30,51 +30,62 @@ With reference to that application I create a power budget and discuss the pract
     Counter-ions that have been separated from the bulk of the liquid line the exterior of the wall.
     However, charge separation alone is not enough to generate electrical power.
 
-    As energy cannot simply be created or destroyed, it must be converted between forms.
-    The counter-ions are electrostatically bound to the interface - removing them requires work.
-    Although the counter-ion density has been increased at the boundary, the charge is not free.
-    Also, the migration of charge to the walls ceases once the surface potential has been neutralised; so it is not a continuous process.
+    As energy cannot simply be created or destroyed, it must be converted from one form to another.
+    The counter-ions are electrostatically bound to the interface and therefore removing them requires work.
+    So although the counter-ion density has been increased at the boundary, the charge is not free.
+    Also, the migration of charge to the walls ceases once the surface potential has been neutralised, so it is not a continuous process.
 
     \begin{figure}
         \centering
-        \includegraphics{content/pt1/01-PowerHarvesting/graphics/intro_2_channel}
-        \caption{\label{fig:doubleLayerInChannel_noPressure}Double layer formation within a cell geometry}
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/intro_2_channel_relaxed}
+        \caption{\label{fig:doubleLayerInChannel_noPressure}Double layer formation within a streaming cell that is in a state of equilibrium.}
     \end{figure}
 
-    Generating electrical power will require taking mechanical energy from the fluid.
-    It will manifest itself as a drop in pressure across a harvester as liquid is forced through.
-    This is very similar to the voltage drop observed across a resistor as it passes current.
+    Generating electrical power is going to require using mechanical energy from the fluid.
+    This will manifest itself as a drop in pressure across a harvester as liquid is forced through.
+    This is similar in nature to the voltage drop observed across an electrical resistor as it passes current.
 
-    Developing an electrical potential in a liquid requires upsetting the ionic balance.
-    This means separating and isolate negative and positive ions from each other.
-    The collection of free (unbound) counter-ions can be achieved by pumping and collecting those ions from within the double layer.
+    The mechanical energy taken from the fluid is used to upset the ionic balance.
+    This means separating and isolating negative and positive ions from each other.
+    The collection of free (in this case unbound) counter-ions can be achieved by pumping ions from within the double layer out into an isolated region.
 
     Figure~\ref{fig:doubleLayerInChannel_noPressure} shows another charged wall, but with the addition of a small channel.
     This channel connects two bodies of liquid that have been separated by the wall.
     Notice that the channel contains no co-ions, it is exclusively occupied by counter-ions.
-    In reality there may be some co-ions; the proportion of which is controlled by the width of the channel.
+    The ratio of counter-ions to co-ions within the channel is controlled by the width of the channel.
+    The narrower the channel, the less likely it is for co-ions to pass.
 
     Ideally, the width of the channel will be in the order of the double layer thickness.
-    The situation depicted in figure~\ref{fig:doubleLayerInChannel_noPressure} is small enough that the double layers will overlap.
+    The channel depicted in figure~\ref{fig:doubleLayerInChannel_noPressure} is small enough that the double layers will overlap.
     By overlapping the double layers, or bringing their boundaries together, co-ions will be repelled from between the walls.
-    This provides the most concentrated counter-ion density within the channel.
+    This gives rise to highly concentrated counter-ion fluid occupying the channel.
 
-    The channel and the two bodies have now formed a harvester.
-    By applying a pressure differential across the channel, counter-ion rich is transported across the wall.
-    As the ions exit the channel on the low-pressure side, new counter-ions move to replenish the double layer on the high-pressure side.
+    The channel and the two separated bodies now form an energy harvester.
+    By applying a pressure differential across the channel, counter-ion rich fluid is transported.
+    As counter-ions exit the channel on the low-pressure side, new ions move to replenish the double layer on the high-pressure side.
     Once charge has crossed the channel it is difficult for it to return as the constant flow of liquid opposes charge migration back through the wall.
-    
-    The channel is able to continuiously pump ions across a wall.
-    Once started, the electrical potential between the two bodies will increase.
+    A diagram showing the channel geometry but with pressure applied and a voltage gradient generated is shown as figure~\ref{fig:doubleLayerInChannel_withPressure}.
+
+    \begin{figure}[ht]
+        \centering
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/intro_2_channel}
+        \caption{\label{fig:doubleLayerInChannel_withPressure}Double layer formation within a streaming cell that has a pressure differential applied.}
+    \end{figure}
+
+    A streaming cell is able to continuously pump ions through its channel.
+    Once this process begins, the electrical potential between the two bodies increases.
     Not only is the channel increasing the concentration of free counter ions on the low-pressure side, but it also concentrates co-ions on the high-pressure side.
-    In the case of glass as the channel/wall material, this means the low-pressure side will have a higher potential than that of the high-pressure side.
-    This is also the situation illustrated in the proceeding graphics.
+    In the case of glass as the solid material, the low-pressure side will have a higher potential than that of the high-pressure side.
+    This matches the situations illustrated.
 
     The mechanism described here is the streaming potential cell.
-    It is a device at the centre of research in both membrane and interface science.
+    It is a device of interest in both membrane and interface science.
     The concept behind the device is relatively straight-forward, but the physical reality is more complicated.
     The diagrams presented are vastly oversimplified, having perfectly flat walls, single atom ions carrying a single charge, and omitting polar molecules or contaminants.
-    The current literature will be reviewed in the next section relating to these cells.
+
+    This concludes the introduction to Streaming Cells.
+    By now you should be comfortable with the concept of using an interfacial double layer to convert mechanical energy through a fluid into electrical energy.
+    Next, literature concerning the operation, design and improvements of streaming cell technology is presented.
 
   \section{Literature Review}
 
@@ -134,10 +145,10 @@ With reference to that application I create a power budget and discuss the pract
 
 \chapter{Energy Requirements}
   \label{chap:energyRequirements}
-  
+
   \section{Microcontrollers}
-      \input{content/pt1/02-Microcontrollers/chapter}
-  
+      % \input{content/pt1/02-Microcontrollers/chapter}
+
   \section{Data Transmission}
       \input{content/pt1/03-DataTransmission/chapter}
 

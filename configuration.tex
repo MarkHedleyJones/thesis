@@ -11,8 +11,8 @@
 \setcounter{tocdepth}{3}
 \usepackage[english]{babel}
 \usepackage{verbatim}
-\usepackage{prettyref}
-\usepackage{refstyle}
+% \usepackage{prettyref}
+% \usepackage{refstyle}
 \usepackage{float}
 \usepackage{rotfloat}
 \usepackage{textcomp}
@@ -25,6 +25,8 @@
 \usepackage{siunitx}
 \usepackage{nomencl}
 \usepackage{cite}
+
+
 % the following is useful when we have the old nomencl.sty package
 \providecommand{\printnomenclature}{\printglossary}
 \providecommand{\makenomenclature}{\makeglossary}
@@ -49,15 +51,15 @@
 \newfloat{algorithm}{tbp}{loa}[chapter]
 \providecommand{\algorithmname}{Algorithm}
 \floatname{algorithm}{\protect\algorithmname}
-\RS@ifundefined{subref}
-  {\def\RSsubtxt{section~}\newref{sub}{name = \RSsubtxt}}
-  {}
-\RS@ifundefined{thmref}
-  {\def\RSthmtxt{theorem~}\newref{thm}{name = \RSthmtxt}}
-  {}
-\RS@ifundefined{lemref}
-  {\def\RSlemtxt{lemma~}\newref{lem}{name = \RSlemtxt}}
-  {}
+% \RS@ifundefined{subref}
+%   {\def\RSsubtxt{section~}\newref{sub}{name = \RSsubtxt}}
+%   {}
+% \RS@ifundefined{thmref}
+%   {\def\RSthmtxt{theorem~}\newref{thm}{name = \RSthmtxt}}
+%   {}
+% \RS@ifundefined{lemref}
+%   {\def\RSlemtxt{lemma~}\newref{lem}{name = \RSlemtxt}}
+%   {}
 
 
 \@ifundefined{date}{}{\date{}}
@@ -126,3 +128,4 @@ morekeywords={*,...}            % if you want to add more keywords to the set
 \addto\captionsbritish{\renewcommand{\lstlistingname}{Listing}}
 \renewcommand{\lstlistingname}{Listing}
 
+\usepackage{cleveref}
