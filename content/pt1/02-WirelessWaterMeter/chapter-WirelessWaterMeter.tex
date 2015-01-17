@@ -44,36 +44,63 @@ This chapter addresses the amount of energy available to harvest in a typical do
     \caption{\label{fig:Photo_DomesticWaterMeter}Photograph of a domestic water meter (Kent PSMT 25mm) typically found in the Auckland region.}
   \end{figure}
 
-  Domestic water meters are typically placed at a property's boundary in a plastic box set into the ground.
-  The meter at my Auckland home is shown as \cref{fig:Photo_DomesticWaterMeter}.
-  This is a typical meter for the Auckland region, which has been installed approximately eight meters into our property from the road-side.
-  Due to their location, it is usually not feasible to wire them to an electrical grid.
-  No commercially viable domestic energy harvesting water meters, suitable for burial, exist on the market as of writing.
+  A domestic water meters are typically placed at a property's boundary in a plastic box set into the ground.
+  A meter installation, typical of an Auckland residential area, is shown in~\cref{fig:Photo_DomesticWaterMeter}.
+  The meter has been installed approximately eight meters into the property from the road-side.
+  Because of its location, it is not feasible to connect it to a source of power.
+  No commercially available domestic energy harvesting water meters, suitable for burial, exist on the market as of 2015.
 
   \begin{figure}
     \centering
     \includegraphics[width=0.5\textwidth]{content/pt1/02-WirelessWaterMeter/graphics/hydro-WMBUSWLESSM}
-    \caption{\label{fig:Photo_waterwareMeter}Photograph of the a wireless transmitting module from Waterware NZ. The device clips onto a compatable water meter and contains its own battery~\cite{BMeters2014}.}
+    \caption{
+      \label{fig:Photo_waterwareMeter}
+      Photograph of the a wireless transmitting module from Waterware NZ.
+      The device clips onto a compatable water meter and contains its own battery~\cite{BMeters2014}.
+    }
   \end{figure}
 
   A common configuration for wireless automatic meter reading is to have a reader/transmitter device that is separate to the meter itself.
-  This allows new businesses to enter the remote metering market without having to develop metering technologies.
-  Such a device may sit on the meter's display or have a wire that connects it to the meter.
-  The design; being a simple tamper-proof, clip-on device; means that it must be powered by batteries.
+  Such a device usually attaches to the meter's display or has a wire connecting it to the meter.
+  Being detachable and tamper-proof means it must be powered by batteries.
+  A commonly stated battery life for such units is ten years~\cite{BMeters2014}, close to batteries shelf-life.
 
-  Current automatic meter reading systems employ long-life, non-rechargeable batteries.
-  These meter reading systems have a battery life of around ten years~\cite{BMeters2014}, which is near the shelf-life of the battery itself.
-  We want to see if streaming cells could be used as a means to provide sufficient energy to monitor water usage.
-  If possible, a suitable harvester would remove the need for batteries, but require plumbing into the domestic feed.
-  The resulting device would not be an attachment, but a replacement for the traditional water meter.
-  This would mean that it would have to take on the role of metering water usage.
+  We investigate the possibility of replacing these batteries with a streaming cell based energy harvester.
+  A harvester would remove the need for batteries, but need to be plumbed into the feed.
+  The resulting device would most likely replace the meter, as opposed to being an attachment. 
+
+  \section{Envisioned harvester design}
+
+    In \cref{chap:harvestingEnergy}, energy was converted between fluid-mechanical to electrical with a single channel.
+    A harvester for the smart metering would likely require more energy than that channel was capable of generating.
+    There are multiple ways of scaling the streaming cell design employed in \cref{chap:harvestingEnergy}.
+    The channel can be made wider, doubling the width will double the output power;
+    channels can be stacked, multiplying the output by the number of channels formed.
+    Scaling the channels is not considered to be a problem.
+    However, the pressure drop across a channel \emph{is} likely to be a problem to the consumer.
+
+    \begin{figure}
+      \centering
+      \includegraphics[width=0.9\textwidth]{content/pt1/02-WirelessWaterMeter/graphics/harvester}
+      \caption{\label{fig:Diagram_harvester}Diagram showing the intended design of streaming cell harvester suitable for domestic connection.}
+    \end{figure}
+
+    To control the pressure drop across the harvester, the mechanical design shown as \cref{fig:Diagram_harvester} is proposed.
+    It gives the capability of controlling the hydrodynamic resistance by means an orifice plate.
+    The plate sits in the ``main line'' causing a pressure differential in proportion to the flow rate.
+    A plate with a hole equal in diameter to the main pipe would cause no pressure across the harvester, as it causes no flow obstruction.
+    A plate without a hole forces all flow through the harvester, causing maximum pressure differential.
+    With an appropriate sized orifice plate the customer will be unaware of the harvester's presence in their water feed.
+    
+    For the sake of analysis, we assume that the plate will be sized to mimic the pressure loss of a mechanical water meter.
+    This provides a way to determine how much energy would be available to a harvester by calculating how much is lost to existing mechanical meters.
 
 
-\section{Appropriateness of Streaming Cell Harvesters}
+  \section{Quantifying harvestable energy}
 
+    Using streaming cell technology to harvest energy from a domestic water feed could increase the feasibility of automatic meter reading.
 
-  \subsection{Readily harvestable energy}
-    This section determines the amount of enery available to an energy harvester.
+    This section determines the amount of energy available to an energy harvester.
     The harvester envisioned is intended for domestic water metering so we start by building a profile of domestic water consumption.
     Then by finding how much energy is lost inside a typical water meter we will know how much energy a harvester has available.
 
@@ -160,12 +187,3 @@ This chapter addresses the amount of energy available to harvest in a typical do
     Over an average week the reference water meter would dissipate approximately \SI{7.20}{\kilo\joule} of energy; averaging \SI{1.03}{\kilo\joule} per day.
 
 
-  \subsection{Domestic harvester design}
-
-
-
-    \begin{figure}
-      \centering
-      \includegraphics[width=0.9\textwidth]{content/pt1/02-WirelessWaterMeter/graphics/harvester}
-      \caption{\label{fig:Diagram_harvester}Diagram showing the intended design of streaming cell harvester suitable for domestic connection.}
-    \end{figure}
