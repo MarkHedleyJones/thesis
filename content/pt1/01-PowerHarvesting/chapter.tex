@@ -10,6 +10,8 @@ This helps to determine what parameters are important when maximising the output
 Before building and measuring any streaming cells, lets look briefly at the mathematics governing them.
 Rigorous mathematical analysis of streaming cell performance is extremely involved and is will detailed in the literature \cite{Yang1998}.
 It is still a matter of debate as the structure of the double layer itself is still not fully understood.
+I have not attempted to model streaming cell behaviour.
+Instead I wish to understand the effect of scaling them.
 
 \subsubsection*{Streaming voltages}
 
@@ -71,7 +73,7 @@ manner:
 \end{align}
 
 This is a useful step since $\frac{\eta\,l}{A}$ is equivalent to the hydrostatic resistance of the channel.
-Knowing this, we can substitute this hydrostatic resistance into \cref{eq:streaming_current_rearranged} as $R_{h}$, yielding
+Knowing this, we can substitute this hydrostatic resistance into \cref{eq:streaming_current_rearranged} as $R_{h}$ and rearrange, yielding
 
 \begin{align}
     I_{s} & = \frac{\Delta P}{R_{h}}\,\left(\varepsilon_{0}\,\varepsilon_{r}\,\zeta\right)\nonumber\\

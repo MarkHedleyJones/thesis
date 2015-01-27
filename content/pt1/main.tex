@@ -60,6 +60,9 @@ With reference to that application I create a power budget and discuss the pract
     By overlapping the double layers, or bringing their boundaries together, co-ions will be repelled from between the walls.
     This gives rise to highly concentrated counter-ion fluid occupying the channel.
 
+    A channel can be created individually using a range of fabrication methods, such as chemical etching or using narrowly separated parallel plates.
+    They can also be formed en-mass by using porous materials such as glass or ceramics, where the pores themselves act as channels.
+
     The channel and the two separated bodies now form an energy harvester.
     By applying a pressure differential across the channel, counter-ion rich fluid is transported.
     As counter-ions exit the channel on the low-pressure side, new ions move to replenish the double layer on the high-pressure side.
@@ -75,8 +78,11 @@ With reference to that application I create a power budget and discuss the pract
     A streaming cell is able to continuously pump ions through its channel.
     Once this process begins, the electrical potential between the two bodies increases.
     Not only is the channel increasing the concentration of free counter ions on the low-pressure side, but it also concentrates co-ions on the high-pressure side.
-    In the case of glass as the solid material, the low-pressure side will have a higher potential than that of the high-pressure side.
-    This matches the situations illustrated.
+
+    Glass has the attractive property that it obtains a negative surface charge when in contact with water.
+    This surface charge is caused by the deprotonation of surface silanol groups in glass (SiOH~$\leftrightarrows$~SiO$^{-}+$~H$^{+}$)~\cite{Kirby2004a}.
+    By immersing a glass channel in an electrolyte solution, double layers of counter-ions (positive ions in this case) occupy the interior walls of the channel.
+    This means that the low-pressure side will have a higher potential than that of the high-pressure side, as illustrated throughout the ionic figures.
 
     The mechanism described here is the streaming potential cell.
     It is a device of interest in both membrane and interface science.
@@ -89,16 +95,60 @@ With reference to that application I create a power budget and discuss the pract
 
   \section{Literature Review}
 
-    Streaming potential cells are not a new idea.
-    They find use in collodial science as a means of measuring the zeta potential of a double layer \cite{Gu2000,Scales1992,Daiguji2004,VanderHeyden2006,Mala1997}.
-    And they have been heavily investigated as a means of generating electrical energy from fluid pressure~\cite{Chang2009,Daiguji2006,Daiguji2004b,Davidson2008a,Davidson2008,CherngHon2012,Jiao2014,Lu2006,Olthuis2005,Osterle1964,Pennathur2007,Ren2008a,VanderHeyden2006,Heyden2007,Xie2008,Yang2003}.
+    \begin{figure}
+      \centering
+      \includegraphics[height=6cm]{content/pt1/Osterle_ElectrokineticCell.png}
+      \caption{\label{fig:Osterle_cell}Osterle's electrokinetic pumping cell, reproduced from \cite{Osterle1964}}
+    \end{figure}
 
-    Channels can be created individually using a range of fabrication methods, such as chemical etching or using narrowly separated parallel plates.
-    They can also be formed en-mass by using porous materials such as glass or ceramics, where the pores themselves act as channels.
+    In 1964, a paper written by Osterle was published titled ``Electrokinetic Energy Conversion'' \cite{Osterle1964}.
+    In that paper Osterle presented an analysis of energy conversion, either for the purpose of pumping or generating electrical power.
+    His cell consisted of fine capillary tubes stacked together to form a streaming cell.
+    A diagram of that cell, in its pumping configuration, is reproduced from that paper~\cref{fig:Osterle_cell}.
+    Importantly, he shows that a streaming cell has the same conversion efficiency whether it is in a pumping mode, where electrical energy is supplied, or in a generating mode, where electrical energy is produced.
 
-    Glass has the attractive property that it obtains a negative surface charge when in contact with water.
-    This surface charge is caused by the deprotonation of surface silanol groups in glass (SiOH~$\leftrightarrows$~SiO$^{-}+$~H$^{+}$).~\cite{Kirby2004a}
-    By immersing a glass channel in an electrolyte solution, double layers of counter-ions (positive ions in this case) occupy the interior walls of the channel.
+    Based on his analysis, Osterle gives an illustrative example of an streaming cell producing electrical energy.
+    He states that tube bank having a volume of \SI{100}{\centi\meter\cubed} with \SI{100}{\kilo\pascal} of hydrostatic pressure applied would be capable of producing \SI{0.49}{\watt} of electrical energy.
+    This would require \SI{125}{\watt} of pumping power to achieve, giving an energy conversion efficiency of \SI{0.392}{\percent}.
+
+    In the same year, Burgreen and Nakache publish a paper showing the effect of surface potential on fine capillary tubes, such as those described by Osterle\cite{Burgreen1964}.
+    They show that a sufficiently large surface potential will cause flow retardation to approach \SI{100}{\percent}.
+    At that point a channel has become impermeable and therefore useless as an energy converter.
+    Having a high surface potential is generally desirable as it increases the counter-ion concentration within a channel.
+
+    In 2003, Yang et al.\ published in an analysis that the conversion efficiency of streaming cells is increased as the length of the channel is reduced~\cite{Yang2003}.
+
+    In 2005, van der Heyden et al.\ reports on streaming cell measurements made in a single microchannel \SI{70}{\micro\meter} in height~\cite{VanderHeyden2005}.
+    Many valuable contributions were detailed in this paper, namely:
+    \begin{enumerate}
+      \item Confirmed that reversing the polarity of surface potential reverses the direction of the streaming current.
+      \item Found that the maximum conversion efficiency corresponded to channels where double layers begin to overlap.
+      \item Show that boundary conditions involving constant surface potentials, used to model streaming cells, were inaccurate.
+      \item Predict a maximum energy conversion efficiency of $\sim$\SI{6}{\percent} for potassium chloride solutions of \SI{1e-5}{\mole} in silica channels of height \SI{145}{\nano\meter}.
+    \end{enumerate}
+
+    In 2006, van der Heyden et al.\ publishes a follow-up to their previous work, again containing valuable information\cite{VanderHeyden2006}.
+    Amongst this information are the following noteworthy points:
+    \begin{enumerate}
+      \item Calculation suggests that energy conversion efficiency is maximised at low salt concentrations.
+      \item They put forward a prediction of \SI{12}{\percent} efficiency for streaming cells utilising a lithium based ions in solutions.
+    \end{enumerate}
+
+    In 2007, van der Heyden et al.\ publish again the measured energy conversion of \SI{3.2}{\percent}~\cite{Heyden2007}.
+    They add that the conversion efficiency of a channel is limited by Stern conductance.
+    Stern conductance provides an additional pathway at the interface surface, within the Stern layer,
+
+    Then in 2008, Davidson and Xuan publish a mathematical model confirming the role of Stern conductance on streaming cells, in particular those with low ionic strength\cite{Davidson2008}.
+    They suggest that this is the reason for poor measured efficiencies in light of the much higher predicted values.
+
+    That same year, Davidson and Xuan publish a mathematical prediction on the effects of hydrodynamic slippage at the interface surface.
+
+
+
+
+    In recent years, streaming cells have been used in colloidal science as a means of measuring the zeta potential of double layers \cite{Gu2000,Scales1992,Daiguji2004,VanderHeyden2006,Mala1997}.
+
+    There has also been a renewed interest in using streaming cells as a means of generating electrical energy~\cite{Chang2009,Daiguji2006,Daiguji2004b,Davidson2008a,Davidson2008,CherngHon2012,Jiao2014,Lu2006,Olthuis2005,Pennathur2007,Ren2008a,VanderHeyden2006,Heyden2007,Xie2008,Yang2003}.
 
     Theoretical predictions of the efficiency of standard micro/nano-fluidic channels are 2\% for pure water and 7\% for sodium chloride.~\cite{VanderHeyden2006}
     Experimental results show conversion efficiencies in the range of:
