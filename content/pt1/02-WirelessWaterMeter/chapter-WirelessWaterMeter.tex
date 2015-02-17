@@ -21,32 +21,34 @@ This chapter addresses the amount of energy available to harvest in a typical do
   Water sourcing and processing is an expensive task for city councils.
   Cheap and reliable methods for retrieving metering information will become more important as water becomes more precious.
 
-  In New Zealand, larger districts, such as Auckland, Tauranga, and Wellington?, have already implemented water metering.
-  Those cities have implemented traditional mechanical water metering systems.
-  Meter readers are employed to visit each property and manually record the meters display.
-
+  In New Zealand - Auckland City, Tauranga City, Nelson City, Whangarei District and the Tasman District have already implemented water metering~\cite{WaterNewZealand2011}.
+  For residents of Wellington, New Zealand's capitol city, water metering is optional.
+  The incentive is that a portion of the household's rates are adjusted according to the volume consumed.
+  In these locations, a meter readers visually inspect the displays of each meter; a long and laborious task.
+  
   Automatic meter reading systems (AMR) are an alternative method of collecting that data.
   Hamilton City Council is trialling such systems in remote areas in the hopes of adopting them for wide-spread use.
-  There are two types of automatic meter reading systems: an external reader/transmitter that attaches to a compatible meter, or meters built specifically for the purpose.
+  There are two types of automatic meter reading systems:
+  an external reader/transmitter that attaches to a compatible meter, or meters built specifically for the purpose.
 
   Automatic meter reading systems offer advantages apart from removing the meter-man.
   Increasing the billing frequency helps customers reduce their consumption by giving greater feedback.
   Automatic systems remove the need for the customer to provide access to their property~\cite{Chang2012}.
   Electronic analysis of the meters readings provides an easy way to detect water leaks.
-  It has been estimated that as much as \SI{10}{\percent} of post-meter water consumption is due to leakage in the residential sector.
-  A study by Britton et al.\ found that by communicating with those customers whose water supply exhibited signs of leakages, a total reduction of  \SI{89}{\percent} of night-time flow rates was achieved.
-  This is in contrast to a control group whose night-time usage increased by over \SI{50}{\percent}.
-  The benefits of automatic water metering are not only geared toward fair pricing but detecting and monitoring the network as a whole.
+  It is estimated that as much as \SI{10}{\percent} of post-meter water consumption is due to leakage in the residential sector.
+  Britton et al.\ show that communicating with customers whose homes showed signs of leakage, a night time flow reduction of \SI{89}{\percent} was achieved.
+  In contrast, a control group's night-time usage increased by over \SI{50}{\percent}.
+  Benefits of automatic water metering are not only geared toward billing, but improving the network as a whole.
 
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{content/pt1/02-WirelessWaterMeter/graphics/meter}
-    \caption{\label{fig:Photo_DomesticWaterMeter}Photograph of a domestic water meter (Kent PSMT 25mm) typically found in the Auckland region.}
+    \caption{\label{fig:Photo_DomesticWaterMeter}Photograph of a domestic water meter, and installation, (Kent PSMT 25mm) typical of an Auckland residential area.}
   \end{figure}
 
-  A domestic water meters are typically placed at a property's boundary in a plastic box set into the ground.
-  A meter installation, typical of an Auckland residential area, is shown in~\cref{fig:Photo_DomesticWaterMeter}.
-  The meter has been installed approximately eight meters into the property from the road-side.
+  Domestic water meters are typically installed at a property's boundary, in a plastic box set into the ground.
+  An installation typical for an Auckland residential area is presented as~\cref{fig:Photo_DomesticWaterMeter}.
+  The meter is installed over five eight meters into the property from the road-side.
   Because of its location, it is not feasible to connect it to a source of power.
   No commercially available domestic energy harvesting water meters, suitable for burial, exist on the market as of 2015.
 
@@ -56,7 +58,7 @@ This chapter addresses the amount of energy available to harvest in a typical do
     \caption{
       \label{fig:Photo_waterwareMeter}
       Photograph of the a wireless transmitting module from Waterware NZ.
-      The device clips onto a compatable water meter and contains its own battery~\cite{BMeters2014}.
+      The device attaches to a compatible water meter and contains its own battery~\cite{BMeters2014}.
     }
   \end{figure}
 
@@ -71,14 +73,13 @@ This chapter addresses the amount of energy available to harvest in a typical do
 
   \section{Envisioned harvester design}
 
-    In \cref{chap:harvestingEnergy}, energy was converted between fluid-mechanical to electrical with a single channel.
-    A harvester for an electronic water meter will require more energy than that channel is capable of generating.
+    In \cref{chap:harvestingEnergy}, energy was converted between fluid-mechanical to electrical using a single channel.
+    Harvesting for electronic water meters will require more energy than that channel could produce.
     There are multiple ways of scaling the streaming cell design used in \cref{chap:harvestingEnergy}.
     The channel can be made wider, doubling the width will double the output power;
     multiple channels can be stacked together, multiplying the output by the number of channels formed.
-    Scaling the channels is not considered to be a problem.
-    However, the pressure drop across the channels \emph{is} likely to be a problem to the consumer.
-    High conversion efficiencies are only obtained at narrow channel dimensions.
+    Scaling the harvester is not considered a problem, but the pressure drop it develops is.
+    High fluid resistance is inevitable since practical efficiencies are only obtained when the internal dimensions are small.
 
     \begin{figure}
       \centering
@@ -86,73 +87,82 @@ This chapter addresses the amount of energy available to harvest in a typical do
       \caption{\label{fig:Diagram_harvester}Diagram showing the intended design of streaming cell harvester suitable for domestic connection.}
     \end{figure}
 
-    To control the pressure drop across the harvester, the mechanical design shown as \cref{fig:Diagram_harvester} is proposed.
-    It gives the capability of controlling the hydrodynamic resistance by means an orifice plate.
+    To control the pressure drop across the harvester, the mechanical design shown in~\cref{fig:Diagram_harvester} is proposed.
+    It gives the capability of controlling the hydrodynamic resistance of the unit as a whole by means an orifice plate.
     The plate sits in the ``main line'' causing a pressure differential in proportion to the flow rate.
-    A plate with a hole equal in diameter to the main pipe would cause no pressure across the harvester, as it causes no flow obstruction.
-    A plate without a hole forces all flow through the harvester, causing maximum pressure differential.
+    A orifice plate with a hole the size of main pipe would cause no pressure across the harvester since it causes no flow obstruction.
+    Conversely, a plate without a hole forces all liquid through the harvester, causing the maximum pressure differential.
     With an appropriate sized orifice plate the customer will be unaware of the harvester's presence in their water feed.
     
-    For the sake of analysis, we assume that the plate will be sized to mimic the pressure loss of a mechanical water meter.
-    This provides a way to determine how much energy would be available to a harvester by calculating how much is lost to existing mechanical meters.
-    The following section looks at how much energy is dissipated by a water meter over the course of a week.
+    For the sake of analysis we assume the orifice plate will be sized to match the pressure loss of a mechanical meter.
+    This assumption means the amount of harvestable energy is equal to the amount dissipated in a mechanical water meter.
+    The following section quantifies the amount of energy a water meter dissipates over an average week in a typical Auckland home.
 
 
-  \section{Quantifying harvestable energy}
+  \section{Quantifying harvestable energy} 
 
-    Using streaming cell technology to harvest energy from a domestic water feed could increase the feasibility of automatic meter reading.
-
-    This section determines the amount of energy available to an energy harvester.
-    The harvester envisioned is intended for domestic water metering so we start by building a profile of domestic water consumption.
-    Then by finding how much energy is lost inside a typical water meter we will know how much energy a harvester has available.
+    In this section the amount of energy available to an energy harvester in a domestic feed is estimated.
+    Using a bypass pipe with an orifice plate the pressure drop across the harvester can be controlled.
+    Using this pressure control mechanism the pressure drop can be set to match that of a mechanical meter.
+    The amount of harvestable energy therefore is the amount of energy dissipated inside a mechanical meter.
 
     \begin{table}
       \centering
       \begin{tabular}{r l|r|r|l}
-        Item & Measurement & Summer & Winter & Unit\\
+        Item                    & Measurement & Summer & Winter & Unit\\
         \hline\hline
-        \multirow{4}{*}{Shower} & Duration & 6.6 & 7.0 & minutes\\
-                                & Volume & 50.0 & 52.5 & litres\\
-                                & Flow & 8.1 & 8.0 & litres/minute\\
-                                & Frequency & 0.9 & 0.9 & /person/day\\
+        \multirow{4}{*}{Shower} & Duration    & 6.6    & 7.0    & minutes\\
+                                & Volume      & 50.0   & 52.5   & litres\\
+                                & Flow        & 8.1    & 8.0    & litres/minute\\
+                                & Frequency   & 0.9    & 0.9    & /person/day\\
         \hline
-        \multirow{2}{*}{Washing}& Volume & 122 & 123 & litres\\
-                                & Frequency & 0.35 & 0.36 & /person/day\\
+        \multirow{2}{*}{Washing}& Volume      & 122    & 123    & litres\\
+                                & Frequency   & 0.35   & 0.36   & /person/day\\
         \hline
-        \multirow{2}{*}{Toilet} & Volume & 6.6 & 6.8 & litres\\
-                                & Frequency & 4.9 & 4.5 & /person/day\\
+        \multirow{2}{*}{Toilet} & Volume      & 6.6    & 6.8    & litres\\
+                                & Frequency   & 4.9    & 4.5    & /person/day\\
       \end{tabular}
-      \caption{\label{tab:consumption_figures}Summary of characteristics for typical toilet usage, data taken from~\cite{Heinrich2008}.}
+      \caption{
+          \label{tab:consumption_figures}
+          Average usage characteristics for a shower, washing machine and toilet.
+          Data obtained from~\cite{Heinrich2008}.
+      }
     \end{table}
 
     In 2008, Heinrich monitors water consumption of 51 homes throughout Auckland in 2008~\cite{Heinrich2008}.
     The report shows that the majority of domestic water is consumed by the shower (\SI{30}{\percent}), washing machine (\SI{27}{\percent}) and toilet (\SI{20}{\percent}).
     Together these account for over \SI{75}{\percent} of domestic water consumption.
-    Data shown in \cref{tab:consumption_figures} was taken from that report in order to build a typical water usage profile.
-    In 2007, Heinrich published a similar report which also contained water flow profiles~\cite{Heinrich2007} for each of the three items considered.
-
+    Data from \cref{tab:consumption_figures} was used to build a typical water usage profile.
+    Heinrich published a similar report in 2007 that contained water flow profiles, these have are considered in the profile~\cite{Heinrich2007}.
+    
     \begin{figure}
       \centering
       \includegraphics[width=\linewidth]{content/pt1/02-WirelessWaterMeter/graphics/graph_profile}
-      \caption{Sample profile showing constructed instances of washing machine use, a shower and a toilet flush.
-      Washing machine usage is broken into two parts corresponding to a wash and rinse cycle.}
+      \caption{
+          Sample profile showing constructed instances of washing machine use, a shower and a toilet flush.
+          The washing machine's wash and rinse cycles are separated in time.}
       \label{fig:profileSample}
     \end{figure}
 
-    Data from those reports has been used to build a domestic water usage profile.
-    \Cref{fig:profileSample} shows the flow rates for each of the items
-    The profile fits the usage statistics of a home with two occupants according to the previously mentioned reports over the duration of a week.
-
-    During that time five uses of a washing machine, fourteen showers and fifty six toilet flushes occur.
-    \Cref{fig:profileSample} shows
-    A sample of the usage profiles of each item is shown in Fig. \ref{fig:profileSample}.
+    \Cref{fig:profileSample} shows the flow rates for each of the three items considered (toilet, shower and washing machine).
+    Volumes for each of the events, and flow profile of the toilet, match the data recorded by Heinrich.
+    Specifically these are, \SI{122}{\litre}, \SI{49.5}{\litre} and \SI{6.22}{\litre} for the washing machine, shower and toilet respectively.
 
     \begin{figure}
         \centering
         \includegraphics[width=\linewidth]{content/pt1/02-WirelessWaterMeter/graphics/Kent-PSM-HeadLoss}
-        \caption{Graph showing the pressure developed across the Kent PSM series mechanical water meters. Taken from~\cite{Elster2008}.}
-        \label{fig:headloss}
+        \caption{
+            \label{fig:headloss}
+            Log-log graph showing the pressure developed across the Kent PSM series mechanical water meters. Taken from~\cite{Elster2008}.
+        }
     \end{figure}
+
+    The Kent 25-PSMT series mechanical water meter is the most commonly used water meter in the Auckland district~\cite{WatercareNewZealand2014}.
+    \Cref{fig:headloss} shows the head loss versus flow rate for the Kent PSM range of meters.
+    The following equation fits the trace for the PSM \SI{25}{\milli\meter} meter:
+    \begin{equation}
+        \Delta P = e^{3.725\thinspace log(flow) - 9.5}
+    \end{equation}
 
     \begin{figure}
         \centering
@@ -160,6 +170,12 @@ This chapter addresses the amount of energy available to harvest in a typical do
         \caption{Graph showing fitted curve to the pressure loss graph presented as \cref{fig:headloss}.}
         \label{fig:headloss_fit}
     \end{figure}
+    That equation is plotted in \cref{fig:headloss_fit} on linear scales, adjusted for reasonable flow rates.
+
+    The profile fits the usage statistics of a home with two occupants according to the previously mentioned reports over the duration of a week.
+    During that time five uses of a washing machine, fourteen showers and fifty six toilet flushes occur.
+    \Cref{fig:profileSample} shows
+    A sample of the usage profiles of each item is shown in Fig. \ref{fig:profileSample}.
 
     \begin{figure}
         \centering
