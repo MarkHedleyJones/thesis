@@ -9,15 +9,15 @@
 \rmfamily
 
 \chapter*{Abstract}
-  Double layers arise where liquids meet solids or other dissimilar liquids.
-  Their presence is unnoticed at the macroscopic level as they are too small to feel or see.
-  They are responsible for stabilising some of our most important fluids -- blood, milk, paints, and inks.
-  These mixtures would clump and loose their fluidity without double layers.
+  When a solid comes in contact with a liquid, an interfacial double-layer will likely form.
+  They are too small to feel or see so their presence goes mostly unnoticed at the macroscopic level.
+  Double layers stabilise some of our most important fluids -- blood, milk, paints, and inks.
+  Without the protection of double-layers, these mixtures clump and loose their fluidity.
 
   \vspace{-0.3cm}
   \begin{center}
     \parbox{8.8cm}{
-     ` \begin{center}
+      \begin{center}
         This thesis looks at both electricity generation and the electrical impedance of interfacial double layers.
       \end{center}
       \vspace{-1.35cm}
@@ -30,29 +30,33 @@
     }
   \end{center}
   \vspace{0.5cm}
-
-  Firstly, this thesis attempts to leverage double layer behaviour to harvest energy.
-  We look at the practicality of using energy harvesting cells that utilise double layers as a means of converting fluid energy into electrical energy.
+  
+  This thesis is separated into two parts, both linked to the behaviour of double-layers.
+  In~\cref{part:doubleLayersOnInsulators} these layers are used as a means of converting fluid-mechanical energy into electrical energy.
   The primary application of such a harvester would be to power electronic water meters.
-  Domestic water meters are typically installed where electrical connection is not feasible; harvesting energy here makes electronic metering more feasible long-term.
-  I show why such a harvester cannot yet be used to harvest the quantity of energy required in Part~\ref{part:doubleLayersOnInsulators}.
+  Domestic water meters are typically installed where electrical connection is not feasible; harvesting energy here may makes electronic metering more feasible long-term.
+  It turns out that double-layer based energy harvesters are not yet efficient enough for this application, but the future looks promising.
 
-  In Part~\ref{part:doubleLayersOnConductors}, we look at how the double layer contributes to the electrical impedance of submerged electrodes.
-  This work is especially important to designers of medical implants where such electrodes are used in-vivo.
-  Typically they use solutions of saline to replicate the impedance of a living person.
-  For example, diluted solutions of saline are used to mimic the human spinal cavity.
-  I quantify the response of medical electrodes submerged in a range of saline solutions.
-  I show how saline is not a good representation of a spinal canal by measuring and comparing the response inside a living animal!
-  Finally, I present recipes for solutions that better biological tissue.
+  \Cref{part:doubleLayersOnConductors} models the electrical impedance of submerged electrodes.
+  Double-layers play a large part in determining the electrical impedance between metal-fluid interfaces.
+  This work is important to designers of medical implants; and by extension, anybody who relies on the implants themselves.
+  Engineers use solutions of saline to mimic the situation seen by their implants in a person.
+  This gives them a way to test the implant without injuring anyone.
+  A way of characterising the interface between electrodes in solution is to model it mathematically.
+  Such a model was created by my supervisor, Jonathan Scott.
+  I use that model to compare electrodes placed in solutions of saline to those placed in a living animal.
+  Measurements of the two show they are quite different from one another.
+  I create a mixture of household ingredients that closely resembles the electrical impedance of a live animal.
 
 \phantomsection\addcontentsline{toc}{chapter}{Abstract}
 
 \chapter*{Acknowledgement}
 \phantomsection\addcontentsline{toc}{chapter}{Acknowledgement}
 Thanks to Jonathan Scott (my chief supervisor), Steve Newcombe (Waikato University's award winning glass blower) and Peter Single (the senior electrical engineer at Saluda Medical) for their time, resources and patience.
-Thank you to my second supervisor, Marcus Wilson, for checking up on me every now and again.
+Thank you to my second supervisor, Marcus Wilson, for checking up every so often and help proof-reading.
 Thanks also go to the University of Waikato for a funding the first three years of this work with a Waikato Doctoral Scholarship.
 Without this funding I could not have undertaken this research.
+The support of my partner, Sarah, and my mother, Gina, has kept me on track.
 Lastly, thank you to everyone who has contributed to open-source projects, especially those part of
 \begin{itemize}
 \item The Linux kernel and GNU tools
@@ -61,7 +65,7 @@ Lastly, thank you to everyone who has contributed to open-source projects, espec
 \item Gimp image manipulation program
 \item The Arch Linux distribution
 \item \TeX \space and its derivative \LaTeX
-\item Python and iPython
+\item Python
 \item ngSpice
 \end{itemize}
 Work done throughout this thesis has relied entirely on those tools
@@ -95,20 +99,10 @@ Work done throughout this thesis has relied entirely on those tools
 
   \chapter{Introduction}
     \label{chap:harvesterIntroduction}
-    This introductory chapter provides background reading specific to energy harvesting.
-    It builds upon the preceding introductory material of double layers and is steered toward energy conversion.
-    We will discuss how double layers can be used to convert fluid-mechanical power into electrical power.
-    At this point it is assumed the reader knows what a double layer is and how one is formed.
-
     \input{content/pt1/introduction.tex}
 
   \chapter{The Streaming Cell Energy Harvester}
     \label{chap:harvestingEnergy}
-    This chapter demonstrates an energy harvesting device capable of harvesting energy from flowing water with no moving parts.
-    A `smart' use for such a harvester is discussed in Chapter~\ref{chap:wirelessWaterMetering}.
-    I find the minimum power a harvester needs to harvest in order to be useful in chapter \ref{chap:energyRequirements}.
-    And finally, in chapter \ref{chap:part_1_discussion}, I discuss the design of a harvester and comment on its feasibility.
-
     \input{content/pt1/01-PowerHarvesting/chapter-PowerHarvesting}
 
   \chapter{Applicability to Water Metering}

@@ -135,8 +135,8 @@ This chapter addresses the amount of energy available to harvest in a typical do
       }
     \end{table}
 
-    In 2008, Heinrich monitors water consumption of 51 homes throughout Auckland in 2008~\cite{Heinrich2008}.
-    The report shows that the majority of domestic water is consumed by the shower (\SI{30}{\percent}), washing machine (\SI{27}{\percent}) and toilet (\SI{20}{\percent}).
+    Heinrich monitored water consumption of 51 homes throughout Auckland in 2008~\cite{Heinrich2008}.
+    His report shows the majority of domestic water is consumed by the shower (\SI{30}{\percent}), washing machine (\SI{27}{\percent}) and toilet (\SI{20}{\percent}).
     Together these account for over \SI{75}{\percent} of domestic water consumption.
     Data from \cref{tab:consumption_figures} was used to build a typical water usage profile.
     Heinrich published a similar report in 2007 that contained water flow profiles, the flow profile of the toilet has been taken from that report~\cite{Heinrich2007}.
@@ -151,8 +151,8 @@ This chapter addresses the amount of energy available to harvest in a typical do
     \end{figure}
 
     \Cref{fig:profileSample} shows the flow rates for each of the three items considered (toilet, shower and washing machine).
-    Volumes for each of the events, and flow profile of the toilet, match data given by Heinrich.
-    Specifically the total volumes for each are: \SI{122}{\litre}, \SI{49.5}{\litre} and \SI{6.22}{\litre} for the washing machine, shower and toilet respectively.
+    Volumes for each of the events, and flow profile of the toilet, match the measurements reported by Heinrich.
+    Specifically, the total volumes for each are: \SI{122}{\litre}, \SI{49.5}{\litre} and \SI{6.22}{\litre} for the washing machine, shower and toilet respectively.
 
     \begin{figure}
         \centering
@@ -163,9 +163,9 @@ This chapter addresses the amount of energy available to harvest in a typical do
         }
     \end{figure}
 
-    The Kent 25-PSMT series mechanical water meter is the most commonly used water meter in the Auckland district~\cite{WatercareNewZealand2014}.
-    \Cref{fig:headloss} shows the head loss versus flow rate for the Kent PSM range of meters.
-    The following equation fits the trace for the \SI{25}{\milli\meter} PSMT meter:
+    The Kent 25-PSMT series mechanical water meter is the most commonly installed water meter in the Auckland district~\cite{WatercareNewZealand2014}.
+    \Cref{fig:headloss} shows the head-loss, or pressure differential, versus flow rate for the Kent PSM range of meters.
+    The following equation fits the trace representing the \SI{25}{\milli\meter} PSMT meter:
     \begin{equation}
         \Delta P = e^{3.725\thinspace log(flow) - 9.5}
         \label{eqn:Flow_to_pressure_25mmPSMT}
@@ -179,11 +179,16 @@ This chapter addresses the amount of energy available to harvest in a typical do
     \end{figure}
 
     \Cref{eqn:Flow_to_pressure_25mmPSMT} is plotted in \cref{fig:headloss_fit} on linear scales.
-
-    The profile fits the usage statistics of a home with two occupants according to the previously mentioned reports over the duration of a week.
-    During that time five uses of a washing machine, fourteen showers and fifty six toilet flushes occur.
-    \Cref{fig:profileSample} shows
-    A sample of the usage profiles of each item is shown in Fig. \ref{fig:profileSample}.
+    Knowing the pressure differential as a function of flow provides a means of converting between flow and power dissipation.
+    Like an electrical resistance, power dissipated by a fluid-flow obstruction is the product of the difference in driving force across the resistance and the flow through it.
+    In this case the driving force is pressure and the flow is volumetric.
+    \begin{eqnarray}
+        power &=& pressure \cdot flow\nonumber \\
+        Watt &=& Pascal \cdot \frac{cubic meter}{second}\nonumber \\
+        \frac{kg\cdot m^{2}}{s^{3}} &=& \frac{kg}{m\cdot  s^{2}} \thinspace \frac{m^{3}}{s}\\
+        \label{eqn:pressure_flow_to_power}
+    \end{eqnarray}
+    \Cref{eqn:pressure_flow_to_power} shows the units that will be used to determine power dissipation and ensures they balance.
 
     \begin{figure}
         \centering
@@ -192,24 +197,65 @@ This chapter addresses the amount of energy available to harvest in a typical do
         \label{fig:powerDissipated_meter}
     \end{figure}
 
-    Fig.~\ref{fig:headloss} shows the pressure head loss curve from a water meter typically installed at New Zealand homes (Kent PSMT 25mm)~\cite{WatercareNewZealand2014}.
+    \begin{table}
+      \centering
+      \begin{tabular}{r|r}
+          Washing & \SI{172}{\joule}\\
+          Shower  & \SI{72.6}{\joule}\\
+          Toilet  & \SI{5.07}{\joule}
+      \end{tabular}
+      \caption{
+          \label{tab:energy_dissipation_figures}
+          Calculated energy dissipation within a mechanical water meter for a single washing machine cycle, shower and toilet use.
+      }
+    \end{table}
 
-    Using this curve we calculate power dissipation in a water meter during a washing machine cycle, shower, and toilet flush; presented as \cref{fig:powerDissipated_meter}.
-    The total energy dissipated within the meter for each events is:
-    \begin{itemize}
-    \item \SI{547}{\joule} per load of washing,
-    \item \SI{222}{\joule} per shower, and
-    \item \SI{24.3}{\joule} per flush of the toilet.
-    \end{itemize}
+    Running the profiles of \cref{fig:profileSample} through \cref{eqn:Flow_to_pressure_25mmPSMT}, with relevant unit conversions, yields~\cref{fig:powerDissipated_meter}.
+    It shows the power dissipated within the water during each event.
+    Integrating each trace with respect to time gives the total energy lost over the course of each.
+    Those energy figures are provided in~\cref{tab:energy_dissipation_figures}.
 
-% washing machine volume = 122.00 l
-% shower volume = 49.50 l
-% toilet volume = 6.22 l
-% washing machine energy = 172.08 l
-% shower energy = 72.62 l
-% toilet energy = 5.07 l
+%    \begin{figure}
+%        \centering
+%        \includegraphics[width=\linewidth]{content/pt1/02-WirelessWaterMeter/graphics/graph_profileEnergy}
+%        \caption{Profile of power dissipation within a mechanical water meter over a week for a two occupant dwelling.}
+%        \label{fig:powerDissipationProfile}
+%    \end{figure}
 
-    % These figures are based on average duration and flow rates as found in \cite{Heinrich2008}, and the estimated head loss from Fig.~\ref{fig:headloss}.
-    Over an average week the reference water meter would dissipate approximately \SI{7.20}{\kilo\joule} of energy; averaging \SI{1.03}{\kilo\joule} per day.
+    Average use frequencies for each event type were been reported by Heinrech, as shown earlier in~\cref{tab:consumption_figures}.
+    Using these figures, and by selecting appropriate times of day, an energy dissipation profile representative of one week is constructed.
+    Five uses of a washing machine, fourteen showers, and fifty six toilet flushes occur during this time.
+    This profile is shown as~\cref{fig:powerDissipationProfile}.
+    The profile fits usage figures of a home having two occupants, although most homes have more than two occupants.
 
+    A systematic bias toward underestimating typical water usage has been used where possible.
+    This underestimation also occurs by not including water use by means other than washing machines, showers or toilets.
+    The intention is that the feasibility of harvesting, if the results showed near a possibility, would be more robust in light of these biases.
+
+    \begin{table}
+      \centering
+      \begin{tabular}{r|r}
+          Washing & \SI{860}{\joule}\\
+          Shower  & \SI{1020}{\joule}\\
+          Toilet  & \SI{283.9}{\joule}
+      \end{tabular}
+      \caption{
+          \label{tab:energy_dissipation_total_figures}
+          Calculated total energy dissipation over a period of one week within a mechanical water meter for typical use of a washing machine, shower and toilet.
+      }
+    \end{table}
+
+    \Cref{tab:energy_dissipation_total_figures} aggregates energy dissipation for each event type over the constructed profile.
+    The total energy dissipated in the meter over the course of a week is \SI{2.16}{\kilo\joule}.
+    Daily energy available is expected to fluctuate due to sporadic use of the washing machine in most homes.
+    Ignoring washing machine use, indicative of weekday consumption, the quantity of harvestable energy is expected to be about \SI{280}{\joules} per day.
+
+    Knowing the quantity of energy available to a harvester is a key factor determining its feasibility.
+    The efficiency of converting energy into the electrical domain was measured in~\cref{chap:powerHarvesting} at \SI{0.2}{\micro\percent}.
+    Quick calculation shows that the measured cell would yield \SI{560}{\nano\joule} of energy per day.
+    Energy output that low is unlikely to be sufficient for automatic meter reading.
+    The literature indicates the efficiency measured in~\cref{chap:powerHarvesting} was low.
+    It may still be possible to close the gap between what we can produce and what we need.
+    The amount of energy required to run an electronic water meter is estimated next.
+    
 
