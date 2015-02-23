@@ -9,10 +9,10 @@
 \rmfamily
 
 \chapter*{Abstract}
-  When a solid comes in contact with a liquid, an interfacial double-layer will likely form.
+  When a solid comes in contact with a liquid, an interfacial double-layer is likely to form.
   They are too small to feel or see so their presence goes mostly unnoticed at the macroscopic level.
   Double layers stabilise some of our most important fluids -- blood, milk, paints, and inks.
-  Without the protection of double-layers, these mixtures clump and loose their fluidity.
+  Without the protection of double-layers, these mixtures clump and lose their fluidity.
 
   \vspace{-0.3cm}
   \begin{center}
@@ -35,18 +35,19 @@
   In~\cref{part:doubleLayersOnInsulators} these layers are used as a means of converting fluid-mechanical energy into electrical energy.
   The primary application of such a harvester would be to power electronic water meters.
   Domestic water meters are typically installed where electrical connection is not feasible; harvesting energy here may makes electronic metering more feasible long-term.
-  It turns out that double-layer based energy harvesters are not yet efficient enough for this application, but the future looks promising.
+  My findings show that double layer based energy harvesters are not efficient enough for this application yet.
+  Recent literature on the subject suggests large gains in efficiency may be possible using more exotic materials.
 
   \Cref{part:doubleLayersOnConductors} models the electrical impedance of submerged electrodes.
   Double-layers play a large part in determining the electrical impedance between metal-fluid interfaces.
   This work is important to designers of medical implants; and by extension, anybody who relies on the implants themselves.
-  Engineers use solutions of saline to mimic the situation seen by their implants in a person.
+  Engineers use solutions of saline to mimic the environment experienced by their implants once implanted.
   This gives them a way to test the implant without injuring anyone.
   A way of characterising the interface between electrodes in solution is to model it mathematically.
   Such a model was created by my supervisor, Jonathan Scott.
   I use that model to compare electrodes placed in solutions of saline to those placed in a living animal.
   Measurements of the two show they are quite different from one another.
-  I create a mixture of household ingredients that closely resembles the electrical impedance of a live animal.
+  I create a mixture using low-cost ingredients that closely resembles the electrical impedance of a live animal.
 
 \phantomsection\addcontentsline{toc}{chapter}{Abstract}
 
@@ -84,18 +85,20 @@ Work done throughout this thesis has relied entirely on those tools
 
 %% Part 1 - Energy Harvesting
 
-\part{Double Layers for Energy Harvesting}
+\part{Double Layers on Insulators: Harvesting Energy}
   \label{part:doubleLayersOnInsulators}
-  Part~\ref{part:doubleLayersOnInsulators} studies interfacial double layers on insulators.
-  Here we will see how double layers can be used to perform electrical work.
-  This relies specifically on the formation of double layers on insulating surfaces like glass.
+  In~\cref{chap:introduction_main}, basic principles of double layers were put forward.
+  It is the electrical conductivity of the solid material that divides the two topics of this thesis.
+  \Cref{part:doubleLayersOnInsulators} looks specifically at double layer formation between liquids and non-conductive solids, e.g., glass.
+  Later, in~\cref{part:doubleLayersOnConductors}, conductive materials will be examined with a rather different application.
 
-  It was discussed in the introduction that double layers naturally form at liquid-solid interfaces.
-  It was said that the double layer itself is a collection of charged ions.
-  Can we collect this charge and use it to generate electrical power?
+  The previous introduction shows that double layers are simply collections of charged ions.
+  Can we collect these ions and use them to generate electrical power?
   Doing so would provide a method of energy harvesting without moving parts.
-  During Part~\ref{part:doubleLayersOnInsulators}, I build such a harvester and look at applying it to smart water metering.
-  With reference to that application I create a power budget and discuss the practicalities.
+  \Cref{part:doubleLayersOnInsulators} explores energy harvesting applications of interfacial double layers.
+  I build and measure a streaming cell harvester at test the idea of using it to run an electronic water meter.
+  To see if such an application is feasible, I create a power budget of energy available, and energy required by the electronics.
+  This work is wrapped up with a discussion of practicalities and final conclusions regarding feasibility and future work.
 
   \chapter{Introduction}
     \label{chap:harvesterIntroduction}
@@ -111,12 +114,13 @@ Work done throughout this thesis has relied entirely on those tools
 
   \chapter{Energy Requirements}
     \label{chap:energyRequirements}
+    \input{content/pt1/03-EnergyRequirements/chapter-EnergyRequirements}
 
-    \section{Microcontrollers}
+    %\section{Microcontrollers}
         %\input{content/pt1/02-Microcontrollers/chapter-Microcontrollers}
 
-    \section{Data Transmission}
-        \input{content/pt1/03-DataTransmission/chapter-DataTransmission}
+    %\section{Data Transmission}
+        %\input{content/pt1/03-DataTransmission/chapter-DataTransmission}
 
   \chapter{Discussion}
   \label{chap:part_1_discussion}
@@ -126,7 +130,7 @@ Work done throughout this thesis has relied entirely on those tools
 
 
 %% Part 3 - Double layers on conductors
-\part{Modelling Double Layer Impedance}
+\part{Double Layers on Conductors: Electrical Impedance}
   \label{part:doubleLayersOnConductors}
   \chapter{Introduction}
     \section{Background}
@@ -156,7 +160,7 @@ Work done throughout this thesis has relied entirely on those tools
   \begin{figure}
       \centering
       \includegraphics[width=\textwidth]{content/appendices/Article}
-      \caption{Cutout from the local newspaper (Hamilton Press) of an article on the streaming cell research conducted during this thesis.}
+      \caption{Cut-out from the local newspaper (Hamilton Press) of an article on the streaming cell research conducted during this thesis.}
   \end{figure}
 
 \chapter*{Notes}

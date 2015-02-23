@@ -2,10 +2,10 @@
 
 Water metering is becoming increasingly common throughout the world~\cite{Chang2012}.
 Sourcing and processing drinkable water is an expensive task.
-As water rescources become constrained, volumetric charging, and therefore metering, become increasing important.
-Cheap and reliable methods for reading meters will become more important as metering becomes prevalent.
+Cheap and reliable methods for reading water meters is important.
+As supplies of drinkable water become constrained, volumetric pricing will become increasingly common.
 Harvesting energy at the location of metering would eliminate the need for batteries.
-Furthermore, removing the moving parts of traditional electrical generation devices should increase lifespan due to lower component wear.
+If energy harvesting could be done without moving parts, the lower component wear would lead to increased service life versus mechanical means.
 This section investigates the feasibility of using streaming cell technology as a means of powering electronic water meters.
 
 In \cref{chap:harvestingEnergy} we discussed electric power generation from streaming cells.
@@ -39,7 +39,7 @@ This chapter addresses the amount of energy available to harvest in a typical do
 
   Automatic meter reading systems offer advantages separate from making the meter-reader redundant.
   Increased billing frequency helps customers reduce their consumption by giving greater feedback.
-  An automatic system removes the need to access a customers property~\cite{Chang2012}.
+  An automatic system removes the need to access the customer's property~\cite{Chang2012}.
   Electronic analysis of the meters readings provides an easy way to detect water leaks.
   It is estimated that \SI{10}{\percent} of post-meter water consumption is due to leakage in the residential sector.
   Britton et al.\ show that communicating with customers whose homes showed signs of leakage that a night-time flow reduction of \SI{89}{\percent} is achievable.
@@ -215,17 +215,19 @@ This chapter addresses the amount of energy available to harvest in a typical do
     Integrating each trace with respect to time gives the total energy lost over the course of each.
     Those energy figures are provided in~\cref{tab:energy_dissipation_figures}.
 
-%    \begin{figure}
-%        \centering
-%        \includegraphics[width=\linewidth]{content/pt1/02-WirelessWaterMeter/graphics/graph_profileEnergy}
-%        \caption{Profile of power dissipation within a mechanical water meter over a week for a two occupant dwelling.}
-%        \label{fig:powerDissipationProfile}
-%    \end{figure}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{content/pt1/02-WirelessWaterMeter/graphics/graph_profileEnergy}
+        \caption{
+          \label{fig:profile_powerDissipation}
+          Profile of power dissipation within a mechanical water meter over a week for a two occupant dwelling.
+        }
+    \end{figure}
 
     Average use frequencies for each event type were been reported by Heinrech, as shown earlier in~\cref{tab:consumption_figures}.
     Using these figures, and by selecting appropriate times of day, an energy dissipation profile representative of one week is constructed.
     Five uses of a washing machine, fourteen showers, and fifty six toilet flushes occur during this time.
-    This profile is shown as~\cref{fig:powerDissipationProfile}.
+    This profile is shown as~\cref{fig:profile_powerDissipation}.
     The profile fits usage figures of a home having two occupants, although most homes have more than two occupants.
 
     A systematic bias toward underestimating typical water usage has been used where possible.
@@ -248,13 +250,13 @@ This chapter addresses the amount of energy available to harvest in a typical do
     \Cref{tab:energy_dissipation_total_figures} aggregates energy dissipation for each event type over the constructed profile.
     The total energy dissipated in the meter over the course of a week is \SI{2.16}{\kilo\joule}.
     Daily energy available is expected to fluctuate due to sporadic use of the washing machine in most homes.
-    Ignoring washing machine use, indicative of weekday consumption, the quantity of harvestable energy is expected to be about \SI{280}{\joules} per day.
+    Ignoring washing machine use, indicative of weekday consumption, the quantity of harvestable energy is expected to be about \SI{280}{\joule} per day.
 
     Knowing the quantity of energy available to a harvester is a key factor determining its feasibility.
-    The efficiency of converting energy into the electrical domain was measured in~\cref{chap:powerHarvesting} at \SI{0.2}{\micro\percent}.
+    The efficiency of converting energy into the electrical domain was measured in~\cref{chap:harvestingEnergy} at \SI{0.2}{\micro\percent}.
     Quick calculation shows that the measured cell would yield \SI{560}{\nano\joule} of energy per day.
     Energy output that low is unlikely to be sufficient for automatic meter reading.
-    The literature indicates the efficiency measured in~\cref{chap:powerHarvesting} was low.
+    The literature indicates the efficiency measured in~\cref{chap:harvestingEnergy} was low.
     It may still be possible to close the gap between what we can produce and what we need.
     The amount of energy required to run an electronic water meter is estimated next.
     

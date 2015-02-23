@@ -223,34 +223,34 @@ appliances = {
 #     plt.savefig('graph_harvest.pdf', format='pdf')
 
 
-print('washing machine volume = %0.2f l' % integrate.quad(appliances['washing'].litre_per_second_at_second, 0, 1000)[0])
-print('shower volume = %0.2f l' % integrate.quad(appliances['shower'].litre_per_second_at_second, 0, 1000)[0])
-print('toilet volume = %0.2f l' % integrate.quad(appliances['toilet'].litre_per_second_at_second, 0, 1000)[0])
+# print('washing machine volume = %0.2f l' % integrate.quad(appliances['washing'].litre_per_second_at_second, 0, 1000)[0])
+# print('shower volume = %0.2f l' % integrate.quad(appliances['shower'].litre_per_second_at_second, 0, 1000)[0])
+# print('toilet volume = %0.2f l' % integrate.quad(appliances['toilet'].litre_per_second_at_second, 0, 1000)[0])
 
-print('washing machine energy = %0.2f l' % integrate.quad(appliances['washing'].watt_at_second, 0, 1000)[0])
-print('shower energy = %0.2f l' % integrate.quad(appliances['shower'].watt_at_second, 0, 1000)[0])
-print('toilet energy = %0.2f l' % integrate.quad(appliances['toilet'].watt_at_second, 0, 1000)[0])
+# print('washing machine energy = %0.2f l' % integrate.quad(appliances['washing'].watt_at_second, 0, 1000)[0])
+# print('shower energy = %0.2f l' % integrate.quad(appliances['shower'].watt_at_second, 0, 1000)[0])
+# print('toilet energy = %0.2f l' % integrate.quad(appliances['toilet'].watt_at_second, 0, 1000)[0])
 
 
-if plotting:
-    plt.clf()
-    lib.plot.formatter.plot_params['margin']['left'] = 0.10
-    lib.plot.formatter.plot_params['margin']['bottom'] = 0.15
-    lib.plot.formatter.format(style='Thesis')
+# if plotting:
+#     plt.clf()
+#     lib.plot.formatter.plot_params['margin']['left'] = 0.10
+#     lib.plot.formatter.plot_params['margin']['bottom'] = 0.15
+#     lib.plot.formatter.format(style='Thesis')
 
-    xs = list(range(0,20))
-    ys = list(map(litre_per_hour_to_kilopascal, map(lambda x: x * 60,xs)))
-    # plt.gca().set_xlabel('Flow (\\SI{}{\\cubic\\meter\\per\\hour})')
-    plt.gca().set_xlabel('Flow through meter (\\SI{}{\\litre\\per\\minute})')
-    plt.gca().xaxis.set_major_formatter(FuncFormatter(lambda x, pos: '%1.f' % (x)))
-    plt.gca().yaxis.set_major_formatter(FuncFormatter(lambda x, pos: '%1.1f' % (x)))
-    # plt.gca().set_xlim(0.0, 10.0 / 16.66)
-    # plt.gca().set_ylim(0.0, 20.0 / 1000.0)
-    plt.gca().set_ylabel('Pressure drop (\\SI{}{\\kilo\\pascal})')
-    plt.grid()
-    plt.plot(xs,ys, color='black')
-    # plt.tight_layout()
-    plt.savefig('graph_pressureLoss.pdf', format='pdf')
+#     xs = list(range(0,20))
+#     ys = list(map(litre_per_hour_to_kilopascal, map(lambda x: x * 60,xs)))
+#     # plt.gca().set_xlabel('Flow (\\SI{}{\\cubic\\meter\\per\\hour})')
+#     plt.gca().set_xlabel('Flow through meter (\\SI{}{\\litre\\per\\minute})')
+#     plt.gca().xaxis.set_major_formatter(FuncFormatter(lambda x, pos: '%1.f' % (x)))
+#     plt.gca().yaxis.set_major_formatter(FuncFormatter(lambda x, pos: '%1.1f' % (x)))
+#     # plt.gca().set_xlim(0.0, 10.0 / 16.66)
+#     # plt.gca().set_ylim(0.0, 20.0 / 1000.0)
+#     plt.gca().set_ylabel('Pressure drop (\\SI{}{\\kilo\\pascal})')
+#     plt.grid()
+#     plt.plot(xs,ys, color='black')
+#     # plt.tight_layout()
+#     plt.savefig('graph_pressureLoss.pdf', format='pdf')
 
 # # sys.exit()
 # # Pressure vs slope
@@ -384,3 +384,99 @@ if plotting:
 #     plt.gca().set_ylim(0,2)
 #     plt.savefig('graph_powerPressure.pdf', format='pdf')
 
+
+
+# Profile for a 2 Person home
+washing = {
+    'Wed': 18 * 60 * 60,
+    'Thu': 18 * 60 * 60,
+    'Fri': 18 * 60 * 60,
+    'Sat': 14 * 60 * 60,
+    'Sun': 14 * 60 * 60
+}
+shower = [7 * 60 * 60, 7 * 60 * 60 + 15 * 60]
+toilet = [
+    6 * 60 * 60 + 50 * 60,
+    6 * 60 * 60 + 52 * 60,
+    17 * 60 * 60 + 40 * 60,
+    17 * 60 * 60 + 42 * 60,
+    19 * 60 * 60 + 15 * 60,
+    19 * 60 * 60 + 17 * 60,
+    21 * 60 * 60 + 4 * 60,
+    21 * 60 * 60 + 15 * 60,
+]
+
+
+
+
+class Appliance2:
+
+    function_litre_per_second_at_second = None
+
+    def __init__(self, function):
+        self.function_litre_per_second_at_second = function
+
+    def litre_per_second_at_second(self, second, start=0):
+        return self.function_litre_per_second_at_second(second, start=start)
+
+    def litre_per_minute_at_second(self, second, start=0):
+        return self.litre_per_second_at_second(second, start=start) * 60.0
+
+    def pascal_at_second(self, second, start=0):
+        lpm = self.litre_per_minute_at_second(second, start=start)
+        lph = lpm * 60.0 # 60 minutes in an hour
+        kpa = litre_per_hour_to_kilopascal(lph)
+        pa = kpa * 1000.0 # 1000 pascals in a kilopascal
+        return pa
+
+    def cubic_meter_per_second_at_second(self, second, start=0):
+        lps = self.litre_per_second_at_second(second, start=start)
+        cmps = lps / 1000.0 # 1000 litres in a cubic meter
+        return cmps
+
+    def watt_at_second(self, second, start=0):
+        pa = self.pascal_at_second(second, start=start)
+        cmps = self.cubic_meter_per_second_at_second(second, start=start)
+        watts = flow_pressure_to_power(cmps, pa)
+        return watts
+
+apps = {
+    'shower': Appliance2(shower_litre_per_second_at_second),
+    'washing': Appliance2(washing_litre_per_second_at_second),
+    'toilet': Appliance2(toilet_litre_per_second_at_second)
+}
+
+#for dow in ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']:
+ys = []
+xs = []
+xticks_pos = []
+xticks_labels = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+# xticks_labels = ['Mon', 'Tue']
+for day, day_of_week in enumerate(xticks_labels):
+    offset = day * 60 * 60 * 24
+    xticks_pos.append(offset)
+    for second in range(60*60*24):
+        flow = 0
+        for time in shower:
+            flow += apps['shower'].watt_at_second(second, start=time)
+        for time in toilet:
+            flow += apps['toilet'].watt_at_second(second, start=time)
+        if day_of_week in washing:
+            flow += apps['washing'].watt_at_second(second, start=washing[day_of_week])
+        ys += [flow]
+        xs += [second + offset]
+
+if plotting:
+    plt.clf()
+    lib.plot.formatter.plot_params['margin']['left'] = 0.11
+    lib.plot.formatter.plot_params['margin']['bottom'] = 0.15
+    lib.plot.formatter.plot_params['margin']['right'] = 0.026
+    lib.plot.formatter.plot_params['margin']['top'] = 0.06
+    lib.plot.formatter.format(style='Thesis')
+    plt.gca().yaxis.set_major_formatter(FuncFormatter(lambda x, pos: '%1.0f' % (x*1000.0)))
+    plt.gca().set_xlabel('Time')
+    plt.gca().set_ylabel('Power (\\SI{}{\\milli\\watt})')
+    plt.grid()
+    plt.xticks(xticks_pos, xticks_labels)
+    plt.plot(xs,ys, color="black")
+    plt.savefig('graph_profileEnergy.pdf', format='pdf')
