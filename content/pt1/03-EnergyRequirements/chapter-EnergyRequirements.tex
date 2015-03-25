@@ -1,75 +1,66 @@
 %!TEX root = ../../../thesis.tex
 
-With energy 
+The amount of energy lost in a mechanical water meter has been estimated, as has the fraction of that energy which can be harnessed.
+Now, the amount of energy required to operate an electronic water meter is estimated.
+This estimation will show how far the streaming cells made earlier are away from being a viable harvesting option.
 
 \section{Microcontrollers}
 
+  Central to the operation of an electronics water meter is the microcontroller (MCU).
+  The primary function of the microcontroller is to read and log the amount of water consumed by the meter.
+  It will also decide when to transmit that data and monitor its own energy usage.
+  It is therefore a key component of the electronic meter and is expected to consume the majority of its energy.
 
-Harvesting power directly from flowing water opens the possibility of low-maintenance smart metering.
-
-
-At the heart of a smart metering system is the microcontroller (MCU),
-which among other things will be keeping track of the amount of water
-consumed. In order to know whether it is possible to extract enough
-power from a domestic water supply it is necessary to assess how much
-power is required to run a microprocessor and any associated hardware.
-
-In this chapter I compare power consumption and operational efficiencies
-of six low power MCUs deemed suitable for running a power harvesting
-water meter. The microprocessors to be investigated are low power,
-general purpose 8-bit MCUs from three mainstream manufacturers, Microchip,
-Atmel and Freescale. Measurement of power consumption will be carried
-out during processing, sleeping and whilst undertaking two tasks that
-are essential for smart water metering, analog-to-digital conversion
-and non-volatile writes to memory.
+  In this chapter I compare power consumption and operational efficiencies of six low power MCUs deemed suitable for use in a water meter.
+  The microprocessors to be investigated are low power, general purpose, 8-bit processors from Microchip, Atmel and Freescale.
+  The measured functions are analogue-to-digital conversion, non-volatile memory writes, processing, and clocking.
+  These functions are believed to be important for the intended application.
 
 
-\subsection{Selection of appropriate controllers}
+  \subsection{Selection of appropriate controllers}
 
-The following microprocessors have been chosen as they represent a
-well spaced selection from the three mainstream MCU manufacturers.
-\begin{itemize}
-\item Microchip PIC16F1827
-\item Microchip PIC16F688
-\item Microchip PIC12F675
-\item Atmel ATtiny25V
-\item Atmel ATtiny13V
-\item Freescale MC9S08QG8
-\end{itemize}
-A basic feature comparison of the MCU selection is shown in table
-%\ref{tab:MCUfeaturecomparison}.
+    \begin{sidewaystable}
+      \begin{centering}
+        \begin{tabular}{|l|l|l|l|l|l|l|l|}
+        \cline{2-8}
+        \multicolumn{1}{l|}{} & PIC16F1827  & PIC16F887  & PIC16F688  & PIC12F675  & ATtiny25V  & ATtiny13V  & MC9S08QG8 \tabularnewline
+        \hline
+        Vdd (min)  & 1.8  & 2.0  & 2.0V  & 2.0  & 1.8  & 1.8  & 1.8 \tabularnewline
+        Vdd (max)  & 5.5  & 5.5  & 5.5V  & 5.5  & 5.5  & 5.5  & 3.6 \tabularnewline
+        I (sleep)  & 30nA  & 50nA  & 50nA  & 1nA  & 100nA & <100nA & 450nA\tabularnewline
+        CLOCK (min)  & 31kHz  & 31kHz & 31kHz & 31kHz & 16kHz & 16kHz & 1MHz \tabularnewline
+        CLOCK (max)  & 32MHz  & 8MHz  & 8MHz  & 4MHz  & 16MHz & 9MHz  & 10MHz\tabularnewline
+        EEPROM  & 256B  & 256B  & 256B  & 128B  & 128B  & 64B  & \dag{}\tabularnewline
+        Serial  & USI  & USI  & USI  & --  & USI  & --  & USI \tabularnewline
+        USART  & UART  & UART  & UART  & --  & --  & --  & -- \tabularnewline
+        ADC  & 10bit  & 10bit & 10it  & 10bit & 10bit & 10bit & 10bit\tabularnewline
+        \hline
+        \end{tabular}
+      \end{centering}
 
-\begin{sidewaystable}
-\begin{centering}
-\begin{tabular}{|l|l|l|l|l|l|l|l|}
-\cline{2-8}
-\multicolumn{1}{l|}{} & PIC16F1827  & PIC16F887  & PIC16F688  & PIC12F675  & ATtiny25V  & ATtiny13V  & MC9S08QG8 \tabularnewline
-\hline
-Vdd (min)  & 1.8  & 2.0  & 2.0V  & 2.0  & 1.8  & 1.8  & 1.8 \tabularnewline
-Vdd (max)  & 5.5  & 5.5  & 5.5V  & 5.5  & 5.5  & 5.5  & 3.6 \tabularnewline
-I (sleep)  & 30nA  & 50nA  & 50nA  & 1nA  & 100nA & <100nA & 450nA\tabularnewline
-CLOCK (min)  & 31kHz  & 31kHz & 31kHz & 31kHz & 16kHz & 16kHz & 1MHz \tabularnewline
-CLOCK (max)  & 32MHz  & 8MHz  & 8MHz  & 4MHz  & 16MHz & 9MHz  & 10MHz\tabularnewline
-EEPROM  & 256B  & 256B  & 256B  & 128B  & 128B  & 64B  & \dag{}\tabularnewline
-Serial  & USI  & USI  & USI  & --  & USI  & --  & USI \tabularnewline
-USART  & UART  & UART  & UART  & --  & --  & --  & -- \tabularnewline
-ADC  & 10bit  & 10bit & 10it  & 10bit & 10bit & 10bit & 10bit\tabularnewline
-\hline
-\end{tabular}
-\par\end{centering}
+      \begin{centering}
+      \dag Has 8,192 bytes of software programmable flash (16 pages of 512 bytes each).
+      \end{centering}
 
-\begin{centering}
-\dag Has 8,192 bytes of software programmable flash (16 pages of 512
-bytes each).
-\par\end{centering}
+      \begin{centering}
+      \ddag Has 256 bytes of software programmable flash (4 pages of 64 bytes each).
+      \end{centering}
 
-\begin{centering}
-\ddag Has 256 bytes of software programmable flash (4 pages of 64
-bytes each).
-\par\end{centering}
+      \caption{\label{tab:MCUfeaturecomparison} Feature comparison of selected MCUs.}
+    \end{sidewaystable}
 
-\centering{}\protect\caption{\label{tab:MCUfeaturecomparison} Feature comparison of selected MCUs.}
-\end{sidewaystable}
+    The following processors were chosen the three chosen manufacturers.
+    \begin{itemize}
+    \item Microchip PIC16F1827
+    \item Microchip PIC16F688
+    \item Microchip PIC12F675
+    \item Atmel ATtiny25V
+    \item Atmel ATtiny13V
+    \item Freescale MC9S08QG8
+    \end{itemize}
+    A basic feature comparison of the MCU selection is shown in table \ref{tab:MCUfeaturecomparison}.
+
+
 
 
 
@@ -84,62 +75,51 @@ bytes each).
 % as raw data, can be found in appendix %\ref{Appendix:Measurements} .
 
 
-\subsection{Power consumption benchmarks}
+  \subsection{Power consumption benchmarks}
 
-Where possible the chips were configured to have each of their pins
-set to outputs, held high, whilst being tied to Vdd via 10k$\Omega$
-resistors. All chips had their peripherals disabled (where appropriate)
-including any watchdog timers and brownout detection circuitry.
-
-To allow more accurate sleep current measurements, the chips were
-placed in a chip carrier with 10k$\Omega$ resistors soldered between
-the pins (except ground and Vdd) and Vdd. They chip and carrier was
-then washed in isopropyl alcohol and dried before being suspended
-by connections to the the E5270. These steps were taken to reduce
-any current leakage between pins due to fingerprints or dirt.
+    Testing the power consumption of low-power microprocessors requires a few taking precautions.
+    The chips must be configured to ensure that do not consume more power than is necessary.
+    Where possible, the chips were configured to have each of their pins set to outputs, which were held high while being tied to Vdd via 10k$\Omega$ resistors.
+    All chips had their peripherals disabled (where appropriate) including any watchdog timers and brownout detection circuitry.
+    To allow more accurate sleep current measurements, the chips were placed in a chip carrier with 10k$\Omega$ resistors soldered between the pins (except ground and Vdd) and Vdd.
+    They chip and carrier was then washed in isopropyl alcohol and dried before being suspended by connections to the measurement device.
+    This was done to reduce any current leakage between pins due to fingerprints or dirt.
+    Measurements were carried out using the Agilent E5270B Precision Measurement Mainframe.
+    This device has been used for most other measurement situations throughout this thesis for its high impedance inputs and measurement accuracy.
 
 
-\subsection{Sleeping}
-
-\begin{figure}
-\begin{centering}
-\includegraphics{content/pt1/02-Microcontrollers/graphics/Graph_All_Sleeping_Current}
-\par\end{centering}
-
-\centering{}\protect\caption{\label{fig:All_Sleep_Current}Current consumed by investigated MCUs
-while in sleep mode.}
-\end{figure}
+    \subsubsection*{Sleeping}
 
 
-A microprocessor in sleep mode is basically switched off, the only
-difference being that volatile data is preserved provided the input
-voltage doesn't fall below a minimum threshold voltage. In order to
-consume as little power as possible an MCU should spend as much time
-in sleep mode as is feasible. Power consumption during sleep therefore
-plays a significant role in a chips ability to conserve power over
-time.
+      \begin{figure}
+        \centering
+        \includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_All_Sleeping_Current}
+        \caption{\label{fig:All_Sleep_Current}Current consumed by investigated MCUs while in sleep mode.}
+      \end{figure}
 
-\prettyref{fig:All_Sleep_Current} shows the amount of current consumed
-by each of the MCUs while in their sleep state, note the log scale
-on the y-axis. It can be seen that the PIC16F1827 consumes the most
-current. This is somewhat contradictory to its specified sleep current
-of 30nA \cite{PIC16F1827} (the second lowest of the set) at almost
-1000 times higher. The Freescale MC9S08QG8 consumed energy at an average
-of 11\% higher than specified \cite{MC9S08QG8}. Both the Atmel ATtiny13V
-and ATtiny25V fell within their specification, \cite{AtmelATtiny13}
-and \cite{AtmelATtiny25} respectively. There appears to be a trade-off
-made between the two chips in the way of minimum power consumption
-and minimum response to Vdd. The ATtiny13V required approximately
-2.7 times less power than the ATtiny25V at 1.8V, but this advantage
-rapidly falls away as Vdd moves up from 1.8V (and negated after 2.5V
-Vdd). The Microchip PIC12F675 fell within specification\cite{PIC12F675}
-and was the clear winner of the tested MCUs.
+      A microprocessor in sleep mode is essentially powered off, the difference being that volatile data is preserved.
+      In order to consume as little power as possible an MCU should spend as much time in sleep mode as possible.
+      Therefore, power consumption in sleep states will determine a large part of the chips overall power consumption.
 
-As the PIC16F1827 was so far off its specified value, the measurement
-was repeated numerous times using code written in both assembler and
-HI-TECH C as well as trying five different chips. All steps in the
-datasheet to reduce power consumption where followed and all configuration
-options where set, however no improvement was made.
+      \cref{fig:All_Sleep_Current} shows the amount of current consumed by each MCUs while in their deepest sleep state.
+      It can be seen that the PIC16F1827 consumes the most current.
+      This is somewhat contradictory to its specified sleep current of 30nA \cite{PIC16F1827} (the second lowest of the set) at almost 1000 times higher.
+      The Freescale MC9S08QG8 consumed energy at an average
+      of 11\% higher than specified \cite{MC9S08QG8}. Both the Atmel ATtiny13V
+      and ATtiny25V fell within their specification, \cite{AtmelATtiny13}
+      and \cite{AtmelATtiny25} respectively. There appears to be a trade-off
+      made between the two chips in the way of minimum power consumption
+      and minimum response to Vdd. The ATtiny13V required approximately
+      2.7 times less power than the ATtiny25V at 1.8V, but this advantage
+      rapidly falls away as Vdd moves up from 1.8V (and negated after 2.5V
+      Vdd). The Microchip PIC12F675 fell within specification\cite{PIC12F675}
+      and was the clear winner of the tested MCUs.
+
+      As the PIC16F1827 was so far off its specified value, the measurement
+      was repeated numerous times using code written in both assembler and
+      HI-TECH C as well as trying five different chips. All steps in the
+      datasheet to reduce power consumption where followed and all configuration
+      options where set, however no improvement was made.
 
 
 \subsection{Processing}
@@ -279,7 +259,7 @@ operations, although sometimes it is.
 
 \begin{figure}
 \begin{centering}
-\includegraphics{content/pt1/02-Microcontrollers/graphics/Graph_PIC16F1827_Clock_Power}
+\includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_PIC16F1827_Clock_Power}
 \par\end{centering}
 
 \protect\caption{\label{graph:CLK_POWER_16F1827}Power consumed by the PIC16F1827 while
@@ -287,7 +267,7 @@ processing}
 \end{figure}
 \begin{figure}
 \begin{centering}
-\includegraphics{content/pt1/02-Microcontrollers/graphics/Graph_PIC16F688_Clock_Power}
+\includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_PIC16F688_Clock_Power}
 \par\end{centering}
 
 \protect\caption{\label{graph:CLK_POWER_16F688}Power consumed by the PIC16F688 while
@@ -295,7 +275,7 @@ processing}
 \end{figure}
 \begin{figure}
 \begin{centering}
-\includegraphics{content/pt1/02-Microcontrollers/graphics/Graph_PIC12F675_Clock_Power}
+\includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_PIC12F675_Clock_Power}
 \par\end{centering}
 
 \protect\caption{\label{graph:CLK_POWER_12F675-1}Power consumed by the PIC12F675 while
@@ -303,7 +283,7 @@ processing}
 \end{figure}
 \begin{figure}
 \begin{centering}
-\includegraphics{content/pt1/02-Microcontrollers/graphics/Graph_ATtiny25V_Clock_Power}
+\includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_ATtiny25V_Clock_Power}
 \par\end{centering}
 
 \protect\caption{\label{graph:CLK_POWER_ATtiny25V}Power consumed by the ATtiny25V
@@ -311,7 +291,7 @@ while processing}
 \end{figure}
 \begin{figure}
 \begin{centering}
-\includegraphics{content/pt1/02-Microcontrollers/graphics/Graph_ATtiny13V_Clock_Power}
+\includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_ATtiny13V_Clock_Power}
 \par\end{centering}
 
 \protect\caption{\label{graph:CLK_POWER_ATtiny13V}Power consumed by the ATtiny13V
@@ -319,7 +299,7 @@ while processing}
 \end{figure}
 \begin{figure}
 \begin{centering}
-\includegraphics{content/pt1/02-Microcontrollers/graphics/Graph_MC9S08QG8_Clock_Power}
+\includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_MC9S08QG8_Clock_Power}
 \par\end{centering}
 
 \protect\caption{\label{graph:CLK_POWER_MC9S08QG8}Power consumed by the MC9S08QG8
@@ -375,7 +355,7 @@ across the range of MCUs tested.
 
 \begin{figure}
 \begin{centering}
-\includegraphics{content/pt1/02-Microcontrollers/graphics/Graph_All_Clock_JPI}
+\includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_All_Clock_JPI}
 \par\end{centering}
 
 \protect\caption{\label{fig:Per-instruction-cycle}Per instruction cycle energy consumption
@@ -383,7 +363,7 @@ comparison}
 \end{figure}
 \begin{figure}
 \begin{centering}
-\includegraphics{content/pt1/02-Microcontrollers/graphics/Graph_ATtiny13V_Clock_JPI}
+\includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_ATtiny13V_Clock_JPI}
 \par\end{centering}
 
 \protect\caption{\label{fig:Per-instruction-ATtiny13V}Per instruction cycle energy
@@ -453,7 +433,7 @@ instructions of the selection.
 
 \begin{figure}
     \begin{centering}
-        \includegraphics{content/pt1/02-Microcontrollers/graphics/Graph_All_Clock_Benchmark}
+        \includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_All_Clock_Benchmark}
     \end{centering}
     \protect\caption{\label{fig:GraphBar_All_Benchmark}MCU comparison of instructions
     taken to complete a benchmark.}
@@ -496,7 +476,7 @@ performed when available energy is plentiful.
 
 \begin{figure}
 \begin{centering}
-\includegraphics{content/pt1/02-Microcontrollers/graphics/Graph_All_EEPROM_JPO}
+\includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_All_EEPROM_JPO}
 \par\end{centering}
 
 \protect\caption{Energy consumed by each MCU per non-volatile erase/write operation.\label{fig:Energy-consumed-EEPROM}}
@@ -517,7 +497,7 @@ measurement for each of the tested MCUs is shown in figure \ref{fig:Energy-consu
 
 \begin{figure}
 \begin{centering}
-\includegraphics{content/pt1/02-Microcontrollers/graphics/Graph_ALL_ADC_JPM}
+\includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_ALL_ADC_JPM}
 \protect\caption{Energy consumed by each MCU per ADC measurement.\label{fig:Energy-consumed-ADC}}
 
 \par\end{centering}

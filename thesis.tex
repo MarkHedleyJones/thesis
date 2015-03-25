@@ -30,7 +30,7 @@
     }
   \end{center}
   \vspace{0.5cm}
-  
+
   This thesis is separated into two parts, both linked to the behaviour of double-layers.
   In~\cref{part:doubleLayersOnInsulators} these layers are used as a means of converting fluid-mechanical energy into electrical energy.
   The primary application of such a harvester would be to power electronic water meters.
@@ -58,7 +58,7 @@ Thank you to my second supervisor, Marcus Wilson, for checking up every so often
 Thanks also go to the University of Waikato for a funding the first three years of this work with a Waikato Doctoral Scholarship.
 Without this funding I could not have undertaken this research.
 The support of my partner, Sarah, and my mother, Gina, has kept me on track.
-Lastly, thank you to everyone who has contributed to open-source projects, especially those part of
+Lastly, thank you to everyone who has contributed to open-source projects, especially those part of:
 \begin{itemize}
 \item The Linux kernel and GNU tools
 \item Gnome desktop environment
@@ -69,7 +69,7 @@ Lastly, thank you to everyone who has contributed to open-source projects, espec
 \item Python
 \item ngSpice
 \end{itemize}
-Work done throughout this thesis has relied entirely on those tools
+Work done throughout this thesis has relied heavily on these tools.
 
 \tableofcontents{}
 \listoffigures
@@ -82,38 +82,35 @@ Work done throughout this thesis has relied entirely on those tools
   \label{chap:introduction_main}
   \pagenumbering{arabic}
   \input{content/introduction/introduction.tex}
+\chapter{Backgound}
+  \label{chap:background}
+  \input{content/background/background.tex}
 
 %% Part 1 - Energy Harvesting
 
 \part{Double Layers on Insulators: Harvesting Energy}
   \label{part:doubleLayersOnInsulators}
-  In~\cref{chap:introduction_main}, basic principles of double layers were put forward.
-  It is the electrical conductivity of the solid material that divides the two topics of this thesis.
-  \Cref{part:doubleLayersOnInsulators} looks specifically at double layer formation between liquids and non-conductive solids, e.g., glass.
-  Later, in~\cref{part:doubleLayersOnConductors}, conductive materials will be examined with a rather different application.
 
-  The previous introduction shows that double layers are simply collections of charged ions.
-  Can we collect these ions and use them to generate electrical power?
-  Doing so would provide a method of energy harvesting without moving parts.
-  \Cref{part:doubleLayersOnInsulators} explores energy harvesting applications of interfacial double layers.
-  I build and measure a streaming cell harvester at test the idea of using it to run an electronic water meter.
-  To see if such an application is feasible, I create a power budget of energy available, and energy required by the electronics.
-  This work is wrapped up with a discussion of practicalities and final conclusions regarding feasibility and future work.
+  In~\cref{sect:background_doubleLayers}, the topic of interfacial double layers were introduced.
+  Then, in~\cref{sect:background_streamingCells}, a way of utilising double layers to harvest energy - in a process called streaming - was studied.
+  The possibility of using streaming cells as a means of powering electronic water meters is now put to the test.
+  \Cref{chap:part1_streamingCellHarvesters} studies streaming cells, where some test cells are made and measured.
+  With an understanding of readily available streaming cell performance, their applicability for use in water metering is discussed in~\cref{chap:part1_waterMetering}.
+  This presents an estimation of water use in a typical New Zealand home which is used to determine the amount of energy available to a harvester.
+  \Cref{chap:part1_energyHarvestingRequirements} measures the energy consumption of low-power, 8-bit microcontrollers and wireless transmitters.
+  The measured data is used to estimate the energy requirements of an electronic water meter with wireless transmitter.
+  Finally, in \cref{chap:part1_conclusion}, the feasibility of using streaming cells as energy harvesters for our intended application is discussed and the conclusion is made.
 
-  \chapter{Introduction}
-    \label{chap:harvesterIntroduction}
-    \input{content/pt1/introduction.tex}
-
-  \chapter{The Streaming Cell Energy Harvester}
-    \label{chap:harvestingEnergy}
+  \chapter{Streaming Cell Energy Harvesting}
+    \label{chap:part1_streamingCellHarvesters}
     \input{content/pt1/01-PowerHarvesting/chapter-PowerHarvesting}
 
   \chapter{Applicability to Water Metering}
-    \label{chap:wirelessWaterMetering}
+    \label{chap:part1_waterMetering}
     \input{content/pt1/02-WirelessWaterMeter/chapter-WirelessWaterMeter}
 
-  \chapter{Energy Requirements}
-    \label{chap:energyRequirements}
+  \chapter{A Harvester's Energy Requirements}
+    \label{chap:part1_energyHarvestingRequirements}
     \input{content/pt1/03-EnergyRequirements/chapter-EnergyRequirements}
 
     %\section{Microcontrollers}
@@ -122,40 +119,48 @@ Work done throughout this thesis has relied entirely on those tools
     %\section{Data Transmission}
         %\input{content/pt1/03-DataTransmission/chapter-DataTransmission}
 
-  \chapter{Discussion}
-  \label{chap:part_1_discussion}
+  % \chapter{Discussion}
+  % \label{chap:part_1_discussion}
 
   \chapter{Conclusion}
-  \label{chap:part_1_conclusion}
+  \label{chap:part1_conclusion}
 
 
 %% Part 3 - Double layers on conductors
 \part{Double Layers on Conductors: Electrical Impedance}
   \label{part:doubleLayersOnConductors}
-  \chapter{Introduction}
-    \section{Background}
-    \section{Literature Review}
+
+  % \chapter{Background: Interface Modelling}
+  %   \label{chap:interfaceBackground}
+  %   \section{Literature Review}
 
   \chapter{An Interfacial Model In The Electrical Domain}
+    \label{chap:theInterfaceModel}
     \input{content/pt2/modelling.tex}
 
   \chapter{Extraction of Interface Model Parameters}
+    \label{chap:modellingSaline}
     \input{content/pt2/interfaceParameters.tex}
 
   \chapter{Recipes For Fluid Mimicry}
-  \label{chap:fluid_mimicry}
+    \label{chap:fluid_mimicry}
     \input{content/pt2/recipes.tex}
 
 %% Part 4 - Appendices
 \part{Appendices}
+
   \appendix
+
   \chapter{Charged Droplet Energy Harvester}
     \label{appendix:chargedDropletts}
     \input{content/appendices/chargedWaterDrops/appendix}
+
   \chapter{Microprocessor Power Measurements}
     \input{content/appendices/microprocessorPowerMeasurements/appendix}
+
   \chapter{Solution Impedance Measurement}
     \input{content/appendices/Solution-Impedance-Measurements/appendix_mimicry}
+
   \chapter*{Newspaper Article on Streaming Cells}
   \begin{figure}
       \centering

@@ -1,26 +1,27 @@
 %!TEX root = ../../../thesis.tex
 
-The concept of a streaming cell has been introduced.
-Following that, a review of previous work on streaming cell energy conversion was made.
-Previous streaming cells were usually technically challenging to fabricate, often employing methods such as chemical etching to produce.
-Is it possible to build a working streaming cell using only simple materials and fabrication methods?
-Ten streaming cells are fabricated and their output power and conversion efficiency is measured.
-Before building the cells, a mathematical model of their operating characteristics is established.
+This chapter begins with a mathematical analysis of streaming cells and their operating parameters.
+Following this, in \cref{sect:part1_energyHarvesting_buildingStreamingCells}, a number of different streaming cells are built.
+Some of the earlier, failed attempts, at making streaming cells are shown followed by a more successful streaming cell design.
+Ten streaming cells are made using this design, each having different internal dimensions.
+The electrical output and energy conversion efficiency of these cells is measured in \cref{sect:part1_energyHarvesting_measuringStreamingCells}.
+Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussion}, followed by concluding remarks on the material presented in this chapter.
 
 
-\section{Operational Model}
+\section{General Analysis}
+  \label{sect:part1_energyHarvesting_generalAnalysis}
 
 
   A basic model of operation for a streaming cell is established.
   This determines what parameters are important when maximising a cell's output power.
 
 
-  \subsection{Mathematics of streaming}
+  \subsection{Mathematics}
 
 
     Mathematical analysis of streaming cells provides a basic understanding of the parameters involved with their output and geometry.
     Rigorous mathematical analysis of streaming cell performance is extremely involved and is well detailed in the literature~\cite{Yang1998}.
-    As aspects of a double layer's structure are still not fully understood, consequently the mathematics behind them is still being developed.
+    As aspects of a double layer's structure are still not fully understood, the mathematics behind them is still being developed.
     Computer simulation and mathematical models continue to shed light on ionic organisation at liquid-solid interfaces~\cite{Kornyshev2007}.
     For that reason, I have not attempted to model a streaming cell physically.
     Instead, I piece together a relatively simple mathematical model quantifying important operating parameters.
@@ -28,37 +29,42 @@ Before building the cells, a mathematical model of their operating characteristi
 
     \subsubsection*{Streaming voltage}
 
-
-      \Cref{eq:streamingVoltage_with_pressure} relates the streaming voltage of a parallel plate channel to a pressure differential placed across it.
-      Gu and Li derived this equation as a means of finding the zeta potential at a water/glass interface~\cite{Gu2000a}.
+      Gu and Li derived the following equation relating the streaming voltage to the pressure applied across a streaming cell~\cite{Gu2000}.
       \begin{equation}
-      \frac{V_{s}}{\Delta P} = \frac{\varepsilon_{r}\,\varepsilon_{0}\,\zeta}{\mu(\lambda_{b}+\frac{2}{\delta}\lambda_{S})}
-      \label{eq:streamingVoltage_with_pressure}
+      \frac{V_{s}}{\Delta P} = \frac{\varepsilon_{r}\,\varepsilon_{0}\,\zeta}{\mu(\sigma+\frac{2}{\delta}\lambda)}
+      \label{eq:part1_energyHarvesting_streamingVoltage}
       \end{equation}
       \noindent where:
       \begin{description}
-          \item $V_{s}$ is the streaming voltage
-          \item $\Delta P_{z}$ is the pressure differential across the channel
+          \item $V_{s}$ is streaming voltage
+          \item $\Delta P_{z}$ is pressure differential (across the channel)
           \item $\epsilon_{r}$ is the relative permittivity of the liquid
           \item $\epsilon_{0}$ is the absolute permittivity of free space
-          \item $\zeta$ is the zeta potential of the solid-liquid interface
-          \item $\mu$ is the viscosity of the working fluid
-          \item $\lambda_{b}$ is the bulk conductivity of the liquid
-          \item $\delta$ is the height of the channel
-          \item $\lambda_{s}$ is the surface conductivity of the channel
+          \item $\zeta$ is zeta potential
+          \item $\mu$ is the fluid's viscosity
+          \item $\sigma$ is the fluid's bulk conductivity
+          \item $\delta$ is the channel's height
+          \item $\lambda$ is the channel's surface conductivity
       \end{description}
       This equation is specific to parallel plate channels, of the type constructed in the following section.
-      It requires that the width to height ratio of the channel is greater than 20, which for the case of the cells constructed here it is.
-      Later, we will measure the streaming voltage to applied pressure ratio; which should allow us to determine both the surface conductivity (Stern conductance) and zeta potential of our channels.
+      It requires that the width to height ratio of the channel is greater than 20, which it is for the cells constructed here.
+      Gu and Li use this equation as a means of finding the zeta potential and surface conductance by rearranging it into the following form:
+      \begin{equation}
+        \frac{\varepsilon_{r}\, \varepsilon_{0}\, \Delta P}{\mu\, V_{s}\, \sigma} = \frac{1}{\zeta} + \left(\frac{2\, \lambda}{\zeta\, \sigma}\right)\, \frac{1}{\delta}
+      \end{equation}
+      Later, the streaming voltage of ten cells with the same dimensions of those used by Gu and Li will be measured.
+      The left hand side of this equation will be plotted against the inverse of channel height to see if their results can be replicated.
+      If successful, this will give a way of determining the zeta potential and surface conductance of the fabricated cells.
 
 
     \subsubsection*{Streaming current}
 
 
-      From that same paper, \cite{Gu2000}, the streaming current driven through a rectangular streaming cell was found to be equal to
+      Gu and Li, also also derive a similar equation for streaming current~\cite{Gu2000}.
+      This equation, shown below, has been slightly rearranged to match the form of~\ref{eq:part1_energyHarvesting_streamingVoltage}
       \begin{equation}
           \frac{I_{s}}{\Delta P} = \frac{\varepsilon_{r}\,\varepsilon_{0}\,\zeta\,W\,\delta}{\mu\,L}
-          \label{eq:StreamingCell_StreamingCurrentFunc}
+          \label{eq:part1_energyHarvesting_streamingCurrent}
       \end{equation}
       where
       \begin{description}
@@ -68,41 +74,39 @@ Before building the cells, a mathematical model of their operating characteristi
       This equation is similar to that given by Olthuis et al.\ for a porous plug, but has been derived specifically for rectangular channels\cite{Olthuis2005}.
 
 
-  \subsection{\label{sub:Electrical-model}Electrical model}
+  \subsection{Electrical model}
+    \label{sub:part1_energyHarvesting_generalAnalysis_electricalModel}
 
 
-    Figure \ref{fig:StreamingCell_Schematic-representation} depicts schematically how a streaming cell would operate when connected to an external load.
-    A model of this sort is commonly used to analyse the behaviour transistors.
-
-    The model shown here is based upon that found in the work of Olthuis et al.\ in \cite{Olthuis2005}, but has been modified slightly.
-    Instead of showing $\zeta$ as the equivalent voltage source, it is shown here instead with the pressure applied ($\Delta P$).
-    As we have no control of the zeta potential in our application, we will consider it a constant.
-    However, we will have control of the applied pressure across the cell, which we know is directly proportional to the output voltage.
-
+    % Model
     \begin{figure}
         \centering
             \includegraphics[width=\textwidth]{content/pt1/01-PowerHarvesting/graphics/StreamingCell_EquivalentCircuit_output}
         \caption{\label{fig:StreamingCell_Schematic-representation}Schematic representation, commonly used in electronics, of a streaming cell with attached output resistance}
     \end{figure}
-    In this model the parameter $g_{m}$ is taken from \cref{eq:StreamingCell_StreamingCurrentFunc} as:
-    \begin{equation}
-        g_{m} = \frac{\varepsilon_{r}\,\varepsilon_{0}\,\zeta\,W\,\delta}{\mu\,L}
-    \end{equation}
-
+    Figure \ref{fig:StreamingCell_Schematic-representation} depicts schematically how a streaming cell operates when connected to an external load.
+    A model of this sort is commonly used to analyse the behaviour transistors.
+    This particular model is based on the work of Olthuis et al.\ in \cite{Olthuis2005}, but has been modified slightly.
+    Instead of showing $\zeta$ as the equivalent voltage source, it is shown here instead with the pressure applied ($\Delta P$).
+    This change was made because there is no way of controlling the zeta potential - it determined by the properties of the particular interface.
+    However, the amount of pressure developed across the cell is controllable, and from \cref{eq:part1_energyHarvesting_streamingCurrent} it is shown to be directly proportional to streaming current.
+    In fact, the transconductance ($g_{m}$) for this model is \cref{eq:part1_energyHarvesting_streamingCurrent}.
     The model aids analysis in that it shows the electrical configuration of an external load resistance ($R_{out}$).
-    We will now determine how this affects the output of the cell and determine how best to extract energy from the cell.
+    As shown, any load resistance placed across the cell is being placed in parallel with the internal electrical resistance of the cell.
+    This will help to determine how best to optimise the cell in order to maximise its electrical output.
 
 
-  \subsection{Output analysis}
+  \subsection{Optimisation}
 
-
-    The model thus far contains the parameters necessary to optimise the power output.
-    We just saw that by placing a load across the cell we are in-fact placing it in parallel with the cell's internal electrical resistance.
-    In such situations it becomes important to select values of resistance to optimise the cell for either maximum efficiency or maximum power.
-    So which do we wish to optimise for?
+    Having a mathematical model of a streaming cell allows for optimisation of its operating parameters.
+    The model shows that any load placed across a streaming cell is actually placed in parallel with that cell's internal resistance.
+    Therefore, choosing a suitable load is an important design consideration.
+    It is possible to optimise the cell's output for maximum power output, or maximum efficiency.
+    So which is best suited to harvesting applications?
 
     Streaming cells are not batteries.
-    The only time we can extract energy from a streaming cell is when pressure developed across it, which in tern is because of liquid flowing through it.
+    The only time energy can be extracted from a streaming cell is when pressure developed across it.
+    This only happens because of liquid flowing through it.
     When harvestable power is available, we need to collect as much of it as possible -- \emph{no matter how much is wasted}.
     Because a cell is incapable of storing energy, any energy that we could not capture will be lost.
 
@@ -148,37 +152,37 @@ Before building the cells, a mathematical model of their operating characteristi
       The maximum power transfer theorem states that in order to maximise the power delivered to an external load from a source which itself has an internal resistance, one must make the two resistance equal.
 
 
-    \subsubsection*{Maximum power transfer theorem for a current source}
+    % \subsubsection*{Maximum power transfer theorem for a current source}
 
 
-      This theorem is shown for resistors in series but no clear proof was found for a current source with two resistances in parallel.
-      Here I prove that the maximum power theorem holds for a current source with resistors in parallel.
-      This is not new work, but is included for completeness.
+    %   This theorem is shown for resistors in series but no clear proof was found for a current source with two resistances in parallel.
+    %   Here I prove that the maximum power theorem holds for a current source with resistors in parallel.
+    %   This is not new work, but is included for completeness.
 
-      First we take \cref{eq:DeterminingOutputPower_result} and treat the streaming current ($I_{s}$) as a constant, differentiate with respect to $R_{out}$ and find the condition that gives a maximum/minimum power output.
-      \begin{eqnarray}
-          P_{out} & = & \left[I_{s}\times\frac{R_{cell}}{R_{cell}+R_{out}}\right]^{2}\times R_{out}\nonumber\\
-          \frac{P_{out}}{R_{out}} & = & \left[1\times\frac{R_{cell}}{R_{cell}+R_{out}}\right]^{2}\nonumber\\
-          \frac{\partial P_{out}}{\partial R_{out}} & = & \frac{R_{cell}^{2}}{(R_{cell}+R_{out})^{2}}-\frac{2\times R_{cell}^{2}\times R_{out}}{(R_{cell}+R_{out})^{3}}\nonumber\\
-          0 & = & \frac{R_{cell}^{2}}{(R_{cell}+R_{out})^{2}}-\frac{2\times R_{cell}^{2}\times R_{out}}{(R_{cell}+R_{out})^{3}}\nonumber\\
-          \frac{2\times R_{cell}^{2}\times R_{out}}{(R_{cell}+R_{out})^{3}} & = & \frac{R_{cell}^{2}}{(R_{cell}+R_{out})^{2}}\nonumber\\
-          \frac{2\times R_{cell}^{2}\times R_{out}}{R_{cell}+R_{out}} & = & R_{cell}^{2}\nonumber\\
-          2\times R_{cell}^{2}\times R_{out} & = & R_{cell}^{2}\times(R_{cell}+R_{out})\nonumber\\
-          2\times R_{out} & = & R_{cell}+R_{out}\nonumber\\
-          R_{out} & = & R_{cell}
-          \label{eq:maximumPowerTheorem_norton}
-      \end{eqnarray}
+    %   First we take \cref{eq:DeterminingOutputPower_result} and treat the streaming current ($I_{s}$) as a constant, differentiate with respect to $R_{out}$ and find the condition that gives a maximum/minimum power output.
+    %   \begin{eqnarray}
+    %       P_{out} & = & \left[I_{s}\times\frac{R_{cell}}{R_{cell}+R_{out}}\right]^{2}\times R_{out}\nonumber\\
+    %       \frac{P_{out}}{R_{out}} & = & \left[1\times\frac{R_{cell}}{R_{cell}+R_{out}}\right]^{2}\nonumber\\
+    %       \frac{\partial P_{out}}{\partial R_{out}} & = & \frac{R_{cell}^{2}}{(R_{cell}+R_{out})^{2}}-\frac{2\times R_{cell}^{2}\times R_{out}}{(R_{cell}+R_{out})^{3}}\nonumber\\
+    %       0 & = & \frac{R_{cell}^{2}}{(R_{cell}+R_{out})^{2}}-\frac{2\times R_{cell}^{2}\times R_{out}}{(R_{cell}+R_{out})^{3}}\nonumber\\
+    %       \frac{2\times R_{cell}^{2}\times R_{out}}{(R_{cell}+R_{out})^{3}} & = & \frac{R_{cell}^{2}}{(R_{cell}+R_{out})^{2}}\nonumber\\
+    %       \frac{2\times R_{cell}^{2}\times R_{out}}{R_{cell}+R_{out}} & = & R_{cell}^{2}\nonumber\\
+    %       2\times R_{cell}^{2}\times R_{out} & = & R_{cell}^{2}\times(R_{cell}+R_{out})\nonumber\\
+    %       2\times R_{out} & = & R_{cell}+R_{out}\nonumber\\
+    %       R_{out} & = & R_{cell}
+    %       \label{eq:maximumPowerTheorem_norton}
+    %   \end{eqnarray}
 
-      This shows that there is either maximum or minimum power transfer to $R_{out}$ when the value of $R_{out}$ matches that of $R_{cell}$.
-      By plotting the power output as a function of the ratio of the two resistances (shown in \cref{fig:Plot-of-PowerTheorem}), we can see it is indeed a maximum.
-      This shows the assumption of the maximum power transfer theorem in the case of streaming cell output to be correct.
-      Usefully, it is shown that the absolute magnitudes of both $R_{out}$ and $R_{cell}$ have no effect on the output power - only their relative sizes (which in this case is equal).
+    %   This shows that there is either maximum or minimum power transfer to $R_{out}$ when the value of $R_{out}$ matches that of $R_{cell}$.
+    %   By plotting the power output as a function of the ratio of the two resistances (shown in \cref{fig:Plot-of-PowerTheorem}), we can see it is indeed a maximum.
+    %   This shows the assumption of the maximum power transfer theorem in the case of streaming cell output to be correct.
+    %   Usefully, it is shown that the absolute magnitudes of both $R_{out}$ and $R_{cell}$ have no effect on the output power - only their relative sizes (which in this case is equal).
 
-      \begin{figure}
-          \centering
-              \includegraphics{content/pt1/01-PowerHarvesting/graphics/maximumPowerThereom}
-          \caption{\label{fig:Plot-of-PowerTheorem}Plot of Equation \ref{eq:DeterminingOutputPower_result} when $I_{s}=1A$ and $R_{cell}=1\Omega$}
-      \end{figure}
+    %   \begin{figure}
+    %       \centering
+    %           \includegraphics{content/pt1/01-PowerHarvesting/graphics/maximumPowerThereom}
+    %       \caption{\label{fig:Plot-of-PowerTheorem}Plot of Equation \ref{eq:DeterminingOutputPower_result} when $I_{s}=1A$ and $R_{cell}=1\Omega$}
+    %   \end{figure}
 
 
     \subsubsection*{Optimising streaming cell parameters}
@@ -194,7 +198,7 @@ Before building the cells, a mathematical model of their operating characteristi
       \end{eqnarray}
       As $P=I^{2}R$ (via the power equation and Ohm's Law) this indicates at best we can capture half of the available power.
 
-      It is now possible to combine the equation for maximum power, \eqref{eq:streamingCell_maxPower}, and that for streaming current, \eqref{eq:StreamingCell_StreamingCurrentFunc}.
+      It is now possible to combine the equation for maximum power, \eqref{eq:streamingCell_maxPower}, and that for streaming current, \eqref{eq:part1_energyHarvesting_streamingCurrent}.
       \begin{eqnarray}
           P_{max} & = & \frac{I_{s}^{2}R}{2}\nonumber \\
           P_{max} & = & \left(\frac{\varepsilon\,\zeta\,W\,\delta\,\Delta P}{\mu\,L}\right)^{2}\times\frac{R}{2}
@@ -234,6 +238,7 @@ Before building the cells, a mathematical model of their operating characteristi
 
 
 \section{Building a Streaming Cell}
+  \label{sect:part1_energyHarvesting_buildingStreamingCells}
 
 
   Building a streaming cell seemed a simple task at the outset.
@@ -315,20 +320,6 @@ Before building the cells, a mathematical model of their operating characteristi
 
     \subsubsection*{Construction}
 
-
-      Construction begins by sectioning standard microscope slides into halves.
-      This gives glass panels of approximately \SI{26}{\milli\meter} $\times$ \SI{38}{\milli\meter} $\times$ \SI{1}{\milli\meter}.
-      A single panel is then epoxied to an acrylic base plate, as is shown in Figure~\ref{fig:Photo_streamingPotential_Assembly_Step1}.
-
-      Once set, plastic shims are cut to the required size, covered with a very thin layer of epoxy, and placed along the edges of the slide.
-      The shims line the sides of the glass panel such that they leave a \SI{1}{\centi\meter} gap through the centre.
-      A second glass slide is then placed on top of the shims and epoxy resin is used to seal the sides.
-      Pressure was applied to the stack while the epoxy set to ensure the epoxy was distributed correctly and to control the channel height.
-      A photo of the shims glued between the two slide halves is shown in Figure~\ref{fig:Photo_streamingPotential_Assembly_Step2}.
-
-      Once set, each channel is examined under a microscope to determine the internal channel height.
-      Each of the four corners were measured to ensure the internal dimensions remained rectangular once set.
-
       \begin{table}
         \begin{tabular}{r|c|l}
           Item & Brand & Product details\tabularnewline\hline
@@ -339,16 +330,25 @@ Before building the cells, a mathematical model of their operating characteristi
         \end{tabular}
         \caption{\label{Table_StreamingCell_MaterialsUsed}Table of materials used to construct the streaming potential cells}
       \end{table}
-
+      Construction begins by sectioning standard microscope slides into halves.
+      This gives glass panels of approximately \SI{26}{\milli\meter} $\times$ \SI{38}{\milli\meter} $\times$ \SI{1}{\milli\meter}.
+      A single panel is then epoxied to an acrylic base plate, as is shown in Figure~\ref{fig:Photo_streamingPotential_Assembly_Step1}.
+      Once set, plastic shims are cut to the required size, covered with a very thin layer of epoxy, and placed along the edges of the slide.
+      The shims line the sides of the glass panel such that they leave a \SI{1}{\centi\meter} gap through the centre.
+      A second glass slide is then placed on top of the shims and epoxy resin is used to seal the sides.
+      Pressure was applied to the stack while the epoxy set to ensure the epoxy was distributed correctly and to control the channel height.
+      A photo of the shims glued between the two slide halves is shown in Figure~\ref{fig:Photo_streamingPotential_Assembly_Step2}.
+      Once set, each channel is examined under a microscope to determine the internal channel height.
+      Each of the four corners were measured to ensure the internal dimensions remained rectangular once set.
       To finish, acrylic reservoirs where mounted over each end of the channel.
       These reservoirs facilitate the connection of fluid tubes and voltage probes to each end of the channel.
       The final assembly is shown in Figure \ref{fig:Photo_streamingPotential_Assembly_Step3}.
       A full list of materials used to construct the channels is presented as Table~\ref{Table_StreamingCell_MaterialsUsed}.
-
       A total of ten channels were made and tested using this method.
 
 
 \section{Measurements}
+  \label{sect:part1_energyHarvesting_measuringStreamingCells}
 
 
   Of the papers describing experiments using streaming potential cells (\cite{Gu2000,Mala1997,Scales1992,VanderHeyden2006}), I chose that of Gu and Li to replicate~\cite{Gu2000}.
@@ -357,7 +357,8 @@ Before building the cells, a mathematical model of their operating characteristi
   This section details the fabrication and measurement of a number of streaming cells.
 
 
-  \subsection{\label{sub:Experimental-Procedure}Experimental setup}
+  \subsection{Experimental setup}
+    \label{sub:part1_energyHarvesting_measuringStreamingCells_experimentalSetup}
 
 
     Measurement of the harvester's output was made in a laboratory with high-sensitivity measurement apparatus and a lab tap for the application water pressure.
@@ -411,233 +412,235 @@ Before building the cells, a mathematical model of their operating characteristi
     \end{table}
 
 
-    \subsubsection*{Measurement issues}
+  \subsection{Measurement issues}
 
 
-      There are two issues with the measurement setup that may impact the measurements.
-      Firstly, the electrodes used were copper and are susceptible to polarisation by electrolysis.
-      Secondly, the differential pressure sensor is only rated to 15\thinspace PSI (approximately \SI{100}{\kilo\pascal}), less than half the maximum pressure developed across the cell.
+    There are two issues with the measurement setup that may impact the measurements.
+    Firstly, the electrodes used were copper and are susceptible to polarisation by electrolysis.
+    Secondly, the differential pressure sensor is only rated to 15\thinspace PSI (approximately \SI{100}{\kilo\pascal}), less than half the maximum pressure developed across the cell.
 
-      Electrolysis on at the electrode surface causes the electrodes to polarise.
-      This results in a semi-permanent offset voltage appearing between the electrodes.
-      That offset voltage is opposite in polarity to what is developed while cell is in operation.
-      By reversing the flow of water through the cell, the polarisation can be reversed.
-      Use of more suitable electrode materials would reduce this effect, for instance platinum black electrodes.
-      Copper was used for the electrodes as it was cheap, easily obtainable, and easy to work with.
+    Electrolysis on at the electrode surface causes the electrodes to polarise.
+    This results in a semi-permanent offset voltage appearing between the electrodes.
+    That offset voltage is opposite in polarity to what is developed while cell is in operation.
+    By reversing the flow of water through the cell, the polarisation can be reversed.
+    Use of more suitable electrode materials would reduce this effect, for instance platinum black electrodes.
+    Copper was used for the electrodes as it was cheap, easily obtainable, and easy to work with.
 
-      From measurement of the output \emph{voltage} of the cells, the presented graphs and figures have been adjusted to remove the effects of electrolysis.
-      This was done by adding an offset to the measured data to shift the y-intercept up to \SI{0}{\volt}.
-      This provides a more accurate representation of the situation had platinum black electrodes been used.
-      As no absolute data is taken from these measurements, the y-intercept adjustment does not affect any subsequent predictions made about the cells.
-      Only the gradient of the output, relative to the pressure applied is used; and even then, only to select a suitable candidate cell for power measurement.
-      \emph{Most importantly}, no offsets have been applied to measurements of the cell power output.
+    From measurement of the output \emph{voltage} of the cells, the presented graphs and figures have been adjusted to remove the effects of electrolysis.
+    This was done by adding an offset to the measured data to shift the y-intercept up to \SI{0}{\volt}.
+    This provides a more accurate representation of the situation had platinum black electrodes been used.
+    As no absolute data is taken from these measurements, the y-intercept adjustment does not affect any subsequent predictions made about the cells.
+    Only the gradient of the output, relative to the pressure applied is used; and even then, only to select a suitable candidate cell for power measurement.
+    \emph{Most importantly}, no offsets have been applied to measurements of the cell power output.
 
-      Although the maximum rated pressure of sensor was 15\thinspace PSI (approximately \SI{100}{\kilo\pascal}), the sensor's output remained linear up to our maximum pressure of 40\thinspace PSI (\SI{275}{\kilo\pascal}).
-      I expect that exceeding the sensors specified pressure will result in a lower `mean time to failure', but its output remained true.
-      As a precaution, a tyre pressure gauge was used to roughly confirm the output of the sensor at the end of the cell measurements.
-      This was a crude test, however it's output matched that of the differential pressure sensor, so was taken as a good indication of its accuracy.
-
-
-  \subsection{Results}
+    Although the maximum rated pressure of sensor was 15\thinspace PSI (approximately \SI{100}{\kilo\pascal}), the sensor's output remained linear up to our maximum pressure of 40\thinspace PSI (\SI{275}{\kilo\pascal}).
+    I expect that exceeding the sensors specified pressure will result in a lower `mean time to failure', but its output remained true.
+    As a precaution, a tyre pressure gauge was used to roughly confirm the output of the sensor at the end of the cell measurements.
+    This was a crude test, however it's output matched that of the differential pressure sensor, so was taken as a good indication of its accuracy.
 
 
-    Results from streaming cell measurement are broken into two sub-sections.
-    The first presents the output voltage of the ten cells in response to applied water pressure.
-    From these measurements, the cell with the highest voltage/pressure ratio is found.
-    The second sub-section shows the maximum power that can be harvested from that cell.
-    These are the most important measurements as they reveal the energy conversion efficiency of the cells.
+\section{Results}
+  \label{sect:part1_energyHarvesting_results}
 
 
-    \subsubsection*{Voltage versus pressure:}
+  Results from streaming cell measurement are broken into two sub-sections.
+  The first presents the output voltage of the ten cells in response to applied water pressure.
+  From these measurements, the cell with the highest voltage/pressure ratio is found.
+  The second sub-section shows the maximum power that can be harvested from that cell.
+  These are the most important measurements as they reveal the energy conversion efficiency of the cells.
 
 
-      \begin{figure}[p]
-          \centering
-          \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_26um_out}
-          \caption{\label{fig:VvsP_26um}Graph showing the voltage output with applied pressure differential across a \SI{26}{\micro\metre} glass micro-channel (\SI{38}{\milli\volt} offset added)}
-      \end{figure}
-
-      \begin{figure}
-          \centering
-          \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_52um_out}
-          \caption{\label{fig:VvsP_52um}Graph showing the voltage output with applied pressure differential across a \SI{52}{\micro\metre} glass micro-channel (\SI{23}{\milli\volt} offset added)}
-      \end{figure}
-
-      \begin{figure}
-          \centering
-          \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_56um_out}
-          \caption{\label{fig:VvsP_56um}Graph showing the voltage output with applied pressure differential across a \SI{56}{\micro\metre} glass micro-channel (\SI{405}{\milli\volt} offset added)}
-      \end{figure}
-
-      \begin{figure}
-          \centering
-          \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_71um_out}
-          \caption{\label{fig:VvsP_71um}Graph showing the voltage output with applied pressure differential across a \SI{71}{\micro\metre} glass micro-channel (\SI{44}{\milli\volt} offset added)}
-      \end{figure}
-
-      \begin{figure}
-          \centering
-          \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_75um_out}
-          \caption{\label{fig:VvsP_75um}Graph showing the voltage output with applied pressure differential across a \SI{75}{\micro\metre} glass micro-channel (\SI{20}{\milli\volt} offset added)}
-      \end{figure}
-
-      \begin{figure}
-          \centering
-          \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_106um_out}
-          \caption{\label{fig:VvsP_106um}Graph showing the voltage output with applied pressure differential across a \SI{106}{\micro\metre} glass micro-channel (\SI{56}{\milli\volt} offset added)}
-      \end{figure}
-
-      \begin{figure}
-          \centering
-          \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_125um_out}
-          \caption{\label{fig:VvsP_125um}Graph showing the voltage output with applied pressure differential across a \SI{125}{\micro\metre} glass micro-channel (\SI{5}{\milli\volt} offset added)}
-      \end{figure}
-
-      \begin{figure}
-          \centering
-          \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_161um_out}
-          \caption{\label{fig:VvsP_161um}Graph showing the voltage output with applied pressure differential across a \SI{161}{\micro\metre} glass micro-channel (\SI{23}{\milli\volt} offset added)}
-      \end{figure}
-
-      \begin{figure}
-          \centering
-          \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_178um_out}
-          \caption{\label{fig:VvsP_178um}Graph showing the voltage output with applied pressure differential across a \SI{178}{\micro\metre} glass micro-channel (\SI{13}{\milli\volt} offset added)}
-      \end{figure}
-
-      \begin{figure}
-          \centering
-          \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_245um_out}
-          \caption{\label{fig:VvsP_245um}Graph showing the voltage output with applied pressure differential across a \SI{245}{\micro\metre} glass micro-channel (\SI{27}{\milli\volt} offset added)}
-      \end{figure}
-
-      \Crefrange{fig:VvsP_26um}{fig:VvsP_245um} show adjusted results of streaming voltage measurements from each of the ten cells.
-      They represent the first successful measurements I had made of streaming cells.
-      During these measurements three cells burst under pressure; two were dropped and subsequently shattered; and one suffered epoxy failure, loosing its acrylic base plate.
-
-      No measurements of flow rate or output current were made during these early experiments.
-      As a result they reveal very little about the efficiency of the cells themselves.
-      We cannot determine either the mechanical energy put into the cells, nor the output power available.
-      However, we can relate these measurements to those made by Gu and Li; as will be shown and discussed shortly.
-
-      \begin{figure}
-          \centering
-          \includegraphics{content/pt1/01-PowerHarvesting/graphics/graph_streamingVoltageGradient_vs_height_noCorrection}
-          \caption{\label{fig:streamingCell_all_unadjusted}Plot showing un-adjusted streaming voltages versus applied pressure.}
-      \end{figure}
-
-      \begin{figure}
-          \centering
-          \includegraphics{content/pt1/01-PowerHarvesting/graphics/graph_streamingVoltageGradient_vs_height}
-          \caption{\label{fig:streamingCell_all_adjusted}Plot showing adjusted streaming voltages versus applied pressure.}
-      \end{figure}
-
-      \begin{figure}
-          \centering
-          \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_slopeVsChannelHeight}
-          \caption{\label{fig:streamingCell_scatter_voltGradVsHeight}Scatter plot of voltage/pressure gradient versus channel height for each of the measured channels.}
-      \end{figure}
-
-      \Cref{fig:VvsP_56um} required an offset adjustment of \SI{405}{\milli\volt} before its slope gave a \SI{0}{\milli\volt} intercept.
-      This indicates that the electrodes were highly polarised by the time the measurements were made.
-      This effect is especially evident in \cref{fig:streamingCell_all_unadjusted}, where each of the traces have been placed on a single graph.
-
-      Some of the traces exhibit a certain amount of `jitter' in their pressure-to-voltage gradients.
-      This is likely due to the time difference between adjacent measurement points.
-      Measurement points were not taken monotonically, instead being extracted from a number of pressure cycles.
-
-      The effect of adding the offset adjustments is visible in \cref{fig:streamingCell_all_adjusted}.
-      These adjustments bring all of the slopes together so the origin sits at \SI{0}{\volt\per\pascal}.
-
-      \Cref{fig:streamingCell_scatter_voltGradVsHeight} shows the streaming voltage to pressure gradients versus channel height.
-      This data has been taken from the previous graph (\cref{fig:streamingCell_all_adjusted})) to show the response as a function of channel height.
+  \subsection{Streaming voltage versus pressure}
 
 
-    \subsubsection*{Power versus output resistance}
-
-
-      \begin{figure}
-          \centering
-          \includegraphics{content/pt1/01-PowerHarvesting/graphics/graph_streamingCell_outputPower_resistanceSweep}
-          \caption{\label{fig:streamingCell_maxPower}Plot of output power versus effective load resistance for a \SI{71}{\micro\metre} high channel at a pressure of \SI{260}{\kilo\pascal}.}
-      \end{figure}
-
-      \Cref{fig:streamingCell_maxPower} shows the characteristic power curve of a the \SI{71}{\micro\meter} high streaming cell channel.
-      Pressure fluctuations near the end of the experiment are due to usage of the departments water system.
-      Their effect is visible in both the streaming voltage and output power traces, highlighting the strong coupling to applied pressure.
-
-      The maximum power delivered by the cell was \SI{1.52}{\nano\watt}, corresponding to a current draw of \SI{33.5}{\nano\ampere} with a streaming voltage of \SI{182}{\milli\volt}.
-      Generating this power required \SI{260}{\kilo\pascal} of pressure, resulting in a flow rate of \SI{2.05}{\milli\litre\per\second}.
-      This equates to \SI{539}{\milli\watt} of pumping power lost to the device and therefore an energy conversion efficiency of \SI{0.28}{\micro\percent}.
-
-
-  \subsection{Discussion}
-
-
-    Initial measurements of streaming voltage revealed that the output voltage is directly proportional to applied pressure.
-    Containing pressures reaching \SI{260}{\kilo\pascal} within glass structures is difficult.
-
-    Comparing the streaming voltage measurements taken from each of the ten cells to the measurements make by Gu and Li yielded surprising results.
-    In their paper~\cite{Gu2000}, they determined the zeta potential ($\zeta$) and surface conductivity ($\lambda$) by plotting measurements and fitting a linear equation to their data.
-    The use the y-intercept of the resulting line to give the inverse zeta potential and the slope of the line gave information about the surface conductivity.
-
-    \begin{figure}
+    \begin{figure}[p]
         \centering
-        \includegraphics{content/pt1/01-PowerHarvesting/graphics/GuLi_DIUF}
-        \caption{\label{fig:Gu_Li_comparison_DUIF}Measured data from Gu and Li's paper on streaming cells relating the streaming voltage and pressure differential to the channel height with distilled water as the working fluid}
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_26um_out}
+        \caption{\label{fig:VvsP_26um}Graph showing the voltage output with applied pressure differential across a \SI{26}{\micro\metre} glass micro-channel (\SI{38}{\milli\volt} offset added)}
     \end{figure}
 
     \begin{figure}
         \centering
-        \includegraphics{content/pt1/01-PowerHarvesting/graphics/GuLi_NaCl}
-        \caption{\label{fig:Gu_Li_comparison_NaCl}Measured data from Gu and Li's paper on streaming cells relating the streaming voltage and pressure differential to the channel height with a \SI{1}{\milli\mole} sodium chloride solution as the working fluid}
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_52um_out}
+        \caption{\label{fig:VvsP_52um}Graph showing the voltage output with applied pressure differential across a \SI{52}{\micro\metre} glass micro-channel (\SI{23}{\milli\volt} offset added)}
     \end{figure}
-
-    Their results for three streaming cells are shown here (taken from \cite{Gu2000}) as \cref{fig:Gu_Li_comparison_DUIF,fig:Gu_Li_comparison_NaCl}.
-    The first (\cref{fig:Gu_Li_comparison_DUIF}) shows measurements when distilled water is used as the working fluid; the second (\cref{fig:Gu_Li_comparison_NaCl}) shows the measurements for a weak saline solution.
-    It is interesting to note that they have what looks to be fairly linear data, although it is hard to tell with only three channel sizes.
 
     \begin{figure}
         \centering
-        \includegraphics{content/pt1/01-PowerHarvesting/graphics/graph_streamingComparison_gu}
-        \caption{\label{fig:streamingCell_scatter_Gu_Li}Scatter plot with results of streaming cell measurements in terms of those made by Gu and Li~\cite{Gu2000} (for comparison).}
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_56um_out}
+        \caption{\label{fig:VvsP_56um}Graph showing the voltage output with applied pressure differential across a \SI{56}{\micro\metre} glass micro-channel (\SI{405}{\milli\volt} offset added)}
     \end{figure}
 
-    By comparison, \cref{fig:streamingCell_scatter_Gu_Li} plots the same variables from measurements taken from the ten streaming cells fabricated here.
-    In this graph $\lambda{b}$ has been replaced with $\sigma$, where both refer to the bulk conductivity of the solution; and $E_{s}$ has been replaced with $V_{s}$, were both refer to the streaming potential.
-    The response to variation of channel height is clearly non-linear.
-    Their method of finding the zeta potential rests on the following rearrangement:
-    \begin{eqnarray}
-        \frac{\varepsilon_{r}\varepsilon_{0}\Delta P}{\mu V_{s}\sigma} = \frac{1}{\zeta} + \left( \frac{2\,\lambda}{\zeta \sigma}\right)\,\frac{1}{\delta}
-    \end{eqnarray}
-    where $\lambda$ is the surface conductivity and $\delta$ is the channel height.
-    So as the channel height ($\delta$) tends to infinity, the left hand side tends toward the zeta potential ($\zeta$).
-    This notion seems counter intuitive since the zeta potential is defined at the plane of sheer (as shown in \cref{fig:doubleLayer_anatomy}), relative to the solution bulk.
-    The equation is stating that no-matter how far you separate the walls, the minimum voltage-pressure gradient you can get is still set by the zeta potential.
+    \begin{figure}
+        \centering
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_71um_out}
+        \caption{\label{fig:VvsP_71um}Graph showing the voltage output with applied pressure differential across a \SI{71}{\micro\metre} glass micro-channel (\SI{44}{\milli\volt} offset added)}
+    \end{figure}
 
-    Measurement of the output power generated by the \SI{71}{\micro\meter} streaming cell are promising.
-    From this measurement the power transfer curve is evident.
-    Referring back to the model presented as \cref{fig:StreamingCell_Schematic-representation}, we can now calculate the channels internal electrical resistance ($R_{cell}$).
-    We know from the graph that the maximum power transfer occurred at a current of \SI{33.5}{\nano\ampere} with a streaming voltage of \SI{182}{\milli\volt}.
-    Via Ohm's law this equates to a load resistance ($R_{out}$) of \SI{5.43}{\mega\ohm}, which from the maximum power theorem we know must be equal to the cells internal resistance.
+    \begin{figure}
+        \centering
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_75um_out}
+        \caption{\label{fig:VvsP_75um}Graph showing the voltage output with applied pressure differential across a \SI{75}{\micro\metre} glass micro-channel (\SI{20}{\milli\volt} offset added)}
+    \end{figure}
+
+    \begin{figure}
+        \centering
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_106um_out}
+        \caption{\label{fig:VvsP_106um}Graph showing the voltage output with applied pressure differential across a \SI{106}{\micro\metre} glass micro-channel (\SI{56}{\milli\volt} offset added)}
+    \end{figure}
+
+    \begin{figure}
+        \centering
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_125um_out}
+        \caption{\label{fig:VvsP_125um}Graph showing the voltage output with applied pressure differential across a \SI{125}{\micro\metre} glass micro-channel (\SI{5}{\milli\volt} offset added)}
+    \end{figure}
+
+    \begin{figure}
+        \centering
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_161um_out}
+        \caption{\label{fig:VvsP_161um}Graph showing the voltage output with applied pressure differential across a \SI{161}{\micro\metre} glass micro-channel (\SI{23}{\milli\volt} offset added)}
+    \end{figure}
+
+    \begin{figure}
+        \centering
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_178um_out}
+        \caption{\label{fig:VvsP_178um}Graph showing the voltage output with applied pressure differential across a \SI{178}{\micro\metre} glass micro-channel (\SI{13}{\milli\volt} offset added)}
+    \end{figure}
+
+    \begin{figure}
+        \centering
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_voltVsPress_245um_out}
+        \caption{\label{fig:VvsP_245um}Graph showing the voltage output with applied pressure differential across a \SI{245}{\micro\metre} glass micro-channel (\SI{27}{\milli\volt} offset added)}
+    \end{figure}
+
+    \Crefrange{fig:VvsP_26um}{fig:VvsP_245um} show adjusted results of streaming voltage measurements from each of the ten cells.
+    They represent the first successful measurements I had made of streaming cells.
+    During these measurements three cells burst under pressure; two were dropped and subsequently shattered; and one suffered epoxy failure, loosing its acrylic base plate.
+
+    No measurements of flow rate or output current were made during these early experiments.
+    As a result they reveal very little about the efficiency of the cells themselves.
+    We cannot determine either the mechanical energy put into the cells, nor the output power available.
+    However, we can relate these measurements to those made by Gu and Li; as will be shown and discussed shortly.
+
+    \begin{figure}
+        \centering
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/graph_streamingVoltageGradient_vs_height_noCorrection}
+        \caption{\label{fig:streamingCell_all_unadjusted}Plot showing un-adjusted streaming voltages versus applied pressure.}
+    \end{figure}
+
+    \begin{figure}
+        \centering
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/graph_streamingVoltageGradient_vs_height}
+        \caption{\label{fig:streamingCell_all_adjusted}Plot showing adjusted streaming voltages versus applied pressure.}
+    \end{figure}
+
+    \begin{figure}
+        \centering
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/streamingCell_slopeVsChannelHeight}
+        \caption{\label{fig:streamingCell_scatter_voltGradVsHeight}Scatter plot of voltage/pressure gradient versus channel height for each of the measured channels.}
+    \end{figure}
+
+    \Cref{fig:VvsP_56um} required an offset adjustment of \SI{405}{\milli\volt} before its slope gave a \SI{0}{\milli\volt} intercept.
+    This indicates that the electrodes were highly polarised by the time the measurements were made.
+    This effect is especially evident in \cref{fig:streamingCell_all_unadjusted}, where each of the traces have been placed on a single graph.
+
+    Some of the traces exhibit a certain amount of `jitter' in their pressure-to-voltage gradients.
+    This is likely due to the time difference between adjacent measurement points.
+    Measurement points were not taken monotonically, instead being extracted from a number of pressure cycles.
+
+    The effect of adding the offset adjustments is visible in \cref{fig:streamingCell_all_adjusted}.
+    These adjustments bring all of the slopes together so the origin sits at \SI{0}{\volt\per\pascal}.
+
+    \Cref{fig:streamingCell_scatter_voltGradVsHeight} shows the streaming voltage to pressure gradients versus channel height.
+    This data has been taken from the previous graph (\cref{fig:streamingCell_all_adjusted})) to show the response as a function of channel height.
 
 
-  \subsection{Conclusion}
+  \subsection{Output power versus load resistance}
 
 
-    Conversion of mechanical pumping into electrical energy can be done with narrowly separated plates of glass.
-    The conversion efficiency seen here was low, much lower than reported in the literature.
-    A channel \SI{1}{\centi\meter} by \SI{3}{\centi\meter} by \SI{71}{\micro\meter} produced \SI{1.5}{\nano\watt} under a pressure differential of \SI{260}{\kilo\pascal}.
-    That took \SI{359}{\milli\watt} of pumping power to produce, yielding an efficiency in the order of \SI{0.1}{\micro\percent}.
-    Precision engineering, with regards to cell construction, will likely lead to greater efficiency.
-    This is based on reports from the literature, where higher efficiency channels utilised much narrower channels.
+    \begin{figure}
+        \centering
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/graph_streamingCell_outputPower_resistanceSweep}
+        \caption{\label{fig:streamingCell_maxPower}Plot of output power versus effective load resistance for a \SI{71}{\micro\metre} high channel at a pressure of \SI{260}{\kilo\pascal}.}
+    \end{figure}
 
-    Measurements of ten streaming cells were compared to the results published by Gu and Li.
-    The linear relationship of Gu and Li between channel height and their plotted parameter could not be reproduced.
-    Instead, results showed a highly non-linear relationship as shown in~\cref{fig:streamingCell_scatter_Gu_Li}.
-    The gradient of measurement points within the range of channel heights measured by Gu and Li is reversed.
-    The reason for the discrepancy is not clear.
+    \Cref{fig:streamingCell_maxPower} shows the characteristic power curve of a the \SI{71}{\micro\meter} high streaming cell channel.
+    Pressure fluctuations near the end of the experiment are due to usage of the departments water system.
+    Their effect is visible in both the streaming voltage and output power traces, highlighting the strong coupling to applied pressure.
 
-    Streaming voltage is linear with the applied pressure.
-    This could potentially be useful as a means of sensing water flow rates.
-    A dual purpose such as power sourcing and flow measurement lends itself well to water metering applications.
+    The maximum power delivered by the cell was \SI{1.52}{\nano\watt}, corresponding to a current draw of \SI{33.5}{\nano\ampere} with a streaming voltage of \SI{182}{\milli\volt}.
+    Generating this power required \SI{260}{\kilo\pascal} of pressure, resulting in a flow rate of \SI{2.05}{\milli\litre\per\second}.
+    This equates to \SI{539}{\milli\watt} of pumping power lost to the device and therefore an energy conversion efficiency of \SI{0.28}{\micro\percent}.
+
+
+\section{Discussion}
+  \label{sect:part1_energyHarvesting_discussion}
+
+
+  Initial measurements of streaming voltage revealed that the output voltage is directly proportional to applied pressure.
+  Containing pressures reaching \SI{260}{\kilo\pascal} within glass structures is difficult.
+
+  Comparing the streaming voltage measurements taken from each of the ten cells to the measurements make by Gu and Li yielded surprising results.
+  In their paper~\cite{Gu2000}, they determined the zeta potential ($\zeta$) and surface conductivity ($\lambda$) by plotting measurements and fitting a linear equation to their data.
+  The use the y-intercept of the resulting line to give the inverse zeta potential and the slope of the line gave information about the surface conductivity.
+
+  \begin{figure}
+      \centering
+      \includegraphics{content/pt1/01-PowerHarvesting/graphics/GuLi_DIUF}
+      \caption{\label{fig:Gu_Li_comparison_DUIF}Measured data from Gu and Li's paper on streaming cells relating the streaming voltage and pressure differential to the channel height with distilled water as the working fluid}
+  \end{figure}
+
+  \begin{figure}
+      \centering
+      \includegraphics{content/pt1/01-PowerHarvesting/graphics/GuLi_NaCl}
+      \caption{\label{fig:Gu_Li_comparison_NaCl}Measured data from Gu and Li's paper on streaming cells relating the streaming voltage and pressure differential to the channel height with a \SI{1}{\milli\mole} sodium chloride solution as the working fluid}
+  \end{figure}
+
+  Their results for three streaming cells are shown here (taken from \cite{Gu2000}) as \cref{fig:Gu_Li_comparison_DUIF,fig:Gu_Li_comparison_NaCl}.
+  The first (\cref{fig:Gu_Li_comparison_DUIF}) shows measurements when distilled water is used as the working fluid; the second (\cref{fig:Gu_Li_comparison_NaCl}) shows the measurements for a weak saline solution.
+  It is interesting to note that they have what looks to be fairly linear data, although it is hard to tell with only three channel sizes.
+
+  \begin{figure}
+      \centering
+      \includegraphics{content/pt1/01-PowerHarvesting/graphics/graph_streamingComparison_gu}
+      \caption{\label{fig:streamingCell_scatter_Gu_Li}Scatter plot with results of streaming cell measurements in terms of those made by Gu and Li~\cite{Gu2000} (for comparison).}
+  \end{figure}
+
+  By comparison, \cref{fig:streamingCell_scatter_Gu_Li} plots the same variables from measurements taken from the ten streaming cells fabricated here.
+  In this graph $\lambda{b}$ has been replaced with $\sigma$, where both refer to the bulk conductivity of the solution; and $E_{s}$ has been replaced with $V_{s}$, were both refer to the streaming potential.
+  The response to variation of channel height is clearly non-linear.
+  Their method of finding the zeta potential rests on the following rearrangement:
+  \begin{eqnarray}
+      \frac{\varepsilon_{r}\varepsilon_{0}\Delta P}{\mu V_{s}\sigma} = \frac{1}{\zeta} + \left( \frac{2\,\lambda}{\zeta \sigma}\right)\,\frac{1}{\delta}
+  \end{eqnarray}
+  where $\lambda$ is the surface conductivity and $\delta$ is the channel height.
+  So as the channel height ($\delta$) tends to infinity, the left hand side tends toward the zeta potential ($\zeta$).
+  This notion seems counter intuitive since the zeta potential is defined at the plane of sheer (as shown in \cref{fig:doubleLayer_anatomy}), relative to the solution bulk.
+  The equation is stating that no-matter how far you separate the walls, the minimum voltage-pressure gradient you can get is still set by the zeta potential.
+
+  Measurement of the output power generated by the \SI{71}{\micro\meter} streaming cell are promising.
+  From this measurement the power transfer curve is evident.
+  Referring back to the model presented as \cref{fig:StreamingCell_Schematic-representation}, we can now calculate the channels internal electrical resistance ($R_{cell}$).
+  We know from the graph that the maximum power transfer occurred at a current of \SI{33.5}{\nano\ampere} with a streaming voltage of \SI{182}{\milli\volt}.
+  Via Ohm's law this equates to a load resistance ($R_{out}$) of \SI{5.43}{\mega\ohm}, which from the maximum power theorem we know must be equal to the cells internal resistance.
+
+
+\section{Concluding remarks}
+  \label{sect:part1_energyHarvesting_conclusion}
+
+  Conversion of mechanical pumping into electrical energy can be done with narrowly separated plates of glass.
+  The conversion efficiency seen here was low, much lower than reported in the literature.
+  A channel \SI{1}{\centi\meter} by \SI{3}{\centi\meter} by \SI{71}{\micro\meter} produced \SI{1.5}{\nano\watt} under a pressure differential of \SI{260}{\kilo\pascal}.
+  That took \SI{359}{\milli\watt} of pumping power to produce, yielding an efficiency in the order of \SI{0.1}{\micro\percent}.
+  Precision engineering, with regards to cell construction, will likely lead to greater efficiency.
+  This is based on reports from the literature, where higher efficiency channels utilised much narrower channels.
+
+  Measurements of ten streaming cells were compared to the results published by Gu and Li.
+  The linear relationship of Gu and Li between channel height and their plotted parameter could not be reproduced.
+  Instead, results showed a highly non-linear relationship as shown in~\cref{fig:streamingCell_scatter_Gu_Li}.
+  The gradient of measurement points within the range of channel heights measured by Gu and Li is reversed.
+  The reason for the discrepancy is not clear.
+
+  The streaming voltage was found to scale linearly with the applied pressure.
+  This could potentially be useful as a means of sensing water flow rates.
+  A dual purpose such as power sourcing and flow measurement lends itself well to water metering applications.
