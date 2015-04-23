@@ -373,7 +373,7 @@ This estimation will reveal how much further the cells built earlier would need 
       The operation of an electronic water meter may require that analogue-to-digital conversions are made.
       Measuring the amount of energy consumed per conversion was done in much the same way as the previous tests.
       Each of the chips had similar converters feature-wise.
-      Results form the measurements are presented as \creffig:Energy-consumed-ADC}.
+      Results form the measurements are presented as \cref{fig:Energy-consumed-ADC}.
 
       \begin{figure}
         \centering
@@ -385,15 +385,88 @@ This estimation will reveal how much further the cells built earlier would need 
   \section{Wireless Transmission}
 
     Because water meters are typically installed in remote areas where grid connection is unavailable, data must be collected via wireless interface.
-    In Hamilton, one energy provider (Well Energy Networks) has
+    In Hamilton, a major utility provider has established a wireless mesh network between smart electricity meters installed in residential homes.
+    That network utilises ZigBee wireless transceivers, making ZigBee an convenient choice for transmitting water metering data \cite{MalcolmSouness-WELNetworks2012}.
+    Two types of wireless transmitters were chosen for energy measurement, a HOPE RF RFM12B transceiver and a Digi International Xbee Series 2 transceiver.
+    The power consumption versus time during a wake, send one hundred and sixty bytes, and power down cycle was captured for both transceivers.
+    By integrating the area under this curve the total energy consumed per transmission is found.
+    The transmitters were kept \SI{1}{\meter} from there receivers with no obstructions between them.
+    This represents ideal transmission conditions, something that our electronic water meter is very unlikely to encounter.
+    The actual RF reception between a base station and installed meter will vary greatly between installations and weather conditions.
+    For example, wet ground is likely to obstruct RF transmission due to the transmitter being shielded by a more conductive medium.
+    Instead of trying to quantify the energy required in those situations, the best case was measured and an estimate of the worst case is estimated to be one hundred times larger.
+    The transmit power can increase by a factor of 320 for the RFM module, however the transmit power only represents a proportion of total power usage.
+    The modules must power up, start their internal oscillators, receive the data to be transmitted and then transmit.
+    I estimate that the difference between the lowest and the highest total power consumption, based on reception alone, will be a factor of 50-100.
+
     \begin{figure}
       \centering
       \includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_RFMPower.pdf}
-      \caption{\label{fig:Energy-consumed-ADC}Power draw from a HopeRF RFM12B transceiver module.}
+      \caption{\label{fig:Energy-consumed-RFM12B}Power draw from a HopeRF RFM12B transceiver module.}
     \end{figure}
 
     \begin{figure}
       \centering
       \includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_XbeePower.pdf}
-      \caption{\label{fig:Energy-consumed-ADC}Power draw from a Digi International Xbee Series 2 transceiver module.}
+      \caption{\label{fig:Energy-consumed-XBee}Power draw from a Digi International Xbee Series 2 transceiver module.}
     \end{figure}
+
+    The RFM12B was operated at 433MHz, a frequency that is expected to increase the transmission through walls and soil.
+    It has a maximum output power of \SI{5}{\decibel m} (\SI{3.2}{\milli\watt}) at this frequency.
+    The Xbee has a maximum output power of \SI{0}{\decibel m} (\SI{1}{\milli\watt}) and operates at \SI{2.4}{\giga\hertz}.
+    \Cref{fig:Energy-consumed-RFM12B, fig:Energy-consumed-Xbee} show the captured power consumption during the tests.
+    The RFM12B used about half as much energy sending the same packed of data as the Xbee.
+    Combined with its ability to operate at 433 MHz, the RFM12B is a sensible choice for the electronic water meter.
+    In total the RFM consumed \SI{6.71}{\milli\joule} and the Xbee consumed \SI{12.3}{\milli\joule}.
+    Adjusting these figures for the worst case (multiplying by one hundred) gives \SI{671}{\milli\joule} for the RFM12B and \SI{1.23}{\joule} for the Xbee.
+
+  \section{Total Energy Requirements}
+
+    A crude estimation of an electronic water meter's microprocessor event loop is as follows.
+    \begin{enumerate}
+      \item Sleep for 1 second
+      \item Execute 1000 instructions
+      \item Make 2 analouge conversions
+      \item Write 2 bytes to non-volatile memory
+    \end{enumerate}
+    This would allow the microprocessor to watch the display of a mechanical water meter and store the readings.
+    This loop would occupy approximately one second, so it will occur 86400 times per day.
+    Every so often the collected data would need to be transmitted, a potentially costly exercise in terms of energy usage.
+    On top of the previously stated event loop is a data transmission loop which would execute every six hours.
+    \begin{enumerate}
+      \item Execute 1000000 instructions (Data compression)
+      \item Power up and transmit 160 bytes of using RF transceiver
+      \item Write 10 bytes to non-volatile memory
+    \end{enumerate}
+
+    \begin{table}
+      \centering
+      \begin{tabular}{|l|l|l|l|}
+        \hline
+        Mode & Count & Unit & Energy \\ \hline
+        Sleep & 1 & seconds & \SI{97.4}{\nano\joule} \\
+        Processing & 1000 & instructions & \SI{1.14}{\micro\joule} \\
+        ADC & 2 & conversions & \SI{2.56}{\nano\joule} \\
+        EEPROM & 2 & bytes & \SI{79.0}{\micro\joule} \\ \hline \hline
+        &&Total (per day) & \SI{6.93}{\joule} \\ \hline
+      \end{tabular}
+      \caption{\label{tab:EnergyBudget-EventLoop}Daily energy expenditure of basic processing functionality}
+    \end{table}
+
+    \begin{table}
+      \centering
+      \begin{tabular}{|l|l|l|l|}
+        \hline
+        Mode & Count & Unit & Energy \\ \hline
+        Processing & 1000000 & instructions & \SI{1.14}{\milli\joule} \\
+        Transmit & 160 & bytes & \SI{1.23}{\joule} \\
+        EEPROM & 10 & bytes & \SI{394}{\micro\joule} \\ \hline \hline
+        &&Total (per day) & \SI{4.93}{\joule} \\ \hline
+      \end{tabular}
+      \caption{\label{tab:EnergyBudget-Transmission}Daily energy expenditure to transmit 160 characters every six hours}
+    \end{table}
+
+    \Cref{tab:EnergyBudget-EventLoop,tab:EnergyBudget-Transmission} combine the measurements and estimates form the previous sections with the event loop estimation.
+    They show that approximately \SI{12}{\joule} would be consumed per day by an electronic water meter.
+    It was shown in \cref{sect:part1-WirelessWaterMeter-QuantifyingHarvestableEnergy} that \SI{280}{\joule} of energy is already dissipated in a mechanical water meter per day.
+    This equates to a conversion efficiency of \SI{4.28}{\percent}, which would be the minimum efficiency required to run the meter continuously.
