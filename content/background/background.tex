@@ -432,3 +432,30 @@
 
 \section{Impedance Modelling}
   \label{sect:background_impedanceModelling}
+
+  Most electronic components have well defined characteristics, such as impedance.
+  This allows for the creation of circuit simulation tools, such as SPICE, that can accurately predict how a circuit will behave based on its description.
+  There are some situations that are not so well defined, meaning they can not be entered into circuit simulators.
+  One such situation is when electrodes are inserted into an electrolyte.
+  This would require the simulator to calculate the impedance through the electrolyte, but how do you calculate the impedance of an electrolyte bath?
+
+  It turns out that this is an important to the designers of medical implant devices.
+  Saluda Medical is a young company based in Sydney, Australia, developing stimulator implants.
+  Their engineers have designed a stimulator fit for human implantation.
+  The problem they faced is predicting the electrical impedance that their implant would see once implanted.
+  Getting it wrong could mean the microchip they designed may `latch up'.
+  This can occur when one or more pins on a chip goes higher than the supply voltage.
+  When this happens, those pins that went above the supply voltage will get stuck on.
+  The only way to turn them off again is to power down the entire chip.
+  In an implanted setting this is potentially lethal.
+  Naturally, Saluda wanted a way to model the impedance of electrodes implanted into a human spinal cavity.
+  This involves modelling the electrode/electrolyte interface itself, a central idea in interface science.
+
+  \begin{figure}
+    \begin{center}
+      \includegraphics{content/introduction/graphics/interface}
+    \end{center}
+    \caption{Diagram of an liquid-solid interface showing various types of molecule configurations, surface imperfections and polar molecules. Based on the work of Bard et al. \cite{Bard1993}}
+    \label{fig:interface}
+  \end{figure}
+
