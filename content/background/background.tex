@@ -433,12 +433,6 @@
 \section{Impedance Modelling}
   \label{sect:background_impedanceModelling}
 
-  Most electronic components have well defined characteristics, such as impedance.
-  This allows for the creation of circuit simulation tools, such as SPICE, that predict how a circuit will behave based on its description.
-  Some electronic situations are not so well defined, meaning they can not be entered into circuit simulators.
-  One such situation is when electrodes are inserted into an electrolyte.
-  This would require the simulator to calculate the impedance through the electrolyte, but how do you calculate the impedance of an electrolyte bath?
-
   \begin{figure}
     \begin{center}
       \includegraphics{content/introduction/graphics/interface}
@@ -447,19 +441,36 @@
     \label{fig:interface}
   \end{figure}
 
-  This is an important question to the designers of medical implant devices.
-  Saluda Medical is a young company based in Sydney, Australia, developing stimulator implants.
-  Their engineers have designed a stimulator fit for human implantation.
-  The problem they faced is predicting the electrical impedance that their implant will see once implanted.
+  Most electronic components have well defined characteristics, such as impedance.
+  This allows for the creation of circuit simulation tools, such as SPICE, that predict how a circuit will behave based on its description.
+  Some electronic situations are not so well defined, meaning they can not be entered into circuit simulators.
+  One such situation is when electrodes are inserted into an electrolyte.
+  This would require the simulator to calculate the impedance through the electrolyte, but how do you calculate the impedance of an electrolyte bath?
+
+  In \cref{sect:background_doubleLayers}, illustrations of double layers were presented showing that the interface is comprised of layers.
+  A more realistic illustration of a solid-liquid layer is shown in \cref{fig:interface}.
+  It shows interactions between polar molecules, between polar molecules and ions, surfactants at the interface, an imperfect solid/liquid boundary, and the the Stern layer.
+  The complexity of interactions that happen at the interface are what make is so difficult to model.
+  Additional to the interface's impedance is the geometry of the electrodes and the properties of the electrolyte.
+
+
+  \begin{figure}
+    \begin{center}
+      \includegraphics{content/introduction/graphics/StJudeOctrode}
+    \end{center}
+    \caption{Drawing of an eight electrode array used for spinal stimulation. The electrode is called an Octrode and is made by St. Jude Medical.}
+    \label{fig:octrode}
+  \end{figure}
+
+  To the designers of medical implant devices, estimating the impedance of electrodes in an electrolyte is critical for safe stimulator design.
+  Saluda Medical is a young company based in Sydney, Australia, developing implantable spinal stimulators.
+  Their engineers have designed a stimulator fit for human implantation, but are unsure of the electrical impedance that their implant will see once implanted.
   Getting it wrong could mean their microchip may `latch up'.
   This occurs when one or more pins on a chip goes higher than the supply voltage.
   When this happens, those pins that went above the supply voltage will get stuck on and the only way to turn them off again is to power down the entire chip.
   In an implanted setting this is potentially lethal.
   Naturally, Saluda want a way to model the impedance of electrodes implanted into a human spinal cavity.
   This involves modelling the electrode/electrolyte interface itself, a central idea in interface science.
-  In \cref{sect:background_doubleLayers}, illustrations of double layers were presented that showed how the interface is comprised of layers.
-  A more realistic illustration of a double layer is shown in \cref{fig:interface}.
-  This version shows some interactions between polar molecules and themselves
-
-
-
+  \Cref{part:doubleLayersOnConductors} of this thesis looks at ways of doing that using a model of the interface itelf.
+  Such a model is suitable for entry into common circuit simulators, such as SPICE, that electronic engineers already use.
+  
