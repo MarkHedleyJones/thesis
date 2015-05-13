@@ -6,9 +6,10 @@
   It is compact in the sense that it requires a minimum number of parameters to simulate the interface between a given electrolyte and an electrode.
   The entire model, from `wire in' to `wire out', is broken into two parts.
   The first part is the interface itself, in which the effects of the double layer and polar reorientation are encapsulated.
+  In order to use the interface model
   The second part models the resistivity of the bulk of the electrolyte as measured between any pair of electrodes.
   This is necessary to replicate the resistances seen between electrodes and does not include any effects of the interface itself.
-  The model was developed specifically to calculate the impedance between the electrodes of an eight electrode array, such as is used in spinal cord stimulation.
+  The interface model and its accompanying resistive mesh was developed specifically to calculate the impedance between the electrodes of an eight electrode array, such as is used in spinal cord stimulation.
 
   \begin{figure}
     \centering
@@ -21,19 +22,56 @@
   The array has eight platinum wires that run through the cable to each of the electrodes.
   This electrode was used through the remainder of this thesis and is the electrode used by Saluda in medical trials of their stimulators.
 
+  \begin{figure}
+    \centering
+    \includegraphics{content/pt2/07-InterfaceModel/graphics/interfaceSchematic}
+    \caption{\label{fig:pt2-interfaceSchematic}Electrical schematic of the electrode-electrolyte interface}
+  \end{figure}
 
-  \subsection{Inter-electrode resistivity}
+  The Scott-Single interface is modelled by the circuit shown in \cref{fig:pt2-interfaceSchematic}.
+  Each of the components and their functions will be explained in the coming sections.
+  It is important to realise that this model only represents a single interface between metal and electrolyte.
+  By itself it is incapable of simulating any useful electrode/electrolyte system.
+  For that, a minimum of two interfaces must be used - one as a cathode and one as an anode.
+  Additionally, some model of the electrolyte resistivity needs to connect the two interfaces.
 
   \begin{figure}
     \centering
-    \includegraphics{content/pt2/07-InterfaceModel/graphics/electrodeInterface_nonMemristive}
-    \caption{\label{fig:pt2-electrodeInterface_nonMemristive}Electrical schematic of the electrode-electrolyte interface}
+    \includegraphics{content/pt2/07-InterfaceModel/graphics/simpleElectrodeElectrolyteModel}
+    \caption{\label{fig:pt2-simpleElectrodeElectrolyteModel}Connection diagram of two interface models connected together by the resistivity of an electrolyte solution.}
   \end{figure}
 
-  \subsection{The interface}
-    \subsubsection{Constant phase element}
-    \subsubsection{Faradaic current}
-    \subsubsection{Species depletion}
+  \Cref{fig:pt2-simpleElectrodeElectrolyteModel} shows the smallest/simplest use of the interface model.
+  This configuration represents two electrodes placed in an electrolyte solution.
+  It allows simulation of impedance between those electrodes and can be connected to other electronic circuits.
+  A model like this is only valid for a two electrode system.
+  Because the electrode array in our application has eight electrodes, the model is more complex.
+  In full, that model will have eight electrode interfaces and a resistor network connecting each interface.
+
+
+
+
+
+
+  \subsection{The interface model}
+    \subsubsection{Constant phase element: Polar effects}
+    \subsubsection{Diodes: Surface reactions}
+    \subsubsection{Memristors: Species depletion}
+
+  \subsection{Inter-electrode resistivity}
+
+
+  % \begin{figure}
+  %   \centering
+  %   \includegraphics{content/pt2/07-InterfaceModel/graphics/interfaceSchematic_noMemristive}
+  %   \caption{\label{fig:pt2-interfaceSchematic_noMemristive}Electrical schematic of the electrode-electrolyte interface with the memristors omitted}
+  % \end{figure}
+
+  % Figure \cref{fig:pt2-interfaceSchematic_noMemristive} shows a simplified version of the interface model.
+  % It is simplified in that it does not include the memristors of the original model.
+  % A memristor is a relatively new type of electronic device which hasn't made it to consumer electronics yet.
+  % It behaves like a resistor that alters it's resistance depending on the sum of current that it passes.
+
 \section{Methods of Parameter Extraction}
   \subsection{Resistivity and constant phase element}
   \subsection{Faradaic currents}

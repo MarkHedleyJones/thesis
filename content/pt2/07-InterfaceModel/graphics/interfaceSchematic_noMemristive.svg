@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="278.64359"
-   height="181.56097"
+   width="222.91487pt"
+   height="145.57375pt"
    id="svg6826"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4252813"
-     inkscape:cx="199.25902"
-     inkscape:cy="-6.9456079"
+     inkscape:zoom="2.0156521"
+     inkscape:cx="110.32671"
+     inkscape:cy="-38.259611"
      inkscape:document-units="px"
      inkscape:current-layer="g4052"
      showgrid="true"
@@ -35,10 +35,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1790"
-     inkscape:window-height="1068"
+     inkscape:window-width="1280"
+     inkscape:window-height="1376"
      inkscape:window-x="0"
-     inkscape:window-y="54"
+     inkscape:window-y="27"
      inkscape:window-maximized="0"
      showguides="true"
      inkscape:snap-bbox="true"
@@ -59,7 +59,7 @@
        enabled="true"
        snapvisiblegridlinesonly="true"
        originx="-9.6782065"
-       originy="-883.42544" />
+       originy="-883.42553" />
   </sodipodi:namedview>
   <metadata
      id="metadata6831">
@@ -77,7 +77,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-9.6782065,12.624206)">
+     transform="translate(-9.6782065,13.030495)">
     <g
        id="g7002"
        transform="translate(-86.307076,-316.7899)">
@@ -150,7 +150,7 @@
            sodipodi:nodetypes="cc" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.75948811px;line-height:125%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:13.75px;line-height:125%;font-family:'Palladio URW';-inkscape-font-specification:'Palladio URW Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
            x="274.18445"
            y="380.51352"
            id="text6240-4-2"
@@ -160,7 +160,7 @@
              id="tspan6242-2-3"
              x="274.18445"
              y="380.51352">R<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.75948811px;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L';baseline-shift:sub"
+   style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:13.75px;font-family:'Palladio URW';-inkscape-font-specification:'Palladio URW Medium';baseline-shift:sub"
    id="tspan6244-5-6">s</tspan></tspan></text>
         <path
            style="fill:none;stroke:#000000;stroke-width:0.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -188,7 +188,7 @@
            sodipodi:nodetypes="cccc" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.75948811px;line-height:125%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:13.75px;line-height:125%;font-family:'Palladio URW';-inkscape-font-specification:'Palladio URW Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
            x="157.78111"
            y="313.22202"
            id="text6334-1-7"
@@ -199,7 +199,7 @@
              x="157.78111"
              y="313.22202">D<tspan
    id="tspan7159"
-   style="font-size:13.75948811px;baseline-shift:sub">a</tspan></tspan></text>
+   style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:13.75px;font-family:'Palladio URW';-inkscape-font-specification:'Palladio URW Medium';baseline-shift:sub">a</tspan></tspan></text>
         <path
            style="fill:none;stroke:#000000;stroke-width:0.99999988;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            d="m 153.03054,383.88209 0,45.03881"
@@ -257,7 +257,7 @@
            inkscape:connector-curvature="0" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.75948811px;line-height:125%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:13.75px;line-height:125%;font-family:'Palladio URW';-inkscape-font-specification:'Palladio URW Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
            x="154.09158"
            y="374.75958"
            id="text6240-0-0-0"
@@ -267,35 +267,32 @@
              id="tspan6242-3-0-4"
              x="154.09158"
              y="374.75958">CPE</tspan></text>
-        <g
-           transform="matrix(1.2506469,0,0,1.2510785,-47.457002,-97.973398)"
-           id="g3077">
-          <path
-             inkscape:connector-curvature="0"
-             id="path3198-5-7-1"
-             d="m 163.30708,450.15209 0,16"
-             style="fill:none;stroke:#000000;stroke-width:0.79944825;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-             sodipodi:nodetypes="cc" />
-          <path
-             sodipodi:nodetypes="cccc"
-             inkscape:connector-curvature="0"
-             id="path3200-87-5-9"
-             d="m 163.30708,458.15209 16.00001,-8 0,16 z"
-             style="fill:#000000;stroke:#000000;stroke-width:0.55961412;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-          <text
-             sodipodi:linespacing="125%"
-             id="text6334-0-1-7"
-             y="438.71606"
-             x="164.44989"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:125%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-             xml:space="preserve"><tspan
-               y="438.71606"
-               x="164.44989"
-               id="tspan6336-2-0-1"
-               sodipodi:role="line">D<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L';baseline-shift:sub"
-   id="tspan7153">b</tspan></tspan></text>
-        </g>
+        <path
+           sodipodi:nodetypes="cc"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 156.78249,465.2022 0,20.01726"
+           id="path3198-5-7-1"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:#000000;stroke:#000000;stroke-width:0.70000041;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 156.78249,475.21083 20.01036,-10.00863 0,20.01726 z"
+           id="path3200-87-5-9"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccc" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:13.75px;line-height:125%;font-family:'Palladio URW';-inkscape-font-specification:'Palladio URW Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+           x="158.23904"
+           y="450.81705"
+           id="text6334-0-1-7"
+           sodipodi:linespacing="125%"
+           transform="scale(0.99982749,1.0001725)"><tspan
+             sodipodi:role="line"
+             id="tspan6336-2-0-1"
+             x="158.23904"
+             y="450.81705">D<tspan
+   id="tspan7153"
+   style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:13.75px;font-family:'Palladio URW';-inkscape-font-specification:'Palladio URW Medium';baseline-shift:sub">b</tspan></tspan></text>
       </g>
     </g>
   </g>
