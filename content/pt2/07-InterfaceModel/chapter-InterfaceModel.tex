@@ -28,35 +28,33 @@
     \caption{\label{fig:pt2-interfaceSchematic}Electrical schematic of the electrode-electrolyte interface}
   \end{figure}
 
-  The Scott-Single interface is modelled by the circuit shown in \cref{fig:pt2-interfaceSchematic}.
-  Each of the components and their functions will be explained in the coming sections.
-  It is important to realise that this model only represents a single interface between metal and electrolyte.
-  By itself it is incapable of simulating any useful electrode/electrolyte system.
-  For that, a minimum of two interfaces must be used - one as a cathode and one as an anode.
-  Additionally, some model of the electrolyte resistivity needs to connect the two interfaces.
-
-  \begin{figure}
-    \centering
-    \includegraphics{content/pt2/07-InterfaceModel/graphics/simpleElectrodeElectrolyteModel}
-    \caption{\label{fig:pt2-simpleElectrodeElectrolyteModel}Connection diagram of two interface models connected together by the resistivity of an electrolyte solution.}
-  \end{figure}
-
-  \Cref{fig:pt2-simpleElectrodeElectrolyteModel} shows the smallest/simplest use of the interface model.
-  This configuration represents two electrodes placed in an electrolyte solution.
-  It allows simulation of impedance between those electrodes and can be connected to other electronic circuits.
-  A model like this is only valid for a two electrode system.
-  Because the electrode array in our application has eight electrodes, the model is more complex.
-  In full, that model will have eight electrode interfaces and a resistor network connecting each interface.
-
-
-
-
-
-
   \subsection{The interface model}
-    \subsubsection{Constant phase element: Polar effects}
-    \subsubsection{Diodes: Surface reactions}
-    \subsubsection{Memristors: Species depletion}
+
+    The Scott-Single interface is modelled by the circuit shown in \cref{fig:pt2-interfaceSchematic}.
+    Each of the components and their functions will be explained in the coming sections.
+    It is important to realise that this model only represents a single interface between metal and electrolyte.
+    By itself it is incapable of simulating any useful electrode/electrolyte system.
+    For that, a minimum of two interfaces must be used - one as a cathode and one as an anode.
+    Additionally, some model of the electrolyte resistivity needs to connect the two interfaces.
+
+    \begin{figure}
+      \centering
+      \includegraphics{content/pt2/07-InterfaceModel/graphics/simpleElectrodeElectrolyteModel}
+      \caption{\label{fig:pt2-simpleElectrodeElectrolyteModel}Connection diagram of two interface models connected together by the resistivity of an electrolyte solution.}
+    \end{figure}
+
+    \Cref{fig:pt2-simpleElectrodeElectrolyteModel} shows the smallest/simplest use of the interface model.
+    This configuration represents two electrodes placed in an electrolyte solution.
+    It allows simulation of impedance between those electrodes and can be connected to other electronic circuits.
+    A model like this is only valid for a two electrode system.
+    Because the electrode array in our application has eight electrodes, the model is more complex.
+    In full, that model will have eight electrode interfaces and a resistor network connecting each interface.
+
+
+    \subsubsection{Polar effects: Constant phase element}
+
+    \subsubsection{Surface reactions: diodes}
+    \subsubsection{Species depletion: memristors}
 
   \subsection{Inter-electrode resistivity}
 
