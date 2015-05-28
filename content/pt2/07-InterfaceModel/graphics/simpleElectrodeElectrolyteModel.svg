@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="286pt"
-   height="40.550671pt"
-   viewBox="0 0 357.50001 50.688337"
+   width="285.99997pt"
+   height="64.799995pt"
+   viewBox="0 0 357.49997 80.999992"
    id="svg4199"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -25,12 +25,12 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.1988627"
-     inkscape:cx="189.81592"
-     inkscape:cy="-41.197329"
+     inkscape:zoom="3.1096615"
+     inkscape:cx="184.35721"
+     inkscape:cy="-2.3290147"
      inkscape:document-units="px"
      inkscape:current-layer="g4953"
-     showgrid="true"
+     showgrid="false"
      units="pt"
      inkscape:object-paths="true"
      inkscape:snap-intersection-paths="true"
@@ -52,8 +52,8 @@
     <inkscape:grid
        type="xygrid"
        id="grid4849"
-       originx="-43.750001"
-       originy="-719.93662" />
+       originx="-43.749999"
+       originy="-714.49999" />
   </sodipodi:namedview>
   <metadata
      id="metadata4204">
@@ -71,9 +71,33 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-43.75,-281.73725)">
+     transform="translate(-43.75,-256.86225)">
     <g
        id="g4953">
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:1, 2;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4150"
+         width="225"
+         height="80.000008"
+         x="110"
+         y="257.36224"
+         rx="2"
+         ry="2" />
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.25;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4146"
+         width="80"
+         height="30"
+         x="70"
+         y="282.36224" />
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.25;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4146-1"
+         width="80"
+         height="30"
+         x="-375"
+         y="282.36227"
+         transform="scale(-1,1)" />
       <path
          style="fill:none;stroke:#000000;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 150,297.3622 50,1e-5"
@@ -88,31 +112,24 @@
          sodipodi:nodetypes="cccccccc" />
       <text
          id="text4913"
-         y="302.22974"
-         x="83.417923"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:13.75px;font-family:'Palladio URW';-inkscape-font-specification:'Palladio URW Medium';text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1"
+         y="301.78723"
+         x="85.834473"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:12.5px;font-family:'Palladio URW';-inkscape-font-specification:'Palladio URW Medium';text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1"
          xml:space="preserve"><tspan
-           y="302.22974"
-           x="83.417923"
+           y="301.78723"
+           x="85.834473"
            id="tspan4915"
            sodipodi:role="line">Interface</tspan></text>
       <text
          id="text4913-5-6"
-         y="328.53433"
-         x="156.20638"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:13.75px;font-family:'Palladio URW';-inkscape-font-specification:'Palladio URW Medium';text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1"
+         y="327.85718"
+         x="158.12323"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10px;font-family:'Palladio URW';-inkscape-font-specification:'Palladio URW Medium';text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1"
          xml:space="preserve"><tspan
-           y="328.53433"
-           x="156.20638"
-           id="tspan4915-2-3"
-           sodipodi:role="line">Resistivity of solution</tspan></text>
-      <rect
-         style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.25;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect4146"
-         width="80"
-         height="30"
-         x="70"
-         y="282.36224" />
+           y="327.85718"
+           x="158.12323"
+           sodipodi:role="line"
+           id="tspan4252">Resistivity of bulk electrolyte</tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 50,297.36223 20,10e-6"
@@ -133,22 +150,14 @@
          sodipodi:nodetypes="cc" />
       <text
          id="text4913-1"
-         y="302.22977"
-         x="308.41794"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:13.75px;font-family:'Palladio URW';-inkscape-font-specification:'Palladio URW Medium';text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1"
+         y="301.78726"
+         x="310.83447"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:12.5px;font-family:'Palladio URW';-inkscape-font-specification:'Palladio URW Medium';text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1"
          xml:space="preserve"><tspan
-           y="302.22977"
-           x="308.41794"
+           y="301.78726"
+           x="310.83447"
            id="tspan4915-7"
            sodipodi:role="line">Interface</tspan></text>
-      <rect
-         style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.25;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect4146-1"
-         width="80"
-         height="30"
-         x="-375"
-         y="282.36227"
-         transform="scale(-1,1)" />
       <path
          style="fill:none;stroke:#000000;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 395,297.36225 -20,10e-6"
@@ -162,6 +171,46 @@
          cy="297.36227"
          r="3"
          transform="scale(-1,1)" />
+      <text
+         id="text4913-5-6-7"
+         y="270.89224"
+         x="79.790001"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10px;font-family:'Palladio URW';-inkscape-font-specification:'Palladio URW Medium';text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="270.89224"
+           x="79.790001"
+           id="tspan4915-2-3-7"
+           sodipodi:role="line">Metal</tspan></text>
+      <text
+         id="text4913-5-6-7-4"
+         y="270.89224"
+         x="114.78"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10px;font-family:'Palladio URW';-inkscape-font-specification:'Palladio URW Medium';text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="270.89224"
+           x="114.78"
+           id="tspan4915-2-3-7-9"
+           sodipodi:role="line">Liquid</tspan></text>
+      <text
+         id="text4913-5-6-7-4-9"
+         y="270.89224"
+         x="300.63577"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10px;font-family:'Palladio URW';-inkscape-font-specification:'Palladio URW Medium';text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="270.89224"
+           x="300.63577"
+           id="tspan4915-2-3-7-9-6"
+           sodipodi:role="line">Liquid</tspan></text>
+      <text
+         id="text4913-5-6-7-8"
+         y="270.89224"
+         x="339.84"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10px;font-family:'Palladio URW';-inkscape-font-specification:'Palladio URW Medium';text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="270.89224"
+           x="339.84"
+           id="tspan4915-2-3-7-5"
+           sodipodi:role="line">Metal</tspan></text>
     </g>
   </g>
 </svg>
