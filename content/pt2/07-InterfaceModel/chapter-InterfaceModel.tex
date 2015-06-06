@@ -106,25 +106,36 @@ That comparison is the main scientific contribution resulting from this work.
       If the voltage placed across the interface is kept within certain limits, the CPE and series resistance ($R_{S}$) would be all that is necessary to accurately mimic a single electrode-electrolyte interface.
       But once the electric potential across the interface becomes high enough, Faradaic reactions will occur at the electrode's surface.
       Faradaic reactions are reactions involving charge transfer, adding ionised species to the electrolyte and often producing gas.
-      Gas, or any new species, is bad news in an implanted setting as this causes damage to the patient.
+      Gas, or any new species, is to be avoided in an implanted setting as this causes damage to the patient.
       The rate at which a specific reaction occurs increases exponentially with electrode overpotential.
       Because that reaction is a means of transporting electrical current between the electrodes, the current draw also increases exponentially.
 
-      Exponential current draw with increasing voltage happens to be the transfer characteristic of a diode.
-      For this reason, diodes are used in the model to mimic the current draw associated with Faradaic reactions.
-      A diode also has the characteristic that it only conducts current in one direction.
+      \begin{equation}
+        I = I_{S}\left( e^{V_{D}/n V_{T}} - 1\right)
+        \label{eqn:pt2-diodeEquation}
+      \end{equation}
 
+      Exponential current draw with increasing voltage is the transfer characteristic of a diode.
+      The standard diode equation is shown as \cref{eqn:pt2-diodeEquation} where $I$ is the current through the diode,
+      $I_{S}$ is the reverse saturation current,
+      $V_{D}$ is the voltage across the diode,
+      $n$ is the diode's ideality factor,
+      and $V_{T}$ is the thermal voltage.
+      The model make use of this transfer function to mimic the current draw associated with Faradaic reactions.
+      As a diode has the characteristic that it only conducts current in one direction, it represents one specific reaction happening in one direction.
+      Because the electrode/electrolyte reactions are often reversible, a pair of diodes is used; one diode for each direction.
 
-
-
-
-
-
-
-
-
+      As Faradaic reactions are to be avoided in the implanted setting, only their onset needs to be included in the model.
+      Essentially this means that we only need to add diodes to the model that mimic the current/voltage curve associated with the first Faradaic reaction of the system.
+      It is not important what that specific reaction is, only that we can enter its characteristics into the model.
+      Detecting the onset of that exponential current via measurement is necessary in order to identify the diode parameters.
+      If it where necessary to model other Faradaic reactions then additional pairs of diodes can be added to the model, each in parallel with the existing pair.
+      The additional diodes would have a unique set of parameters governing their behavior.
 
     \subsubsection{Species depletion: memristors}
+      Because Faradaic reactions are by definition \emph{reactions}, they must consume reactants to produce the reaction products.
+      Depending on the volume of electrolyte available
+
 
   \subsection{Inter-electrode resistivity}
     \begin{figure}
