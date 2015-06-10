@@ -107,24 +107,38 @@ That comparison is the main scientific contribution resulting from this work.
       But once the electric potential across the interface becomes high enough, Faradaic reactions will occur at the electrode's surface.
       Faradaic reactions are reactions involving charge transfer, adding ionised species to the electrolyte and often producing gas.
       Gas, or any new species, is bad news in an implanted setting as this causes damage to the patient.
-      The rate at which a specific reaction occurs increases exponentially with electrode overpotential.
-      Because that reaction is a means of transporting electrical current between the electrodes, the current draw also increases exponentially.
 
-      Exponential current draw with increasing voltage happens to be the transfer characteristic of a diode.
-      For this reason, diodes are used in the model to mimic the current draw associated with Faradaic reactions.
-      A diode also has the characteristic that it only conducts current in one direction.
+      \begin{equation}
+        i_{net} = i_{0} \left\{ \frac{[O]_{(0,t)}}{[O]_{\infty}}e^{-\alpha_{c}nf\eta} - \frac{[R]_{(0,t)}}{[R]_{\infty}}e^{(1-\alpha_{c})nf\eta}\right\}
+        \label{eqn:pt-2_butlerVolmerEquation}
+      \end{equation}
 
-
-
-
-
-
-
-
-
-
+      \Cref{eqn:pt-2_butlerVolmerEquation} describes electrical current density through an electrode as a function of electrode overpotential and the cathodic and anodic reactions occurring at each electrode.
+      It is called the current-overpotential equation and is derived from the more general Butler-Volmer equation \cite{Merrill2005,ScottSingle2013}.
+      In \cref{eqn:pt-2_butlerVolmerEquation}, $i_{net}$ is the net Faradaic current across the electrode/electrolyte interface,
+      $i_{0}$ is the exchange current density,
+      $[O]_{(0,t)}$ and $[R]_{(0,t)}$ are the concentrations at the electrode surface as a function of time,
+      $[O]_{\infty}$ and $[R]_{\infty}$ are concentrations of reactant in the bulk electrolyte,
+      $\alpha_{c}$ is the cathodic transfer coefficient (approximately 0.5),
+      $n$ is the number of moles of electrons per mole of reactant oxidised,
+      $f$ is Faraday's constant divided by the the product of the gas constant and the absolute temperature ($F/RT$),
+      and $\eta$ is the electrode overpotential.
+      This equation describes the forward and reverse electrical current through an electrode by separating the forward and reverse reactions; oxidisation and reduction.
+      \begin{equation}
+        I = i_0 e^{V_D / n V_T}
+        \label{eqn:pt-2_diodeEquation}
+      \end{equation}
+      Taking a single half of the equation, either the reduction or oxidisation, yields an equation that is similar to that of a diode; an observation made by McAdams and utilised in the Scott-Single model \cite{McAdams1995}.
+      The standard diode equation is shown as \cref{eqn:pt-2_diodeEquation}, where
+      $I$ is the current through the diode,
+      $i_0$ is the diode saturation current,
+      $V_D$ is the potential across the diode,
+      $n$ is the diode's ideality factor,
+      $V_T$ is the thermal voltage (defined as the product of Boltzmann's constant and temperature divided by the charge on an electron).
+      The diodes themselves can not account for the relative abundance of reactants for the redox reactions, this must be taken care of separately.
 
     \subsubsection{Species depletion: memristors}
+      A memristor is essentially a resistor that changes its
 
   \subsection{Inter-electrode resistivity}
     \begin{figure}
