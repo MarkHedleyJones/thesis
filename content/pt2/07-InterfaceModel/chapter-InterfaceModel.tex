@@ -138,14 +138,47 @@ That comparison is the main scientific contribution resulting from this work.
       The diodes themselves can not account for the relative abundance of reactants for the redox reactions, this must be taken care of separately.
 
     \subsubsection{Species depletion: memristors}
-      A memristor is essentially a resistor that changes its
+      A memristor is a two port device that sets its resistance based on its own history.
+      Its resistance can either depend on the integral over time of the voltage placed across it or the total charge passed through the device \cite{Kvatinsky2012}.
+      Its name is a portmanteau of the word `memory' and `resistor' owing to its use of memory to set its resistance.
+
+      The memristive device models species depletion in the electrolyte by pinching off a diode branch with the amount of current passed through the diode.
+      As the specific Faradaic reaction proceeds, it consumes the reactants from the electrolyte bulk until eventually there are none left.
+      Increasing the resistance in series with a conducting diode has the effect of removing that diodes current path from the circuit.
+
+      I decided to remove the memristors from the model for my purposes as they added complexity that yielded little value in modelling terms.
+      The diodes are only used to model the onset of Faradaic conduction.
+      Once these reactions begin, the electrode overpotential has been pushed too far.
+      There is little to be gained from knowing now far the reaction can be run until the reactants have been depleted.
+      In an implanted setting it is likely that the electrolyte will circulate, bringing new reactants to the electrodes surface.
+      Also, species depletion is likely to be a slow process, solely dependant on the electrolyte volume and species concentration.
+
+      \begin{figure}
+        \centering
+        \includegraphics{content/pt2/07-InterfaceModel/graphics/interfaceSchematic_noMemristive}
+        \caption{\label{fig:pt2-interfaceSchematic_noMemristive}Electrical schematic of the electrode-electrolyte interface without memristors (as used throughout this thesis)}
+      \end{figure}
+
+      \Cref{fig:pt2-interfaceSchematic_noMemristive} shows the actual interface model used throughout the remainder of this thesis.
+      Although it is slightly different to the Scott-Single interface model, the other parameters are unaffected by the removal of these elements.
+      The components of the interface model have now been described.
+      A model of the interface on its own is of little value as there will always be two interface models and those models will be separated by the electrolyte itself.
+      Modelling the interface is discussed next.
+
 
   \subsection{Inter-electrode resistivity}
+
+    Modelling the resistance between two electrodes where the geometry is fixed is a matter of inserting an appropriately sized resistor between the two interfaces.
+    The resistance is dependant on the electrolyte's conductivity, the combined surface area of the two electrodes and the distance between them.
+    Modelling an electrode array, such as the St. Jude Medical - Octrode, is more complex as it requires a resistor network to describe the inter-electrode resistances.
+    An illustration of the Octrode is presented as \cref{fig:StJudeOctrode_Labelled} with the numbering system used to define each electrode.
+
     \begin{figure}
       \centering
       \includegraphics{content/pt2/07-InterfaceModel/graphics/StJudeOctrodeDiagram}
       \caption{\label{fig:StJudeOctrode_Labelled}St. Jude Medical Octrode. An eight electrode array commonly used in spinal stimulation implants.}
     \end{figure}
+
 
   % \Cref{fig:StJudeOctrode_Labelled} is an illustration of the electrode array and the numbering scheme used to identify each electrode.
   % Each electrode on this array is made from platinum and is separated by an insulating spacer.
