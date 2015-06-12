@@ -168,33 +168,33 @@ That comparison is the main scientific contribution resulting from this work.
 
   \subsection{Inter-electrode resistivity}
 
-    Modelling the resistance between two electrodes where the geometry is fixed is a matter of inserting an appropriately sized resistor between the two interfaces.
+    Modelling the resistance between two electrodes in a fixed geometry situation is simply a matter of inserting an appropriately sized resistor between the two interfaces.
     The resistance is dependant on the electrolyte's conductivity, the combined surface area of the two electrodes and the distance between them.
     Modelling an electrode array, such as the St. Jude Medical - Octrode, is more complex as it requires a resistor network to describe the inter-electrode resistances.
-    An illustration of the Octrode is presented as \cref{fig:StJudeOctrode_Labelled} with the numbering system used to define each electrode.
+    An illustration of an Octrode is presented as \cref{fig:StJudeOctrode_Labelled}.
 
     \begin{figure}
       \centering
       \includegraphics{content/pt2/07-InterfaceModel/graphics/StJudeOctrodeDiagram}
-      \caption{\label{fig:StJudeOctrode_Labelled}St. Jude Medical Octrode. An eight electrode array commonly used in spinal stimulation implants.}
+      \caption{\label{fig:StJudeOctrode_Labelled}St. Jude Medical Octrode. An eight electrode array commonly used in spinal stimulation implants. The electrode numbering shown here will be used throughout this work.}
     \end{figure}
 
+    Scott and Single create resistor network for modelling the electrolyte conductivity based on the geometry of the electrodes and the resistivity of the electrolyte.
+    By sectioning the surrounding liquid into cylindrical volumes they calculate the equivalent resistance between those volumes both radial and longitudinal directions.
+    The radaii of the volumes double at each layer which correspond to a fixed radial resistance between each layer.
+    There are two different radial resistances, one for the rings expanding from the insulating spacers, and one for those expanding from the electrode cylinders.
+    The two alternate due to each electrode being separated by an insulating spacer.
+    The longitudinal resistances quarter in size with each ring layer and after the last radial resistor each node it shorted together.
+    The full mesh for the eight electrode array is five layers deep with three rows of padding at each terminating end, totalling two hundred and five resistors in total.
+    \Cref{fig:pt2-ResistorMesh} shows the resistor network schematic.
+    Mored details of how the mesh was calculated can be found in \cite{Scott2014}.
 
-  % \Cref{fig:StJudeOctrode_Labelled} is an illustration of the electrode array and the numbering scheme used to identify each electrode.
-  % Each electrode on this array is made from platinum and is separated by an insulating spacer.
-  % The array has eight platinum wires that run through the cable to each of the electrodes.
-  % This electrode was used through the remainder of this thesis and is the electrode used by Saluda in medical trials of their stimulators.
+    \begin{figure}
+      \centering
+      \includegraphics{content/pt2/07-InterfaceModel/graphics/resistorMesh}
+      \caption{\label{fig:pt2-ResistorMesh}Resistor mesh used to model the electrical resistance between interface pairs. $R_{li}$ is longitudinal resistance, $R_{sri}$ and $R_{eri}$ is the radial resistance for the spacers and electrodes respectively, and $I$ is an interface.}
+    \end{figure}
 
-  % \begin{figure}
-  %   \centering
-  %   \includegraphics{content/pt2/07-InterfaceModel/graphics/interfaceSchematic_noMemristive}
-  %   \caption{\label{fig:pt2-interfaceSchematic_noMemristive}Electrical schematic of the electrode-electrolyte interface with the memristors omitted}
-  % \end{figure}
-
-  % Figure \cref{fig:pt2-interfaceSchematic_noMemristive} shows a simplified version of the interface model.
-  % It is simplified in that it does not include the memristors of the original model.
-  % A memristor is a relatively new type of electronic device which hasn't made it to consumer electronics yet.
-  % It behaves like a resistor that alters it's resistance depending on the sum of current that it passes.
 
 \section{Methods of Parameter Extraction}
   \subsection{Resistivity and constant phase element}
