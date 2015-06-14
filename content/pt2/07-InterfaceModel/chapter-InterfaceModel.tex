@@ -1,10 +1,10 @@
 %!TEX root = ../../../thesis.tex
 
 The work throughout the remainder of this thesis is based upon an interface model put forward by my supervisor and a colleague of his, Peter Single.
-The model was verified in a single, known concentration of phosphate buffered saline at the point I began using it.
-Working through the processes taken by my supervisor to create his model, I re-created the model from the ground up.
-By creating a range of solutions of buffered saline to test against, I fitted parameters of the initial model to the concentration of saline.
-This put me in a good position to compare saline solutions to live biological solutions.
+The model was verified in a single, known concentration of phosphate buffered saline (PBS) at the point I began using it.
+Working through the processes taken by my supervisor to create his model, I re-created the model from my own measurements.
+By creating a range of solutions of PBS to test against, I fitted parameters of the initial model to the concentration of PBS.
+This put me in a good position to compare those solutions to live biological solutions.
 That comparison is the main scientific contribution resulting from this work.
 
 \section{The Scott-Single Interface Model}
@@ -42,10 +42,6 @@ That comparison is the main scientific contribution resulting from this work.
     The full interface model is represented schematically by \cref{fig:pt2-interfaceSchematic}.
     It represents the transition between the metal of the electrode and the liquid of the electrolyte.
     The model used throughout this thesis is a slightly simplified version of \cref{fig:pt2-interfaceSchematic} in that the memristors have been removed.
-
-
-
-
 
     % The Scott-Single interface is modelled by the circuit shown in \cref{fig:pt2-interfaceSchematic}.
     % Each of the components and their functions will be explained in the coming sections.
@@ -187,7 +183,7 @@ That comparison is the main scientific contribution resulting from this work.
     The longitudinal resistances quarter in size with each ring layer and after the last radial resistor each node it shorted together.
     The full mesh for the eight electrode array is five layers deep with three rows of padding at each terminating end, totalling two hundred and five resistors in total.
     \Cref{fig:pt2-ResistorMesh} shows the resistor network schematic.
-    Mored details of how the mesh was calculated can be found in \cite{Scott2014}.
+    Further details of how the mesh geometry and resistor values were calculated can be found in \cite{Scott2014}.
 
     \begin{figure}
       \centering
@@ -195,8 +191,97 @@ That comparison is the main scientific contribution resulting from this work.
       \caption{\label{fig:pt2-ResistorMesh}Resistor mesh used to model the electrical resistance between interface pairs. $R_{li}$ is longitudinal resistance, $R_{sri}$ and $R_{eri}$ is the radial resistance for the spacers and electrodes respectively, and $I$ is an interface.}
     \end{figure}
 
+\section{Electrolyte: Phosphate Buffered Saline}
+  The model has been fitted to phosphate buffered saline (PBS) because it is was closest representation of human spinal fluid known at the time.
+  Engineers at Saluda used a concentration one-tenth that of a standard solution of PBS as a test solution for their spinal implants as they believed it to be a good match.
+  I was not understood how well the one-tenth concentration matched spinal fluid electrically, which is one of the first research questions I set out to answer.
+  The ingredients used to make the stock standard PBS concentration solution are given in \cref{tab:pt2-PBS-recipe} and the procedure for creating the full strength stock are as follows.
+  \begin{enumerate}
+    \item Weigh out day ingredients and combine in stock bottle.
+    \item \SI{800}{\milli\litre} of distilled water is added to bottle and solution is stirred until all solids have dissolved.
+    \item pH is measured and adjusted to 7.4 by addition of HCL.
+    \item The stock solution was mixed up to the target volume of \SI{1000}{\milli\litre}.
+  \end{enumerate}
 
-\section{Methods of Parameter Extraction}
-  \subsection{Resistivity and constant phase element}
+  \begin{table}
+    \centering
+    \begin{tabular}{r | r | c}
+      Ingredient & Quantity & Unit \\
+      \hline
+      H$_2$O & 1000 & ml \\
+      NaCl & 8.00  & g  \\
+      KCl  & 0.20  & g  \\
+      Na$_2$HPO$_4$ & 1.44 & g \\
+      KH$_2$PO$_4$  & 0.24 & g \\
+    \end{tabular}
+    \caption{\label{tab:pt2-PBS-recipe}Ingredients used to produce one litre of stock solution of phosphate buffered saline.}
+  \end{table}
+
+  \begin{table}
+    \centering
+    \begin{tabular}{r | r | c}
+      Stock (ml) & Water (ml) & Final Concentration \\
+      \hline
+      700.0 &   0.0 & 1.00X \\
+      350.0 & 350.0 & 0.50X \\
+      175.0 & 525.0 & 0.25X \\
+       70.0 & 630.0 & 0.10X \\
+       35.0 & 665.0 & 0.05X \\
+       17.5 & 682.5 & 0.025X\\
+    \end{tabular}
+    \caption{\label{tab:pt2-PBS-concentration}Final dilutions of stock to create six \SI{700}{\milli\litre} solutions ranging from 0.025X to 1X standard PBS concentration.}
+  \end{table}
+
+  Six bottles of ranging in concentration from full strength (1.0X) to one-fortieth (0.025X) were then made from the stock solution.
+  \Cref{tab:pt2-PBS-concentration} shows the volumetric dilution used to create the six concentrations of PBS that are then used to fit the model parameters to.
+
+
+\section{Methods Of Parameter Extraction}
+  The model has a number of parameters that are used to set the behaviour of each of the components.
+  Finding suitable values for each of the parameters is critical in ensuring that the final model offers a good representation of the electrode-electrolyte system.
+  The trick to finding suitable parameter values lies in selecting useful measurements of each part of the model, usually by isolating the measurement as much as possible from other model elements.
+  The following sections describe the measurements used to determine parameters used in the final model.
+  Ideally each element in the model would be measured separately, but in some cases it is not possible to totally isolate two areas.
+  Scott and Single found a set of parameters that described the Octrode in a one-tenth concentration solution of phosphate buffered saline (PBS).
+  In this section I create six different solutions of PBS ranging in concentration from 1.0x to 0.025x the concentration of a standard PBS solution.
+  I extend the Scott-Single model to work over a range of concentrations of PBS by adding another parameter to the model - PBS concentration.
+
+  \subsection{Resistivity}
+    I start by determining the resistances used in the resistor mesh using the same method as was used by Scott and Single \cite{Scott2014}.
+    Once those resistances are accounted for, the behaviour of components in the interface can be calculated from measurements that included those inter-electrode resistances by subtraction.
+    Because any electrical measurement of any part of the electrode-electrolyte interface will include inter-electrode resistance, determining those resistances is a necessary first step.
+
+    Scott and Single measure the trans-impedances between pairs of electrodes in two different configurations where a set current is driven between a separate pair of electrodes.
+    A table of trans-impedance values is built up from these measurements where each row describes the current through a pair of driven electrodes and differential voltage measurements between a pair of non-driven electrodes.
+    By measuring the voltage across pairs of non-driven electrodes using a suitably high impedance measurement, those measurements will correspond to the voltage difference in the electrolyte.
+    For this method to work it is assumed that the current across each measured interface is zero, and therefore no voltage is dropped across that interface; this is a consequence of drawing no current when making the voltage measurement.
+    This means that voltage differentials cannot be measured between pairs of electrodes where any one of those electrodes are passing current.
+
+    The first measurement configuration has electrodes one and eight being driven and every other pair combination being measured.
+
+    \begin{figure}
+      \centering
+      \includegraphics{content/pt2/07-InterfaceModel/graphics/graph_transimpedance_pbs}
+      \caption{\label{fig:pt2-graph_transimpedance_pbs}Measured and fitted values of trans-impedance for both measurement configurations. Voltage measurements are made between adjacent pairs of electrodes as current is pushed through the stimulus electrodes.}
+    \end{figure}
+
+    \Cref{fig:pt2-graph_transimpedance_pbs} shows measurement results for each pair of non-stimulated pair of electrodes along with simulated results using the fitted parameters.
+
+
+    \begin{table}
+      \centering
+      \begin{tabular}{r | l}
+        Parameter & Value \\
+        \hline
+        $R_{eri}$ ($\Omega$)& 0.407 / $\sigma$\\
+        $R_{sri}$ ($\Omega$)& $R_{eri}\cdot 3/4$\\
+        $R_{li}$ ($\Omega$)& 3.71 / $\sigma$ \\
+        Depth (layers) & 5 \\
+        Padding (layers) & 3 \\
+      \end{tabular}
+      \caption{\label{tab:RESparams}Resistor mesh parameters. Electrolyte conductivity ($\sigma$) is expressed in units of $S / cm$}
+    \end{table}
+
+  \subsection{Constant phase element}
   \subsection{Faradaic currents}
 
