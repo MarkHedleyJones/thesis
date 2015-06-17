@@ -2,6 +2,29 @@
 
 \section{Phosphate Buffered Saline}
     \subsection{Resistivity and constant phase element}
+
+        \begin{figure}
+          \centering
+          \includegraphics{content/pt2/07-InterfaceModel/graphics/graph_transimpedance_pbs}
+          \caption{\label{fig:pt2-graph_transimpedance_pbs}Measured and fitted values of trans-impedance for both measurement configurations. Voltage measurements are made between adjacent pairs of electrodes as current is pushed through the stimulus electrodes.}
+        \end{figure}
+
+        \Cref{fig:pt2-graph_transimpedance_pbs} shows measurement results for each pair of non-stimulated pair of electrodes along with simulated results using the fitted parameters.
+
+
+        \begin{table}
+          \centering
+          \begin{tabular}{r | l}
+            Parameter & Value \\
+            \hline
+            $R_{eri}$ ($\Omega$)& 0.407 / $\sigma$\\
+            $R_{sri}$ ($\Omega$)& $R_{eri}\cdot 3/4$\\
+            $R_{li}$ ($\Omega$)& 3.71 / $\sigma$ \\
+            Depth (layers) & 5 \\
+            Padding (layers) & 3 \\
+          \end{tabular}
+          \caption{\label{tab:RESparams}Resistor mesh parameters. Electrolyte conductivity ($\sigma$) is expressed in units of $S / cm$}
+        \end{table}
     \subsection{Faradaic current}
 
         Faradaic processes at an electrode/electrolyte interface are modeled

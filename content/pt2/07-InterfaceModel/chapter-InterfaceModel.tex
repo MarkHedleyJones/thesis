@@ -185,6 +185,15 @@ That comparison is the main scientific contribution resulting from this work.
     \Cref{fig:pt2-ResistorMesh} shows the resistor network schematic.
     Further details of how the mesh geometry and resistor values were calculated can be found in \cite{Scott2014}.
 
+    The parameters that describe the resistor mesh are:
+    \begin{enumerate}
+    \item $R_{eri}$ - The initial resistance placed radially from an electrode.
+    \item $R_{sri}$ - The initial resistance placed radially from a spacer.
+    \item $R_{li}$ - The longitudinal resistance.
+    \item Depth - Number of layers between the electrode/spacer and the common end node in the ladder
+    \item Padding - Number of spacer layers to be added to the before the first electrode and after the last electrode in the network.
+    \end{enumerate}
+
     \begin{figure}
       \centering
       \includegraphics{content/pt2/07-InterfaceModel/graphics/resistorMesh}
@@ -251,36 +260,25 @@ That comparison is the main scientific contribution resulting from this work.
     Once those resistances are accounted for, the behaviour of components in the interface can be calculated from measurements that included those inter-electrode resistances by subtraction.
     Because any electrical measurement of any part of the electrode-electrolyte interface will include inter-electrode resistance, determining those resistances is a necessary first step.
 
+    \begin{figure}
+      \centering
+      \includegraphics{content/pt2/07-InterfaceModel/graphics/TransimpedanceMeasurements_Stim81}
+      \caption{\label{fig:pt2-transimpedanceMeasurementDiagram_81Stim}Measurement schematic of transimpedance measurements where electrodes eight and one are driven and the remainder are used in voltage differential measurements.}
+    \end{figure}
+
+    \begin{figure}
+      \centering
+      \includegraphics{content/pt2/07-InterfaceModel/graphics/TransimpedanceMeasurements_Stim21}
+      \caption{\label{fig:pt2-transimpedanceMeasurementDiagram_21Stim}Measurement schematic of transimpedance measurements where electrodes two and one are driven and the remainder are used in voltage differential measurements.}
+    \end{figure}
+
     Scott and Single measure the trans-impedances between pairs of electrodes in two different configurations where a set current is driven between a separate pair of electrodes.
-    A table of trans-impedance values is built up from these measurements where each row describes the current through a pair of driven electrodes and differential voltage measurements between a pair of non-driven electrodes.
+    \Cref{fig:pt2-transimpedanceMeasurementDiagram_81Stim, fig:pt2-transimpedanceMeasurementsDiagram_21Stim} show the two measurement configurations used to collect transimpedance data.
+    Data from these measurements is tabulated where each row contains a current between two driven electrodes and a voltage between a pair of non-driven electrodes.
     By measuring the voltage across pairs of non-driven electrodes using a suitably high impedance measurement, those measurements will correspond to the voltage difference in the electrolyte.
     For this method to work it is assumed that the current across each measured interface is zero, and therefore no voltage is dropped across that interface; this is a consequence of drawing no current when making the voltage measurement.
     This means that voltage differentials cannot be measured between pairs of electrodes where any one of those electrodes are passing current.
 
-    The first measurement configuration has electrodes one and eight being driven and every other pair combination being measured.
-
-    \begin{figure}
-      \centering
-      \includegraphics{content/pt2/07-InterfaceModel/graphics/graph_transimpedance_pbs}
-      \caption{\label{fig:pt2-graph_transimpedance_pbs}Measured and fitted values of trans-impedance for both measurement configurations. Voltage measurements are made between adjacent pairs of electrodes as current is pushed through the stimulus electrodes.}
-    \end{figure}
-
-    \Cref{fig:pt2-graph_transimpedance_pbs} shows measurement results for each pair of non-stimulated pair of electrodes along with simulated results using the fitted parameters.
-
-
-    \begin{table}
-      \centering
-      \begin{tabular}{r | l}
-        Parameter & Value \\
-        \hline
-        $R_{eri}$ ($\Omega$)& 0.407 / $\sigma$\\
-        $R_{sri}$ ($\Omega$)& $R_{eri}\cdot 3/4$\\
-        $R_{li}$ ($\Omega$)& 3.71 / $\sigma$ \\
-        Depth (layers) & 5 \\
-        Padding (layers) & 3 \\
-      \end{tabular}
-      \caption{\label{tab:RESparams}Resistor mesh parameters. Electrolyte conductivity ($\sigma$) is expressed in units of $S / cm$}
-    \end{table}
 
   \subsection{Constant phase element}
   \subsection{Faradaic currents}
