@@ -61,6 +61,10 @@ That comparison is the main scientific contribution resulting from this work.
     \subsubsection{Interface series resistance: Resistor}
       The series resistor at the right hand side of the model schematic (labelled $R_{S}$) represents the purely resistive component of the interface's impedance.
       As it is series with all other components in the interface model, there is no way for charge to cross the interface without encountering this resistance.
+      The parameter used to denote the interface's series resistance is:
+      \begin{itemize}
+        \item $R_S$ -- The series resistance of the interface
+      \end{itemize}
 
     \subsubsection{Polar effects: Constant phase element}
       At the centre of the model is the constant phase element, or CPE.
@@ -96,6 +100,12 @@ That comparison is the main scientific contribution resulting from this work.
 
       The CPE is represents readily reversible reactions, polar reorientation, and ionic repulsion and attraction between the electrode surface and electrolyte.
       It is capacitive in nature because each of these mechanisms store charge, which can be drawn back by reversing the applied electromotive force.
+      Parameters used to describe the behaviour of the CPE are:
+      \begin{itemize}
+        \item $m$ -- Slope of the CPE's frequency response
+        \item $k$ -- Spacing, or density, of R-C branches with frequency
+        \item $|Z|$ @ \SI{1}{\kilo\hertz} -- Sets the vertical position of the magnitude of CPE's frequency response at a known frequency
+      \end{itemize}
 
 
     \subsubsection{Faradaic reactions: diodes}
@@ -131,23 +141,34 @@ That comparison is the main scientific contribution resulting from this work.
       $V_D$ is the potential across the diode,
       $n$ is the diode's ideality factor,
       $V_T$ is the thermal voltage (defined as the product of Boltzmann's constant and temperature divided by the charge on an electron).
+      The parameters used to describe the behaviour of the diode are:
+      \begin{itemize}
+        \item $i_0$ -- the diode's saturation current
+        \item $n$ -- the diode's ideality factor
+      \end{itemize}
       The diodes themselves can not account for the relative abundance of reactants for the redox reactions, this must be taken care of separately.
 
     \subsubsection{Species depletion: memristors}
+
+      \begin{figure}[h]
+        \centering
+        \includegraphics{content/pt2/07-InterfaceModel/graphics/memristorSymbol}
+        \caption{\label{fig:pt2-memristorSymbol}Electrical symbol of a memristor, as is used in the original electrode-electrolyte interface model}
+      \end{figure}
+
       A memristor is a two port device that sets its resistance based on its own history.
       Its resistance can either depend on the integral over time of the voltage placed across it or the total charge passed through the device \cite{Kvatinsky2012}.
       Its name is a portmanteau of the word `memory' and `resistor' owing to its use of memory to set its resistance.
 
       The memristive device models species depletion in the electrolyte by pinching off a diode branch with the amount of current passed through the diode.
-      As the specific Faradaic reaction proceeds, it consumes the reactants from the electrolyte bulk until eventually there are none left.
-      Increasing the resistance in series with a conducting diode has the effect of removing that diodes current path from the circuit.
+      As the specific Faradaic reaction proceeds, it consumes the reactants from the electrolyte bulk until eventually there is none left.
+      Increasing the resistance in series with a conducting diode has the effect of removing that diodes current path from the circuit, simulating the depletion of reactants for the modelled reaction.
 
-      I decided to remove the memristors from the model for my purposes as they added complexity that yielded little value in modelling terms.
-      The diodes are only used to model the onset of Faradaic conduction.
-      Once these reactions begin, the electrode overpotential has been pushed too far.
-      There is little to be gained from knowing now far the reaction can be run until the reactants have been depleted.
-      In an implanted setting it is likely that the electrolyte will circulate, bringing new reactants to the electrodes surface.
-      Also, species depletion is likely to be a slow process, solely dependant on the electrolyte volume and species concentration.
+      Memristors were removed from the model used in this thesis as they added complexity that would yield very little value.
+      The diodes are only used to model the \emph{onset} of Faradaic conduction, which is the most relevant parameter of the Faradaic modelling.
+      Once these reactions begin, the electrode overpotential has been pushed too far and there is little to be gained from knowing how far the reaction can be run until the reactants have been depleted.
+      In an implanted setting it is likely that the electrolyte will circulate throughout the body, bringing new reactants to the electrode's surface over time.
+      Species depletion is likely to be a slow process, dependant on the electrolyte volume and species concentration.
 
       \begin{figure}
         \centering
@@ -157,9 +178,8 @@ That comparison is the main scientific contribution resulting from this work.
 
       \Cref{fig:pt2-interfaceSchematic_noMemristive} shows the actual interface model used throughout the remainder of this thesis.
       Although it is slightly different to the Scott-Single interface model, the other parameters are unaffected by the removal of these elements.
-      The components of the interface model have now been described.
+      Each of the components of the interface model have now been described.
       A model of the interface on its own is of little value as there will always be two interface models and those models will be separated by the electrolyte itself.
-      Modelling the interface is discussed next.
 
 
   \subsection{Inter-electrode resistivity}
@@ -186,13 +206,13 @@ That comparison is the main scientific contribution resulting from this work.
     Further details of how the mesh geometry and resistor values were calculated can be found in \cite{Scott2014}.
 
     The parameters that describe the resistor mesh are:
-    \begin{enumerate}
+    \begin{itemize}
     \item $R_{eri}$ - The initial resistance placed radially from an electrode.
     \item $R_{sri}$ - The initial resistance placed radially from a spacer.
     \item $R_{li}$ - The longitudinal resistance.
     \item Depth - Number of layers between the electrode/spacer and the common end node in the ladder
     \item Padding - Number of spacer layers to be added to the before the first electrode and after the last electrode in the network.
-    \end{enumerate}
+    \end{itemize}
 
     \begin{figure}
       \centering
@@ -255,10 +275,12 @@ That comparison is the main scientific contribution resulting from this work.
   In this section I create six different solutions of PBS ranging in concentration from 1.0x to 0.025x the concentration of a standard PBS solution.
   I extend the Scott-Single model to work over a range of concentrations of PBS by adding another parameter to the model - PBS concentration.
 
+
   \subsection{Resistivity}
+    In order to find the parameters of any elements within the electrode-electrolyte interface it is first necessary to find the inter-electrode resistances.
+    This is because elements of the model can not be measured in isolation since the resistivity of the electrolyte solution will always be present in any measured data.
     I start by determining the resistances used in the resistor mesh using the same method as was used by Scott and Single \cite{Scott2014}.
     Once those resistances are accounted for, the behaviour of components in the interface can be calculated from measurements that included those inter-electrode resistances by subtraction.
-    Because any electrical measurement of any part of the electrode-electrolyte interface will include inter-electrode resistance, determining those resistances is a necessary first step.
 
     \begin{figure}
       \centering
@@ -272,14 +294,16 @@ That comparison is the main scientific contribution resulting from this work.
       \caption{\label{fig:pt2-transimpedanceMeasurementDiagram_21Stim}Measurement schematic of transimpedance measurements where electrodes two and one are driven and the remainder are used in voltage differential measurements.}
     \end{figure}
 
-    Scott and Single measure the trans-impedances between pairs of electrodes in two different configurations where a set current is driven between a separate pair of electrodes.
-    \Cref{fig:pt2-transimpedanceMeasurementDiagram_81Stim, fig:pt2-transimpedanceMeasurementsDiagram_21Stim} show the two measurement configurations used to collect transimpedance data.
-    Data from these measurements is tabulated where each row contains a current between two driven electrodes and a voltage between a pair of non-driven electrodes.
+    Scott and Single measure the trans-impedances between pairs of electrodes in two different configurations where a defined AC current is driven between a pair of electrodes.
+    Data from these measurements is tabulated so each row contains the AC current forced between the two stimulus electrodes and a voltage measured between a pair of non-driven electrodes.
     By measuring the voltage across pairs of non-driven electrodes using a suitably high impedance measurement, those measurements will correspond to the voltage difference in the electrolyte.
-    For this method to work it is assumed that the current across each measured interface is zero, and therefore no voltage is dropped across that interface; this is a consequence of drawing no current when making the voltage measurement.
-    This means that voltage differentials cannot be measured between pairs of electrodes where any one of those electrodes are passing current.
+    For this method to work it is assumed that the current passing across each non-driven interface is zero, and therefore no voltage is dropped across that interface.
+    This means that voltage differentials can only be measured on the non-driven electrodes.
+    \Cref{fig:pt2-transimpedanceMeasurementDiagram_81Stim,fig:pt2-transimpedanceMeasurementDiagram_21Stim} show the two measurement configurations used to collect transimpedance data.
 
 
   \subsection{Constant phase element}
+
+
   \subsection{Faradaic currents}
 
