@@ -278,32 +278,42 @@ That comparison is the main scientific contribution resulting from this work.
 
   \subsection{Resistivity}
     In order to find the parameters of any elements within the electrode-electrolyte interface it is first necessary to find the inter-electrode resistances.
-    This is because elements of the model can not be measured in isolation since the resistivity of the electrolyte solution will always be present in any measured data.
+    This is because elements of the model can not be measured in isolation since the resistivity of the electrolyte solution will always present itself between a measurement apparatus and the element of interest.
     I start by determining the resistances used in the resistor mesh using the same method as was used by Scott and Single \cite{Scott2014}.
     Once those resistances are accounted for, the behaviour of components in the interface can be calculated from measurements that included those inter-electrode resistances by subtraction.
 
     \begin{figure}
       \centering
       \includegraphics{content/pt2/07-InterfaceModel/graphics/TransimpedanceMeasurements_Stim81}
-      \caption{\label{fig:pt2-transimpedanceMeasurementDiagram_81Stim}Measurement schematic of transimpedance measurements where electrodes eight and one are driven and the remainder are used in voltage differential measurements.}
+      \caption{\label{fig:pt2-transimpedanceMeasurementDiagram_81Stim}Measurement schematic of trans-impedance measurements where electrodes eight and one are driven and the remainder are used in voltage differential measurements.}
     \end{figure}
 
     \begin{figure}
       \centering
       \includegraphics{content/pt2/07-InterfaceModel/graphics/TransimpedanceMeasurements_Stim21}
-      \caption{\label{fig:pt2-transimpedanceMeasurementDiagram_21Stim}Measurement schematic of transimpedance measurements where electrodes two and one are driven and the remainder are used in voltage differential measurements.}
+      \caption{\label{fig:pt2-transimpedanceMeasurementDiagram_21Stim}Measurement schematic of trans-impedance measurements where electrodes two and one are driven and the remainder are used in voltage differential measurements.}
     \end{figure}
 
-    Scott and Single measure the trans-impedances between pairs of electrodes in two different configurations where a defined AC current is driven between a pair of electrodes.
+    Scott and Single measure trans-impedance between pairs of electrodes in two different configurations where a defined AC current is driven between a pair of electrodes.
     Data from these measurements is tabulated so each row contains the AC current forced between the two stimulus electrodes and a voltage measured between a pair of non-driven electrodes.
     By measuring the voltage across pairs of non-driven electrodes using a suitably high impedance measurement, those measurements will correspond to the voltage difference in the electrolyte.
-    For this method to work it is assumed that the current passing across each non-driven interface is zero, and therefore no voltage is dropped across that interface.
+    For this method to work it is assumed that the current passing through each non-driven interface is zero, and therefore no voltage is dropped between the electrode's metal and the electrolyte solution at the electrode's surface.
     This means that voltage differentials can only be measured on the non-driven electrodes.
     \Cref{fig:pt2-transimpedanceMeasurementDiagram_81Stim,fig:pt2-transimpedanceMeasurementDiagram_21Stim} show the two measurement configurations used to collect transimpedance data.
 
 
   \subsection{Constant phase element}
+    SPICE, or any other commonly used circuit simulators, does not support capacitors having fractional poles, such as a constant phase element, or CPE.
+    A CPE has a frequency response that
+    Such a capacitor would require an infinite number of exponentials in the time domain.
 
 
   \subsection{Faradaic currents}
+    Measurement of Faradaic current requires pushing the electrode overpotential until reactions at the electrode's surface begin.
+    Electrical currents involved with Faradaic conduction increase exponentially with increasing electrode overpotential.
+    Scott and Single use a triangle wave stimulus to
 
+    % TODO:
+    % Discuss Jonathan and Peters method but don't get into details about my method.
+    % Perhaps hint that I developed a better method, but use the next section to explain how and why that method is better.
+    % Check if I can link that new method somewhere at the start to prop up my contribution to the model.
