@@ -68,10 +68,17 @@ That comparison is the main scientific contribution resulting from this work.
 
     \subsubsection{Polar effects: Constant phase element}
       At the centre of the model is the constant phase element, or CPE.
-      This element behaves like a capacitor, except its impedance magnitude does not decay at \SI{20}{\decibel} per frequency decade like a conventional capacitor does.
+      A CPE, or fractional pole capacitor, is a device that behaves like a cross between a capacitor and a resistor.
       They are primarily used to describe the capacitance of double layer interfaces, the function it serves in this model.
-      These elements may also prove useful in describing the nature of battery and super-capacitor behaviour.
-      A CPE is not an element found in the field electronic engineering and therefore must built from existing components.
+      It is capacitive in the sense that voltage leads current, but by an amount less than \SI{90}{\degree}.
+      Mathematically, the \SI{90}{\degree} angle between sinusoidal voltages and currents in a capacitor is a result of the capacitors current being $I(t) = C \times \frac{dV(t)}{dt}$.
+      When $V(t)$ is a sine wave, this becomes $I(t) = C \times \frac{d Sin(t)}{dt}$, which is the same as $I(t) = C \times Cos(t)$.
+      The angle between Sine and Cosine is always 90, and this is why a capacitors impedance is \SI{-90}{\degree} out of phase.
+      A CPE, on the other hand, has a phase angle somewhere \empth{between} 0 and \SI{-90}{\degree}.
+      This requires a fractional differentiation of $I(t) = C \times \frac{dV(t)}{dt}$, something uncommon outside of pure mathematics.
+      A consequence of having a current/voltage relationship of less than \SI{90}{\degree}, a CPE'S impedance magnitude decays at a rate lower than 20$\frac{dB}{decade}$.
+
+      SPICE, or any other commonly used circuit simulators, does not support fractional pole capacitors so entering one into the model will require building it up from discrete components.
       \begin{figure}[h]
         \centering
         \includegraphics{content/pt2/07-InterfaceModel/graphics/Morrison-RC}
@@ -302,11 +309,20 @@ That comparison is the main scientific contribution resulting from this work.
     \Cref{fig:pt2-transimpedanceMeasurementDiagram_81Stim,fig:pt2-transimpedanceMeasurementDiagram_21Stim} show the two measurement configurations used to collect transimpedance data.
 
 
-  \subsection{Constant phase element}
-    SPICE, or any other commonly used circuit simulators, does not support capacitors having fractional poles, such as a constant phase element, or CPE.
-    A CPE has a frequency response that
-    Such a capacitor would require an infinite number of exponentials in the time domain.
-
+  \subsection{Constant phase element and series resistance}
+    \begin{figure}
+      \centering
+      \includegraphics{content/pt2/07-InterfaceModel/graphics/graph_cpePlotGeneral}
+      \caption{\label{fig:pt2-graph_cpePlotGeneral}Log-log plot of frequency vs impedance magnitude of a single interface and inter-electrode impedance. The response of the CPE and that of the total series resistance is separated in the frequency domain.}
+    \end{figure}
+    By accounting for the value of resistance seen between electrodes it is possible to probe deeper into the interface model.
+    Calculation of both the CPE and the series resistance ($R_S$) is made via impedance spectroscopy.
+    It is possible to use the applied frequency to separate the response of the CPE from that of the series resistance of a single interface and inter-electrode resistance.
+    The impedance of the CPE dominates below \SI{10}{\hertz}, where its characteristic slope can be determined.
+    At higher frequencies, greater than \SI{1}{\kilo\hertz}, the series resistance of both the interface ($R_S$) and the previously determined inter-electrode resistance is evident.
+    This separation of responses is illustrated in \cref{fig:pt2-graph_cpePlotGeneral}.
+    Subtracting the inter-electrode resistance (determined previously) from the resistive element yields just the interface's series resistance ($R_S$).
+    Parameters for the CPE, such as slope and vertical position, are then read off the low frequency part of the trace where the slope is not disturbed by the resistive part.
 
   \subsection{Faradaic currents}
     Measurement of Faradaic current requires pushing the electrode overpotential until reactions at the electrode's surface begin.
