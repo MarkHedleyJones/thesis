@@ -74,7 +74,7 @@ That comparison is the main scientific contribution resulting from this work.
       Mathematically, the \SI{90}{\degree} angle between sinusoidal voltages and currents in a capacitor is a result of the capacitors current being $I(t) = C \times \frac{dV(t)}{dt}$.
       When $V(t)$ is a sine wave, this becomes $I(t) = C \times \frac{d Sin(t)}{dt}$, which is the same as $I(t) = C \times Cos(t)$.
       The angle between Sine and Cosine is always 90, and this is why a capacitors impedance is \SI{-90}{\degree} out of phase.
-      A CPE, on the other hand, has a phase angle somewhere \empth{between} 0 and \SI{-90}{\degree}.
+      A CPE, on the other hand, has a phase angle somewhere \emph{between} 0 and \SI{-90}{\degree}.
       This requires a fractional differentiation of $I(t) = C \times \frac{dV(t)}{dt}$, something uncommon outside of pure mathematics.
       A consequence of having a current/voltage relationship of less than \SI{90}{\degree}, a CPE'S impedance magnitude decays at a rate lower than 20$\frac{dB}{decade}$.
 
@@ -315,19 +315,30 @@ That comparison is the main scientific contribution resulting from this work.
       \includegraphics{content/pt2/07-InterfaceModel/graphics/graph_cpePlotGeneral}
       \caption{\label{fig:pt2-graph_cpePlotGeneral}Log-log plot of frequency vs impedance magnitude of a single interface and inter-electrode impedance. The response of the CPE and that of the total series resistance is separated in the frequency domain.}
     \end{figure}
-    By accounting for the value of resistance seen between electrodes it is possible to probe deeper into the interface model.
+    By accounting for the value of resistance seen between electrodes it is now possible to probe deeper into the interface model.
     Calculation of both the CPE and the series resistance ($R_S$) is made via impedance spectroscopy.
     It is possible to use the applied frequency to separate the response of the CPE from that of the series resistance of a single interface and inter-electrode resistance.
-    The impedance of the CPE dominates below \SI{10}{\hertz}, where its characteristic slope can be determined.
+    The impedance of the CPE dominates below \SI{10}{\hertz}, where its slope and magnitude can be determined.
     At higher frequencies, greater than \SI{1}{\kilo\hertz}, the series resistance of both the interface ($R_S$) and the previously determined inter-electrode resistance is evident.
     This separation of responses is illustrated in \cref{fig:pt2-graph_cpePlotGeneral}.
     Subtracting the inter-electrode resistance (determined previously) from the resistive element yields just the interface's series resistance ($R_S$).
     Parameters for the CPE, such as slope and vertical position, are then read off the low frequency part of the trace where the slope is not disturbed by the resistive part.
 
+    % TODO:
+    % Update this section with the list of parameters that will be determined.
+    % Mention that the density/number of branches was previously determined and that will be reused.
+
   \subsection{Faradaic currents}
     Measurement of Faradaic current requires pushing the electrode overpotential until reactions at the electrode's surface begin.
     Electrical currents involved with Faradaic conduction increase exponentially with increasing electrode overpotential.
-    Scott and Single use a triangle wave stimulus to
+    Scott and Single used a triangular voltage stimulus to identify the onset of Faradaic conduction at the interface.
+    The triangular wave is equivalent to a constant ramp-up and ramp-down of voltage placed across the interface.
+    It was mentioned earlier that current flowing into a capacitor is given by: $I(t) = C \times \frac{dV(t)}{dt}$.
+    When $\frac{dV(t)}{dt}$ is a constant, as is the case for any constant ramp-up or ramp-down voltage stimulus, the current becomes a constant.
+    It is assumed that the fractional differentiation of the current equation will still yield a reletively constant current in light of the capacitor being a CPE.
+    So by slowly ramping the electrode overpotential up the current should be roughly constant up to a point where it becomes exponential.
+    The voltage corresponding to the point at which the current draw becomes exponential determines the onset of Faradaic conduction.
+    That point, together with the rate of growth, are then used to fit values for $i_0$ and $n$, the diode's saturation current and ideality factor respectively.
 
     % TODO:
     % Discuss Jonathan and Peters method but don't get into details about my method.
