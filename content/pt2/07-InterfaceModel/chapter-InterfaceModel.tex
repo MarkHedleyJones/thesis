@@ -120,14 +120,21 @@ That comparison is the main scientific contribution resulting from this work.
       But once the electric potential across the interface becomes high enough, Faradaic reactions will occur at the electrode's surface.
       Faradaic reactions are reactions involving charge transfer, adding ionised species to the electrolyte and often producing gas.
       Gas, or any new species, is bad news in an implanted setting as this causes damage to the patient.
+      Possible faradaic reactions between saline and platinum electrodes are:
+      \begin{eqnarray}
+          Pt + H_{2}O &\Leftrightarrow& PtO + 2 H^{+} + 2 e^{-}\\
+          PtO + H_{2}O &\Leftrightarrow& PtO_{2} + 2 H^{+} + 2e^{-}\\
+          Pt + H^{+} & \Leftrightarrow & Pt-H\\
+          Pt + H_{2}O + e^{-} &\Leftrightarrow& Pt-H+OH^{-}
+      \end{eqnarray}
 
+      The electrical current density through an electrode as a function of electrode overpotential and the cathodic and anodic reactions occurring at each electrode is given by:
       \begin{equation}
         i_{net} = i_{0} \left\{ \frac{[O]_{(0,t)}}{[O]_{\infty}}e^{-\alpha_{c}nf\eta} - \frac{[R]_{(0,t)}}{[R]_{\infty}}e^{(1-\alpha_{c})nf\eta}\right\}
         \label{eqn:pt-2_butlerVolmerEquation}
       \end{equation}
-
-      \Cref{eqn:pt-2_butlerVolmerEquation} describes electrical current density through an electrode as a function of electrode overpotential and the cathodic and anodic reactions occurring at each electrode.
-      It is called the current-overpotential equation and is derived from the more general Butler-Volmer equation \cite{Merrill2005,ScottSingle2013}.
+      % \Cref{eqn:pt-2_butlerVolmerEquation} describes electrical current density through an electrode as a function of electrode overpotential and the cathodic and anodic reactions occurring at each electrode.
+      This is the current-overpotential equation and is derived from the more general Butler-Volmer equation \cite{Merrill2005,ScottSingle2013}.
       In \cref{eqn:pt-2_butlerVolmerEquation}, $i_{net}$ is the net Faradaic current across the electrode/electrolyte interface,
       $i_{0}$ is the exchange current density,
       $[O]_{(0,t)}$ and $[R]_{(0,t)}$ are the concentrations at the electrode surface as a function of time,
@@ -349,7 +356,7 @@ That comparison is the main scientific contribution resulting from this work.
           \hline
           $k$ & previous value of 3 branches used (from Scott \& Single)\\
           $m$ & slope of |Z| vs. frequency response\\
-          |Z| @ \SI{1}{\hertz} & Finding impedance magnitude at \SI{1}{\hertz}\\
+          |Z| @ \SI{1}{\hertz} & impedance magnitude at \SI{1}{\hertz}\\
           $R_S$ & impedance at high frequency (\SI{10}{\kilo\hertz}) end of the trace
         \end{tabular}
       \end{center}
