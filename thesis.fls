@@ -482,6 +482,15 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT content/pt2/08-InterfaceParameters/graphics/measurement_Faradaic_setup_initial.pdf
 INPUT ./content/pt2/08-InterfaceParameters/graphics/measurement_Faradaic_setup_initial.pdf
 INPUT ./content/pt2/08-InterfaceParameters/graphics/measurement_Faradaic_setup_initial.pdf
+INPUT content/pt2/08-InterfaceParameters/graphics/faradaicOnset-all-average.pdf
+INPUT ./content/pt2/08-InterfaceParameters/graphics/faradaicOnset-all-average.pdf
+INPUT ./content/pt2/08-InterfaceParameters/graphics/faradaicOnset-all-average.pdf
+INPUT content/pt2/08-InterfaceParameters/graphics/graph_longsweep_CPE.pdf
+INPUT ./content/pt2/08-InterfaceParameters/graphics/graph_longsweep_CPE.pdf
+INPUT ./content/pt2/08-InterfaceParameters/graphics/graph_longsweep_CPE.pdf
+INPUT content/pt2/08-InterfaceParameters/graphics/graph_64s_stirred.pdf
+INPUT ./content/pt2/08-InterfaceParameters/graphics/graph_64s_stirred.pdf
+INPUT ./content/pt2/08-InterfaceParameters/graphics/graph_64s_stirred.pdf
 INPUT content/pt2/recipes.tex
 INPUT content/pt2/recipes.tex
 INPUT content/pt2/graphics/CreatingCSF_setup.pdf

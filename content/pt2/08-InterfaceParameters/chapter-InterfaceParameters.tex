@@ -148,15 +148,48 @@ This tells us whether a one-tenth concentration of PBS is in-fact a good substit
       The final parameters for the CPE and $R_{S}$ are given in \cref{tab:CPEparams}.
 
     \subsection{Faradaic Current}
-    \begin{figure}
-      \centering
-      \includegraphics{content/pt2/08-InterfaceParameters/graphics/measurement_Faradaic_setup_initial}
-      \caption{\label{fig:pt2-measurement_Faradaic_setup_initial}Illustration of the cyclic voltammetry measurement configuration.}
-    \end{figure}
-      Using the same oscilloscope and function generator as the previous measurement, the oscilloscope now measures only the voltage between the two electrodes and the current through the current sense resistor.
-      The function generator is set to produce a triangle wave, or linear ramp, stimulus between electrodes two and seven.
-      Faradaic currents become evident as the electrical current begins to increase exponentially while the voltage moves linearly.
-      The point at which the electrical current draw begins to move exponentially with voltage is the point at which the Faradaic reaction begins.
+      \begin{figure}
+        \centering
+        \includegraphics{content/pt2/08-InterfaceParameters/graphics/measurement_Faradaic_setup_initial}
+        \caption{\label{fig:pt2-measurement_Faradaic_setup_initial}Illustration of the cyclic voltammetry measurement configuration used to measure the response of the interface when driven into Faradaic conduction mode.}
+      \end{figure}
+      Using the same oscilloscope and function generator as the previous measurement, the oscilloscope is set to measure voltage between electrodes two and seven and the current through the current sense resistor.
+      The function generator is set to produce a triangle wave stimulus, or linear ramp, also between electrodes two and seven.
+      Electrical current associated with Faradaic reactions rises exponentially after a certain electrode overpotential.
+      The point at which the electrical current draw begins to move exponentially with increasing voltage represents the onset of the associated reaction.
+      \begin{figure}
+        \centering
+        \includegraphics{content/pt2/08-InterfaceParameters/graphics/faradaicOnset-all-average}
+        \caption{\label{fig:pt2-faradaic_measurement}Graph showing measured Faradaic response of each concentration of PBS to a linearly increasing voltage between electrodes two and seven.}
+      \end{figure}
+
+      \Cref{fig:pt2-faradaic_measurement} shows measured data where the Faradaic response is evident for each concentration.
+      The repeatability of these measurements was low although care was taken to recreate the same conditions for each run.
+      To try and improve the repeatability the following was tried:
+      \begin{itemize}
+        \item Maintaining a constant ambient temperature
+        \item Cleaning the electrodes between each measurement using isopropyl alcohol
+        \item Keeping the electrolyte moving at a constant velocity using a motorised stirrer
+        \item Letting the system to settle for periods up to two hours between measurements
+      \end{itemize}
+      Each of these reduced variation between measurements, but two factors still had a large effect on the measured results - the sweep rate of the stimulus and the maximum stimulus amplitude.
+      A sweep rate of \SI{0.12}{\volt\per\second} was slow enough that results did not appear to be too distorted but short enough that measurements could be completed quickly.
+      Completing measurements quickly seemed important at the time as it was often the case that some sort of artefact would show up during a measurement run, for what seemed like no apparent reason, and affect the remainder of the experiments.
+
+      \subsubsectino{Issues with cyclic voltammetry}
+        
+
+      \begin{figure}
+        \centering
+        \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_longsweep_CPE}
+        \caption{\label{fig:graph_longsweep_CPE}Graph showing current between two electrodes after the voltage is stepped to each of the shown voltages. The total settling time between transition was \SI{10000}{\second}.}
+      \end{figure}
+
+      \begin{figure}
+        \centering
+        \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_64s_stirred}
+        \caption{\label{fig:pt2-faradaic_decay}Graph showing response of interface to a multiple step responses. Vertical dotted lines indicate when in time the step occurred. Dotted traces show points in time after each response.}
+      \end{figure}
 
 
 
