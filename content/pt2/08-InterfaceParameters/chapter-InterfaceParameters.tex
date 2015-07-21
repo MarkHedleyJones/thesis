@@ -172,18 +172,23 @@ This tells us whether a one-tenth concentration of PBS is in-fact a good substit
         \item Keeping the electrolyte moving at a constant velocity using a motorised stirrer
         \item Letting the system to settle for periods up to two hours between measurements
       \end{itemize}
-      Each of these reduced variation between measurements, but two factors still had a large effect on the measured results - the sweep rate of the stimulus and the maximum stimulus amplitude.
-      A sweep rate of \SI{0.12}{\volt\per\second} was slow enough that results did not appear to be too distorted but short enough that measurements could be completed quickly.
-      Completing measurements quickly seemed important at the time as it was often the case that some sort of artefact would show up during a measurement run, for what seemed like no apparent reason, and affect the remainder of the experiments.
+      These steps reduced variation between measurements, but by no means removed the variation.
+      Sweeping the voltage at \SI{0.12}{\volt\per\second} was slow enough that results did not appear to be too distorted but fast enough that a measurement run could be completed quickly.
+      Completing measurements quickly seemed important at the time as it was often the case that an artifact would show up during a measurement run, for what seemed like no apparent reason, and affect the remainder of the experiments.
+      Artifacts were sometimes a peak at a certain voltage, otherwise they would manifest themselves as distortions to the current/voltage trace.
+      A key insight was realising that after the voltage across a pair of electrodes had been pushed into Faradaic region they then began to behave differently, even after being returned to lower stimulus voltages.
+      In \cref{fig:pt2-faradaic_measurement} it is clear that each concentration has a different Faradaic response.
+      This means that when the maximum voltage is applied to each of the solutions that the highest concentration is driven further into its Faradaic region that the rest.
+      That in turn would create an artifact that would appear on the remaining traces (those of lower concentration), that would not have otherwise been there.
+      
 
-      \subsubsectino{Issues with cyclic voltammetry}
-        
 
-      \begin{figure}
-        \centering
-        \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_longsweep_CPE}
-        \caption{\label{fig:graph_longsweep_CPE}Graph showing current between two electrodes after the voltage is stepped to each of the shown voltages. The total settling time between transition was \SI{10000}{\second}.}
-      \end{figure}
+      % TODO: Write this up in an Appendix
+      % \begin{figure}
+      %   \centering
+      %   \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_longsweep_CPE}
+      %   \caption{\label{fig:graph_longsweep_CPE}Graph showing current between two electrodes after the voltage is stepped to each of the shown voltages. The total settling time between transition was \SI{10000}{\second}.}
+      % \end{figure}
 
       \begin{figure}
         \centering
