@@ -180,7 +180,39 @@ This tells us whether a one-tenth concentration of PBS is in-fact a good substit
       In \cref{fig:pt2-faradaic_measurement} it is clear that each concentration has a different Faradaic response.
       This means that when the maximum voltage is applied to each of the solutions that the highest concentration is driven further into its Faradaic region that the rest.
       That in turn would create an artifact that would appear on the remaining traces (those of lower concentration), that would not have otherwise been there.
-      
+      The issue of artifact and dependence on sweep rate led me to find other ways of measuring Faradaic currents.
+
+      \subsubsection{Step based Faradaic measurements}
+        \begin{figure}
+          \centering
+          \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_64s_stirred}
+          \caption{\label{fig:pt2-faradaic_decay}Graph showing measured response of two interfaces to a multiple step responses. Vertical dotted lines indicate when in time the step occurred. Dotted traces show points in time after each response. Measurements are between electrodes two and seven on the Octrode submerged in 1X PBS.}
+        \end{figure}
+
+        A revealing measurement came from the use of the Agilent E5270B precision measurement mainframe, the same instrument that was used to measure the streaming potential cells.
+        By increasing the voltage between the electrodes in discrete steps and recording the current over time it became clear that the CPE was having a large effect on measurement results.
+        \Cref{fig:pt2-faradaic_decay} shows three transitions in steps of \SI{0.05}{\volt} occurring \SI{64}{\second} apart.
+        The dotted traces show what the result would be if the measurement were taken at that time, i.e. the trace would take the shape of the dotted line of the corresponding delay time.
+        This graph clearly shows the effect of the CPE is having on measurement results, as well as the duration of time necessary for the change to settle.
+
+        \begin{figure}
+          \centering
+          \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_CPE_currentVsTime_thesis}
+          \caption{\label{fig:graph_CPE_currentVsTime}Graph showing CPE discharge curve after a step transition between each of voltage trace in increasing order. Measurements are between electrodes two and seven on the Octrode submerged in 1X PBS. A delay of 10 000 seconds elapsed between each step was used.}
+        \end{figure}
+        Subsequent measurements of CPE settling time show that a delay of \SI{64}{\second} between steps is adequate to allow the CPE voltage to settle.
+        These measurements are shown as \cref{fig:graph_CPE_currentVsTime}, with the \SI{64}{\second} window highlighted in grey.
+
+        \begin{figure}
+          \centering
+          \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_currentTimeFaradaicCPE_Stacked_Thesis}
+          \caption{\label{fig:graph_currentTimeFaradaicCPE_Stacked_Thesis}} %TODO: Write caption and continue work.
+        \end{figure}
+
+
+
+
+
 
 
       % TODO: Write this up in an Appendix
@@ -190,11 +222,7 @@ This tells us whether a one-tenth concentration of PBS is in-fact a good substit
       %   \caption{\label{fig:graph_longsweep_CPE}Graph showing current between two electrodes after the voltage is stepped to each of the shown voltages. The total settling time between transition was \SI{10000}{\second}.}
       % \end{figure}
 
-      \begin{figure}
-        \centering
-        \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_64s_stirred}
-        \caption{\label{fig:pt2-faradaic_decay}Graph showing response of interface to a multiple step responses. Vertical dotted lines indicate when in time the step occurred. Dotted traces show points in time after each response.}
-      \end{figure}
+
 
 
 
