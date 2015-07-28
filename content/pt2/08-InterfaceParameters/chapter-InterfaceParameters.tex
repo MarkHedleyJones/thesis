@@ -193,21 +193,56 @@ This tells us whether a one-tenth concentration of PBS is in-fact a good substit
         By increasing the voltage between the electrodes in discrete steps and recording the current over time it became clear that the CPE was having a large effect on measurement results.
         \Cref{fig:pt2-faradaic_decay} shows three transitions in steps of \SI{0.05}{\volt} occurring \SI{64}{\second} apart.
         The dotted traces show what the result would be if the measurement were taken at that time, i.e. the trace would take the shape of the dotted line of the corresponding delay time.
-        This graph clearly shows the effect of the CPE is having on measurement results, as well as the duration of time necessary for the change to settle.
+        This graph shows the effect the CPE is having on measurement results, as well as the duration of time necessary for the transient response to settle.
 
         \begin{figure}
           \centering
           \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_CPE_currentVsTime_thesis}
-          \caption{\label{fig:graph_CPE_currentVsTime}Graph showing CPE discharge curve after a step transition between each of voltage trace in increasing order. Measurements are between electrodes two and seven on the Octrode submerged in 1X PBS. A delay of 10 000 seconds elapsed between each step was used.}
+          \caption{\label{fig:graph_CPE_currentVsTime}Graph showing CPE discharge curve after a step transition between each of voltage trace in increasing order. Measurements are between electrodes two and seven on the Octrode submerged in 1X PBS. A delay of 10 000 seconds elapsed between each step.}
         \end{figure}
         Subsequent measurements of CPE settling time show that a delay of \SI{64}{\second} between steps is adequate to allow the CPE voltage to settle.
         These measurements are shown as \cref{fig:graph_CPE_currentVsTime}, with the \SI{64}{\second} window highlighted in grey.
+        It is interesting to note from these measurements that the capacitance appears to be a function of the applied overpotential, with lower potentials resulting in larger capacitance.
 
         \begin{figure}
           \centering
           \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_currentTimeFaradaicCPE_Stacked_Thesis}
-          \caption{\label{fig:graph_currentTimeFaradaicCPE_Stacked_Thesis}} %TODO: Write caption and continue work.
+          \caption{\label{fig:graph_currentTimeFaradaicCPE_Stacked_Thesis}Graph showing measurements of four concentrations of PBS as each is stepped from \SI{0.55}{\volt} to \SI{0.95}{\volt}. Measurements are between electrodes two and seven on the Octrode. A delay of 64 seconds elapsed between each step. Dotted traces connect current measurements taken \SI{10}{\second} after each step.}
         \end{figure}
+        \Cref{fig:graph_currentTimeFaradaicCPE_Stacked_Thesis} shows measurements of four concentrations of PBS overliad on top of one another.
+        This graph reveals that not only does the capacitance vary with applied voltage, as was shown in \cref{fig:graph_CPE_currentVsTime}, but also with concentration of PBS.
+        A consequence of this is that not waiting long enough to sample the current gives the impression that a higher concentration of PBS results in larger Faradaic currents.
+        This is shown by the dotted trace that is sampled \SI{10}{\second} after each step, which I would argue is somewhat representative of cyclic voltammetry measurements.
+        Importantly -- the settled current draw for each concentration is approximately the same.
+        Any separation between concentrations at the sixty-four second mark for each step appear to be completely random.
+
+        \subsubsection{Successful measurement of the Faradaic currents}
+        \begin{figure}
+          \centering
+          \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_currentVoltage_logY_Thesis}
+          \caption{\label{fig:graph_currentVoltage_logY_Thesis}Graph showing the electrical current draw associated with Faradaic reactions versus applied electrode overpotential. Measurements used the stepped method with a wait time of \SI{64}{\second} between transitions. Vertical bars mark the standard deviation of the final fourty measurements before the following step.}
+        \end{figure}
+        \Cref{fig:graph_currentVoltage_logY_Thesis} shows the collected measurements of the electrical current due to Faradaic reactions using the stepped measurement method.
+        Spread in the measurements at low voltages is due to noise in the measurement samples.
+        There are three important observations that can be made from this graph:
+        \begin{enumerate}
+          \item The effect saline concentration below \SI{0.9}{\volt} has little to no significance on the Faradaic current draw.
+          \item Saline concentration is directly related to Faradaic current draw above \SI{1.05}{\volt}.
+          \item Between \SI{0.9}{\volt} and \SI{1.05}{\volt} each trace transitions to a mode of saline concentration dependence in reverse order of saline concentration.
+        \end{enumerate}
+
+        % I hypothesise that below 1.05
+        % I attribute the behaviour seen in \cref{fig:graph_currentVoltage_logY_Thesis} between \SI{0.9}{\volt} and \SI{1.05}{\volt} to a transition from non-limited reactino to a diffusion controlled reaction.
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -221,7 +256,6 @@ This tells us whether a one-tenth concentration of PBS is in-fact a good substit
       %   \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_longsweep_CPE}
       %   \caption{\label{fig:graph_longsweep_CPE}Graph showing current between two electrodes after the voltage is stepped to each of the shown voltages. The total settling time between transition was \SI{10000}{\second}.}
       % \end{figure}
-
 
 
 

@@ -494,6 +494,9 @@ INPUT ./content/pt2/08-InterfaceParameters/graphics/graph_CPE_currentVsTime_thes
 INPUT content/pt2/08-InterfaceParameters/graphics/graph_currentTimeFaradaicCPE_Stacked_Thesis.pdf
 INPUT ./content/pt2/08-InterfaceParameters/graphics/graph_currentTimeFaradaicCPE_Stacked_Thesis.pdf
 INPUT ./content/pt2/08-InterfaceParameters/graphics/graph_currentTimeFaradaicCPE_Stacked_Thesis.pdf
+INPUT content/pt2/08-InterfaceParameters/graphics/graph_currentVoltage_logY_Thesis.pdf
+INPUT ./content/pt2/08-InterfaceParameters/graphics/graph_currentVoltage_logY_Thesis.pdf
+INPUT ./content/pt2/08-InterfaceParameters/graphics/graph_currentVoltage_logY_Thesis.pdf
 INPUT content/pt2/recipes.tex
 INPUT content/pt2/recipes.tex
 INPUT content/pt2/graphics/CreatingCSF_setup.pdf
