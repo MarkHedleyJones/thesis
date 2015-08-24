@@ -1,23 +1,22 @@
 %!TEX root = ../../../thesis.tex
 
 Details of components in the electrode-electrolyte interface model and methods of determining its parameters have been discussed.
-The focus now moves to measuring and fitting of the model parameters to the model.
-Model parameters will first be determined for various concentrations of phosphate buffered saline (PBS), and then for comparison -- in a living sheep's spinal cavity.
-This tells us whether a one-tenth concentration of PBS is in-fact a good substitute for cerebrospinal fluid (CSF), which it is assumed to be by implant engineers.
+Research effort will now move to measuring and fitting suitable parameter values to the model.
+Model parameters are determined for various concentrations of phosphate buffered saline (PBS), and then for comparison -- in a living sheep's spinal cavity.
+The comparison well show whether a one-tenth concentration of PBS is in-fact a good substitute for cerebrospinal fluid (CSF), which it is assumed to be by implant engineers.
 
 \section{Phosphate Buffered Saline}
     Scott \& Single fitted parameters of their model to a one-tenth concentration (0.1X) of a standard solution of PBS \cite{Scott2014}.
-    I measure and fit parameters not only to the one-tenth concentration of PBS but to a range of concentrations from 0.025X up to 1X.
-    Not all of the model parameters vary with concentration, but for the ones that do, a fit of the parameter's value to concentration using regression analysis has been made. %TODO: Correct punctuation in this sentence?%
-    Doing this gives a a model that can be used to predict the impedance response of an electrode array in a wide range of solution concentrations.
+    I measure and fit parameters not only to the one-tenth concentration of PBS but to six concentrations spanning 0.025X to 1X the concentration of a standard saline solution.
+    For the model parameters that change with the concentration of PBS, a fit is made using regression analysis to the concentration.
+    Doing this gives a model that can be used to predict the impedance response of an electrode array submerged in a wider range of saline solutions.
 
-    Each of the PBS measurements were made in \SI{1}{\litre} glass bottles containing \SI{700}{\milli\litre} of PBS solution in each case.
-    Measurements were made in a controlled environment maintaining an ambient temperature of \SI{23}{\degree} Celsius.
+    Each of the PBS measurements were made in \SI{1000}{\milli\litre} glass bottles containing \SI{700}{\milli\litre} of PBS solution.
+    Measurements were made in a temperature controlled environment maintaining a temperature of \SI{21}{\degree} Celsius.
     All measurements were automated by the use of Python scripts running on a GNU/Linux based workstation.
     The scripts communicate with the instruments both to configure measurements and collect data.
     Each measurement set was repeated for each of the six concentrations of PBS used.
-    % The six concentrations of PBS measured are 0.025X, 0.05X, 0.1X, 0.25X 0.5X, and 1.0X the concentration of the standard stock solution.
-    The six concentration of PBS measured are shown in \cref{tab:pt2-PBS_concentrations}.
+    The six concentration of PBS that were measured are shown in \cref{tab:pt2-PBS_concentrations}.
     \begin{table}
       \centering
       \begin{tabular}{l}
@@ -41,7 +40,7 @@ This tells us whether a one-tenth concentration of PBS is in-fact a good substit
         \caption{\label{fig:pt2-measurement_resistorMesh}Illustration of one of two measurement configurations used to to measure the electrode transimpedances. Each of the electrode pairs were measured one-after-the-other using the shown equipment.}
       \end{figure}
 
-      With the electrode immersed in a solution of PBS a \SI{10}{\kilo\hertz} sinusoidal current having an amplitude of \SI{500}{\micro\ampere} was passed through the stimulus electrodes using an Agilent 33220A function generator.
+      With the electrode array immersed in a solution of PBS, a \SI{10}{\kilo\hertz} sinusoidal current having an amplitude of \SI{500}{\micro\ampere} was passed through the stimulus electrodes using an Agilent 33220A function generator.
       A current sense resistor was inserted in series with the stimulus electrodes.
       The differential voltage across a pair of non-stimulating electrodes and the voltage across the current sense resistor was measured using a Tektronix TPS 2024 oscilloscope.
       \Cref{fig:pt2-measurement_resistorMesh} shows the measurement configuration used when electrodes one and eight are used as the stimulus electrodes.
@@ -52,8 +51,9 @@ This tells us whether a one-tenth concentration of PBS is in-fact a good substit
         \includegraphics{content/pt2/07-InterfaceModel/graphics/graph_transimpedance_pbs}
         \caption{\label{fig:pt2-graph_transimpedance_pbs}Measured and fitted values of trans-impedance for both measurement configurations. Voltage measurements are made between adjacent pairs of electrodes as current is pushed through the stimulus electrodes.}
       \end{figure}
-      The results of those measurements, in both configurations, are shown by markers in \cref{fig:pt2-graph_transimpedance_pbs}.
-      Each point is calculated by taking the voltage differential across a pair of electrodes ($V_{diff}$) and dividing by the stimulus current of \SI{500}{\micro\ampere}.
+      The results of those measurements, in both configurations, are represented as markers in \cref{fig:pt2-graph_transimpedance_pbs}.
+      Each point is calculated by taking the voltage differential across a pair of electrodes ($V_{diff}$) and dividing by the stimulus current.
+      The stimulus current was set to be around \SI{500}{\micro\ampere}.
       \begin{table}
         \centering
         \begin{tabular}{r | l}
@@ -68,7 +68,7 @@ This tells us whether a one-tenth concentration of PBS is in-fact a good substit
         \caption{\label{tab:RESparams}Resistor mesh parameters. Electrolyte conductivity ($\sigma$) is expressed in units of $S / cm$.}
       \end{table}
 
-      Values for $R_{eri}$ and $R_{li}$ are using a custom Python optimisation script employing the NumPy library for each concentration of PBS.
+      Values for $R_{eri}$ and $R_{li}$ were determined using a Python optimisation script for each concentration of PBS.
       The optimisation script selects candidate values for $R_{eri}$ and $R_{li}$, simulates the mesh using those values, and then calculates the equivalent trans-impedance values.
       The error between simulated trans-impedance values and measured values is calculated and the process repeats, selecting different values of $R_{eri}$ and $R_{li}$ to improve the fit.
       The final values of $R_{eri}$ and $R_{li}$ are those that minimise the error, they are shown in \cref{tab:RESparams}.
@@ -82,21 +82,20 @@ This tells us whether a one-tenth concentration of PBS is in-fact a good substit
         \includegraphics{content/pt2/08-InterfaceParameters/graphics/measurement_CPE}
         \caption{\label{fig:pt2-measurement_CPE}Illustrated voltage gradient in electrolyte solution at each electrode's surface when potential is applied across electrodes two and seven. Measurement of electrolyte voltage taken between electrodes 2 and 3.}
       \end{figure}
-      Measurement of both the CPE and the interface's series resistance is made using impedance spectroscopy methods.
-      A sinusoidal current is passed between electrodes two and seven of the electrode array.
+      Measurement of both the CPE and the interface's series resistance is made using an impedance spectroscopy method.
+      The measurement is made by passing a sinusoidal current between electrodes two and seven of the electrode array.
       Use of the end electrodes (one and eight) was avoided as a precaution to reduce end effects.
       The sinusoidal voltage at the liquid side of the interface is taken as the the voltage that appears at an adjacent electrode (electode three) when a suitably high impedance measurement is made, this is illustrated in \cref{fig:pt2-measurement_CPE}.
       This measurement relies on the ability to make high impedance voltage measurements to minimise voltage drop across the electrode interface, for which a Tektronix TPS 2024 four channel oscilloscope was used.
       All four of its channels are floating and have an input resistance of \SI{10}{\mega\ohm} using 10X probes.
       An Agilent 33220A Function Generator was used to generate the stimulus waveforms applied between electrodes two and eight.
-      A series resistance of \SI{10}{\kilo\ohm} was inserted in series with the waveform generator's output.
-      It serves as a current sense resistor, also measured using the oscilloscope.
+      A current sense resistor of \SI{10}{\kilo\ohm} was inserted in series with the waveform generator's output and was measured by the oscilloscope.
       \begin{figure}
           \centering
           \includegraphics[scale=0.95]{content/pt2/08-InterfaceParameters/graphics/measurement_CPE_setup}
           \caption{\label{fig:pt2-measurement_CPE_setup}Diagram showing the measurement configuration used to measure the CPE response and interface series resistance.}
       \end{figure}
-      By measuring the current through electrode two and the voltage across electrodes two's interface, the impedance of the interface can be calculated.
+      By measuring the current through electrode two and the voltage across the interface of electrode two, the impedance of the interface is be calculated.
       A diagram showing the measurement setup is shown as \cref{fig:pt2-measurement_CPE_setup}.
       For each of the six solutions, twenty frequencies (log-spaced) were sampled between \SI{50}{\milli\hertz} and \SI{10}{\kilo\hertz} for the impedance measurements.
       At each frequency the stimulus waveform amplitude was re-adjusted to be \SI{300}{\milli\volt}-peak as the interface's impedance changed.
