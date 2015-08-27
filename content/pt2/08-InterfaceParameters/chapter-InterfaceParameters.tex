@@ -239,8 +239,37 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
         I believe this explains the divergence of conduction with concentration between \SI{0.9}{\volt} and \SI{1.05}{\volt} and why there is no observable dependence on the bulk ion concentration beforehand.
         As Faradaic reactions are dangerous in an implanted setting, and therefore to be avoided, interest in Faradaic reactions lies in determining their onset.
         For the purpose of model it is sufficient to place a \SI{0.9}{\volt} limit across a pair of electrodes and proceed on the basis that Faradaic conduction is not affected by the saline concentration.
-         
 
+        \begin{figure}
+          \centering
+          \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_faradaic_currentVsTimeThesis}
+          \caption{\label{fig:graph_faradaic_currentVsTimeThesis} Graph comparing measured Faradaic response of a pair of interfaces (1.0X PBS) to the simultated response using fitted parameter values for $i_0$ and $n$. Each spike is a step in electrode overpotential, with the steps shown in the following graph.} 
+        \end{figure}
+        \begin{figure}
+          \centering
+          \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_faradaic_currentVsVoltageThesis}
+          \caption{\label{fig:graph_faradaic_currentVsVoltageThesis} Graph comparing the measured settled electrical currents of Faradaic reactions (in 1.0X PBS) for a pair of interfaces to simulated final values using the fitted parameter values for $i_0$ and $n$.}
+        \end{figure}
+        Using the ``step and wait'' method to measure electrical currents associated with Faradaic conduction gave much improved results.
+        \Cref{fig:graph_faradaic_currentVsTimeThesis,fig:graph_faradaic_currentVsVoltageThesis} show results using the 1.0X PBS solution; the other concentrations matched equally well.
+        \Cref{fig:graph_faradaic_currentVsTimeThesis} shows that the simulated CPE does not follow the decay curve of the interface, evident at each transition.
+        Notice again how the rate of decay appears to be dependant on the electrode overpotential, with higher voltages giving lower apparent capacitance.
+        This suggests that in order for the simulated CPE to better represent the interface's displacement characteristics it should also be dependant on the electrode overpotential.
+        No effort was made to incorporate the scaling of capacitance into the CPE of the model.
+        Final parameter values for the Faradaic currents (the diodes of the model) are given in \cref{tab:FaradaicParams}.
+
+        \begin{table}
+          \caption{Faradaic parameters}
+          \label{tab:FaradaicParams}
+          \begin{center}
+            \begin{tabular}{r | l}
+                Parameter & Value \\
+                \hline
+                $i0$ & $2.757\thinspace pA$\\
+                $n$ & 1.36\\
+            \end{tabular}
+          \end{center}
+        \end{table}
 
 
       % TODO: Write this up in an Appendix
