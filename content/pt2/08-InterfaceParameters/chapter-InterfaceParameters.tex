@@ -230,7 +230,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
           \item Between \SI{0.9}{\volt} and \SI{1.05}{\volt} each trace transitions to a mode of saline concentration dependence in reverse order of saline concentration.
         \end{enumerate}
 
-        It appears that the change in behaviour between \SI{0.9}{\volt} and \SI{1.05}{\volt} is due to a transition to diffusion-controlled conduction between electrodes.
+        It appears that the change in behavior between \SI{0.9}{\volt} and \SI{1.05}{\volt} is due to a transition to diffusion-controlled conduction between electrodes.
         I hypothesise that below \SI{0.9}{\volt} the charging of the CPE draws available ions to the electrode, creating a layer of high ionic concentration at the surface irrespective of that of the solution bulk.
         It is this layer that is consumed by the Faradaic reactions at a rate that increases exponentially with electrode overpotential.
         The effect of the bulk solution concentration while this layer exists is negligible until the point at which the layer is consumed faster than it can be replenished.
@@ -250,12 +250,12 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
           \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_faradaic_currentVsVoltageThesis}
           \caption{\label{fig:graph_faradaic_currentVsVoltageThesis} Graph comparing the measured settled electrical currents of Faradaic reactions (in 1.0X PBS) for a pair of interfaces to simulated final values using the fitted parameter values for $i_0$ and $n$.}
         \end{figure}
-        Using the ``step and wait'' method to measure electrical currents associated with Faradaic conduction gave much improved results.
-        \Cref{fig:graph_faradaic_currentVsTimeThesis,fig:graph_faradaic_currentVsVoltageThesis} show results using the 1.0X PBS solution; the other concentrations matched equally well.
-        \Cref{fig:graph_faradaic_currentVsTimeThesis} shows that the simulated CPE does not follow the decay curve of the interface, evident at each transition.
-        Notice again how the rate of decay appears to be dependant on the electrode overpotential, with higher voltages giving lower apparent capacitance.
-        This suggests that in order for the simulated CPE to better represent the interface's displacement characteristics it should also be dependant on the electrode overpotential.
-        No effort was made to incorporate the scaling of capacitance into the CPE of the model.
+        Using the ``step and wait'' method to measure electrical currents associated with Faradaic conduction gave improved results, both in repeatability and expected response.
+        \Cref{fig:graph_faradaic_currentVsTimeThesis,fig:graph_faradaic_currentVsVoltageThesis} show results using the 1.0X PBS solution; the other concentrations followed the same pattern.
+        In \cref{fig:graph_faradaic_currentVsTimeThesis} it can be seen that the simulated CPE does not follow the decay curve of the interface after each transition.
+        Notice again how the rate of decay appears to be dependent on the electrode overpotential, with higher voltages resulting in lower apparent capacitance.
+        This suggests that in order for the simulated CPE to better represent the interface's displacement characteristics it should also take the electrode overpotential as a parameter to modify its behavior.
+        No effort was made to incorporate the scaling of capacitance into the CPE of the model, but doing so would be a valuable improvement on the current model.
         Final parameter values for the Faradaic currents (the diodes of the model) are given in \cref{tab:FaradaicParams}.
 
         \begin{table}
@@ -284,9 +284,93 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
 
     \subsection{Final Model}
 
+      Parameter values for each of the model's components have been found.
+      Collecting the parameters that describe the interface's impedance results in \cref{tab:ModelParameters}.
+      This table excludes the parameters of the resistor network as they do not describe the interface itself.
+
+      \begin{table}
+        \caption{Table of determined interface parameters for the St. Jude Medical Octrode in PBS.}
+        \label{tab:ModelParameters}
+        \begin{center}
+          \begin{tabular}{r | l}
+              Parameter & Value \\
+              \hline
+
+              $R_{S}$ ($\Omega$)& $13.38 \times concentration^{-0.8397}$ \\
+              
+              $m$& 1.34\\
+              $k$ & 1.773\\
+              |Z| @ \SI{1}{\hertz} ($\Omega$)& $3284 \times concentration^{-0.158}$ \\
+
+              $i0$ & $2.757\thinspace pA$\\
+              $n$ & 1.36\\
+          \end{tabular}
+        \end{center}
+      \end{table}
+
+      \begin{figure}
+        \centering
+        \includegraphics{content/pt2/08-InterfaceParameters/graphics/interfaceSchematic_PBS_Solved}
+        \caption{\label{fig:interfaceSchematic_PBS_Solved} Schematic of the electrode-electrolyte interface including parameter values for platinum and buffered saline.}
+      \end{figure}
+
 \section{Biological parameter measurements}
-    \label{sect:sheep_measurements}
-    \subsection{Resistor Mesh}
-    \subsection{Series Resistance And Constant Phase Element}
-    \subsection{Faradaic Current}
-    \subsection{Final Model}
+  \label{sect:sheep_measurements}
+
+  \begin{figure}
+    \centering
+    \includegraphics{content/pt2/08-InterfaceParameters/graphics/sheepSpine}
+    \caption{\label{fig:sheepSpine} Diagram showing the positioning of the St. Jude Medical Octrode electrode array inside the sheep spinal cavity.}
+  \end{figure}
+
+  The previous section dealt with measuring and fitting numerical values to the electrode-interface parameters in various solutions of buffered saline, or PBS.
+  Buffered saline, specifically a 0.1X concentration of a standard saline solution, was used for electrode characterisation as it was believed to be a good substitute for cerebrospinal fluid.
+  Electronic engineers at Saluda Medical used these 0.1X PBS solutions to test their implant devices to make sure they were capable of driving and handling the impedance presented by the electrode-electolyte interface and spinal cavity.
+  Not knowing how closely the saline solutions resembled live biological spinal fluid they also tested their implants and electrodes in living sheep.
+  A sheep's spinal canal is smaller than a human's, but large enough to insert an epidural electrode array, making them a relatively accessible means of in-vivo testing for medical applications.
+  Measurement in a live sheep's spinal canal still requires a lot of resources such as a surgeon, access to an operating theater, equipment suitable for use in an operating theater, ethical approval, and time.
+  In each case the test sheep would be anethesatised and kept alive for the duration of the experiments, which often lasted over twelve hours.
+  A veterinary surgeon would prepare and monitor the sheep constantly during the expriments to ensure that it was fully anethatised and then euthenise the sheep at the end of testing.
+
+  These tests offered an opportunity for me to characterise the electrode-electrolyte interface inside a living mammal.
+  This section repeats the measurements and parameter value determination of the previous section but this time inside a living sheep's spinal cavity.
+  The same electrode as was used in the previous measurements (St. Jude Medical Octrode) was inserted into the spinal cavity of the sheep for each experiment, as shown in \cref{fig:sheepSpine}.
+
+  The two sheep used to gather experimental data used here were provided by the Keams Facility at the Royal North Shore Hospital of Sydney under the Animal Care and Ethics Committee approval.
+  These experiments complied with the Australian Code of Practice for the Care and Use of Animals for Scientific Purposes.
+  In each case the sheep were injected with alfaxalone to induce anesthesia and were then intubated and ventilated with an oxygen-air mixture containing isoflurane.
+  During the course of experimentation the animals were monitored using electrocardiogram, arterial blood pressure, arterial saturation, and end-tidal (exhaled) carbon dioxide levels.
+  In short, they were completely unaware of the experiments being carried out and being terminated on completion meant they never became aware.
+  All ethical considerations and procedures around animal testing were handled by Saluda Medical.
+
+  \subsection{Resistor Mesh}
+  After insertion of the electrode array into the sheep, transimpedance measurements were made.
+  These measurements were more extensive than those made in saline as additional stimulus electrode pairs were used.
+  The extra measurements were made with the hope that they may capture more information regarding the impedance structure of the surrounding spine geometry, namely bone.
+
+  \begin{figure}
+    \centering
+    \includegraphics{content/pt2/08-InterfaceParameters/graphics/sheep_transimpedance_doubleFit_mag}
+    \caption{\label{fig:sheep_transimpedance_doubleFit_mag} Graph showing measured and simulated impedance magnitude for twenty five combinations of stimulus-measure pairs of electrodes.}
+  \end{figure}
+
+  \begin{figure}
+    \centering
+    \includegraphics{content/pt2/08-InterfaceParameters/graphics/sheep_transimpedance_doubleFit_phase}
+    \caption{\label{fig:sheep_transimpedance_doubleFit_phase} Graph showing measured and simulated impedance phase for twenty five combinations of stimulus-measure pairs of electrodes.}
+  \end{figure}
+
+  \Cref{fig:sheep_transimpedance_doubleFit_mag,fig:sheep_transimpedance_doubleFit_phase} show both the measured and simulated results for the impedance magnitude and phase response respectively.
+  The magnitude measurements show that when stiumlating between electrodes one and eight and measuring on electrodes two and three that the impedance is approximately that of the one-tenth concentration of PBS (compared with results from \cref{fig:pt2-graph_transimpedance_pbs}).
+  This result adds validation to the notion that the one-tenth concentration of a standard buffered saline solution is a good substitute for a spinal cavity.
+  For the case where the stimulus is placed between electrode one and two and the impedance is measured between electrodes seven and eight, comparison points toward a lower concentration of PBS.
+  Swapping the stimulus and measure electrodes around gave different trans-impedance values, i.e., the point at 12,78 does not equal that of 78,12.
+  It is most probably a result of the electrode array shifting whilst inside the sheep, for which nothing could have been done to prevent.
+
+  An important result of these measurements is the phase response, as is shown in \cref{fig:sheep_transimpedance_doubleFit_phase}.
+  Being non-zero shows that the spinal cavity provides 
+
+
+  \subsection{Series Resistance And Constant Phase Element}
+  \subsection{Faradaic Current}
+  \subsection{Final Model}
