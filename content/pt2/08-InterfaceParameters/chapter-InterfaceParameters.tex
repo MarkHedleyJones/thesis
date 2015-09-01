@@ -65,7 +65,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
           Depth (layers) & 5 \\
           Padding (layers) & 3 \\
         \end{tabular}
-        \caption{\label{tab:RESparams}Resistor mesh parameters. Electrolyte conductivity ($\sigma$) is expressed in units of $S / cm$.}
+        \caption{\label{tab:RESparams}Resistor mesh parameters for the electrode array in various concentrations of PBS. Electrolyte conductivity ($\sigma$) is expressed in units of $S / cm$.}
       \end{table}
 
       Values for $R_{eri}$ and $R_{li}$ were determined using a Python optimisation script for each concentration of PBS.
@@ -350,13 +350,13 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
 
   \begin{figure}
     \centering
-    \includegraphics{content/pt2/08-InterfaceParameters/graphics/sheep_transimpedance_doubleFit_mag}
+    \includegraphics{content/pt2/08-InterfaceParameters/graphics/sheep_transimpedance_doubleFit_mag_thesis}
     \caption{\label{fig:sheep_transimpedance_doubleFit_mag} Graph showing measured and simulated impedance magnitude for twenty five combinations of stimulus-measure pairs of electrodes.}
   \end{figure}
 
   \begin{figure}
     \centering
-    \includegraphics{content/pt2/08-InterfaceParameters/graphics/sheep_transimpedance_doubleFit_phase}
+    \includegraphics{content/pt2/08-InterfaceParameters/graphics/sheep_transimpedance_doubleFit_phase_thesis}
     \caption{\label{fig:sheep_transimpedance_doubleFit_phase} Graph showing measured and simulated impedance phase for twenty five combinations of stimulus-measure pairs of electrodes.}
   \end{figure}
 
@@ -369,13 +369,32 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
 
   One important insight from these measurements is the phase response, as is shown in \cref{fig:sheep_transimpedance_doubleFit_phase}.
   As much as 30 degrees of phase angle between the stimulus current and electrode voltage was observed when separation between the stimulus and measure pairs is at its maximum.
-  This shows that the sheep spinal cavity provides a significant amount of reactance.
+  This shows that the spinal cavity itself is a significantly reactive component.
   For comparison, the PBS solutions displayed no measurable reactance for all of the equivalent trans-impedance measurements.
   The decreasing phase angle of measurements using one and eight as stimulus electrodes is a result of the measured pair of electrodes being between the stimulus, i.e., it is a result of our electrode choices.
   There are other instances where the phase angle appears to drop below zero, but these are likely an artifact of the measurements themselves.
-  Such situations only occur when the stimulus and measured electrodes are adjacent to one another and therefore the impedance was at its lowest.
-  This means that the signal to noise ratio across the measured electrodes was very low, especially as the stimulus current was lowered to prevent triggering of any muscles.
+  Those situations only occur when the stimulus and measured electrodes are adjacent to one another and therefore the impedance, and therefore signal-to-noise ratio, was at its lowest.
+  Stimulus current was reduced for the in-vivo measurements to prevent triggering of any muscles.
+
+  \begin{table}
+    \centering
+    \begin{tabular}{r | l}
+      Parameter & Value \\
+      \hline
+      $R_{eri}$ ($\Omega$)& 500\\
+      $R_{sri}$ ($\Omega$)& 375\\
+      $R_{li}$ ($\Omega$)& 176\\
+      Depth (layers) & 5 \\
+      Padding (layers) & 3 \\
+    \end{tabular}
+    \caption{\label{tab:RESparams_sheep}Resistor mesh parameters for the electrode array in a live sheep's spinal cavity.}
+  \end{table}
+  The simulated results shown in \cref{fig:sheep_transimpedance_doubleFit_mag,fig:sheep_transimpedance_doubleFit_phase} (shown as the red trace) were calculated using the resistor mesh parameter values shown in \cref{tab:RESparams_sheep}.
+  Those values were determined using the same SciPy optimisation library for Python as was used to fit the values in PBS.
+
+
 
   \subsection{Series Resistance And Constant Phase Element}
+
   \subsection{Faradaic Current}
   \subsection{Final Model}
