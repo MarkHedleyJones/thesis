@@ -342,6 +342,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
   During the course of experimentation the animals were monitored using electrocardiogram, arterial blood pressure, arterial saturation, and end-tidal (exhaled) carbon dioxide levels.
   In short, they were completely unaware of the experiments being carried out and being terminated on completion meant they never became aware.
   All ethical considerations and procedures around animal testing were handled by Saluda Medical.
+  Unless otherwise stated, measurement procedures and the equipment used in the hospital are the same as those used to measure the response in PBS.
 
   \subsection{Resistor Mesh}
   Transimpedance measurements were made first once the electrode array was inserted into the spinal canal.
@@ -393,8 +394,51 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
   Those values were determined using the same SciPy optimisation library for Python as was used to fit the values in PBS.
 
 
-
   \subsection{Series Resistance And Constant Phase Element}
+
+%  \begin{figure}
+%    \centering
+%    \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_Sheep_Day1_Thesis}
+%    \caption{\label{fig:graph_Sheep_Day1} Graph showing measured CPE impedance magnitude response from sheep one while alive and post-termination. No data was taken from these measurements for the purporse of fitting the CPE.}
+%  \end{figure}
+%  
+%  \begin{figure}
+%    \centering
+%    \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_Sheep_Day2_Thesis}
+%    \caption{\label{fig:graph_Sheep_Day2} Graph showing measured CPE impedance magnitude response from the spinal cavity of sheep two while alive and post-termination. The average value of each trace was used to fit parameter values.} 
+%  \end{figure}
+  
+  \begin{figure}
+    \centering
+    \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_Day2_Sheep_CPE_ImpedanceMagnitude}
+    \caption{\label{fig:graph_Day2_Sheep_CPE_ImpedanceMagnitude} Graph showing measured CPE impedance magnitude response before and after termination.} 
+  \end{figure}
+  
+  \begin{figure}
+    \centering
+    \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_Day2_Sheep_CPE_ImpedancePhase}
+    \caption{\label{fig:graph_Day2_Sheep_CPE_ImpedancePhase} Graph showing measured CPE impedance phase response before and after termination.} 
+  \end{figure}
+
+%  \Cref{fig:graph_Sheep_Day1,fig:graph_Sheep_Day2} show the measured CPE response on days one and two respectfully.
+
+  % TODO: Rewrite these paragraphs to work with the updated graphs
+  \Cref{fig:graph_Day2_sheep_CPE_ImpedanceMagnitude,fig:graph_Day2_Sheep_CPE_ImpedancePhase} shows the impedance magnitude and phase of the 
+  Issues with reliability were encountered on the first day, evident in the spread of the data.
+  Repeated measurement of a standard saline solution, made in the operating thearter between in-vivo measurements, indicates that part of the measurement system was misbehaving.
+  Replacing the electrode array, rebuilding the measurement setup, and changing the location of the electrode insertion point solved the problem for the following days measurements.
+
+  Day two's measurements, on the second sheep, give consistent results both before and post termination.
+  An important question that we wished to answer was whether the impedance response in live sheep would be any different to that of a dead sheep.
+  The results indicate that there is practically no difference for at least thirty minutes after termination.
+  Those measurements should have been carried out over a much longer duration after the sheep's termination to answer that question in a meaningful way.
+  As the measurements required termination of the sheep, they had to be done after all other experiments had been completed.
+  Since each sheep was shared between other research groups, this meant that termination happened late (early the following morning) due to accumulated delays in previous experiments.
+  Measuring the CPE response in the spinal cavity of a butchered sheep would offer a useful reference point for those measurements.
+  
+
+
+  
 
   \subsection{Faradaic Current}
   \subsection{Final Model}
