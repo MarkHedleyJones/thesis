@@ -18,7 +18,7 @@ This estimation will reveal how much further the cells built earlier would need 
   These functions are believed to be important for the intended application.
 
 
-  \subsection{Selection of appropriate controllers}
+  \subsection{Selection of low power processors}
 
     \begin{sidewaystable}
       \begin{centering}
@@ -76,7 +76,7 @@ This estimation will reveal how much further the cells built earlier would need 
 % as raw data, can be found in appendix %\ref{Appendix:Measurements} .
 
 
-  \subsection{Power consumption benchmarks}
+  \subsection{Benchmarking power consumption}
 
     While testing the power consumption of these microprocessors precautions were taken.
     The chips must be configured to ensure that do not consume more power than is necessary.
@@ -89,7 +89,7 @@ This estimation will reveal how much further the cells built earlier would need 
     This device has been used for most other measurement situations throughout this thesis for its high impedance inputs and measurement accuracy.
 
 
-    \subsubsection*{Sleeping}
+    \subsubsection{Sleep mode}
 
 
       \begin{figure}
@@ -207,7 +207,7 @@ This estimation will reveal how much further the cells built earlier would need 
       For instance, the Atmel and Freescale microprocessors perform one instruction per clock cycle, whereas the Microchip processors perform one instruction every four clock cycles.
 
 
-    \subsubsection*{Power consumed while processing}
+    \subsubsection{Processing}
 
       \begin{figure}
         \centering
@@ -293,7 +293,7 @@ This estimation will reveal how much further the cells built earlier would need 
 
 
 
-    \subsubsection*{Performance benchmark}
+    \subsubsection{Instruction efficiency}
 
       \begin{algorithm}
         \begin{lstlisting}
@@ -339,7 +339,7 @@ This estimation will reveal how much further the cells built earlier would need 
 
 
 
-    \subsection{Non-volatile memory}
+    \subsubsection{Non-volatile memory}
 
       In order for a microprocessor to keep information about its current state and recorded data in the event of power loss it must write to non-volatile memory.
       Non-volatile memory is implemented as either electrically erasable and programmable read only memory (EEPROM) or Flash memory.
@@ -368,7 +368,7 @@ This estimation will reveal how much further the cells built earlier would need 
 
 
 
-    \subsection{Analog-to-digital conversions.}
+    \subsubsection{Analog-to-digital conversion}
 
       The operation of an electronic water meter may require that analogue-to-digital conversions are made.
       Measuring the amount of energy consumed per conversion was done in much the same way as the previous tests.
@@ -420,7 +420,7 @@ This estimation will reveal how much further the cells built earlier would need 
     In total the RFM consumed \SI{6.71}{\milli\joule} and the Xbee consumed \SI{12.3}{\milli\joule}.
     Adjusting these figures for the worst case (multiplying by one hundred) gives \SI{671}{\milli\joule} for the RFM12B and \SI{1.23}{\joule} for the Xbee.
 
-  \section{Total Energy Requirements}
+  \section{Final Estimate of Energy Requirements}
 
     A crude estimation of an electronic water meter's microprocessor event loop is as follows.
     \begin{enumerate}
