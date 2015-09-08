@@ -95,7 +95,7 @@ This estimation will reveal how much further the cells built earlier would need 
       \begin{figure}
         \centering
         \includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_All_Sleeping_Current}
-        \caption{\label{fig:All_Sleep_Current}Current consumed by investigated MCUs while in sleep mode.}
+        \caption{\label{fig:All_Sleep_Current}Graph showing current consumed by MCUs in sleep mode versus supply voltage.}
       \end{figure}
 
       A microprocessor in sleep mode is essentially powered off, the difference being that volatile data is preserved.
@@ -212,37 +212,37 @@ This estimation will reveal how much further the cells built earlier would need 
       \begin{figure}
         \centering
         \includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_PIC16F1827_Clock_Power}
-        \caption{\label{graph:CLK_POWER_16F1827}Power consumed by the PIC16F1827 while processing}
+        \caption{\label{graph:CLK_POWER_16F1827}Graph showing power consumed by the PIC16F1827 while processing versus supply voltage.}
       \end{figure}
 
       \begin{figure}
         \centering
         \includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_PIC16F688_Clock_Power}
-        \caption{\label{graph:CLK_POWER_16F688}Power consumed by the PIC16F688 while processing}
+        \caption{\label{graph:CLK_POWER_16F688}Graph showing power consumed by the PIC16F688 while processing versus supply voltage.}
       \end{figure}
 
       \begin{figure}
       \centering
         \includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_PIC12F675_Clock_Power}
-        \caption{\label{graph:CLK_POWER_12F675-1}Power consumed by the PIC12F675 while processing}
+        \caption{\label{graph:CLK_POWER_12F675-1}Graph showing power consumed by the PIC12F675 while processing versus supply voltage.}
       \end{figure}
 
       \begin{figure}
       \centering
         \includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_ATtiny25V_Clock_Power}
-        \caption{\label{graph:CLK_POWER_ATtiny25V}Power consumed by the ATtiny25V while processing}
+        \caption{\label{graph:CLK_POWER_ATtiny25V}Graph showing power consumed by the ATtiny25V while processing versus supply voltage.}
       \end{figure}
 
       \begin{figure}
         \centering
         \includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_ATtiny13V_Clock_Power}
-        \caption{\label{graph:CLK_POWER_ATtiny13V}Power consumed by the ATtiny13V while processing}
+        \caption{\label{graph:CLK_POWER_ATtiny13V}Graph showing power consumed by the ATtiny13V while processing versus supply voltage.}
       \end{figure}
 
       \begin{figure}
         \centering
         \includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_MC9S08QG8_Clock_Power}
-        \caption{\label{graph:CLK_POWER_MC9S08QG8}Power consumed by the MC9S08QG8 while processing}
+        \caption{\label{graph:CLK_POWER_MC9S08QG8}Graph showing power consumed by the MC9S08QG8 while processing versus supply voltage.}
       \end{figure}
 
       Results in this section are expressed in terms of instructions per second (IPS).
@@ -279,16 +279,14 @@ This estimation will reveal how much further the cells built earlier would need 
       \includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_All_Clock_JPI}
       \par\end{centering}
 
-      \protect\caption{\label{fig:Per-instruction-cycle}Per instruction cycle energy consumption
-      comparison}
+      \protect\caption{\label{fig:Per-instruction-cycle}Graph showing instruction cycle energy consumption for each MCU versus supply voltage.}
       \end{figure}
       \begin{figure}
       \begin{centering}
       \includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_ATtiny13V_Clock_JPI}
       \par\end{centering}
 
-      \protect\caption{\label{fig:Per-instruction-ATtiny13V}Per instruction cycle energy
-      consumption of the ATtiny13V}
+      \protect\caption{\label{fig:Per-instruction-ATtiny13V}Graph showing instruction cycle energy consumption of the ATtiny13V versus supply voltage.}
       \end{figure}
 
 
@@ -324,8 +322,7 @@ This estimation will reveal how much further the cells built earlier would need 
           \begin{centering}
               \includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_All_Clock_Benchmark}
           \end{centering}
-          \protect\caption{\label{fig:GraphBar_All_Benchmark}MCU comparison of instructions
-          taken to complete a benchmark.}
+          \protect\caption{\label{fig:GraphBar_All_Benchmark}Graph showing the number of instruction cycles taken to complete a benchmark routine for  for each MCU.}
       \end{figure}
 
       To determine the instructional efficiency, the code was set to toggle the state of a digital output pin.
@@ -350,7 +347,7 @@ This estimation will reveal how much further the cells built earlier would need 
       \begin{figure}
         \centering
         \includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_All_EEPROM_JPO}
-        \caption{\label{fig:Energy-consumed-EEPROM}Energy consumed by each MCU per non-volatile erase/write operation.}
+        \caption{\label{fig:Energy-consumed-EEPROM}Graph showing energy consumed per non-volatile erase/write operation versus MCU supply voltage.}
       \end{figure}
 
       The energy consumption of each of the chips with EEPROM memory during a 1-byte write operation is shown as \cref{fig:Energy-consumed-EEPROM}.
@@ -378,7 +375,7 @@ This estimation will reveal how much further the cells built earlier would need 
       \begin{figure}
         \centering
         \includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_ALL_ADC_JPM}
-        \caption{\label{fig:Energy-consumed-ADC}Energy consumed by each MCU per ADC measurement.}
+        \caption{\label{fig:Energy-consumed-ADC}Graph showing the energy consumed per ADC measurement versus MCU supply voltage.}
       \end{figure}
 
 
@@ -402,13 +399,13 @@ This estimation will reveal how much further the cells built earlier would need 
     \begin{figure}
       \centering
       \includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_RFMPower.pdf}
-      \caption{\label{fig:Energy-consumed-RFM12B}Power draw from a HopeRF RFM12B transceiver module.}
+      \caption{\label{fig:Energy-consumed-RFM12B}Graph of power draw from a HopeRF RFM12B transceiver module versus time during a power-up and transmit sequence.}
     \end{figure}
 
     \begin{figure}
       \centering
       \includegraphics{content/pt1/03-EnergyRequirements/graphics/Graph_XbeePower.pdf}
-      \caption{\label{fig:Energy-consumed-XBee}Power draw from a Digi International Xbee Series 2 transceiver module.}
+      \caption{\label{fig:Energy-consumed-XBee}Graph of power draw from a Digi International Xbee Series 2 transceiver module versus time during a wake \& transmit sequence.}
     \end{figure}
 
     The RFM12B was operated at 433MHz, a frequency that is expected to increase the transmission through walls and soil.
@@ -450,7 +447,7 @@ This estimation will reveal how much further the cells built earlier would need 
         EEPROM & 2 & bytes & \SI{79.0}{\micro\joule} \\ \hline \hline
         &&Total (per day) & \SI{6.93}{\joule} \\ \hline
       \end{tabular}
-      \caption{\label{tab:EnergyBudget-EventLoop}Daily energy expenditure of basic processing functionality}
+      \caption{\label{tab:EnergyBudget-EventLoop}Table of daily energy expenditure of basic processing functionality}
     \end{table}
 
     \begin{table}
@@ -463,7 +460,7 @@ This estimation will reveal how much further the cells built earlier would need 
         EEPROM & 10 & bytes & \SI{394}{\micro\joule} \\ \hline \hline
         &&Total (per day) & \SI{4.93}{\joule} \\ \hline
       \end{tabular}
-      \caption{\label{tab:EnergyBudget-Transmission}Daily energy expenditure to transmit 160 characters every six hours}
+      \caption{\label{tab:EnergyBudget-Transmission}Table of daily energy expenditure to transmit 160 characters every six hours}
     \end{table}
 
     \Cref{tab:EnergyBudget-EventLoop,tab:EnergyBudget-Transmission} combine the measurements and estimates form the previous sections with the event loop estimation.

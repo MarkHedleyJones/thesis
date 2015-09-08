@@ -12,8 +12,6 @@ via GLIB interface using a USB connection and Agilent IO Libraries
 Version 16.0.1458.0. From here the machine was interfaced using custom
 Python scripts (appended) and PyVisa (available from \url{http://pyvisa.sourceforge.net/pyvisa/} ).
 
-\subsection{E5270 Scripts}
-
 Measurement of chip energy consumption was carried out using the following
 measurement script. This script is written in Python and was executed
 using PyLab from the Enthought Python bundle.
@@ -21,7 +19,7 @@ using PyLab from the Enthought Python bundle.
 \verbatiminput{content/appendices/microprocessorPowerMeasurements/Microcontrollers/measDev.py}
 
 
-\section{Measurement data}
+\section{Measurement Data}
 
 It should be noted that the Freescale M9S08QG8 and the Microchip PIC16F1827
 were unable to boot reliably into a low power state at 1.8V. To prevent
@@ -30,7 +28,7 @@ to prevent the chips entering a state where current consumption was
 in the hundreds of microamps range.
 
 
-\subsection{Chips sleeping}
+\subsection{Sleep Mode}
 
 The following tables list the unprocessed current measurements for
 a sweep of Vdd from 1.8V to 5.5V. Sweeps have been restricted to the
@@ -91,8 +89,7 @@ Vdd  & Tiny13V  & Tiny25V  & 12F675  & 16F1827  & M9S08QG8\tabularnewline
 \includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_All_Sleeping_Power}
 \par\end{centering}
 
-\protect\caption{\label{fig:All_SleepPower}Power usage of each microprocessor while
-in sleep mode}
+\protect\caption{\label{fig:All_SleepPower}Graph of power consumption of each microprocessor while in sleep mode versus supply voltage.}
 
 
 \end{figure}
@@ -170,7 +167,7 @@ Vdd  & 9.6 MHz  & 4.8 MHz  & 1.2 MHz  & 600 kHz  & 128 kHz  & 16 kHz\tabularnewl
 \end{tabular}
 \par\end{centering}
 
-\protect\caption{Atmel ATtiny13V clocking current (Vdd 3.7V -- 5.5V).}
+\protect\caption{Table of Atmel ATtiny13V clocking current (Vdd 3.7V -- 5.5V).}
 
 
 \end{sidewaystable}
@@ -180,36 +177,29 @@ Vdd  & 9.6 MHz  & 4.8 MHz  & 1.2 MHz  & 600 kHz  & 128 kHz  & 16 kHz\tabularnewl
 \par\end{centering}
 
 \protect\caption{
-\label{fig:ATtiny13VClkCurrent}Current consumption of the Atmel ATtiny13V
-while clocking
+\label{fig:ATtiny13VClkCurrent}Graph of current consumption of the Atmel ATtiny13V while clocking versus supply voltage.
 }
 
 
 \end{figure}
+
 \begin{figure}
-\begin{centering}
-\includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Power}
-\par\end{centering}
-
-\protect\caption{
-\label{fig:ATtiny13VClkPower}Power consumption of the Atmel ATtiny13V
-while clocking
-}
+  \centering
+  \includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Power}
+  \caption{
+  \label{fig:ATtiny13VClkPower}Graph of power consumption of the Atmel ATtiny13V
+  while clocking versus supply voltage.
+  }
 \end{figure}
+
 \begin{figure}
-\begin{centering}
-\includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_JPI}
-\par\end{centering}
-
-\protect\caption{
-\label{fig:ATtiny13VClkJPI}Energy consumed per instruction for the
-Atmel ATtiny13V
-}
-
-
+  \centering
+  \includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_JPI}
+  \protect\caption{
+  \label{fig:ATtiny13VClkJPI}Graph of energy consumed per instruction for the
+  Atmel ATtiny13V versus supply voltage.
+  }
 \end{figure}
-
-
 
 \subsubsection*{ATtiny25V}
 
@@ -241,8 +231,7 @@ Vdd  & 16 MHz  & 8 MHz  & 6.4 MHz  & 2 MHz  & 1 MHz  & 800 kHz  & 128 kHz  & 16 
 \hline
 \end{tabular}
 \par\end{centering}
-
-\protect\caption{Atmel ATtiny25V clocking current (Vdd 3.7V -- 5.5V)}
+\caption{Atmel ATtiny25V clocking current (Vdd 3.7V -- 5.5V)}
 
 
 \end{sidewaystable}
@@ -274,49 +263,31 @@ Vdd  & 16 MHz  & 8 MHz  & 6.4 MHz  & 2 MHz  & 1 MHz  & 800 kHz  & 128 kHz  & 16 
 \hline
 \end{tabular}
 \par\end{centering}
-
-\protect\caption{Atmel ATtiny25V clocking current (VDD 3.7V -- 5.5V)}
-
-
+\caption{Atmel ATtiny25V clocking current (VDD 3.7V -- 5.5V)}
 \end{sidewaystable}
+
 \begin{figure}
-\begin{centering}
-\includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Current}
-\par\end{centering}
-
-\protect\caption{\label{fig:ATtiny25VClkCurrent}Current consumption of the Atmel ATtiny25V
-while clocking}
-
-
-\end{figure}
-\begin{figure}
-\begin{centering}
-\includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny25V_Clock_Power}
-\par\end{centering}
-
-\protect\caption{
-\label{fig:ATtiny25VClkPower}Power consumption of the Atmel ATtiny25V
-while clocking
-}
-
-
-\end{figure}
-\begin{figure}
-\begin{centering}
-\includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny25V_Clock_JPI}
-\par\end{centering}
-
-\protect\caption{
-\label{fig:ATtiny25VClkJPI}Energy consumed per instruction for the
-Atmel ATtiny25V
-}
-
-
+  \centering
+    \includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny13V_Clock_Current}
+  \caption{\label{fig:ATtiny25VClkCurrent}Graph of current consumption of the Atmel ATtiny25V while clocking versus supply voltage}
 \end{figure}
 
+\begin{figure}
+  \centering
+    \includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny25V_Clock_Power}
+  \caption{\label{fig:ATtiny25VClkPower}Graph of power consumption of the Atmel ATtiny25V while clocking versus supply voltage.}
+\end{figure}
+
+\begin{figure}
+  \centering
+    \includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_ATtiny25V_Clock_JPI}
+  \caption{
+  \label{fig:ATtiny25VClkJPI}Graph of energy consumed per instruction for the Atmel ATtiny25V versus supply voltage.}
+\end{figure}
 
 
 \subsubsection*{Microchip PIC16F1827}
+
 
 \begin{sidewaystable}
 \begin{centering}
@@ -389,40 +360,25 @@ Vdd  & 32 MHz  & 16 MHz  & 8 MHz  & 4 MHz  & 2 MHz  & 1 MHz  & 500 kHz  & 31 kHz
 
 \protect\caption{\label{fig:16F1827ClkCurrent}Current consumption of the Microchip
 PIC16F1827 while clocking}
-
-
 \end{figure}
+
 \begin{figure}
-\begin{centering}
-\includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_Power}
-\par\end{centering}
-
-\protect\caption{
-\label{fig:16F1827ClkPower}Power consumption of the Microchip PIC16F1827
-while clocking
-}
-
-
+  \centering
+    \includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_Power}
+  \caption{\label{fig:16F1827ClkPower}Graph of power consumption of the Microchip PIC16F1827 while clocking versus supply voltage.}
 \end{figure}
+
 \begin{figure}
-\begin{centering}
-\includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_JPI}
-\par\end{centering}
-
-\protect\caption{
-\label{fig:16F1827ClkJPI}Energy consumed per instruction for the
-Microchip PIC16F1827
-}
-
-
+  \centering
+  \includegraphics{content/appendices/microprocessorPowerMeasurements/graphics/Graph_PIC16F1827_Clock_JPI}
+  \caption{
+  \label{fig:16F1827ClkJPI}Graph of energy consumed per instruction for the Microchip PIC16F1827 versus supply voltage.}
 \end{figure}
-
 
 
 \section{Microprocessor Test Code}
 
-
-\subsection{ATMEL ATtiny13V and ATtiny25}
+\subsection*{ATMEL ATtiny13V and ATtiny25}
 
 Code was written in AVRStudio 4.18 (build 684) and compiled using
 WinAVR (AVR-GCC compiler for windows available from \url{http://winavr.sourceforge.net/}.
@@ -444,7 +400,7 @@ time; 14 CK + 0ms'
 \lstinputlisting[caption={ATtiny25V Clocking Proceedure},label={code:ATtiny25VClockingCode}]{content/appendices/microprocessorPowerMeasurements/code/ATtiny13V_clocking.c}
 
 
-\subsection{Microchip 12F675}
+\subsection*{Microchip 12F675}
 
 Code was written in MPLAB v8.6 in C and compiled using HI-TECH C v9.60.
 Chip programming was done using PICkit 2 Programmer software v2.61.
@@ -456,7 +412,7 @@ oscillators, causing them fail.%
 \subsubsection*{Sleep}
 
 
-\subsection{Microchip 16F1827}
+\subsection*{Microchip 16F1827}
 
 Code written in MPLAB v8.6 in C and compiled using HI-TECH C v 9.60.
 Chip programming was done using PICkit 2 Programmer software v2.61,
@@ -485,7 +441,7 @@ initialisation routine.
 \lstinputlisting[caption={PIC16F1827 Clocking Proceedure},label={code:PIC16F1827ClockingCode}]{content/appendices/microprocessorPowerMeasurements/code/PIC16F1827_clocking.c}
 
 
-\subsection{Freescale M9S08QG8}
+\subsection*{Freescale M9S08QG8}
 
 Code was written using Freescale's bundled IDE, CodeWarrior v5.90,
 and downloaded using a supplied USB demo board (DEMO9S08QG8E).
