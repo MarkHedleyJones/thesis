@@ -5,9 +5,9 @@
   \label{sect:background_doubleLayers}
 
 
-  Modelling and measuring the electrical aspects of interfacial double layers draws on both electronic and chemical concepts.
+  Modelling and measuring the electrical propeties of interfacial double layers draws on both electronic and chemical concepts.
   Those with an electronic background are unlikely to be familiar with double layers.
-  This section provides background on what a double layer is and how one is formed, beginning with a discussion of liquids.
+  This section provides background on what a double layer is and how one is formed; it begins with a discussion of liquids.
 
 
   \subsection{Formation}
@@ -22,23 +22,23 @@
         \caption{Graphic showing a representation of a water molecule}
         \label{fig:waterMolecule}
     \end{figure}
-    A double layer is an organised layer of liquid; two layers to be precise.
+    Double-layers are organised layers of liquid; generally broken into two layers.
     Because double layers are a property of liquids, and most common liquids are water based, the properties of water is an appropriate place to start.
     The following properties of water are not necessary for the formation of double layers, but knowing of them helps build a mental model of the system.
     At the microscopic scale, individual atoms and molecules within liquids interact with complexity.
     The density of atoms and molecules in water is extreme, $3.33\times10^{22}$ \ce{H2O} molecules per millilitre.
-    These molecules are polar, meaning that one side appears negatively charged while the other appears positively charged, shown in~\cref{fig:waterMolecule}.
+    These molecules are polar, meaning that one side is negatively charged while the other appears positively charged, shown in~\cref{fig:waterMolecule}.
     This causes them to respond to electric fields by rotating, so as to minimise their potential energy in the field.
     Because of this, any ions present become surrounded by arranged volumes of water.
     For example, a positive ion will be surrounded by water molecules orientated such that their hydrogen atoms all point away from the ion.
     It is also possible for water to spontaneously disassociate from \ce{H2O} into a proton (\ce{H+}) and a hydroxide anion  (\ce{OH-}).
 
     % Formation
-    To form a double layer a liquid containing ions must meet a solid object with charged trapped at its surface.
+    To form a double layer, a liquid containing ions must meet a solid object with charged trapped at its surface.
     Once this happens, the ions within the liquid are drawn to, or repelled from, the solid's surface.
     The point where the two states of matter meet is called the interface.
     Those ions that have been drawn to the interface collect together to form a double layer.
-    Double layers occur when using pure water as the liquid, because of its ability to disassociate, but mostly it is the ions from an electrolyte solution that form the layer~\cite{Bruesch2004}.
+    Double layers can occur when pure water is the liquid, because of its ability to disassociate, but mostly it is the ions from an electrolyte solution (one containing salts) that form the layer~\cite{Bruesch2004}.
     The double layer is simply the collection of ions drawn from a liquid to the surface of a solid.
 
 
@@ -50,10 +50,10 @@
         \caption{Graphic showing the structural formula of a butterfat molecule}
         \label{fig:butterfat}
     \end{figure}
-    The term `solid' may refer to the walls of a container or particulates suspended in solution.
+    'Solid' may refer to the walls of a container or particulates suspended in solution.
     When a particulate is suspended throughout a solution it is referred to as an emulsion.
     For example, milk is such an emulsion of butterfat in water.
-    \Cref{fig:butterfat} shows the structure of a butterfat molecule; a long structure that behaves as a solid.
+    \Cref{fig:butterfat} shows the structure of a butterfat molecule; a long structure that can be approximated as being a solid.
     The stability of an emulsion, such as milk, depends on the strength of the double layers that encapsulate each particle.
     These double layers shield the molecules or particles from one another electrically.
     By shielding them from each other they are unable to collect and bond together.
@@ -81,9 +81,6 @@
     %The consequence being that any charge interactions will be most pronounced within the liquid phase at the surface of the solid.
 
 
-    Having addressed where double layers come from, as well as their organisation, the anatomy of these layers is now introduced.
-
-
   \subsection{A physical model}
     \label{sub:background_doubleLayers_physicalModel}
 
@@ -95,14 +92,16 @@
       \caption{Graphic showing relationship between co-ion and counter-ions.}
       \label{fig:counterAndCoIons}
     \end{figure}
-    In the previous section, a brief explanation of what a double layer is and where they form was introduced.
-    We next look at double layer anatomy and define some of its properties.
-    Before moving on, use of the terms `co-ion' and `counter-ion' is defined.
+    In the previous section, a brief explanation of what a double layer is and where they form was given.
+    The anatomy of a double layer and some of its properties will now be defined.
+    When discussing ions, it is convenient to use the  term `co-ion' and `counter-ion'.
     These terms refer to ions containing charge -- like or opposite -- in polarity to a second charge or body of charge.
-    For example, if a negatively charged surface attracts positively charged ions then positive ions are the counter-ion.
+    For example, if a negatively charged surface attracts positively charged ions then positive ions are counter-ions to the surface.
     Likewise, if a positively charged surface was to repel a positive ion then the positive ion is the co-ion.
     The terms are convenient because they remove the need to identify specific polarities during discussion.
     This relationship is shown in~\cref{fig:counterAndCoIons}.
+
+    % Edit checkpoint 2015-09-09 21:06
 
     \begin{figure}
       \begin{center}
@@ -488,4 +487,3 @@
   This involves modelling the electrode/electrolyte interface itself, a central idea in interface science.
   \Cref{part:doubleLayersOnConductors} of this thesis looks at ways of doing that using a model of the interface itelf.
   Such a model is suitable for entry into common circuit simulators, such as SPICE, that electronic engineers already use.
-
