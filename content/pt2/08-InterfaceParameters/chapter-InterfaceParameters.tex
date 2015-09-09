@@ -6,7 +6,7 @@ Model parameters are determined for various concentrations of phosphate buffered
 The comparison will show whether a one-tenth concentration of PBS is in-fact a good substitute for cerebrospinal fluid (CSF), which it is assumed to be by medical implant engineers.
 
 \section{Phosphate Buffered Saline}
-
+\label{sect:pbs_measurements}
 
     Scott \& Single fitted parameters of their model to a one-tenth concentration (0.1X) of a standard solution of PBS; a buffered saline solution \cite{Scott2014}.
     I measure and fit parameters not only to the one-tenth concentration, but to six concentrations spanning 0.025X to 1X the concentration of a standard buffered saline solution.
@@ -252,7 +252,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
         \begin{figure}
           \centering
           \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_faradaic_currentVsTimeThesis}
-          \caption{\label{fig:graph_faradaic_currentVsTimeThesis} Graph comparing measured Faradaic response of a pair of interfaces (1.0X PBS) to the simultated response using fitted parameter values for $i_0$ and $n$. Each spike is a step in electrode overpotential, with the steps shown in the following graph.} 
+          \caption{\label{fig:graph_faradaic_currentVsTimeThesis} Graph comparing measured Faradaic response of a pair of interfaces (1.0X PBS) to the simultated response using fitted parameter values for $i_0$ and $n$. Each spike is a step in electrode overpotential, with the steps shown in the following graph.}
         \end{figure}
         \begin{figure}
           \centering
@@ -297,7 +297,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
       This table excludes the parameters of the resistor network as they do not describe the interface itself.
 
       \begin{table}
-        \caption{Table of determined interface parameters for the St. Jude Medical Octrode in PBS.}
+        \caption{Determined interface parameters for the St. Jude Medical Octrode in phosphate buffered saline.}
         \label{tab:ModelParameters}
         \begin{center}
           \begin{tabular}{r | l}
@@ -305,7 +305,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
               \hline
 
               $R_{S}$ ($\Omega$)& $13.38 \times concentration^{-0.8397}$ \\
-              
+
               $m$& 1.34\\
               $k$ & 1.773\\
               |Z| @ \SI{1}{\hertz} ($\Omega$)& $3284 \times concentration^{-0.158}$ \\
@@ -355,30 +355,30 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
   Unless otherwise stated, measurement procedures and the equipment used in the hospital are the same as those used to measure the response in PBS.
 
   \subsection{Inter-electrode resistivity}
-  
+
     Transimpedance measurements were made first once the electrode array was inserted into the spinal canal.
     These measurements were more extensive than those made in saline as additional stimulus electrode pairs were used.
     The extra measurements were made with the hope that they may capture more information regarding the impedance structure of the surrounding spine geometry, namely bone.
-  
+
     \begin{figure}
       \centering
       \includegraphics{content/pt2/08-InterfaceParameters/graphics/sheep_transimpedance_doubleFit_mag_thesis}
       \caption{\label{fig:sheep_transimpedance_doubleFit_mag} Graph showing measured and simulated impedance magnitude for twenty five combinations of stimulus-measure pairs of electrodes.}
     \end{figure}
-  
+
     \begin{figure}
       \centering
       \includegraphics{content/pt2/08-InterfaceParameters/graphics/sheep_transimpedance_doubleFit_phase_thesis}
       \caption{\label{fig:sheep_transimpedance_doubleFit_phase} Graph showing measured and simulated impedance phase for twenty five combinations of stimulus-measure pairs of electrodes.}
     \end{figure}
-  
+
     \Cref{fig:sheep_transimpedance_doubleFit_mag,fig:sheep_transimpedance_doubleFit_phase} show both the measured and simulated results for the impedance magnitude and phase response respectively.
     The magnitude measurements show that when stiumlating between electrodes one and eight and measuring on electrodes two and three that the impedance is approximately that of the one-tenth concentration of PBS (compared with results from \cref{fig:pt2-graph_transimpedance_pbs}).
     This result adds validation to the notion that the one-tenth concentration of a standard buffered saline solution is a good substitute for a spinal cavity.
     For the case where the stimulus is placed between electrode one and two and the impedance is measured between electrodes seven and eight, comparison points toward a lower concentration of PBS.
     Swapping the stimulus and measure electrodes around gave different trans-impedance values, i.e., the point at 12,78 does not equal that of 78,12.
     It is most probably a result of the electrode array shifting whilst inside the sheep, for which nothing could have been done to prevent.
-  
+
     One important insight from these measurements is the phase response, as is shown in \cref{fig:sheep_transimpedance_doubleFit_phase}.
     As much as 30 degrees of phase angle between the stimulus current and electrode voltage was observed when separation between the stimulus and measure pairs is at its maximum.
     This shows that the spinal cavity itself is a significantly reactive component.
@@ -387,7 +387,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
     There are other instances where the phase angle appears to drop below zero, but these are likely an artifact of the measurements themselves.
     Those situations only occur when the stimulus and measured electrodes are adjacent to one another and therefore the impedance, and therefore signal-to-noise ratio, was at its lowest.
     Stimulus current was reduced for the in-vivo measurements to prevent triggering of any muscles.
-  
+
     \begin{table}
       \centering
       \begin{tabular}{r | l}
@@ -399,51 +399,51 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
         Depth (layers) & 5 \\
         Padding (layers) & 3 \\
       \end{tabular}
-      \caption{\label{tab:RESparams_sheep} Table of determined resistor mesh parameters for an electrode array in a live sheep's spinal cavity.}
+      \caption{\label{tab:RESparams_sheep} Determined resistor mesh parameters for an electrode array in a live sheep's spinal cavity.}
     \end{table}
     The simulated results shown in \cref{fig:sheep_transimpedance_doubleFit_mag,fig:sheep_transimpedance_doubleFit_phase} (shown as the red trace) were calculated using the resistor mesh parameter values shown in \cref{tab:RESparams_sheep}.
     Those values were determined using the same SciPy optimisation library for Python as was used to fit the values in PBS.
-  
-  
+
+
   \subsection{Constant phase \& series resistance}
 
     \begin{figure}
       \centering
       \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_Day2_Sheep_CPE_ImpedanceMagnitude}
-      \caption{\label{fig:graph_Day2_Sheep_CPE_ImpedanceMagnitude} Graph showing measured CPE impedance magnitude response before and after termination.} 
+      \caption{\label{fig:graph_Day2_Sheep_CPE_ImpedanceMagnitude} Graph showing measured CPE impedance magnitude response before and after termination.}
     \end{figure}
-    
+
     \begin{figure}
       \centering
       \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_Day2_Sheep_CPE_ImpedancePhase}
-      \caption{\label{fig:graph_Day2_Sheep_CPE_ImpedancePhase} Graph showing measured CPE impedance phase response before and after termination.} 
+      \caption{\label{fig:graph_Day2_Sheep_CPE_ImpedancePhase} Graph showing measured CPE impedance phase response before and after termination.}
     \end{figure}
-  
-  
+
+
     \Cref{fig:graph_Day2_sheep_CPE_ImpedanceMagnitude,fig:graph_Day2_Sheep_CPE_ImpedancePhase} shows the impedance magnitude and phase response of the CPE at the interface between the electrode and the sheep's spinal cavity.
     Reliability issues on day one meant that no useful data was captured from the first sheep, hence these figures show data only from the second sheep.
     Measurements on the second day were made over a thirty minute period starting two minutes before termination.
-    
+
     An important question that we wished to answer was whether the impedance response in live sheep would be any different to that of a dead sheep.
     Results indicate that there is practically no difference for at least thirty minutes after termination.
     However, measurements should have been carried out over a longer time-frame after termination as it would likely take longer for the fluid composition to change.
     As the measurements required termination of the sheep, they had to be done after all other experiments had been completed.
     Since each sheep was shared between other research groups, this meant that termination happened late (early the following morning) due to accumulated delays in previous experiments.
     Measuring the CPE response in the spinal cavity of a butchered sheep would offer a useful reference point for those measurements.
-    
-  
+
+
     \begin{figure}
       \centering
       \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_displacement-withSheep_impedanceVsFrequency_magnitude_thesis}
-      \caption{\label{fig:graph_displacement-withSheep_impedanceVsFrequensy_magnitude} Graph showing average CPE response in live sheep compared to the six solutions of PBS, visible as the grey traces, and simulated response based on fitted parameters.} 
+      \caption{\label{fig:graph_displacement-withSheep_impedanceVsFrequensy_magnitude} Graph showing average CPE response in live sheep compared to the six solutions of PBS, visible as the grey traces, and simulated response based on fitted parameters.}
     \end{figure}
-    
+
     \begin{figure}
       \centering
       \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_displacement-withSheep_impedanceVsFrequency_phase_thesis}
-      \caption{\label{fig:graph_displacement-withSheep_impedanceVsFrequency_phase} Graph showing average CPE response in a live sheep's spinal cavity compared to six concentrations of PBS, visible as grey traces, and simulated response based on fitted parameters.} 
+      \caption{\label{fig:graph_displacement-withSheep_impedanceVsFrequency_phase} Graph showing average CPE response in a live sheep's spinal cavity compared to six concentrations of PBS, visible as grey traces, and simulated response based on fitted parameters.}
     \end{figure}
-  
+
     \Cref{fig:graph_displacement-withSheep_impedanceVsFrequensy_magnitude,fig:graph_displacement-withSheep_impedanceVsFrequency_phase} compares the average impedance (both magnitude and phase) of the previous graphs with the six concentrations of PBS used in the previous section.
     Simulated results from a numerical fit to the measured data appear as the red trace.
     At low frequencies, below \SI{1}{\hertz}, the simulated data deviates substantially from measured results.
@@ -451,30 +451,30 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
     What is interesting is the series resistance in sheep spine is similar to that of a 0.25X PBS solution, whereas the CPE behaves more like that of a concentration much lower than 0.025X.
     Based on this data, a one-tenth concentration of PBS does appear to be a reasonable approximation to the electrolyte found in a mammalian spinal column, although the match is poor.
     In the following section the possibility of creating a solution that better matches these results will be explored.
- 
+
 
   \subsection{Faradaic current}
-  
+
     Faradaic measurements on the live animal were abandoned as they were deemed likely to cause muscle contractions.
     Attempts were made to measure Faradaic response using a much lower stimulus current but this only resulted in noise and were discarded.
     These measurements may be possible if done after a long enough duration post-termination, to prevent muscle movement.
-  
+
   \subsection{Final model}
 
     \begin{table}
-      \caption{Table of determined interface parameters for an electrode array in a live sheep's spinal cavity.}
+      \caption{Determined interface parameters for the electrode array in a live sheep's spinal cavity.}
       \label{tab:ModelParameters_sheep}
       \begin{center}
         \begin{tabular}{r | l}
             Parameter & Value \\
             \hline
-    
+
             $R_{S}$ & \SI{126}{\ohm} \\
-            
+
             $m$& 1.34\\
             $k$ & 1.77\\
             |Z| @ \SI{1}{\hertz} ($\Omega$)& \SI{11.3}{\kilo\ohm} \\
-    
+
             $i0$ & Undetermined\\
             $n$ & Undetermined\\
         \end{tabular}
@@ -484,11 +484,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
     Unfortunately, the diode/Faradaic parameters were not obtained on live sheep due to safety concerns.
     Those measurements are likely to be of value to implant designers as they provide a reference for the beginnings of Faradaic conduction.
     Access to an recently terminated sheep's spine, and a surgeon, would provide a way of collecting those Faradaic measurements and additional post-termination samples.
-    
+
     Parameters for the interface model in sheep have been fitted.
     It appears as though buffered saline, of any concentration, is not an ideal representation of a live sheep's spinal cavity.
     The next research question is to determine if it is possible to create a solution that better matches those impedance characteristics.
-
-
-
-    

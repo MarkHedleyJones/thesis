@@ -6,17 +6,16 @@
 
 Is it possible to harvest energy from water without moving parts?
 What is the electrical impedance between electrodes in an electrolyte solution?
-These questions form the basis of this thesis.
-Although seemingly unrelated, the answer to both lies in behaviour occurring wherever liquid comes into contact with a solid.
+Although seemingly unrelated, the answer to both lies in behaviour that occurs where liquids comes into contact with solids.
 That behaviour is the formation of arranged layers of liquid against the solid surface, called a double layer.
-This thesis is separated into two parts; each addressing one of the two questions related to double layers.
+This thesis is separated into two parts; each addressing one of the two questions above related to double layers.
 \Cref{part:doubleLayersOnInsulators} studies double layers on insulating solids as a means of energy conversion.
 Methods using these layers as a means of power harvesting are trialled and measured.
 A particular application of such a harvester is discussed and its feasibility assessed.
 \Cref{part:doubleLayersOnConductors} models the electrical impedance between two electrodes when submerged in an electrolyte.
-Double layers play a large role this impedance as they dictate the concentration of ions electrode's surface.
+Double layers play a large role this impedance as they dictate the concentration of ions at the electrode's surface.
 Measurement of interface impedance allows for direct comparison between a range of environments into which electrodes are placed.
-This is important when designing an implant that will be placed inside a person.
+This is important when designing an implant that will be inserted into a person.
 Before introducing background material on interfacial double layers, my motivation for doing this work is discussed.
 This is followed by a statement of originality and an outline of the structure of this thesis.
 
@@ -26,7 +25,7 @@ This is followed by a statement of originality and an outline of the structure o
 
 
   My thesis began with the question ``is it possible to harvest energy from water without moving parts?''
-  The purpose for such a harvester is to power an electronic water meter.
+  The reason for answering this question was to help build an energy harvester to power an electronic water meter.
   Doing this without the moving parts of more traditional mechanisms, such as turbines, should increase the harvester's life expectancy and be generally more robust.
   I started by looking at three possible harvesting mechanisms;
   \begin{itemize}
@@ -34,7 +33,9 @@ This is followed by a statement of originality and an outline of the structure o
     \item electrostatic generators
     \item streaming potential cells
   \end{itemize}
-  The piezoelectric vibrator was the equivalent of a water whistle with a vibrational energy harvester attached; the electrostatic generator was a version of Lord Kelvin's Electrostatic Generator with a harvesting application; and the streaming potential cell was a mystery.
+  The piezoelectric vibrator was the equivalent of a water whistle with a vibrational energy harvester attached.
+  The electrostatic generator was a version of Lord Kelvin's Electrostatic Generator with a harvesting application.
+  And the streaming potential cell was a mystery at the time.
   We knew geologists used streaming potentials to measure underground water flow.
   The only thing we knew about the mechanism was that forcing water through something somehow generated a voltage.
   Learning about that mechanism and answering the following questions started me on the path that became this thesis.
@@ -48,15 +49,15 @@ This is followed by a statement of originality and an outline of the structure o
   However, this research allowed me to gain  a working knowledge of interfacial double layers.
 
   During my doctoral studies my supervisor, Jonathan Scott, took a sabbatical at Saluda Medical in Sydney.
-  At the time, Saluda were developing a medical implant for spinal stimulation.
+  At the time, Saluda were developing a medical implant for spinal cord stimulation.
   Jonathan and Saluda's senior electronic engineer developed an electrical model of the impedance presented by electrodes immersed in a solution of saline.
   That model uses electrical components to simulate the electrical impedance between an electrode and an electrolyte.
   This means it can be entered into electrical simulation software and used to simulate an implanted electrode.
   Much of the behaviour the model simulates is due to double layers.
   Saluda's engineers use a dilute solution of phosphate buffered saline to approximate human spinal cavities; into which their electrodes are implanted.
-  They do not know how good this approximation is, it was the most appropriate mixture they had.
-  The alternative is to embed an electrode in a live animal and measure the response - that is also what they do.
-  Live animal experiments are costly and how they differ from solutions of saline is unknown.
+  They do not know how good this approximation is, but it was the most appropriate mixture they had.
+  The alternative was to embed an electrode in a live animal and measure the response - that is also what they do.
+  Live animal experiments are costly and how they differ from solutions of saline is still unknown.
   The interface model is the starting point for the second phase of my research; characterising the interface between an electrode and biological solutions.
   I leveraged my understanding of interfacial double layers to understand how the model worked, and use it correctly.
 
@@ -84,18 +85,19 @@ This is followed by a statement of originality and an outline of the structure o
 
 
   This thesis is broken into two parts.
-  Part~\ref{part:doubleLayersOnInsulators} is concerned with energy harvesting with double layers, specifically by the use of streaming cells.
-  Part~\ref{part:doubleLayersOnConductors} measures and models the impedance of an interface, specifically those between implant electrodes.
-  Put simply, Part~\ref{part:doubleLayersOnInsulators} deals with double layers on insulating surfaces, and Part~\ref{part:doubleLayersOnConductors} deals with double layers on conductive surfaces.
+  \Cref{part:doubleLayersOnInsulators} is concerned with energy harvesting with double layers, specifically by the use of streaming cells.
+  \Cref{part:doubleLayersOnConductors} measures and models the impedance of an interface, specifically those between implant electrodes.
+  Put simply, \cref{part:doubleLayersOnInsulators} deals with double layers on insulating surfaces, and \cref{part:doubleLayersOnConductors} deals with double layers on conductive surfaces.
 
-  [[Warning: This is likely to be wrong, the structure is still changing]]
-  The first chapter of ~\ref{part:doubleLayersOnInsulators} (\cref{chap:harvesterIntroduction}) begins with background on streaming cells, followed by a review of related literature.
-  Then in \cref{chap:part1_streamingCellHarvesters}, I build and measure the electrical output of ten streaming cells.
-  This is used to determine the energy conversion efficiency of streaming cells fabricated using readily available methods.
-  Next, \cref{chap:part1_waterMetering} looks into the possibility of using a streaming cell harvester to power an electronic water meter.
-  The quantity of harvestable energy is estimated by modelling the water consumption in a typical New Zealand home.
-  \Cref{chap:part1_energyHarvestingRequirements} looks at the components of an electronic water meter and estimates the amount of energy they are likely to need.
-  Bringing these estimates and measurements together, \cref{chap:part_1_discussion} discusses the feasibility of energy harvesting using streaming cells.
-  Finally, in \cref{chap:part1_conclusion}, the work done in \cref{part:doubleLayersOnInsulators} is summarised and concluding comments are made on the findings.
+  The following chapter (\cref{chap:background}) contains background material on double layers, including their formation and a breakdown of their structure.
+  During \cref{chap:background}, the topics of streaming cells and impedance modelling are introduced.
+  Then, the first part of the thesis (\cref{part:doubleLayersOnInsulators}) looks at streaming cells for the purpose of running an energy harvesting water meter.
+  It starts at \cref{chap:part1_streamingCellHarvesters} with a brief mathematical analysis, followed by streaming cell fabrication, and then measurements of their ability to harvest energy.
+  Then \cref{chap:part1_waterMetering} makes an estimate of the amount of energy that would be available to a streaming cell energy harvester is made.
+  \Cref{chap:part1_energyHarvestingRequirements} looks at the amount of energy that is needed to run microprocessors and wireless transmitters.
+  This concludes with an estimate of the amount of energy required to run an electronic water meter.
+  To conclude \cref{part:doubleLayersOnInsulators}, \cref{chap:part1_conclusion} combines the data obtained in the previous chapters and the feasibility of streaming cell energy harvesting for electronic water metering is discussed.
 
-  \Cref{part:doubleLayersOnConductors} begins with background material on modelling interface impedance and a literature review, as \cref{chap:introduction_main}.
+  The second part of the thesis (\cref{part:doubleLayersOnConductors}) starts with an overview of the electrode interface model (\cref{chap:theInterfaceModel}).
+  \Cref{chap:interfaceParameters} deals with measurement of the various model parameters in both phosphate buffered saline (\cref{sect:pbs_measurements}) and inside a live sheep's spinal cavity (\cref{sect:sheep_measurements}).
+  Finally, \cref{chap:fluid_mimicry} presents work on the creation of a mixture designed to better represent the environment inside sheep spine compared to PBS.

@@ -10,13 +10,15 @@
 
 % Bibliography
 
-% Edit checkpoint 2015-09-08 20:24
+% Edit checkpoint 2015-09-07 20:24
 
 % List of Figures
 
-% Edit checkpoint 2015-09-09 21:32
+% Edit checkpoint 2015-09-08 21:32
 
 % List of Tables
+
+% Edit checkpoint 2015-09-09 19:12
 
 \chapter*{Abstract}
   When solids and liquids are brought together, interfacial double-layers are likely to form.
@@ -45,7 +47,8 @@
   Interfacial double-layers link the two halves of this thesis and form the underlying theme.
   In~\cref{part:doubleLayersOnInsulators}, double layers are used as a means of converting fluid-mechanical energy into electrical energy.
   The primary application being an energy harvester that could power electronic water meters.
-  Domestic water meters are typically installed where electrical connection is not feasible; harvesting energy here may make electronic metering feasible long-term.
+  Domestic water meters are typically installed where electrical connection is not feasible.
+  Harvesting energy at the meter may make electronic metering a feasible long-term solution.
   My findings show that double layer based energy harvesters are not efficient enough for this application \emph{yet}.
   Recent literature on the subject suggests large gains in efficiency may be possible using more exotic materials.
   Such gains would allow a compact harvester to generate enough energy to operate an electronic meter with wireless transmitter.
@@ -59,9 +62,9 @@
   An electrical of an electrode-electrolyte interface was recently developed by my supervisor, Jonathan Scott.
   I use that model to compare electrodes placed in solutions of saline to those placed in a living animal.
   Measurements of the two show that no one concentration of saline matches the situation inside a live spinal cavity.
-  I then create a low-cost electrolyte test solution that better matches the impedance measured in a live animal spinal cavity.
+  I then create a low-cost electrolyte test solution that better matches the impedance measured in a living animal's spinal cavity.
 
-  % Edit checkpoint 2015-09-06 09:35
+  % Edit checkpoint 2015-09-09 19:17
 
 \phantomsection\addcontentsline{toc}{chapter}{Abstract}
 
@@ -69,9 +72,8 @@
 \phantomsection\addcontentsline{toc}{chapter}{Acknowledgement}
 Thanks to Jonathan Scott (my chief supervisor), Steve Newcombe (Waikato University's award winning glass blower) and Peter Single (the senior electrical engineer at Saluda Medical) for their time, resources and patience.
 Thank you to my second supervisor, Marcus Wilson, for checking up every so often and help proof-reading.
-Thanks also go to the University of Waikato for a funding the first three years of this work with a Waikato Doctoral Scholarship.
-Without this funding I could not have undertaken this research.
-The support of my partner, Sarah, and my mother, Gina, has kept me on track.
+Thanks also go to the University of Waikato for funding the first three years of this work with a Waikato Doctoral Scholarship.
+The support of my partner (Sarah) and my mother (Gina) has kept me on track during my research.
 Lastly, thank you to everyone who has contributed to open-source projects, especially those part of:
 \begin{itemize}
 \item The Linux kernel and GNU tools
@@ -92,10 +94,14 @@ Work done throughout this thesis has relied heavily on these tools.
 
 %% Introduction
 
+\pagenumbering{arabic}
+
  \chapter{Introduction}
    \label{chap:introduction_main}
-   \pagenumbering{arabic}
    \input{content/introduction/introduction.tex}
+
+% Edit checkpoint 2015-09-09 20:52
+
  \chapter{Backgound}
    \label{chap:background}
    \input{content/background/background.tex}
@@ -105,11 +111,11 @@ Work done throughout this thesis has relied heavily on these tools.
 \part{Double Layers on Insulators: Harvesting Energy}
    \label{part:doubleLayersOnInsulators}
 
-   In~\cref{sect:background_doubleLayers}, the topic of interfacial double layers were introduced.
-   Then, in~\cref{sect:background_streamingCells}, a way of utilising double layers to harvest energy - in a process called streaming - was studied.
+   In \cref{sect:background_doubleLayers}, the topic of interfacial double layers were introduced.
+   Then, in \cref{sect:background_streamingCells}, a way of utilising double layers to harvest energy - in a process called streaming - was studied.
    The possibility of using streaming cells as a means of powering electronic water meters is now put to the test.
    \Cref{chap:part1_streamingCellHarvesters} studies streaming cells, where some test cells are made and measured.
-   With an understanding of readily available streaming cell performance, their applicability for use in water metering is discussed in~\cref{chap:part1_waterMetering}.
+   With an understanding of readily available streaming cell performance, their applicability for use in water metering is discussed in \cref{chap:part1_waterMetering}.
    This presents an estimation of water use in a typical New Zealand home which is used to determine the amount of energy available to a harvester.
    \Cref{chap:part1_energyHarvestingRequirements} measures the energy consumption of low-power, 8-bit microcontrollers and wireless transmitters.
    The measured data is used to estimate the energy requirements of an electronic water meter with wireless transmitter.

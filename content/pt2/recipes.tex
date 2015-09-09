@@ -26,7 +26,7 @@ Such a match would reduce the number of surgical operations the test engineers m
   The function generator, Agilent 33220A, and oscilloscope, Tektronix TPS 2024, are connected to the electrode array, St. Jude Medical - Octrode, as is shown in \cref{fig:creatingCSF_setup}.
   A \SI{10}{\kilo\ohm} resistor was used to measure the current driven between electrodes eight and three.
   It had a measured resistance of \SI{9.990}{\kilo\ohm}, as measured with a Fluke Digital Multimeter.
-  
+
   \begin{figure}
       \centering
       \includegraphics[scale=0.95]{content/pt2/graphics/CreatingCSF_setup}
@@ -38,27 +38,27 @@ Such a match would reduce the number of surgical operations the test engineers m
   A sample at the lowest frequency can take over a minute to acquire, where the higher frequencies drop to under a second.
   The same frequencies were chosen that were used to measure the situation in live sheep.
   This allows easy comparison between the sheep data and the impedance of mixed solutions.
-  
+
   Measurements were completely automated via a Linux based computer running Python scripts.
   These scripts controlled the output settings of the waveform generator and acquired the resulting waveforms from the oscilloscope.
   The scripts had the ability to set the horizontal and vertical scales on the oscilloscope channels in order to ensure appropriate scales were used.
-  
+
   \begin{figure}
       \centering
       \includegraphics[width=\textwidth]{content/pt2/graphics/measurementFlowchart}
       \caption{\label{fig:creatingCSF_pythonFlowchart}Diagram showing the execution of the measurement script}
   \end{figure}
-  
+
   The measurement procedure followed by the script is shown as a simplified flowchart in \cref{fig:creatingCSF_pythonFlowchart}.
   The programme steps through each of the required frequencies, making sure the target voltage is developed across electrodes seven and eight, calculating the interface impedance.
-  
+
   The target voltage across the interface is \SI{20}{\milli\volt}.
   This voltage was previously determined as a safe stimulus voltage in that it does not trigger Faradaic reactions at the electrode's surface.
   Because the impedance of the interface changes with frequency, it is necessary to alter the output amplitude to keep the voltage across electrode seven and eight consistent.
-  
+
   This measurement configuration differs from the three channel method used in earlier measurements.
   Those used channel three of the oscilloscope to watch the voltage developed between electrodes three and eight.
-  
+
 
 \section{Ingredients}
 
@@ -82,77 +82,77 @@ Such a match would reduce the number of surgical operations the test engineers m
 
 
 %  \subsection{Water, Corn-flour and Salt}
-%  
+%
 %    \begin{figure}
 %        \centering
 %        \includegraphics[width=\textwidth]{content/pt2/graphics/run12_600ml-distilledWater_ZVsF_graph_mag}
 %        \caption{\label{fig:recipe_water_mag}Plot of impedance magnitude versus frequency (log-log) for distilled water.}
 %    \end{figure}
-%    
+%
 %    \begin{figure}
 %        \centering
 %        \includegraphics[width=\textwidth]{content/pt2/graphics/run12_600ml-distilledWater_ZVsF_graph_phase}
 %        \caption{\label{fig:recipe_water_phase}Plot of impedance phase versus frequency (log-log) for distilled water.}
 %    \end{figure}
-%    
+%
 %    \begin{figure}
 %        \centering
 %        \includegraphics[width=\textwidth]{content/pt2/graphics/run14_170ml-distilledWater_250g-cornflour_ZVsF_graph_mag}
 %        \caption{\label{fig:recipe_cornflour_mag}Plot of impedance magnitude versus frequency (log-log) for \SI{250}{\gram} cornflour mixed with \SI{175}{\milli\litre} distilled water.}
 %    \end{figure}
-%    
+%
 %    \begin{figure}
 %        \centering
 %        \includegraphics[width=\textwidth]{content/pt2/graphics/run14_170ml-distilledWater_250g-cornflour_ZVsF_graph_phase}
 %        \caption{\label{fig:recipe_cornflour_phase}Plot of impedance phase versus frequency (log-log) for \SI{250}{\gram} cornflour mixed with \SI{175}{\milli\litre} distilled water.}
 %    \end{figure}
-%    
+%
 %    \begin{figure}
 %        \centering
 %        \includegraphics[width=\textwidth]{content/pt2/graphics/run14_175ml-distilledWater_250g-cornflour_1g9-salt_ZVsF_graph_mag}
 %        \caption{\label{fig:recipe_cornflour_salt_mag}Plot of impedance magnitude versus frequency (log-log) for \SI{250}{\gram} cornflour mixed with \SI{175}{\milli\litre} distilled water and \SI{1.9}{\gram} table-salt.}
 %    \end{figure}
-%    
+%
 %    \begin{figure}
 %        \centering
 %        \includegraphics[width=\textwidth]{content/pt2/graphics/run14_175ml-distilledWater_250g-cornflour_1g9-salt_ZVsF_graph_phase}
 %        \caption{\label{fig:recipe_cornflour_salt_phase}Plot of impedance phase versus frequency (log-log) for \SI{250}{\gram} cornflour mixed with \SI{175}{\milli\litre} distilled water and \SI{1.9}{\gram} table-salt.}
 %    \end{figure}
-%    
+%
 %    \begin{figure}
 %        \centering
 %        \includegraphics[width=\textwidth]{content/pt2/graphics/run14_180ml-distilledWater_250g-cornflour_1g9-salt_ZVsF_graph_mag}
 %        \caption{\label{fig:recipe_cornflour_salt_extraWater_mag}Plot of impedance magnitude versus frequency (log-log) for \SI{250}{\gram} cornflour mixed with \SI{180}{\milli\litre} distilled water and \SI{1.9}{\gram} table-salt.}
 %    \end{figure}
-%    
+%
 %    \begin{figure}
 %        \centering
 %        \includegraphics[width=\textwidth]{content/pt2/graphics/run14_180ml-distilledWater_250g-cornflour_1g9-salt_ZVsF_graph_phase}
 %        \caption{\label{fig:recipe_cornflour_salt_extraWater_phase}Plot of impedance phase versus frequency (log-log) for \SI{250}{\gram} cornflour mixed with \SI{180}{\milli\litre} distilled water and \SI{1.9}{\gram} table-salt.}
 %    \end{figure}
-%    
+%
 %    \Cref{fig:recipe_water_mag,fig:recipe_water_phase,fig:recipe_cornflour_phase,fig:recipe_cornflour_mag,fig:recipe_cornflour_phase,fig:recipe_cornflour_salt_mag,fig:recipe_cornflour_salt_phase,fig:recipe_cornflour_salt_extraWater_mag,fig:recipe_cornflour_salt_extraWater_phase} show a progression of measurements beginning with distilled water, then adding cornflour, then adding salt, and finally adding a very small amount of extra water.
-    
+
 \section{Results \& Discussion}
-  
+
   \begin{figure}
       \centering
       \includegraphics[width=\textwidth]{content/pt2/graphics/run12_190ml-distilledWater_190g-cornflour_0g858-salt_ZVsF_graph_mag}
-      \caption{\label{fig:recipe_cornflour_salt_extraWater_mag_improved}Plot of impedance magnitude versus frequency (log-log) for \SI{190}{\gram} cornflour mixed with \SI{190}{\milli\litre} distilled water and \SI{0.858}{\gram} table-salt.}
+      \caption{\label{fig:recipe_cornflour_salt_extraWater_mag_improved}Graph of measured impedance magnitude versus frequency (log-log) for \SI{190}{\gram} cornflour mixed with \SI{190}{\milli\litre} distilled water and \SI{0.858}{\gram} table-salt.}
   \end{figure}
-  
+
   \begin{figure}
       \centering
       \includegraphics[width=\textwidth]{content/pt2/graphics/run12_190ml-distilledWater_190g-cornflour_0g858-salt_ZVsF_graph_phase}
-      \caption{\label{fig:recipe_cornflour_salt_extraWater_phase_improved}Plot of impedance phase versus frequency (log-log) for \SI{190}{\gram} cornflour mixed with \SI{190}{\milli\litre} distilled water and \SI{0.858}{\gram} table-salt.}
+      \caption{\label{fig:recipe_cornflour_salt_extraWater_phase_improved}Graph of impedance phase versus frequency (log-log) for \SI{190}{\gram} cornflour mixed with \SI{190}{\milli\litre} distilled water and \SI{0.858}{\gram} table-salt.}
   \end{figure}
-  
+
   \Cref{fig:recipe_cornflour_salt_extraWater_mag_improved,fig:recipe_cornflour_salt_extraWater_phase_improved} show the results of mixing the same set of ingredients as the previous measurement set, but with the closest fit to sheep spine obtained.
-  
+
 
 %\section{Discussion}
 
-  
+
   These results show that it is possible to alter the CPE response and the bulk conductivity of the solution independently of one another.
   \Cref{fig:recipe_cornflour_salt_extraWater_mag_improved,fig:recipe_cornflour_salt_extraWater_phase_improved} show a greatly improved match relative to that of any single concentration of PBS.
   Unbuffered saline solutions all dipped in impedance magnitude at low frequencies, something not observed when using buffered saline such as PBS.
