@@ -110,17 +110,16 @@
       \caption{Diagram showing the structure of the Helmholtz layer.}
       \label{fig:doubleLayerModel_helmholtz}
     \end{figure}
-    Three models of the interfacial double layer have been proposed over time.
-    Each represents an extension or modification of the previous, beginning with the Helmholtz Model~\cite{Horch2004}.
-    Helmholtz proposed his parallel plate capacitor based model in 1879~\cite{Geddes1997}.
+    Three models of the double layer have been put forward, beginning with the Helholtz Model~\cite{Horch2004}.
+    Helmholtz first proposed his parallel plate capacitor based model in 1879~\cite{Geddes1997}.
     His model consists of two layers of surface charge, one inside the solid and one in the liquid.
-    The counter-ions sit in a \emph{compact layer}, meaning that they are bound to the surface and immobile.~\cite{Salieb-Beugelaar2009}
-    Figure \ref{fig:doubleLayerModel_helmholtz} represents this as a row of tightly packed positive ions along the solid surface.
+    Counter-ions sit in a \emph{compact layer}, meaning that they are bound to the surface and are therefore immobile.~\cite{Salieb-Beugelaar2009}
+    Figure \ref{fig:doubleLayerModel_helmholtz} shows this as a row of tightly packed positive ions along the solid's surface.
     Past the layer of bound surface ions there is no effect from the charged surface of the solid.
-    In essence, his model defines the interface a single layer of ions held against the edge of a solid.
+    In essence, his model describes the interface as a single layer of ions held against the edge of a solid.
     The problem with this model is its inability to predict the layer's capacitance.
-    Measured capacitance of a double layer depends on the potential difference across the layer, and the concentration of ions in the solution~\cite{Bard1980}.
-    Helmholtz's model does not account for the dependence of capacitance upon the potential difference and concentration and therefore is not an accurate representation.
+    Measured capacitance of double layers depends on the potential difference across the layer, and the concentration of ions in the solution~\cite{Bard1980}.
+    Helmholtz's model does not account these dependencies, and therefore is not an accurate representation.
 
     \begin{figure}
       \begin{center}
@@ -132,13 +131,13 @@
     Later, Goüy and Chapman independently proposed that charge in the liquid phase may instead be held in a \emph{diffuse layer}~\cite{Chapman1913}.
     This meant that ions in the layer were not fixed and that the density of charge in the layer could vary.
     Figure~\ref{fig:doubleLayerModel_gouyChapman} illustrates the concept by the lack of ions bound to the surface and the gradual decline in counter-ion concentration with distance from the surface.
-    The Goüy-Chapmam Model accounts for the observed variation in capacitance by distributing charge in the liquid as a gradient from the surface of the solid.
-    The layer is free to change its concentration profile in response to applied electrostatic potential and ionic concentration.
+    The Goüy-Chapmam Model accounts for the observed variation in capacitance by distributing charge in the liquid as a concentration gradient from the surface of the solid.
+    The layer is free to change its concentration profile in response to applied electric potentials and ionic concentration.
     In the case of a higher electrostatic potential, the layer is pulled closer to the surface, becoming shallower.
     In the case of a higher electrolytic concentration, the layer is more concentrated with a higher charge density, again becoming shallower.
     It predicts the change in capacitance by growing or shrinking the size of the layer, but it still fails to predict the capacitance at high ionic concentrations.
-    This is in part because it fails to account for the physical size of the ions in the electrolyte and instead models them as point charges~\cite{Bard1980}.
-    In their model, ions can get infinitely close to the surface regardless of their size.
+    This is in part because it makes no account for the physical size of the ions in the electrolyte; instead modeling them as point charges~\cite{Bard1980}.
+    Ions in this model can get infinitely close to the surface regardless of their size.
     This becomes a problem at high ionic concentration where the surface becomes crowded.
 
     \begin{figure}
@@ -149,10 +148,12 @@
       \label{fig:doubleLayerModel_stern}
     \end{figure}
     In 1924, Otto Stern published his modified version of the Goüy-Chapmam model~\cite{Stern1924}.
-    This model, illustrated in figure~\ref{fig:doubleLayerModel_stern} extends the Goüy-Chapmam model by setting the minimum distance an ion can get to the solid surface.
-    This effectively reintroduces the compact layer as seen in Helmholtz's model but allows for a concentration gradient exterior to this layer.
+    This model, illustrated in figure~\ref{fig:doubleLayerModel_stern}, extends the Goüy-Chapmam model by setting the minimum distance an ion can get to the solid's surface.
+    A consequence of this is that the compact layer as is seen in Helmholtz's model is reintroduced, but the model still allows for a concentration gradient exterior to this layer.
     It resembles the Helmholtz model at high ionic concentration but accounts for spread in the layer dimensions at lower concentrations.
-    The Stern, sometimes referred to as the Goüy-Chapmam-Stern, model is a well accepted double layer model~\cite{Olthuis2005}.
+    The Stern, sometimes referred to as the Goüy-Chapmam-Stern, model is a well accepted model of the interfacial double layer~\cite{Olthuis2005}.
+
+    % Edit checkpoint 2015-09-10 19:37
 
 
   \subsection{Structure/anatomy}
@@ -166,18 +167,18 @@
       \caption{Diagram showing elements of a double-layer adsorbed to a negative sphere.}
       \label{fig:doubleLayer_anatomy}
     \end{figure}
-    Figure~\ref{fig:doubleLayer_anatomy} shows the double layer organisation according to the currently accepted Goüy-Chapmam-Stern model.
+    \Cref{fig:doubleLayer_anatomy} shows a double layer's organisation according to the currently accepted Goüy-Chapmam-Stern model.
     It shows the compact layer adsorbed to the surface of the suspended solid.
     In this layer the ions are immobile due to the electrical strength at the surface.
     Surrounding this layer is the diffuse layer.
     Ions here are still drawn to the solid, but not so strongly as to be immobile.
     The electric potential in this layer decays from that within the compact layer to the potential in the bulk of the solution.
-    These layers are divided by the shear plane.
-    The shear plane represents nearest distance from the surface at which the layer can move laterally.
+    These layers are divided by the shear plane; the nearest distance from the surface at which the diffuse layer can move laterally.
     This is an important parameter with linear geometries, such as the inside of a pipe, as it represents the true no-slip boundary.
+
     The thickness of a typical double layer is between \SI{1}-\SI{100}{\nano\meter}~\cite{Jiang2010}, as defined by its Debye length~\cite{Israelachvili2011}.
     The Debye length is the distance between the interface and the point in the liquid where the electric potential is no longer affected by the charged interface.
-    As mentioned in the previous section, this varies based on the ionic concentration of the solution and the potential at the solid surface.
+    As mentioned in the previous section, this varies based on the ionic concentration of the solution and the potential at the solid's surface.
 
 
   % Marcus Wilson tore this apart, don't even mention computer simulation.
@@ -230,9 +231,10 @@
         Diagram showing the formation of a double layer along a solid wall.
       }
   \end{figure}
-  Consider a double layer that has formed along a perfectly flat surface.
+  Consider a double layer that has formed along the edge of a perfectly flat surface.
   \Cref{fig:doubleLayerBetweenWalls} illustrates this situation, where the walls are negatively charged and therefore the counter-ions are positively charged.
-  Counter-ions, separated from the bulk of the liquid, line the exterior of the wall; but charge separation is not enough to generate electrical power.
+  Counter-ions, separated from the bulk of the liquid, line the exterior of the wall.
+  Although charge has been separated out from the bulk of the electrolyte solution, this does not lead to a usable form of electrical energy.
 
   % Harvesting energy
   \begin{figure}
@@ -243,21 +245,21 @@
         Diagram showing double layer formation within a streaming cell in a state of equilibrium.
       }
   \end{figure}
-  Energy can not be created or destroyed, it must be converted from one form to another.
+  Basic science tells us that energy cannot be created or destroyed, it must be converted from one form to another.
   In this case, counter-ions are electrostatically bound to the interface and removing them requires work.
   Although the counter-ion density has been increased at the boundary, the charge is not free.
   Migration of charge to the walls ceases once the surface potential has been neutralised.
   Double layer formation takes work to undo and the process stops once the layer is formed.
-  Generating electrical energy requires taking some form of power from the fluid, in this case mechanical.
-  Liquids pass mechanical power in the form combination a pressure and a flow.
-  Harvesting power from liquid will cause a drop in pressure as liquid is pushed through the harvesting mechanism.
-  The mechanisms presented here use mechanical power to shift the ionic balance between two bodies of liquid.
+  Generating electrical energy from the layer will require an additional form of energy to help isolate collected charge, in this case mechanical.
+  Liquids pass mechanical power as a combination of pressure and flow, similar to the way electrical power is transferred by voltage and current.
+  Forcing liquid through a harvester will cause a drop in pressure as the liquid passes through the harvesting mechanism.
+  The mechanisms presented here use mechanical power to create an ionic in-balance between the bodies of water on each side of the harvesting mechanism.
   This means separating and isolating negative and positive ions from each other.
   Figure~\ref{fig:doubleLayerInChannel_noPressure} shows another charged wall, but with the addition of a small channel.
   Notice that the channel contains no co-ions, it is exclusively occupied by counter-ions.
   The ratio of counter-ions to co-ions within the channel is controlled by the width of the channel.
   The narrower the channel, the less likely it is for co-ions to get inside.
-  This channel is small enough that the layers overlap one another, repelling co-ions.
+  This channel is small enough that the layers overlap one another, repelling co-ions completely.
   The channel and the two separated bodies of liquid now form an energy harvester.
   Counter-ion rich fluid is transported across the channel by applying a pressure differential.
   As counter-ions exit the channel on the low-pressure side, new ions move to replenish the double layer on the high-pressure side.
@@ -267,10 +269,12 @@
       \caption{\label{fig:doubleLayerInChannel_withPressure}Diagram showing double layer formation within a streaming cell that has a pressure differential applied.}
   \end{figure}
   A diagram showing the channel geometry, but with pressure applied and a voltage gradient generated is shown as figure~\ref{fig:doubleLayerInChannel_withPressure}.
-  The two walls and channel is referred to as a streaming cell.
-  Streaming cells are able to continuously separate ions of an electrolyte fluid.
+  The two walls and channel can now be referred to as a streaming cell.
+  Streaming cells are able to continuously separate ions from an electrolyte fluid.
   Electrical potential across a streaming cell increases as those ions are pumped through.
-  This only works when the solid surface has charge at its surface, necessary to form the double layer.
+  This only works when the solid's surface has charge at its surface, necessary to create the double layer in the first place.
+
+  % Edit checkpoint 2015-09-09 20:14
 
   % Channel fabrication and materials
   A channel can be created individually using a range of fabrication methods, such as chemical etching or using narrowly separated parallel plates.
@@ -278,17 +282,20 @@
   Glass has the convenient property that it spontaneously obtains a negative surface charge when in contact with water, the requirement for double layer formation.
   This surface charge is caused by the deprotonation of surface silanol groups in glass (SiOH~$\leftrightarrows$~SiO$^{-}+$~H$^{+}$)~\cite{Kirby2004}.
   By immersing a glass channel in an electrolyte solution, the glass donates protons into the solution leaving its surface negatively charged.
-  In turn, positively charged double layers line the channel's inner walls ready to be pumped through the channel.
-  This means that glass channels have a higher voltage on the low-pressure side and a lower voltage on the high-pressure side.
+  In turn, a positively charged double layer lines the channel's inner walls ready to be pumped through the channel.
+  This means the glass channels have a higher voltage on the low-pressure side and a lower voltage on the high-pressure side.
+  The low pressure side is at the harvesters outlet, where the counter-ions (cations in this case) collect.
+  The extra positive ions gives the liquid on that side a positive charge relative to the inlet side of the harvester.
 
   % Limitations of previous content
   The concept behind the device is relatively straight-forward, but the physical reality is complex.
   The diagrams presented here are simplified, having perfectly flat walls containing single atom ions carrying a single charge.
-  No mention of molecules has been made, which increases the complexity.
+  No mention of molecules has been made, which increases the complexity further.
   Polar molecules such as water have positive and negative components offset in space.
-  Although simplified, this material illustrates the how streaming cells work.
+  Although simplified, this discussion illustrates the how streaming cells work.
   Next, literature concerning the operation, design and improvements to streaming cell technology is presented and discussed.
 
+  % Edit checkpoint 2015-09-09 20:35
 
   \subsection{Literature review}
     \label{sub:background_streamingCells_literatureReview}
@@ -298,29 +305,32 @@
     \begin{figure}
       \centering
       \includegraphics[height=6cm]{content/pt1/Osterle_ElectrokineticCell.png}
-      \caption{\label{fig:Osterle_cell}Image of Osterle's electrokinetic pumping cell (reproduced from \cite{Osterle1964})}
+      \caption{\label{fig:Osterle_cell}Image of Osterle's electrokinetic pumping cell, as taken from \cite{Osterle1964}}
     \end{figure}
-    In 1964, a paper by Osterle gave an analysis of energy conversion from streaming cells, both for the purpose of pumping fluid or generating electrical power was presented~\cite{Osterle1964}.
+    In 1964, a paper by Osterle gave an analysis of energy conversion from streaming cells, both for the purpose of pumping fluid or generating electrical power~\cite{Osterle1964}.
     The cell he used consisted of fine capillary tubes stacked together to form a streaming cell.
     A diagram of that cell, in its pumping configuration, is reproduced here as~\cref{fig:Osterle_cell}.
     Importantly, he shows that a streaming cell has the same conversion efficiency whether it is in a pumping mode, where electrical energy is supplied, or in a generating mode, where electrical energy is produced.
+    This opens the body of relevant literature on the subject to include electrokinetic pumping devices.
     Based on his analysis, Osterle gives an illustrative example of a streaming cell producing electrical energy.
-    He states that tube bank having a volume of \SI{100}{\centi\meter\cubed} with \SI{100}{\kilo\pascal} of hydrostatic pressure applied would be capable of producing \SI{0.49}{\watt} of electrical energy.
+    He states that his tube bank having a volume of \SI{100}{\centi\meter\cubed} with \SI{100}{\kilo\pascal} of hydrostatic pressure applied would be capable of producing \SI{0.49}{\watt} of electrical energy.
     This would require \SI{125}{\watt} of pumping power to achieve, giving an energy conversion efficiency of \SI{0.392}{\percent}.
+
+    % Edit checkpoint 2015-09-09 21:00
 
     % Another, paper - the beginning of streaming cells
     Within the space of a year three papers related to properties of fluid flow in fine capillaries, such as those used by Osterle are presented.
-    Burgreen and Nakache investigate both the flow when the capillaries are rectangular~\cite{Burgreen1964}, and the efficiency of such capillaries when used to generate electrical power or to pump~\cite{Burgreen1965}.
-    Their work develops mathematics behind rectangular streaming cells and shows fine glass capiliaries are equally efficient when used to generate electrical power or to induce liquid pumping.
+    Burgreen and Nakache investigate the flow when the capillaries are rectangular~\cite{Burgreen1964}, and the efficiency of such capillaries when used to either generate electrical power or as a pump~\cite{Burgreen1965}.
+    Their work develops the mathematics behind rectangular streaming cells and shows fine glass capiliaries are equally efficient when used to generate electrical power or to induce liquid pumping.
     Rice and Witehead make an analysis of fluid flow profiles that consider the effect of double layer interactions~\cite{Rice1965}.
-    They show how the double layer affects the level to which liquid can permeate a material populated with cavites.
+    They show how the double layer affects the level to which liquid can permeate a material populated with cavities.
     Together these three papers mark the beginning of research into streaming cells.
 
     % Renewed interest and dimensions
-    There appears to be little published research into streaming cells until 2003, when a surge of papers related to optimal dimensions of streaming cells appear.
+    There appears to be little published research into streaming cells since then until 2003, when a surge of papers related to optimal dimensions of streaming cells appear.
     An analysis relating energy conversion efficiency to the length of a streaming cell channel indicated that short cells are the most efficient~\cite{Yang2003}.
     However, more recent work by Chang and Yang shows a decrease in conversion efficiency at maximum power when the channel length is low~\cite{Chang2009}.
-    This work suggests there is an optimum channel length, which is also dependent on the fluid conductivity.
+    This work suggests there is an optimum channel length, which will also be dependent on the conductivity of the working fluid.
     Investigation into the relationship between the Debye length of the double layer and streaming cell conversion efficiency found that a channel is most efficient when its height is twice that of the Debye length~\cite{Daiguji2004}
     This corresponds to the point at which double layers formed within a cell begin to overlap with one another.
 
@@ -342,7 +352,7 @@
     They suggest that the conversion efficiency of a channel is limited by a property termed `Stern conductance'.
     The concept of Stern conductance is that the Stern layer (see \cref{fig:doubleLayer_anatomy}) itself provides a pathway for electrical conduction.
     This conduction turns the surface of the glass into an electrically conductive surface causing the cell to partially self-discharge.
-    Stern conductance is often referred simply as `surface conductance'.
+    Stern conductance is often referred to simply as `surface conductance'.
     Davidson and Xuan published a mathematical model shortly after confirming the role of Stern conductance on streaming cells, in particular those with low ionic strength~\cite{Davidson2008}.
     They suggest that this is the reason for poor measured efficiencies in light of the much higher predicted values.
 
@@ -356,7 +366,7 @@
     Estimates using mathematical models predicted conversion efficiencies between \SI{30}{\percent} and \SI{70}{\percent}~\cite{Pennathur2007, Davidson2008a, Ren2008}.
     Hydrodynamic slip refers to the ability of a fluid to `slip' relative to a boundary/interface.
     Slip is advantageous to streaming cells because it permits ions in the Stern layer to move relative to the wall.
-    The length refers to an imaginary distance into the solid wall where the traditional `no-slip' boundary condition would occur (refer to~\cref{fig:HydrodynamicSlip}).
+    Hydrodynamic slip has an associated length (the slip-length), which refers to an imaginary distance into the solid wall where the traditional `no-slip' boundary condition would occur (refer to~\cref{fig:HydrodynamicSlip}).
     A `no-slip' boundary condition dictates that fluid at the boundary of a solid must have zero velocity.
     This condition, along with viscosity, is responsible for the parabolic flow profile a fluid takes as it moves through pipes.
     An issue surrounding slip was illustrated by Eijkel who showed that a channel's zeta potential and its slip length are linked~\cite{Eijkel2007}.
@@ -366,10 +376,9 @@
     A hydrophobic surface has a low tendency to support water, i.e., water will bead and roll off a hydrophobic surface.
     Conversely, a hydrophilic surface is one that water \emph{is} attracted to, causing a droplet to spread and stick to the surface.
     Hydrodynamic slip occurs when a channel's walls are hydrophobic, allowing water at the interface to slip along the boundary of the solid.
-    High zeta potentials attract water to the solids surface due to electrostatic attraction.
-    Eijkel's publication illustrates that the zeta potential and hydrodynamic slip are related to one another.
-    In order to improve the situation in steaming cells a surface should be both non-wetting and hold a high surface charge.
-    Conservative estimates place an efficiency of \SI{40}{\percent} on cells having slip lengths tens of nanometres long, obtainable using carbon nanotubes, using solutions having low salt concentration.
+    High zeta potentials attract water to the solids surface due to electrostatic attraction and Eijkel's publication illustrates that the zeta potential and hydrodynamic slip are related.
+    In order to improve the situation in steaming cells, a surface should be both non-wetting and hold a high surface charge.
+    Conservative estimates place an efficiency of \SI{40}{\percent} on cells having slip lengths tens of nanometres long, obtainable using carbon nanotubes and using solutions having low salt concentration.
 
 
     %Research around streaming cell energy conversion headed in a new direction after an article written by Pennathur et al.\ in 2007 detailed a mathematical model predicting the effects of hydrodynamic slip~\cite{Pennathur2007}.
@@ -428,7 +437,7 @@
     A conversion efficiency of \SI{0.01}{\percent} should be achievable using a porous glass plug.
     This efficiency will be used a baseline to compare measured efficiency from fabricated cells.
 
-
+    % Edit checkpoint 2015-09-09 21:24
 
 \section{Impedance Modelling}
   \label{sect:background_impedanceModelling}
