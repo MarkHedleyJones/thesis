@@ -450,38 +450,37 @@
     \label{fig:interface}
   \end{figure}
 
-  Electronic components have well defined electrical impedances.
-  This provides a way to calculate the voltage over a component as a function of time by knowing the current through it, or vice versa.
+  Electronic components generally have well defined electrical impedances.
+  Knowing these impedances gives a way of calculating voltage across a component by knowing the current through it, or vice versa.
   For linear devices, such as capacitors, inductors and resistors, this is a relatively simple matter of knowing the size of the device.
   For non-linear devices, such as diodes and transistors, there are models that describe the impedance relationship, which are based on the properties of the materials they are made from.
   But what does an electronic engineer do when there is an electrode-electrolyte-electrode system in their circuit?
   There is no standard model for this situation and trying to calculate the impedance is not trivial.
 
-  Circuit simulators rely on knowing the impedance of components in order to calculate the currents and voltages in circuit branches.
-  SPICE is a commonly used circuit simulator that has models of transistors and diodes built in.
-  It can easily simulate complex circuits quickly and is a valuable tool for circuit designers as a means of testing their designs before construction.
-  However, if the software does not have a model of a component, and the user is not able to describe it, then a circuit simulator is of little use.
-  \Cref{part:doubleLayersOnConductors} of this thesis uses a model of an electrode/electrolyte interface to solve some of these problems.
-  That interface model can be entered into circuit simulators because it is built of from standard components.
+  Circuit simulators rely on knowing the impedance of components to calculate the currents and voltages in circuit branches.
+  SPICE is a commonly used circuit simulator that has models for transistors and diodes built in.
+  It can easily simulate complex circuits quickly making it a valuable tool for circuit designers.
+  However, if the software does not have a model for a given component, and the user is not able to describe it in terms of a combination of base components, then a circuit simulator is of little use.
+  \Cref{part:doubleLayersOnConductors} of this thesis uses a model of an electrode-electrolyte interface to solve this problem for implant designers.
+  That model is built up from combinations of basic components, which all have well known impedances.
+  Because of this, the model can then be entered into almost any circuit simulator.
   This means that an electronic engineer can enter it into their design and know what sort of electrical loading to expect between a of electrodes in an electrolyte bath.
-  % This allows for the creation of circuit simulation tools, such as SPICE, that predict how a circuit will behave based on its description.
-  % Some electronic situations are not so well defined, meaning they can not be entered into circuit simulators.
-  % One such situation is when electrodes are inserted into an electrolyte.
-  % This would require the simulator to calculate the impedance through the electrolyte, but how do you calculate the impedance of an electrolyte bath?
-
-  In \cref{sect:background_doubleLayers}, illustrations of double layers were presented showing that the interface is comprised of layers.
+  
+  Illustrations of double layers were presented in \cref{sect:background_doubleLayers} showing how the interface is comprised of layers.
   A more realistic illustration of a solid-liquid layer is shown in \cref{fig:interface}.
   It shows interactions between polar molecules, between polar molecules and ions, surfactants at the interface, an imperfect solid/liquid boundary, and the the Stern layer.
   The complexity of interactions that happen at the interface are what make is so difficult to model.
+
+  % Edit checkpoint 2015-09-12 11:00
+
   Additional to the interface's impedance is the geometry of the electrodes and the properties of the electrolyte.
   These factors make calculating the impedance between electrodes of an electrode-electrolyte system complex.
-
 
   \begin{figure}
     \begin{center}
       \includegraphics{content/introduction/graphics/StJudeOctrode}
     \end{center}
-    \caption{Graphic representation of the St. Jude Medical ``Octrode''. Such electrodes are used in spinal stimulation implants.}
+    \caption{Graphic representation of the St. Jude Medical ``Octrode''. Such electrodes are used with spinal stimulation implants.}
     \label{fig:octrode}
   \end{figure}
 
