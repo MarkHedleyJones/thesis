@@ -450,7 +450,22 @@
     \label{fig:interface}
   \end{figure}
 
-  Electronic components generally have well defined electrical impedances.
+  Most electronic components have well defined electrical impedances, or models describing those impedances.
+  Circuit simulators, such as the popular SPICE, are designed to deal with branches of components whose currents are functions of voltage, or the integral or first differential of voltage.
+  The problem when modelling double layers is that they are modelled by fractional-order functions.
+  Fractional order functions can be differentiation or integral functions but are only partially applied.
+  For example the equation:
+  \begin{equation}
+  \frac{d}{dx}x = 1
+  \end{equation}
+  when only half applied looks like:
+  \begin{equation}
+  \frac{d^{1/2}}{dx^{1/2}}x = \frac{2\sqrt{x}}{\sqrt{\pi}}
+  \end{equation}
+  Fractional calculus is not mainstream mathematics but does find use when describing double layer behavior.
+  % TODO: Strengthen link between double layer modelling and whatever
+
+
   Knowing these impedances gives a way of calculating voltage across a component by knowing the current through it, or vice versa.
   For linear devices, such as capacitors, inductors and resistors, this is a relatively simple matter of knowing the size of the device.
   For non-linear devices, such as diodes and transistors, there are models that describe the impedance relationship, which are based on the properties of the materials they are made from.
@@ -470,11 +485,8 @@
   A more realistic illustration of a solid-liquid layer is shown in \cref{fig:interface}.
   It shows interactions between polar molecules, between polar molecules and ions, surfactants at the interface, an imperfect solid/liquid boundary, and the the Stern layer.
   The complexity of interactions that happen at the interface are what make is so difficult to model.
-
   % Edit checkpoint 2015-09-12 11:00
-
-  Additional to the interface's impedance is the geometry of the electrodes and the properties of the electrolyte.
-  These factors make calculating the impedance between electrodes of an electrode-electrolyte system complex.
+  Complexity is not only limited to the electrolyte; the geometries of both the electrodes and the environment containing the electrolyte must also be taken into consideration.
 
   \begin{figure}
     \begin{center}
@@ -485,13 +497,13 @@
   \end{figure}
 
   To the designers of medical implant devices, estimating the impedance of electrodes in an electrolyte is critical for safe stimulator design.
-  Saluda Medical is a recently started company based in Sydney, Australia, developing implantable spinal stimulators.
-  Their engineers have designed a stimulator fit for human implantation, but are unsure of the electrical impedance that their implant will see once implanted.
-  Getting it wrong could mean their microchip may `latch up'.
-  This occurs when one or more pins on a chip goes higher than the supply voltage.
-  When this happens, those pins that went above the supply voltage will get stuck on and the only way to turn them off again is to power down the entire chip.
-  In an implanted setting this is potentially lethal.
-  Naturally, Saluda want a way to model the impedance of electrodes implanted into a human spinal cavity.
-  This involves modelling the electrode/electrolyte interface itself, a central idea in interface science.
-  \Cref{part:doubleLayersOnConductors} of this thesis looks at ways of doing that using a model of the interface itelf.
+  Saluda Medical is an emerging company located in Sydney, Australia, in the business of designing high-tech spinal cord stimulator implants.
+  Their engineers have designed a stimulator fit for human implantation, but there are questions around the electrical impedance their implants will experience once implanted.
+  Getting the value wrong means the implant would fail to deliver the desired stimulus current, or otherwise fail due the the presence of an unexpected load.
+  Naturally, Saluda want a way to determine that impedance before they put stimulators into into human spinal cavities.
+  This means modelling the electrode-electrolyte interface itself, which is a central idea in interface science.
+  \Cref{part:doubleLayersOnConductors} of this thesis looks at ways of doing that using a model of the interface based on electronic components.
   Such a model is suitable for entry into common circuit simulators, such as SPICE, that electronic engineers already use.
+  The result for an engineer would be a black box circuit element that connects electrodes together inside an existing SPICE model.
+  That black box would fill the missing gap between their electrodes in their electronic model, giving them a way to simulate the entire system during the design phase.
+  Ultimately this could mean shorter design cycles with less animal testing saving both time and money.
