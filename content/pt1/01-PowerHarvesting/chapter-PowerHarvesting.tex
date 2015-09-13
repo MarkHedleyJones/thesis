@@ -1,11 +1,11 @@
 %!TEX root = ../../../thesis.tex
 
-This chapter begins with a mathematical analysis of streaming cells and their operating parameters.
-Following this, in \cref{sect:part1_energyHarvesting_buildingStreamingCells}, a number of different streaming cells are built.
-Some of the earlier, failed attempts, at making streaming cells are shown followed by a more successful streaming cell design.
-Ten streaming cells are made using this design, each having different internal dimensions.
+This chapter begins with a mathematical analysis of streaming cells and operating parameters.
+Then, in \cref{sect:part1_energyHarvesting_buildingStreamingCells}, a variety of streaming cell designs are built.
+Early attempts at making streaming cells are presented, followed by more successful streaming cell designs.
+Ten streaming cells are made using that design with each having slightly different geometric dimensions.
 The electrical output and energy conversion efficiency of these cells is measured in \cref{sect:part1_energyHarvesting_measuringStreamingCells}.
-Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussion}, followed by concluding remarks on the material presented in this chapter.
+Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussion}, followed by my concluding remarks.
 
 
 \section{General Analysis}
@@ -110,10 +110,10 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
     When harvestable power is available, we need to collect as much of it as possible -- \emph{no matter how much is wasted}.
     Because a cell is incapable of storing energy, any energy that we could not capture will be lost.
 
-    The story is different for battery applications.
-    In those situations it may, but not necessarily, be advantageous to optimise for maximum efficiency.
+    The story would be different for battery applications.
+    In those situations would be advantageous to optimise for maximum efficiency.
     Doing so will conserve the energy in a battery and ensure that as little as possible goes to waste.
-    This might be something a cell phone designer aims to achieve, but less important for batteries accelerating an electric car.
+    This might be something a cell phone designer aims to achieve, but is less important for batteries accelerating an electric car.
 
     In situations requiring maximum efficiency, the efficiency of the system approaches \SI{100}{\percent} as the power delivered approaches \SI{0}{\percent}.
     In situations requiring maximum power, the maximum achievable efficiency is \SI{50}{\percent}.
@@ -219,7 +219,6 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
       The first equation \eqref{eq:cell_resistance_electrical} states that the electrical resistance will increase with cell length and decrease with the cross-sectional area of the cell and the conductivity of the fluid.
       The second \eqref{eq:cell_resistance_hydro} states that the fluid mechanical resistance will increase with the length of the cell and the viscosity of the fluid, and decrease with the cross-sectional area of the cell.
 
-      We can identify an inverse relationship with hydrostatic resistance in
       We can identify the presence of $R_{h}$ in equation \eqref{eq:streamingCell_maxPower_substituted}.
       Starting with this equation we substitute equation \eqref{eq:cell_resistance_electrical} in and rearrange to produce an approximate relationship between pressure, cell length and area:
       \begin{eqnarray}
@@ -276,10 +275,8 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
     This work was related to the idea of an electrostatic generator.
     See \cref{appendix:chargedDropletts} for details of the droplet based harvesting research.
 
-    Later, other designs of streaming cells, namely those of Gu and Li~\cite{Gu2000}, were found.
+    Later, other designs of streaming cells, namely those of Gu and Li~\cite{Gu2000}, were found in the literature.
     Their design of streaming cell looked simple and easy to fabricate, so attempts were made to replicate them.
-
-
     Employing Waikato University's glassblower, Steve Newcombe, two streaming cells were fabricated entirely from soda-lime glass.
     These streaming cells are shown in \cref{fig:first_cells}.
     Each of the two channels were made by placing a \SI{50}{\micro\meter} sheet of copper between the glass slides; then wielding the glass slides together to seal the cell; and finally, etching the copper out with acid.
@@ -296,7 +293,7 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
 
     The two previous attempts to create streaming cells had failed.
     In the moments before failure, the all-glass streaming cells developed measurable voltage across their terminals.
-    I knew I was close, but the all-glass design needed revising.
+    I knew I was close, but the all-glass design needed revising to increase the amount of pressure they could hold.
     A new design was found that solved the problem of cracking.
     It favoured the used of epoxy resin and acrylic to contain the channels, allowing for more flex without the risk of cracking.
     Aspects of the design were taken from a paper by Gu and Li~\cite{Gu2000}.
@@ -352,27 +349,26 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
 
 
   Of the papers describing experiments using streaming potential cells (\cite{Gu2000,Mala1997,Scales1992,VanderHeyden2006}), I chose that of Gu and Li to replicate~\cite{Gu2000}.
-  This was because, at the time, it was the only paper I was aware of.
   Their method employs a simple cell design, discussed in the previous section, and a detailed description of the experimental procedure.
-  This section details the fabrication and measurement of a number of streaming cells.
+  This section details measurement of ten streaming cells based on those of Gu and Li.
 
 
   \subsection{Experimental setup}
     \label{sub:part1_energyHarvesting_measuringStreamingCells_experimentalSetup}
 
 
-    Measurement of the harvester's output was made in a laboratory with high-sensitivity measurement apparatus and a lab tap for the application water pressure.
-    The cells output power was measured with a precision source measurement unit (SMU) and applied pressure was monitored with a differential pressure sensor.
+    Measurement of each harvester was made in a laboratory using high-sensitivity measurement instruments and a lab water tap.
+    Each cell's output power was measured with a precision source measurement unit (SMU) and applied pressure was monitored with a differential pressure sensor.
 
     The Agilent E5270B is a mainframe system that holds banks of SMUs with connections to a GPIB computer interface.
-    The Department of Engineering's E5270 contains three SMUs, each having the ability to measure currents as low as one femto-ampere.
+    The Department of Engineering's E5270 contains three SMUs, each having the ability to measure currents as low as one femto-Ampere.
     The device uses separate `force' and `sense' connections to ensure the voltage/current being set is accurately controlled where they meet.
     Additionally, it uses tri-axial cables to minimise any interference from outside sources; important when measuring such low currents.
 
     The input resistance to the E5270's measurement units are specified as \SI{13}{\giga\ohm}.
     It is essential to use such a high impedance measurement due to the high internal resistance of the cell.
     I later show that the internal electrical resistance of the cell is in the order of \SI{5}{\mega\ohm}, so the E5270's input impedance is roughly two thousand times larger.
-    If using a lab multimeter, typical internal resistance of \SI{10}{\mega\ohm}, its internal resistance is too close to that of the cells and will affect the measured output.
+    The internal resistance of a typical multimeter is \SI{10}{\mega\ohm}, too close to that of the cell and would therefore affect the measured output.
 
     The pressure sensor used was a Honeywell 26PC SMT Series differential pressure sensor.
     It comes as surface mount package, making it a cost effective solution, but delicate to set up.
@@ -422,9 +418,11 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
     Electrolysis on at the electrode surface causes the electrodes to polarise.
     This results in a semi-permanent offset voltage appearing between the electrodes.
     That offset voltage is opposite in polarity to what is developed while cell is in operation.
-    By reversing the flow of water through the cell, the polarisation can be reversed.
+    By reversing the flow of water through the cell the polarisation can be reversed.
     Use of more suitable electrode materials would reduce this effect, for instance platinum black electrodes.
     Copper was used for the electrodes as it was cheap, easily obtainable, and easy to work with.
+    Offset voltages can be removed after measurement by subtraction.
+    Obviously this is not a perfect solution but will be sufficient as the offset itself can be measured so it will be well known.
 
     From measurement of the output \emph{voltage} of the cells, the presented graphs and figures have been adjusted to remove the effects of electrolysis.
     This was done by adding an offset to the measured data to shift the y-intercept up to \SI{0}{\volt}.
@@ -454,20 +452,14 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
 
 
 
-    \Crefrange{fig:VvsP_26um}{fig:VvsP_245um} show adjusted results of streaming voltage measurements from each of the ten cells.
-    They represent the first successful measurements I had made of streaming cells.
+    \Cref{fig:streamingCell_all_adjusted} shows adjusted results of streaming voltage measurements from each of the ten cells.
+    A full set of figures, one cell per graph, can be found in \cref{appendix:streamingCellMeasurements} as \Crefrange{fig:VvsP_26um}{fig:VvsP_245um}.
+    It represents the first successful measurements I had made of streaming cells.
     During these measurements three cells burst under pressure; two were dropped and subsequently shattered; and one suffered epoxy failure, loosing its acrylic base plate.
-
     No measurements of flow rate or output current were made during these early experiments.
     As a result they reveal very little about the efficiency of the cells themselves.
     We cannot determine either the mechanical energy put into the cells, nor the output power available.
     However, we can relate these measurements to those made by Gu and Li; as will be shown and discussed shortly.
-
-    \begin{figure}
-        \centering
-        \includegraphics{content/pt1/01-PowerHarvesting/graphics/graph_streamingVoltageGradient_vs_height_noCorrection}
-        \caption{\label{fig:streamingCell_all_unadjusted}Plot showing un-adjusted streaming voltages versus applied pressure.}
-    \end{figure}
 
     \begin{figure}
         \centering
@@ -481,19 +473,23 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
         \caption{\label{fig:streamingCell_scatter_voltGradVsHeight}Scatter plot of voltage/pressure gradient versus channel height for each of the measured channels.}
     \end{figure}
 
-    \Cref{fig:VvsP_56um} required an offset adjustment of \SI{405}{\milli\volt} before its slope gave a \SI{0}{\milli\volt} intercept.
-    This indicates that the electrodes were highly polarised by the time the measurements were made.
-    This effect is especially evident in \cref{fig:streamingCell_all_unadjusted}, where each of the traces have been placed on a single graph.
+    \begin{figure}
+        \centering
+        \includegraphics{content/pt1/01-PowerHarvesting/graphics/graph_streamingVoltageGradient_vs_height_noCorrection}
+        \caption{\label{fig:streamingCell_all_unadjusted}Plot showing un-adjusted streaming voltages versus applied pressure.}
+    \end{figure}
 
+    The cell having an internal height of \SI{56}{\micro\meter} required an offset adjustment of \SI{405}{\milli\volt} to remove its vertical offset.
+    This indicates that the electrodes were highly polarised by the time measurements were made.
+    This effect is especially evident in \cref{fig:streamingCell_all_unadjusted}, which shows raw measured data without vertical offset adjustment.
     Some of the traces exhibit a certain amount of `jitter' in their pressure-to-voltage gradients.
     This is likely due to the time difference between adjacent measurement points.
     Measurement points were not taken monotonically, instead being extracted from a number of pressure cycles.
 
-    The effect of adding the offset adjustments is visible in \cref{fig:streamingCell_all_adjusted}.
-    These adjustments bring all of the slopes together so the origin sits at \SI{0}{\volt\per\pascal}.
-
     \Cref{fig:streamingCell_scatter_voltGradVsHeight} shows the streaming voltage to pressure gradients versus channel height.
     This data has been taken from the previous graph (\cref{fig:streamingCell_all_adjusted})) to show the response as a function of channel height.
+
+    % Edit checkpoint 2015-09-13 19:43
 
 
   \subsection{Output power versus load resistance}
@@ -505,7 +501,7 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
         \caption{\label{fig:streamingCell_maxPower}Graph showing output power versus effective load resistance for a \SI{71}{\micro\metre} high channel at a pressure of \SI{260}{\kilo\pascal}.}
     \end{figure}
 
-    \Cref{fig:streamingCell_maxPower} shows the characteristic power curve of a the \SI{71}{\micro\meter} high streaming cell channel.
+    \Cref{fig:streamingCell_maxPower} shows the characteristic power curve of the \SI{71}{\micro\meter} high streaming cell channel.
     Pressure fluctuations near the end of the experiment are due to usage of the departments water system.
     Their effect is visible in both the streaming voltage and output power traces, highlighting the strong coupling to applied pressure.
 
@@ -521,7 +517,7 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
   Initial measurements of streaming voltage revealed that the output voltage is directly proportional to applied pressure.
   Containing pressures reaching \SI{260}{\kilo\pascal} within glass structures is difficult.
 
-  Comparing the streaming voltage measurements taken from each of the ten cells to the measurements make by Gu and Li yielded surprising results.
+  Comparing the streaming voltage measurements taken from each of the ten cells to the measurements made by Gu and Li yielded surprising results.
   In their paper~\cite{Gu2000}, they determined the zeta potential ($\zeta$) and surface conductivity ($\lambda$) by plotting measurements and fitting a linear equation to their data.
   The use the y-intercept of the resulting line to give the inverse zeta potential and the slope of the line gave information about the surface conductivity.
 
@@ -548,7 +544,7 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
   \end{figure}
 
   By comparison, \cref{fig:streamingCell_scatter_Gu_Li} plots the same variables from measurements taken from the ten streaming cells fabricated here.
-  In this graph $\lambda{b}$ has been replaced with $\sigma$, where both refer to the bulk conductivity of the solution; and $E_{s}$ has been replaced with $V_{s}$, were both refer to the streaming potential.
+  In this graph $\lambda_{b}$ has been replaced with $\sigma$, where both refer to the bulk conductivity of the solution; and $E_{s}$ has been replaced with $V_{s}$, were both refer to the streaming potential.
   The response to variation of channel height is clearly non-linear.
   Their method of finding the zeta potential rests on the following rearrangement:
   \begin{eqnarray}
@@ -559,7 +555,7 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
   This notion seems counter intuitive since the zeta potential is defined at the plane of sheer (as shown in \cref{fig:doubleLayer_anatomy}), relative to the solution bulk.
   The equation is stating that no-matter how far you separate the walls, the minimum voltage-pressure gradient you can get is still set by the zeta potential.
 
-  Measurement of the output power generated by the \SI{71}{\micro\meter} streaming cell are promising.
+  Measurement of the output power generated by the \SI{71}{\micro\meter} streaming cell is promising.
   From this measurement the power transfer curve is evident.
   Referring back to the model presented as \cref{fig:StreamingCell_Schematic-representation}, we can now calculate the channels internal electrical resistance ($R_{cell}$).
   We know from the graph that the maximum power transfer occurred at a current of \SI{33.5}{\nano\ampere} with a streaming voltage of \SI{182}{\milli\volt}.
@@ -585,3 +581,6 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
   The streaming voltage was found to scale linearly with the applied pressure.
   This could potentially be useful as a means of sensing water flow rates.
   A dual purpose such as power sourcing and flow measurement lends itself well to water metering applications.
+
+
+  % Edit checkpoint 2015-09-13 19:49

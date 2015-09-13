@@ -458,29 +458,28 @@
   \begin{equation}
   \frac{d}{dx}x = 1
   \end{equation}
-  when only half applied looks like:
+  when the differention operation is only half applied results in \cite{Torokhti1974}:
   \begin{equation}
   \frac{d^{1/2}}{dx^{1/2}}x = \frac{2\sqrt{x}}{\sqrt{\pi}}
   \end{equation}
-  Fractional calculus is not mainstream mathematics but does find use when describing double layer behavior.
-  % TODO: Strengthen link between double layer modelling and whatever
-
-
-  Knowing these impedances gives a way of calculating voltage across a component by knowing the current through it, or vice versa.
-  For linear devices, such as capacitors, inductors and resistors, this is a relatively simple matter of knowing the size of the device.
-  For non-linear devices, such as diodes and transistors, there are models that describe the impedance relationship, which are based on the properties of the materials they are made from.
-  But what does an electronic engineer do when there is an electrode-electrolyte-electrode system in their circuit?
-  There is no standard model for this situation and trying to calculate the impedance is not trivial.
-
-  Circuit simulators rely on knowing the impedance of components to calculate the currents and voltages in circuit branches.
-  SPICE is a commonly used circuit simulator that has models for transistors and diodes built in.
-  It can easily simulate complex circuits quickly making it a valuable tool for circuit designers.
-  However, if the software does not have a model for a given component, and the user is not able to describe it in terms of a combination of base components, then a circuit simulator is of little use.
+  Fractional calculus is not mainstream mathematics, but does find use in nieche areas such as describing double layer behavior.
+  For non-linear electronic components such as transistors and diodes, SPICE has models describing their behaviour built in.
+  But SPICE has no way to deal with circuit elements described by fractional order differentiation or integration functions.
+  So how would it be possible to enter an electrode-electrolyte-electrode system into a SPICE circuit and simulate it?
+  % Knowing these impedances gives a way of calculating voltage across a component by knowing the current through it, or vice versa.
+  % For linear devices, such as capacitors, inductors and resistors, this is a relatively simple matter of knowing the size of the device.
+  % For non-linear devices, such as diodes and transistors, there are models that describe the impedance relationship, which are based on the properties of the materials they are made from.
+  % But what does an electronic engineer do when there is an electrode-electrolyte-electrode system in their circuit?
+  % There is no standard model for this situation and trying to calculate the impedance is not trivial.
+  % Circuit simulators rely on knowing the impedance of components to calculate the currents and voltages in circuit branches.
+  % SPICE is a commonly used circuit simulator that has models for transistors and diodes built in.
+  % It can easily simulate complex circuits quickly making it a valuable tool for circuit designers.
+  % However, if the software does not have a model for a given component, and the user is not able to describe it in terms of a combination of base components, then a circuit simulator is of little use.
   \Cref{part:doubleLayersOnConductors} of this thesis uses a model of an electrode-electrolyte interface to solve this problem for implant designers.
   That model is built up from combinations of basic components, which all have well known impedances.
   Because of this, the model can then be entered into almost any circuit simulator.
   This means that an electronic engineer can enter it into their design and know what sort of electrical loading to expect between a of electrodes in an electrolyte bath.
-  
+
   Illustrations of double layers were presented in \cref{sect:background_doubleLayers} showing how the interface is comprised of layers.
   A more realistic illustration of a solid-liquid layer is shown in \cref{fig:interface}.
   It shows interactions between polar molecules, between polar molecules and ions, surfactants at the interface, an imperfect solid/liquid boundary, and the the Stern layer.
@@ -498,7 +497,7 @@
 
   To the designers of medical implant devices, estimating the impedance of electrodes in an electrolyte is critical for safe stimulator design.
   Saluda Medical is an emerging company located in Sydney, Australia, in the business of designing high-tech spinal cord stimulator implants.
-  Their engineers have designed a stimulator fit for human implantation, but there are questions around the electrical impedance their implants will experience once implanted.
+  Their engineers have designed a stimulator fit for human implantation, but have questions around the electrical impedance their implants will experience once implanted.
   Getting the value wrong means the implant would fail to deliver the desired stimulus current, or otherwise fail due the the presence of an unexpected load.
   Naturally, Saluda want a way to determine that impedance before they put stimulators into into human spinal cavities.
   This means modelling the electrode-electrolyte interface itself, which is a central idea in interface science.
@@ -507,3 +506,5 @@
   The result for an engineer would be a black box circuit element that connects electrodes together inside an existing SPICE model.
   That black box would fill the missing gap between their electrodes in their electronic model, giving them a way to simulate the entire system during the design phase.
   Ultimately this could mean shorter design cycles with less animal testing saving both time and money.
+
+  % Edit checkpoint 2015-09-13 18:46
