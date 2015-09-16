@@ -1,21 +1,20 @@
 %!TEX root = ../../../thesis.tex
 
 The amount of energy lost in a mechanical water meter has been estimated, as has the fraction of that energy which can be harnessed.
-Now, the amount of energy required to operate an electronic water meter is estimated.
-This estimation will reveal how much further the cells built earlier would need to be improved.
+Now, the amount of energy required to operate an electronic water meter is sought.
+This estimation will reveal how much further the cells built earlier would need to be improved to be viable.
 
 \section{Microcontrollers}
 
-  Central to the operation of an electronics water meter is the microcontroller (MCU).
+  Central to the operation of an electronic water meter is the microcontroller (MCU).
   The primary function of the microcontroller is to read and log the amount of water consumed by the meter.
   The program contained on the controller will also decide when to transmit that data and monitor energy usage.
-  It is therefore a key component of the electronic meter and is expected to consume the majority of its energy.
+  It is therefore a key component and is expected to consume the majority of energy.
 
-  In this chapter compares power consumption and operational efficiencies of six low power MCUs deemed suitable for use in a water meter.
-  The microprocessors to be investigated are low power, general purpose, 8-bit processors from Microchip, Atmel and Freescale.
-  Each of the microprocessors will have their energy consumption recorded while carrying out various functions.
-  Those measured functions are analogue-to-digital conversion, non-volatile memory writes, processing, and sleeping.
-  These functions are believed to be important for the intended application.
+  This chapter compares the power consumption and operational efficiencies of six low power MCUs deemed suitable for use in electronic metering applications.
+  These microprocessors are low power, general purpose, 8-bit processors from Microchip, Atmel, and Freescale.
+  Each of the microprocessors will have their energy consumption recorded while carrying out various functions over a range of supply voltages.
+  Such measured functions are analogue-to-digital conversion, non-volatile memory writes, processing, and sleeping.
 
 
   \subsection{Selection of low power processors}
@@ -50,7 +49,7 @@ This estimation will reveal how much further the cells built earlier would need 
       \caption{\label{tab:MCUfeaturecomparison} Feature comparison of benchmarked microprocessors.}
     \end{sidewaystable}
 
-    The following processors were chosen the three chosen manufacturers.
+    The following processors were chosen from the three chosen manufacturers.
     \begin{itemize}
     \item Microchip PIC16F1827
     \item Microchip PIC16F688
@@ -78,13 +77,12 @@ This estimation will reveal how much further the cells built earlier would need 
 
   \subsection{Benchmarking power consumption}
 
-    While testing the power consumption of these microprocessors precautions were taken.
-    The chips must be configured to ensure that do not consume more power than is necessary.
+    It is important to ensure that each processor is operated so as to minimise power consumption, which meant taking certain precautions.
     Where possible, the chips were configured to have each of their pins set to outputs, which were held high while being tied to Vdd via 10k$\Omega$ resistors.
     All chips had their peripherals disabled (where appropriate) including any watchdog timers and brownout detection circuitry.
-    To allow more accurate sleep current measurements, the chips were placed in a chip carrier with 10k$\Omega$ resistors soldered between the pins (except ground and Vdd) and Vdd.
-    The chip and carrier was then washed in isopropyl alcohol and dried before being suspended by connections to the measurement device.
-    This was done to reduce any current leakage between pins due to fingerprints or dirt.
+    To allow more accurate sleep current measurements, the chips were placed in a chip carrier with 10k$\Omega$ resistors soldered between the general purpose pins and Vdd.
+    The chip and carrier was washed in isopropyl alcohol and dried before being suspended by connections to the measurement device.
+    This step minimises leakage current between the pins due to oils and dirt that may be transferred by touching or resting on a table.
     Measurements were carried out using the Agilent E5270B Precision Measurement Mainframe.
     This device has been used for most other measurement situations throughout this thesis for its high impedance inputs and measurement accuracy.
 
@@ -100,7 +98,7 @@ This estimation will reveal how much further the cells built earlier would need 
 
       A microprocessor in sleep mode is essentially powered off, the difference being that volatile data is preserved.
       In order to consume as little power as possible an MCU should spend as much time in sleep mode as possible.
-      Therefore, power consumption in sleep states will determine a large part of the chips overall power consumption.
+      The power consumption while sleep states will determine a large part of the water meters overall energy requirements.
 
       \Cref{fig:All_Sleep_Current} shows the amount of current consumed by each MCUs while in their deepest sleep states.
       Surprisingly, the PIC16F1827 consumes the most current in this state, almost one thousand times more than the specified sleep current of \SI{30}{\nano\ampere}\cite{PIC16F1827}.
@@ -119,9 +117,8 @@ This estimation will reveal how much further the cells built earlier would need 
     \subsubsection*{Disclaimer on processing}
 
 
-      Measuring the amount of power it takes to process information is not a simple task.
-      The way each chip carries out processing operations internally can be quite different from one another, even though they
-      all produce the same result.
+      Measuring the amount of power required to process information is complicated.
+      The way each chip carries out processing operations internally can differ from one another, even though all produce the same result.
 
       \begin{table}
         \centering
@@ -149,25 +146,25 @@ This estimation will reveal how much further the cells built earlier would need 
       \begin{algorithm}
         \begin{lstlisting}
         if (danger >= 5) flight();
-        else flee();
+        else fight();
         \end{lstlisting}
         \caption{\label{alg:Simple-C-code-representation}Simple C-code representation of a branch instruction.}
       \end{algorithm}
 
 
       To illustrate, algorithm \ref{alg:Simple-C-code-representation} shows a simplified programme.
-      To determine whether the programme's outcome, the processor must first evaluate whether `danger' is greater than or equal to five.
-      Then it will either branch to the function `flight' or continue on to execute the function `flee'.
+      To determine  the programme's outcome the processor must first evaluate whether `danger' is greater than or equal to five.
+      Then it will either branch to the function `fight' or continue on to execute the function `flight'.
 
       \begin{algorithm}
         \begin{lstlisting}
         load 5 into register 001
         load danger into register 002
-        branch-if-greater-or-equal 001 002 flee_call
+        branch-if-greater-or-equal 001 002 flight_call
         call-subroutine fight
         jump-to continue
-        [flee_call]
-        call-subroutine flee
+        [flight_call]
+        call-subroutine flight
         [continue]
         \end{lstlisting}
         \caption{\label{alg:Psudo-machine-code1}Pseudo machine-code representation
@@ -179,30 +176,30 @@ This estimation will reveal how much further the cells built earlier would need 
         load danger into register 001
         subtract-from-register 001 5
         branch-if-minus 001 fight_call
-        call-subroutine flee
+        call-subroutine flight
         jump-to continue
         [fight_call]
         call-subroutine fight
         [continue]
         \end{lstlisting}
-        \caption{\label{alg:Psudo-machine-code2}Psudo machine-code representation of an alternative branch instruction.}
+        \caption{\label{alg:Psudo-machine-code2}Pseudo machine-code representation of an alternative branch instruction.}
       \end{algorithm}
 
 
       Algorithms \ref{alg:Psudo-machine-code1} and \ref{alg:Psudo-machine-code2} demonstrate two different ways of implementing \ref{alg:Simple-C-code-representation} using pseudo machine-code.
-      The decision of which is best is made by the compiler, which should take the instructional efficiency of the specific MCU into account.
+      The decision of which to use is made by the compiler, which \emph{should} take the instructional efficiency of the specific MCU into account.
       This is an overly simplistic example, but it illustrates that there are multiple paths leading to the same result.
       Importantly, not all of those paths require the same amount of effort on the processors behalf.
       This means that the compiler's ability to optimise code efficiently plays a role in determining the overall performance of the chip.
-      This also means that the programmer shouldn't need to worry too much about instructional efficiency as the compiler should transform C-code into machine code that best suits the target MCU.
+      This also means that the programmer should not be concerned with instructional efficiency as the compiler should transform C-code into machine code that best suits the target MCU.
 
-      Another factor in processing efficiency comes down to the number of different instructions it can do.
-      This list of instructions a processor is capable of is called its instruction set.
+      Another factor in processing efficiency comes down to the number of different instructions it is capable of.
+      The list of instructions a processor is capable of is called its instruction set.
       Most 8-bit MCUs are based on reduced instruction set computing (RISC) architecture, as opposed to complex instruction set computing (CISC).
       When compared to a CISC based CPU, a RISC based chip is simpler and therefore usually cheaper to produce and simpler to program.
       However, ``Instruction traces from CISC machines consistently show that few of the available instructions are used in most computing environments''\cite{ComputerArch}, meaning that many of the extended operations in in CISC designs are underutilised.
       Processors with smaller instruction sets are capable of achieving the more complex operations by chaining multiple instructions together.
-      This means that processors with smaller instruction sets will take longer to achieve certain instructions.
+      This means that processors with smaller instruction sets may take longer to execute certain instructions.
       Finally, the frequency of a microprocessor isn't necessarily the frequency at which it performs operations, although sometimes it is.
       For instance, the Atmel and Freescale microprocessors perform one instruction per clock cycle, whereas the Microchip processors perform one instruction every four clock cycles.
 
@@ -253,7 +250,7 @@ This estimation will reveal how much further the cells built earlier would need 
       There appears to be a flatter response in power consumption with respect to Vdd in the PIC16F1827.
       Again, this appears to be a similar trade-off to that was mentioned earlier (in \cref{fig:All_Sleep_Current}) with the Atmel chips.
 
-      The PIC12F675 (\cref{graph:CLK_POWER_16F675}) used approximately the same at the PIC16F688 (\cref{graph:CLK_POWER_16F688}) for its \SI{1}{\mega IPS} trace.
+      The PIC12F675 (\cref{graph:CLK_POWER_12F675-1}) used approximately the same power as the PIC16F688 (\cref{graph:CLK_POWER_16F688}) for its \SI{1}{\mega IPS} trace.
       \Cref{graph:CLK_POWER_ATtiny25V,graph:CLK_POWER_ATtiny13V} show both Atmel MCUs having similar requirements.
       The MC9S08QG8, although being able to clock the slowest, performed very poorly at low frequencies.
       At \SI{1.95}{\kilo IPS} it consumed approximately the same amount of power as the Microchip MCUs operating at \SI{1}{\mega IPS}.

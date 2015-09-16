@@ -6,8 +6,8 @@ Sourcing and processing drinkable water is an expensive task.
 Cheap and reliable methods for reading water meters is important.
 As supplies of drinkable water become constrained, volumetric pricing will become increasingly common.
 Harvesting energy at the location of metering would eliminate the need for batteries.
-If energy harvesting could be done without moving parts, the lower component wear would lead to increased service life versus mechanical means.
-This section investigates the feasibility of using streaming cell technology as a means of powering electronic water meters.
+If energy harvesting could be done without moving parts, lower component wear should lead to increased service life versus mechanical meters.
+This chapter investigates the feasibility of using streaming cell technology as a means of powering electronic water meters.
 
 \Cref{chap:part1_streamingCellHarvesters} discussed electric power generation from streaming cells.
 A \SI{0.2}{\micro\percent} conversion efficiency from water flow and pressure was demonstrated.
@@ -21,8 +21,10 @@ To find that out, the following questions must be answered:
   \item What fraction can be harnessed?
   \item How much power do we need?
 \end{enumerate}
-The second question was answered in \cref{chap:part1_streamingCellHarvesters}, (\SI{0.0002}{\percent}); and third will be answered in the in \cref{chap:part1_energyHarvestingRequirements}.
-This chapter addresses the amount of energy available to harvest in a typical domestic setting.
+The second question was answered in \cref{chap:part1_streamingCellHarvesters}, (\SI{0.0002}{\percent}); and the third will be answered in \cref{chap:part1_energyHarvestingRequirements}.
+This chapter estimates the quantity of energy available for harvesting in a typical domestic setting.
+
+% Edit checkpoint 2015-09-16 19:14
 
 
 \section{Trends in Water Metering}
@@ -36,8 +38,8 @@ This chapter addresses the amount of energy available to harvest in a typical do
   Automatic meter reading systems (AMR) are an alternative method of collecting that data.
   Hamilton City Council is trialling such systems in remote areas in the hopes of adopting them for wide-spread use.
   There are two types of automatic meter reading systems:
-  an external reader/transmitter that attaches to a compatible meter, or a meter built specifically for the purpose.
-  These systems offer advantages separate from making the meter-reader redundant.
+  an external reader (with communication interface) that attaches to a compatible meter, or an all-in-one unit that meters and reports usage.
+  These systems offer advantages separate from taking away the laborious job of meter reading.
   Increased billing frequency helps customers reduce their consumption by giving more frequent feedback.
   They remove the need to access the customer's property~\cite{Chang2012}.
   Electronic analysis of the meters readings provides an easy way to detect water leaks.
@@ -47,7 +49,7 @@ This chapter addresses the amount of energy available to harvest in a typical do
   Measuring night-time water flow is a convenient way of estimating flow due to leakage.
   Britton et al.\ show that communicating with customers whose homes showed signs of leakage that a night-time flow reduction of \SI{89}{\percent} is achievable.
   In contrast, a control group's night-time usage increased by over \SI{50}{\percent} during the same time-frame.
-  Benefits of automatic water metering are not only geared toward billing, but improving the network as a whole.
+  The benefits of automatic water metering are not limited to billing, but improving the network as a whole.
 
   % Installation
   \begin{figure}
@@ -55,11 +57,11 @@ This chapter addresses the amount of energy available to harvest in a typical do
     \includegraphics[width=0.9\textwidth]{content/pt1/02-WirelessWaterMeter/graphics/meter}
     \caption{\label{fig:Photo_DomesticWaterMeter}Photo showing a domestic water meter, and installation, (Kent PSMT 25mm) typical of an Auckland residential area.}
   \end{figure}
-  Domestic water meters are typically installed at a property's boundary, in a plastic box set into the ground.
-  An installation typical for an Auckland residential area is presented as~\cref{fig:Photo_DomesticWaterMeter}.
+  Domestic water meters are typically installed at a property's boundary in a plastic box set into the ground.
+  An installation typical for an Auckland residential area is shown in \cref{fig:Photo_DomesticWaterMeter}.
   The meter is installed over five meters into the property from the road-side.
-  Because of its location, it is not feasible to connect it to a source of power.
-  No commercially available domestic energy harvesting water meters, suitable for burial, exist on the market as of 2015.
+  It is not feasible to connect it to a source of power because of its location.
+  No commercially available domestic energy harvesting water meters, suitable for burial, exist on the market as of January 2015.
 
   % Approaches
   \begin{figure}
@@ -77,7 +79,7 @@ This chapter addresses the amount of energy available to harvest in a typical do
   A commonly stated battery life for such units is ten years~\cite{BMeters2014}, close to a battery's shelf-life.
   We investigate the possibility of replacing these batteries with a streaming cell based energy harvester.
   A harvester removes the need for batteries, but needs to be plumbed into the water feed.
-  The resulting device would most likely replace the meter, as opposed to being an attachment.
+  It if for this reason that the resulting device would most likely replace the meter, as opposed to being an attachment.
 
 
   \section{Mechanical Design of a Harvester}
@@ -112,10 +114,8 @@ This chapter addresses the amount of energy available to harvest in a typical do
   \label{sect:part1-WirelessWaterMeter-QuantifyingHarvestableEnergy}
 
     % Recap
-    This section estimates the quantity of energy available to a harvester placed in a domestic feed.
-    Using a bypass pipe with an orifice plate the pressure drop across the harvester can be controlled.
-    This means the pressure drop across the harvester can be set to match that of a mechanical meter.
-    The amount of harvestable energy under this assumption is the amount of energy dissipated inside a mechanical meter.
+    Using a bypass pipe with an orifice plate, the pressure drop across a streaming cell energy harvester can be controlled.
+    The following calculations are based on the assumption that the streaming cell energy harvester will be set to collect the same amount of energy currently lost inside a typical mechanical meter.
 
     % Water usage information
     \begin{table}
@@ -170,7 +170,7 @@ This chapter addresses the amount of energy available to harvest in a typical do
     \end{figure}
     The Kent 25-PSMT series mechanical water meter is the most commonly installed water meter in the Auckland district~\cite{WatercareNewZealand2014}.
     \Cref{fig:headloss} shows the head-loss, or pressure differential, versus flow rate for the Kent PSM range of meters.
-    The following equation fits the trace representing the \SI{25}{\milli\meter} PSMT meter:
+    The following equation was created to describe the trace representing the \SI{25}{\milli\meter} PSMT meter:
     \begin{equation}
         \Delta P = e^{3.725\thinspace log(flow) - 9.5}
         \label{eqn:Flow_to_pressure_25mmPSMT}
@@ -187,12 +187,12 @@ This chapter addresses the amount of energy available to harvest in a typical do
     Knowing the pressure differential as a function of flow provides a means of converting between flow and power dissipation.
     Like an electrical resistance, power dissipated by a fluid-flow obstruction is the product of the difference in driving force across the resistance and the flow through it.
     In this case the driving force is pressure and the flow is volumetric.
-    \begin{eqnarray}
-        power &=& pressure \cdot flow\nonumber \\
-        Watt &=& Pascal \cdot \frac{cubic meter}{second}\nonumber \\
-        \frac{kg\cdot m^{2}}{s^{3}} &=& \frac{kg}{m\cdot  s^{2}} \thinspace \frac{m^{3}}{s}\\
-        \label{eqn:pressure_flow_to_power}
-    \end{eqnarray}
+    \begin{align}
+      \label{eqn:pressure_flow_to_power}
+      power &= pressure \cdot flow\nonumber \\
+      Watt &= Pascal \cdot \frac{cubic meter}{second}\nonumber \\
+      \frac{kg\cdot m^{2}}{s^{3}} &= \frac{kg}{m\cdot  s^{2}} \thinspace \frac{m^{3}}{s}
+    \end{align}
     \Cref{eqn:pressure_flow_to_power} shows the units that will be used to determine power dissipation and ensures they balance.
     \begin{figure}
         \centering
@@ -226,7 +226,7 @@ This chapter addresses the amount of energy available to harvest in a typical do
           Graph of power dissipation within a mechanical water meter over a week for a two occupant dwelling.
         }
     \end{figure}
-    Average use frequencies for each event type were been reported by Heinrech, as shown earlier in~\cref{tab:consumption_figures}.
+    Average use frequencies for each event type are reported by Heinrech and are shown earlier in~\cref{tab:consumption_figures}.
     Using these figures, and by selecting appropriate times of day, an energy dissipation profile representative of one week was constructed.
     Five uses of a washing machine, fourteen showers, and fifty six toilet flushes occur during this time.
     This profile is shown as~\cref{fig:profile_powerDissipation}.
@@ -246,16 +246,18 @@ This chapter addresses the amount of energy available to harvest in a typical do
           Calculated total energy dissipation over a period of one week within a mechanical water meter for typical use of a washing machine, shower and toilet.
       }
     \end{table}
-    \Cref{tab:energy_dissipation_total_figures} combines the energy dissipation for each event type over profile duration.
-    The total energy dissipated in the meter over the course of a week is \SI{2.16}{\kilo\joule}.
+    \Cref{tab:energy_dissipation_total_figures} combines the energy dissipation for each event type over a week.
+    The total energy dissipated in the meter during such a week is \SI{2.16}{\kilo\joule}.
     Daily energy available is expected to fluctuate due to sporadic use of the washing machine in most homes.
     Ignoring washing machine use, indicative of weekday consumption, the quantity of harvestable energy is expected to be about \SI{280}{\joule} per day.
 
     % Summary
     Knowing the quantity of energy available to a harvester is a key factor determining its feasibility.
     The efficiency of converting energy into the electrical domain was measured in~\cref{chap:part1_streamingCellHarvesters} and was found to be \SI{0.2}{\micro\percent}.
-    Calculation shows the measured cell would yield \SI{560}{\nano\joule} of energy per day.
+    Based on that figure the measured cell would collect \SI{560}{\nano\joule} of energy per day from a two person home.
     Energy output that low is unlikely to be sufficient for automatic meter reading.
     The literature indicates the efficiency measured in~\cref{chap:part1_streamingCellHarvesters} was low.
     It may still be possible to close the gap between what we can produce and what we need.
     The amount of energy required to run an electronic water meter is estimated next.
+
+    % Edit checkpoint 2015-09-16 19:48
