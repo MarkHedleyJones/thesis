@@ -246,14 +246,18 @@ This estimation will reveal how much further the cells built earlier would need 
       The Microchip PIC16F1827 displayed the lowest energy usage with \SI{10}{\micro\ampere} while clocking \SI{7.75}{\kilo IPS} (as shown in \cref{graph:CLK_POWER_16F1827}).
       Microchip MCUs complete one instruction every four clock cycles, so the \SI{7.75}{\kilo IPS} actually corresponds to a standard clock frequency of \SI{31}{\kilo\hertz}.
 
-      \Cref{graph:CLK_POWER_16F688} shows the PIC16F688 consumes less power than the PIC16F1827 at low voltages for the same instruction rates (except at 7.75kIPS).
+      % Edit checkpoint 2015-09-17 18:59
+
+      \Cref{graph:CLK_POWER_16F688} shows that the PIC16F688 consumes less power than the PIC16F1827 at low voltages for the same instruction rates (except at 7.75kIPS).
       There appears to be a flatter response in power consumption with respect to Vdd in the PIC16F1827.
-      Again, this appears to be a similar trade-off to that was mentioned earlier (in \cref{fig:All_Sleep_Current}) with the Atmel chips.
+      Again, this appears to be a similar trade-off to what was mentioned earlier (in \cref{fig:All_Sleep_Current}) with the Atmel chips.
 
       The PIC12F675 (\cref{graph:CLK_POWER_12F675-1}) used approximately the same power as the PIC16F688 (\cref{graph:CLK_POWER_16F688}) for its \SI{1}{\mega IPS} trace.
       \Cref{graph:CLK_POWER_ATtiny25V,graph:CLK_POWER_ATtiny13V} show both Atmel MCUs having similar requirements.
       The MC9S08QG8, although being able to clock the slowest, performed very poorly at low frequencies.
       At \SI{1.95}{\kilo IPS} it consumed approximately the same amount of power as the Microchip MCUs operating at \SI{1}{\mega IPS}.
+
+      Overall, the PIC16F1827 gives the widest range of power consumption options, with the ATtiny25V offering similar performance options.
 
     \subsubsection*{Joules of energy consumed per instruction cycle\label{sub:Joules-of-energy}}
 
@@ -266,8 +270,8 @@ This estimation will reveal how much further the cells built earlier would need 
       where $E_{i}$ is the number of joules consumed per instruction, $I$ is the current draw, $Vdd$ is the input voltage and $f_{i}$ is the instruction frequency.
 
       Figure \ref{fig:Per-instruction-cycle} compares the most energy efficient operating conditions of each of the tested chips.
-      What is most interesting about this graph is amount of overlap between each of the chips.
-      Also, these greater efficiencies occur at high operating frequencies.
+      What is most interesting about this graph is the high degree of overlap.
+      Also, the greater efficiencies occur at high operating frequencies.
       A simple rule of thumb for selecting the most power efficient operating frequency based on these results is to choose the highest frequency where the MCU can operate over its full input voltage (Vdd) range.
       For comparison, figure \ref{fig:Per-instruction-ATtiny13V} shows the trade-off made when selecting a higher frequency, which is typical across the range of MCUs tested.
 
@@ -302,16 +306,16 @@ This estimation will reveal how much further the cells built earlier would need 
         \caption{\label{alg:Benchmarking-algorithm}Benchmarking algorithm}
       \end{algorithm}
 
-      Calculating the amount of energy consumed per instruction only shows part of the processors efficiency.
+      Calculating the amount of energy consumed per instruction only shows part of processor efficiency.
       The amount of processing done per instruction is not taken into account in such measurements.
-      Some MCUs have extra instructions that are designed to help speed-up code execution by combining commonly used sets of instructions.
+      Some MCUs have extra instructions that are designed to help speed up code execution by combining commonly used groups of instructions.
       To shed light on instructional efficiency, the number of instructions each of the processors takes to complete a benchmark function is found.
       This will allow for a more accurate representation of execution efficiency.
-      The function used to benchmark each of the processors is a linear feedback shift register based pseudo-random number generator \cite{LinearFeedbackRegister}.
+      The function used to benchmark each of the processors is a linear feedback shift register based pseudo-random number generator \cite{Wikipedia2015}.
       It is well suited to an 8-bit microprocessor as it requires no complex math functions, uses little memory and has a well defined end.
       The code for this function is shown as \cref{alg:Benchmarking-algorithm}.
       It starts with a 16-bit number and runs it through the linear feedback register in a tight loop until the initial value of the 16-bit feedback register is produced again.
-      This function steps through every possible combination of bits possible in a 16-bit number (except zero; 65535) in a pseudo-random order before exiting the loop.
+      This function steps through every possible combination of bits possible in a 16-bit number (except for 0 and 65535) in a pseudo-random order before exiting the loop.
       The function combines the exclusive-OR (XOR), bit shifting, bitwise AND, increment a value and numerical comparison operations in a tight loop.
       The benchmarking function was compiled and run on each of the MCUs operating at a range of supported frequencies.
 
@@ -323,13 +327,13 @@ This estimation will reveal how much further the cells built earlier would need 
       \end{figure}
 
       To determine the instructional efficiency, the code was set to toggle the state of a digital output pin.
-      The voltage on this pin was recorded using a Tektronix MSO 4054 oscilloscope.
+      The toggle frequency of that pin was recorded using a Tektronix MSO 4054 oscilloscope.
       The number of instruction cycles each chip took to complete the benchmark was deduced by multiplying the time taken to complete the benchmark by the instruction cycle frequency.
       The results of the benchmark are shown in \cref{fig:GraphBar_All_Benchmark}.
       To calculate the number of instruction cycles taken by the Microchip family of processors, one quarter of the chip's operation frequency was used.
       This meant that the number of clock cycles consumed was four times higher.
       It is clear from \cref{fig:GraphBar_All_Benchmark} that the Atmel (ATtiny25V and ATtiny13V) microprocessors are by far the most efficient microprocessor in terms of executing code using a minimum number of instructions of the selection.
-      The reason for this is not clear, but may be due to the larger instruction set, higher compiler optimisation or a combination of both.
+      The reason for this is most probably due to the larger instruction set and higher compiler optimisation.
 
 
 
@@ -390,8 +394,8 @@ This estimation will reveal how much further the cells built earlier would need 
     For example, wet ground is likely to obstruct RF transmission due to the transmitter being shielded by a more conductive medium.
     Instead of trying to quantify the energy required in those situations, the best case was measured and an estimate of the worst case is estimated to be one hundred times larger.
     The transmit power can increase by a factor of 320 for the RFM module, however the transmit power only represents a proportion of total power usage.
-    The modules must power up, start their internal oscillators, receive the data to be transmitted and then transmit.
-    I estimate that the difference between the lowest and the highest total power consumption, based on reception alone, will be a factor of 50-100.
+    The modules must power up, start their internal oscillators, receive the data to be transmitted from the main processor and then transmit the data packets.
+    I have crudely estimated that the difference between the lowest and the highest total power consumption, based on reception alone, will be a factor of 100.
 
     \begin{figure}
       \centering
@@ -408,8 +412,8 @@ This estimation will reveal how much further the cells built earlier would need 
     The RFM12B was operated at 433MHz, a frequency that is expected to increase the transmission through walls and soil.
     It has a maximum output power of \SI{5}{\decibel m} (\SI{3.2}{\milli\watt}) at this frequency.
     The Xbee has a maximum output power of \SI{0}{\decibel m} (\SI{1}{\milli\watt}) and operates at \SI{2.4}{\giga\hertz}.
-    \Cref{fig:Energy-consumed-RFM12B, fig:Energy-consumed-Xbee} show the captured power consumption during the tests.
-    The RFM12B used about half as much energy sending the same packed of data as the Xbee.
+    \Cref{fig:Energy-consumed-RFM12B,fig:Energy-consumed-XBee} show the captured power consumption during the tests.
+    The RFM12B used about half as much energy sending the same data as the Xbee.
     Combined with its ability to operate at 433 MHz, the RFM12B is a sensible choice for the electronic water meter.
     In total the RFM consumed \SI{6.71}{\milli\joule} and the Xbee consumed \SI{12.3}{\milli\joule}.
     Adjusting these figures for the worst case (multiplying by one hundred) gives \SI{671}{\milli\joule} for the RFM12B and \SI{1.23}{\joule} for the Xbee.
@@ -464,3 +468,5 @@ This estimation will reveal how much further the cells built earlier would need 
     They show that approximately \SI{12}{\joule} would be consumed per day by an electronic water meter.
     It was shown in \cref{sect:part1-WirelessWaterMeter-QuantifyingHarvestableEnergy} that \SI{280}{\joule} of energy is already dissipated in a mechanical water meter per day.
     This equates to a conversion efficiency of \SI{4.28}{\percent}, which would be the minimum efficiency required to run the meter continuously.
+
+    % Edit checkpoint 2015-09-17 19:35
