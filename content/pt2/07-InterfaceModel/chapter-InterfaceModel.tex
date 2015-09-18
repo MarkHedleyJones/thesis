@@ -253,15 +253,15 @@ That comparison is the main scientific contribution resulting from this work.
 \section{Phosphate Buffered Saline as an Electrolyte}
 
 
-  The model has been fitted to phosphate buffered saline (PBS) because it is was closest representation of human spinal fluid known at the time.
-  Engineers at Saluda used a concentration one-tenth that of a standard solution of PBS as a test solution for their spinal implants as they believed it to be a good match.
-  I was not understood how well the one-tenth concentration matched spinal fluid electrically, which is one of the first research questions I set out to answer.
-  The ingredients used to make the stock standard PBS concentration solution are given in \cref{tab:pt2-PBS-recipe} and the procedure for creating the full strength stock are as follows.
+  The model has been fitted to phosphate buffered saline (PBS) because it was the closest artificial representation of human spinal fluid at the time of writing.
+  Engineers at Saluda used a concentration one-tenth that of a standard solution of PBS as a test solution for their spinal implants.
+  It was not understood how well the one-tenth concentration matched cerebrospinal fluid electrically, which is the main question this work sets out of answer.
+  The ingredients used to make the stock solution of standard PBS are given in \cref{tab:pt2-PBS-recipe} and the procedure for mixing up derivative solutions are:
   \begin{enumerate}
-    \item Weigh out day ingredients and combine in stock bottle.
-    \item \SI{800}{\milli\litre} of distilled water is added to bottle and solution is stirred until all solids have dissolved.
-    \item pH is measured and adjusted to 7.4 by addition of HCL.
-    \item The stock solution was mixed up to the target volume of \SI{1000}{\milli\litre}.
+    \item Weigh out dry ingredients and combine in a large stock bottle.
+    \item Add \SI{800}{\milli\litre} of distilled water and stir until all solids have dissolved.
+    \item Measure the pH and adjust to 7.4 by adding HCL.
+    \item Continue to add distilled water until the stock solution occupies a volume of \SI{1000}{\milli\litre}.
   \end{enumerate}
 
   \begin{table}
@@ -293,48 +293,53 @@ That comparison is the main scientific contribution resulting from this work.
     \caption{\label{tab:pt2-PBS-concentration}Final dilutions of stock to create six \SI{700}{\milli\litre} solutions ranging from 0.025X to 1X standard PBS concentration.}
   \end{table}
 
-  Six bottles of ranging in concentration from full strength (1.0X) to one-fortieth (0.025X) were then made from the stock solution.
-  \Cref{tab:pt2-PBS-concentration} shows the volumetric dilution used to create the six concentrations of PBS that are then used to fit the model parameters to.
+  Six bottles ranging in concentration from full strength (1.0X) to one-fortieth (0.025X) of the stock solution were created by dilution.
+  \Cref{tab:pt2-PBS-concentration} shows the volumetric ratios used to create those six concentrations of PBS, which are then used to fit the model parameters to.
+
+  % Edit checkpoint 2015-09-19 09:02
 
 
 \section{Parameter Extraction Methods}
 
 
-  The model has a number of parameters that are used to set the behaviour of each of the components.
-  Finding suitable values for each of the parameters is critical in ensuring that the final model offers a good representation of the electrode-electrolyte system.
-  The trick to finding suitable parameter values lies in selecting useful measurements of each part of the model, usually by isolating the measurement as much as possible from other model elements.
-  The following sections describe the measurements used to determine parameters used in the final model.
-  Ideally each element in the model would be measured separately, but in some cases it is not possible to totally isolate two areas.
+  The interface model has six parameters (plus five supporting parameters) that are used to set the behaviour of each component in the model.
+  Finding suitable values for each parameter is essential so ensure the final model is a good representation of the system it mimics.
+  Critical to finding those suitable values are the methods used to extract measurement data relating to different parts of the interface model.
+  A divide-and-conquer approach is taken wherever possible so that parameter measurements for specific elements are isolated from other elements in the model.
+  The following section describes those measurements and explains how they isolate the properties of each component.
+
   Scott and Single found a set of parameters that described the Octrode in a one-tenth concentration solution of phosphate buffered saline (PBS).
   In this section I create six different solutions of PBS ranging in concentration from 1.0x to 0.025x the concentration of a standard PBS solution.
-  I extend the Scott-Single model to work over a range of concentrations of PBS by adding another parameter to the model - PBS concentration.
+  I extend the Scott-Single model to work over a range of concentrations by expressing relevant parameters in terms of a dependant variable - PBS concentration.
 
 
   \subsection{Inter-electrode resistivity}
 
 
     In order to find the parameters of any elements within the electrode-electrolyte interface it is first necessary to find the inter-electrode resistances.
-    This is because elements of the model can not be measured in isolation since the resistivity of the electrolyte solution will always present itself between a measurement apparatus and the element of interest.
-    I start by determining the resistances used in the resistor mesh using the same method as was used by Scott and Single \cite{Scott2014}.
-    Once those resistances are accounted for, the behaviour of components in the interface can be calculated from measurements that included those inter-electrode resistances by subtraction.
+    The reason being that no element within the interface can be measured without a resistive contribution being added by the electrolyte itself.
+    To model the restive contribution from the electrolyte bulk, a resistor mesh is created that connects each electrode together.
+    To determine the resistances used in that resistor mesh, I use the same method as was used by Scott and Single \cite{Scott2014}.
+    Once those resistances are accounted for, the behaviour of components in the interface can be calculated from measurements that include those inter-electrode resistances by subtracting out that expected contribution.
 
     \begin{figure}
       \centering
       \includegraphics{content/pt2/07-InterfaceModel/graphics/TransimpedanceMeasurements_Stim81}
-      \caption{\label{fig:pt2-transimpedanceMeasurementDiagram_81Stim}Measurement schematic of trans-impedance measurements where electrodes eight and one are driven and the remainder are used in voltage differential measurements.}
+      \caption{\label{fig:pt2-transimpedanceMeasurementDiagram_81Stim}Schematic of trans-impedance measurements where electrodes eight and one are driven and the remainder are used in voltage differential measurements.}
     \end{figure}
 
     \begin{figure}
       \centering
       \includegraphics{content/pt2/07-InterfaceModel/graphics/TransimpedanceMeasurements_Stim21}
-      \caption{\label{fig:pt2-transimpedanceMeasurementDiagram_21Stim}Measurement schematic of trans-impedance measurements where electrodes two and one are driven and the remainder are used in voltage differential measurements.}
+      \caption{\label{fig:pt2-transimpedanceMeasurementDiagram_21Stim}Schematic of trans-impedance measurements where electrodes two and one are driven and the remainder are used in voltage differential measurements.}
     \end{figure}
 
-    Scott and Single measure trans-impedance between pairs of electrodes in two different configurations where a defined AC current is driven between a pair of electrodes.
-    Data from these measurements is tabulated so each row contains the AC current forced between the two stimulus electrodes and a voltage measured between a pair of non-driven electrodes.
+    Scott and Single measure the trans-impedance of the eight electrodes submerged in the electrolyte solution.
+    This works by passing a stimulus current between two electrodes while measuring voltage differentials between pars of non-stimulus carrying electrodes.
+    Data from those measurements is then tabulated so that each row contains the AC current driven between the two stimulus electrodes and the voltage measured between a pair of non-driven electrodes.
     By measuring the voltage across pairs of non-driven electrodes using a suitably high impedance measurement, those measurements will correspond to the voltage difference in the electrolyte.
-    For this method to work it is assumed that the current passing through each non-driven interface is zero, and therefore no voltage is dropped between the electrode's metal and the electrolyte solution at the electrode's surface.
-    This means that voltage differentials can only be measured on the non-driven electrodes.
+    For this method to work it is assumed that the current passing through each non-driven interface is zero, and therefore no voltage is dropped between the electrode's metal and the electrolyte solution.
+    It is for this reason that that voltage differentials can not be measured on any of the stimulus electrodes.
     \Cref{fig:pt2-transimpedanceMeasurementDiagram_81Stim,fig:pt2-transimpedanceMeasurementDiagram_21Stim} show the two measurement configurations used to collect transimpedance data.
     Those transimpedance results are recreated using a simulated mesh of resistors with fitted values to the three resistor parameters.
     An optimisation routine can be used to find the three values that create a mesh that matches the measured values as close as possible, as summarised in \cref{tab:pt2-parameterDesc-ResistorMesh}.
@@ -354,6 +359,8 @@ That comparison is the main scientific contribution resulting from this work.
       \caption{\label{tab:pt2-parameterDesc-ResistorMesh}Parameters determined by an optimised fit between a simulated mesh and transimpedance measurements.}
     \end{table}
 
+    % Edit checkpoint 2015-09-19 09:28
+
 
   \subsection{Constant phase element \& series resistance}
 
@@ -364,14 +371,14 @@ That comparison is the main scientific contribution resulting from this work.
       \caption{\label{fig:pt2-graph_cpePlotGeneral}Log-log plot of frequency vs impedance magnitude of a single interface and inter-electrode impedance. The response of the CPE and that of the total series resistance is separated in the frequency domain.}
     \end{figure}
     By accounting for the value of resistance seen between electrodes it is now possible to probe deeper into the interface model.
-    Calculation of both the CPE and the series resistance ($R_S$) is made via impedance spectroscopy.
-    It is possible to use the applied frequency to separate the response of the CPE from that of the series resistance of a single interface and inter-electrode resistance.
+    Calculation of both the CPE and the series resistance ($R_S$) is made via impedance spectroscopy methods.
+    It is possible to use frequency to separate the responses of the CPE from interface's series resistance.
     The impedance of the CPE dominates below \SI{10}{\hertz}, where its slope and magnitude can be determined.
     At higher frequencies, greater than \SI{1}{\kilo\hertz}, the series resistance of both the interface ($R_S$) and the previously determined inter-electrode resistance is evident.
     This separation of responses is illustrated in \cref{fig:pt2-graph_cpePlotGeneral}.
-    Subtracting the inter-electrode resistance (determined previously) from the resistive element yields just the interface's series resistance ($R_S$).
-    Parameters for the CPE, such as slope and vertical position, are then read off the low frequency part of the trace where the slope is not disturbed by the resistive part.
-    These parameters are summarised in \cref{tab:pt2-parameterDesc-CPE}.
+    Subtracting the inter-electrode resistance, determined previously, from the measured resistance yields the interface's series resistance ($R_S$).
+    Parameters for the CPE, such as slope and vertical position, are then read off the low frequency part of the trace where the slope is not disturbed by resistive behaviour.
+    The parameters for the CPE and series resistance are summarised in \cref{tab:pt2-parameterDesc-CPE}.
 
     \begin{table}
       \begin{center}
@@ -384,25 +391,25 @@ That comparison is the main scientific contribution resulting from this work.
           $R_S$ & impedance at high frequency (\SI{10}{\kilo\hertz}) end of the trace
         \end{tabular}
       \end{center}
-      \caption{\label{tab:pt2-parameterDesc-CPE}Parameters determined from impedance spectroscopy measurements of electrode-electrolyte interface.}
+      \caption{\label{tab:pt2-parameterDesc-CPE}Parameters describing CPE behaviour and interface series resistance ($R_S$) as determined using impedance spectroscopy based measurements of electrode-electrolyte interface.}
     \end{table}
 
 
   \subsection{Faradaic current}
 
 
-    Measurement of Faradaic current requires pushing the electrode overpotential until reactions at the electrode's surface begin.
-    Electrical currents involved with Faradaic conduction increase exponentially with increasing electrode overpotential.
-    Scott and Single used a triangular voltage stimulus to identify the onset of Faradaic conduction at the interface.
+    Measurement of electrical currents associated with Faradaic reactions requires increasing the electrode overpotential until reactions at the electrode's surface begin.
+    Those currents then increase exponentially with increasing electrode overpotential.
+    Scott and Single used a triangular voltage stimulus as a means to identify the onset of Faradaic conduction at the interface.
     The triangular wave is equivalent to a constant ramp-up and ramp-down of voltage placed across the interface.
-    It was mentioned earlier that current flowing into a capacitor is given by: $I(t) = C \times \frac{dV(t)}{dt}$.
+    Current flowing into a capacitor is given by: $I(t) = C \times \frac{dV(t)}{dt}$.
     When $\frac{dV(t)}{dt}$ is a constant, as is the case for any constant ramp-up or ramp-down voltage stimulus, the current becomes a constant.
     It is assumed that the fractional differentiation of the current equation will still yield a relatively constant current in light of the capacitor being a CPE.
-    By slowly ramping the electrode overpotential up the current should be constant up to a point where it becomes exponential.
+    By slowly ramping the electrode overpotential the current draw should be constant up to a point after which it becomes exponential.
     The voltage corresponding to the point at which the current draw becomes exponential will be used to determine the onset of Faradaic conduction.
-    That point, together with the rate of growth, would then used to fit values for $i_0$ and $n$, the diode's saturation current and ideality factor respectively, as summarised in \cref{tab:pt2-parameterDesc-Diode}.
-    Problems arose with those measurements, which will be discussed in the following section, that show the behaviour of the CPE was less predictable than expected.
-
+    That point, together with the rate of growth, would then used to fit values for $i_0$ and $n$.
+    The parameters $i_0$ and $n$ are the diode's saturation current and ideality factor respectively, as summarised in \cref{tab:pt2-parameterDesc-Diode}.
+    Problems arose with those measurements, discussed in the next chapter, showed the behaviour of the CPE was less predictable than expected.
 
     \begin{table}
       \begin{center}
@@ -415,3 +422,5 @@ That comparison is the main scientific contribution resulting from this work.
       \end{center}
       \caption{\label{tab:pt2-parameterDesc-Diode}Parameters determined from fitting diode parameters to measured response of Faradaic current.}
     \end{table}
+
+    % Edit checkpoint 2015-09-19 10:11
