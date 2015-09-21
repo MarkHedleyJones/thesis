@@ -4,9 +4,9 @@ Utilising the measurement methods used previously, a liquid that better replicat
 This work is of benefit to engineers of medical implant devices.
 Having the ability to formulate a solution that mimics the electrical conditions inside a living mammal reduces the resources required to test electronic implants.
 
-It was previous mentioned that the developers of spinal cord stimulator implants used solutions of PBS having a one-tenth concentration as a test fluid for their implants.
+It was previously mentioned that the developers of spinal cord stimulator implants used solutions of PBS having a one-tenth concentration as a test fluid for their implants.
 This solution was the best substitute for an actual live spine that these engineers had.
-Solutions of the \SI{0.1}{X} PBS are held in drums within the electronics laboratories for use whenever a quick tests needed to be carried out.
+Solutions of the \SI{0.1}{X} PBS are held in drums within the electronics laboratories for use whenever quick tests needed to be carried out.
 Electrodes were submerged into these drums in order to recreate the electrical conditions inside a human spine.
 This was not the only way to simulate the impedance conditions inside a person.
 As presented in~\cref{sect:sheep_measurements}, the use of anaesthetised sheep were also used.
@@ -15,7 +15,7 @@ However, the resources involved with conducting a live sheep trial are high; req
 Engineers have no way of knowing how well those baths of saline represented a sheep's spine.
 It was shown in \cref{sect:sheep_measurements} that the match between the two was weak.
 With that knowledge, and the measurement techniques developed thus far, research into creating a solution that better matches sheep spine is carried out.
-Such a match would reduce the number of surgical operations the test engineers might need to conduct, saving resources and reducing time.
+Strengthening that match would reduce the number of surgical operations the test engineers might need to conduct, saving resources and reducing time.
 
 \section{Ingredients}
 
@@ -44,7 +44,7 @@ Such a match would reduce the number of surgical operations the test engineers m
 \section{Measurement}
 
   The focus when creating the solution is to match the CPE and series resistance of the sheep measurements to the newly created solution.
-  The measurement setup used to measure the CPE response and series resistance is mostly the same as was used for PBS and in sheep spine.
+  The measurement setup used to measure the CPE response and series resistance is mostly the same as was used for characterising PBS and the sheep's spinal cavity.
   This configuration differs only in the electrodes used on the array, necessary due to electrode two having its connection broken, and is shown in \cref{fig:creatingCSF_setup}.
   A \SI{10}{\kilo\ohm} resistor was used to measure the current driven between electrodes eight and three.
   It had a measured resistance of \SI{9.990}{\kilo\ohm}, as measured with a Fluke digital multimeter.
@@ -58,11 +58,11 @@ Such a match would reduce the number of surgical operations the test engineers m
   Each measurement run begins at the upper end of the frequency spectrum and proceeds towards the low frequency endpoint.
   Starting with the higher frequencies offers a chance to confirm correct measurement set-up early in the measurement since they take less time to complete.
   A sample at the lowest frequency can take over a minute to acquire, where the higher frequencies take less than one second.
-  The same frequencies were chosen that were used to measure the situation in sheep.
+  The same frequencies were chosen that were used to measure the CPE's response in sheep's spinal cavity.
   Using those same frequencies makes comparison between the sheep data and the impedance of mixed solutions much easier.
   Measurements were fully automated via a Linux based computer running Python scripts.
   These scripts controlled the output settings of the waveform generator and acquired the resulting waveforms from the oscilloscope.
-  The scripts had the ability to set the horizontal and vertical scales on the oscilloscope channels in order to ensure appropriate scales were used.
+  The scripts had the ability to set the horizontal and vertical scales on the oscilloscope channels in order to ensure appropriate settings were used.
   \begin{figure}
       \centering
       \includegraphics[width=\textwidth]{content/pt2/graphics/measurementFlowchart}
@@ -73,65 +73,9 @@ Such a match would reduce the number of surgical operations the test engineers m
 
   The target voltage across the interface is \SI{20}{\milli\volt}.
   This voltage was previously determined as a safe stimulus voltage in that it does not trigger Faradaic reactions at the electrode's surface and was used in for PBS measurements.
-  Because the impedance of the interface changes with frequency, it is necessary to alter the output amplitude to keep the voltage across electrode seven and eight consistent.
+  Because the impedance of the interface changes with frequency it is necessary to alter the output amplitude to keep the voltage across electrodes seven and eight consistent.
 
   % Edit checkpoint 2015-09-19 14:49
-
-
-% \section{Results}
-
-
- % \subsection{Water, Corn-flour and Salt}
-
-   % \begin{figure}
-   %     \centering
-   %     \includegraphics[width=\textwidth]{content/pt2/graphics/run12_600ml-distilledWater_ZVsF_graph_mag}
-   %     \caption{\label{fig:recipe_water_mag}Plot of impedance magnitude versus frequency (log-log) for distilled water.}
-   % \end{figure}
-
-   % \begin{figure}
-   %     \centering
-   %     \includegraphics[width=\textwidth]{content/pt2/graphics/run12_600ml-distilledWater_ZVsF_graph_phase}
-   %     \caption{\label{fig:recipe_water_phase}Plot of impedance phase versus frequency (log-log) for distilled water.}
-   % \end{figure}
-
-   % \begin{figure}
-   %     \centering
-   %     \includegraphics[width=\textwidth]{content/pt2/graphics/run14_170ml-distilledWater_250g-cornflour_ZVsF_graph_mag}
-   %     \caption{\label{fig:recipe_cornflour_mag}Plot of impedance magnitude versus frequency (log-log) for \SI{250}{\gram} cornflour mixed with \SI{175}{\milli\litre} distilled water.}
-   % \end{figure}
-
-   % \begin{figure}
-   %     \centering
-   %     \includegraphics[width=\textwidth]{content/pt2/graphics/run14_170ml-distilledWater_250g-cornflour_ZVsF_graph_phase}
-   %     \caption{\label{fig:recipe_cornflour_phase}Plot of impedance phase versus frequency (log-log) for \SI{250}{\gram} cornflour mixed with \SI{175}{\milli\litre} distilled water.}
-   % \end{figure}
-
-   % \begin{figure}
-   %     \centering
-   %     \includegraphics[width=\textwidth]{content/pt2/graphics/run14_175ml-distilledWater_250g-cornflour_1g9-salt_ZVsF_graph_mag}
-   %     \caption{\label{fig:recipe_cornflour_salt_mag}Plot of impedance magnitude versus frequency (log-log) for \SI{250}{\gram} cornflour mixed with \SI{175}{\milli\litre} distilled water and \SI{1.9}{\gram} table-salt.}
-   % \end{figure}
-
-   % \begin{figure}
-   %     \centering
-   %     \includegraphics[width=\textwidth]{content/pt2/graphics/run14_175ml-distilledWater_250g-cornflour_1g9-salt_ZVsF_graph_phase}
-   %     \caption{\label{fig:recipe_cornflour_salt_phase}Plot of impedance phase versus frequency (log-log) for \SI{250}{\gram} cornflour mixed with \SI{175}{\milli\litre} distilled water and \SI{1.9}{\gram} table-salt.}
-   % \end{figure}
-
-   % \begin{figure}
-   %     \centering
-   %     \includegraphics[width=\textwidth]{content/pt2/graphics/run14_180ml-distilledWater_250g-cornflour_1g9-salt_ZVsF_graph_mag}
-   %     \caption{\label{fig:recipe_cornflour_salt_extraWater_mag}Plot of impedance magnitude versus frequency (log-log) for \SI{250}{\gram} cornflour mixed with \SI{180}{\milli\litre} distilled water and \SI{1.9}{\gram} table-salt.}
-   % \end{figure}
-
-   % \begin{figure}
-   %     \centering
-   %     \includegraphics[width=\textwidth]{content/pt2/graphics/run14_180ml-distilledWater_250g-cornflour_1g9-salt_ZVsF_graph_phase}
-   %     \caption{\label{fig:recipe_cornflour_salt_extraWater_phase}Plot of impedance phase versus frequency (log-log) for \SI{250}{\gram} cornflour mixed with \SI{180}{\milli\litre} distilled water and \SI{1.9}{\gram} table-salt.}
-   % \end{figure}
-
-   % \Cref{fig:recipe_water_mag,fig:recipe_water_phase,fig:recipe_cornflour_phase,fig:recipe_cornflour_mag,fig:recipe_cornflour_phase,fig:recipe_cornflour_salt_mag,fig:recipe_cornflour_salt_phase,fig:recipe_cornflour_salt_extraWater_mag,fig:recipe_cornflour_salt_extraWater_phase} show a progression of measurements beginning with distilled water, then adding cornflour, then adding salt, and finally adding a very small amount of extra water.
 
 \section{Results \& Discussion}
 
@@ -147,7 +91,27 @@ Such a match would reduce the number of surgical operations the test engineers m
     \caption{\label{fig:recipe_cornflour_salt_extraWater_mag}Plot of impedance magnitude versus frequency (log-log) for \SI{250}{\gram} cornflour mixed with \SI{180}{\milli\litre} distilled water and \SI{1.9}{\gram} table-salt.}
   \end{figure}
 
-  % isentisentiernstiersn
+  Not surprisingly, the salt had the greatest influence on the response per gram added.
+  The other non-inert ingredients had much the same effect but required larger quantities to achieve the same effect.
+  This suggests that the primary contribution those ingredients offered was increasing the overall conductivity.
+  The salt was capable of bringing the broad-band response in line with each of the PBS traces, which were themselves salt based solutions.
+  The real question was whether any of the ingredients would be capable of moving the CPE's slope independently of the solution's conductivity.
+  A solution of 0.25X PBS roughly matches the bulk conductivity of sheep spine, however the sheep's spine offered a much higher impedance at low frequencies -- where the CPE dominates.
+  What was needed was a way to increase the impedance offered by the CPE without affecting the bulk conductivity of the solution.
+
+  One popular and fun use of cornflour is creating a non-Newtonian fluid by mixing it with water.
+  It behaves like a classical fluid until pressure is applied to it, then it temporarily solidifies around the point of pressure.
+  There is a critical point when creating the mixture when adding additional water quickly turns it from a dry mix to wet volume, i.e. the consistency becomes highly sensitive to relatively small quantities water being added.
+  \Cref{fig:recipe_cornflour_salt_mag} shows the measured CPE response of a mixture of \SI{250}{\gram} cornflour, \SI{1.9}{\gram} salt, and \SI{175}{\milli\litre} of water, at the point when the mixture transitions from having a dry base to a wet one.
+  The match to the impedance response in sheep is reasonably good, closer than any saline solution is able to get.
+  What is interesting is what adding another \SI{5}{\milli\litre} of water did to the impedance response, shown in \cref{fig:recipe_cornflour_salt_extraWater_mag}.
+  Comparing \cref{fig:recipe_cornflour_salt_mag} to \cref{fig:recipe_cornflour_salt_extraWater_mag}, the series resistance has stayed the same but the CPE slope has changed.
+  No other ingredients tried changed the slope of the CPE's response and it appears as though the critical point of mixing the cornflour and water is having a large impact on that change.
+
+  The drop in impedance at low frequencies may be a result of a lack of buffering agent in the saline solution.
+  This drop is also seen in measurements of straight unbuffered saline solutions, indicating that it is not the addition of cornflour that is causing the drop.
+  Adding a buffering agent to the cornflour and saline mixture would most likely remove that impedance drop.
+  It may also be possible to create an increase in impedance at low frequency by increasing the capacity of the buffering agent.
 
   \begin{figure}
       \centering
@@ -161,10 +125,21 @@ Such a match would reduce the number of surgical operations the test engineers m
       \caption{\label{fig:recipe_cornflour_salt_extraWater_phase_improved}Graph of impedance phase versus frequency (log-log) for \SI{190}{\gram} cornflour mixed with \SI{190}{\milli\litre} distilled water and \SI{0.858}{\gram} table-salt.}
   \end{figure}
 
-  \Cref{fig:recipe_cornflour_salt_extraWater_mag_improved,fig:recipe_cornflour_salt_extraWater_phase_improved} show the results of mixing the same set of ingredients as the previous measurement set, but with the closest fit to sheep spine obtained.
-  These results show that it is possible to alter the CPE response and the bulk conductivity of the solution independently of one another.
-  \Cref{fig:recipe_cornflour_salt_extraWater_mag_improved,fig:recipe_cornflour_salt_extraWater_phase_improved} show a greatly improved match relative to that of any single concentration of PBS.
-  Unbuffered saline solutions all dipped in impedance magnitude at low frequencies, something not observed when using buffered saline such as PBS.
-  It is expected that using buffered saline solutions would bring the low-frequency response back in line with the PBS trace.
-  It may also be possible to select an appropriate buffering agent that better matches the response of the sheep's biological fluid.
-  These results are promising and no doubt will be of use not only to implant designers but to anyone trying to mimic the electrical impedance of biological fluids.
+  Finally, \cref{fig:recipe_cornflour_salt_extraWater_mag_improved,fig:recipe_cornflour_salt_extraWater_phase_improved} show both the magnitude and phase response of the closest match created.
+  Again, the lack of buffering agent in these mixtures is expected to be responsible for the low frequency deviation from the measured response in sheep's spine.
+  The ingredients that were used to create the final solution are summarised in \cref{tab:pt2-sheep-recipe}.
+  These results are promising and no doubt will be of use not only to implant designers but to anyone trying to recreate the electrical impedance of biological fluids.
+
+  \begin{table}
+    \centering
+    \begin{tabular}{r | r | c}
+      Ingredient & Quantity & Unit \\
+      \hline
+      Cornflour & 190 & g \\
+      Distilled water & 190  & ml  \\
+      Salt  & 858 & mg  \\
+    \end{tabular}
+    \caption{\label{tab:pt2-sheep-recipe}Ingredients used to create the mixture that matches both the CPE's response and the interface series resistance.}
+  \end{table}
+
+  % Edit checkpoint 2015-09-20 20:53

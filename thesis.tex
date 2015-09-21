@@ -180,12 +180,42 @@ Work done throughout this thesis has relied heavily on these tools.
 
   % Edit checkpoint 2015-09-19 14:33
 
-  \chapter{Creating Phantom Spinal Electrolytes}
+  \chapter{Creating Phantom Spinal Cavities}
     \label{chap:fluid_mimicry}
     \input{content/pt2/recipes.tex}
 
-  \chapter{Conclusion}
-  % Write this content here
+  \chapter{Summary}
+    \label{chap:part2_summary}
+    A impedance model of a pair of electrodes in a solution of phosphate buffered saline has been taken and extended to cover a wider range of salinities.
+    Relationships between that model's parameter values and saline concentration were determined and represented as equations.
+    They showed that when varying the salinity, the impedance of the constant phase element scaled much slower than the series resistance.
+    With those parameters extended to a range of salinities, the model proves to be a useful reference point for comparison to other solutions.
+    Measurements of electrical current associated with Faradaic reactions showed that cyclic voltammetry measurements are poorly suited to capture Faradaic current.
+    They did show that the CPE's capacitance varies with applied overpotential, unlike conventional capacitors.
+    As the voltage is constantly changing during cyclic voltammetry, the CPE's capacitance is also changing and is therefore having an impact on those measurements.
+    After moving to step based measurements, the collected data was consistent and matched the expected behaviour; exponential growth.
+    Data from these step based measurements revealed that at low voltages, below \SI{900}{\milli\volt} across a pair of electrodes, saline concentration has no effect on the reaction rate.
+    That observation should be especially important to implant engineers since they must avoid any Faradaic reactions in-vivo.
+    Knowing that an electrolyte's salinity is not linked to the magnitude of those reactions at their onset simplifies that constraint.
+    Those measurements also suggest that the interface is setting the ionic concentration at the surface, in a localised volume surrounding the electrode, in constant voltage situations.
+    That volume of ions is likely to be the double layer itself, which is consumed by Faradaic reactions and replenished by ion migration from the electrolyte bulk.
+    Once the layer has been consumed, the rate reaction rate of Faradaic reactions is determined by the saline concentration of the bulk solution.
+    This hypothesis fits the data presented \cref{fig:graph_currentVoltage_logY_Thesis}.
+
+    With the model fitted to solutions of phosphate buffered saline, a comparison is made to a living mammal.
+    In-vivo measurements in live sheep spine show that no single concentration of phosphate buffered saline matches the impedance of both the CPE and series resistance.
+    If a single concentration of buffered saline had to be used to match both the CPE and series resistance then the one-tenth concentration solution is a good trade-off, but is a poor match to both.
+    The measurements also show that the spinal cavity provides a significant amount of reactance, which is not present in saline solutions.
+    Modelling that reactance could be done by fitting inductive and/or capacitive elements to the resistive mesh of the model.
+    That step was not taken due to the complexity of the geometry inside the spinal canal and variability expected between epidural insertions.
+
+    Seeing that the match between saline and a sheep's spinal cavity were poor I then created a mixture that improved the match.
+    Tests with a variety of ingredients showed that a mix of salt, cornflour and water improved the match dramatically.
+    The impedance presented by the CPE moved with ratio of cornflour to water, whereas the series resistance was determined by the salt.
+    It appears as though the cornflour, when in high enough concentrations, reduced the capacitive effect by displacing active species in the liquid with inert filler.
+
+  % Edit checkpoint 2015-09-20 21:42
+
 
  %% Part 4 - Appendices
  \part{Appendices}
@@ -206,11 +236,11 @@ Work done throughout this thesis has relied heavily on these tools.
    \chapter{Electrolyte Solution Impedance Measurement}
      \input{content/appendices/Solution-Impedance-Measurements/appendix_mimicry}
 
-   \chapter{Streaming Cells in The Local Newspaper}
+   \chapter{Streaming Cell Newspaper Article}
    \begin{figure}
        \centering
        \includegraphics[width=\textwidth]{content/appendices/Article}
-       \caption{Cut-out from the local newspaper (Hamilton Press) of an article on the streaming cell research I conducted for this thesis.}
+       \caption{Newspaper article on streaming cell research presented in \cref{part:doubleLayersOnInsulators}.}
    \end{figure}
 
 %\chapter*{Notes}
