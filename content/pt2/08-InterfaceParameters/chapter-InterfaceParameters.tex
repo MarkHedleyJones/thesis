@@ -11,7 +11,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
     Scott \& Single fitted parameters of their model to a one-tenth concentration (0.1X) of a standard solution of PBS; a commonly used buffered saline solution \cite{Scott2014}.
     I measure and fit parameters not only to the one-tenth concentration, but to six concentrations spanning 0.025X to 1X the concentration of a standard buffered saline solution.
     For the model parameters that change with salinity, a fit is made using regression analysis to PBS concentration.
-    Doing so gives a model that can be used to predict the impedance response of an electrode array submerged in a wider range of saline concentrations.
+    Doing so provides a model that can be used to predict the impedance response of an electrode array submerged in a wider range of saline concentrations.
 
     Each of the PBS measurements were made in \SI{1000}{\milli\litre} glass bottles containing \SI{700}{\milli\litre} of the PBS solution to be measured.
     Measurements were made in a temperature controlled environment set at \SI{21}{\degree} Celsius.
@@ -130,7 +130,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
       Final values were found by minimising the difference between the simulated response and the measured response using a Python script.
       For each set of parameter values in the optimisation, the script builds a SPICE circuit based on the values, simulates the circuit, calculates the interface impedance and compares the values to the measured results.
       The process is automated and runs until a minimum error between simulated and measured results is found.
-      Once found, the script exists and displays the final values of each parameter.
+      Once found, the script exits and displays the final values of each parameter.
 
       After parameter values are found for each concentration of PBS, another optimisation is made to fit relevant parameters to PBS concentration.
       The parameters that scale with concentration are the series resistance ($R_{S}$) and the CPE's impedance magnitude at \SI{50}{\milli\hertz}.
@@ -191,11 +191,11 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
       \end{itemize}
       These steps did reduce variation, but by no means removed it.
       Sweeping the voltage at \SI{0.12}{\volt\per\second} was slow enough that results did not appear to be too distorted but fast enough that a measurement run could be completed quickly.
-      Completing measurements quickly seemed important at the time as it was often the case that an artifact would show up during a measurement run, for what seemed like no apparent reason, and affect the remainder of the experiments.
-      These artifacts would manifest themselves sometimes a peak at a certain voltage, otherwise as distortions to the current/voltage trace.
+      Completing measurements quickly seemed important at the time as it was often the case that an artifact would show up during a measurement run, which initially appeared to have no obvious cause, and affect the remainder of the experiments.
+      These artefacts would manifest themselves sometimes as a peak at a certain voltage, otherwise as distortions to the current/voltage trace.
       A key insight was realising that after the voltage across a pair of electrodes had been pushed into Faradaic region they then began to behave differently, even after being returned to lower stimulus voltages.
       In \cref{fig:pt2-faradaic_measurement} it is clear that each concentration has a different Faradaic response.
-      This means that when the maximum voltage is applied to each of the solutions that the highest concentration is driven further into its Faradaic region that the rest.
+      This means that when the maximum voltage is applied to each of the solutions the highest concentration is driven further into its Faradaic region than the rest.
       That in turn would create an artifact that would appear on the remaining traces (those of lower concentration), that would not have otherwise been there.
       The issue of artifact and dependence on sweep rate led me to find other ways of measuring Faradaic currents.
 
@@ -212,7 +212,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
         A revealing measurement came from the use of the Agilent E5270B precision measurement mainframe, the same instrument used to measure the streaming potential cells (\cref{part:doubleLayersOnInsulators}).
         By increasing the voltage between the electrodes in discrete steps and recording the current over time it became clear that the CPE was having a large effect on the Faradaic measurements.
         \Cref{fig:pt2-faradaic_decay} shows three transitions in steps of \SI{50}{\milli\volt} occurring \SI{64}{\second} apart.
-        The dotted traces show what the result would be if the measurement were taken at that time, i.e. the trace would take the shape of the dotted line of the corresponding delay time.
+        The dotted traces show what the result would be if the measurement were taken at that time, i.e., the trace would take the shape of the dotted line of the corresponding delay time.
         This graph shows the effect the CPE is having on measurement results, as well as the duration of time necessary for the transient response to settle in most instances.
 
         \begin{figure}
@@ -388,7 +388,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
 
     \Cref{fig:sheep_transimpedance_doubleFit_mag,fig:sheep_transimpedance_doubleFit_phase} show both the measured and simulated results for the impedance magnitude and phase response respectively.
     The magnitude measurements show that when stimulating between electrodes one and eight and measuring on electrodes two and three that the impedance is approximately that of the one-tenth concentration of PBS (compared with results from \cref{fig:pt2-graph_transimpedance_pbs}).
-    This result adds validation to the notion that the one-tenth concentration of a standard buffered saline solution is a good substitute for a spinal cavity.
+    This result appears to support the idea that a one-tenth concentration of a standard buffered saline solution is a good substitute for a spinal cavity.
     For the case where the stimulus is placed between electrode one and two and the impedance is measured between electrodes seven and eight, the comparison suggests a lower concentration of PBS than 1/10\textsuperscript{th}.
     Swapping the stimulus and measure electrodes around gave different trans-impedance values, i.e., the point at 12,78 does not equal that of 78,12.
     This suggests that the electrode array shifted inside the cavity over the course of the measurements.
@@ -473,7 +473,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
   \subsection{Faradaic current}
 
     Faradaic measurements on the live animal were abandoned as they were deemed likely to cause muscle contractions by the veterinarian surgeon.
-    Attempts were made to measure Faradaic response using a much lower stimulus current but no clear signal could this only resulted in noise and were discarded.
+    Attempts were made to measure Faradaic response using a much lower stimulus current but no signal was evident above the noise so were discarded.
     These measurements may be possible if done long enough post-termination so as not to cause muscle movement.
 
   \subsection{Final model}

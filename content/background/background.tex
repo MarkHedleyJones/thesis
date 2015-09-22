@@ -172,9 +172,11 @@
     In this layer the ions are immobile due to the electrical strength at the surface.
     Surrounding this layer is the diffuse layer.
     Ions here are still drawn to the solid, but not so strongly as to be immobile.
-    The electric potential in this layer decays from that within the compact layer to the potential in the bulk of the solution.
-    These layers are divided by the shear plane; the nearest distance from the surface at which the diffuse layer can move laterally.
-    This is an important parameter with linear geometries, such as the inside of a pipe, as it represents the true no-slip boundary.
+    The electric potential in this layer decays from that of the compact layer to the potential of the bulk of the solution.
+    The Zeta potential is the voltage between those two points, i.e., it is the voltage at the plane where the diffuse layer meets the compact layer - relative to the voltage in the bulk of the solution.
+    The dividing plane between the two layers is called the shear plane.
+    It represents the nearest distance from the surface at which the layer can move laterally.
+    The shear plane is an important parameter with linear geometries, such as the inside of a pipe, as it represents the true no-slip boundary.
 
     The thickness of a typical double layer is between \SI{1}-\SI{100}{\nano\meter}~\cite{Jiang2010}, as defined by its Debye length~\cite{Israelachvili2011}.
     The Debye length is the distance between the interface and the point in the liquid where the electric potential is no longer affected by the charged interface.
@@ -284,7 +286,7 @@
   By immersing a glass channel in an electrolyte solution, the glass donates protons into the solution leaving its surface negatively charged.
   In turn, a positively charged double layer lines the channel's inner walls ready to be pumped through the channel.
   This means the glass channels have a higher voltage on the low-pressure side and a lower voltage on the high-pressure side.
-  The low pressure side is at the harvesters outlet, where the counter-ions (cations in this case) collect.
+  The low pressure side is at the harvester's outlet, where the counter-ions (cations in this case) collect.
   The extra positive ions gives the liquid on that side a positive charge relative to the inlet side of the harvester.
 
   % Limitations of previous content
@@ -404,7 +406,7 @@
     Theoretical predictions of the efficiency of standard micro/nano-fluidic channels are 2\% for pure water and 7\% for sodium chloride.~\cite{VanderHeyden2006}
     However, measured conversion efficiencies as reported thus far are:
     \begin{itemize}
-      \item ``far less than \SI{1}{\percent}'' forcing potassium chloride through a porous glass plug having pores in the range \SI{1}--\SI{1.6}{\micro\meter}~\cite{Olthuis2005}.
+      \item ``far less than \SI{1}{\percent}'' forcing potassium chloride through a porous glass plug having pores in the range \SI{1}-\SI{1.6}{\micro\meter}~\cite{Olthuis2005}.
       \item 0.01\% by forcing water through porous glass with pore sizes from 10\thinspace--\SI{16}{\micro\metre}.~\cite{Yang2003}
       \item 0.8\% by forcing pure water through a ceramic rod populated with \SI{6}{\micro\metre} pores.~\cite{Yang2004}
       \item 3\% by forcing a sodium chloride solution through a \SI{75}{\nano\metre} by \SI{50}{\micro\metre} silica channel.~\cite{Heyden2007}
@@ -436,6 +438,7 @@
     The dimensions of channels found in the literature suggest that fabricating trial cells is feasible with the equipment available.
     A conversion efficiency of \SI{0.01}{\percent} should be achievable using a porous glass plug.
     This efficiency will be used a baseline to compare measured efficiency from fabricated cells.
+    That concludes background material on streaming cells for energy harvesting.
 
     % Edit checkpoint 2015-09-09 21:24
 
@@ -450,19 +453,20 @@
     \label{fig:interface}
   \end{figure}
 
+  \Cref{part:doubleLayersOnConductors} studies the impedance of an interface between an electrolyte and an electrode.
   Most electronic components have well defined electrical impedances, or models describing those impedances.
   Circuit simulators, such as the popular SPICE, are designed to deal with branches of components whose currents are functions of voltage, or the integral or first differential of voltage.
-  The problem when modelling double layers is that they are modelled by fractional-order functions.
+  One complication with modelling double layers is that they are described by fractional-order functions.
   Fractional order functions can be differentiation or integral functions but are only partially applied.
-  For example the equation:
-  \begin{equation}
-  \frac{d}{dx}x = 1
-  \end{equation}
-  when the differention operation is only half applied results in \cite{Torokhti1974}:
-  \begin{equation}
-  \frac{d^{1/2}}{dx^{1/2}}x = \frac{2\sqrt{x}}{\sqrt{\pi}}
-  \end{equation}
-  Fractional calculus is not mainstream mathematics, but does find use in nieche areas such as describing double layer behavior.
+  % For example the equation:
+  % \begin{equation}
+  % \frac{d}{dx}x = 1
+  % \end{equation}
+  % when the differention operation is only half applied results in \cite{Torokhti1974}:
+  % \begin{equation}
+  % \frac{d^{1/2}}{dx^{1/2}}x = \frac{2\sqrt{x}}{\sqrt{\pi}}
+  % \end{equation}
+  Fractional calculus is not mainstream mathematics, but does find use in niche areas such as describing double layer behaviour.
   For non-linear electronic components such as transistors and diodes, SPICE has models describing their behaviour built in.
   But SPICE has no way to deal with circuit elements described by fractional order differentiation or integration functions.
   So how would it be possible to enter an electrode-electrolyte-electrode system into a SPICE circuit and simulate it?

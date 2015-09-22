@@ -5,7 +5,7 @@ The model was verified in a single, known concentration of phosphate buffered sa
 Working through the processes taken by my supervisor to create his model, I re-created the model from my own measurements.
 By creating a range of solutions of PBS to test against, I fitted parameters of the initial model to the concentration of PBS.
 This put me in a good position to compare those solutions to live biological solutions.
-That comparison is the main scientific contribution resulting from this work.
+That comparison ultimately allowed my improved test solution to be developed.
 
 
 \section{The Scott-Single Electrode-Electrolyte Interface Model}
@@ -18,7 +18,7 @@ That comparison is the main scientific contribution resulting from this work.
   \end{figure}
 
   Jonathan Scott and Peter Single recently published an electrical model of an implantable electrode array in saline in 2013 \cite{ScottSingle2013}.
-  The intention of that model was to simulate the electrical impedance that a medical implant device would see once implanted into a human spinal cavity.
+  The intention of that model was to simulate the electrical impedance that a medical implant device would be subjected to once implanted into a human spinal cavity.
   It is also general enough to use in any situation where electrodes are placed in an electrolyte solution, such as depicted in \cref{fig:electrode-electrolyte}.
 
   \begin{figure}
@@ -26,7 +26,7 @@ That comparison is the main scientific contribution resulting from this work.
     \includegraphics{content/pt2/07-InterfaceModel/graphics/simpleElectrodeElectrolyteModel}
     \caption{\label{fig:pt2-simpleElectrodeElectrolyteModel}Connection diagram of two electrodes (with their interface models) connected together by the resistivity of an electrolyte solution.}
   \end{figure}
-  The model comes in two parts, the electrode interface, and the resistivity of the electrolyte's bulk.
+  The model comes in two parts: the electrode interface, and the resistivity of the electrolyte's bulk.
   \Cref{fig:pt2-simpleElectrodeElectrolyteModel} shows the general electrical configuration of such an electrode-electrolyte system.
   It shows that there are two interfaces per system, and that the liquid side of those two interfaces are joined electrically by the resistance of the electrolyte's bulk resistivity.
   The metal side of the interfaces is what the rest of the circuit would connect to.
@@ -77,10 +77,10 @@ That comparison is the main scientific contribution resulting from this work.
 
     % Edit checkpoint 2015-09-17 20:23
 
-    Scott and Single create a resistor network for modelling the electrolyte conductivity based on the geometry of the electrodes and the resistivity of the electrolyte.
-    By sectioning the surrounding liquid into cylindrical volumes they calculate the equivalent resistance between those volumes in both radial and longitudinal planes.
+    Scott and Single created a resistor network for modelling the electrolyte conductivity based on the geometry of the electrodes and the resistivity of the electrolyte.
+    By sectioning the surrounding liquid into cylindrical volumes they calculated the equivalent resistance between those volumes in both radial and longitudinal planes.
     The radii of the volumes double at each layer which correspond to a fixed radial resistance between each layer.
-    There are two different radial resistances, one for the rings expanding from the insulating spacers, and one for those expanding from the electrode cylinders.
+    There are two different radial resistances: one for the rings expanding from the insulating spacers, and one for those expanding from the electrode cylinders.
     The two alternate due to each electrode being separated by an insulating spacer.
     The longitudinal resistances quarter in size with each ring layer and after the last radial resistor each node is shorted together.
     The full mesh for the eight electrode array is five layers deep with three rows of padding at each terminating end, totalling two hundred and five resistors in total.
@@ -93,7 +93,7 @@ That comparison is the main scientific contribution resulting from this work.
     \item $R_{sri}$ - The initial resistance placed radially from a spacer.
     \item $R_{li}$ - The longitudinal resistance.
     \item Depth - Number of layers between the electrode/spacer and the common end node in the ladder
-    \item Padding - Number of spacer layers to be added to the before the first electrode and after the last electrode in the network.
+    \item Padding - Number of additional spacing rows to be added to each end of the mesh.
     \end{itemize}
 
     \begin{figure}
@@ -124,7 +124,7 @@ That comparison is the main scientific contribution resulting from this work.
     The angle between Sine and Cosine is always 90, and this is why a capacitors impedance is \SI{-90}{\degree} out of phase.
     A CPE, on the other hand, has a phase angle somewhere \emph{between} 0 and \SI{-90}{\degree}.
     This requires a fractional differentiation of $I(t) = C \times \frac{dV(t)}{dt}$, something uncommon outside of pure mathematics.
-    A consequence of having a current/voltage relationship of less than \SI{90}{\degree}, a CPE'S impedance magnitude decays at a rate lower than 20$\frac{dB}{decade}$.
+    As a consequence of having a current/voltage relationship of less than \SI{90}{\degree}, a CPE'S impedance magnitude decays at a rate lower than 20$\frac{dB}{decade}$.
 
     SPICE, or any other commonly used circuit simulators, do not support fractional pole capacitors so entering one into the model will require building it up from discrete components.
     \begin{figure}[h]
@@ -135,7 +135,7 @@ That comparison is the main scientific contribution resulting from this work.
     In 1959, Morrison demonstrated a way of creating constant phase elements from an infinite array of resistor-capacitor (RC) pairs \cite{Morrison1959}.
     One of Morrison's implementations of a constant phase element is presented as \cref{graph:pt2-morrisonCPE}.
     In that implementation, each parallel branch has precisely chosen resistor and capacitor values such that when summed together the impedance magnitude versus frequency is a constant slope, i.e., the impedance does not flatten at a particular frequency as it would with a single RC pair.
-    Creating any element comprised of an infinite number of sub-elements is not possible, but by selecting only those elements that contribute to the bandwidth of interest the result is the same within the selected frequency window.
+    Creating any element comprised of an infinite number of sub-elements is not possible, however by selecting only those elements that contribute to the bandwidth of interest the result is the same within the selected frequency window.
     Using that method and selecting only RC pairs with a cut-off frequency in the range of \SI{1}{\milli\hertz} to \SI{1}{\mega\hertz}, a practical CPE element is created.
 
     \begin{figure}
@@ -149,7 +149,8 @@ That comparison is the main scientific contribution resulting from this work.
     The value of the resistor in each branch is evident by the vertical spacing of the traces, clearly visible at the right-hand side of the graph.
     The branches in this particular example have been spaced in the frequency domain at a density of three per decade, as marked by the black crosses.
     This means that per decade of frequency, there are three corner frequencies, each relating to an RC pair.
-    Because each of there branches are in parallel, the total response of the CPE is the sum of each branch, that response is shown as the black trace on the graph.
+    Because each of there branches are in parallel, the total response of the CPE is the sum of each branch.
+    That response is shown as the black trace on the graph.
     The critical observation is that the slope of the resulting trace is not the same as each of the individual branches.
     This allows the CPE to behave fractionally as a capacitor, being anywhere between resistive (horizontal response) and capacitive (\SI{20}{\decibel}/decade slope).
 
@@ -171,7 +172,7 @@ That comparison is the main scientific contribution resulting from this work.
     If the voltage placed across the interface is kept within certain limits, the CPE and series resistance ($R_{S}$) would be all that is necessary to accurately mimic a single electrode-electrolyte interface.
     But once the electric potential across the interface becomes high enough, Faradaic reactions will occur at the electrode's surface.
     Faradaic reactions are reactions involving charge transfer, adding ionised species to the electrolyte and often producing gas.
-    Gas, or any new species, is bad news in an implanted setting as this causes damage to the implant's host.
+    Gas, or any new species, is disastrous in an implanted setting as this causes damage to the implant's host.
     Possible faradaic reactions between saline and platinum electrodes are:
     \begin{eqnarray}
         Pt + H_{2}O &\Leftrightarrow& PtO + 2 H^{+} + 2 e^{-}\\
@@ -195,7 +196,7 @@ That comparison is the main scientific contribution resulting from this work.
     $n$ is the number of moles of electrons per mole of reactant oxidised,
     $f$ is Faraday's constant divided by the the product of the gas constant and the absolute temperature ($F/RT$),
     and $\eta$ is the electrode overpotential.
-    This equation describes the forward and reverse electrical current through an electrode by separating the forward and reverse reactions; oxidisation and reduction.
+    This equation describes the forward and reverse electrical current through an electrode by separating the forward and reverse reactions: oxidisation and reduction.
     \begin{equation}
       I = i_0 e^{V_D / n V_T}
       \label{eqn:pt-2_diodeEquation}
@@ -212,7 +213,7 @@ That comparison is the main scientific contribution resulting from this work.
       \item $i_0$ -- the diode's saturation current
       \item $n$ -- the diode's ideality factor
     \end{itemize}
-    The diodes themselves can not account for the relative abundance of reactants for the redox reactions ($[O]_{(0,t)}/[O]_{\infty}$ and $[R]_{(0,t)}/[R]_{\infty}$ from \cref{eqn:pt-2_butlerVolmerEquation}), this must be taken care of separately; discussed next.
+    The diodes themselves can not account for the relative abundance of reactants for the redox reactions ($[O]_{(0,t)}/[O]_{\infty}$ and $[R]_{(0,t)}/[R]_{\infty}$ from \cref{eqn:pt-2_butlerVolmerEquation}), this needs to be considered separately and is discussed next.
 
 
   \subsection{Chemical species depletion (memristors)}
@@ -226,10 +227,10 @@ That comparison is the main scientific contribution resulting from this work.
 
     A memristor is a two port device that sets its resistance based on its own history.
     The resistance can either depend on the integral over time of the voltage placed across it or the total charge passed through the device \cite{Kvatinsky2012}.
-    Its name is a portmanteau of the word `memory' and `resistor' owing to its use of memory to set its resistance.
+    Its name is a portmanteau of the word `memory' and `resistor' owing to its use of memory to set its resistance~\cite{Williams2008}.
 
     The memristive device models species depletion in the electrolyte by pinching off a diode branch in proportion to the amount of current passed through that branch.
-    As the specific Faradaic reaction proceeds, it consumes the reactants from the electrolyte bulk until eventually there is none left.
+    As the specific Faradaic reaction proceeds, it consumes the reactants from the electrolyte bulk until eventually none is left.
     Increasing the resistance in series with a conducting diode has the effect of removing that diodes current path from the circuit, simulating the depletion of reactants of the modelled reaction.
 
     Memristors were removed from the model used in this work as they added complexity that would yield little in the way of research outcomes.
@@ -303,7 +304,7 @@ That comparison is the main scientific contribution resulting from this work.
 
 
   The interface model has six parameters (plus five supporting parameters) that are used to set the behaviour of each component in the model.
-  Finding suitable values for each parameter is essential so ensure the final model is a good representation of the system it mimics.
+  Finding suitable values for each parameter is essential to ensure the final model is a good representation of the system it mimics.
   Critical to finding those suitable values are the methods used to extract measurement data relating to different parts of the interface model.
   A divide-and-conquer approach is taken wherever possible so that parameter measurements for specific elements are isolated from other elements in the model.
   The following section describes those measurements and explains how they isolate the properties of each component.
@@ -410,9 +411,9 @@ That comparison is the main scientific contribution resulting from this work.
     It is assumed that the fractional differentiation of the current equation will still yield a relatively constant current in light of the capacitor being a CPE.
     By slowly ramping the electrode overpotential the current draw should be constant up to a point after which it becomes exponential.
     The voltage corresponding to the point at which the current draw becomes exponential will be used to determine the onset of Faradaic conduction.
-    That point, together with the rate of growth, would then used to fit values for $i_0$ and $n$.
+    That point, together with the rate of growth, would then be used to fit values for $i_0$ and $n$.
     The parameters $i_0$ and $n$ are the diode's saturation current and ideality factor respectively, as summarised in \cref{tab:pt2-parameterDesc-Diode}.
-    Problems arose with those measurements, discussed in the next chapter, showed the behaviour of the CPE was less predictable than expected.
+    Problems arose with those measurements, discussed in the next chapter, which showed the behaviour of the CPE was less predictable than expected.
 
     \begin{table}
       \begin{center}
