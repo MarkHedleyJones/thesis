@@ -43,14 +43,14 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
       \begin{figure}
         \centering
         \includegraphics{content/pt2/08-InterfaceParameters/graphics/measurement_resistorMesh}
-        \caption{\label{fig:pt2-measurement_resistorMesh}Illustration of one of two measurement configurations used to to measure the electrode transimpedances. Each of the electrode pairs were measured in sequence using the shown equipment.}
+        \caption{\label{fig:pt2-measurement_resistorMesh}Illustration of one of two measurement configurations used to to measure the electrode trans-impedances. Each of the electrode pairs were measured in sequence using the shown equipment.}
       \end{figure}
 
       With the electrode array immersed in a saline solution, a \SI{10}{\kilo\hertz} sinusoidal current having a peak amplitude of \SI{500}{\micro\ampere} was passed through the stimulus electrodes using an Agilent 33220A function generator.
       A shunt resistor inserted in series with the function generator allows measurement of current between electrodes.
       The differential voltage across a pair of non-stimulating electrodes and the voltage across the shunt resistor was measured using a Tektronix TPS 2024 oscilloscope.
       \Cref{fig:pt2-measurement_resistorMesh} shows the measurement configuration used when electrodes one and eight are used as the stimulus electrodes.
-      The second configuration has electrodes eight and seven as stimulus electrodes and the remaining electrode pairs are used to measure transimpedance voltage differentials.
+      The second configuration has electrodes eight and seven as stimulus electrodes and the remaining electrode pairs are used to measure trans-impedance voltage differentials.
 
       \begin{figure}
         \centering
@@ -74,10 +74,17 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
         \caption{\label{tab:RESparams}Resistor mesh parameters for the electrode array in various concentrations of PBS. Electrolyte conductivity ($\sigma$) is expressed in units of $S / cm$.}
       \end{table}
 
+      \begin{figure}[ht]
+        \centering
+        \includegraphics{content/pt2/07-InterfaceModel/graphics/graph_optimisation_transimpedance}
+        \caption{\label{fig:pt2-graph_transimpedance_optimisation}Graph showing the path taken by the optimisation script while finding resistor values that minimise error between the two resistor parameters and the measured trans-impedance results. Radial resistor refers to $R_{eri}$ while vertical resistor refers to $R_{li}$. The heat-map background shows values of total error for all possible combinations of resistor values on the axes.}
+      \end{figure}
       Values for $R_{eri}$ and $R_{li}$ were determined using a Python optimisation script for each concentration of PBS.
       The optimisation script selects candidate values for $R_{eri}$ and $R_{li}$, simulates the mesh using those values, and then calculates the equivalent trans-impedance values.
       The error between simulated trans-impedance values and measured values is calculated and the process repeats, selecting different values of $R_{eri}$ and $R_{li}$ to improve the fit.
-      The final values of $R_{eri}$ and $R_{li}$ are those that minimise the error, they are shown in \cref{tab:RESparams}.
+      \Cref{fig:pt2-graph_transimpedance_optimisation} shows a progression of $R_{eri}$ and $R_{li}$ values chosen by the optimisation script while finding a pair that minimise error.
+      The total error for a simulation is taken to be the sum of the squares of difference between the simulated and measured values, normalised to the measured value.
+      The final values of $R_{eri}$ and $R_{li}$ that minimise the total error are shown in \cref{tab:RESparams}.
       $R_{sri}$ is a dependent variable, so is expressed in terms of $R_{eri}$, and the remaining parameters have been re-used from the work of Scott \& Single.
       \Cref{fig:pt2-graph_transimpedance_pbs} shows measurement results for each pair of non-stimulated pair of electrodes along with simulated results using the fitted parameters.
 
@@ -95,8 +102,8 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
       \end{figure}
       Measurement of both the CPE and the interface's series resistance is made using an impedance spectroscopy method.
       These measurements are made by passing a sinusoidal current between electrodes two and seven of the electrode array.
-      Use of the end electrodes (one and eight) was avoided as a precaution to reduce end effects resulting from the electrode's geometry.
-      The sinusoidal voltage at the liquid side of the interface is taken as the the voltage that appears at an adjacent electrode (electode three) when a suitably high impedance measurement is made, this is illustrated in \cref{fig:pt2-measurement_CPE}.
+      Use of the end electrodes (one and eight) was avoided as a precaution to reduce end effects resulting from the electrode's geometry; the magnitude of those effects was not quantified.
+      The sinusoidal voltage at the liquid side of the interface is taken as the the voltage that appears at an adjacent electrode (electrode three) when a suitably high impedance measurement is made, this is illustrated in \cref{fig:pt2-measurement_CPE}.
       This measurement relies on the ability to make high impedance voltage measurements to minimise voltage drop across the electrode interface, for which the Tektronix TPS 2024 four channel oscilloscope was used again.
       This oscilloscope has floating channels, each having an input resistance of \SI{10}{\mega\ohm} when using 10X probes.
       The Agilent 33220A function generator was used again to generate the stimulus waveforms applied between electrodes two and eight.
@@ -191,13 +198,13 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
       \end{itemize}
       These steps did reduce variation, but by no means removed it.
       Sweeping the voltage at \SI{0.12}{\volt\per\second} was slow enough that results did not appear to be too distorted but fast enough that a measurement run could be completed quickly.
-      Completing measurements quickly seemed important at the time as it was often the case that an artifact would show up during a measurement run, which initially appeared to have no obvious cause, and affect the remainder of the experiments.
+      Completing measurements quickly seemed important at the time as it was often the case that an artefact would show up during a measurement run, which initially appeared to have no obvious cause, and affect the remainder of the experiments.
       These artefacts would manifest themselves sometimes as a peak at a certain voltage, otherwise as distortions to the current/voltage trace.
       A key insight was realising that after the voltage across a pair of electrodes had been pushed into Faradaic region they then began to behave differently, even after being returned to lower stimulus voltages.
       In \cref{fig:pt2-faradaic_measurement} it is clear that each concentration has a different Faradaic response.
       This means that when the maximum voltage is applied to each of the solutions the highest concentration is driven further into its Faradaic region than the rest.
-      That in turn would create an artifact that would appear on the remaining traces (those of lower concentration), that would not have otherwise been there.
-      The issue of artifact and dependence on sweep rate led me to find other ways of measuring Faradaic currents.
+      That in turn would create an artefact that would appear on the remaining traces (those of lower concentration), that would not have otherwise been there.
+      The issue of artefact and dependence on sweep rate led me to find other ways of measuring Faradaic currents.
 
       % Edit checkpoint 2015-09-19 10:42
 
@@ -212,7 +219,9 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
         A revealing measurement came from the use of the Agilent E5270B precision measurement mainframe, the same instrument used to measure the streaming potential cells (\cref{part:doubleLayersOnInsulators}).
         By increasing the voltage between the electrodes in discrete steps and recording the current over time it became clear that the CPE was having a large effect on the Faradaic measurements.
         \Cref{fig:pt2-faradaic_decay} shows three transitions in steps of \SI{50}{\milli\volt} occurring \SI{64}{\second} apart.
-        The dotted traces show what the result would be if the measurement were taken at that time, i.e., the trace would take the shape of the dotted line of the corresponding delay time.
+        Dotted traces link measurements made a set time after each transition, with the delay times indicated to the left of the graph.
+        So for example, the top trace represents data that would be obtained if the settling time after each step was one second.
+        It shows that the longer the settling time is, the lower the measured current - even though the response is the same.
         This graph shows the effect the CPE is having on measurement results, as well as the duration of time necessary for the transient response to settle in most instances.
 
         \begin{figure}
@@ -309,7 +318,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
       This table excludes the parameters of the resistor network as they do not describe the interface itself.
 
       \begin{table}
-        \caption{Determined interface parameters for the St. Jude Medical Octrode in phosphate buffered saline.}
+        \caption{Determined interface parameters for the St. Jude Medical Octrode in phosphate buffered saline. The parameter $concentration$ refers to the dilution of PBS, e.g., 0.025 for a one-fortieth dilution to 1.0 for the stock PBS mixture.}
         \label{tab:ModelParameters}
         \begin{center}
           \begin{tabular}{r | l}
@@ -364,7 +373,6 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
   These experiments complied with the Australian Code of Practice for the Care and Use of Animals for Scientific Purposes.
   In each case the sheep were injected with alfaxalone to induce anesthesia and were then intubated and ventilated with an oxygen-air mixture containing isoflurane.
   During the course of experimentation the animals were monitored using electrocardiogram, arterial blood pressure, arterial saturation, and end-tidal (exhaled) carbon dioxide levels.
-  In short, they were completely unaware of the experiments being carried out and being terminated on completion meant they never became aware.
   All ethical considerations and procedures around animal testing were handled by Saluda Medical.
   Unless otherwise stated, measurement procedures and the equipment used in the hospital are the same as those used to measure the electrode-electrolyte response in PBS.
 
@@ -398,7 +406,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
     This shows that the spinal cavity itself is a significantly reactive component.
     For comparison, the PBS solutions displayed no measurable reactance for all of the equivalent trans-impedance measurements.
     The decreasing phase angle of measurements using one and eight as stimulus electrodes is a result of the measured pair of electrodes being between the stimulus, i.e., it is a result of our electrode choices.
-    There are other instances where the phase angle appears to drop below zero, but these are likely an artifact of the measurements themselves.
+    There are other instances where the phase angle appears to drop below zero, but these are likely an artefact of the measurements themselves.
     Those situations only occur when the stimulus and measured electrodes are adjacent to one another.
     This means the impedance, and therefore signal-to-noise ratio, was at its lowest.
     Stimulus current was reduced for the in-vivo measurements to prevent muscle spasms.
@@ -498,7 +506,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
       \end{center}
     \end{table}
     Parameter values for the final sheep model are presented in \cref{tab:ModelParameters_sheep}.
-    Unfortunately, the diode/Faradaic parameters were not obtained on live sheep due to safety concerns.
+    Unfortunately, the diode/Faradaic parameters were not obtained on live sheep due to concerns of causing violent muscle contractions.
     Those measurements are likely to be of value to implant designers as they provide a reference for the beginnings of Faradaic conduction.
     Access to an recently terminated sheep's spine, and a surgeon, would provide a way of collecting those Faradaic measurements and additional post-termination samples.
 
