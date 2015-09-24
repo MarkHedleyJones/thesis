@@ -78,9 +78,9 @@ This estimation will reveal how much further the cells built earlier would need 
   \subsection{Benchmarking power consumption}
 
     It is important to ensure that each processor is operated so as to minimise power consumption, which meant taking certain precautions.
-    Where possible, the chips were configured to have each of their pins set to outputs, which were held high while being tied to Vdd via 10k$\Omega$ resistors.
-    All chips had their peripherals disabled (where appropriate) including any watchdog timers and brownout detection circuitry.
-    To allow more accurate sleep current measurements, the chips were placed in a chip carrier with 10k$\Omega$ resistors soldered between the general purpose pins and Vdd.
+    Spare pins were set as outputs and tied to Vdd with \SI{10}{\kilo\ohm} resistors.
+    Unused peripherals were disabled including any watchdog timers and brownout detection circuitry.
+    To allow more accurate sleep current measurements, the chips were placed in a chip carrier with \SI{10}{\kilo\ohm} resistors soldered between the general purpose pins and Vdd.
     The chip and carrier was washed in isopropyl alcohol and dried before being suspended by connections to the measurement device.
     This step minimises leakage current between the pins due to oils and dirt that may be transferred by touching or resting on a table.
     Measurements were carried out using the Agilent E5270B Precision Measurement Mainframe.
@@ -189,7 +189,7 @@ This estimation will reveal how much further the cells built earlier would need 
       Algorithms \ref{alg:Psudo-machine-code1} and \ref{alg:Psudo-machine-code2} demonstrate two different ways of implementing \ref{alg:Simple-C-code-representation} using pseudo machine-code.
       The decision of which to use is made by the compiler, which \emph{should} take the instructional efficiency of the specific MCU into account.
       This is an overly simplistic example, but it illustrates that there are multiple paths leading to the same result.
-      Importantly, not all of those paths require the same amount of effort on the processors behalf.
+      Importantly, not all of those paths require the same amount of effort on the processor's behalf.
       This means that the compiler's ability to optimise code efficiently plays a role in determining the overall performance of the chip.
       This also means that the programmer should not be concerned with instructional efficiency as the compiler should transform C-code into machine code that best suits the target MCU.
 
@@ -352,16 +352,16 @@ This estimation will reveal how much further the cells built earlier would need 
       \end{figure}
 
       The energy consumption of each of the chips with EEPROM memory during a 1-byte write operation is shown as \cref{fig:Energy-consumed-EEPROM}.
-      A particularly curious situation arose whilst testing the PIC12F675 - it's energy consumption was negative when operated below \SI{4.7}{\volt}.
+      A curious situation arose with the PIC12F675 where its calculated energy consumption was negative when operated below \SI{4.7}{\volt}.
       It consumed \emph{less} current while performing write operations than running through the same code loop without performing writes.
       The measurement was repeated several times and produced the same result.
-      Those data points were excluded from the plot and no further investigation was made to find the reason behind this.
+      Those data points were excluded from the plot as they do not represent the true energy cost of writing to EEPROM.
+      It is likely that while writing to EEPROM other parts of this chip are disabled or put to sleep.
 
-      In the case of the MC9S08QG8, which has Flash memory instead of EEPROM, the power consumption in the E + W trace was calculated as $1/512^{th}$ of consumed page erase energy consumption added to the energy cost of a single write operation.
-      The trace labelled W (magenta) shows the energy cost for a single write operation.
+      In the case of the MC9S08QG8, which has Flash memory instead of EEPROM, the power consumption in the `E + W' trace was calculated as $1/512^{th}$ of consumed page erase energy consumption added to the energy cost of a single write operation.
+      The trace labelled `W' (magenta) shows the energy cost for a single write operation.
       In order for the MC9S08QG8 to perform a write operation, the destination byte must have already been pre-erased at an earlier point in time.
-      This may be useful for power harvesting since the energy expensive page erase operation, which consumes an average of 3.02e-4 Joules, can be done performed when available energy is plentiful.
-
+      This may be useful for power harvesting since the energy expensive page erase operation, which consumes an average of \SI{302}{\micro\joule}, can be performed when available energy is plentiful.
       These results show that the Microchip and Freescale microprocessors are the most energy efficient when writing to non-volatile memory.
 
 
@@ -424,7 +424,7 @@ This estimation will reveal how much further the cells built earlier would need 
     \begin{enumerate}
       \item Sleep for 1 second
       \item Execute 1000 instructions
-      \item Make 2 analouge conversions
+      \item Make 2 analogue conversions
       \item Write 2 bytes to non-volatile memory
     \end{enumerate}
     This would allow the microprocessor to watch the display of a mechanical water meter and store the readings.

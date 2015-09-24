@@ -400,7 +400,6 @@ capacitive
 capacitor
 capacitors
 capacity
-capiliaries
 capillaries
 capillary
 capitol
@@ -613,7 +612,6 @@ conference
 configuration
 configurations
 configure
-configured
 confirm
 confirmed
 confirming
@@ -1243,7 +1241,7 @@ femto-ampere
 few
 field
 fields
-fifty
+fifty-six
 fight
 fight'
 fight;
@@ -1297,7 +1295,6 @@ fluid
 fluid's
 fluid-flow
 fluid-mechanical
-fluid-soild
 fluid-solid
 fluid;
 fluidity
@@ -1330,11 +1327,11 @@ forming
 forms
 formula
 formulate
+forty
 forward
 found
 four
 fourteen
-fourty
 fraction
 fractional
 fractional-order
@@ -1401,7 +1398,7 @@ gives
 gives:
 giving
 glass
-glassblower
+glass-blower
 glassware
 glib
 glued
@@ -1477,7 +1474,7 @@ hcl
 he
 head-loss
 headed
-headinds
+headings
 heat-map
 heavily
 hedley
@@ -1487,7 +1484,6 @@ heinrech
 heinrich
 heinrich's
 held
-helholtz
 helmholtz
 helmholtz's
 help
@@ -1708,7 +1704,6 @@ interpret
 interval
 intervals
 into
-intriduction
 introduced
 introducing
 introduction
@@ -1740,9 +1735,7 @@ isolating
 isopropyl
 issue
 issues
-issuse
 it
-it's
 it?
 item
 items
@@ -1807,7 +1800,6 @@ lay
 layer
 layer's
 layers
-layes
 lead
 leading
 leads
@@ -1984,7 +1976,6 @@ measurement
 measurements
 measures
 measuring
-measurments
 mechanical
 mechanics
 mechanism
@@ -2120,7 +2111,6 @@ name
 namely
 nano
 nano-materials
-nanometers
 nanometres
 nanotubes
 narrow
@@ -2351,7 +2341,6 @@ participant
 particle
 particles
 particular
-particularly
 particulate
 particulates
 partly
@@ -2527,19 +2516,19 @@ probes
 problem
 problems
 procedure
+procedurelabel=code:attiny25vclockingcode]content/appendices/microprocessorpowermeasurements/code/attiny13v_clockingc
+procedurelabel=code:attiny25vsleepcode]content/appendices/microprocessorpowermeasurements/code/attiny13v_sleepc
+procedurelabel=code:m9s08qg8clockingcode]content/appendices/microprocessorpowermeasurements/code/mc9s08qg8_sleepc
+procedurelabel=code:pic16f1827clockingcode]content/appendices/microprocessorpowermeasurements/code/pic16f1827_clockingc
 procedures
 proceed
 proceeding
 proceedings
 proceeds
-proceedure
-proceedurelabel=code:attiny25vclockingcode]content/appendices/microprocessorpowermeasurements/code/attiny13v_clockingc
-proceedurelabel=code:attiny25vsleepcode]content/appendices/microprocessorpowermeasurements/code/attiny13v_sleepc
-proceedurelabel=code:m9s08qg8clockingcode]content/appendices/microprocessorpowermeasurements/code/mc9s08qg8_sleepc
-proceedurelabel=code:pic16f1827clockingcode]content/appendices/microprocessorpowermeasurements/code/pic16f1827_clockingc
 process
 processing
 processor
+processor's
 processors
 produce
 produced
@@ -2885,6 +2874,7 @@ scale
 scaled
 scales
 scaling
+sceptical
 schematic
 schematically
 scholarship
@@ -2961,7 +2951,6 @@ shear
 shed
 sheep
 sheep's
-sheer
 sheet
 shelf-life
 shield
@@ -3014,7 +3003,6 @@ simulation
 simulations
 simulator
 simulators
-simultated
 since
 sine
 single
@@ -3031,7 +3019,6 @@ sixty-four
 size
 sized
 sizes
-skeptical
 sleep
 sleeping
 slide
@@ -3094,6 +3081,7 @@ spacers
 spaces
 spacing
 spanning
+spare
 sparked
 spasms
 species
@@ -3285,7 +3273,7 @@ ten
 tendency
 tends
 tens
-terephalate
+terephthalate
 term
 termed
 terminals
@@ -3428,7 +3416,6 @@ trivial
 true
 try
 trying
-ttructure
 tube
 tubes
 turbines
@@ -3448,8 +3435,8 @@ uart
 ultimately
 ultra
 ultrasonically
-un-adjusted
 unable
+unadjusted
 unaffected
 unavailable
 unaware
@@ -3487,6 +3474,7 @@ unrelated
 unsigned
 unsuited
 until
+unused
 up
 updated
 upon
@@ -3572,7 +3560,7 @@ volume
 volumes
 volumetric
 vs
-w
+w'
 waikato
 wait
 wait''
@@ -3591,7 +3579,7 @@ wasted
 watch
 watchdog
 water
-waterware
+watercare
 watt
 wave
 waveform
@@ -3608,6 +3596,7 @@ week
 weekday
 weigh
 weight
+welded
 well
 wellington
 were
@@ -3625,7 +3614,6 @@ whether
 which
 while
 whilelfsr
-whilst
 whistle
 whitespace
 who
@@ -3638,7 +3626,6 @@ wider
 widest
 width
 widths
-wielded
 wielding
 will
 william
@@ -3657,7 +3644,7 @@ with
 within
 without
 word
-wordcount
+word-count
 work
 worked
 working
