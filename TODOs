@@ -1,13 +1,7 @@
 TODO:
-DONE - faradaic -> Faradaic
-DONE - impedence -> impedance
-DONE - dependance or dependence
-DONE - dependant -> dependent [dependant is a child (dependent on parents)]
-DONE - transimpedance -> trans-impedance
 [0-9] -> zero to nine
-DONE - program -> programme
-DONE - Plot of -> Graph showing
 Literature review for electrode modelling
-DONE - Modelling vs modeling
-DONE - Add reference for fractional differentiation
-DONE - artifact -> artefact
+
+Check Title Case on headings
+Set-up -> setup
+after an equation the "where x is..." should start with a lower case 'w'
