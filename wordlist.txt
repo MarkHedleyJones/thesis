@@ -15,7 +15,6 @@ above
 absolute
 abundance
 ac
-accelerating
 acceleration
 accepted
 access
@@ -82,7 +81,6 @@ agilent
 agricultural
 ahead
 aids
-aims
 aircraft
 al
 alcohol
@@ -119,8 +117,8 @@ amr
 an
 anaesthesia
 anaesthetised
+analogue
 analogue-to-digital
-analouge
 analyse
 analysis
 anatomy
@@ -291,6 +289,7 @@ bench-top
 benchmark
 benchmarked
 benchmarking
+beneficial
 benefit
 benefits
 best
@@ -398,6 +397,7 @@ capable
 capacitance
 capacitive
 capacitor
+capacitor's
 capacitors
 capacity
 capillaries
@@ -408,7 +408,6 @@ caption-position
 captionpos=b
 capture
 captured
-car
 carbon
 carbonate
 care
@@ -623,7 +622,7 @@ connections
 connects
 consequence
 conservative
-conserve
+conserves
 consider
 consideration
 considerations
@@ -664,6 +663,7 @@ continues
 continuously
 contractions
 contrast
+contrasting
 contribute
 contributed
 contributing
@@ -700,7 +700,6 @@ corresponds
 corruption
 cosine
 cost
-cost$
 costly
 could
 council
@@ -827,7 +826,6 @@ describing
 description
 design
 designed
-designer
 designers
 designing
 designs
@@ -940,6 +938,7 @@ doctoral
 dodecyl
 does
 doing
+doing:
 domain
 domains
 domestic
@@ -2160,6 +2159,7 @@ nomenclsty
 non
 non-driven
 non-inert
+non-integer
 non-iodised
 non-linear
 non-newtonian
@@ -2392,7 +2392,6 @@ ph
 phantom
 phase
 phenomena
-phone
 phosphate
 photo
 physical
@@ -3006,7 +3005,7 @@ simulators
 since
 sine
 single
-sintdt$
+sintdt
 sinusoidal
 sioh
 sit
@@ -3148,8 +3147,6 @@ stk500
 stock
 stops
 store
-storing
-story
 straight
 straight-forward
 stream

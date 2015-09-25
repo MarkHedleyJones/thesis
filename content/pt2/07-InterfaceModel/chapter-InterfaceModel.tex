@@ -116,12 +116,26 @@ The measurements and determined parameters will be presented in the next chapter
     A CPE is a device that behaves like a cross between a capacitor and a resistor.
     They are primarily used to describe the capacitance of double layer interfaces, the function it serves in this model.
     It is capacitive in the sense that voltage leads current, but by an amount less than \SI{90}{\degree}.
-    Mathematically, the \SI{90}{\degree} angle between sinusoidal voltages and currents in a capacitor is a result of the capacitors current being $I(t) = C \times \frac{dV(t)}{dt}$.
-    When $V(t)$ is a sine wave, this becomes $I(t) = C \times \frac{d Sin(t)}{dt}$, which is the same as $I(t) = C \times Cos(t)$.
-    The angle between Sine and Cosine is always 90, and this is why a capacitors impedance is \SI{-90}{\degree} out of phase.
-    A CPE, on the other hand, has a phase angle somewhere \emph{between} 0 and \SI{-90}{\degree}.
-    This requires a fractional differentiation of $I(t) = C \times \frac{dV(t)}{dt}$, something uncommon outside of pure mathematics.
-    As a consequence of having a current/voltage relationship of less than \SI{90}{\degree}, a CPE'S impedance magnitude decays at a rate lower than 20$\frac{dB}{decade}$.
+    Mathematically, the \SI{90}{\degree} angle between sinusoidal voltages and currents in a capacitor is a result of the capacitors current being
+    \begin{equation}
+    I(t) = C \times \frac{dV(t)}{dt}
+    \label{eqn:currentVoltageInCapacitor}
+    \end{equation}
+    When $V(t)$ is a sine wave, this becomes
+    \begin{align}
+      I(t) &= C \times \frac{d Sin(t)}{dt}
+      I(t) &= C \times Cos(t)
+    \end{align}
+    A capacitor's impedance is \SI{-90}{\degree} out of phase because the angle between sine and cosine is \SI{-90}{\degree}, the angle between the current and voltage in the previous equation.
+    A CPE on the other hand has a phase angle somewhere \emph{between} 0 and \SI{-90}{\degree}.
+    This requires a fractional differentiation of \cref{eqn:currentVoltageInCapacitor} by doing:
+    \begin{equation}
+      I(t) = C \frac{d^n V(t)}{dt^n}
+    \end{equation}
+    where n is a non-integer number.
+    Partially applied differential is uncommon outside of pure mathematics.
+    % This requires a fractional differentiation of $I(t) = C \times \frac{d^n V(t)}{dt^n}$, something uncommon outside of pure mathematics.
+    As a consequence of having a current/voltage relationship of less than \SI{90}{\degree}, a CPE's impedance magnitude decays at a rate lower than 20\ dB/decade.
 
     SPICE, or any other commonly used circuit simulators, do not support fractional pole capacitors so entering one into the model will require building it up from discrete components.
     \begin{figure}[h]
