@@ -58,7 +58,7 @@ The measurements and determined parameters will be presented in the next chapter
     \begin{figure}
       \centering
       \includegraphics{content/pt2/07-InterfaceModel/graphics/electrodeRings}
-      \caption{\label{fig:electrodeRings}Diagram showing the radial volumes expanding from the surface of the electrode and insulating spacer. Each volume has a diameter twice that of the one inside it. These volumes are used mathematically to determine relationship between resistances in the resistor mesh.}
+      \caption{\label{fig:electrodeRings}Diagram showing the first three radial volumes expanding from the surface of the electrode and insulating spacer. Each volume has a diameter twice that of the one inside it. These volumes are used mathematically to determine relationship between resistances in the resistor mesh.}
     \end{figure}
     Scott and Single created a resistor network for modelling the electrolyte conductivity based on the geometry of the electrodes and the resistivity of the electrolyte.
     By sectioning the surrounding liquid into cylindrical volumes they calculated the equivalent resistance between those volumes in both radial and longitudinal planes.
@@ -70,6 +70,7 @@ The measurements and determined parameters will be presented in the next chapter
     The full mesh for the eight electrode array is five layers deep with three rows of padding at each terminating end, totalling two hundred and five resistors in total.
     \Cref{fig:pt2-ResistorMesh} shows the resistor network schematic.
     Further details of how the mesh geometry and resistor values were calculated can be found in \cite{Scott2014}.
+
 
     The parameters that describe the resistor mesh are:
     \begin{itemize}
@@ -101,9 +102,9 @@ The measurements and determined parameters will be presented in the next chapter
 
     At the centre of the model is the constant phase element (CPE), or fractional pole capacitor.
     A CPE is a device that behaves like a cross between a capacitor and a resistor.
-    They are primarily used to describe the capacitance of double layer interfaces, the function it serves in this model.
+    They are primarily used to describe the capacitance of double layer interfaces, which is the function it serves in this model.
     It is capacitive in the sense that voltage leads current, but by an amount less than \SI{90}{\degree}.
-    Mathematically, the \SI{90}{\degree} angle between sinusoidal voltages and currents in a capacitor is a result of the capacitors current being
+    Mathematically, the \SI{90}{\degree} angle between voltage and current in a capacitor comes from:
     \begin{equation}
     I(t) = C \times \frac{dV(t)}{dt}
     \label{eqn:currentVoltageInCapacitor}
@@ -113,7 +114,7 @@ The measurements and determined parameters will be presented in the next chapter
       I(t) &= C \times \frac{d Sin(t)}{dt}\\
            &= C \times Cos(t)
     \end{align}
-    A capacitor's impedance is \SI{-90}{\degree} out of phase because the angle between sine and cosine is \SI{-90}{\degree}, the angle between the current and voltage in the previous equation.
+    Which describes how the current always \SI{90}{\degree} out of phase with voltage in a capacitor.
     A CPE on the other hand has a phase angle somewhere \emph{between} 0 and \SI{-90}{\degree}.
     This requires a fractional differentiation of \cref{eqn:currentVoltageInCapacitor} such as:
     \begin{equation}
@@ -134,7 +135,7 @@ The measurements and determined parameters will be presented in the next chapter
     One of Morrison's implementations of a constant phase element is presented as \cref{graph:pt2-morrisonCPE}.
     In that implementation, each parallel branch has precisely chosen resistor and capacitor values such that when summed together the impedance magnitude versus frequency is a constant slope, i.e., the impedance does not flatten at a particular frequency as it would with a single RC pair.
     Creating any element comprised of an infinite number of sub-elements is not possible, however by selecting only those elements that contribute to the bandwidth of interest the result is the same within the selected frequency window.
-    Using that method and selecting only RC pairs with a cut-off frequency in the range of \SI{1}{\milli\hertz} to \SI{1}{\mega\hertz}, a practical CPE element is created.
+    Using that method and selecting only RC pairs with a cut-off frequency in the range of \SI{1}{\milli\hertz} to \SI{1}{\mega\hertz}, a practical CPE can be created.
 
     \begin{figure}
       \centering
@@ -143,14 +144,15 @@ The measurements and determined parameters will be presented in the next chapter
     \end{figure}
 
     \Cref{graph:pt2-cpe_creation} shows the individual contributions from each RC branch in an implementation of a CPE.
-    Each grey trace represents a single RC branch in the CPE element, each acting as a low-pass filter.
-    The value of the resistor in each branch is evident by the vertical spacing of the traces, clearly visible at the right-hand side of the graph.
+    Each grey trace represents a single RC branch within the CPE, as are shown in \cref{graph:pt2-morrisonCPE}.
+    The value of the resistor in each branch is evident by the vertical position of the traces, visible at the right-hand side of the graph.
     The branches in this particular example have been spaced in the frequency domain at a density of three per decade, as marked by the black crosses.
-    This means that per decade of frequency, there are three corner frequencies, each relating to an RC pair.
-    Because each of there branches are in parallel, the total response of the CPE is the sum of each branch.
+    This means that per decade of frequency, there are three corner frequencies, each relating to an RC pair (so three branches for every decade of frequency response).
+    Because each of there branches are in parallel, the total response of the CPE as a whole is the superposition of the response of each branch.
     That response is shown as the black trace on the graph.
-    The critical observation is that the slope of the resulting trace is not the same as each of the individual branches.
+    The critical observation is that the slope of the resulting trace is different to the slope of the capacitors in each of the individual branches.
     This allows the CPE to behave fractionally as a capacitor, being anywhere between resistive (horizontal response) and capacitive (\SI{20}{\decibel}/decade slope).
+    Lines 186--189 of \cref{code:lib_simulate} show how values for the resistors and capacitors within the CPE are calculated.
 
     The CPE represents readily reversible reactions, polar reorientation, and ionic repulsion and attraction between the electrode's surface and the electrolyte.
     It is capacitive in nature because each of these mechanisms store charge, which can be drawn back by reversing the applied electromotive force.
@@ -310,7 +312,6 @@ The measurements and determined parameters will be presented in the next chapter
   In this section I create six different solutions of PBS ranging in concentration from 1.0x to 0.025x the concentration of a standard PBS solution.
   I extend the Scott-Single model to work over a range of concentrations by expressing relevant parameters in terms of a dependent variable - PBS concentration.
 
-
   \subsection{Inter-electrode resistivity}
 
 
@@ -333,8 +334,31 @@ The measurements and determined parameters will be presented in the next chapter
     \end{figure}
 
     Scott and Single measure the trans-impedance of the eight electrodes submerged in the electrolyte solution.
-    This works by passing a stimulus current between two electrodes while measuring voltage differentials between pars of non-stimulus carrying electrodes.
-    Data from those measurements is then tabulated so that each row contains the AC current driven between the two stimulus electrodes and the voltage measured between a pair of non-driven electrodes.
+    These transimpedance measurements pass a stimulus current between two electrodes while measuring voltage differentials between pars of non-stimulus carrying electrodes.
+    The the current driven through a stimulus pair and the resulting voltage across the measured is turned into into an impedance by division.
+    The measurements are tabulated and used as a reference for the optimisation functions error function.
+    \Cref{tab:pt2-transimpedance} gives an example of what these tabulated measurements look like (taken from the sheep measurements presented later).
+    \begin{table}
+      \begin{center}
+        \begin{tabular} {c | c | r | r}
+          Stimulus pair & Measured pair & Z (magnitude) & Z (phase)\\
+          \hline
+            1,2 & 3,4 & \SI{51.4}{\ohm} & \SI{175}{\degree}\\
+            1,2 & 4,5 & \SI{10.0}{\ohm} & \SI{-167}{\degree}\\
+            1,2 & 5,6 & \SI{7.33}{\ohm} & \SI{-164}{\degree}\\
+            1,2 & 6,7 & \SI{5.08}{\ohm} & \SI{-163}{\degree}\\
+            1,2 & 7,8 & \SI{4.30}{\ohm} & \SI{-165}{\degree}\\
+          \hline
+            7,8 & 1,2 & \SI{2.40}{\ohm} & \SI{15.4}{\degree}\\
+            7,8 & 2,3 & \SI{2.98}{\ohm} & \SI{18.3}{\degree}\\
+            7,8 & 3,4 & \SI{4.29}{\ohm} & \SI{14.3}{\degree}\\
+            7,8 & 4,5 & \SI{10.9}{\ohm} & \SI{8.97}{\degree}\\
+            7,8 & 5,6 & \SI{38.2}{\ohm} & \SI{-2.64}{\degree}
+        \end{tabular}
+      \end{center}
+      \caption{\label{tab:pt2-transimpedance}Example of tabulated measured transimpedance results. Such values would then be fed into an optimisation routine to find appropriate values of resistance for the mesh.}
+    \end{table}
+
     By measuring the voltage across pairs of non-driven electrodes using a suitably high impedance measurement, those measurements will correspond to the voltage difference in the electrolyte.
     For this method to work it is assumed that the current passing through each non-driven interface is zero, and therefore no voltage is dropped between the electrode's metal and the electrolyte solution.
     It is for this reason that voltage differentials can not be measured on any of the stimulus electrodes.
@@ -430,3 +454,66 @@ The measurements and determined parameters will be presented in the next chapter
     \end{table}
 
     % Edit checkpoint 2015-09-19 10:11
+
+  \section{Optimisation}
+  Optimisation routines are used to determine the appropriate parameter values from measurements of the interface's various components.
+  Each optimisation is performed by Python scripts that utilise the open-source scientific package SciPy, which contains a range of optimisation functions.
+  The optimisation functions require the user to write a `residuals' function that accepts parameter values and returns an error.
+  The optimiser, when executed, then repeatedly calls the residuals function with parameter values that minimise the error returned.
+  A illustrative and heavily simplified optimisation routine follows
+  \begin{lstlisting}[language=Python, basicstyle=\scriptsize]
+import scypy.optimize
+import numpy as np
+import math
+import measured_data
+import spice_simulator
+
+measured = measured_data.get_transimpedance()
+
+def simulate(r_eri, r_sri, r_li):
+  # Create a netlist suitable for feeding into ngSpice
+  netlist = spice_simulator.generate_resistorMesh(r_eri, r_sri, r_li)
+
+  # Simulate the circuit
+  results = spice_simulator.simulate_circuit(netlist)
+
+  # Return the transimpedance measurement values
+  return results
+
+def residuals(resistances):
+  # Separate out passed parameter values
+  r_eri = resistances[0]
+  r_sri = resistances[1]
+  r_li = resistances[2]
+
+  # Run values through simulator
+  simulated = simulate(r_eri, r_sri, r_li)
+  error = 0.0
+  measurements = [
+    '12-23',
+    '12-34',
+    '12-45',
+    '12-56',
+    '12-78',
+    '18-23',
+    '18-34',
+    '18-56',
+    '18-67']
+  # Square the difference between measured and simulated values
+  for measurement in measurements:
+    difference = measured[measurement] - simulated[measurement]
+    error += math.pow(difference, 2)
+
+  # Return the sum
+  return error
+
+# Starting values for optimisation
+initial_guess = [100, 250, 1025]
+
+# Call the scipy to minimise the error
+solution = scipy.optimize.leastsq(residuals,
+                                  x0=initial_guess,
+                                  epsfcn=0.5)
+print(solution)
+\end{lstlisting}
+

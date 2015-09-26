@@ -88,13 +88,20 @@ Lastly, thank you to everyone who has contributed to open-source projects, espec
 Work done throughout this thesis has relied heavily on these tools.
 
 \tableofcontents{}
+
 \listoffigures
+
 \listoftables
-\doublespacing
+
+\clearpage
+
+\pagenumbering{arabic}
+
+\onehalfspacing
 
 %% Introduction
 
-\pagenumbering{arabic}
+
 
  \chapter{Introduction}
    \label{chap:introduction_main}
@@ -102,7 +109,7 @@ Work done throughout this thesis has relied heavily on these tools.
 
 % Edit checkpoint 2015-09-09 20:52
 
- \chapter{background}
+ \chapter{Background}
    \label{chap:background}
    \input{content/background/background.tex}
 
@@ -136,7 +143,7 @@ Work done throughout this thesis has relied heavily on these tools.
 
    % Edit checkpoint 2015-09-16 19:48
 
-   \chapter{Energy Requirements for Electronic Metering}
+   \chapter{Required Harvesting Performance}
      \label{chap:part1_energyHarvestingRequirements}
      \input{content/pt1/03-EnergyRequirements/chapter-EnergyRequirements}
 
@@ -218,30 +225,33 @@ Work done throughout this thesis has relied heavily on these tools.
 
 
  %% Part 4 - Appendices
- \part{Appendices}
+\part{Appendices}
 
-   \appendix
+  \appendix
 
-   \chapter{Charged Drips for Energy Harvesting}
-     \label{appendix:chargedDropletts}
-     \input{content/appendices/chargedWaterDrops/appendix}
+  \chapter{Charged Drips for Energy Harvesting}
+    \label{appendix:chargedDropletts}
+    \input{content/appendices/chargedWaterDrops/appendix}
 
-   \chapter{Streaming Cell Voltage Measurements}
-     \label{appendix:streamingCellMeasurements}
-     \input{content/appendices/streamingCellMeasurements/appendix}
+  \chapter{Streaming Cell Voltage Measurements}
+    \label{appendix:streamingCellMeasurements}
+    \input{content/appendices/streamingCellMeasurements/appendix}
 
-   \chapter{Microprocessor Energy Measurements}
-     \input{content/appendices/microprocessorPowerMeasurements/appendix}
+  \chapter{Microprocessor Energy Measurements}
+    \input{content/appendices/microprocessorPowerMeasurements/appendix}
 
-   \chapter{Electrolyte Solution Impedance Measurement}
-     \input{content/appendices/Solution-Impedance-Measurements/appendix_mimicry}
+  \chapter{Electrolyte Impedance Measurement}
+    \input{content/appendices/Solution-Impedance-Measurements/appendix_mimicry}
 
-   \chapter{Streaming Cell Newspaper Article}
-   \begin{figure}
-       \centering
-       \includegraphics[width=\textwidth]{content/appendices/Article}
-       \caption{Newspaper article on streaming cell research presented in \cref{part:doubleLayersOnInsulators}.}
-   \end{figure}
+  \chapter{Interface Simulation Scripts}
+    \input{content/appendices/interfaceSimulation/interfaceSimulations.tex}
+
+  % \chapter{Streaming Cell Newspaper Article}
+  %   \begin{figure}
+  %     \centering
+  %     \includegraphics[width=\textwidth]{content/appendices/Article}
+  %     \caption{Newspaper article on streaming cell research presented in \cref{part:doubleLayersOnInsulators}.}
+  %   \end{figure}
 
 %\chapter*{Notes}
 %The text width of this thesis is \the\textwidth.\\

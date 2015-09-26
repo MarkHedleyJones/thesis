@@ -67,7 +67,6 @@ adsorbed
 advancements
 advantageous
 advantages
-adverse
 affect
 affected
 affecting
@@ -81,6 +80,7 @@ agilent
 agricultural
 ahead
 aids
+aimed
 aircraft
 al
 alcohol
@@ -110,8 +110,7 @@ alumina
 always
 ambient
 amount
-amounts
-amperes
+ampere
 amplitude
 amr
 an
@@ -129,7 +128,6 @@ animal
 animal's
 animals
 anion
-anode
 anodic
 another
 answer
@@ -174,8 +172,8 @@ are:
 area
 area:
 areas
-aren't
 arising
+arm
 arose
 around
 arranged
@@ -188,7 +186,9 @@ artefacts
 arterial
 article
 artificial
+artwork
 as
+as:
 aspects
 assembled
 assembler
@@ -245,7 +245,6 @@ bandwidth
 bank
 banks
 bard
-barriers
 bars
 base
 based
@@ -289,6 +288,7 @@ bench-top
 benchmark
 benchmarked
 benchmarking
+bend
 beneficial
 benefit
 benefits
@@ -299,6 +299,7 @@ bias
 biases
 bibliography
 bicarbonate
+big
 billing
 biological
 biomedical
@@ -334,6 +335,7 @@ branch-if-greater-or-equal
 branch-if-minus
 branches
 brand
+break
 breakatwhitespace=false
 breakdown
 breaking
@@ -397,7 +399,6 @@ capable
 capacitance
 capacitive
 capacitor
-capacitor's
 capacitors
 capacity
 capillaries
@@ -405,6 +406,8 @@ capillary
 capitol
 caption
 caption-position
+caption=example
+caption=python
 captionpos=b
 capture
 captured
@@ -418,7 +421,6 @@ carry
 carrying
 case
 catchment
-cathode
 cathodic
 cations
 cause
@@ -463,6 +465,7 @@ characteristic
 characteristics
 characters
 charge
+charge-to-mass
 charged
 charges
 charging
@@ -537,7 +540,6 @@ combines
 combining
 come
 comes
-coming
 commands
 comment
 commercially
@@ -651,7 +653,6 @@ contact
 contain
 contained
 container
-containers
 containing
 contains
 contaminants
@@ -698,7 +699,6 @@ corresponded
 corresponding
 corresponds
 corruption
-cosine
 cost
 costly
 could
@@ -736,6 +736,7 @@ curious
 current
 current-overpotential
 current/voltage
+current;
 currently
 currents
 curve
@@ -745,10 +746,10 @@ customer's
 customers
 cut
 cut-off
+cuts
 cycle
 cycles
 cyclic
-cylinder
 cylinders
 cylindrical
 daiguji
@@ -763,6 +764,7 @@ davidson
 davidson2008a
 day
 days
+db/decade
 dc
 dead
 deal
@@ -835,7 +837,6 @@ destination
 destroyed
 detach
 detachable
-detached
 detailed
 details
 detect
@@ -863,9 +864,9 @@ dictate
 dictated
 dictates
 did
+dielectric
 differ
 difference
-differences
 different
 differential
 differentials
@@ -921,24 +922,24 @@ distance
 distilled
 distorted
 distortions
+distribute
 distributed
 distributing
 distribution
 district
 disturbed
-diverge
 divergence
 divide-and-conquer
 divided
 divider
 dividing
+division
 do
 doctor
 doctoral
 dodecyl
 does
 doing
-doing:
 domain
 domains
 domestic
@@ -973,7 +974,6 @@ droplet
 droplets
 dropped
 dropper
-droppers
 drops
 drops?''
 drums
@@ -995,6 +995,7 @@ early
 easier
 easily
 easy
+ebers-moll
 edge
 edges
 edit
@@ -1027,7 +1028,6 @@ electrode-electolyte
 electrode-electrolyte
 electrode-electrolyte-electrode
 electrode-interface
-electrode/electrolyte
 electrode/spacer
 electrodes
 electrokinetic
@@ -1109,6 +1109,7 @@ erase
 erase/write
 erased
 error
+escape
 especially
 essence
 essential
@@ -1126,7 +1127,6 @@ ethics
 euthanise
 evaluate
 even
-evenly
 event
 events
 eventually
@@ -1174,7 +1174,6 @@ experimentation
 experimenting
 experiments
 explain
-explained
 explains
 explanation
 explored
@@ -1214,7 +1213,6 @@ failure
 failure'
 fairly
 fall
-falling
 falls
 familiar
 family
@@ -1224,9 +1222,7 @@ faraday's
 fast
 faster
 fault
-favour
 favoured
-favouring
 fdtd
 feasibility
 feasible
@@ -1238,6 +1234,7 @@ feel
 fell
 femto-ampere
 few
+fewer
 field
 fields
 fifty-six
@@ -1255,7 +1252,6 @@ fill
 filler
 fillers
 filling
-filter
 filters
 final
 finally
@@ -1346,6 +1342,7 @@ frequencies
 frequency
 frequent
 from
+from:
 from?
 full
 fully
@@ -1387,10 +1384,10 @@ geometries
 geometry
 geometry;
 get
-gets
 getting
 gimp
 gina
+github
 give
 given
 gives
@@ -1505,6 +1502,7 @@ highlights
 highly
 his
 history
+hitting
 hold
 holds
 hole
@@ -1598,7 +1596,6 @@ in-fact
 in-vivo
 inability
 inaccurate
-incapable
 include
 included
 including
@@ -1628,7 +1625,6 @@ inductive
 inductor
 inductors
 industrial
-inefficient
 inert
 inevitable
 infeasible
@@ -1669,7 +1665,6 @@ instructional
 instructions
 instrument
 instruments
-insulated
 insulating
 insulators:
 int
@@ -1688,9 +1683,11 @@ interested
 interesting
 interests
 interface
+interface'
 interface's
 interface;
 interfaced
+interfacelabel=code:run_simulation
 interfaces
 interfacial
 interference
@@ -1712,7 +1709,6 @@ inverse
 investigate
 investigated
 investigates
-investigating
 investigation
 involve
 involved
@@ -1726,11 +1722,13 @@ ips
 irrespective
 is
 is:
+ishai
 isn't
 isoflurane
 isolate
 isolated
 isolating
+isolation
 isopropyl
 issue
 issues
@@ -1785,8 +1783,8 @@ laboratory
 laborious
 lack
 ladder
-land
 large
+large;
 larger
 last
 lastly
@@ -1878,14 +1876,12 @@ looked
 looking
 looks
 loop
-loops
 loosing
 lord
 lose
 loss
 lost
 lot
-lots
 low
 low-cost
 low-pass
@@ -1913,7 +1909,6 @@ magnitudes
 main
 mainframe
 mainstream
-maintain
 maintaining
 major
 majority
@@ -2048,6 +2043,7 @@ mobile;
 mode
 model
 model's
+modellabel=code:lib_simulate
 modelled
 modelling
 models
@@ -2136,11 +2132,10 @@ nelson
 net
 network
 neutral
-neutralise
 neutralised
 new
 newcombe
-newly
+newly-created
 newspaper
 newtonian
 next
@@ -2148,7 +2143,6 @@ ngspice
 niche
 night-time
 no
-no-longer
 no-matter
 no-slip
 no-slip'
@@ -2181,6 +2175,8 @@ notion
 novel
 november
 now
+nozzle
+nozzles
 number
 numbering
 numbers=left
@@ -2283,6 +2279,7 @@ our
 out
 outcome
 outcomes
+outer
 outlet
 outline
 outlined
@@ -2313,6 +2310,7 @@ p_cell
 p_max
 p_out
 p_z$
+paced
 package
 packed
 packets
@@ -2331,6 +2329,7 @@ papers
 parabolic
 parallel
 parameter
+parameter's
 parameters
 parameters;
 pars
@@ -2453,6 +2452,7 @@ port
 portmanteau
 ports
 position
+positioned
 positioning
 positive
 positively
@@ -2580,6 +2580,7 @@ publication
 publish
 published
 pulled
+pulls
 pump
 pumped
 pumping
@@ -2655,7 +2656,6 @@ ready
 real
 real-time
 real-time;
-realise
 realising
 realistic
 reality
@@ -2670,6 +2670,7 @@ recap
 receive
 receiver
 receivers
+receiving
 recent
 recently
 reception
@@ -2737,6 +2738,7 @@ repeats
 repel
 repelled
 repelling
+repels
 replace
 replaced
 replacing
@@ -2758,7 +2760,6 @@ represents
 reproduce
 reproduced
 repulsion
-repulsive
 require
 required
 requirement
@@ -2782,6 +2783,7 @@ resistivity
 resistor
 resistor'
 resistor-capacitor
+resistor;
 resistors
 resources
 respect
@@ -2812,6 +2814,7 @@ reversible
 reversing
 review
 revising
+revolved
 rf
 rfm
 rfm12b
@@ -2905,6 +2908,7 @@ selecting
 selection
 selects
 self-discharge
+self-discharging
 selleys
 semi-permanent
 seminal
@@ -2941,8 +2945,6 @@ setup
 seven
 several
 seymour
-shape
-shaped
 shaping
 shared
 shattered;
@@ -2961,6 +2963,7 @@ shifting
 shims
 shore
 short
+short-circuiting
 shorted
 shorter
 shortly
@@ -2973,6 +2976,8 @@ showing
 shown
 shows
 showspaces=false
+showstringspaces=false]content/appendices/interfacesimulation/code/lib_simulatep
+showstringspaces=false]content/appendices/interfacesimulation/code/run_simulationpy
 showtabs=false
 shrinking
 shunt
@@ -3005,7 +3010,6 @@ simulators
 since
 sine
 single
-sintdt
 sinusoidal
 sioh
 sit
@@ -3035,7 +3039,6 @@ slowest
 slowly
 small
 smaller
-smallest/simplest
 smart
 smooth
 smt
@@ -3066,7 +3069,6 @@ somehow
 something
 sometimes
 somewhere
-soon
 sort
 sorts
 sought
@@ -3129,7 +3131,6 @@ steaming
 stein
 step
 stepped
-stepping
 steps
 stern
 steve
@@ -3150,6 +3151,7 @@ store
 straight
 straight-forward
 stream
+stream;
 streaming
 strength
 strengthen
@@ -3171,6 +3173,7 @@ subjected
 submerged
 submerging
 submitted
+subsection
 subsequent
 subsequently
 substance
@@ -3189,6 +3192,7 @@ successfully
 such
 suffered
 sufficient
+sufficiently
 sugars
 suggest
 suggesting
@@ -3203,6 +3207,7 @@ summarised
 summary
 summed
 summer
+superposition
 supervisor
 supplementary
 supplied
@@ -3312,7 +3317,6 @@ thickness
 thin
 thing
 things
-things:
 think
 thinner
 third
@@ -3396,6 +3400,8 @@ transmitting
 transported
 trap
 trapped
+travel
+travels
 treat
 treating
 treatment
@@ -3417,6 +3423,7 @@ tube
 tubes
 turbines
 turn
+turned
 turning
 turns
 twelve
@@ -3476,6 +3483,8 @@ up
 updated
 upon
 upper
+upward
+upwards''
 urlcolor=blue
 us
 usable
@@ -3503,7 +3512,6 @@ v86
 v960
 v=ir
 v_t
-valid
 validate
 validation
 valuable
@@ -3515,6 +3523,7 @@ variability
 variable
 variables
 variation
+variations
 varies
 variety
 various
@@ -3532,6 +3541,7 @@ versionlabel=code:pic16f1827sleepcodec]content/appendices/microprocessorpowermea
 versus
 vertical
 very
+vessel
 veterinarian
 veterinary
 via
@@ -3551,7 +3561,6 @@ voltage/current
 voltage/pressure
 voltage?
 voltages
-voltages:
 voltammetry
 volume
 volumes
@@ -3671,6 +3680,7 @@ yields
 yields:
 you
 your
+z
 zealand
 zealand's
 zero
