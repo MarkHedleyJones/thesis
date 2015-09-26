@@ -123,12 +123,12 @@ The measurements and determined parameters will be presented in the next chapter
     \end{equation}
     When $V(t)$ is a sine wave, this becomes
     \begin{align}
-      I(t) &= C \times \frac{d Sin(t)}{dt}
-      I(t) &= C \times Cos(t)
+      I(t) &= C \times \frac{d Sin(t)}{dt}\\
+           &= C \times Cos(t)
     \end{align}
     A capacitor's impedance is \SI{-90}{\degree} out of phase because the angle between sine and cosine is \SI{-90}{\degree}, the angle between the current and voltage in the previous equation.
     A CPE on the other hand has a phase angle somewhere \emph{between} 0 and \SI{-90}{\degree}.
-    This requires a fractional differentiation of \cref{eqn:currentVoltageInCapacitor} by doing:
+    This requires a fractional differentiation of \cref{eqn:currentVoltageInCapacitor} such as:
     \begin{equation}
       I(t) = C \frac{d^n V(t)}{dt^n}
     \end{equation}
@@ -208,22 +208,21 @@ The measurements and determined parameters will be presented in the next chapter
     $f$ is Faraday's constant divided by the product of the gas constant and the absolute temperature ($F/RT$),
     and $\eta$ is the electrode overpotential.
     This equation describes the forward and reverse electrical current through an electrode by separating the forward and reverse reactions: oxidisation and reduction.
+    Taking a single half of the equation, either the reduction or oxidisation, yields an equation that is similar to that for the current through a diode; an observation made by McAdams and utilised in the Scott-Single model \cite{McAdams1995}.
+    The standard Ebers-Moll equation of a diode equation is:
     \begin{equation}
-      I = i_0 e^{V_D / n V_T}
+      I = i_0\left(e^{V_D / n V_T}-1\right) \approx i_0 e^{V_D / n V_T}
       \label{eqn:pt-2_diodeEquation}
     \end{equation}
-    Taking a single half of the equation, either the reduction or oxidisation, yields an equation that is similar to that for the current through a diode; an observation made by McAdams and utilised in the Scott-Single model \cite{McAdams1995}.
-    The standard diode equation is shown as \cref{eqn:pt-2_diodeEquation}, where
-    $I$ is the current through the diode,
-    $i_0$ is the diode saturation current,
-    $V_D$ is the potential across the diode,
-    $n$ is the diode's ideality factor,
-    $V_T$ is the thermal voltage (defined as the product of Boltzmann's constant and temperature divided by the charge on an electron).
-    The parameters used to describe the behaviour of the diode are:
+    where:
     \begin{itemize}
-      \item $i_0$ -- the diode's saturation current
-      \item $n$ -- the diode's ideality factor
+      \item $I$ is the current through the diode,
+      \item $i_0$ is the diode saturation current,
+      \item $V_D$ is the potential across the diode,
+      \item $n$ is the diode's ideality factor, and
+      \item $V_T$ is the thermal voltage (defined as the product of Boltzmann's constant and temperature divided by the charge on an electron).
     \end{itemize}
+    The two parameters needed to describe the behaviour of the diode are $i_0$ and $n$, which will later be determined for the diodes in the model.
     The diodes themselves can not account for the relative abundance of reactants for the redox reactions ($[O]_{(0,t)}/[O]_{\infty}$ and $[R]_{(0,t)}/[R]_{\infty}$ from \cref{eqn:pt-2_butlerVolmerEquation}), this needs to be considered separately and is discussed next.
 
 
