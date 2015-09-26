@@ -11,51 +11,30 @@ The measurements and determined parameters will be presented in the next chapter
   \begin{figure}
     \centering
     \includegraphics{content/pt2/07-InterfaceModel/graphics/electrode-electrolyte}
-    \caption{\label{fig:electrode-electrolyte}Electrodes submerged in an electrolyte solution, such a system can be described by the Scott-Single Interface Model.}
+    \caption{\label{fig:electrode-electrolyte}Diagram of two electrodes submerged in an electrolyte solution, which can modelled by the Scott-Single Interface Model.}
   \end{figure}
-
-  Jonathan Scott and Peter Single published an electrical model of an implantable electrode array in saline in 2013 \cite{ScottSingle2013}.
-  The intention of that model was to simulate the electrical impedance that a medical implant device would be subjected to once implanted into a human spinal cavity.
-  It is also general enough to use in any situation where electrodes are placed in an electrolyte solution, such as depicted in \cref{fig:electrode-electrolyte}.
 
   \begin{figure}
     \centering
     \includegraphics{content/pt2/07-InterfaceModel/graphics/simpleElectrodeElectrolyteModel}
-    \caption{\label{fig:pt2-simpleElectrodeElectrolyteModel}Connection diagram of two electrodes (with their interface models) connected together by the resistivity of an electrolyte solution.}
+    \caption{\label{fig:pt2-simpleElectrodeElectrolyteModel}Connection diagram of two electrodes (with interfaces) connected together by the resistivity of an electrolyte solution.}
   \end{figure}
-  The model comes in two parts: the electrode interface, and the resistivity of the electrolyte's bulk.
-  \Cref{fig:pt2-simpleElectrodeElectrolyteModel} shows the general electrical configuration of such an electrode-electrolyte system.
-  It shows that there are two interfaces per system, and that the liquid side of those two interfaces are joined electrically by the resistance of the electrolyte's bulk resistivity.
-  The metal side of the interfaces is what the rest of the circuit would connect to.
-  First, the interface model will be explained.
+  In 2013, Jonathan Scott and Peter Single published an electrical model of an implantable electrode array in saline\cite{ScottSingle2013}.
+  That model simulates the electrical impedance a medical implant device is be subjected to once implanted into a human's spinal cavity.
+  It is general enough to use in any situation where electrodes are placed in an electrolyte; a simple case is depicted in \cref{fig:electrode-electrolyte}.
+  The model comes in two parts: an electrode interface, and the resistance of the electrolyte between interfaces.
+  \Cref{fig:pt2-simpleElectrodeElectrolyteModel} shows the electrical equivalent of connecting two electrodes through an electrolyte.
+  It two interfaces, each with the liquid side joined electrically by the resistance of the electrolyte's bulk resistivity.
+  The metal side of the interfaces is what the rest of the circuit (such as the implant electronics) connects to.
 
-
-%  \subsection{Breakdown of model components}
-
+  \Cref{fig:pt2-interfaceSchematic} shows the electrode-electrolyte interface (the component labelled `Interface' in \cref{fig:pt2-simpleElectrodeElectrolyteModel}.
+  It is an electronic equivalent circuit of the transition between the metal of an electrode and the liquid of an electrolyte.
+  The interface model that was actually used throughout this thesis is a simplified version of this in that the memristors (elements M\textsubscript{a} and M\textsubscript{b}) have been omitted.
   \begin{figure}
     \centering
     \includegraphics{content/pt2/07-InterfaceModel/graphics/interfaceSchematic}
     \caption{\label{fig:pt2-interfaceSchematic}Electrical schematic of the electrode-electrolyte interface}
   \end{figure}
-
-  The full interface model is represented schematically by \cref{fig:pt2-interfaceSchematic}.
-  It represents the transition between the metal of the electrode and the liquid of the electrolyte.
-  The model used throughout this thesis is a slightly simplified version of \cref{fig:pt2-interfaceSchematic} in that the memristors (elements M\textsubscript{a} and M\textsubscript{b}) have been removed.
-
-  % The Scott-Single interface is modelled by the circuit shown in \cref{fig:pt2-interfaceSchematic}.
-  % Each of the components and their functions will be explained in the coming sections.
-  % It is important to realise that this model only represents a single interface between metal and electrolyte.
-  % By itself it is incapable of simulating any useful electrode/electrolyte system.
-  % For that, a minimum of two interfaces must be used - one as a cathode and one as an anode.
-  % Additionally, some model of the electrolyte resistivity needs to connect the two interfaces.
-
-
-  % \Cref{fig:pt2-simpleElectrodeElectrolyteModel} shows the smallest/simplest use of the interface model.
-  % This configuration represents two electrodes placed in an electrolyte solution.
-  % It allows simulation of impedance between those electrodes and can be connected to other electronic circuits.
-  % A model like this is only valid for a two electrode system.
-  % Because the electrode array in our application has eight electrodes, the model is more complex.
-  % In full, that model will have eight electrode interfaces and a resistor network connecting each interface.
 
 
   \subsection{Inter-electrode resistivity (resistor network)}
@@ -63,8 +42,11 @@ The measurements and determined parameters will be presented in the next chapter
 
     Modelling the resistance between two electrodes in a fixed geometry situation is simply a matter of inserting an appropriately sized resistor between the two interfaces.
     The resistance is dependent on the electrolyte's conductivity, the combined surface area of the two electrodes and the distance between them.
-    Modelling an electrode array, such as the St. Jude Medical - Octrode, is more complex as it requires a resistor network to describe the inter-electrode resistances.
+    The St. Jude Medical Octrode is an eight electrode array commonly used in spinal cord stimulator implants.
+    Its eight electrodes are made from platinum and are separated along the end of a lead by insulating material.
     An illustration of an Octrode is presented as \cref{fig:StJudeOctrode_Labelled}.
+    Modelling such an electrode array requires a resistor network that connects all electrodes to one another.
+    To be an adequate representation, the resistance between every possible combination of electrode pairs must match the measured value in an electrolyte.
 
     \begin{figure}
       \centering
@@ -73,12 +55,17 @@ The measurements and determined parameters will be presented in the next chapter
     \end{figure}
 
     % Edit checkpoint 2015-09-17 20:23
-
+    \begin{figure}
+      \centering
+      \includegraphics{content/pt2/07-InterfaceModel/graphics/electrodeRings}
+      \caption{\label{fig:electrodeRings}Diagram showing the radial volumes expanding from the surface of the electrode and insulating spacer. Each volume has a diameter twice that of the one inside it. These volumes are used mathematically to determine relationship between resistances in the resistor mesh.}
+    \end{figure}
     Scott and Single created a resistor network for modelling the electrolyte conductivity based on the geometry of the electrodes and the resistivity of the electrolyte.
     By sectioning the surrounding liquid into cylindrical volumes they calculated the equivalent resistance between those volumes in both radial and longitudinal planes.
     The radii of the volumes double at each layer which correspond to a fixed radial resistance between each layer.
     There are two different radial resistances: one for the rings expanding from the insulating spacers, and one for those expanding from the electrode cylinders.
-    The two alternate due to each electrode being separated by an insulating spacer.
+    The two layers alternate due to each electrode being separated by an insulating spacer.
+    \Cref{fig:electrodeRings} illustrates the idea on a subsection of the electrode array by showing three radial volumes surrounding three electrodes and two spacers.
     The longitudinal resistances quarter in size with each ring layer and after the last radial resistor each node is shorted together.
     The full mesh for the eight electrode array is five layers deep with three rows of padding at each terminating end, totalling two hundred and five resistors in total.
     \Cref{fig:pt2-ResistorMesh} shows the resistor network schematic.
