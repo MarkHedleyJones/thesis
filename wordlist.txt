@@ -147,7 +147,6 @@ anyone
 anywhere
 apart
 apparatus
-apparent
 appear
 appeared
 appearing
@@ -281,7 +280,6 @@ behave
 behaves
 behavior
 behaviour
-behaviour;
 behind
 being
 believe
@@ -908,7 +906,6 @@ discussed
 discusses
 discussing
 discussion
-displacement
 displacing
 display
 displayed
@@ -1575,6 +1572,7 @@ implementation
 implementations
 implemented
 implementing
+implements
 import
 importance
 important
@@ -1595,7 +1593,6 @@ inaccurate
 include
 included
 including
-incorporate
 increase
 increased
 increases
@@ -2046,7 +2043,6 @@ modelling
 models
 modified
 modifies
-modify
 module
 modules
 molar
@@ -3480,7 +3476,6 @@ university
 university's
 unknown
 unless
-unlike
 unlikely
 unnoticed
 unordered

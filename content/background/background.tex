@@ -167,7 +167,7 @@
       \caption{Diagram showing elements of a double-layer adsorbed to a negative sphere.}
       \label{fig:doubleLayer_anatomy}
     \end{figure}
-    \Cref{fig:doubleLayer_anatomy} shows a double layer's organisation according to the currently accepted Goüy-Chapmam-Stern model.
+    \Cref{fig:doubleLayer_anatomy} shows double layer organisation according to the currently accepted Goüy-Chapmam-Stern model.
     It shows the compact layer adsorbed to the surface of the suspended solid.
     In this layer the ions are immobile due to the electrical strength at the surface.
     Surrounding this layer is the diffuse layer.
@@ -462,7 +462,7 @@
   % \begin{equation}
   % \frac{d}{dx}x = 1
   % \end{equation}
-  % when the differention operation is only half applied results in \cite{Torokhti1974}:
+  % when the differentiation operation is only half applied results in \cite{Torokhti1974}:
   % \begin{equation}
   % \frac{d^{1/2}}{dx^{1/2}}x = \frac{2\sqrt{x}}{\sqrt{\pi}}
   % \end{equation}
@@ -556,11 +556,13 @@
       Y(\omega) = Y_0 (j\omega^n)
       \label{eqn:CPE_equation}
     \end{equation}
-    % = Y_0 \omega^n\cos (n\pi/2) + j Y_0 \omega^n \sin(n\pi/2)
     where $Y_0$ is an admittance constant, $\omega = \pi f$ and $n$ determines the angle.
     When $n=0$, it represents a resistor, when $n=1$ it describes a capacitor, and when $n=0.5$ it is the Warburg element.
-    It is unique within the literature for its use of a memristor and diode pair as a means of describing Faradaic current conduction, something thus far described by resistance.
-    The model is suitable for entry into commonly used circuit simulators such as SPICE because it is comprised of discrete electronic components, meaning you can build it on a circuit board.
+    This allows the Scott-Single model to the interface with any phase angle between 0 and \SI{90}{\degree}.
+    Based on the work of Morrison, the Scott-Single model implements the CPE as a series of resistor-capacitor branches~\cite{Morrison1959}.
+    This allows the model to be solved by simulation software working in the time-domain, such as SPICE.
+    It is also unique within the literature for its use of a memristor and diode pair as a means of describing Faradaic current conduction, something thus far described by resistance.
+
     No comparisons between saline solutions and actual biological fluid, such as cerebrospinal fluid, have been found in the literature.
 
   % Edit checkpoint 2015-09-13 18:46

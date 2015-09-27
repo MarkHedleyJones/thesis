@@ -232,7 +232,8 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
         \end{figure}
         Subsequent measurements of CPE settling time show that a delay of \SI{64}{\second} between steps is adequate to allow the CPE voltage to settle.
         Those measurements are shown as \cref{fig:graph_CPE_currentVsTime}, with the \SI{64}{\second} window highlighted in grey.
-        It is interesting to note from those measurements that the capacitance appears to be a function of the applied overpotential, with lower potentials resulting in larger capacitance.
+        The dependence of the capacitance upon voltage or current is clearly visible by comparing the \SI{0.64}{\volt} trace to that of the \SI{1.04}{\volt}.
+        This variation is most likely the change in capacitance (and series resistance) that Schwan published in 1968~\cite{Schwan1968}.
 
         \begin{figure}
           \centering
@@ -262,7 +263,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
           \item Between \SI{0.9}{\volt} and \SI{1.05}{\volt} of overpotential between electrodes, each trace transitions to a mode of saline concentration dependence in reverse order of saline concentration.
         \end{enumerate}
 
-        It appears that the change in behavior between \SI{0.9}{\volt} and \SI{1.05}{\volt} is due to a transition to diffusion-controlled conduction between electrodes.
+        It appears that the change in behaviour between \SI{0.9}{\volt} and \SI{1.05}{\volt} is due to a transition to diffusion-controlled conduction between electrodes.
         I hypothesise that below \SI{0.9}{\volt} the charging of the CPE draws available ions to the electrode, creating a layer of high ionic concentration at the surface irrespective of that of the solution bulk.
         It is this layer that is consumed by the Faradaic reactions at a rate that increases exponentially with electrode overpotential.
         The effect of the bulk solution concentration while this layer exists is negligible until the point at which the layer is consumed faster than it can be replenished.
@@ -285,9 +286,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
         Using the ``step and wait'' method to measure electrical currents associated with Faradaic conduction gave improved results, both in repeatability and expected response.
         \Cref{fig:graph_faradaic_currentVsTimeThesis,fig:graph_faradaic_currentVsVoltageThesis} show results using the 1.0X PBS solution; the other concentrations followed the same pattern.
         In \cref{fig:graph_faradaic_currentVsTimeThesis} it can be seen that the simulated CPE does not follow the decay curve of the interface after each transition.
-        Notice again how the rate of decay appears to be dependent on the electrode overpotential, with higher voltages resulting in lower apparent capacitance.
-        This suggests that in order for the simulated CPE to better represent the interface's displacement characteristics it should also take the electrode overpotential as a parameter to modify its behaviour.
-        Effort was not made to incorporate the scaling of capacitance into the CPE of the model, but doing so would make a valuable improvement.
+        Notice again how the capacitance is dependent on the electrode overpotential, but the CPE fails to capture that information.
         Final parameter values for the Faradaic currents (the diodes of the model) are given in \cref{tab:FaradaicParams}.
 
         \begin{table}
@@ -351,7 +350,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
 
   The previous section dealt with measuring and fitting numerical values to the electrode-interface parameters in various solutions of buffered saline.
   Phosphate buffered saline, specifically a 0.1X concentration of a standard solution, was used for electrode characterisation as it was believed to be a good substitute for cerebrospinal fluid.
-  Electronic engineers at Saluda Medical used these 0.1X PBS solutions to test their implant devices to make sure they were capable of driving and handling the impedance presented by the electrode-electolyte interface and spinal cavity.
+  Electronic engineers at Saluda Medical used these 0.1X PBS solutions to test their implant devices to make sure they were capable of driving and handling the impedance presented by the electrode-electrolyte interface and spinal cavity.
   Not knowing how closely the saline solutions resembled live biological spinal fluid they also tested their implants and electrodes in living sheep.
   A sheep's spinal canal is smaller than a human's, but large enough to insert an epidural electrode array, making them a relatively accessible means of in-vivo testing for medical applications.
   Geometrically they are similar enough for the sheep to be used as a test substitute for human spinal implant testing.
