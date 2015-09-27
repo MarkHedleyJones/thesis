@@ -121,10 +121,10 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
 
       Using Ohm's Law it is possible to form an equation linking the total power ($P_{cell}$) to the total electrical resistance across the cell ($R_{tot}$).
       \begin{align}
-          P & = & V\times I\nonumber \\
-          V & = & I\times R\nonumber \\
-          P & = & I^{2}\times R\nonumber \\
-          P_{cell} & = & I_{s}^{2}\times R_{tot}
+          P & = V\times I\nonumber \\
+          V & = I\times R\nonumber \\
+          P & = I^{2}\times R\nonumber \\
+          P_{cell} & = I_{s}^{2}\times R_{tot}
           \label{eq:DeterminingOutputPower_basic}
       \end{align}
       Where $I_{s}$ is the streaming current created by pumping ions through the channel.
@@ -246,13 +246,13 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
     \begin{figure}
       \centering
       \includegraphics{content/pt1/01-PowerHarvesting/graphics/VargaSeymour1986_cell}
-      \caption[Diagram of a cavitation device, taken from ~\cite{Varga1986}]{\label{fig:first_cell_diagram}Diagram of a cavitation device, taken from ~\cite{Varga1986}, reported to be able to generate over \SI{50}{\volt} across its ends by pumping water through it.}
+      \caption[Diagram of a cavitation device, taken from~\cite{Varga1986}]{\label{fig:first_cell_diagram}Diagram of a cavitation device, taken from~\cite{Varga1986}, reported to be able to generate over \SI{50}{\volt} across its ends by pumping water through it.}
     \end{figure}
 
     \begin{figure}
       \centering
       \includegraphics[scale=0.9]{content/pt1/01-PowerHarvesting/graphics/StreamingCell_v0}
-      \caption[Photo showing a first generation of streaming device.]{\label{fig:first_cell}Photo of a first generation of streaming device. The device built by summer research student Jonathon McMullan to create the streaming voltages reported by Varga and Seymour.}
+      \caption{\label{fig:first_cell}Photo of the first streaming device built; made form acrylic and brass. This device built by summer research student Jonathon McMullan to create the streaming voltages reported by Varga and Seymour, but failed to produce measurable quantities of power.}
     \end{figure}
     \begin{figure}
       \centering
@@ -263,13 +263,16 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
     The work that first sparked the interest of both my primary supervisor and I in streaming devices was that of Varga and Seymour~\cite{Varga1986}.
     In that paper it was reported that a device employing cavitation as a means of increasing the resistance between two bodies of  water was capable of developing over \SI{50}{\volt} across its ends.
     A diagram of the cavitation device is shown as \cref{fig:first_cell_diagram}.
-    An attempt to replicate the results of that paper was made by summer research student Jonathon McMullan.
-    Jonathon built a replica of the device, shown as \cref{fig:first_cell}; but was unable to reproduce streaming phenomena.
-
-    My supervisor and I became sceptical of streaming cells at this point and looked elsewhere for energy harvesting ideas.
+    Summer research student Jonathon McMullan recreated that device, shown as \cref{fig:first_cell}, with the intention of reproducing results from that paper.
+    The device was turned on a lathe from acrylic in two pieces and glued together.
+    A brass rod (not shown) is inserted up the shaft (presented vertically in the image) into the flow of water.
+    The rod has a narrow cylindrical tip, small enough to allow it to fit into the main flow pipe (presented horizontally in the image), with a flat face ground into one side.
+    Water is forced through the device (left to right in the image) and the rod causes cavitation of the water as it flows past the inserted rod tip.
+    Varga and Seymour measured a potential difference of over \SI{50}{\volt} between the inserted rod and the brass end fittings using a flow rate of \SI{0.0425}{\litre\per\minute}.
+    That experiment, which tried the same flow rate; materials; liquids; and measurement setup, did not produce measurable streaming voltage.
+    % My supervisor and I became sceptical of streaming cells at this point and looked elsewhere for energy harvesting ideas.
     The following year, summer research student Wane Crump and I conducted experiments to determine the amount of charge that could be transported on water droplets.
-    This work was related to the idea of an electrostatic generator.
-    See \cref{appendix:chargedDropletts} for details of the droplet based harvesting research.
+    Research into energy harvesting with an electrostatic generator is presented in the Appendix as \cref{appendix:chargedDropletts}.
 
     Later, other designs of streaming cells, namely those of Gu and Li~\cite{Gu2000}, were found in the literature.
     Their design of streaming cell looked simple and easy to fabricate, so attempts were made to replicate them.
@@ -520,7 +523,7 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
   \begin{figure}
       \centering
       \includegraphics{content/pt1/01-PowerHarvesting/graphics/GuLi_DIUF}
-      \caption{\label{fig:Gu_Li_comparison_DUIF}Plot showing measured data from Gu and Li's paper on streaming cells relating the streaming voltage and pressure differential to the channel height with distilled water as the working fluid ~\cite{Gu2000}.}
+      \caption{\label{fig:Gu_Li_comparison_DUIF}Plot showing measured data from Gu and Li's paper on streaming cells relating the streaming voltage and pressure differential to the channel height with distilled water as the working fluid~\cite{Gu2000}.}
   \end{figure}
 
   \begin{figure}

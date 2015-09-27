@@ -27,6 +27,7 @@ badlist = [
     "impedence",
     "transimpedence",
     "todo",
+    "faradaic",
 ]
 
 wordlist = []
@@ -36,7 +37,13 @@ for filename in filenames:
     # print("Checking " + filename)
     with open(filename, 'r') as f:
         for lineno, line in enumerate(f.readlines()):
+            lineno += 1
             line = line.lower()
+            if line.find(' ~') != -1:
+                if line[line.find(' ~')-1] != '\\':
+                    print("Found occurrence of _~ on line " + str(lineno) + " of " + filename)
+            if line.find(' al. ') != -1:
+                print("Found occurrence of al._ on line " + str(lineno) + " of " + filename)
             line = line.replace('(','')
             line = line.replace(')','')
             line = line.replace(',','')

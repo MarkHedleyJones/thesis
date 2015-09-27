@@ -431,7 +431,7 @@
     %Experimental results show conversion efficiencies in the range of:
     %These results indicate that small channels using solutions containing salt are more efficient.
     %According to \cite{Daiguji2004}, the efficiency is maximised when the channel height is twice that of the Debye length.
-    %Additionally, ~\cite{VanderHeyden2006} states that the maximum efficiency is found when the salt concentration is low.
+    %Additionally, \cite{VanderHeyden2006} states that the maximum efficiency is found when the salt concentration is low.
 
     In summary, the finding that maximum conversion efficiency occurs at low ionic concentration supports the use of tap-water as a working fluid.
     Using glass as a substrate seems to be a suitable choice, which is both cost effective and easy to source.
@@ -449,7 +449,7 @@
     \begin{center}
       \includegraphics{content/introduction/graphics/interface}
     \end{center}
-    \caption[Diagram of a liquid-solid interface showing various types of molecular interactions.]{Diagram of a liquid-solid interface showing various types of molecular interactions, surface imperfections and polar molecules. This diagram is based on the work of Bard et al. \cite{Bard1993}}
+    \caption[Diagram of a liquid-solid interface showing various types of molecular interactions.]{Diagram of a liquid-solid interface showing various types of molecular interactions, surface imperfections and polar molecules. This diagram is based on the work of Bard et al.\ ~\cite{Bard1993}}
     \label{fig:interface}
   \end{figure}
 
@@ -497,7 +497,7 @@
     \begin{center}
       \includegraphics{content/introduction/graphics/StJudeOctrode}
     \end{center}
-    \caption{Graphic representation of the St. Jude Medical ``Octrode''. Such electrodes are used with spinal stimulation implants.}
+    \caption{Drawing of the St. Jude Medical ``Octrode''. Such electrodes are used with spinal stimulation implants.}
     \label{fig:octrode}
   \end{figure}
 
@@ -515,6 +515,55 @@
 
   \subsection{Literature review}
 
-  Recently Ishai et. al\ published a review relating to dielectric measurements, which deals with various models.
+    In 1899, Warburg presented his interpretation of the impedance between electrodes in an electrolyte~\cite{Warburg1899}.
+    That interpretation was that the electrode's response is dominated by the diffusion of active species through the electrolyte bulk.
+    He described the situation as a resistor in parallel with a capacitor, a combination since referred to as a `Warburg impedance' or `Warburg element'.
+    He draws the following relationships for the phase and capacitance of an electrode:
+    \begin{align}
+      \phi &= \pi / 4\\
+      C_W &= k/f^{0.5}
+    \end{align}
+    where k depends on the metal, $C_W$ is the Warburg capacitance, $f$ is the applied frequency, and $\theta$ is the phase angle.
+    The above relationships are drawn for electrodes with an infinitely small current density and does not account for DC behaviour.
+    This concept of a Warburg element goes on to be used in many, if not most, electrode interface models published since.
+    However, shortly after, Fricke showed that for low current densities the electrode capacitance and phase angle are described more accurately by:
+    \begin{align}
+      \phi &= m \pi / 2\\
+      W_W &= k/\omega^m
+    \end{align}
+    where $m$ and $k$ depend on the type of metal used; $m$ being somewhere between \SI{0.15} and \SI{0.32}~\cite{Fricke1932}.
+    These relationships applied for stimuli in the frequency range of \SI{100}-\SI{3500}{\hertz}, but still does not account for the DC situation.
+    In 1936 Murdock and Zimmerman publish empirical data in support of Fricke's phase relation~\cite{Murdock1936}.
+
+    Over the next fifty years, numerous studies of the electrode interface and its corresponding electrical equivalent circuit have been made~\cite{Randles1947,Epelboin1973,Sluyters-Rehbach1970}.
+    However, no progress is made over that time toward modelling the DC response of an electrode interface.
+    In 1975, a model put forward by Geedes et. al\ adds resistance in parallel with the Warburg impedance to account for that DC response~\cite{Geddes1975}.
+    Seven years later, Onaral and Schwan measure the impedance of platinum electrodes in saline from \SI{1}{\milli\hertz}-\SI{1}{\kilo\hertz}~\cite{Onaral1982}.
+    They confirm Fricke's phase angle holds down to a frequency of \SI{10}{\milli\hertz}, but comment on deviation below that.
+    This suggests there is a limit to how well the traditional Warburg element accounts for low frequency signals.
+    Like Geedes et. al\, they also use resistance in parallel with the Warburg element to account for the DC response of the interface.
+    In their work they propose that a Cole--Cole relaxation model would describe the electrode interface behaviour over all frequencies.
+    Lastly, Schwan showed that the value of interface capacitance and series resistance is not fixed~\cite{Schwan1968}.
+    Rather, it is dependent on the current density (the total current being passed by an electrode divided by its surface area).
+
+    Overall, the trend in electrode interface publications appears to be a gradual refinement of the initial model put forward by Warburg in 1899.
+    Each modifies that model slightly to account for conditions measured outside of its initial predictive capability.
+    A recent review of interface modelling indicates there is still no reliable circuit model of the electrode-electrolyte interface~\cite{Geddes1997}.
+    The Warburg impedance is accurate when the current density is low, but fails to predict changes in capacitance and resistance of higher densities.
+    A resistor in parallel with the Warburg element is a common method of accounting for Faradaic current.
+
+    The electrode model used in \cref{part:doubleLayersOnConductors} is a simplified version of the Scott--Single electrode interface model~\cite{Scott2014}.
+    It uses a constant phase element (CPE) in place of the Warburg element, which has the form:
+    \begin{equation}
+      Y(\omega) = Y_0 (j\omega^n)
+      \label{eqn:CPE_equation}
+    \end{equation}
+    % = Y_0 \omega^n\cos (n\pi/2) + j Y_0 \omega^n \sin(n\pi/2)
+    where $Y_0$ is an admittance constant, $\omega = \pi f$ and $n$ determines the angle.
+    When $n=0$, it represents a resistor, when $n=1$ it describes a capacitor, and when $n=0.5$ it is the Warburg element.
+    It is unique within the literature for its use of a memristor and diode pair as a means of describing Faradaic current conduction, something thus far described by resistance.
+    The model is suitable for entry into commonly used circuit simulators such as SPICE because it is comprised of discrete electronic components, meaning you can build it on a circuit board.
+
+    No comparisons between saline solutions and actual biological fluid, such as cerebrospinal fluid have been found.
 
   % Edit checkpoint 2015-09-13 18:46

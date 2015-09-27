@@ -1,6 +1,17 @@
+#
+'12-23'
+'12-34'
+'12-45'
+'12-56'
+'12-78'
+'18-23'
+'18-34'
+'18-56'
+'18-67']
 'solid'
 -
 --
+-----------
 -inc
 -lfsr
 -total
@@ -14,9 +25,9 @@ about
 above
 absolute
 abundance
-ac
 acceleration
 accepted
+accepts
 access
 accessible
 accommodate
@@ -82,7 +93,6 @@ ahead
 aids
 aimed
 aircraft
-al
 alcohol
 alcohols
 alfaxalone
@@ -325,6 +335,8 @@ bother
 bottle
 bottles
 bottom
+bottom=20mm
+bottom=35mm]geometry
 bound
 boundaries
 boundary
@@ -335,6 +347,7 @@ branch-if-greater-or-equal
 branch-if-minus
 branches
 brand
+brass
 break
 breakatwhitespace=false
 breakdown
@@ -359,6 +372,7 @@ building
 buildings
 builds
 built
+built;
 bulk
 bullets
 bundle
@@ -387,8 +401,10 @@ calculating
 calculation
 calculations
 calculus
+call
 call-subroutine
 called
+calls
 came
 can
 canal
@@ -785,6 +801,7 @@ deemed
 deep
 deeper
 deepest
+def
 default
 defects
 defined
@@ -1093,6 +1110,7 @@ enzcon
 epidural
 epoxied
 epoxy
+epsfcn=05
 equal
 equally
 equate
@@ -1201,6 +1219,7 @@ fabricate
 fabricated
 fabricating
 fabrication
+face
 facilitate
 facility
 fact
@@ -1228,8 +1247,10 @@ feasibility
 feasible
 feature
 feature-wise
+fed
 feed
 feedback
+feeding
 feel
 fell
 femto-ampere
@@ -1267,6 +1288,7 @@ fit
 fits
 fitted
 fitting
+fittings
 five
 fixed
 flash
@@ -1283,6 +1305,7 @@ floating
 flow
 flowchart
 flowing
+flows
 fluctuate
 fluctuations
 fluffy
@@ -1310,6 +1333,7 @@ fonts
 for
 force
 force'
+forced
 forces
 forcing
 foreseeable
@@ -1515,6 +1539,7 @@ hoped
 hoperf
 hopes
 horizontal
+horizontally
 hospital
 host
 hours
@@ -1580,6 +1605,7 @@ implementation
 implementations
 implemented
 implementing
+import
 importance
 important
 importantly
@@ -1636,6 +1662,7 @@ information
 ingredient
 ingredients
 initial
+initial_guess
 initialisation
 initially
 injected
@@ -1792,6 +1819,7 @@ late
 later
 laterally
 latex
+lathe
 law
 lay
 layer
@@ -1809,6 +1837,7 @@ leave
 leaving
 led
 left
+left=40mm
 lends
 length
 lengths
@@ -1849,6 +1878,7 @@ liquid
 liquid-solid
 liquid;
 liquids
+liquids;
 list
 literature
 lithium
@@ -1937,10 +1967,12 @@ matched
 matches
 material
 materials
+materials;
 math
 mathematical
 mathematically
 mathematics
+mathpowdifference
 matlab
 matter
 max
@@ -1966,8 +1998,12 @@ meant
 measurable
 measure
 measured
+measured[measurement]
+measured_data
+measured_dataget_transimpedance
 measurement
 measurements
+measurements:
 measures
 measuring
 mechanical
@@ -2130,6 +2166,7 @@ negligible
 neighbouring
 nelson
 net
+netlist
 network
 neutral
 neutralised
@@ -2177,12 +2214,14 @@ november
 now
 nozzle
 nozzles
+np
 number
 numbering
 numbers=left
 numbersep=5pt
 numerical
 numerous
+numpy
 nz
 nz]
 object
@@ -2253,6 +2292,7 @@ optimal
 optimisation
 optimise
 optimised
+optimiser
 optimum
 optional
 options
@@ -2332,6 +2372,7 @@ parameter
 parameter's
 parameters
 parameters;
+parameterslabel=code:spice_model
 pars
 part
 partial
@@ -2390,7 +2431,6 @@ peter
 ph
 phantom
 phase
-phenomena
 phosphate
 photo
 physical
@@ -2405,6 +2445,7 @@ pick
 pickit
 picture
 piece
+pieces
 piezoelectric
 pin
 pins
@@ -2509,6 +2550,7 @@ previously
 pricing
 primarily
 primary
+printsolution
 probably
 probe
 probes
@@ -2610,9 +2652,13 @@ quickly
 r
 r-c
 r_cell
+r_eri
 r_h
+r_li
+r_li:
 r_out
 r_outr_cell+r_out
+r_sri
 r_tot
 radial
 radially
@@ -2627,6 +2673,7 @@ range
 ranges
 ranging
 rate
+rate;
 rated
 rates
 ratio
@@ -2733,6 +2780,7 @@ reorient
 reorientation
 repeatability
 repeated
+repeatedly
 repeating
 repeats
 repel
@@ -2744,7 +2792,6 @@ replaced
 replacing
 replenish
 replenished
-replica
 replicate
 replicated
 replicates
@@ -2757,8 +2804,8 @@ representative
 represented
 representing
 represents
-reproduce
 reproduced
+reproducing
 repulsion
 require
 required
@@ -2774,10 +2821,16 @@ reservoir
 reservoirs
 residential
 residents
+residuals
+residuals'
+residualsresistances:
 resin
 resistance
 resistances
 resistances:
+resistances[0]
+resistances[1]
+resistances[2]
 resistive
 resistivity
 resistor
@@ -2802,7 +2855,9 @@ result
 resulting
 results
 retrieved
+return
 returned
+returns
 reveal
 revealed
 revealing
@@ -2822,6 +2877,7 @@ rice
 rich
 right
 right-hand
+right=30mm]
 rigorous
 ring
 rings
@@ -2883,10 +2939,12 @@ scholarship
 science
 scientific
 scipy
+scipyoptimizeleastsqresiduals
 scott
 scott-single
 script
 scripts
+scypyoptimize
 seal
 second
 secondary
@@ -2945,6 +3003,7 @@ setup
 seven
 several
 seymour
+shaft
 shaping
 shared
 shattered;
@@ -2976,7 +3035,8 @@ showing
 shown
 shows
 showspaces=false
-showstringspaces=false]content/appendices/interfacesimulation/code/lib_simulatep
+showstringspaces=false]content/appendices/interfacesimulation/code/lib_simulatepy
+showstringspaces=false]content/appendices/interfacesimulation/code/model_netlistspic
 showstringspaces=false]content/appendices/interfacesimulation/code/run_simulationpy
 showtabs=false
 shrinking
@@ -3001,6 +3061,8 @@ simplistic
 simply
 simulate
 simulated
+simulated[measurement]
+simulater_eri
 simulates
 simulating
 simulation
@@ -3097,6 +3159,9 @@ spend
 spent
 sphere
 spice
+spice_simulator
+spice_simulatorgenerate_resistormeshr_eri
+spice_simulatorsimulate_circuitnetlist
 spike
 spinal
 spine
@@ -3104,6 +3169,7 @@ spirits
 spontaneously
 sporadic
 spread
+square
 squares
 st
 stabilising
@@ -3348,6 +3414,7 @@ timing
 tin
 tiny13v
 tiny25v
+tip
 title
 titled
 to
@@ -3501,6 +3568,7 @@ uses
 usi
 using
 usually
+utilise
 utilised
 utilises
 utilising
@@ -3540,6 +3608,7 @@ versionlabel=code:pic16f1827sleepcodeasm]content/appendices/microprocessorpowerm
 versionlabel=code:pic16f1827sleepcodec]content/appendices/microprocessorpowermeasurements/code/pic16f1827_sleepc
 versus
 vertical
+vertically
 very
 vessel
 veterinarian
@@ -3665,6 +3734,7 @@ writing
 written
 wrong
 x
+x0=initial_guess
 xbee
 xor
 xuan
