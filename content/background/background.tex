@@ -534,7 +534,6 @@
     where $m$ and $k$ depend on the type of metal used; $m$ being somewhere between \SI{0.15} and \SI{0.32}~\cite{Fricke1932}.
     These relationships applied for stimuli in the frequency range of \SI{100}-\SI{3500}{\hertz}, but still does not account for the DC situation.
     In 1936 Murdock and Zimmerman publish empirical data in support of Fricke's phase relation~\cite{Murdock1936}.
-
     Over the next fifty years, numerous studies of the electrode interface and its corresponding electrical equivalent circuit have been made~\cite{Randles1947,Epelboin1973,Sluyters-Rehbach1970}.
     However, no progress is made over that time toward modelling the DC response of an electrode interface.
     In 1975, a model put forward by Geedes et. al\ adds resistance in parallel with the Warburg impedance to account for that DC response~\cite{Geddes1975}.
@@ -547,10 +546,9 @@
     Rather, it is dependent on the current density (the total current being passed by an electrode divided by its surface area).
 
     Overall, the trend in electrode interface publications appears to be a gradual refinement of the initial model put forward by Warburg in 1899.
-    Each modifies that model slightly to account for conditions measured outside of its initial predictive capability.
-    A recent review of interface modelling indicates there is still no reliable circuit model of the electrode-electrolyte interface~\cite{Geddes1997}.
+    Each modifies that model slightly to account for conditions outside of its predictive capability.
     The Warburg impedance is accurate when the current density is low, but fails to predict changes in capacitance and resistance of higher densities.
-    A resistor in parallel with the Warburg element is a common method of accounting for Faradaic current.
+    A recent review of interface modelling indicates there is still no reliable circuit model of the electrode-electrolyte interface~\cite{Geddes1997}.
 
     The electrode model used in \cref{part:doubleLayersOnConductors} is a simplified version of the Scott--Single electrode interface model~\cite{Scott2014}.
     It uses a constant phase element (CPE) in place of the Warburg element, which has the form:
@@ -563,7 +561,6 @@
     When $n=0$, it represents a resistor, when $n=1$ it describes a capacitor, and when $n=0.5$ it is the Warburg element.
     It is unique within the literature for its use of a memristor and diode pair as a means of describing Faradaic current conduction, something thus far described by resistance.
     The model is suitable for entry into commonly used circuit simulators such as SPICE because it is comprised of discrete electronic components, meaning you can build it on a circuit board.
-
-    No comparisons between saline solutions and actual biological fluid, such as cerebrospinal fluid have been found.
+    No comparisons between saline solutions and actual biological fluid, such as cerebrospinal fluid, have been found in the literature.
 
   % Edit checkpoint 2015-09-13 18:46

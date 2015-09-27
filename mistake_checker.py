@@ -20,14 +20,14 @@ for filename in filenames:
                 # print(word, lastword)
                 if word is not '':
                     if word == lastword:
-                        print(lineno+1, filename, word)
+                        print("Duplicate word: ", str(lineno+1), filename, word)
                     lastword = word
 
 badlist = [
     "impedence",
-    "transimpedence",
+    "trans-impedence",
     "todo",
-    "faradaic",
+    "reactence"
 ]
 
 wordlist = []
