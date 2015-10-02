@@ -364,7 +364,7 @@ This estimation will reveal how much further the cells built earlier would need 
       The operation of an electronic water meter may require that analogue-to-digital conversions are made.
       Measuring the amount of energy consumed per conversion was done in much the same way as the previous tests.
       Each of the chips had similar converters feature-wise.
-      Results form the measurements are presented as \cref{fig:Energy-consumed-ADC}.
+      Results from the measurements are presented as \cref{fig:Energy-consumed-ADC}.
 
       \begin{figure}
         \centering
@@ -381,7 +381,7 @@ This estimation will reveal how much further the cells built earlier would need 
     Two types of wireless transmitters were chosen for energy measurement, a HOPE RF RFM12B transceiver and a Digi International Xbee Series 2 transceiver.
     The power consumption versus time during a wake, send one hundred and sixty bytes, and power down cycle was captured for both transceivers.
     By integrating the area under this curve the total energy consumed per transmission is found.
-    The transmitters were kept \SI{1}{\meter} from there receivers with no obstructions between them.
+    The transmitters were kept \SI{1}{\meter} from their receivers with no obstructions between them.
     This represents ideal transmission conditions, something that our electronic water meter is very unlikely to encounter.
     The actual RF reception between a base station and installed meter will vary greatly between installations and weather conditions.
     For example, wet ground is likely to obstruct RF transmission due to the transmitter being shielded by a more conductive medium.
@@ -457,7 +457,7 @@ This estimation will reveal how much further the cells built earlier would need 
       \caption{\label{tab:EnergyBudget-Transmission}Estimated daily energy expenditure required to transmit 160 characters every six hours}
     \end{table}
 
-    \Cref{tab:EnergyBudget-EventLoop,tab:EnergyBudget-Transmission} combine the measurements and estimates form the previous sections with the event loop estimation.
+    \Cref{tab:EnergyBudget-EventLoop,tab:EnergyBudget-Transmission} combine the measurements and estimates from the previous sections with the event loop estimation.
     They show that approximately \SI{12}{\joule} would be consumed per day by an electronic water meter.
     It was shown in \cref{sect:part1-WirelessWaterMeter-QuantifyingHarvestableEnergy} that \SI{280}{\joule} of energy is already dissipated in a mechanical water meter per day.
     This equates to a conversion efficiency of \SI{4.28}{\percent}, which would be the minimum efficiency required to run the meter continuously.
