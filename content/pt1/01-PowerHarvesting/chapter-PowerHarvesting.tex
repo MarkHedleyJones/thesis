@@ -43,11 +43,11 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
           \item $\zeta$ is zeta potential,
           \item $\mu$ is the fluid's viscosity,
           \item $\sigma$ is the fluid's bulk conductivity,
-          \item $\delta$ is the channel's height,
+          \item $\delta$ is the channel's height (refer to \cref{fig:width_height_length}),
           \item $\lambda$ is the channel's surface conductivity.
       \end{description}
       This equation is specific to parallel plate channels, of the type constructed in the following section.
-      It requires that the width to height ratio of the channel is greater than 20, which it is for the cells constructed here.
+      It requires that the width of the channel's cross-section is a minimum of twenty times larger than its height, which it is for the cells constructed here.
       Gu and Li use this equation as a means of finding the zeta potential and surface conductance by rearranging it into the following form:
       \begin{equation}
         \frac{\varepsilon_{r}\, \varepsilon_{0}\, \Delta P}{\mu\, V_{s}\, \sigma} = \frac{1}{\zeta} + \left(\frac{2\, \lambda}{\zeta\, \sigma}\right)\, \frac{1}{\delta}
@@ -229,7 +229,7 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
       \end{align}
 
       This \cref{eq:streamingCell_maxPower_relationship} suggests that a cell with a small length, large area and high pressure is the best candidate for maximising power output.
-      When using tap water we have no control over the remaining parameters; highlighting the importance of cell geometry and applied pressure.
+      When using tap water we have no control over the remaining parameters, highlighting the importance of cell geometry and applied pressure.
 
 
 \section{Streaming Cell Fabrication}
@@ -252,7 +252,7 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
     \begin{figure}
       \centering
       \includegraphics[scale=0.9]{content/pt1/01-PowerHarvesting/graphics/StreamingCell_v0}
-      \caption{\label{fig:first_cell}Photo of the first streaming device built; made form acrylic and brass. This device built by summer research student Jonathon McMullan to create the streaming voltages reported by Varga and Seymour, but failed to produce measurable quantities of power.}
+      \caption{\label{fig:first_cell}Photo of the first streaming device built. It has been constructed form acrylic and brass by summer research student Jonathon McMullan. It was intended to create the streaming voltages reported by Varga and Seymour, but failed to produce measurable quantities of power.}
     \end{figure}
     \begin{figure}
       \centering
@@ -266,25 +266,26 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
     Summer research student Jonathon McMullan recreated that device, shown as \cref{fig:first_cell}, with the intention of reproducing results from that paper.
     The device was turned on a lathe from acrylic in two pieces and glued together.
     A brass rod (not shown) is inserted up the shaft (presented vertically in the image) into the flow of water.
-    The rod has a narrow cylindrical tip, small enough to allow it to fit into the main flow pipe (presented horizontally in the image), with a flat face ground into one side.
-    Water is forced through the device (left to right in the image) and the rod causes cavitation of the water as it flows past the inserted rod tip.
+    The rod had a narrow cylindrical tip, small enough to allow it to fit into the main flow pipe (presented horizontally in the image), with a flat face ground into one side.
+    Water was forced through the device (left to right in the image) and the rod caused cavitation of the water as it flowed past the inserted rod tip.
     Varga and Seymour measured a potential difference of over \SI{50}{\volt} between the inserted rod and the brass end fittings using a flow rate of \SI{0.0425}{\litre\per\minute}.
-    That experiment, which tried the same flow rate; materials; liquids; and measurement setup, did not produce measurable streaming voltage.
+    That experiment -- which tried the same flow rate, materials, liquids, and measurement setup -- did not produce measurable streaming voltage.
     % My supervisor and I became sceptical of streaming cells at this point and looked elsewhere for energy harvesting ideas.
     The following year, summer research student Wane Crump and I conducted experiments to determine the amount of charge that could be transported on water droplets.
     Research into energy harvesting with an electrostatic generator is presented in the Appendix as \cref{appendix:chargedDropletts}.
 
     Later, other designs of streaming cells, namely those of Gu and Li~\cite{Gu2000}, were found in the literature.
-    Their design of streaming cell looked simple and easy to fabricate, so attempts were made to replicate them.
+    Their design of streaming cell looked simple and easy to fabricate, so we attempted to replicate them.
     Employing Waikato University's glass-blower, Steve Newcombe, two streaming cells were fabricated entirely from soda-lime glass.
-    These streaming cells are shown in \cref{fig:first_cells}.
-    Each of the two channels were made by placing a \SI{50}{\micro\meter} sheet of copper between the glass slides; then wielding the glass slides together to seal the cell; and finally, etching the copper out with acid.
+    Those streaming cells are shown in \cref{fig:first_cells}.
+    Each of the two channels were made by placing a \SI{50}{\micro\meter} sheet of copper between the glass slides and then welding the slides together to seal the cell.
+    The copper was etched away with acid once the cell was sealed.
     The cells were then glass welded to the side tubes that held the copper electrodes.
     By varying the length of the two channels (one of \SI{2}{\centi\meter}, the other \SI{4}{\centi\meter}) we hoped to determine what role length played on channel output characteristics.
 
     Both of the cells burst under the water pressure applied from lab taps.
     A crack along the right hand reservoir is visible on the \SI{2}{\centi\meter} wide channel.
-    Attempts were made to strengthen the channels by coating joins with industrial glues, but none were successful.
+    Attempts were made to strengthen the channels by coating the joins with industrial glues, but were not successful.
 
 
   \subsection{Robust streaming cells}
@@ -292,10 +293,10 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
 
     The two previous attempts to create streaming cells had failed.
     In the moments before failure, the all-glass streaming cells developed measurable voltage across their terminals.
-    I knew I was close, but the all-glass design needed revising to increase the amount of pressure they could hold.
-    A new design was found that solved the problem of cracking.
-    It favoured the used of epoxy resin and acrylic to contain the channels, allowing for more flex without the risk of cracking.
-    Aspects of the design were taken from a paper by Gu and Li~\cite{Gu2000}.
+    The developed voltage was enough to warrant further pursuit, but the design needed revising in order to increase their pressure handling capability.
+    A new design was found that used epoxy resin and acrylic to contain the channels.
+    This design appeared to be much more resilient to cracking.
+    Aspects of that design were taken from a paper by Gu and Li~\cite{Gu2000}.
 
     \begin{figure}[p]
       \centering
@@ -326,15 +327,15 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
         \end{tabular}
         \caption{\label{Table_StreamingCell_MaterialsUsed}Materials used to construct the streaming potential cells}
       \end{table}
-      Construction begins by sectioning standard microscope slides into halves.
-      This gives glass panels of approximately \SI{26}{\milli\meter} $\times$ \SI{38}{\milli\meter} $\times$ \SI{1}{\milli\meter}.
-      A single panel is then epoxied to an acrylic base plate, as is shown in Figure~\ref{fig:Photo_streamingPotential_Assembly_Step1}.
-      Once set, plastic shims are cut to the required size, covered with a very thin layer of epoxy, and placed along the edges of the slide.
-      The shims line the sides of the glass panel such that they leave a \SI{1}{\centi\meter} gap through the centre.
-      A second glass slide is then placed on top of the shims and epoxy resin is used to seal the sides.
+      Construction began by sectioning standard microscope slides into halves.
+      This produced glass panels of approximately \SI{26}{\milli\meter} $\times$ \SI{38}{\milli\meter} $\times$ \SI{1}{\milli\meter}.
+      A single panel was then epoxied to an acrylic base plate, as is shown in Figure~\ref{fig:Photo_streamingPotential_Assembly_Step1}.
+      Once set, plastic shims were cut to the required size, covered with a very thin layer of epoxy, and placed along the edges of the slide.
+      The shims lined the sides of the glass panel such that they left a \SI{1}{\centi\meter} gap through the centre.
+      A second glass slide was then placed on top of the shims and epoxy resin used to seal the sides.
       Pressure was applied to the stack while the epoxy set to ensure the epoxy was distributed correctly and to control the channel height.
       A photo of the shims glued between the two slide halves is shown in Figure~\ref{fig:Photo_streamingPotential_Assembly_Step2}.
-      Once set, each channel is examined under a microscope to determine the internal channel height.
+      Once set, each channel was examined under a microscope to determine the internal channel height.
       Each of the four corners were measured to ensure the internal dimensions remained rectangular once set.
       To finish, acrylic reservoirs where mounted over each end of the channel.
       These reservoirs facilitate the connection of fluid tubes and voltage probes to each end of the channel.
@@ -362,7 +363,7 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
     The Agilent E5270B is a mainframe system that holds banks of SMUs with connections to a GPIB computer interface.
     The Department of Engineering's E5270 contains three SMUs, each having the ability to measure currents as low as one femto-Ampere.
     The device uses separate `force' and `sense' connections to ensure the voltage/current being set is accurately controlled where they meet.
-    Additionally, it uses tri-axial cables to minimise any interference from outside sources; important when measuring such low currents.
+    Additionally, it uses tri-axial cables to minimise any interference from outside sources, which is important when measuring such low currents.
 
     The input resistance to the E5270's measurement units are specified as \SI{13}{\giga\ohm}.
     It is essential to use such a high impedance measurement due to the high internal resistance of the cell.
@@ -370,7 +371,7 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
     The internal resistance of a typical multimeter is \SI{10}{\mega\ohm}, too close to that of the cell and would therefore affect the measured output.
 
     The pressure sensor used was a Honeywell 26PC SMT Series differential pressure sensor.
-    It comes as surface mount package, making it a cost effective solution, but delicate to set up.
+    It came as surface mount package, making it a cost effective solution, but delicate to set up.
     On its exterior are two ports to which rubber tubes are attached.
     Between those ports, internal to the sensor, sits a diaphragm.
     That diaphragm controls the resistance between two nodes in the sensor's bridge circuit (shown in figure \ref{fig:PressureSensorSchematic}).
@@ -410,30 +411,29 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
   \subsection{Measurement issues}
 
 
-    There are two issues with the measurement setup that may impact the measurements.
+    There were two issues with the measurement setup that may have impacted  measurements.
     Firstly, the electrodes used were copper and are susceptible to polarisation by electrolysis.
-    Secondly, the differential pressure sensor is only rated to 15\thinspace PSI (approximately \SI{100}{\kilo\pascal}), less than half the maximum pressure developed across the cell.
+    Secondly, the differential pressure sensor was only rated to 15\thinspace PSI (approximately \SI{100}{\kilo\pascal}), less than half the maximum pressure developed across the cell.
 
-    Electrolysis on at the electrode surface causes the electrodes to polarise.
-    This results in a semi-permanent offset voltage appearing between the electrodes.
-    That offset voltage is opposite in polarity to what is developed while cell is in operation.
-    By reversing the flow of water through the cell the polarisation can be reversed.
-    Use of more suitable electrode materials would reduce this effect, for instance platinum black electrodes.
+    Electrolysis on at the electrode surface would cause the electrodes to polarise, resulting in a semi-permanent offset voltage appearing between electrodes.
+    That offset voltage would be opposite in polarity to what is developed while cell was in operation.
+    By reversing the flow of water through the cell, the polarisation should be reversed.
+    The use of more suitable electrode materials would reduce this effect, for instance platinum black electrodes.
     Copper was used for the electrodes as it was cheap, easily obtainable, and easy to work with.
     Offset voltages can be removed after measurement by subtraction.
-    Obviously this is not a perfect solution but will be sufficient as the offset itself can be measured so it will be well known.
+    This was not a perfect solution, but the offset voltage could be measured and accounted for so was left as-is.
 
     From measurement of the output \emph{voltage} of the cells, the presented graphs and figures have been adjusted to remove the effects of electrolysis.
     This was done by adding an offset to the measured data to shift the y-intercept up to \SI{0}{\volt}.
-    This provides a more accurate representation of the situation had platinum black electrodes been used.
+    This represents the situation where platinum black electrodes been used.
     As no absolute data is taken from these measurements, the y-intercept adjustment does not affect any subsequent predictions made about the cells.
-    Only the gradient of the output, relative to the pressure applied is used; and even then, only to select a suitable candidate cell for power measurement.
+    Only the gradient of the output relative to the pressure applied is used, and even then, only to select a suitable candidate cell for power measurement.
     \emph{Most importantly}, no offsets have been applied to measurements of the cell power output.
 
     Although the maximum rated pressure of sensor was 15\thinspace PSI (approximately \SI{100}{\kilo\pascal}), the sensor's output remained linear up to our maximum pressure of 40\thinspace PSI (\SI{275}{\kilo\pascal}).
     I expect that exceeding the sensors specified pressure will result in a lower `mean time to failure', but its output remained true.
     As a precaution, a tyre pressure gauge was used to roughly confirm the output of the sensor at the end of the cell measurements.
-    This was a crude test, however its output matched that of the differential pressure sensor, so was taken as a good indication of its accuracy.
+    This was a crude test, however its output matched that of the differential pressure sensor so was taken as an indication of accuracy.
 
 
 \section{Results}
@@ -454,11 +454,11 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
     \Cref{fig:streamingCell_all_adjusted} shows adjusted results of streaming voltage measurements from each of the ten cells.
     A full set of figures, one cell per graph, can be found in \cref{appendix:streamingCellMeasurements} as \crefrange{fig:VvsP_26um}{fig:VvsP_245um}.
     It represents the first successful measurements I had made of streaming cells.
-    During these measurements three cells burst under pressure; two were dropped and subsequently shattered; and one suffered epoxy failure, loosing its acrylic base plate.
+    During these measurements three cells burst under pressure, two were dropped and subsequently shattered, and one suffered epoxy failure.
     No measurements of flow rate or output current were made during these early experiments.
     As a result they reveal very little about the efficiency of the cells themselves.
     We cannot determine either the mechanical energy put into the cells, nor the output power available.
-    However, we can relate these measurements to those made by Gu and Li; as will be shown and discussed shortly.
+    However, we can relate these measurements to those made by Gu and Li as will be shown and discussed shortly.
 
     \begin{figure}
         \centering
@@ -506,7 +506,8 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
 
     The maximum power delivered by the cell was \SI{1.52}{\nano\watt}, corresponding to a current draw of \SI{33.5}{\nano\ampere} with a streaming voltage of \SI{182}{\milli\volt}.
     Generating this power required \SI{260}{\kilo\pascal} of pressure, resulting in a flow rate of \SI{2.05}{\milli\litre\per\second}.
-    This equates to \SI{539}{\milli\watt} of pumping power lost to the device and therefore an energy conversion efficiency of \SI{0.28}{\micro\percent}.
+    % This equates to \SI{539}{\milli\watt} of pumping power lost to the device and therefore an energy conversion efficiency of \SI{0.28}{\micro\percent}.
+    This equates to \SI{539}{\milli\watt} of pumping power lost to the device and therefore an energy conversion efficiency of \SI{2.8e-9}.
 
 
 \section{Discussion}
@@ -533,7 +534,7 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
   \end{figure}
 
   Their results for three streaming cells are shown here (taken from \cite{Gu2000}) as \cref{fig:Gu_Li_comparison_DUIF,fig:Gu_Li_comparison_NaCl}.
-  The first (\cref{fig:Gu_Li_comparison_DUIF}) shows measurements when distilled water is used as the working fluid; the second (\cref{fig:Gu_Li_comparison_NaCl}) shows the measurements for a weak saline solution.
+  The first (\cref{fig:Gu_Li_comparison_DUIF}) shows measurements when distilled water is used as the working fluid, the second (\cref{fig:Gu_Li_comparison_NaCl}) shows the measurements for a weak saline solution.
   It is interesting to note that they have what looks to be fairly linear data, although it is hard to tell with only three channel sizes.
 
   \begin{figure}
@@ -543,7 +544,7 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
   \end{figure}
 
   By comparison, \cref{fig:streamingCell_scatter_Gu_Li} plots the same variables from measurements taken from the ten streaming cells fabricated here.
-  In this graph $\lambda_{b}$ has been replaced with $\sigma$, where both refer to the bulk conductivity of the solution; and $E_{s}$ has been replaced with $V_{s}$, where both refer to the streaming potential.
+  In this graph, the following substitutions have been made: $\lambda_{b}$ has been replaced with $\sigma$ (both refer to the bulk conductivity of the solution), and $E_{s}$ has been replaced with $V_{s}$, (both refer to the streaming potential).
   The response to variation of channel height is clearly non-linear.
   Their method of finding the zeta potential rests on the following rearrangement:
   \begin{eqnarray}
@@ -567,7 +568,8 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
   Conversion of mechanical pumping into electrical energy can be done with narrowly separated plates of glass.
   The conversion efficiency seen here was low, much lower than reported in the literature.
   A channel \SI{1}{\centi\meter} by \SI{3}{\centi\meter} by \SI{71}{\micro\meter} produced \SI{1.5}{\nano\watt} under a pressure differential of \SI{260}{\kilo\pascal}.
-  That took \SI{359}{\milli\watt} of pumping power to produce, yielding an efficiency in the order of \SI{0.1}{\micro\percent}.
+  % That took \SI{359}{\milli\watt} of pumping power to produce, yielding an efficiency in the order of \SI{0.1}{\micro\percent}.
+  That took \SI{359}{\milli\watt} of pumping power to produce, yielding an efficiency in the order of \SI{1e-9}.
   Precision engineering, with regards to cell construction, will likely lead to greater efficiency.
   This is based on reports from the literature, where higher efficiency channels utilised much narrower channels.
 

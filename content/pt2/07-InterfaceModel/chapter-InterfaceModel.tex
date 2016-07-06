@@ -20,21 +20,48 @@ The measurements and determined parameters will be presented in the next chapter
     \caption{\label{fig:pt2-simpleElectrodeElectrolyteModel}Connection diagram of two electrodes (with interfaces) connected together by the resistivity of an electrolyte solution.}
   \end{figure}
   In 2013, Jonathan Scott and Peter Single published an electrical model of an implantable electrode array in saline\cite{ScottSingle2013}.
-  That model simulates the electrical impedance a medical implant device is be subjected to once implanted into a human's spinal cavity.
-  It is general enough to use in any situation where electrodes are placed in an electrolyte; a simple case is depicted in \cref{fig:electrode-electrolyte}.
+  That model simulates the electrical impedance an implanted electrode experiences once implanted into a human spinal cavity.
+  It is general enough to use in any situation where electrodes are placed in an electrolyte.
+  A simple case of such a situation is depicted in \cref{fig:electrode-electrolyte}.
   The model comes in two parts: an electrode interface, and the resistance of the electrolyte between interfaces.
   \Cref{fig:pt2-simpleElectrodeElectrolyteModel} shows the electrical equivalent of connecting two electrodes through an electrolyte.
   It two interfaces, each with the liquid side joined electrically by the resistance of the electrolyte's bulk resistivity.
   The metal side of the interfaces is what the rest of the circuit (such as the implant electronics) connects to.
 
-  \Cref{fig:pt2-interfaceSchematic} shows the electrode-electrolyte interface (the component labelled `Interface' in \cref{fig:pt2-simpleElectrodeElectrolyteModel}.
+  \Cref{fig:pt2-interfaceSchematic} shows the electrode-electrolyte interface.
+  This is what is inside each of the `Interface' boxes shown in \cref{fig:pt2-simpleElectrodeElectrolyteModel}).
   It is an electronic equivalent circuit of the transition between the metal of an electrode and the liquid of an electrolyte.
-  The interface model that was actually used throughout this thesis is a simplified version of this in that the memristors (elements M\textsubscript{a} and M\textsubscript{b}) have been omitted.
+  The interface model used throughout this thesis is a simplified version of this in that the memristors (elements M\textsubscript{a} and M\textsubscript{b}) have been omitted.
+
   \begin{figure}
     \centering
     \includegraphics{content/pt2/07-InterfaceModel/graphics/interfaceSchematic}
     \caption{\label{fig:pt2-interfaceSchematic}Electrical schematic of the electrode-electrolyte interface}
   \end{figure}
+
+  The model has three parallel branches connected in series with a resistor.
+  That resistor represents the non-reactive resistance of the interface itself, which all current passing through the interface experiences.
+
+  The two diode and memristor branches (top and bottom) mimic Faradaic conduction.
+  Any current leaving the electrode and entering the electrolyte (or vise versa) must pass through one of these two branches.
+  The direction of the diode on the branch determines whether it passes cathodic current or anodic current.
+  Together they mimic the rate of a specific Faradaic reaction.
+  As there is only one anodic/cathodic pair, the model simulates only one reaction (proceeding in either direction).
+  For the purpose of impedance modelling in this thesis it is not important to know exactly what that specific reaction is.
+  Since Faradaic currents are to be avoided in an implanted setting, determining their onset is critical.
+  Therefore, it is important to know that those paths model the \emph{first} (or lowest energy) reaction between the electrode and electrolyte.
+
+  Finally, at the centre of the model is the constant phase element (CPE).
+  For the purpose of a light introduction assume that it is simply a capacitor.
+  Any small signals can pass through the CPE, and therefore across the interface.
+  It models the redistribution of ions around the electrode in response to a change in electrode voltage.
+  A sudden change in voltage causes ions in the electrolyte to be repelled from, or attracted to, the electrode.
+  Attracting or repelling ions \emph{is} moving charge.
+  Once the ions have redistributed, that movement of charge stops.
+  This is the capacitive nature that the CPE models.
+  Before moving on, consider that moving ions around requires energy (a volume, however small, of liquid has moved).
+  This means a CPE does not behave entirely like a capacitor -- it is lossy and has an impedance-frequency roll-off not equal to \SI{-20}{\deci\bel\per Decade}.
+  Mode detail on how this, and the other components, are modelled is presented in the following subsections.
 
 
   \subsection{Inter-electrode resistivity (resistor network)}
@@ -77,7 +104,7 @@ The measurements and determined parameters will be presented in the next chapter
     \item $R_{eri}$ - The initial resistance placed radially from an electrode.
     \item $R_{sri}$ - The initial resistance placed radially from a spacer.
     \item $R_{li}$ - The longitudinal resistance.
-    \item Depth - Number of layers between the electrode/spacer and the common end node in the ladder
+    \item Depth - Number of layers between the electrode/spacer and the common end node in the ladder.
     \item Padding - Number of additional spacing rows to be added to each end of the mesh.
     \end{itemize}
 
@@ -98,7 +125,7 @@ The measurements and determined parameters will be presented in the next chapter
       \item $R_S$ -- The series resistance of the interface
     \end{itemize}
 
-  \subsection{Polar/double-layer effects (constant phase element)}
+  \subsection{Polar/double-layer effects (constant phase element - CPE)}
 
     At the centre of the model is the constant phase element (CPE), or fractional pole capacitor.
     A CPE is a device that behaves like a cross between a capacitor and a resistor.
@@ -159,7 +186,7 @@ The measurements and determined parameters will be presented in the next chapter
     Parameters used to describe the behaviour of the CPE are:
     \begin{itemize}
       \item $m$ -- Used to select resistor-capacitor pairs in each branch and ultimately determines the slope of the CPE's frequency response
-      \item $k$ -- Spacing of R-C branches with frequency. More branches give a better approximation, at a cost of more branches.
+      \item $k$ -- \label{edit:alistair1} Number of R-C branches per decade of frequency. A higher branch density gives a better approximation at the cost of increased computation time.
       \item $|Z|$ @ \SI{1}{\kilo\hertz} -- Sets the vertical position of the magnitude of CPE's frequency response at a known frequency
     \end{itemize}
 
@@ -197,7 +224,8 @@ The measurements and determined parameters will be presented in the next chapter
     $f$ is Faraday's constant divided by the product of the gas constant and the absolute temperature ($F/RT$),
     and $\eta$ is the electrode overpotential.
     This equation describes the forward and reverse electrical current through an electrode by separating the forward and reverse reactions: oxidisation and reduction.
-    Taking a single half of the equation, either the reduction or oxidisation, yields an equation that is similar to that for the current through a diode; an observation made by McAdams and utilised in the Scott-Single model \cite{McAdams1995}.
+    Taking a single half of the equation, either the reduction or oxidisation, yields an equation that is similar to that for the current through a diode.
+    This observation was made by McAdams and utilised in the Scott-Single model \cite{McAdams1995}.
     The standard Ebers-Moll equation of a diode equation is:
     \begin{equation}
       I = i_0\left(e^{V_D / n V_T}-1\right) \approx i_0 e^{V_D / n V_T}

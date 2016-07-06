@@ -10,7 +10,8 @@ If energy harvesting could be done without moving parts, lower component wear sh
 This chapter investigates the feasibility of using streaming cell technology as a means of powering electronic water meters.
 
 \Cref{chap:part1_streamingCellHarvesters} discussed electric power generation from streaming cells.
-A \SI{0.2}{\micro\percent} conversion efficiency from water flow and pressure was demonstrated.
+% A \SI{0.2}{\micro\percent} conversion efficiency from water flow and pressure was demonstrated.
+A \SI{2e-9} conversion efficiency from water flow and pressure was demonstrated.
 Also, streaming voltage was found to be directly proportional to the pressure across a cell.
 Can that pressure dependence be used as a method to meter water consumption while generating power? Probably.
 However, questions like this are only relevant if the harvester is feasible.
@@ -21,7 +22,7 @@ To find that out, the following questions must be answered:
   \item What fraction can be harnessed?
   \item How much power do we need?
 \end{enumerate}
-The second question was answered in \cref{chap:part1_streamingCellHarvesters}, (\SI{0.0002}{\percent}); and the third will be answered in \cref{chap:part1_energyHarvestingRequirements}.
+The second question was answered in \cref{chap:part1_streamingCellHarvesters} (\SI{0.0002}{\percent}), and the third will be answered in \cref{chap:part1_energyHarvestingRequirements}.
 This chapter estimates the quantity of energy available for harvesting in a typical domestic setting.
 
 % Edit checkpoint 2015-09-16 19:14
@@ -32,7 +33,7 @@ This chapter estimates the quantity of energy available for harvesting in a typi
   %
   In New Zealand - Auckland City, Tauranga City, Nelson City, Whangarei District, and the Tasman District have already implemented water metering~\cite{WaterNewZealand2011}.
   For residents of Wellington, New Zealand's capitol city, water metering is optional.
-  In metered locations, meter readers must manually read the display of each meter; a long and laborious task.
+  In metered locations, meter readers must manually read the display of each meter, which is a long and laborious task.
 
   % Automatic meter reading systems
   Automatic meter reading systems (AMR) are an alternative method of collecting that data.
@@ -88,7 +89,7 @@ This chapter estimates the quantity of energy available for harvesting in a typi
     In \cref{chap:part1_streamingCellHarvesters}, energy was converted between fluid-mechanical to electrical using a single channel.
     Harvesting for electronic water meters will require more energy than that channel could produce.
     There are multiple ways of increasing the output power of the channel design used in \cref{chap:part1_streamingCellHarvesters}:
-    the channel can be widened, doubling the width will double the output power; multiple channels can be stacked together, multiplying the output by the number of channels formed.
+    the channel can be widened (doubling the width will double the output power), or multiple channels can be stacked together (this multiplies the output by the number of channels formed).
     Scaling the harvester is not considered a problem, but the pressure drop it develops is.
     High fluid resistance is inevitable since practical efficiencies are only obtained when the internal dimensions are small.
 
@@ -251,7 +252,8 @@ This chapter estimates the quantity of energy available for harvesting in a typi
 
     % Summary
     Knowing the quantity of energy available to a harvester is a key factor determining its feasibility.
-    The efficiency of converting energy into the electrical domain was measured in~\cref{chap:part1_streamingCellHarvesters} and was found to be \SI{0.2}{\micro\percent}.
+    % The efficiency of converting energy into the electrical domain was measured in~\cref{chap:part1_streamingCellHarvesters} and was found to be \SI{0.2}{\micro\percent}.
+    The efficiency of converting energy into the electrical domain was measured in~\cref{chap:part1_streamingCellHarvesters} and was found to be \SI{2e-9}.
     Based on that figure the measured cell would collect \SI{560}{\nano\joule} of energy per day from a two person home.
     Energy output that low is unlikely to be sufficient for automatic meter reading.
     The literature indicates the efficiency measured in~\cref{chap:part1_streamingCellHarvesters} was low.

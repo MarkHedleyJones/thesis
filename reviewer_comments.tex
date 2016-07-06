@@ -1,0 +1,264 @@
+%!TEX root = thesis.tex
+
+\chapter*{Reviewer Comments}
+\section*{Alistair McEwan}
+\begin{enumerate}
+  \item Introduction -- provide more detail about the motivation for water meters and electrodes and try to explain the link being impedance measurements. Provide a table of energy efficiencies obtained previously include a table of efficiencies - predicted and measured with different effects: stern conductance, hydrodynamic slip etc Mention saline concentrations investigated.
+
+    \textbf{\textcolor{OliveGreen}{
+      I have expanded the introduction with a statement on the logic behind why I would apply double layer harvesting for water metering.
+      The link between electrode modelling and energy harvesting is not as simple as impedance measurement, it really is just the concept of double layers that links to two.
+      I am unsure what it is exactly your looking for in this comment.
+      I am hesitant to add a table in the introduction that refers to phenomena such as hydrodynamic slip or stern conductance when those are reasonably complex interactions that the reader will be eased into later.
+    }}
+
+  \item Page 14 -- Give numerical values on how much double layers overlap and how inaccurate models of streaming. Was saline used in your measurements and could it account for the linear effect found by Gu and Li  (1mmol).
+
+    \textbf{\textcolor{OliveGreen}{
+      I am a little confused here, are you referring to the measurements I make in Chapter 3?
+      Perhaps you mean in the sentences containing the phrase ``begin to overlap''.
+      If the former, I do not have a good handle on the value of the zeta potential my cells.
+      If the latter, they don't overlap - I'm referring to the point they meet.
+      I did not use a saline solution in any of the Streaming Cell measurements, that would have been interesting, but did not have the equipment at the time.
+    }}
+
+  \item Page 17 -- a value of 0.01\% appears very low considering past literature
+
+    \textbf{\textcolor{OliveGreen}{
+      The working fluid of the harvester is tap water.
+      Of the efficiencies presented, only one of those results used tap-water - which was the figure of $0.01\%$ by J. Yang et al.
+      I have made that clearer in on page 17.
+    }}
+
+  \item Page 31 -- Interesting that fig 3.2 could not be reproduced and measured, what does the Pmax from eq 3.11 calculate as? Was the water pressure recorded in your or their experiment?
+
+    \textbf{\textcolor{OliveGreen}{
+      Yes it was disappointing not to be able to reproduce those measurements.
+      As mentioned in the thesis, a summer research student Jonathon McMullan conducted those experiments and I am not aware of applied pressure being recorded.
+      I am not sure exactly what you mean by what Eq. (3.11) calculates as, it simply relates the geometric properties of a rectangular streaming to the zeta potential, conductivity and viscosity
+    }}
+
+  \item Page 84 -- How many sections are required to represent the CPE over  1mHz to 1MHz 27? or 24?
+
+    \textbf{\textcolor{OliveGreen}{
+      I've used a $k$ of 3 branches per decade of frequency.
+      With 1mHz--1MHz being a span of 9 decades of frequency - 27 branches are used to represent a CPE in that frequency band.
+      I have reworded the explanation of $k$ on page \pageref{edit:alistair1} which will hopefully make that clearer to the reader
+    }}
+
+  \item Page 107 -- these transient effects could be capacitive sharing between CPEs on different electrodes. Might be removed by switching electrodes to ground in between measures to quickly discharge. However the step and wait method and faradic guideline of 0.9V is interesting and should be published to benefit others.
+
+    \textbf{\textcolor{OliveGreen}{
+      That is an interesting idea and would be interesting to try out.
+      The unused electrodes would be contributing to the system, if nothing other than offering alternate conduction paths.
+      You're right, essentially I may have been trapping charge on them causing the artefacts I observed.
+    }}
+
+  \item Page 117 -- There are many reports that tissue is reactive and anisotropic so the hypothesis that the results should batch PBS is not quite correct. It may be that if the CSF was drained from the sheep it may better match PBS. There are also many reports of impedance following death that also support the finding that there are little changes up to 30 mins E.g. Gabriel \& gabriel
+
+    \textbf{\textcolor{OliveGreen}{
+      That is interesting. In retrospect, the assumption that the two situations would match is naive - but it was important to do the experiment to quantify the difference.
+      Extracting the CSF for measurement would be an interesting experiment, especially since it could then easy be repeated over the course of a couple of days as it could be removed from the operating theatre.
+    }}
+
+  \item Page 120 -- The mixture with cornflour is certainly interesting and should be published
+
+    \textbf{\textcolor{OliveGreen}{
+      Yes, it was surprising how close I could get the two to match when I found the correct ratios of salt to cornflour. I will definitely consider publication.
+    }}
+\end{enumerate}
+\section*{Phil Bones}
+  \subsection*{General Comments}
+    \begin{enumerate}
+      \item The candidate has an unconventional approach to the use of tense. In reviewing the literature he often uses the present tense where many would use the past tense; despite this being somewhat unusual, I find the result is easy to read and unambiguous. In chapters on the experimental work, I feel that the tense should be past when referring to the work which has been performed; the candidate is not consistent on this.
+
+      \textbf{\textcolor{OliveGreen}{
+        Thank you - I had not noticed how inconsistent that was. I have rewritten my experimental sections to be past-tense.
+      }}
+
+      \item The candidate has incorrectly used the semicolon in a number of places, especially early in the thesis. The first example I noted is in the third paragraph,e third sentence. The correct punctuation in this case is: ``...medical implants and, by extension, anybody who relies on the implants themselves.'' Semicolons should only be used to separate items in a list or to separate two closely related sentences.
+
+      \textbf{\textcolor{OliveGreen}{
+        Yes I have. Semi-colons removed. -- Mark, there are still some to do - search and replace!
+      }}
+
+      \item The reference numbering appears to be in error. This is first noticeable in Chapter 2, but seems to occur throughout the thesis. Needless to say, this must be corrected.
+
+      \textbf{\textcolor{OliveGreen}{
+        Reference numbering is now in order of appearance in the text
+      }}
+
+      \item I suggest removing the list of figures and tables following the Table of Contents. I realise that this might be requested by the University, but I personally find it a waste of paper (bytes).
+
+      \textbf{\textcolor{OliveGreen}{
+        Done
+      }}
+
+    \end{enumerate}
+  \subsection*{Section by section}
+    \begin{enumerate}
+      \item Section 2.1.3. The use of ``voltage'' and ``potential'' becomes a little confused in discussing the Zeta potential.
+      \emph{Question:} Figures 2.6 and 2.7 imply that a ``knee'' in the potential vs distance curve is the location of $\zeta$. Is this how V($\zeta$) is measured?
+
+      \textbf{\textcolor{OliveGreen}{
+        I have changed occurrences of ``potential'' to voltage where possible to be more conscience.
+        I am not sure if there is a ``knee'' at the zeta potential. I imagine this would be a very difficult measurement to make, and may vary depending on the specific chemistry.
+        According to~\cite{Bard1993} most of what is known about the structure of the double layer is based on models, not measured data.
+        V($\zeta$) seems to be measured mostly using electro-kinetic techniques, such as electrophoresis, electro-osmosis, and streaming potential.
+      }}
+
+      \item Section 2.2. When the streaming cell geometry is first introduced, the terms ``width'' , ``length'' and ``height'' are not defined. The precise meanings of these do no become clear until later sections. I would argue that ``depth'' would be a better term to use that ``height'' in any case.
+
+      \textbf{\textcolor{OliveGreen}{
+        A new diagram (\Cref{fig:width_height_length}) has been added that clarifies these dimensions.
+      }}
+
+      \item Section 2.2.1, page 22. ``Hydrodynamic slip'' is introduced.
+      \emph{Question:} Can you please explain more fully what is meant by the term and the mechanism that is understood to govern it?
+
+      \textbf{\textcolor{OliveGreen}{
+        I expect to answer this question during the oral examination. If requested, I can expand more on this phenomenon in the text.
+      }}
+
+      \item Section 3.1.1, Eq. (3.1). A diagram would be very helpful to clarify the quantities in the equation, especially $\delta$. The units of the various quantities are needed too. The use of ``width to height ratio'' is again problematic without proper definitions of the quantities.
+
+      \textbf{\textcolor{OliveGreen}{
+        Have added a reference to the defining diagram when explaining the terms used in the equation. Have reworded the sentence containing ``width to height ratio'' to be a little clearer, which combined with the diagram should solve this ambiguity.
+      }}
+
+      \item Section 3.3.1 Figures 3.9 implies that tap pressure and a laboratory valve alone were used to control the pressure, yet fig. 3.10 shows a relatively uniform set of pressure settings.
+      \emph{Question:} How was this achieved and wouldn't a motor-controlled syringe or peristaltic pump have been better?
+
+      \textbf{\textcolor{OliveGreen}{
+        Measurements not necessarily recorded monotonically.
+        Python script picks values from a dataset which included the tap opening and closing.
+        I will explain.
+      }}
+
+      \item Section 3.4.2. The (very low) efficiency is expressed here and subsequently in units of ``$\mu \%$''. I suggest 2.8x10-9 would be a better way of expressing the result.
+
+      \textbf{\textcolor{OliveGreen}{
+        Sure.
+        I personally prefer it as a percentage representation, but don't mind changing it.
+      }}
+
+      \item Section 3.4.2 Figure 3.13 represents a remarkable result in my opinion.
+      \emph{Question:} What caused the small glitches and how exactly was such apparently high precision achieved?
+
+      \textbf{\textcolor{OliveGreen}{
+        The glitches were an environmental issue, most likely someone upstairs flushing a toilet or washing their hands (or both).
+        The high precision was achieved with the use of the E5270B mainframe and the `source-measurement-units' it contained. They use tri-axial cables (for extra shielding), two per channel (one as a force line, the other as a sense line), and the measurement unit has \SI{13}{\giga\ohm} of internal resistance. Essentially, I used a very expensive piece of measurement hardware to measure it.
+      }}
+
+      \item Chapter 4 introduction: The efficiency from Chapter 3 is here incorrectly stated. Again, better would be 2.8x10-9.
+
+      \textbf{\textcolor{OliveGreen}{
+        I feel ``incorrect'' is a bit strong (presuming you are referring to the use of percentage representation and the SI prefix).
+        In either case, I have changed all occurrences of \SI{}{\micro\percent} to \SI{e-9}.
+      }}
+
+      \item Chapter 4 presents a credible analysis of a highly variable quantity: domestic water use.
+
+      \textbf{\textcolor{OliveGreen}{
+        Thank you.
+      }}
+
+      \item Section 5.2. The issue of frequency needs to be better treated.
+      \emph{Question:} What is the basis for the comment about the use of 433MHz (page 84).
+
+      \textbf{\textcolor{OliveGreen}{
+        Yes, that was a little light.
+        Sensible transmitter frequency choices (those that are unlicensed globally) are \SI{433}{\mega\hertz}, \SI{868}{\mega\hertz}, \SI{915}{\mega\hertz}, \SI{2.4}{\giga\hertz}.
+        Of those, the lower frequencies tend to have better ground/building penetration on average.
+        My interpretation is that the larger wavelength makes it less susceptible to direct reflection by medium sized objects (less than \SI{300}{\milli\meter}).
+        I have added two new references supporting the use of \SI{433}{\mega\hertz} and expanded on my logic for favouring it.
+      }}
+
+      \item Section 7.1. In the  third paragraph, the electrical model is introduced. It should be explained here much more fully, before the individual components are analysed in detail. For one thing ``CPE'' isn't even mentioned at this point. In particular, the  content of Section 7.1.1 seems inappropriate before the model itself is discussed.
+
+      \textbf{\textcolor{OliveGreen}{
+        A light, high-level introduction to each of the components in the model has been added at the beginning of Section 7.1.
+      }}
+
+      \item Section 8.1. I do not understand what appears in Figure 8.2.
+      \emph{Question:} What interpretation can you put on the differences here between measured and simulated results?
+
+      \textbf{\textcolor{OliveGreen}{
+        Figure 8.2 is a simpler version of Figure 8.20.
+        They are not simple graphs to interpret, but Section 8.1.1 and Figure 8.1 do explain how the measurements on those graphs are made.
+        The graphs do not show simulated results, just the result of an optimised fit using the parameters found in Table 8.2.
+        Figure 8.2 is essentially saying to the reader ``look how close I got the my optimised parameter values to match the trans-resistance measurements''; it's a verification graph.
+      }}
+
+      \item Section 8.1.3. The results in Figure 8.14 are intriguing.
+      \emph{Question:} While a form of explanation is offered for the phenomenon in Fig. 8.14, why should this happen at 1V and not at some other voltage?
+
+      \textbf{\textcolor{OliveGreen}{
+        Yes, I also find them intriguing.
+        I presume you are referring to the collapse of the current profile after 600 seconds?
+        I don't believe there is anything particularly special about \SI{1}{\volt}, that's just where the effect has manifested itself during these measurements.
+        Figure 8.15 also shows shows this phenomenon, but in terms of voltage (I also have some other graphs).
+        Here is my theory explained in a bit more detail than it is in the thesis.
+        \begin{enumerate}
+          \item A voltage below \SI{0.5}{\volt} between electrodes draws ions from the bulk to the electrode's surface.
+          Really there is a voltage of \SI{0.25}{\volt} between the solution bulk and a single electrode, but I'll refer to electrode-to-electrode voltages.
+          \item Time (and most probably temperature) determine the extent in which ions drawn to the electrode pack themselves into layers at the surface)
+          \item Above \SI{0.5}{\volt} a measurable amount of current is being exchanged at the electrode's surface. These are Faradaic reactions where the products are ejected from the packed layer and new inputs diffuse their way in.
+          \item At a voltage ($V_{burn}$) between \SI{0.5}{\volt} and \SI{1.05}{\volt}, for the solutions I tested, the new inputs aren't making it into the layer as fast as the Faradaic products are being ejected.
+          There are likely other things going on here too, such as hydrogen bonding to the electrode surface which may reduce effective surface area.
+          The exact value of $V_{burn}$ will depend on the concentration of the bulk, the geometry of the electrodes, turbulence in the electrolyte, vibration in the electrode, temperature, stray voltages in the electrode itself (e.g. 50 Hz), the extent in which the layer was able to pack in beforehand(memory), random structure in the layer advantageous to ion exchange. It is a delicate equilibrium tipping point so every factor that in some way affects the system will determine the voltage that this happens at, and is likely to be moving around as conditions change - VERY COMPLEX... CHAOS!
+          \item The further that the electrode voltage is pushed above $V_{burn}$ determines the time to transition, which is what appears at the end of Figure 8.14. The fact that they all occur after a transition to \SI{0.95}{\volt} was most likely a consequence of the measurement setup. If I had held the system at \SI{0.9}{\volt} for long enough (and held all the other factors constant), some (maybe even all) of the concentrations would have exhibited that conduction collapse eventually.
+        \end{enumerate}
+      }}
+
+      \item Section 8.2. On page 128 two sheep are mentioned; it is not until page 131 that the fact that usable results were only available for the second sheep appears. This should be clarified before presenting the first results in the chapter.
+
+      \textbf{\textcolor{OliveGreen}{
+        I have reworded the first mention of two sheep to bring this to the readers attention before presenting results. (see page \pageref{edit:newSentence})
+      }}
+
+      \item Section 8.2.2. \emph{Question:} Is there a research question here? It looks like an additional procedure added because it could be.
+      \textbf{\textcolor{OliveGreen}{
+        I'm not sure exactly what you are referring to here. Topic of discussion during defence perhaps.
+      }}
+
+      \item The use of cornflour may have been inspired it seems.
+      \emph{Question:} How random was the choice of cornflour as one of the ingredients? How exhaustive was the investigation?
+      \textbf{\textcolor{OliveGreen}{
+        It was as random as a trip to the supermarket to collect the ingredients listed on page 122 (now \pageref{review:listOfIngredients}).
+        My supervisor had suggested filling the liquid with something inert, perhaps cellulose.
+        I did get some powered cellulose from the University that I tried in one of my experiments but it didn't mix with water -- just sank to the bottom or floated on top.
+        I have some datasets showing my ``test and see'' optimisation method that got me to the final mix of cornflour and salt I can show.
+      }}
+
+    \end{enumerate}
+  \subsection*{Minor corrections}
+  \textbf{\textcolor{OliveGreen}{
+    None of these have been addressed yet.
+  }}
+    \begin{enumerate}
+      \item Page 8, para 2, line 2: ``charge''
+      \item Page 10, line 3: ``Helmholtz''.
+      \item Page 26, line 5: ``differential''.
+      \item Page 32, line 3: ``behaviour  of''.
+      \item Page 10: ``...is given by eq.(3.3)''.
+      \item Page 33, last paragraph: Leave this until after the analysis in the succeeding section.
+      \item Page 34, after eq.(3.4): ``where ...''
+      \item Page 35, line 4: ``resistances''.
+      \item Page 39, para 3, line 9: ``welded''.
+      \item Page 53, last line of Section 3.5: ``cell's internal resistance.''
+      \item Page 56, ``capital city''.
+      \item Page 65, 3rd to last line: ``... efficiency ... was lower that others had suggested.''
+      \item Page 76, 4 line from bottom: comma after ``insightful''.
+      \item Page 81, line 5: no apostrophe in ``its''
+      \item Page 82,86: ``form'' appears where ``from'' is meant
+      \item Page 86, second line to last sentence: The 280J should refer to the \emph{harvestable energy} per day.
+      \item Page 89, line 9: ``this thesis'', I assume?
+      \item Page 91, caption to Figure 7.1: Replace the comma with a semicolon.
+      \item Page 91, line 3: ``...the bulk resistivity of the electrolyte.''
+      \item Page 95, start of 2nd para: ``SPICE and other commonly used circuit simulators do not support...''
+      \item Page 114: Figure 8.6 should have a key.
+      \item Page 120, caption: ``to multiple step responses''
+      \item Page 123, item 1: ``The saline concentrationn ...''
+      \item Page 123, item 2: ``Faradaic current draw is directly related to saline concentration above 1.5 V''.
+    \end{enumerate}

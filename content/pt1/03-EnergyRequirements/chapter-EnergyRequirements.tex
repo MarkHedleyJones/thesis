@@ -402,12 +402,14 @@ This estimation will reveal how much further the cells built earlier would need 
       \caption{\label{fig:Energy-consumed-XBee}Graph of power draw from a Digi International Xbee Series 2 transceiver module versus time during a wake \& transmit sequence.}
     \end{figure}
 
-    The RFM12B was operated at 433MHz, a frequency that is expected to increase the transmission through walls and soil.
+    The RFM12B operates with a carrier frequency of \SI{433}{\mega\hertz}, a globally available and license-free frequency.
+    It has been shown that frequencies in the \SI{300}--\SI{400}{\mega\hertz} range reduce the path loss in buried transmitter situations to a level that allows feasible communication~\cite{Li2007}.
+    Additionally, \SI{433}{\mega\hertz} has the ability to penetrate concrete and water~\cite{Arsalan2012}.
     It has a maximum output power of \SI{5}{\decibel m} (\SI{3.2}{\milli\watt}) at this frequency.
     The Xbee has a maximum output power of \SI{0}{\decibel m} (\SI{1}{\milli\watt}) and operates at \SI{2.4}{\giga\hertz}.
     \Cref{fig:Energy-consumed-RFM12B,fig:Energy-consumed-XBee} show the captured power consumption during the tests.
     The RFM12B used about half as much energy sending the same data as the Xbee.
-    Combined with its ability to operate at 433 MHz, the RFM12B is a sensible choice for the electronic water meter.
+    Combined with its favourable communication frequency, the RFM12B is a sensible choice for the electronic water meter.
     In total the RFM consumed \SI{6.71}{\milli\joule} and the Xbee consumed \SI{12.3}{\milli\joule}.
     Adjusting these figures for the worst case (multiplying by one hundred) gives \SI{671}{\milli\joule} for the RFM12B and \SI{1.23}{\joule} for the Xbee.
 

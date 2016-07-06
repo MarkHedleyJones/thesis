@@ -7,7 +7,7 @@
 
   Modelling and measuring the electrical properties of interfacial double layers draws on both electronic and chemical concepts.
   Those with an electronic background are unlikely to be familiar with double layers.
-  This section provides background on what a double layer is and how one is formed; it begins with a discussion of liquids.
+  This section provides background on what a double layer is and how one is formed, beginning with a discussion of liquids.
 
 
   \subsection{Formation}
@@ -22,7 +22,7 @@
         \caption{Graphic showing a representation of a water molecule}
         \label{fig:waterMolecule}
     \end{figure}
-    Double-layers are organised layers of liquid; generally broken into two layers.
+    Double-layers are organised layers of liquid that are comprised of two distinct layers.
     Because double layers are a property of liquids, and most common liquids are water based, the properties of water is an appropriate place to start.
     The following properties of water are not necessary for the formation of double layers, but knowing of them helps build a mental model of the system.
     At the microscopic scale, individual atoms and molecules within liquids interact with complexity.
@@ -53,7 +53,8 @@
     'Solid' may refer to the walls of a container or particulates suspended in solution.
     When a particulate is suspended throughout a solution it is referred to as an emulsion.
     For example, milk is such an emulsion of butterfat in water.
-    \Cref{fig:butterfat} shows the structure of a butterfat molecule; a long structure that can be approximated as being a solid.
+    \Cref{fig:butterfat} shows the structure of a butterfat molecule.
+    A butterfat molecule is a long structure that can be approximated as being a solid.
     The stability of an emulsion, such as milk, depends on the strength of the double layers that encapsulate each particle.
     These double layers shield the molecules or particles from one another electrically.
     By shielding them from each other they are unable to collect and bond together.
@@ -132,11 +133,11 @@
     This meant that ions in the layer were not fixed and that the density of charge in the layer could vary.
     Figure~\ref{fig:doubleLayerModel_gouyChapman} illustrates the concept by the lack of ions bound to the surface and the gradual decline in counter-ion concentration with distance from the surface.
     The Goüy-Chapmam Model accounts for the observed variation in capacitance by distributing charge in the liquid as a concentration gradient from the surface of the solid.
-    The layer is free to change its concentration profile in response to applied electric potentials and ionic concentration.
-    In the case of a higher electrostatic potential, the layer is pulled closer to the surface, becoming thinner.
+    The layer is free to change its concentration profile in response to applied voltages and ionic concentration.
+    In the case of a higher voltage, the layer is pulled closer to the surface, becoming thinner.
     In the case of a higher electrolytic concentration, the layer is more concentrated with a higher charge density, again becoming thinner.
     The Goüy-Chapmam Model predicts the change in capacitance by growing or shrinking the size of the layer, but it still fails to predict the capacitance at high ionic concentrations.
-    This is in part because it makes no account for the physical size of the ions in the electrolyte; instead modelling them as point charges~\cite{Bard1980}.
+    This is in part because it makes no account for the physical size of the ions in the electrolyte; it models them as point charges~\cite{Bard1980}.
     Ions in this model can get infinitely close to the surface regardless of their size.
     This becomes a problem at high ionic concentration where the surface becomes crowded.
 
@@ -172,15 +173,15 @@
     In this layer the ions are immobile due to the electrical strength at the surface.
     Surrounding this layer is the diffuse layer.
     Ions here are still drawn to the solid, but not so strongly as to be immobile.
-    The electric potential in this layer decays from that of the compact layer to the potential of the bulk of the solution.
+    The voltage in this layer (relative to the bulk of the solution) decays from that at the compact/diffuse layer boundary to zero within the solution bulk.
     The Zeta potential is the voltage between those two points, i.e., it is the voltage at the plane where the diffuse layer meets the compact layer - relative to the voltage in the bulk of the solution.
     The dividing plane between the two layers is called the shear plane.
     It represents the nearest distance from the surface at which the layer can move laterally.
     The shear plane is an important parameter with linear geometries, such as the inside of a pipe, as it represents the true no-slip boundary.
 
     The thickness of a typical double layer is between \SI{1}-\SI{100}{\nano\meter}~\cite{Jiang2010}, as defined by its Debye length~\cite{Israelachvili2011}.
-    The Debye length is the distance between the interface and the point in the liquid where the electric potential is no longer affected by the charged interface.
-    As mentioned in the previous section, this varies based on the ionic concentration of the solution and the potential at the solid's surface.
+    The Debye length is the distance between the interface and the point in the liquid where the voltage is no longer affected by the charged interface.
+    As mentioned in the previous section, this varies based on the ionic concentration of the solution and the charge at the solid's surface.
 
 
   % Marcus Wilson tore this apart, don't even mention computer simulation.
@@ -273,7 +274,7 @@
   A diagram showing the channel geometry, but with pressure applied and a voltage gradient generated is shown as figure~\ref{fig:doubleLayerInChannel_withPressure}.
   The two walls and channel can now be referred to as a streaming cell.
   Streaming cells are able to continuously separate ions from an electrolyte fluid.
-  Electrical potential across a streaming cell increases as those ions are pumped through.
+  The voltage across a streaming cell increases as those ions are pumped through and collect on each side.
   This only works when the solid's surface has charge at its surface, necessary to create the double layer in the first place.
 
   % Edit checkpoint 2015-09-09 20:14
@@ -328,9 +329,16 @@
     They show how the double layer affects the level to which liquid can permeate a material populated with cavities.
     Together these three papers mark the beginning of research into streaming cells.
 
+    \begin{figure}
+      \centering
+      \includegraphics{content/background/width_height_length}
+      \caption{\label{fig:width_height_length}Diagram showing how the properties `width', `height', and `length' refer to the geometry of a streaming cell or micro-channel in this thesis.}
+    \end{figure}
+
     % Renewed interest and dimensions
     There appears to be little published research into streaming cells since then until 2003, when a surge of papers related to optimal dimensions of streaming cells appear.
     An analysis relating energy conversion efficiency to the length of a streaming cell channel indicated that short cells are the most efficient~\cite{Yang2003}.
+    \Cref{fig:width_height_length} shows the meaning of `width', `height', and `length' when referring to streaming cells or micro-channels in this thesis.
     However, more recent work by Chang and Yang shows a decrease in conversion efficiency at maximum power when the channel length is low~\cite{Chang2009}.
     This work suggests there is an optimum channel length, which will also be dependent on the conductivity of the working fluid.
     Investigation by Daiguji et al.\ into the relationship between the Debye length of the double layer and streaming cell conversion efficiency found that a channel is most efficient when its height is twice that of the Debye length~\cite{Daiguji2004}.
@@ -340,7 +348,7 @@
     Many valuable contributions were detailed in this paper, namely they:
     \begin{enumerate}
       \item confirmed that reversing the polarity of surface potential reverses the direction of the streaming current.
-      \item found that the maximum conversion efficiency corresponded to channels where double layers begin to overlap; confirming the relationship put forward by Daiguji et al.\ ~\cite{Daiguji2004}
+      \item found that the maximum conversion efficiency corresponded to channels where double layers begin to overlap. This confirms the relationship put forward by Daiguji et al.\ ~\cite{Daiguji2004}
       \item showed that boundary conditions involving constant surface potentials, used up to this point to model streaming, are inaccurate.
       \item predicted a maximum energy conversion efficiency of $\sim$\SI{6}{\percent} for potassium chloride solutions of \SI{1e-5}{\mole} in silica channels of height \SI{145}{\nano\meter}.
     \end{enumerate}
@@ -359,19 +367,57 @@
     They suggest that this is the reason for poor measured efficiencies in light of the much higher predicted values.
 
     % Hydrodynamic slip
+    % \begin{figure}
+    %   \centering
+    %   \includegraphics[height=6cm]{content/pt1/graphics/HydrodynamicSlip}
+    %   \caption[Diagram showing hydrodynamic slip inside a channel cavity.]{\label{fig:HydrodynamicSlip}Diagram showing hydrodynamic slip inside a channel cavity, where $b$ is the slip length. Arrows indicate flow velocity at particular points.}
+    % \end{figure}
+
+    % \begin{figure}
+    %   \begin{subfigure}{0.3\textwidth}
+    %     \centering
+    %     \includegraphics[height=6cm]{content/background/graphics/HydrodynamicSlip_negativeLength}
+    %     \caption[Diagram showing hydrodynamic slip inside a channel cavity.]{\label{fig:HydrodynamicSlip_negative}Negative slip}
+    %   \end{subfigure}
+    %   \begin{subfigure}{0.3\textwidth}
+    %     \centering
+    %     \includegraphics[height=6cm]{content/background/graphics/HydrodynamicSlip_negativeLength}
+    %     \caption[Diagram showing hydrodynamic slip inside a channel cavity.]{\label{fig:HydrodynamicSlip_zero}No slip}
+    %   \end{subfigure}
+    %   \begin{subfigure}{0.3\textwidth}
+    %     \centering
+    %     \includegraphics[height=6cm]{content/background/graphics/HydrodynamicSlip_negativeLength}
+    %     \caption[Diagram showing hydrodynamic slip inside a channel cavity.]{\label{fig:HydrodynamicSlip_positive}Positive slip}
+    %   \end{subfigure}
+    %   \caption{Plots}
+    %   \label{fig:HydrodynamicSlip}
+    % \end{figure}
+
     \begin{figure}
       \centering
-      \includegraphics[height=6cm]{content/pt1/graphics/HydrodynamicSlip}
-      \caption[Diagram showing hydrodynamic slip inside a channel cavity.]{\label{fig:HydrodynamicSlip}Diagram showing hydrodynamic slip inside a channel cavity, where $b$ is the slip length. Arrows indicate flow velocity in each of the three situations.}
+      \includegraphics[width=251.6pt]{content/background/graphics/HydrodynamicSlip_negativeLength}
+      \caption[Diagram showing hydrodynamic slip inside a channel cavity.]{\label{fig:HydrodynamicSlip_negative}Diagram showing negative slip along a boundary. The direction of flow is upward. The parabola illustrates the flow profile, with the arrows indicating fluid velocity.}
     \end{figure}
+    \begin{figure}
+      \centering
+      \includegraphics[width=251.6pt]{content/background/graphics/HydrodynamicSlip_zeroLength}
+      \caption[Diagram showing hydrodynamic slip inside a channel cavity.]{\label{fig:HydrodynamicSlip_zero}Diagram showing the no slip boundary condition along a boundary. The fluid does not move at the wall.}
+    \end{figure}
+    \begin{figure}
+      \centering
+      \includegraphics[width=251.6pt]{content/background/graphics/HydrodynamicSlip_positiveLength}
+      \caption[Diagram showing hydrodynamic slip inside a channel cavity.]{\label{fig:HydrodynamicSlip_positive}Diagram showing positive slip along a boundary. Fluid at the boundary moves relative to the wall.}
+    \end{figure}
+
     Most recently, the concept of hydrodynamic slip has been applied to streaming cells as a way of increasing conversion efficiency.
-    Estimates using mathematical models predicted conversion efficiencies between \SI{30}{\percent} and \SI{70}{\percent}~\cite{Pennathur2007, Davidson2008a, Ren2008}.
-    Hydrodynamic slip refers to the ability of a fluid to move perpendicular to a boundary where the two meet.
+    Estimates from mathematical models predict conversion efficiencies between \SI{30}{\percent} and \SI{70}{\percent}~\cite{Pennathur2007, Davidson2008a, Ren2008}.
+    Hydrodynamic slip refers to the ability of a fluid to move, or slip, perpendicular to a boundary (such as the wall of a pipe).
     Slip is advantageous to streaming cells because it permits ions in the Stern layer to move relative to the wall.
-    Hydrodynamic slip has an associated length (the slip-length), which refers to an imaginary distance into the solid wall where the traditional `no-slip' boundary condition would occur (refer to~\cref{fig:HydrodynamicSlip}).
-    A `no-slip' boundary condition dictates that fluid at the boundary of a solid must have zero velocity.
+    Hydrodynamic slip has an associated length (the slip-length), which refers to the distance between the point at which the parabolic flow profile drops to zero and the wall.
+    \Cref{fig:HydrodynamicSlip_zero} illustrates a typical `no-slip boundary condition' where the fluid at the solid/fluid boundary is static.
     This condition, along with viscosity, is responsible for the parabolic flow profile a fluid takes as it moves through pipes.
-    An issue surrounding slip was illustrated by Eijkel who showed that a channel's zeta potential and its slip length are linked~\cite{Eijkel2007}.
+    As the highest counter-ion density is found at the boundary, where the flow is stationary, much of the charge a streaming cell is designed to pump sits dormant.
+    Eijkel showed that a channel's zeta potential and its slip length are linked~\cite{Eijkel2007}.
     The general problem with slip-based mechanisms is that a high zeta potential is optimal for double layer formation, however it also promotes wetting.
     Wetting and hydrodynamic slip are related to each other by the strength of attraction between a liquid and a solid.
     To explain, the terms hydrophobic and hydrophilic are used to describe surfaces that repel and attract water.
@@ -407,7 +453,7 @@
     However, measured conversion efficiencies as reported thus far are:
     \begin{itemize}
       \item ``far less than \SI{1}{\percent}'' forcing potassium chloride through a porous glass plug having pores in the range \SI{1}-\SI{1.6}{\micro\meter}~\cite{Olthuis2005}.
-      \item 0.01\% by forcing water through porous glass with pore sizes from 10\thinspace--\SI{16}{\micro\metre}~\cite{Yang2003}.
+      \item 0.01\% by forcing tap water through porous glass with pore sizes from 10\thinspace--\SI{16}{\micro\metre}~\cite{Yang2003}.
       \item 0.8\% by forcing pure water through a ceramic rod populated with \SI{6}{\micro\metre} pores~\cite{Yang2004}.
       \item 3\% by forcing a sodium chloride solution through a \SI{75}{\nano\metre} by \SI{50}{\micro\metre} silica channel~\cite{Heyden2007}.
       \item 0.77\% by forcing a sodium chloride solution through a \SI{200}{\nano\metre} pore in an alumina membrane~\cite{Lu2006}.
@@ -436,7 +482,7 @@
     In summary, the finding that maximum conversion efficiency occurs at low ionic concentration supports the use of tap-water as a working fluid.
     Using glass as a substrate seems to be a suitable choice, which is both cost effective and easy to source.
     The dimensions of channels found in the literature suggest that fabricating trial cells is feasible with the equipment available.
-    A conversion efficiency of \SI{0.01}{\percent} should be achievable using a porous glass plug.
+    A conversion efficiency of \SI{0.01}{\percent} should be achievable with the use of a porous glass plug when tap-water is used as the working fluid.
     This efficiency will be used a baseline to compare measured efficiency from fabricated cells.
     That concludes background material on streaming cells for energy harvesting.
 
@@ -491,7 +537,7 @@
   It shows interactions between polar molecules, between polar molecules and ions, surfactants at the interface, an imperfect solid/liquid boundary, and the Stern layer.
   The complexity of interactions that happen at the interface are what make is so difficult to model.
   % Edit checkpoint 2015-09-12 11:00
-  Complexity is not only limited to the electrolyte; the geometries of both the electrodes and the environment containing the electrolyte must also be taken into consideration.
+  Complexity is not only limited to the electrolyte as the geometries of both the electrodes and the environment containing the electrolyte must be taken into consideration.
 
   \begin{figure}
     \begin{center}
@@ -531,7 +577,7 @@
       \phi &= m \pi / 2\\
       W_W &= k/\omega^m
     \end{align}
-    where $m$ and $k$ depend on the type of metal used; $m$ being somewhere between \SI{0.15} and \SI{0.32}~\cite{Fricke1932}.
+    where $m$ and $k$ depend on the type of metal used, with $m$ being somewhere between \SI{0.15} and \SI{0.32}~\cite{Fricke1932}.
     These relationships applied for stimuli in the frequency range of \SI{100}-\SI{3500}{\hertz}, but still does not account for the DC situation.
     In 1936 Murdock and Zimmerman publish empirical data in support of Fricke's phase relation~\cite{Murdock1936}.
     Over the next fifty years, numerous studies of the electrode interface and its corresponding electrical equivalent circuit have been made~\cite{Randles1947,Epelboin1973,Sluyters-Rehbach1970}.
