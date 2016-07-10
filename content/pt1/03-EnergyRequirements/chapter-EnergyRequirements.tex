@@ -107,7 +107,7 @@ This estimation will reveal how much further the cells built earlier would need 
       The Microchip PIC12F675 fell within specification\cite{PIC12F675} and was clearly ahead in terms of minimum current draw during sleep.
 
       There appears to be a trade-off between the two Atmel processors in the way of minimum power consumption and minimum response to Vdd.
-      The ATtiny13V required approximately 2.7 times less power than the ATtiny25V at 1.8V, but above 2.5V the ATtiny25V is more draws less current.
+      The ATtiny13V required approximately 2.7 times less power than the ATtiny25V at 1.8V, but above 2.5V the ATtiny25V draws less current.
 
       As the PIC16F1827 was so far off its specified value, measurements were repeated numerous times using code written in both assembler and HI-TECH C.
       A total of five different processors were tried, all giving the same result.
@@ -254,7 +254,7 @@ This estimation will reveal how much further the cells built earlier would need 
 
     \subsubsection*{Joules of energy consumed per instruction cycle\label{sub:Joules-of-energy}}
 
-      A convenient, and more insightful way to interpret the previous processing power consumption graphs is to calculate the energy spent per instruction performed.
+      A convenient, and more insightful, way to interpret the previous processing power consumption graphs is to calculate the energy spent per instruction performed.
       The energy cost of an instruction cycle can be calculated using equation \ref{eq:JPI calculation}.
 
       \begin{equation}

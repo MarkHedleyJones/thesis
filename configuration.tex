@@ -74,6 +74,29 @@
 %   {\def\RSlemtxt{lemma~}\newref{lem}{name = \RSlemtxt}}
 %   {}
 
+% \newcommand{\dplot}[2]{
+% \begin{figure}
+%     \centering
+%     \includegraphics{content/appendices/biologicalSolutions/graphics/#1_mag}
+%     \caption{Impedance magnitude versus frequency of #2}
+% \end{figure}
+% \begin{figure}
+%     \centering
+%     \includegraphics{content/appendices/biologicalSolutions/graphics/#1_phase}
+%     \caption{Impedance phase versus frequency of #2}
+% \end{figure}
+% }
+
+
+\newcommand{\dplot}[2]{
+\begin{figure}
+  \centering
+  \subcaptionbox{Magnitude vs. frequency}{\includegraphics[width=0.49\linewidth]{content/appendices/biologicalSolutions/graphics/#1_mag}}
+  \subcaptionbox{Phase vs. frequency}{\includegraphics[width=0.49\linewidth]{content/appendices/biologicalSolutions/graphics/#1_phase}}
+  \caption{#2}
+\end{figure}
+}
+
 
 \@ifundefined{date}{}{\date{}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.

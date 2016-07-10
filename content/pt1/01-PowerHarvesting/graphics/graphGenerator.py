@@ -51,7 +51,7 @@ for filename in os.listdir(path):
         correction = float(0.0234330092033605)
     elif filename[:-10] == '26':
         correction = float(0.0380312475791444)
-    # correction = 0
+    correction = 0
     with open(path + '/' + filename, 'r') as f:
         f.readline()
         for line in f.readlines():
@@ -99,28 +99,28 @@ colours = lib.plot.formatter.get_reds(len(heights))
 print(colours)
 lib.plot.formatter.format(style='Thesis')
 
-# for index, (xs, ys) in enumerate(zip(xs_pvh, ys_pvh)):
-#     print(index * 0.1)
-#     plt.plot(xs, ys, label='\SI{' + str(heights[index]) + '}{\micro\meter}', color=str(index * 0.1), marker=markers[index%len(markers)], mec=str(index*0.1), markersize=4)
-# plt.gca().set_xlabel("Pressure (kPa)")
-# plt.gca().set_ylabel("Voltage (mV)")
-# plt.gca().set_xlim(0,320)
-# plt.gca().set_ylim(-0.1,0.9)
-# plt.legend(frameon=False, loc=0, ncol=2)
-# plt.savefig(filename='graph_streamingVoltageGradient_vs_height.pdf', format='pdf')
+for index, (xs, ys) in enumerate(zip(xs_pvh, ys_pvh)):
+    print(index * 0.1)
+    plt.plot(xs, list(map(lambda x: x * 1000, ys)), label='\SI{' + str(heights[index]) + '}{\micro\meter}', color=str(index * 0.1), marker=markers[index%len(markers)], mec=str(index*0.1), markersize=4)
+plt.gca().set_xlabel("Pressure (kPa)")
+plt.gca().set_ylabel("Voltage (mV)")
+plt.gca().set_xlim(0,320)
+plt.gca().set_ylim(-0.1,900)
+plt.legend(frameon=False, loc=0, ncol=2)
+plt.savefig(filename='graph_streamingVoltageGradient_vs_height_noCorrection.pdf', format='pdf')
 
 # plt.clf()
 # lib.plot.formatter.plot_params['margin']['left'] = 0.12
 # lib.plot.formatter.format(style='Thesis')
 
-for index, (xs, ys) in enumerate(zip(xs_comp, ys_comp)):
-    plt.scatter(xs, ys, label='\SI{' + str(heights[index]) + '}{\micro\meter}', color=str(index * 0.1), marker=markers[index%len(markers)])
-plt.gca().set_xlabel("$1/\delta$ (\SI{}{\per\meter})")
-plt.gca().set_ylabel("$\\normalfont{\\varepsilon_{r}\\varepsilon_{0}\\Delta P / \\mu V_{s}\\sigma}$ (\\SI{}{\\per\\volt})")
-plt.gca().set_ylim(-100,0)
-plt.gca().yaxis.set_major_formatter(FuncFormatter(lambda x, pos: '%1.0f' % (x)))
-plt.legend(frameon=False, loc=0, ncol=2)
-plt.savefig(filename='graph_streamingComparison_gu.pdf', format='pdf')
+# for index, (xs, ys) in enumerate(zip(xs_comp, ys_comp)):
+#     plt.scatter(xs, ys, label='\SI{' + str(heights[index]) + '}{\micro\meter}', color=str(index * 0.1), marker=markers[index%len(markers)])
+# plt.gca().set_xlabel("$1/\delta$ (\SI{}{\per\meter})")
+# plt.gca().set_ylabel("$\\normalfont{\\varepsilon_{r}\\varepsilon_{0}\\Delta P / \\mu V_{s}\\sigma}$ (\\SI{}{\\per\\volt})")
+# plt.gca().set_ylim(-100,0)
+# plt.gca().yaxis.set_major_formatter(FuncFormatter(lambda x, pos: '%1.0f' % (x)))
+# plt.legend(frameon=False, loc=0, ncol=2)
+# plt.savefig(filename='graph_streamingComparison_gu.pdf', format='pdf')
 # print(data)
 # sys.exit()
 

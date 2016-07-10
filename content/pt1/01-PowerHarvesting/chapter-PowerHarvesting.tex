@@ -37,7 +37,7 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
       \noindent where:
       \begin{description}
           \item $V_{s}$ is streaming voltage,
-          \item $\Delta P_{z}$ is pressure differential (across the channel),
+          \item $\Delta P$ is the hydrostatic pressure across the channel,
           \item $\epsilon_{r}$ is the relative permittivity of the liquid,
           \item $\epsilon_{0}$ is the absolute permittivity of free space,
           \item $\zeta$ is zeta potential,
@@ -74,28 +74,6 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
       This equation is similar to that given by Olthuis et al.\ for a porous plug, but has been derived specifically for rectangular channels\cite{Olthuis2005}.
 
 
-  \subsection{Electrical model}
-    \label{sub:part1_energyHarvesting_generalAnalysis_electricalModel}
-
-
-    % Model
-    \begin{figure}
-        \centering
-            \includegraphics[width=\textwidth]{content/pt1/01-PowerHarvesting/graphics/StreamingCell_EquivalentCircuit_output}
-        \caption{\label{fig:StreamingCell_Schematic-representation}Schematic diagram of a streaming cell with connected load resistance.}
-    \end{figure}
-    Figure \ref{fig:StreamingCell_Schematic-representation} depicts schematically how a streaming cell operates when connected to an external load.
-    A model of this sort is commonly used to analyse the behaviour transistors.
-    This particular model is based on the work of Olthuis et al.\ in \cite{Olthuis2005}, but has been modified slightly.
-    Instead of showing the zeta potential ($\zeta$) as the equivalent voltage source, it is shown here instead with the pressure applied ($\Delta P$).
-    This change was made because there is no way of controlling the zeta potential - it determined by the properties of the particular interface.
-    However, the amount of pressure developed across the cell is controllable, and from \cref{eq:part1_energyHarvesting_streamingCurrent} it is shown to be directly proportional to streaming current.
-    In fact, the transconductance ($g_{m}$) for this model is \cref{eq:part1_energyHarvesting_streamingCurrent}.
-    The model aids analysis in that it shows the electrical configuration of an external load resistance ($R_{out}$).
-    As shown, any load resistance placed across the cell is being placed in parallel with the internal electrical resistance of the cell.
-    This will help to determine how best to optimise the cell in order to maximise its electrical output.
-
-
   \subsection{Optimisation}
 
     Having a mathematical model of a streaming cell allows for optimisation of its operating parameters.
@@ -116,36 +94,66 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
     % Doing so conserves energy in the battery and ensures as little as possible goes to waste.
 
 
+  \subsection{Electrical model}
+    \label{sub:part1_energyHarvesting_generalAnalysis_electricalModel}
+
+
+    % Model
+    \begin{figure}
+        \centering
+            \includegraphics[width=\textwidth]{content/pt1/01-PowerHarvesting/graphics/StreamingCell_EquivalentCircuit_output}
+        \caption{\label{fig:StreamingCell_Schematic-representation}Schematic diagram of a streaming cell with connected load resistance.}
+    \end{figure}
+    Figure \ref{fig:StreamingCell_Schematic-representation} depicts schematically how a streaming cell operates when connected to an external load.
+    A model of this sort is commonly used to analyse the behaviour transistors.
+    This particular model is based on the work of Olthuis et al.\ in \cite{Olthuis2005}, but has been modified slightly.
+    Instead of showing the zeta potential ($\zeta$) as the equivalent voltage source, it is shown here instead with the pressure applied ($\Delta P$).
+    This change was made because there is no way of controlling the zeta potential - it determined by the properties of the particular interface.
+    However, the amount of pressure developed across the cell is controllable, and from \cref{eq:part1_energyHarvesting_streamingCurrent} it is shown to be directly proportional to streaming current.
+    In fact, the transconductance ($g_{m}$) for this model \emph{is} \cref{eq:part1_energyHarvesting_streamingCurrent}.
+    The model aids analysis in that it shows the electrical configuration of an external load resistance ($R_{out}$).
+    As shown, any load resistance placed across the cell is being placed in parallel with the internal electrical resistance of the cell.
+    This will help to determine how best to optimise the cell in order to maximise its electrical output.
+
     \subsubsection*{Optimising $R_{out}$ for maximum power}
 
 
-      Using Ohm's Law it is possible to form an equation linking the total power ($P_{cell}$) to the total electrical resistance across the cell ($R_{tot}$).
-      \begin{align}
-          P & = V\times I\nonumber \\
-          V & = I\times R\nonumber \\
-          P & = I^{2}\times R\nonumber \\
-          P_{cell} & = I_{s}^{2}\times R_{tot}
-          \label{eq:DeterminingOutputPower_basic}
-      \end{align}
-      Where $I_{s}$ is the streaming current created by pumping ions through the channel.
-      As the output resistance and internal cell resistance are in parallel we can find the output current ($I_{out}$) by treating the cell as a resistor divider (as is shown in~\cref{fig:StreamingCell_Schematic-representation}).
-      Using a resistor divider equation for current in parallel branches yields:
-      \begin{align}
-          I_{out} & = I_{s}\times\frac{R_{cell}}{R_{cell}+R_{out}}
-          \label{eq:DeterminingOutputPower_extended}
-      \end{align}
-      Combining \cref{eq:DeterminingOutputPower_basic} and \cref{eq:DeterminingOutputPower_extended} we can extract the power dissipated in a load attached across the cell.
-      \begin{align}
-          I_{out} & = I_{s}\times\frac{R_{cell}}{R_{cell}+R_{out}}\nonumber \\
-          P_{out} & = \left[I_{s}\times\frac{R_{cell}}{R_{cell}+R_{out}}\right]^{2}\times R_{out}
-          \label{eq:DeterminingOutputPower_result}
-      \end{align}
+      % Using Ohm's Law it is possible to form an equation linking the total power ($P_{cell}$) to the total electrical resistance across the cell ($R_{tot}$).
+      % \begin{align}
+      %     P & = V\times I\nonumber \\
+      %     V & = I\times R\nonumber \\
+      %     P & = I^{2}\times R\nonumber \\
+      %     P_{cell} & = I_{s}^{2}\times R_{tot}
+      %     \label{eq:DeterminingOutputPower_basic}
+      % \end{align}
+      % Where $I_{s}$ is the streaming current created by pumping ions through the channel.
+      % As the output resistance and internal cell resistance are in parallel we can find the output current ($I_{out}$) by treating the cell as a resistor divider (as is shown in~\cref{fig:StreamingCell_Schematic-representation}).
+      % Using a resistor divider equation for current in parallel branches yields:
+      % \begin{align}
+      %     I_{out} & = I_{s}\times\frac{R_{cell}}{R_{cell}+R_{out}}
+      %     \label{eq:DeterminingOutputPower_extended}
+      % \end{align}
+      % Combining \cref{eq:DeterminingOutputPower_basic} and \cref{eq:DeterminingOutputPower_extended} we can extract the power dissipated in a load attached across the cell.
+      % \begin{align}
+      %     I_{out} & = I_{s}\times\frac{R_{cell}}{R_{cell}+R_{out}}\nonumber \\
+      %     P_{out} & = \left[I_{s}\times\frac{R_{cell}}{R_{cell}+R_{out}}\right]^{2}\times R_{out}
+      %     \label{eq:DeterminingOutputPower_result}
+      % \end{align}
 
-      \Cref{eq:DeterminingOutputPower_result} takes into account the internal dissipation within the cell due to its own internal resistance.
-      In order to optimise the output power it is necessary to find the value of output resistance ($R_{out}$) that maximises the output power.
+      % \Cref{eq:DeterminingOutputPower_result} takes into account the internal dissipation within the cell due to its own internal resistance.
+      % In order to optimise the output power it is necessary to find the value of output resistance ($R_{out}$) that maximises the output power.
 
-      A parallel resistance system where we try to maximise the output power suggests this is a maximum power transfer theorem problem.
-      The maximum power transfer theorem states that in order to maximise the power delivered to an external load from a source which itself has an internal resistance, one must make the two resistance equal.
+      \Cref{fig:StreamingCell_Schematic-representation} shows that an electrical load placed across a streaming cell is actually placed in parallel with the cell's own internal resistance.
+      The maximum power theorem states that only $50\%$ of power is transferred when maximum power transfer is achieved.
+      The condition of maximum power transfer occurs when the load resistance and the source resistance are equal.
+      In the case of streaming cells, this means that the output of the cell is maximised when the load resistance is equal to the electrical resistance of the cell itself.
+
+      % The resistor divider equation for current in parallel branches is:
+      % \begin{align}
+      %     I_{out} & = I_{source}\times\frac{R_{source}}{R_{source}+R_{load}}
+      %     \label{eq:DeterminingOutputPower_extended}
+      % \end{align}
+
 
 
     % \subsubsection*{Maximum power transfer theorem for a current source}
@@ -183,30 +191,46 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
 
     \subsubsection*{Optimising streaming cell parameters}
 
-
-      We now use the optimised values of $R_{out}$ and $R_{cell}$ to calculate the maximum available power.
-      This is done by substituting $R_{out}$ and $R_{cell}$ for $R$ in \cref{eq:DeterminingOutputPower_result}:
+      % We now use the optimum values of $R_{out}$ and $R_{cell}$ to calculate the maximum available power.
+      % This is done by substituting $R_{out}$ and $R_{cell}$ for $R$ in \cref{eq:DeterminingOutputPower_result}:
+      % \begin{align}
+      %     P_{out} & = \left[I_{s}\times\frac{R_{cell}}{R_{cell}+R_{out}}\right]^{2}\times R_{out}\nonumber \\
+      %     P_{max} & = \left[I_{s}\times\frac{1}{2}\right]^{2}\times R\nonumber \\
+      %     P_{max} & = \frac{I_{s}^{2}R}{2}
+      %     \label{eq:streamingCell_maxPower}
+      % \end{align}
+      % As $P=I^{2}R$ (via the power equation and Ohm's Law) this indicates at best we can capture half of the available power.
+      Ohm's law and the power equation give:
       \begin{align}
-          P_{out} & = \left[I_{s}\times\frac{R_{cell}}{R_{cell}+R_{out}}\right]^{2}\times R_{out}\nonumber \\
-          P_{max} & = \left[I_{s}\times\frac{1}{2}\right]^{2}\times R\nonumber \\
-          P_{max} & = \frac{I_{s}^{2}R}{2}
-          \label{eq:streamingCell_maxPower}
+        P &= V \times I\nonumber\\
+        V &= I \times R\nonumber\\
+        \label{eq:powerthing}\therefore P &= I^{2}\times R
       \end{align}
-      As $P=I^{2}R$ (via the power equation and Ohm's Law) this indicates at best we can capture half of the available power.
-
-      It is now possible to combine the equation for maximum power, \cref{eq:streamingCell_maxPower}, and that for streaming current, \cref{eq:part1_energyHarvesting_streamingCurrent}.
+      For maximum power transfer the source and load resistances must be equal and therefore the amount of current in the load is equal to the amount of current lost within the cell.
+      This means that half of the streaming current ($I_{s}$) runs through the load.
+      Now take \cref{eq:part1_energyHarvesting_streamingCurrent}, rearrange it for streaming current ($I_{s}$), half it, and substituting it into \cref{eq:powerthing}:
       \begin{align}
-          P_{max} & = \frac{I_{s}^{2}R}{2}\nonumber \\
-          P_{max} & = \left(\frac{\varepsilon\,\zeta\,W\,\delta\,\Delta P}{\mu\,L}\right)^{2}\times\frac{R}{2}
-          \label{eq:streamingCell_maxPower_substituted}
+        \frac{I_{s}}{\Delta P} &= \frac{\varepsilon_{r}\,\varepsilon_{0}\,\zeta\,W\,\delta}{\mu\,L}\nonumber\\
+        I_{s} &= \frac{\varepsilon_{r}\,\varepsilon_{0}\,\zeta\,W\,\delta\,\Delta P}{\mu\,L}\nonumber\\
+        I_{out} &= \frac{\varepsilon_{r}\,\varepsilon_{0}\,\zeta\,W\,\delta\,\Delta P}{2\,\mu\,L}\nonumber\\
+        P_{max} &= \left(\frac{\varepsilon_{r}\,\varepsilon_{0}\,\zeta\,W\,\delta\,\Delta P}{2\,\mu\,L}\right)^{2}\times R\nonumber\\
+        \label{eq:streamingCell_maxPower_substituted}P_{max} &= \left(\frac{\varepsilon\,\zeta\,W\,\delta\,\Delta P}{\mu\,L}\right)^{2}\times \frac{R}{4}\nonumber\\
       \end{align}
-      where $\varepsilon=\varepsilon_{0}\,\varepsilon_{r}$ and $R=R_{cell}=R_{out}$.
 
-      To get a better feel for this equation, it may help to substitute in the parameters that affect $R$.
+
+      % It is now possible to combine the equation for maximum power, \cref{eq:streamingCell_maxPower}, and that for streaming current, \cref{eq:part1_energyHarvesting_streamingCurrent}.
+      % \begin{align}
+      %     P_{max} & = \frac{I_{s}^{2}R}{2}\nonumber \\
+      %     P_{max} & = \left(\frac{\varepsilon\,\zeta\,W\,\delta\,\Delta P}{\mu\,L}\right)^{2}\times\frac{R}{2}
+      %     \label{eq:streamingCell_maxPower_substituted}
+      % \end{align}
+      where $P_{max}$ refers to the maximum output power, $\varepsilon=\varepsilon_{0}\,\varepsilon_{r}$ and $R=R_{cell}=R_{out}$.
+
+      To get a better feel for this equation, it helps to substitute in the parameters that affect $R$.
       From here we will refer to $R$ as the internal electrical resistance of the cell.
       It also refers to the external resistance in the maximum power condition, but we are free to vary that to match the internal resistance.
 
-      We begin with the understanding that:
+      Let us begin with the understanding that:
       \begin{align}
           R & \propto \frac{L}{A\,\sigma}\label{eq:cell_resistance_electrical}\\
           R_{h} & \propto \frac{L\,\mu}{A}\label{eq:cell_resistance_hydro}
@@ -215,16 +239,16 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
       The first \cref{eq:cell_resistance_electrical} states that the electrical resistance will increase with cell length and decrease with the cross-sectional area of the cell and the conductivity of the fluid.
       The second \cref{eq:cell_resistance_hydro} states that the fluid mechanical resistance will increase with the length of the cell and the viscosity of the fluid, and decrease with the cross-sectional area of the cell.
 
-      We can identify the presence of $R_{h}$ in \cref{eq:streamingCell_maxPower_substituted}.
+      We can identify the presence of $R_{h}$ in \cref{eq:streamingCell_maxPower_substituted}, knowing that the cross-sectional area of the cell ($A$) is its width ($W$) times its height ($\delta$).
       Starting with this equation we substitute \cref{eq:cell_resistance_electrical} in and rearrange to produce an approximate relationship between pressure, cell length and area:
       \begin{align}
-          P_{max} & = \left(\frac{\varepsilon\,\zeta\,W\,\delta\,\Delta P}{\mu\,L}\right)^{2}\times\frac{R}{2}\nonumber\\
-          P_{max} & \propto \left(\frac{W\,\delta}{\mu\,L}\right)^{2}\times\left(\varepsilon\,\zeta\,\Delta P\right)^{2}\times \frac{L}{A\,\sigma} \times\frac{1}{2}\nonumber\\
-          P_{max} & \propto \left(\frac{A}{\mu\,L}\right)^{2}\times\left(\varepsilon\,\zeta\,\Delta P\right)^{2}\times \frac{L}{A\,\sigma} \times\frac{1}{2}\nonumber\\
-          P_{max} & \propto \frac{A^{2}}{L^{2}}\times\left(\frac{\varepsilon\,\zeta\,\Delta P}{\mu}\right)^{2}\times \frac{L}{A} \times\frac{1}{2\,\sigma}\nonumber\\
-          P_{max} & \propto \frac{A}{L}\times\left(\frac{\varepsilon\,\zeta\,\Delta P}{\mu}\right)^{2}\times\frac{1}{2\,\sigma}\nonumber\\
-          P_{max} & \propto \left(\frac{\varepsilon\,\zeta\,\Delta P}{\mu}\right)^{2}\times\frac{A}{2\,L\,\sigma}\nonumber\\
-          P_{max} & \propto \frac{\Delta P^{2}\,A}{L}\times \frac{\varepsilon^{2}\,\zeta^{2}}{2\,\mu^{2}\,\sigma}
+          P_{max} & = \left(\frac{\varepsilon\,\zeta\,W\,\delta\,\Delta P}{\mu\,L}\right)^{2}\times\frac{R}{4}\nonumber\\
+          P_{max} & \propto \left(\frac{W\,\delta}{\mu\,L}\right)^{2}\times\left(\varepsilon\,\zeta\,\Delta P\right)^{2}\times \frac{L}{A\,\sigma} \times\frac{1}{4}\nonumber\\
+          P_{max} & \propto \left(\frac{A}{\mu\,L}\right)^{2}\times\left(\varepsilon\,\zeta\,\Delta P\right)^{2}\times \frac{L}{A\,\sigma} \times\frac{1}{4}\nonumber\\
+          P_{max} & \propto \frac{A^{2}}{L^{2}}\times\left(\frac{\varepsilon\,\zeta\,\Delta P}{\mu}\right)^{2}\times \frac{L}{A} \times\frac{1}{4\,\sigma}\nonumber\\
+          P_{max} & \propto \frac{A}{L}\times\left(\frac{\varepsilon\,\zeta\,\Delta P}{\mu}\right)^{2}\times\frac{1}{4\,\sigma}\nonumber\\
+          P_{max} & \propto \left(\frac{\varepsilon\,\zeta\,\Delta P}{\mu}\right)^{2}\times\frac{A}{4\,L\,\sigma}\nonumber\\
+          P_{max} & \propto \frac{\Delta P^{2}\,A}{L}\times \frac{\varepsilon^{2}\,\zeta^{2}}{4\,\mu^{2}\,\sigma}
           \label{eq:streamingCell_maxPower_relationship}
       \end{align}
 
@@ -252,7 +276,7 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
     \begin{figure}
       \centering
       \includegraphics[scale=0.9]{content/pt1/01-PowerHarvesting/graphics/StreamingCell_v0}
-      \caption{\label{fig:first_cell}Photo of the first streaming device built. It has been constructed form acrylic and brass by summer research student Jonathon McMullan. It was intended to create the streaming voltages reported by Varga and Seymour, but failed to produce measurable quantities of power.}
+      \caption{\label{fig:first_cell}Photo of the first streaming device built. It has been constructed from acrylic and brass by summer research student Jonathon McMullan. It was built to recreate the streaming behaviour reported by Varga and Seymour, but failed to produce a measurable output.}
     \end{figure}
     \begin{figure}
       \centering
@@ -272,7 +296,7 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
     That experiment -- which tried the same flow rate, materials, liquids, and measurement setup -- did not produce measurable streaming voltage.
     % My supervisor and I became sceptical of streaming cells at this point and looked elsewhere for energy harvesting ideas.
     The following year, summer research student Wane Crump and I conducted experiments to determine the amount of charge that could be transported on water droplets.
-    Research into energy harvesting with an electrostatic generator is presented in the Appendix as \cref{appendix:chargedDropletts}.
+    Research into energy harvesting with an electrostatic generator is presented in \cref{appendix:chargedDropletts}.
 
     Later, other designs of streaming cells, namely those of Gu and Li~\cite{Gu2000}, were found in the literature.
     Their design of streaming cell looked simple and easy to fabricate, so we attempted to replicate them.
@@ -501,7 +525,8 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
     \end{figure}
 
     \Cref{fig:streamingCell_maxPower} shows the characteristic power curve of the \SI{71}{\micro\meter} high streaming cell channel.
-    Pressure fluctuations near the end of the experiment are due to usage of the departments water system.
+    It was chosen as it was the highest performing cell, in terms of voltage/pressure gradient, that had not yet ruptured.
+    Pressure fluctuations near the end of the experiment are due to usage of the department's water system (e.g., a tap being turned on).
     Their effect is visible in both the streaming voltage and output power traces, highlighting the strong coupling to applied pressure.
 
     The maximum power delivered by the cell was \SI{1.52}{\nano\watt}, corresponding to a current draw of \SI{33.5}{\nano\ampere} with a streaming voltage of \SI{182}{\milli\volt}.
@@ -559,7 +584,7 @@ Measurement results are discussed in~\cref{sect:part1_energyHarvesting_discussio
   From this measurement the power transfer curve is evident.
   Referring back to the model presented as \cref{fig:StreamingCell_Schematic-representation}, we can now calculate the channels internal electrical resistance ($R_{cell}$).
   We know from the graph that the maximum power transfer occurred at a current of \SI{33.5}{\nano\ampere} with a streaming voltage of \SI{182}{\milli\volt}.
-  Via Ohm's law this equates to a load resistance ($R_{out}$) of \SI{5.43}{\mega\ohm}, which from the maximum power theorem we know must be equal to the cells internal resistance.
+  Via Ohm's law this equates to a load resistance ($R_{out}$) of \SI{5.43}{\mega\ohm}, which from the maximum power theorem we know must be equal to the cell's internal resistance.
 
 
 \section{Concluding Remarks}

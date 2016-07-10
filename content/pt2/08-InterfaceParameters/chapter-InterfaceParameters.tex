@@ -59,6 +59,10 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
         \caption{\label{fig:pt2-graph_transimpedance_pbs}Measured and fitted values of trans-impedance for both measurement configurations. Voltage measurements are made between adjacent pairs of electrodes as current is pushed through the stimulus electrodes.}
       \end{figure}
       The results of those measurements, in both configurations, are represented as markers in \cref{fig:pt2-graph_transimpedance_pbs}.
+      The graph serves to validate the parameter selection shown in \cref{tab:RESparams}, where dotted lines show the result of feeding those values back through the SPICE model and markers show measured values.
+      Red traces show trans-impedance measurements when electrodes one and two are used (adjacent tetrapolar measurements).
+      Conversely, blue traces show trans-impedance measurements when electrodes one and eight are used (opposite tetrapolar measurements).
+      Measurements were not made on electrodes that were used to carry stimulus.
       Each point was calculated by taking the voltage differential across a pair of electrodes ($V_{diff}$) and dividing by the stimulus current.
       Remember, the stimulus current was set to be around \SI{500}{\micro\ampere} peak, which was chosen so as to be well under the `water window' where electrolysis occurs.
       \begin{table}
@@ -118,6 +122,12 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
       A diagram of the measurement setup is shown as \cref{fig:pt2-measurement_CPE_setup}.
       For each of the six solutions, twenty frequencies (log-spaced) were sampled between \SI{50}{\milli\hertz} and \SI{10}{\kilo\hertz} for the impedance measurements.
       At each frequency the stimulus waveform amplitude was re-adjusted to be \SI{300}{\milli\volt}-peak as the interface's impedance changed.
+
+      The oscilloscope has an input resistance of \SI{10}{\mega\ohm} and capacitance of \SI{12}{\pico\farad}.
+      At low frequencies the interface impedance is high, in the order of \SI{10}{\kilo\ohm}, and circuit loading from the oscilloscope's probes will affect measurement results.
+      As there is still three orders of magnitude between the maximum resistance of the system and the input impedance of the measurement device, this effect is deemed negligible.
+      The maximum frequency used to measure the interface is \SI{10}{\kilo\hertz}, for which the oscilloscope's capacitance will also have negligible effect.
+
       \begin{figure}
         \centering
         \includegraphics{content/pt2/08-InterfaceParameters/graphics/displacement_impedanceVsFrequency_magnitude_thesis}
@@ -215,7 +225,7 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
         \begin{figure}
           \centering
           \includegraphics{content/pt2/08-InterfaceParameters/graphics/graph_64s_stirred}
-          \caption{\label{fig:pt2-faradaic_decay}Graph showing measured response of two interfaces to a multiple step responses. Vertical dotted lines indicate when in time the step occurred. Dotted traces show points in time after each response. Measurements are between electrodes two and seven on the Octrode submerged in 1X PBS.}
+          \caption{\label{fig:pt2-faradaic_decay}Graph showing the measured response of a pair of interfaces to multiple step responses. Vertical dotted lines indicate when in time the step occurred. Dotted traces show points in time after each response. Measurements are between electrodes two and seven on the Octrode submerged in 1X PBS.}
         \end{figure}
 
         A revealing measurement came from the use of the Agilent E5270B precision measurement mainframe, the same instrument used to measure the streaming potential cells (\cref{part:doubleLayersOnInsulators}).
@@ -259,9 +269,10 @@ The comparison will show whether a one-tenth concentration of PBS is in-fact a g
         There are three important observations that can be made from this graph:
         \begin{enumerate}
           % \item The effect saline concentration below \SI{0.9}{\volt} has little to no significance on the Faradaic current draw.
-          \item The concentration of saline has no measurable impact upon the Faradaic reaction rate when the applied overpotential between a pair of electrodes is less than \SI{0.9}{\volt}.
-          \item The concentration of saline is directly to related to the rate of Faradaic reactions when the applied overpotential between a pair of electrodes is more than \SI{1.05}{\volt}.
-          \item Between \SI{0.9}{\volt} and \SI{1.05}{\volt} of overpotential between electrodes, each trace transitions to a mode of saline concentration dependence in reverse order of saline concentration.
+          \item Saline concentration has no measurable impact upon the Faradaic reaction rate when the applied overpotential between a pair of electrodes is less than \SI{0.9}{\volt}.
+          % \item The concentration of saline is directly related to the rate of Faradaic reactions when the applied overpotential between a pair of electrodes is more than \SI{1.05}{\volt}.
+          \item Faradaic current draw is directly related to saline concentration above \SI{1.05}{\volt}.
+          \item Between \SI{0.9}{\volt} and \SI{1.05}{\volt} of overpotential (between electrodes), each trace transitions to a mode of saline concentration dependence. These transitions happen in order of increasing saline concentration.
         \end{enumerate}
 
         It appears that the change in behaviour between \SI{0.9}{\volt} and \SI{1.05}{\volt} is due to a transition to diffusion-controlled conduction between electrodes.

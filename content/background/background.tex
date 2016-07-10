@@ -174,7 +174,7 @@
     Surrounding this layer is the diffuse layer.
     Ions here are still drawn to the solid, but not so strongly as to be immobile.
     The voltage in this layer (relative to the bulk of the solution) decays from that at the compact/diffuse layer boundary to zero within the solution bulk.
-    The Zeta potential is the voltage between those two points, i.e., it is the voltage at the plane where the diffuse layer meets the compact layer - relative to the voltage in the bulk of the solution.
+    The Zeta potential is the voltage between those two points, i.e., it is the voltage at the plane where the diffuse layer (Goüy-Chapmam layer) meets the compact layer (Helmholtz layer) - relative to the voltage in the bulk of the solution.
     The dividing plane between the two layers is called the shear plane.
     It represents the nearest distance from the surface at which the layer can move laterally.
     The shear plane is an important parameter with linear geometries, such as the inside of a pipe, as it represents the true no-slip boundary.
@@ -582,7 +582,7 @@
     In 1936 Murdock and Zimmerman publish empirical data in support of Fricke's phase relation~\cite{Murdock1936}.
     Over the next fifty years, numerous studies of the electrode interface and its corresponding electrical equivalent circuit have been made~\cite{Randles1947,Epelboin1973,Sluyters-Rehbach1970}.
     However, no progress is made over that time toward modelling the DC response of an electrode interface.
-    In 1975, a model put forward by Geedes et. al\ adds resistance in parallel with the Warburg impedance to account for that DC response~\cite{Geddes1975}.
+    In 1975, a model put forward by Geddes et. al\ adds resistance in parallel with the Warburg impedance to account for that DC response~\cite{Geddes1975}.
     Seven years later, Onaral and Schwan measure the impedance of platinum electrodes in saline from \SI{1}{\milli\hertz}-\SI{1}{\kilo\hertz}~\cite{Onaral1982}.
     They confirm Fricke's phase angle holds down to a frequency of \SI{10}{\milli\hertz}, but comment on deviation below that.
     This suggests there is a limit to how well the traditional Warburg element accounts for low frequency signals.
@@ -609,6 +609,6 @@
     This allows the model to be solved by simulation software working in the time-domain, such as SPICE.
     It is also unique within the literature for its use of a memristor and diode pair as a means of describing Faradaic current conduction, something thus far described by resistance.
 
-    No comparisons between saline solutions and actual biological fluid, such as cerebrospinal fluid, have been found in the literature.
+    Comparisons of permittivity and resistivity between biological tissues have been published~\cite{Gabriel1996}, but comparisons between standard saline solutions and biological fluids have not been found.
 
   % Edit checkpoint 2015-09-13 18:46

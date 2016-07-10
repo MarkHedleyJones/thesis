@@ -11,7 +11,7 @@ The measurements and determined parameters will be presented in the next chapter
   \begin{figure}
     \centering
     \includegraphics{content/pt2/07-InterfaceModel/graphics/electrode-electrolyte}
-    \caption{\label{fig:electrode-electrolyte}Diagram of two electrodes submerged in an electrolyte solution, which can modelled by the Scott-Single Interface Model.}
+    \caption{\label{fig:electrode-electrolyte}Diagram of two electrodes submerged in an electrolyte solution; which can modelled by the Scott-Single Interface Model.}
   \end{figure}
 
   \begin{figure}
@@ -25,7 +25,7 @@ The measurements and determined parameters will be presented in the next chapter
   A simple case of such a situation is depicted in \cref{fig:electrode-electrolyte}.
   The model comes in two parts: an electrode interface, and the resistance of the electrolyte between interfaces.
   \Cref{fig:pt2-simpleElectrodeElectrolyteModel} shows the electrical equivalent of connecting two electrodes through an electrolyte.
-  It two interfaces, each with the liquid side joined electrically by the resistance of the electrolyte's bulk resistivity.
+  It has two interfaces, both having their liquid sides joined electrically through the bulk resistivity of the electrolyte.
   The metal side of the interfaces is what the rest of the circuit (such as the implant electronics) connects to.
 
   \Cref{fig:pt2-interfaceSchematic} shows the electrode-electrolyte interface.
@@ -152,7 +152,7 @@ The measurements and determined parameters will be presented in the next chapter
     % This requires a fractional differentiation of $I(t) = C \times \frac{d^n V(t)}{dt^n}$, something uncommon outside of pure mathematics.
     As a consequence of having a current/voltage relationship of less than \SI{90}{\degree}, a CPE's impedance magnitude decays at a rate lower than 20\ dB/decade.
 
-    SPICE, or any other commonly used circuit simulators, do not support fractional pole capacitors so entering one into the model will require building it up from discrete components.
+    SPICE and other commonly used circuit simulators do not support fractional pole capacitors so entering one into the model will require building it up from discrete components.
     \begin{figure}[ht]
       \centering
       \includegraphics{content/pt2/07-InterfaceModel/graphics/Morrison-RC}
